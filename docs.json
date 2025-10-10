@@ -84,8 +84,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://cdn.ticketspot.io/icon.svg",
+    "dark": "https://cdn.ticketspot.io/icon.svg",
+    "href": "https://ticketspotapp.com"
   },
   "navbar": {
     "links": [
