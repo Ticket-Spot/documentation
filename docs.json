@@ -22,10 +22,10 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Create Events",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "essentials/eventdetails",
+              "essentials/waitlist"
             ]
           },
           {
