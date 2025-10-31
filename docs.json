@@ -25,7 +25,17 @@
             "group": "Create Events",
             "pages": [
               "essentials/eventdetails",
-              "essentials/waitlist"
+              "essentials/venuelocation"
+             
+            ]
+          },
+  {
+            "group": "Integrations",
+            "pages": [
+              "essentials/mailchimp",
+              "essentials/tickettailor",
+              "essentials/ticketspice"
+             
             ]
           },
           {
