@@ -22,10 +22,20 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Create Events",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "essentials/eventdetails",
+              "essentials/venuelocation"
+             
+            ]
+          },
+  {
+            "group": "Integrations",
+            "pages": [
+              "essentials/mailchimp",
+              "essentials/tickettailor",
+              "essentials/ticketspice"
+             
             ]
           },
           {
