@@ -32,9 +32,11 @@
   {
             "group": "Integrations",
             "pages": [
-              "essentials/mailchimp",
-              "essentials/tickettailor",
-              "essentials/ticketspice"
+              "integrations/mailchimp",
+              "integrations/tickettailor",
+              "integrations/ticketspice",
+              "integrations/eventbrite",
+              "integrations/zoom"
              
             ]
           },
