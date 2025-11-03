@@ -25,7 +25,9 @@
             "group": "Create Events",
             "pages": [
               "essentials/eventdetails",
+              "essentials/datetime",
               "essentials/venuelocation"
+              
              
             ]
           },
