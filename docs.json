@@ -43,6 +43,16 @@
              
             ]
           },
+ {
+            "group": "Attendee Portal",
+            "pages": [
+              "attendee-portal/viewing-your-tickets"
+             
+            ]
+          },
+
+
+
           {
             "group": "Writing content",
             "pages": [
