@@ -26,7 +26,8 @@
             "pages": [
               "essentials/eventdetails",
               "essentials/datetime",
-              "essentials/venuelocation"
+              "essentials/venuelocation",
+              "essentials/waitlist"
               
              
             ]
