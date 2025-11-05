@@ -48,7 +48,9 @@
             "pages": [
               "attendee-portal/viewing-your-tickets",
               "attendee-portal/qr-code-digital-wallets",
+                "attendee-portal/cancel-transfer-event",
               "attendee-portal/contact-host"
+            
              
             ]
           },
