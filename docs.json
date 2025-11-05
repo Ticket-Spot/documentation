@@ -47,7 +47,8 @@
             "group": "Attendee Portal",
             "pages": [
               "attendee-portal/viewing-your-tickets",
-              "attendee-portal/qr-code-digital-wallets"
+              "attendee-portal/qr-code-digital-wallets",
+              "attendee-portal/contact-host"
              
             ]
           },
