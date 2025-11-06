@@ -51,11 +51,18 @@
               "attendee-portal/view-download-receipt",
               "attendee-portal/cancel-transfer-event",
               "attendee-portal/contact-host"
-            
-             
+          
             ]
           },
-
+{
+            "group": "Account",
+            "pages": [
+              "account/account-settings",
+              "account/get-paid",
+              "account/notifications"
+    
+            ]
+          },
 
 
           {
