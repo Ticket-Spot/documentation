@@ -67,7 +67,8 @@
  {
             "group": "Team",
             "pages": [
-              "team/invite-team-roles"
+              "team/invite-team-roles",
+              "team/manage-invitations"
     
             ]
           },
