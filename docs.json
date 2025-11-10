@@ -64,6 +64,13 @@
             ]
           },
 
+ {
+            "group": "Team",
+            "pages": [
+              "team/invite-team-roles"
+    
+            ]
+          },
 
           {
             "group": "Writing content",
