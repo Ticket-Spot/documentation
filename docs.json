@@ -22,12 +22,13 @@
             ]
           },
           {
-            "group": "Create Events",
+            "group": "Event Management",
             "pages": [
               "essentials/eventdetails",
               "essentials/datetime",
               "essentials/venuelocation",
-              "essentials/waitlist"
+              "essentials/waitlist",
+              "essentials/manage-events"
               
              
             ]
