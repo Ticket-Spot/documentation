@@ -73,6 +73,13 @@
             ]
           },
 
+           {
+            "group": "Site Settings",
+            "pages": [
+              "site-settings/site-settings"  
+            ]
+          },
+
           {
             "group": "Writing content",
             "pages": [
