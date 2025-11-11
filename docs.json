@@ -76,7 +76,8 @@
            {
             "group": "Site Settings",
             "pages": [
-              "site-settings/site-settings"  
+              "site-settings/site-settings",
+              "site-settings/mobile-check-in"
             ]
           },
 
