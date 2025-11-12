@@ -60,7 +60,8 @@
             "pages": [
               "account/account-settings",
               "account/get-paid",
-              "account/notifications"
+              "account/notifications",
+              "account/billing-and-plans"
     
             ]
           },
