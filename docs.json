@@ -89,6 +89,7 @@
             "group": "Site Settings",
             "pages": [
               "site-settings/site-settings",
+              "site-settings/domain-and-analytics",
               "site-settings/mobile-check-in",
               "site-settings/add-and-switch-sites"
             ]
