@@ -28,6 +28,7 @@
               "essentials/datetime",
               "essentials/venuelocation",
               "essentials/waitlist",
+              "essentials/checkout-complete-message",
               "essentials/manage-events"
               
              
