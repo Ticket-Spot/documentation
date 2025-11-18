@@ -24,6 +24,7 @@
           {
             "group": "Event Management",
             "pages": [
+              "essentials/create-event-overview",
               "essentials/eventdetails",
               "essentials/datetime",
               "essentials/venuelocation",
