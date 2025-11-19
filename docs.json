@@ -65,7 +65,8 @@
  {
             "group": "Attendee Management",
             "pages": [
-              "attendee-management/viewing-attendee-details"
+              "attendee-management/viewing-attendee-details",
+              "attendee-management/export-attendees-and-check-in-data"
           
             ]
           },
