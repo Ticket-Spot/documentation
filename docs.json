@@ -62,6 +62,16 @@
             ]
           },
 
+ {
+            "group": "Attendee Management",
+            "pages": [
+              "attendee-management/viewing-attendee-details"
+          
+            ]
+          },
+
+
+
 {
             "group": "Branding and Design",
             "pages": [
