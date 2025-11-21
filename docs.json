@@ -83,6 +83,16 @@
             ]
           },
 
+          {
+            "group": "Analytics",
+            "pages": [
+             "analytics/analytics-overview"
+    
+            ]
+          },
+
+
+
 {
             "group": "Account",
             "pages": [
