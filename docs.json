@@ -87,7 +87,8 @@
             "group": "Analytics",
             "pages": [
              "analytics/analytics-overview",
-              "analytics/sales-analytics"
+              "analytics/sales-analytics",
+              "analytics/check-in-analytics"
     
             ]
           },
