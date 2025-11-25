@@ -89,6 +89,7 @@
              "analytics/analytics-overview",
               "analytics/sales-analytics",
               "analytics/check-in-analytics",
+              "analytics/abandoned-cart-analytics",
               "analytics/event-view-analytics"
     
             ]
