@@ -88,7 +88,8 @@
             "pages": [
              "analytics/analytics-overview",
               "analytics/sales-analytics",
-              "analytics/check-in-analytics"
+              "analytics/check-in-analytics",
+              "analytics/event-view-analytics"
     
             ]
           },
