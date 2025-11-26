@@ -96,6 +96,17 @@
             ]
           },
 
+              {
+            "group": "Mobile App",
+            "pages": [
+             "mobile-app/mobile-app-overview",
+              "mobile-app/mobile-check-in",
+              "mobile-app/attendee-details"
+          
+             
+            ]
+          },
+
 
 
 {
