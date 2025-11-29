@@ -26,6 +26,7 @@
               "essentials/eventdetails",
               "essentials/datetime",
               "essentials/venuelocation",
+              "essentials/ticket-setup",
               "essentials/email-communication",
               "essentials/waitlist",
               "essentials/additional-information",
