@@ -154,6 +154,15 @@
               "site-settings/mobile-check-in",
               "site-settings/add-and-switch-sites"
             ]
+          },
+
+           {
+            "group": "Plugins",
+            "pages": [
+              "plugins/connect-shopify"
+              
+    
+            ]
           }
         ]
       }
