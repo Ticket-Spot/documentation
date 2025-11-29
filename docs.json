@@ -84,6 +84,7 @@
              {
           "group": "Widget Customization",
           "pages": [
+            "branding-and-design/widget-customization-overview",
             "branding-and-design/display-settings",
             "branding-and-design/checkout-settings",
             "branding-and-design/text-settings",
