@@ -22,19 +22,19 @@
           {
             "group": "Event Management",
             "pages": [
-              "essentials/create-event-overview",
-              "essentials/eventdetails",
-              "essentials/datetime",
-              "essentials/venuelocation",
-              "essentials/ticket-setup",
-              "essentials/email-communication",
-              "essentials/waitlist",
-              "essentials/additional-information",
-              "essentials/checkout-complete-message",
-              "essentials/tags-and-custom-fields",
-              "essentials/hosts",
-              "essentials/display-settings",
-              "essentials/manage-events"
+              "event-management/create-event-overview",
+              "event-management/eventdetails",
+              "event-management/datetime",
+              "event-management/venuelocation",
+              "event-management/ticket-setup",
+              "event-management/email-communication",
+              "event-management/waitlist",
+              "event-management/additional-information",
+              "event-management/checkout-complete-message",
+              "event-management/tags-and-custom-fields",
+              "event-management/hosts",
+              "event-management/display-settings",
+              "event-management/manage-events"
               
              
             ]
