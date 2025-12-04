@@ -42,11 +42,13 @@
   {
             "group": "Integrations",
             "pages": [
-              "integrations/mailchimp",
-              "integrations/tickettailor",
-              "integrations/ticketspice",
               "integrations/eventbrite",
-              "integrations/zoom"
+               "integrations/tickettailor",
+               "integrations/ticketspice",
+                "integrations/google",
+                 "integrations/zoom",
+                  "integrations/twitch",
+              "integrations/mailchimp"
              
             ]
           },
