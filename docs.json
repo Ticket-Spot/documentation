@@ -161,7 +161,8 @@
            {
             "group": "Plugins",
             "pages": [
-              "plugins/connect-shopify"
+              "plugins/connect-shopify",
+              "plugins/connect-wix"
               
     
             ]
