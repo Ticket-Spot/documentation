@@ -162,7 +162,8 @@
             "group": "Plugins",
             "pages": [
               "plugins/connect-shopify",
-              "plugins/connect-wix"
+              "plugins/connect-wix",
+              "plugins/connect-lovable"
               
     
             ]
