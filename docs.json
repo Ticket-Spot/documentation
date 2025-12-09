@@ -172,11 +172,7 @@
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://ticketspot.mintlify.app/getting-started/platform-overview",    
-          "icon": "book-open-cover"
-        },
+      
         {
           "anchor": "Blog",
           "href": "https://ticketspotapp.com/blog",
