@@ -48,7 +48,8 @@
                 "integrations/google",
                  "integrations/zoom",
                   "integrations/twitch",
-              "integrations/mailchimp"
+                  "integrations/zapier",
+                 "integrations/mailchimp"
              
             ]
           },
