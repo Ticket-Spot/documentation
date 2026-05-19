@@ -2,53 +2,258 @@
 title: "Klaviyo"
 ---
 
-Connect your **Klaviyo** account with **Ticket Spot** to automatically sync attendee and order information to your Klaviyo platform. This integration works seamlessly with Shopify, Wix, or Ticket Spot's own widget — sending event data to Klaviyo whenever a new order with attendees is created.
+## Installation Guide
 
-Let's get started 🚀
+### About This Integration
 
-## Prerequisites
+The Ticket Spot and Klaviyo integration automatically syncs attendee and order data from your ticket sales directly into your Klaviyo account. Every time a customer purchases tickets through Ticket Spot, their order details, attendee information, and event data are sent to Klaviyo as custom events.
 
-Before setting up the integration, make sure you have:
+This integration works seamlessly across multiple platforms including **Shopify**, **Wix**, and **Ticket Spot's own widget**, ensuring consistent data flow regardless of where your customers purchase tickets.
 
-- An active **[Ticket Spot](https://ticketspotapp.com/manage)** account with access to the **Integrations** page.
-- A valid **[Klaviyo](https://www.klaviyo.com/)** account.
+### Prerequisites
 
-## Integration
+Before installing the integration, you will need:
 
-**Step 1**: Log in to your **Ticket Spot** account at **[ticketspotapp.com/manage](https://ticketspotapp.com/manage)** and click on the **Integrations** tab from the top navigation bar to open the integrations page.
+- An active **[Ticket Spot](https://ticketspotapp.com/manage)** account with access to the Integrations page
+- A valid **[Klaviyo](https://www.klaviyo.com/)** account
+- Permission to authorize OAuth connections in both platforms
+
+### Installation Steps
+
+**Step 1**: Log in to your **Ticket Spot** account at **[ticketspotapp.com/manage](https://ticketspotapp.com/manage)** and click on the **Integrations** tab in the top navigation bar.
 
 ![integration-tab](../assets/integrations/klaviyo/integration-tab.png)
 
-**Step 2**: Find the **Klaviyo** platform under the **Marketing Automation** category and click the **Connect** button to begin OAuth authentication.
+**Step 2**: Scroll to find the **Klaviyo** integration card under the **Marketing Automation** category and click the **Connect** button.
 
 ![klaviyo-card](../assets/integrations/klaviyo/klaviyo-card.png)
 
-**Step 3**: Sign in to your **Klaviyo** account and authorize Ticket Spot to access your Klaviyo platform.
+**Step 3**: You will be redirected to sign in to your **Klaviyo** account. Enter your Klaviyo credentials and authorize Ticket Spot to access your Klaviyo platform.
 
-**Step 4**: Once the integration is successfully connected, a **green check mark** will appear, confirming that the **Klaviyo integration** is active in **Ticket Spot**.
+**Step 4**: After successful authorization, you will be redirected back to Ticket Spot. A **green check mark** will appear on the Klaviyo integration card, confirming the connection is active.
 
-## How It Works
+### Verifying Your Installation
 
-After connecting Klaviyo, the integration automatically syncs data to your Klaviyo platform whenever an attendee purchases tickets to your event:
+To confirm the integration is working:
 
-1. **Create an Event**: Set up a new event in Ticket Spot and make it live.
-2. **Preview Your Event**: Go to the Event Page or Widget Customization to preview your event.
-3. **Purchase a Ticket**: When a customer selects a ticket and creates an order, all attendee and order information is automatically sent to Klaviyo as events.
+1. Create a test event in Ticket Spot and make it live
+2. Go to the Event Page or Widget Customization to preview your event
+3. Complete a test ticket purchase
+4. Check your Klaviyo account for the new custom event containing the order and attendee data
 
-This automation works across all platforms: **Shopify**, **Wix**, and **Ticket Spot's own widget**.
+The integration will now automatically sync all future ticket purchases to Klaviyo.
 
-## View Details
+### Managing Your Connection
 
-Review the connection details for your **Klaviyo** integration, including the linked account and current status.
+**View Connection Details**: Click the horizontal ellipsis (⋯) icon on the Klaviyo integration card and select **View Details** to review your connected account and integration status.
 
-To view details, click the **horizontal ellipsis (⋯)** icon on the **Klaviyo integration** tile and select **View Details** from the dropdown menu.
-
-## Disconnect
-
-Remove the existing connection between your **Klaviyo** account and **Ticket Spot**. Once disconnected, Ticket Spot will no longer send data to Klaviyo.
-
-Click the **horizontal ellipsis (⋯)** icon on the Klaviyo integration tile and select **Disconnect** from the dropdown menu.
+**Disconnect**: To remove the integration, click the horizontal ellipsis (⋯) icon and select **Disconnect**. Ticket Spot will immediately stop sending data to Klaviyo.
 
 ![disconnect](../assets/integrations/klaviyo/klaviyo-disconnect.png)
 
-Your Klaviyo integration will be successfully disconnected from Ticket Spot.
+### Support
+
+If you need assistance with the Klaviyo integration, contact Ticket Spot support at **support@ticketspotapp.com** or visit our help center at **[ticketspotapp.com/support](https://ticketspotapp.com/support)**.
+
+## Data Reference
+
+### Overview
+
+The Ticket Spot integration sends data **to Klaviyo** only. When a customer completes a ticket purchase, Ticket Spot sends **three types of custom events** to Klaviyo, providing comprehensive data for marketing automation, segmentation, and personalization.
+
+### Event 1: Placed Order
+
+Sent **once per order** to capture the complete transaction. This event is associated with the purchaser's profile.
+
+#### Profile Data
+- `email` - Purchaser's email address
+- `first_name` - Purchaser's first name
+- `last_name` - Purchaser's last name
+- `phone_number` - Purchaser's phone number (optional)
+
+#### Event Properties
+
+| Property | Type | Description | Example |
+|----------|------|-------------|---------|
+| `$event_id` | String | Unique event identifier | "order_12345" |
+| `$value` | Number | Total order value | 450.00 |
+| `OrderId` | String | Order identifier | "12345" |
+| `Items` | Array | List of purchased tickets (see Items structure below) | [...] |
+| `EventName` | String | Name of the event | "Summer Music Festival 2026" |
+| `EventStartAt` | DateTime | Event start date and time | "2026-07-15T18:00:00Z" |
+| `EventEndAt` | DateTime | Event end date and time | "2026-07-15T23:00:00Z" |
+| `VenueName` | String | Event venue or location | "Central Park, New York" |
+| `Currency` | String | Currency code | "USD" |
+| `AttendeeCount` | Number | Total number of attendees/tickets | 3 |
+
+#### Items Array Structure
+Each item in the `Items` array contains:
+- `ProductID` - Ticket UUID
+- `ProductName` - Ticket type name (e.g., "VIP", "General Admission")
+- `Quantity` - Always 1 (each attendee is a separate item)
+- `ItemPrice` - Base ticket price
+- `RowTotal` - Final ticket price after discounts
+- `FeeAmount` - Service fees for this ticket
+
+### Event 2: Ordered Experience
+
+Sent **once per ticket/attendee** to track individual ticket purchases. This event is associated with the purchaser's profile (not the individual attendee).
+
+#### Profile Data
+- `email` - Purchaser's email address
+- `first_name` - Purchaser's first name
+- `last_name` - Purchaser's last name
+
+#### Event Properties
+
+| Property | Type | Description | Example |
+|----------|------|-------------|---------|
+| `$event_id` | String | Unique event identifier | "experience_67890" |
+| `$value` | Number | Final price for this ticket | 150.00 |
+| `OrderId` | String | Associated order ID | "12345" |
+| `ExperienceId` | String | Ticket UUID | "abc-123-def-456" |
+| `ExperienceName` | String | Ticket type name | "VIP Access" |
+| `Quantity` | Number | Always 1 | 1 |
+| `TicketPrice` | Number | Base ticket price | 125.00 |
+| `FinalPrice` | Number | Price after discounts | 150.00 |
+| `FeeAmount` | Number | Service fee amount | 10.00 |
+| `EventName` | String | Name of the event | "Summer Music Festival 2026" |
+| `EventStartAt` | DateTime | Event start date and time | "2026-07-15T18:00:00Z" |
+| `VenueName` | String | Event venue or location | "Central Park, New York" |
+| `Currency` | String | Currency code | "USD" |
+
+### Event 3: Registered Attendee
+
+Sent **once per unique attendee email** (excluding the purchaser) to create profiles for all attendees. This allows you to market directly to attendees who didn't make the purchase.
+
+#### Profile Data
+- `email` - Attendee's email address
+- `first_name` - Attendee's first name
+- `last_name` - Attendee's last name
+- `phone_number` - Attendee's phone number (optional)
+
+#### Event Properties
+
+| Property | Type | Description | Example |
+|----------|------|-------------|---------|
+| `$event_id` | String | Unique event identifier | "attendee_99999" |
+| `AttendeeId` | String | Attendee identifier | "99999" |
+| `EventName` | String | Name of the event | "Summer Music Festival 2026" |
+| `EventStartAt` | DateTime | Event start date and time | "2026-07-15T18:00:00Z" |
+| `EventEndAt` | DateTime | Event end date and time | "2026-07-15T23:00:00Z" |
+| `VenueName` | String | Event venue or location | "Central Park, New York" |
+| `OrderId` | String | Associated order ID | "12345" |
+| `Currency` | String | Currency code | "USD" |
+| `TicketName` | String | Ticket type name | "General Admission" |
+
+### Using This Data in Klaviyo
+
+These events and properties enable powerful marketing capabilities:
+
+- **Segmentation**: Build audience segments based on event attendance, ticket types, or order values
+- **Flow Triggers**: Initiate automated email sequences based on "Placed Order", "Ordered Experience", or "Registered Attendee" events
+- **Personalization**: Reference event details, attendee names, and order information in email content using Klaviyo's template variables
+- **Reporting**: Track ticket sales performance, revenue, and customer behavior over time
+- **Multi-Attendee Marketing**: Reach both purchasers and individual attendees with targeted messaging
+
+## Use Case How-To
+
+### Use Case 1: Send Event Reminder Emails
+
+Automatically remind ticket purchasers about their upcoming event using Klaviyo flows.
+
+**Step 1**: In your Klaviyo account, navigate to **Flows** and click **Create Flow**.
+
+**Step 2**: Select **Create from Scratch** and name your flow "Event Reminder."
+
+**Step 3**: Set the trigger to **Metric** and select the custom event **Placed Order** (sent by Ticket Spot).
+
+**Step 4**: Add a **Time Delay** action. Set it to wait until a specific time before the event. For example, set it to trigger 24 hours before the `EventStartAt` property.
+
+**Step 5**: Add an **Email** action. Create your reminder email using dynamic properties:
+   - Use `{{ event|lookup:'EventName' }}` to display the event name
+   - Use `{{ event|lookup:'EventStartAt' }}` to show the event date and time
+   - Use `{{ event|lookup:'VenueName' }}` to include the venue or location
+   - Use `{{ event|lookup:'AttendeeCount' }}` to reference the number of tickets purchased
+
+**Step 6**: Review your flow logic, then click **Set Live** to activate the automated reminders.
+
+### Use Case 2: Segment Attendees by Event
+
+Create a segment of customers who purchased tickets to specific events for targeted campaigns.
+
+**Step 1**: In Klaviyo, go to **Lists & Segments** and click **Create List / Segment**.
+
+**Step 2**: Choose **Segment** and name it (e.g., "Summer Festival Attendees").
+
+**Step 3**: Click **Add Condition** and select **What someone has done (or not done)**.
+
+**Step 4**: Choose the custom event **Placed Order** and set the condition to **at least once**.
+
+**Step 5**: Click **Add Property Filter** and select `EventName`. Set it to **equals** and enter your specific event name (e.g., "Summer Music Festival 2026").
+
+**Step 6**: Optionally, add a date range filter to only include recent purchases.
+
+**Step 7**: Click **Create Segment**. This segment will automatically update as new ticket purchases occur.
+
+### Use Case 3: Personalize Order Confirmation Emails
+
+Enhance your order confirmation emails with dynamic event and order information.
+
+**Step 1**: In Klaviyo, navigate to **Flows** and create a new flow or edit an existing order confirmation flow.
+
+**Step 2**: Set the trigger to the **Placed Order** custom event.
+
+**Step 3**: Add an **Email** action immediately after the trigger (no delay).
+
+**Step 4**: In the email editor, use Klaviyo's template variables to personalize content:
+   - **Order Details**: `{{ event|lookup:'OrderId' }}`, `{{ event|lookup:'$value' }}`, `{{ event|lookup:'AttendeeCount' }}`
+   - **Event Details**: `{{ event|lookup:'EventName' }}`, `{{ event|lookup:'EventStartAt' }}`, `{{ event|lookup:'VenueName' }}`
+   - **Items Purchased**: Loop through `{{ event|lookup:'Items' }}` to display each ticket type
+
+**Step 5**: Add a thank you message and any important event information.
+
+**Step 6**: Preview your email with sample data, then set the flow live.
+
+### Use Case 4: Target VIP Ticket Purchasers
+
+Create a segment of customers who purchased VIP or premium tickets for exclusive communications.
+
+**Step 1**: In Klaviyo, go to **Lists & Segments** and click **Create List / Segment**.
+
+**Step 2**: Choose **Segment** and name it "VIP Ticket Holders."
+
+**Step 3**: Click **Add Condition** and select **What someone has done (or not done)**.
+
+**Step 4**: Choose the custom event **Ordered Experience** and set the condition to **at least once**.
+
+**Step 5**: Click **Add Property Filter** and select `ExperienceName`. Set it to **contains** "VIP" (or your specific VIP ticket name).
+
+**Step 6**: Click **Create Segment** to save. Use this segment for exclusive offers, early access, or premium communications.
+
+### Use Case 5: Welcome Email for Non-Purchaser Attendees
+
+Send a welcome email to attendees whose tickets were purchased by someone else.
+
+**Step 1**: In Klaviyo, navigate to **Flows** and click **Create Flow**.
+
+**Step 2**: Select **Create from Scratch** and name your flow "Attendee Welcome."
+
+**Step 3**: Set the trigger to **Metric** and select the custom event **Registered Attendee**.
+
+**Step 4**: Add an **Email** action immediately after the trigger.
+
+**Step 5**: Create a welcome email explaining they've been registered for an event:
+   - Use `{{ event|lookup:'EventName' }}` to display the event name
+   - Use `{{ event|lookup:'EventStartAt' }}` for the date
+   - Use `{{ event|lookup:'VenueName' }}` for the location
+   - Include event details and what to expect
+
+**Step 6**: Set the flow live to automatically welcome all registered attendees.
+
+### Additional Use Cases
+
+- **Post-Event Survey**: Create a flow triggered by **Placed Order** with a time delay set to trigger 1 day after `EventStartAt` to gather feedback
+- **High-Value Customer Segment**: Filter **Placed Order** events where `$value` is greater than a specific amount to identify big spenders
+- **Repeat Attendee Campaigns**: Build segments of customers who have triggered **Placed Order** at least 2 times to reward loyal customers
+- **Abandoned Cart Recovery**: Track incomplete purchases and follow up with potential customers
