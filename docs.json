@@ -49,8 +49,9 @@
                  "integrations/zoom",
                   "integrations/twitch",
                   "integrations/zapier",
-                 "integrations/mailchimp"
-             
+                 "integrations/mailchimp",
+                 "integrations/klaviyo"
+
             ]
           },
  {
