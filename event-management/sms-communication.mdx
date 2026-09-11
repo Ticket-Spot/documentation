@@ -1,0 +1,37 @@
+---
+title: "Configure event SMS messages"
+description: "Set up automated attendee SMS confirmations, reminders, waitlist updates, and approval messages."
+---
+
+Use **SMS Communication** in the event editor to configure automated text messages. Check your plan's SMS credits before enabling messages and collect attendee phone numbers in registration.
+
+## Navigation and prerequisites
+
+1. Open **Events** and edit a saved event.
+2. In **Additional Info**, collect a Phone Number question mapped to the attendee's phone property.
+3. Open **SMS Communication**. If the phone question is missing, use **Configure Registration Questions** from the warning.
+4. Review **SMS Country Settings** and use **Change Country** if needed.
+
+For a recurring series, configure messages on the parent event. This step is hidden on individual child events and no-ticket setups.
+
+## Choose a message
+
+| Group | Available messages |
+|---|---|
+| **Automated Attendee Messages** | Ticket Confirmation, Event Reminder, Post-Event Message. |
+| **Waitlist** | Waitlist Confirmation, Ticket Available. |
+| **Approval Workflow** | Pending Approval, Approval Confirmed, Approval Declined. |
+| **Payments** | Pending Installment, for an applicable existing payment workflow. |
+
+## Configure and enable
+
+1. Click **Setup Message** or **Edit Message** on the relevant card.
+2. Enter the **Message** and use personalization tokens where needed.
+3. For reminders and post-event messages, set **Timing → Value** and **Unit** (Hours or Days). Reminders are before the event; post-event messages are after it ends.
+4. Review **Preview**, including the rendered message and opt-out text, before enabling it.
+5. Click **Save & Enable**, or **Save SMS Message** when already enabled.
+6. Check the card's Enabled/Disabled state.
+
+Use the enable/disable controls to stop messages you do not need. Review each message before using the bulk control; enabling all includes waitlist, approval, and payment-related messages.
+
+Test with an attendee phone number you control and the intended event trigger. A design preview does not send an SMS. See [email communication](./email-communication) for email delivery and [communication design](../branding-and-design/attendee-communication-design) for visual templates.

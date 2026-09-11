@@ -1,5 +1,6 @@
 ---
 title: "Event Details"
+description: "Set an event title, category, registration type, capacity, images, video, public link, and kiosk access."
 ---
 
 Creating your event starts with configuring event details. **Ticket Spot** lets you add all the essential information that define your event and how it appears to attendees.  
@@ -7,7 +8,6 @@ This section forms the business backbone of your event — determining how it’
 
 By setting up details like type, category, registration method, capacity, and visuals, you control your event’s visibility, audience targeting, and revenue potential, ensuring it’s optimized for both engagement and sales performance.
 
-Let's get started 🚀
 
 
 
@@ -23,7 +23,6 @@ Select the event type that best describes your event. It helps attendees easily 
 ![event-type](../assets/create-events/eventdetails/event-type.gif)
 
 
-
 ## Category
 
 Based on the event type you select, Ticket Spot will show you the list of associated categories in a dropdown. Choose the category that best matches your event — this improves visibility and ensures it appears in relevant searches.
@@ -36,7 +35,6 @@ Based on the event type you select, Ticket Spot will show you the list of associ
 ![event-category](../assets/create-events/eventdetails/event-category.gif)
 
 
-
 ## Subcategory
 
 Based on the **category** you select, Ticket Spot will show you a list of **associated subcategories** in the dropdown list. Choose the subcategory that best describes your event. This helps further define your event and makes it easier for people to find in searches.
@@ -46,7 +44,6 @@ Based on the **category** you select, Ticket Spot will show you a list of **asso
 If your category is **Food & Drink**, you can select **Beer**, **Wine**, or **Food** depending on your event type.
 
 ![event-subcategory](../assets/create-events/eventdetails/event-subcategory.gif)
-
 
 
 ## Event Setup
@@ -83,23 +80,22 @@ Show event info without registration or checkout options.
 ![event-setup](../assets/create-events/eventdetails/event-setup.png)
 
 
-
 ## Privacy
-Use this option to control the visibility of your event. When enabled, it will not appear in public listings, keeping it hidden from general attendees. 
+Use **Hide Event from Event Listing** to remove an event from listings. Someone with its direct URL may still be able to open it. 
 
 **Instruction:**
 
-Tick the checkbox “Hide Event from Event Listing” if you want to keep the event private or temporarily hide it from the public.
+Select **Hide Event from Event Listing** to hide the listing. For the hosted event page, enable **Require Access Code** and set **Access Code** when visitors must enter a code before accessing the event and ticket purchases. Test the public page with and without the code. Ticket-level hidden access codes are configured separately in [Tickets](/event-management/ticket-setup).
 
 ![privacy](../assets/create-events/eventdetails/privacy.png)
 
 
 ## Event Capacity
 
-Set the **total number of tickets** you want to sell for your event. This defines the **maximum event capacity** — once all tickets are sold, registrations will automatically close, preventing any extra bookings. This helps you manage crowd limits and ensures the event doesn’t exceed the planned capacity.
+Set the overall attendee capacity for the event, alongside each ticket type’s quantity. Review capacity again before manually approving pending attendees because an organizer approval can exceed the configured limit. Subscription ticket allowances are separate from event capacity.
 
-**Example:** If you’re hosting an event in a **mall** and have space for **40 people**, set the event capacity to **40 tickets**. Once those 40 tickets are booked, no more registrations will be allowed.
-If your event is **open to everyone**, like a **public concert** or **festival**, simply toggle on **Unlimited Capacity**. This allows **unlimited tickets**, so anyone can join freely without any restrictions.
+**Example:** If you’re hosting an event in a **mall** and have space for **40 people**, set the event capacity to **40 tickets**. Check that checkout reports the event as full when that capacity is reached.
+If your event is **open to everyone**, like a **public concert** or **festival**, simply toggle on **Unlimited Capacity**. This removes the event-wide cap; ticket quantities, purchase rules, and subscription allowances still apply.
 
 ![event-capacity](../assets/create-events/eventdetails/event-capacity.gif)
 
@@ -107,8 +103,6 @@ If your event is **open to everyone**, like a **public concert** or **festival**
 > **Tip:** Enable **Unlimited attendee capacity** if there’s no limit on the number of attendees.
 
 ![unlim-capacity](../assets/create-events/eventdetails/unlim-capacity.png)
-
-
 
 
 ## Event Page
@@ -119,7 +113,7 @@ Customize how your event page looks to attendees. You can create a short, sharea
 
 Set a unique URL handle for your event page to make it easy to share and remember.
 
-Your event link will appear as:[`https://ticketspotapp.com/e/[your-handle]`
+Your event link will appear as `https://ticketspotapp.com/e/your-handle`.
 
 **Example:** Entering `ccg99` creates  
 `https://ticketspotapp.com/e/ccg99`
@@ -128,7 +122,6 @@ Your event link will appear as:[`https://ticketspotapp.com/e/[your-handle]`
 
 
 ![event-page-cust-handle](../assets/create-events/eventdetails/event-page-cust-handle.png)
-
 
 
 ## Calendar Design Override
@@ -142,7 +135,6 @@ Change Book your event now to **Reserve Your Spot** or **Join This Session** for
 
 
 ![calender-design](../assets/create-events/eventdetails/calender-design.png)
-
 
 
 ## Event Page Design Override
@@ -164,7 +156,6 @@ You can override default settings for individual events to better match campaign
 ![event-page-design](../assets/create-events/eventdetails/event-page-design.png)
 
 
-
 ## Timezone
 
 Select the timezone where your event will take place. This ensures the event time displays correctly for all attendees.
@@ -178,7 +169,6 @@ If your event is happening in **Los Angeles**, select **Pacific Time (US/Canada)
 ![timezone](../assets/create-events/eventdetails/timezone.gif)
 
 
-
 ## Title
 
 Enter a clear and descriptive name for your event. The title helps attendees quickly understand what your event is about. 
@@ -188,7 +178,6 @@ Enter a clear and descriptive name for your event. The title helps attendees qui
 - **Digital Marketing Workshop for Beginners**
 
 ![title](../assets/create-events/eventdetails/title.png)
-
 
 
 ## Primary Image
@@ -203,8 +192,6 @@ Use your event’s banner, logo, or a relevant promotional image
 
 
 ![primary-img](../assets/create-events/eventdetails/primary-images.gif)
-
-
 
 
 ## Secondary Image
@@ -224,8 +211,6 @@ Write a clear and engaging summary of your event. Include important details such
 Join us for a fun-filled evening at the **Annual Food Fest 2025** featuring local breweries, live music, and food stalls.
 
 ![description](../assets/create-events/eventdetails/description.png)
-
-
 
 
 ## Description Images
@@ -266,3 +251,6 @@ Generate a dedicated kiosk URL that allows guests to check in on their own. When
 ![click-regenerate-kiosk-url](../assets/create-events/eventdetails/click-regenerate-kiosk-url.png)
 
 
+
+
+See [self check-in kiosk setup](/on-site/self-check-in-kiosk) for link generation and expiry, and [custom domains](/site-settings/domain-and-analytics) for branded hostnames. A Custom Handle changes the path for one event; it is not a DNS domain setting.

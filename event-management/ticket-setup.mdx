@@ -1,14 +1,21 @@
 ---
 title: "Ticket Setup"
+description: "Create event tickets, configure Required Ticket rules, access codes, pricing, purchase limits, and check-in windows."
 ---
 
 Once you’ve set up the Venue & Location details, the next step is to create and manage your event tickets. The Tickets section lets you define how attendees can join your event — whether through free, paid, or donation-based tickets. You can customize pricing, set quantities, apply sales tax, and even offer promo codes for discounts.
 
-Let’s get started. 🚀
+## Navigation and prerequisites
+
+Open **Events**, create or edit the event, then select **Tickets**. Create a ticket or open an existing ticket to edit its fields. Some controls are conditional on ticket type, site platform, or plan. An upgrade prompt identifies an unavailable feature.
+
+Set up [brand colors and logo](../branding-and-design/brand-design) first. For Shopify events using seating, dates/time slots, access codes, or quantity controls, configure the [Ticket Selector](../plugins/connect-shopify#configure-the-ticket-selector-for-advanced-ticketing).
+
+For the ticket editor, use the field names below; older screenshots may show “Booking Fee” where the current label is “Service Fee”.
 
 ## Sales Tax
 
-Add a sales tax to your tickets, and it will be automatically applied at checkout. This helps ensure that all ticket prices include the required tax for your region.  
+Add a sales tax to your tickets, and it will be automatically applied at checkout. The configured percentage changes the checkout total; choose the rate appropriate to your event.  
 For example, if your ticket price is 50 dollar and you set a 10% sales tax, the total amount charged at checkout will be 55 dollar.
 
 > **INFO:** Leave this as it is if you don’t need to apply any tax to your ticket sales.
@@ -38,7 +45,7 @@ Once clicked, a **Payment Settings** window will appear with three available opt
 
 ![payment-setting](../assets/create-events/ticket-setup/payment-setting-4.png)
 
-Choose the provider you want to use and follow the on-screen steps to link your account. After a successful connection, all ticket payments will be automatically deposited into your selected payment account.
+Choose the provider you want to use and follow the on-screen steps to link your account. After connecting, verify a completed payment in the provider account. The provider controls settlement and payout timing.
 
 ## Create Ticket
 
@@ -54,7 +61,7 @@ This section allows you to define the essential details for your ticket — from
 
 | S.no | Field | Description |
 |------|--------|-------------|
-| 1 | **Hide Ticket** | Use this toggle to temporarily hide a ticket from public view. When enabled, the ticket will not appear for attendees, but remains valid and can be made visible again anytime. |
+| 1 | **Hide / Access Code** | Use this toggle to temporarily hide a ticket from public view. When enabled, the ticket will not appear for attendees, but remains valid and can be made visible again anytime. |
 | 2 | **Images** | Add one or more images by clicking on the + button to visually represent your ticket. The images appear next to the ticket, and if multiple images are added, they will rotate automatically in a carousel display. |
 | 3 | **Ticket Name** | Enter a clear, recognizable name for your ticket. |
 | 4 | **Status** | Choose from the dropdown — On Sale, Cancelled, or Postponed — to define the current state of the ticket. |
@@ -63,6 +70,21 @@ This section allows you to define the essential details for your ticket — from
 | 7 | **Ticket Validity Period** | Choose how long the ticket remains valid after purchase. Options include Unlimited, One Day, One Week, One Month, and One Year. Select the duration that best matches your event type or access policy. |
 
 ![basic-ticket](../assets/create-events/ticket-setup/basic-ticket-6.png)
+
+## Hidden tickets and access codes
+
+1. Enable **Hide / Access Code** to hide the ticket from normal public selection.
+2. Enter an **Access Code** if attendees should be able to reveal and buy it by entering that code. Leaving the code blank does not create a code to share.
+3. On a Shopify site, review **Include in Shopify Variant**. Hidden tickets are excluded from Shopify product variants by default; enabling this explicitly includes the hidden ticket in those variants.
+4. Save the ticket and update the event. Test the public selector without a code, with the correct code, and with an incorrect code.
+
+A ticket access code is different from a private event's access code. Hiding an event listing is also different from restricting a ticket.
+
+## Membership access
+
+Under **Who can purchase this ticket?**, choose **Everyone** or **Members only**. For Members only, select the eligible active membership programs. Under **Member Pricing**, enable **Offer members a special price**, select eligible memberships, and enter the member price (0 for a free ticket).
+
+These controls are independent. See [members-only tickets and member pricing](../memberships/ticket-access-and-pricing) for the one-ticket-per-verified-membership pricing limit and test cases.
 
 ## Pricing and Fees
 
@@ -88,13 +110,13 @@ For example, if you set the minimum price to 30, attendees can choose to pay 30 
 
 ![pay-want](../assets/create-events/ticket-setup/pay-want-9.png)
 
-### Enable Booking Fee  
+### Enable Service Fee  
 
-Toggle this option ON to apply a custom booking fee to each ticket. When enabled, the **Custom Booking Fee** field becomes active, allowing you to enter a fixed amount. The specified fee will then be added to the ticket price.
+Toggle this option ON to apply a custom booking fee to each ticket. When enabled, the **Custom Service Fee** field becomes active, allowing you to enter a fixed amount. The specified fee will then be added to the ticket price.
 
 ![currency](../assets/create-events/ticket-setup/enable-booking-10.png)
 
-## Volume Discount Pricing
+## Bulk Ticket Discounts (Volume Discount Pricing)
 
 Use this section to define pricing rules for bulk ticket purchases. Click the **Add Rule** button to create custom quantity and price pairs. For instance, if 1–4 tickets are priced at 50 each, you can add a rule to set the price at 45 each when 5 or more tickets are purchased.
 
@@ -152,6 +174,42 @@ Define how many tickets can be sold for this type. You can also set:
 - **Max Per Order:** Maximum number of tickets per purchase.
 
 ![create](../assets/create-events/ticket-setup/capacity-17.gif)
+
+## Required Ticket
+
+Use **Required Ticket** to require a minimum quantity of another ticket **in the same order**. For example, a Child ticket can require at least one Adult ticket.
+
+1. Create and save the prerequisite ticket first, such as **Adult**.
+2. Create or edit the dependent ticket, such as **Child**.
+3. In **Required Ticket**, enable **Require another ticket to purchase**.
+4. Choose the prerequisite under **Required ticket**. Only other saved tickets are offered; a ticket cannot require itself.
+5. Set **Minimum quantity** to a whole number of at least 1.
+6. Read the summary, such as “This ticket requires at least 1 Adult ticket in the same order.”
+7. Save the ticket and update the event.
+
+This is an order minimum, not a ratio: requiring 1 Adult does not mean 1 Adult for every Child. It does not automatically add the prerequisite ticket. **Min Per Order** controls the quantity of the ticket being edited; Required Ticket controls another ticket. A **Group Ticket** bundles component tickets instead.
+
+Test an order containing only the Child ticket, then an order with the required Adult quantity. Also remove the Adult ticket from the test order and check the validation. Keep the prerequisite available during the dependent ticket's sales window, with enough capacity and compatible access rules.
+
+Required Ticket is available on Business and higher. If the dropdown has no choices, save another ticket first.
+
+## Advance Purchase Window
+
+Enable **Advance Purchase Window** and enter **Days in advance** to require booking at least that many days before an event. This is a minimum booking lead time, not the maximum distance into the future a customer can book.
+
+For example, 10 days means dates closer than 10 days are unavailable for purchase. Check the date picker around the cutoff before promoting it, and review the event timezone and other sales-window settings.
+
+## Check-In Timing Controls
+
+These settings control scanning, independently of when a ticket can be purchased. They are available on Business and higher.
+
+| Control | Fields and effect | Example for an 18:00 start |
+|---|---|---|
+| **Early Check-In Window** | Enable, set **Check-in opens (before start)** and **Unit**. Controls the earliest scan before the event starts. | 1 hour opens check-in at 17:00. |
+| **Late Check-In Cutoff** | Enable, set **Check-in closes (after start)** and **Unit**. Controls when admission closes after the start. | 2 hours closes check-in at 20:00. |
+| **Delayed Check-In Window** | Enable, set **Check-in opens (after start)** and **Unit**. Opens admission after the event has started. | 30 minutes opens check-in at 18:30. |
+
+Delayed Check-In takes priority over Early Check-In if both are enabled. Do not set a closing time earlier than the effective opening time. Review the editor's scan-window summary and test before, inside, and after the permitted window. Check-In Limit and Ticket Validity Period remain separate constraints.
 
 ## Approval & Payment Settings
 
@@ -258,3 +316,18 @@ You can **copy, view usage, edit**, or **delete** any existing promo code — he
 | **Delete Promo Code** | Permanently delete a promo code (cannot be recovered). |
 
 ![create](../assets/create-events/ticket-setup/promos-27.gif)
+
+## Verify the complete ticket flow
+
+After saving the ticket and event, test the public purchase experience. Check the ticket name/image, price and service fee, sales window, min/max quantity, access code, Required Ticket validation, and any membership rules you configured. Then inspect delivery and check-in with a test attendee.
+
+Ticket images accept image files up to 5 MB each. Add multiple images for a rotating display. A disabled field may reflect ticket type or plan eligibility rather than a missing feature.
+
+See [all event creation steps](./create-event-overview), [tracking links](./tracking-links), and [ticket/pass design](../branding-and-design/tickets-and-passes).
+
+## Related workflows
+
+- [Stripe installment setup and collection](/event-management/installment-payments)
+- [Seating charts and ticket categories](/seating-charts/create-and-assign)
+- [Timed entry and passes](/event-management/timed-entry-and-passes)
+- [Registration waivers](/event-management/waivers)

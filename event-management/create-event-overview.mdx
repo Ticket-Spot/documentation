@@ -1,44 +1,48 @@
 ---
-title: "Create Event"
+title: "Create and update an event"
+description: "Follow the event editor steps for details, tickets, add-ons, memberships, communication, questions, and tracking links."
 ---
 
-This guide walks you through the complete process of creating an event in **Ticket Spot**. You’ll set up core **event details**, **configure tickets**, **customize emails**, **manage waitlists**, **add custom fields**, **assign hosts**, and adjust **display settings**—everything required to build a seamless attendee experience.  
+Create your event, then return to the editor to configure features that need a saved event. Start by setting your [brand colors and logo](../branding-and-design/brand-design), available on all plans.
 
-By completing these steps, you ensure your event is organized, easy for attendees to navigate, and ready to go live without any missing information.
+## Navigation
 
+1. Select the correct site and open **Events**.
+2. Click **Create Event**, or edit an existing event.
+3. Complete the applicable steps below. The editor adapts to your event setup, plan, and whether you are editing a recurring-series parent or child.
 
-Let’s get started 🚀
+![Create Event button](../assets/create-events/create-event-overview/click-create-event-btn.png)
 
+## Event editor steps
 
-**Step 1**: Log in to your **Ticket Spot** account and click on the **Create Event** button.
+| Step | What to configure |
+|---|---|
+| **Event Details** | [Title, description, categories, and event setup](./eventdetails). |
+| **Dates & Times** | [Dates, timezone, recurring dates, and time slots](./datetime). |
+| **Venue & Location** | [Physical venue or online attendance information](./venuelocation). |
+| **Tickets** | [Ticket fields, pricing, access codes, Required Ticket, capacity, and check-in timing](./ticket-setup). |
+| **Event Add-ons** | [Attach other events and set selection limits](./event-add-ons). Save the event first. |
+| **Memberships** | [Assign active memberships to the event](../memberships/assign-to-events). Save the event first. |
+| **Email Communication** | [Configure attendee emails and their timing](./email-communication). |
+| **SMS Communication** | [Configure automated SMS and collect phone numbers](./sms-communication). |
+| **Waitlist** | [Configure the event waitlist and messages](./waitlist). |
+| **Additional Info** | [Collect registration questions and ticket-specific answers](./additional-information). |
+| **Checkout Complete** | [Customize the completed-checkout message](./checkout-complete-message). |
+| **Tags & Custom Fields** | [Organize events with tags and custom fields](./tags-and-custom-fields). |
+| **Hosts** | [Assign hosts](./hosts). Save the event first. |
+| **Display Settings** | [Configure event-specific presentation](./display-settings). |
+| **Tracking Links** | [Create campaign links and inspect views/sales](./tracking-links). Use a saved event. |
 
-![click-create-event-btn](../assets/create-events/create-event-overview/click-create-event-btn.png)
+## Why a step may be missing
 
-**Step 2**: Enter your basic event details in the form shown below. The table explains what each field means and how it’s used.
+- **Unsaved event:** Event Add-ons, Memberships, and Hosts appear after the first save. Create tracking links after saving too.
+- **No-ticket setup:** Tickets, Event Add-ons, Memberships, Email/SMS Communication, Waitlist, Additional Info, and Checkout Complete are excluded.
+- **External registration URL:** Tickets, Event Add-ons, Memberships, Waitlist, Additional Info, and Checkout Complete are excluded because registration is external.
+- **Individual event in a recurring series:** Dates & Times, Event Add-ons, Memberships, Email/SMS Communication, Hosts, Display Settings, and Tracking Links are managed on the parent rather than shown on the child.
+- **Plan requirement:** An upgrade prompt may appear for a feature your plan does not include.
 
-| Ref. | Field Name          |   Description                                                                 | Reference |
-|------|----------------------|-----------------------------------------------------------------------------|-----------|
-|   1.   | **Event Details**    | Add event title, description, categories, visibility, and main branding info. | [See more](../event-management/eventdetails)  |
-|   2.   | **Dates & Times**    | Set the event start/end date, timezone, recurring schedule (if needed), and check-in timing. | [See more](../event-management/datetime) |
-|   3.   | **Venue & Location** | Choose the venue type (in-person, online, or hybrid) and add the address, maps, directions, or meeting links. | [See more](../event-management/venuelocation) |
-|    4.  | **Tickets**          | Add free/paid tickets, set quantities, sale windows, fees, and ticket-level settings. | [See more](../event-management/ticket-setup) |
-|  5.    | **Email Communication** | Edit confirmation emails, reminders, and cancellation notices, and add dynamic tokens. | [See more](../event-management/email-communication) |
-|  6.    | **Waitlist**         | Enable waitlist, add rules, auto-approval options, and attendee notification settings. | [See more](../event-management/waitlist) |
-|   7.   | **Additional Info**  | Use Quick Add or Custom Questions to collect additional attendee information. | [See more](../event-management/additional-information) |
-|   8.   | **Checkout Complete** | Edit the success message shown after purchase and apply personalization tokens. | [See more](../event-management/checkout-complete-message) |
-|    9.  | **Tags & Custom Fields** | Add tags for search visibility and create custom fields for internal data tracking. | [See more](../event-management/tags-and-custom-fields) |
-|   10.   | **Hosts** | Add hosts, special guests, or event-level managers to a specific event. | [See more](../event-management/hosts) |
-|   11.   | **Display Settings** | Toggle host visibility, attendee list display, and override widget or page text. | [See more](../event-management/display-settings) |
+## Save, publish, and test
 
-![event-details](../assets/create-events/create-event-overview/event-details.gif)
+Save a draft while configuring the event. Publish when the event details and tickets are ready; return to edit it for later changes. Check your event's status after saving rather than assuming a draft is public.
 
-## Publishing Your Event
-
-After completing all event setup steps, review your event details and click **Publish Event**. Publishing makes your event visible to attendees across your site, widgets, and any shared links.
-
-You can also preview exactly how the event will look on your site—just click **Event Page** or copy the event site link to see the live view before sharing it with attendees.
-
-![publishing-event](../assets/create-events/create-event-overview/publishing-event.gif)
-
-
-Once published, you can always return to the event to **update settings**, **edit tickets**, or **unpublish** the event if needed.
+Open the event page or installed widget and complete a test registration. Verify price, quantities, required tickets, questions, membership rules, confirmation, and delivered tickets. For Shopify, publish/update the linked product and [configure the Ticket Selector](../plugins/connect-shopify#configure-the-ticket-selector-for-advanced-ticketing) when using advanced ticketing controls.
