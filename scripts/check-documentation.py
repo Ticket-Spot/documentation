@@ -88,6 +88,23 @@ if args.dashboard:
         errors.append(f"Feature names missing from plan reference: {missing}")
     print(f"Source inventories: {len(index)} widget controls; {len(features)} named plan features.")
 
+    template_source = (args.dashboard / "src/redesign/features/Onboarding/templates.ts").read_text()
+    template_ids = Counter(re.findall(r"\bid:\s*['\"]([^'\"]+)['\"]", template_source))
+    onboarding = json.loads((root / "event-types/onboarding-map.json").read_text())
+    mapped_ids = Counter(item["id"] for item in onboarding["templates"])
+    if template_ids != mapped_ids:
+        errors.append(f"Onboarding coverage mismatch: missing={dict(template_ids-mapped_ids)}, extra={dict(mapped_ids-template_ids)}")
+    entries = onboarding["templates"] + onboarding["additional_routes"]
+    for entry in entries:
+        slug = entry["guide"]
+        if slug not in pages or slug not in nav_pages:
+            errors.append(f"Onboarding guide missing or not navigable: {entry['id']} → {slug}")
+            continue
+        marker = re.search(r'^onboardingTemplate:\s*"([^"]+)"\s*$', pages[slug].read_text(), re.M)
+        if not marker or marker[1] != entry["id"]:
+            errors.append(f"Onboarding guide marker mismatch: {entry['id']} → {slug}")
+    print(f"Onboarding coverage: {sum(template_ids.values())} templates; {len(onboarding['additional_routes'])} additional route(s).")
+
 if errors:
     raise SystemExit("\n".join(errors))
 print(f"Passed: {len(pages)} MDX pages, {len(nav_pages)} navigation entries, {local_links} local links/media.")

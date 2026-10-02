@@ -1,0 +1,2239 @@
+{
+  "review_date": "2026-10-01",
+  "review_timezone": "America/Los_Angeles",
+  "country": "US",
+  "provider": "Ahrefs API v3 via connected plugin",
+  "method": "All onboarding types retain a product setup guide. Keyword volume informs wording, while SERP intent prevents targeting consumer resale, travel shopping, or unrelated procurement queries.",
+  "notes": [
+    "Volumes are estimated monthly search averages for the latest known 12 months; global volume covers all countries.",
+    "Not-returned keywords and null metrics are unavailable, not zero. Zero is a returned estimate.",
+    "SERP update dates are retained. The organic filter can return fewer rows than top_positions.",
+    "Guide keywords include reviewed candidates rejected as primary targets; see EVENT_TYPE_REVIEW.md for intent decisions."
+  ],
+  "seed_keywords": [
+    "wine tour booking",
+    "wine tour tickets",
+    "wine tasting event registration",
+    "concert ticketing",
+    "sell concert tickets online",
+    "concert registration",
+    "class registration",
+    "online class registration",
+    "recurring class registration",
+    "meetup registration",
+    "free rsvp",
+    "festival ticketing",
+    "festival registration",
+    "festival day passes",
+    "theatre ticketing",
+    "theater ticketing",
+    "reserved seating ticketing",
+    "sports event registration",
+    "sports ticketing",
+    "conference registration",
+    "conference ticketing",
+    "conference day passes",
+    "workshop registration",
+    "workshop booking",
+    "sell workshop tickets",
+    "seminar registration",
+    "seminar tickets",
+    "party rsvp",
+    "party tickets",
+    "private party registration",
+    "dinner event tickets",
+    "dinner registration",
+    "dinner event seating chart",
+    "comedy show tickets",
+    "comedy ticketing",
+    "sell comedy show tickets",
+    "market event registration",
+    "farmers market registration",
+    "vendor registration",
+    "retreat registration",
+    "retreat payment plans",
+    "retreat booking",
+    "bus tour booking",
+    "bus tour ticketing",
+    "bus tour tickets",
+    "single event registration",
+    "recurring events",
+    "recurring event registration",
+    "multi day event registration",
+    "multi day event tickets",
+    "event day passes",
+    "free event registration",
+    "rsvp event registration",
+    "assigned seating ticketing",
+    "assigned seating tickets",
+    "create an event online",
+    "how to sell tickets for a concert",
+    "how to sell concert tickets for your event",
+    "concert ticketing software",
+    "workshop registration form",
+    "conference registration form",
+    "seminar registration form",
+    "class registration form",
+    "retreat registration form",
+    "dinner event registration",
+    "wine tour booking system",
+    "bus tour booking system",
+    "festival ticketing system",
+    "theatre ticketing software",
+    "comedy club ticketing software",
+    "sports event registration software",
+    "how to create an rsvp event",
+    "how to set up a recurring event",
+    "multi day event registration software",
+    "assigned seating ticketing software",
+    "farmers market event registration",
+    "party rsvp online"
+  ],
+  "seed_keywords_not_returned": [
+    "wine tasting event registration",
+    "recurring class registration",
+    "festival day passes",
+    "conference day passes",
+    "private party registration",
+    "dinner event tickets",
+    "dinner event seating chart",
+    "market event registration",
+    "retreat payment plans",
+    "bus tour ticketing",
+    "single event registration",
+    "recurring event registration",
+    "multi day event registration",
+    "multi day event tickets",
+    "event day passes",
+    "rsvp event registration",
+    "assigned seating tickets",
+    "how to sell concert tickets for your event",
+    "dinner event registration",
+    "wine tour booking system",
+    "bus tour booking system",
+    "comedy club ticketing software",
+    "how to create an rsvp event",
+    "multi day event registration software",
+    "assigned seating ticketing software",
+    "farmers market event registration"
+  ],
+  "guide_keywords": [
+    {
+      "id": "wine-tour",
+      "guide": "event-types/wine-tour",
+      "title": "Set up wine tour bookings and timed tickets",
+      "keywords": [
+        "wine tour booking",
+        "wine tour tickets",
+        "wine tour booking system"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "wine tour booking",
+          "volume": 0,
+          "global_volume": 30,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {},
+          "serp_last_update": null
+        },
+        {
+          "keyword": "wine tour tickets",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {},
+          "serp_last_update": null
+        },
+        {
+          "keyword": "wine tour booking system",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "concert",
+      "guide": "event-types/concert",
+      "title": "Set up concert tickets for your own event",
+      "keywords": [
+        "concert ticketing",
+        "concert ticketing software",
+        "sell concert tickets online"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "concert ticketing",
+          "volume": 150,
+          "global_volume": 400,
+          "difficulty": 91,
+          "parent_topic": "ticketmaster",
+          "intents": {
+            "informational": false,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-23T17:19:20Z"
+        },
+        {
+          "keyword": "concert ticketing software",
+          "volume": 100,
+          "global_volume": 300,
+          "difficulty": 4,
+          "parent_topic": "tix",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-22T00:02:18Z"
+        },
+        {
+          "keyword": "sell concert tickets online",
+          "volume": 800,
+          "global_volume": 1300,
+          "difficulty": 36,
+          "parent_topic": "seatgeek sell tickets",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-29T18:32:38Z"
+        }
+      ]
+    },
+    {
+      "id": "class",
+      "guide": "event-types/class",
+      "title": "Set up class registration and recurring sessions",
+      "keywords": [
+        "class registration",
+        "online class registration",
+        "class registration form",
+        "recurring class registration"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "class registration",
+          "volume": 700,
+          "global_volume": 1400,
+          "difficulty": 0,
+          "parent_topic": "course registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-29T03:15:33Z"
+        },
+        {
+          "keyword": "online class registration",
+          "volume": 50,
+          "global_volume": 80,
+          "difficulty": 4,
+          "parent_topic": "course registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-21T13:43:40Z"
+        },
+        {
+          "keyword": "class registration form",
+          "volume": 150,
+          "global_volume": 150,
+          "difficulty": 0,
+          "parent_topic": "course registration form",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-17T14:08:33Z"
+        },
+        {
+          "keyword": "recurring class registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "meetup",
+      "guide": "event-types/meetup",
+      "title": "Set up meetup registration and RSVPs",
+      "keywords": [
+        "meetup registration",
+        "free event registration",
+        "rsvp event registration"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "meetup registration",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": true,
+            "local": false
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "free event registration",
+          "volume": 250,
+          "global_volume": 600,
+          "difficulty": 43,
+          "parent_topic": "event registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-15T14:17:46Z"
+        },
+        {
+          "keyword": "rsvp event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "festival",
+      "guide": "event-types/festival",
+      "title": "Set up festival tickets, full passes, and day passes",
+      "keywords": [
+        "festival ticketing",
+        "festival ticketing system",
+        "festival day passes"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "festival ticketing",
+          "volume": 150,
+          "global_volume": 600,
+          "difficulty": 42,
+          "parent_topic": "front gate tickets",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-27T23:34:24Z"
+        },
+        {
+          "keyword": "festival ticketing system",
+          "volume": 200,
+          "global_volume": 400,
+          "difficulty": 0,
+          "parent_topic": "sell tickets online",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-10-01T16:26:19Z"
+        },
+        {
+          "keyword": "festival day passes",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "theatre",
+      "guide": "event-types/theatre",
+      "title": "Set up theatre ticketing and reserved seats",
+      "keywords": [
+        "theatre ticketing",
+        "theater ticketing",
+        "theatre ticketing software"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "theatre ticketing",
+          "volume": 10,
+          "global_volume": 20,
+          "difficulty": 64,
+          "parent_topic": "onthestage",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-06T21:05:44Z"
+        },
+        {
+          "keyword": "theater ticketing",
+          "volume": 200,
+          "global_volume": 250,
+          "difficulty": 81,
+          "parent_topic": "saenger theatre",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-17T15:54:38Z"
+        },
+        {
+          "keyword": "theatre ticketing software",
+          "volume": 200,
+          "global_volume": 450,
+          "difficulty": 1,
+          "parent_topic": "theater ticketing software",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-14T15:45:41Z"
+        }
+      ]
+    },
+    {
+      "id": "sports-event",
+      "guide": "event-types/sports-event",
+      "title": "Set up sports event registration and tickets",
+      "keywords": [
+        "sports event registration",
+        "sports ticketing",
+        "sports event registration software"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "sports event registration",
+          "volume": 40,
+          "global_volume": 80,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "sports ticketing",
+          "volume": 70,
+          "global_volume": 150,
+          "difficulty": 74,
+          "parent_topic": "seatgeek",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-24T02:11:30Z"
+        },
+        {
+          "keyword": "sports event registration software",
+          "volume": 10,
+          "global_volume": 50,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": null
+        }
+      ]
+    },
+    {
+      "id": "conference",
+      "guide": "event-types/conference",
+      "title": "Set up conference registration and conference passes",
+      "keywords": [
+        "conference registration",
+        "conference registration form",
+        "conference ticketing"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "conference registration",
+          "volume": 400,
+          "global_volume": 900,
+          "difficulty": 12,
+          "parent_topic": "conference registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-15T06:14:10Z"
+        },
+        {
+          "keyword": "conference registration form",
+          "volume": 400,
+          "global_volume": 700,
+          "difficulty": 1,
+          "parent_topic": "conference registration form",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-25T11:08:53Z"
+        },
+        {
+          "keyword": "conference ticketing",
+          "volume": 150,
+          "global_volume": 200,
+          "difficulty": 61,
+          "parent_topic": "intix",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-22T09:05:15Z"
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "guide": "event-types/workshop",
+      "title": "Set up workshop registration and sell workshop tickets",
+      "keywords": [
+        "workshop registration",
+        "workshop registration form",
+        "sell workshop tickets"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "workshop registration",
+          "volume": 30,
+          "global_volume": 100,
+          "difficulty": 0,
+          "parent_topic": "workshop registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-12T06:31:07Z"
+        },
+        {
+          "keyword": "workshop registration form",
+          "volume": 150,
+          "global_volume": 300,
+          "difficulty": 0,
+          "parent_topic": "workshop registration form template",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-02T16:56:09Z"
+        },
+        {
+          "keyword": "sell workshop tickets",
+          "volume": 40,
+          "global_volume": 80,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {},
+          "serp_last_update": null
+        }
+      ]
+    },
+    {
+      "id": "seminar",
+      "guide": "event-types/seminar",
+      "title": "Set up seminar registration and attendee forms",
+      "keywords": [
+        "seminar registration",
+        "seminar registration form",
+        "seminar tickets"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "seminar registration",
+          "volume": 20,
+          "global_volume": 60,
+          "difficulty": 0,
+          "parent_topic": "seminar registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-06T13:46:59Z"
+        },
+        {
+          "keyword": "seminar registration form",
+          "volume": 150,
+          "global_volume": 200,
+          "difficulty": 0,
+          "parent_topic": "seminar registration form",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-09T21:44:09Z"
+        },
+        {
+          "keyword": "seminar tickets",
+          "volume": 10,
+          "global_volume": 20,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": false,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": null
+        }
+      ]
+    },
+    {
+      "id": "party",
+      "guide": "event-types/party",
+      "title": "Set up party RSVPs and guest registration",
+      "keywords": [
+        "party rsvp",
+        "party rsvp online",
+        "party tickets"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "party rsvp",
+          "volume": 350,
+          "global_volume": 450,
+          "difficulty": 0,
+          "parent_topic": "partiful",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-29T01:56:55Z"
+        },
+        {
+          "keyword": "party rsvp online",
+          "volume": 20,
+          "global_volume": 20,
+          "difficulty": 0,
+          "parent_topic": "evite",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-25T21:54:32Z"
+        },
+        {
+          "keyword": "party tickets",
+          "volume": 100,
+          "global_volume": 400,
+          "difficulty": 78,
+          "parent_topic": "party tickets",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": true
+          },
+          "serp_last_update": "2026-08-25T05:41:23Z"
+        }
+      ]
+    },
+    {
+      "id": "dinner",
+      "guide": "event-types/dinner",
+      "title": "Set up dinner event tickets and guest seating",
+      "keywords": [
+        "dinner event tickets",
+        "dinner registration",
+        "dinner event seating chart"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "dinner event tickets",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "dinner registration",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": null,
+          "serp_last_update": null
+        },
+        {
+          "keyword": "dinner event seating chart",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "comedy-show",
+      "guide": "event-types/comedy-show",
+      "title": "Set up ticket sales for a comedy show",
+      "keywords": [
+        "comedy show tickets",
+        "comedy ticketing",
+        "sell comedy show tickets"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "comedy show tickets",
+          "volume": 700,
+          "global_volume": 1100,
+          "difficulty": 6,
+          "parent_topic": "stand up comedy near me",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": true
+          },
+          "serp_last_update": "2026-09-10T01:08:51Z"
+        },
+        {
+          "keyword": "comedy ticketing",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": true
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "sell comedy show tickets",
+          "volume": 50,
+          "global_volume": 90,
+          "difficulty": 28,
+          "parent_topic": "seatgeek sell tickets",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-30T09:36:05Z"
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "guide": "event-types/market",
+      "title": "Set up market events and visitor registration",
+      "keywords": [
+        "market event registration",
+        "farmers market registration",
+        "vendor registration"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "market event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "farmers market registration",
+          "volume": 10,
+          "global_volume": 10,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": true
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "vendor registration",
+          "volume": 80,
+          "global_volume": 1700,
+          "difficulty": 0,
+          "parent_topic": "vendor procurement",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-28T10:06:09Z"
+        }
+      ]
+    },
+    {
+      "id": "retreat",
+      "guide": "event-types/retreat",
+      "title": "Set up retreat registration and payment options",
+      "keywords": [
+        "retreat registration",
+        "retreat registration form",
+        "retreat payment plans",
+        "retreat booking"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "retreat registration",
+          "volume": 10,
+          "global_volume": 10,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "retreat registration form",
+          "volume": 150,
+          "global_volume": 150,
+          "difficulty": 0,
+          "parent_topic": "retreat registration form",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-06-29T21:22:55Z"
+        },
+        {
+          "keyword": "retreat payment plans",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "retreat booking",
+          "volume": 70,
+          "global_volume": 200,
+          "difficulty": 70,
+          "parent_topic": "bookretreats",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-08-23T08:13:25Z"
+        }
+      ]
+    },
+    {
+      "id": "bus-tour",
+      "guide": "event-types/bus-tour",
+      "title": "Set up bus tour bookings and departure tickets",
+      "keywords": [
+        "bus tour booking",
+        "bus tour tickets",
+        "bus tour ticketing",
+        "bus tour booking system"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "bus tour booking",
+          "volume": 10,
+          "global_volume": 60,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {},
+          "serp_last_update": null
+        },
+        {
+          "keyword": "bus tour tickets",
+          "volume": 10,
+          "global_volume": 90,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": true
+          },
+          "serp_last_update": null
+        },
+        {
+          "keyword": "bus tour ticketing",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "bus tour booking system",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "single-event",
+      "guide": "event-types/single-event",
+      "title": "Set up a single event with tickets or RSVP",
+      "keywords": [
+        "single event registration",
+        "create an event online"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "single event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "create an event online",
+          "volume": 90,
+          "global_volume": 250,
+          "difficulty": 0,
+          "parent_topic": "how to create an event on eventbrite",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": true,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-27T09:24:02Z"
+        }
+      ]
+    },
+    {
+      "id": "repeating-event",
+      "guide": "event-types/repeating-event",
+      "title": "Set up recurring event registration",
+      "keywords": [
+        "recurring events",
+        "recurring event registration",
+        "how to set up a recurring event"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "recurring events",
+          "volume": 100,
+          "global_volume": 200,
+          "difficulty": 0,
+          "parent_topic": "recurring schedule",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": false,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-27T10:47:44Z"
+        },
+        {
+          "keyword": "recurring event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "how to set up a recurring event",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": null,
+          "serp_last_update": null
+        }
+      ]
+    },
+    {
+      "id": "multi-day-event",
+      "guide": "event-types/multi-day-event",
+      "title": "Set up multi-day event tickets and day passes",
+      "keywords": [
+        "multi day event registration",
+        "multi day event tickets",
+        "event day passes"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "multi day event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "multi day event tickets",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "event day passes",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "free-rsvp",
+      "guide": "event-types/free-rsvp",
+      "title": "Set up free event registration and RSVP",
+      "keywords": [
+        "free event registration",
+        "free rsvp",
+        "rsvp event registration"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "free event registration",
+          "volume": 250,
+          "global_volume": 600,
+          "difficulty": 43,
+          "parent_topic": "event registration",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-15T14:17:46Z"
+        },
+        {
+          "keyword": "free rsvp",
+          "volume": 700,
+          "global_volume": 1000,
+          "difficulty": 65,
+          "parent_topic": "rsvpify",
+          "intents": {
+            "informational": true,
+            "navigational": false,
+            "commercial": true,
+            "transactional": false,
+            "branded": false,
+            "local": false
+          },
+          "serp_last_update": "2026-09-23T15:12:05Z"
+        },
+        {
+          "keyword": "rsvp event registration",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    },
+    {
+      "id": "assigned-seating",
+      "guide": "event-types/assigned-seating",
+      "title": "Set up assigned seating and seat-based ticket prices",
+      "keywords": [
+        "assigned seating ticketing",
+        "assigned seating tickets",
+        "assigned seating ticketing software"
+      ],
+      "keyword_metrics": [
+        {
+          "keyword": "assigned seating ticketing",
+          "volume": 0,
+          "global_volume": 0,
+          "difficulty": null,
+          "parent_topic": null,
+          "intents": {},
+          "serp_last_update": null
+        },
+        {
+          "keyword": "assigned seating tickets",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        },
+        {
+          "keyword": "assigned seating ticketing software",
+          "status": "not_returned",
+          "volume": null,
+          "global_volume": null,
+          "difficulty": null
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "tool": "keywords-explorer-overview",
+      "params": {
+        "country": "US",
+        "keywords": "wine tour booking,wine tour tickets,wine tasting event registration,concert ticketing,sell concert tickets online,concert registration,class registration,online class registration,recurring class registration,meetup registration,free rsvp,festival ticketing,festival registration,festival day passes,theatre ticketing,theater ticketing,reserved seating ticketing,sports event registration,sports ticketing,conference registration,conference ticketing,conference day passes,workshop registration,workshop booking,sell workshop tickets,seminar registration,seminar tickets,party rsvp,party tickets,private party registration,dinner event tickets,dinner registration,dinner event seating chart,comedy show tickets,comedy ticketing,sell comedy show tickets,market event registration,farmers market registration,vendor registration,retreat registration,retreat payment plans,retreat booking,bus tour booking,bus tour ticketing,bus tour tickets,single event registration,recurring events,recurring event registration,multi day event registration,multi day event tickets,event day passes,free event registration,rsvp event registration,assigned seating ticketing,assigned seating tickets,create an event online",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic,intents,serp_last_update",
+        "limit": 56,
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "sports event registration",
+            "volume": 40,
+            "global_volume": 80,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "bus tour booking",
+            "volume": 10,
+            "global_volume": 60,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "online class registration",
+            "volume": 50,
+            "global_volume": 80,
+            "difficulty": 4,
+            "parent_topic": "course registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-21T13:43:40Z"
+          },
+          {
+            "keyword": "assigned seating ticketing",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "reserved seating ticketing",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "wine tour booking",
+            "volume": 0,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "sell workshop tickets",
+            "volume": 40,
+            "global_volume": 80,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "workshop booking",
+            "volume": 10,
+            "global_volume": 50,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "create an event online",
+            "volume": 90,
+            "global_volume": 250,
+            "difficulty": 0,
+            "parent_topic": "how to create an event on eventbrite",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-27T09:24:02Z"
+          },
+          {
+            "keyword": "theater ticketing",
+            "volume": 200,
+            "global_volume": 250,
+            "difficulty": 81,
+            "parent_topic": "saenger theatre",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-17T15:54:38Z"
+          },
+          {
+            "keyword": "workshop registration",
+            "volume": 30,
+            "global_volume": 100,
+            "difficulty": 0,
+            "parent_topic": "workshop registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-12T06:31:07Z"
+          },
+          {
+            "keyword": "conference ticketing",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": 61,
+            "parent_topic": "intix",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-22T09:05:15Z"
+          },
+          {
+            "keyword": "vendor registration",
+            "volume": 80,
+            "global_volume": 1700,
+            "difficulty": 0,
+            "parent_topic": "vendor procurement",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-28T10:06:09Z"
+          },
+          {
+            "keyword": "theatre ticketing",
+            "volume": 10,
+            "global_volume": 20,
+            "difficulty": 64,
+            "parent_topic": "onthestage",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-06T21:05:44Z"
+          },
+          {
+            "keyword": "festival ticketing",
+            "volume": 150,
+            "global_volume": 600,
+            "difficulty": 42,
+            "parent_topic": "front gate tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-27T23:34:24Z"
+          },
+          {
+            "keyword": "sports ticketing",
+            "volume": 70,
+            "global_volume": 150,
+            "difficulty": 74,
+            "parent_topic": "seatgeek",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-24T02:11:30Z"
+          },
+          {
+            "keyword": "retreat registration",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "concert registration",
+            "volume": 0,
+            "global_volume": 20,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "concert ticketing",
+            "volume": 150,
+            "global_volume": 400,
+            "difficulty": 91,
+            "parent_topic": "ticketmaster",
+            "intents": {
+              "informational": false,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-23T17:19:20Z"
+          },
+          {
+            "keyword": "recurring events",
+            "volume": 100,
+            "global_volume": 200,
+            "difficulty": 0,
+            "parent_topic": "recurring schedule",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-27T10:47:44Z"
+          },
+          {
+            "keyword": "farmers market registration",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "bus tour tickets",
+            "volume": 10,
+            "global_volume": 90,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "wine tour tickets",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "free event registration",
+            "volume": 250,
+            "global_volume": 600,
+            "difficulty": 43,
+            "parent_topic": "event registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-15T14:17:46Z"
+          },
+          {
+            "keyword": "comedy ticketing",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "sell concert tickets online",
+            "volume": 800,
+            "global_volume": 1300,
+            "difficulty": 36,
+            "parent_topic": "seatgeek sell tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-29T18:32:38Z"
+          },
+          {
+            "keyword": "comedy show tickets",
+            "volume": 700,
+            "global_volume": 1100,
+            "difficulty": 6,
+            "parent_topic": "stand up comedy near me",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": "2026-09-10T01:08:51Z"
+          },
+          {
+            "keyword": "party rsvp",
+            "volume": 350,
+            "global_volume": 450,
+            "difficulty": 0,
+            "parent_topic": "partiful",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-29T01:56:55Z"
+          },
+          {
+            "keyword": "sell comedy show tickets",
+            "volume": 50,
+            "global_volume": 90,
+            "difficulty": 28,
+            "parent_topic": "seatgeek sell tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-30T09:36:05Z"
+          },
+          {
+            "keyword": "party tickets",
+            "volume": 100,
+            "global_volume": 400,
+            "difficulty": 78,
+            "parent_topic": "party tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": "2026-08-25T05:41:23Z"
+          },
+          {
+            "keyword": "free rsvp",
+            "volume": 700,
+            "global_volume": 1000,
+            "difficulty": 65,
+            "parent_topic": "rsvpify",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-23T15:12:05Z"
+          },
+          {
+            "keyword": "class registration",
+            "volume": 700,
+            "global_volume": 1400,
+            "difficulty": 0,
+            "parent_topic": "course registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-29T03:15:33Z"
+          },
+          {
+            "keyword": "conference registration",
+            "volume": 400,
+            "global_volume": 900,
+            "difficulty": 12,
+            "parent_topic": "conference registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-15T06:14:10Z"
+          },
+          {
+            "keyword": "meetup registration",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "seminar tickets",
+            "volume": 10,
+            "global_volume": 20,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": false,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "seminar registration",
+            "volume": 20,
+            "global_volume": 60,
+            "difficulty": 0,
+            "parent_topic": "seminar registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-06T13:46:59Z"
+          },
+          {
+            "keyword": "retreat booking",
+            "volume": 70,
+            "global_volume": 200,
+            "difficulty": 70,
+            "parent_topic": "bookretreats",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-23T08:13:25Z"
+          },
+          {
+            "keyword": "dinner registration",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": null,
+            "serp_last_update": null
+          },
+          {
+            "keyword": "festival registration",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "workshop registration",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "Create Free Workshop Registration Form Templates",
+            "url": "https://www.jotform.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-12T06:31:07Z"
+          },
+          {
+            "position": 3,
+            "title": "Workshop Registration Form Template",
+            "url": "https://www.surveymonkey.com/templates/workshop-registration-form-template/",
+            "page_type": "/Listing,/Listing/Product",
+            "update_date": "2026-09-12T06:31:07Z"
+          },
+          {
+            "position": 4,
+            "title": "All-in-One Software for Workshop Registration",
+            "url": "https://www.eventleaf.com/event-management-platform",
+            "page_type": null,
+            "update_date": "2026-09-12T06:31:07Z"
+          },
+          {
+            "position": 5,
+            "title": "Free Workshop Registration Form Template",
+            "url": "https://www.123formbuilder.com/free-form-templates/Workshop-Registration-Form-3325194/",
+            "page_type": "/Listing,/Listing/Product",
+            "update_date": "2026-09-12T06:31:07Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "conference registration",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "Conference Registration",
+            "url": "https://www.acm.org/special-interest-groups/volunteer-resources/conference-planning/conference-registration",
+            "page_type": "/Core_Page,/Core_Page/Services_Page",
+            "update_date": "2026-09-15T06:14:10Z"
+          },
+          {
+            "position": 3,
+            "title": "Conference and Registration Services",
+            "url": "https://uwconferencesevents.wisc.edu/services/conference-and-registration/",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-09-15T06:14:10Z"
+          },
+          {
+            "position": 4,
+            "title": "15 Best Event Registration Platforms & Tools for 2026",
+            "url": "https://whova.com/blog/event-registration-software-price-comparison/",
+            "page_type": null,
+            "update_date": "2026-09-15T06:14:10Z"
+          },
+          {
+            "position": 5,
+            "title": "Free Conference Registration Form Template",
+            "url": "https://aidaform.com/templates/conference-registration-form.html",
+            "page_type": "/Article,/Article/How_to",
+            "update_date": "2026-09-15T06:14:10Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "class registration",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 1,
+            "title": "Class Registration Software",
+            "url": "https://www.gravyty.com/products/class-registration-software",
+            "page_type": "/Listing,/Listing/Product",
+            "update_date": "2026-09-29T03:15:33Z"
+          },
+          {
+            "position": 3,
+            "title": "Class Registration | Derby Recreation Commission, KS",
+            "url": "https://www.rockriverrapids.com/226/Class-Registration",
+            "page_type": null,
+            "update_date": "2026-09-29T03:15:33Z"
+          },
+          {
+            "position": 4,
+            "title": "UI resources simplify navigating class registration",
+            "url": "https://dailyillini.com/special-sections/new-student-edition/2026/07/23/navigating-class-registration/",
+            "page_type": null,
+            "update_date": "2026-09-29T03:15:33Z"
+          },
+          {
+            "position": 5,
+            "title": "SHAC Center - Class Registration",
+            "url": "https://www.gomotionapp.com/team/nyshac/page/system/classreg-shopping?classId=577100&subProgId=74022",
+            "page_type": "/Listing,/Listing/Business",
+            "update_date": "2026-09-29T03:15:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "party rsvp",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 1,
+            "title": "Party Rsvp Tracker Spreadsheet Reminder Messages",
+            "url": "https://www.pinterest.com/ideas/party-RSVP-tracker-spreadsheet-reminder-messages/925449508026/",
+            "page_type": null,
+            "update_date": "2026-09-29T01:56:55Z"
+          },
+          {
+            "position": 5,
+            "title": "Party rsvp card template Images",
+            "url": "https://www.magnific.com/free-photos-vectors/party-rsvp-card-template",
+            "page_type": null,
+            "update_date": "2026-09-29T01:56:55Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "retreat booking",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 1,
+            "title": "BookRetreats.com: The World's #1 Retreat Site • BookRetreats ...",
+            "url": "https://bookretreats.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-08-23T08:13:25Z"
+          },
+          {
+            "position": 2,
+            "title": "Retreat Guru: Find & Book Top Healing & Wellness Retreats",
+            "url": "https://retreat.guru/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-08-23T08:13:25Z"
+          },
+          {
+            "position": 3,
+            "title": "Retreat Finder: Yoga, Meditation & Mindfulness, Health ...",
+            "url": "https://www.retreatfinder.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-08-23T08:13:25Z"
+          },
+          {
+            "position": 4,
+            "title": "5 Retreat Booking Sites : Recommendations That Convert",
+            "url": "https://www.squadtrip.com/guides/retreat-booking-sites/",
+            "page_type": "/Article,/Article/Listicle",
+            "update_date": "2026-08-23T08:13:25Z"
+          },
+          {
+            "position": 5,
+            "title": "BookYogaRetreats: The World's Largest Yoga Retreat ...",
+            "url": "https://www.bookyogaretreats.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-08-23T08:13:25Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "sell concert tickets online",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "Sell Tickets",
+            "url": "https://seatgeek.com/sell",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-09-29T18:32:38Z"
+          },
+          {
+            "position": 3,
+            "title": "Sell Your Tickets at Ticketmaster | Concerts, Sports, Theater",
+            "url": "https://www.ticketmaster.com/sell",
+            "page_type": null,
+            "update_date": "2026-09-29T18:32:38Z"
+          },
+          {
+            "position": 4,
+            "title": "Buy and Sell Tickets: Concerts, Sports & Theater | Vivid Seats",
+            "url": "https://www.vividseats.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-29T18:32:38Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-overview",
+      "params": {
+        "country": "US",
+        "keywords": "how to sell tickets for a concert,how to sell concert tickets for your event,concert ticketing software,workshop registration form,conference registration form,seminar registration form,class registration form,retreat registration form,dinner event registration,wine tour booking system,bus tour booking system,festival ticketing system,theatre ticketing software,comedy club ticketing software,sports event registration software,how to create an rsvp event,how to set up a recurring event,multi day event registration software,assigned seating ticketing software,farmers market event registration,party rsvp online",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic,intents,serp_last_update",
+        "limit": 21,
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "retreat registration form",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "parent_topic": "retreat registration form",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-06-29T21:22:55Z"
+          },
+          {
+            "keyword": "workshop registration form",
+            "volume": 150,
+            "global_volume": 300,
+            "difficulty": 0,
+            "parent_topic": "workshop registration form template",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-02T16:56:09Z"
+          },
+          {
+            "keyword": "seminar registration form",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": 0,
+            "parent_topic": "seminar registration form",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-09T21:44:09Z"
+          },
+          {
+            "keyword": "party rsvp online",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": 0,
+            "parent_topic": "evite",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-25T21:54:32Z"
+          },
+          {
+            "keyword": "festival ticketing system",
+            "volume": 200,
+            "global_volume": 400,
+            "difficulty": 0,
+            "parent_topic": "sell tickets online",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-10-01T16:26:19Z"
+          },
+          {
+            "keyword": "class registration form",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "parent_topic": "course registration form",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-17T14:08:33Z"
+          },
+          {
+            "keyword": "theatre ticketing software",
+            "volume": 200,
+            "global_volume": 450,
+            "difficulty": 1,
+            "parent_topic": "theater ticketing software",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-14T15:45:41Z"
+          },
+          {
+            "keyword": "concert ticketing software",
+            "volume": 100,
+            "global_volume": 300,
+            "difficulty": 4,
+            "parent_topic": "tix",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-22T00:02:18Z"
+          },
+          {
+            "keyword": "how to sell tickets for a concert",
+            "volume": 40,
+            "global_volume": 100,
+            "difficulty": 22,
+            "parent_topic": "resale tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-16T19:02:05Z"
+          },
+          {
+            "keyword": "sports event registration software",
+            "volume": 10,
+            "global_volume": 50,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "how to set up a recurring event",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null,
+            "intents": null,
+            "serp_last_update": null
+          },
+          {
+            "keyword": "conference registration form",
+            "volume": 400,
+            "global_volume": 700,
+            "difficulty": 1,
+            "parent_topic": "conference registration form",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-25T11:08:53Z"
+          }
+        ]
+      }
+    }
+  ]
+}

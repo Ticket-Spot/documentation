@@ -1,0 +1,331 @@
+{
+  "source": "eventviewer-dashboard/src/redesign/features/Onboarding/templates.ts",
+  "reviewed_date": "2026-10-01",
+  "templates": [
+    {
+      "id": "wine-tour",
+      "label": "Wine Tour",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": true,
+        "ticketName": "Adult Ticket",
+        "capacity": 20,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/wine-tour"
+    },
+    {
+      "id": "concert",
+      "label": "Concert",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/concert"
+    },
+    {
+      "id": "class",
+      "label": "Class",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "repeating",
+        "timeSlots": false,
+        "ticketName": "Class Pass",
+        "repeatOn": "weekly",
+        "capacity": 20,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/class"
+    },
+    {
+      "id": "meetup",
+      "label": "Meetup",
+      "group": "primary",
+      "defaults": {
+        "attendance": "rsvp",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/meetup"
+    },
+    {
+      "id": "festival",
+      "label": "Festival",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "multiple",
+        "timeSlots": false,
+        "ticketName": "Full Festival Pass",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/festival"
+    },
+    {
+      "id": "theatre",
+      "label": "Theatre",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": true,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "Adult Ticket",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/theatre"
+    },
+    {
+      "id": "sports-event",
+      "label": "Sports Event",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/sports-event"
+    },
+    {
+      "id": "conference",
+      "label": "Conference",
+      "group": "primary",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "multiple",
+        "timeSlots": false,
+        "ticketName": "Conference Pass",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/conference"
+    },
+    {
+      "id": "workshop",
+      "label": "Workshop",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "Workshop Seat",
+        "capacity": 20,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/workshop"
+    },
+    {
+      "id": "seminar",
+      "label": "Seminar",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "Seminar Ticket",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/seminar"
+    },
+    {
+      "id": "party",
+      "label": "Party",
+      "group": "popular",
+      "defaults": {
+        "attendance": "rsvp",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/party"
+    },
+    {
+      "id": "dinner",
+      "label": "Dinner",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "Dinner Seat",
+        "capacity": 40,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/dinner"
+    },
+    {
+      "id": "comedy-show",
+      "label": "Comedy Show",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/comedy-show"
+    },
+    {
+      "id": "market",
+      "label": "Market",
+      "group": "popular",
+      "defaults": {
+        "attendance": "rsvp",
+        "seating": false,
+        "datePattern": "repeating",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "repeatOn": "weekly",
+        "capacity": null,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/market"
+    },
+    {
+      "id": "retreat",
+      "label": "Retreat",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "multiple",
+        "timeSlots": false,
+        "ticketName": "Retreat Pass",
+        "capacity": 30,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/retreat"
+    },
+    {
+      "id": "bus-tour",
+      "label": "Bus Tour",
+      "group": "popular",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": true,
+        "ticketName": "Tour Seat",
+        "capacity": 20,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/bus-tour"
+    },
+    {
+      "id": "single-event",
+      "label": "Single Event",
+      "group": "advanced",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/single-event"
+    },
+    {
+      "id": "repeating-event",
+      "label": "Repeating Event",
+      "group": "advanced",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "repeating",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "repeatOn": "weekly",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/repeating-event"
+    },
+    {
+      "id": "multi-day-event",
+      "label": "Multi-day Event",
+      "group": "advanced",
+      "defaults": {
+        "attendance": "paid",
+        "seating": false,
+        "datePattern": "multiple",
+        "timeSlots": false,
+        "ticketName": "Event Pass",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/multi-day-event"
+    },
+    {
+      "id": "free-rsvp",
+      "label": "Free RSVP",
+      "group": "advanced",
+      "defaults": {
+        "attendance": "rsvp",
+        "seating": false,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "General Admission",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/free-rsvp"
+    },
+    {
+      "id": "assigned-seating",
+      "label": "Assigned Seating",
+      "group": "advanced",
+      "defaults": {
+        "attendance": "paid",
+        "seating": true,
+        "datePattern": "single",
+        "timeSlots": false,
+        "ticketName": "Adult Ticket",
+        "capacity": 100,
+        "ticketPrice": 25
+      },
+      "guide": "event-types/assigned-seating"
+    }
+  ],
+  "additional_routes": [
+    {
+      "id": "scratch",
+      "label": "Start from scratch",
+      "guide": "event-types/start-from-scratch"
+    }
+  ]
+}

@@ -26,6 +26,54 @@
             ]
           },
           {
+            "group": "Set up your event type",
+            "pages": [
+              "event-types/overview",
+              {
+                "group": "Tours and activities",
+                "pages": [
+                  "event-types/wine-tour",
+                  "event-types/bus-tour",
+                  "event-types/class",
+                  "event-types/workshop",
+                  "event-types/retreat",
+                  "event-types/sports-event"
+                ]
+              },
+              {
+                "group": "Shows and multi-day events",
+                "pages": [
+                  "event-types/concert",
+                  "event-types/theatre",
+                  "event-types/comedy-show",
+                  "event-types/festival",
+                  "event-types/conference",
+                  "event-types/seminar"
+                ]
+              },
+              {
+                "group": "Community and social events",
+                "pages": [
+                  "event-types/meetup",
+                  "event-types/party",
+                  "event-types/dinner",
+                  "event-types/market"
+                ]
+              },
+              {
+                "group": "Other formats",
+                "pages": [
+                  "event-types/single-event",
+                  "event-types/repeating-event",
+                  "event-types/multi-day-event",
+                  "event-types/free-rsvp",
+                  "event-types/assigned-seating",
+                  "event-types/start-from-scratch"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Event Management",
             "pages": [
               "event-management/create-event-overview",

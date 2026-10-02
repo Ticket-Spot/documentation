@@ -35,4 +35,6 @@ python3 scripts/check-documentation.py --dashboard /path/to/eventviewer-dashboar
 
 The source check compares every indexed widget control and all named plan features; it does not prove that authenticated purchases, delivery, or check-in work. Keep the generated option markers inside the reference pages. Update the surrounding workflow prose when behavior or prerequisites change.
 
+The same source check compares the onboarding template IDs with `event-types/onboarding-map.json` and verifies that each maps to a navigable guide with a matching `onboardingTemplate` field. When onboarding changes, update the guide's starting choices and the coverage map together. See [the event-type review](EVENT_TYPE_REVIEW.md) for source evidence and the Ahrefs keyword decisions.
+
 See [the October 2026 review](./DOCUMENTATION_REVIEW.md) for coverage, source evidence, product-label mismatches, and the remaining browser verification checklist.
