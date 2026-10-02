@@ -1,0 +1,77 @@
+---
+title: "Shopify Ticket Selector setup and options"
+description: "Install the product-page selector, choose inline or modal display, and verify dates, tickets, seats, questions, and Shopify checkout."
+---
+
+The **Ticket Selector** is the product-page app block for the Ticket Spot booking flow. Use it for dates/time slots, assigned seating, hidden-ticket access codes, required tickets, and quantity rules. It selects the tickets and passes the purchase to Shopify checkout.
+
+## Before you start
+
+Connect the Shopify store, create the event, configure its ticket offer, and publish/update the linked Shopify product. For seating, use a published chart and assign ticket categories. See [Connect Shopify](./connect-shopify) and [seating setup](/seating-charts/create-and-assign).
+
+## Install the product block
+
+1. Open your Shopify theme editor and choose the **product template assigned to the event product**.
+2. Add the **Ticket Selector** app block inside the product section.
+3. Choose **Display Mode**:
+
+| Mode | Customer experience |
+|---|---|
+| **Embed inline** | The selector is visible inside the product page. This is the block's default. |
+| **Modal** | A button opens the selector in a dialog. Close the dialog to return to the product page. |
+
+4. Save the template and open the actual event product using that template.
+5. Review any standard product variant or buy controls still on the template. Ensure customers can reach the intended ticket-selection flow without a competing purchase path that omits its required selections.
+6. Test the page on desktop and mobile, including the enlarged seating view when seating is enabled.
+
+The block has one theme setting: **Display Mode**. Configure ticket rules in the event editor, widget design and wording in **Design → Widget**, and product behavior in **Shopify Setup**. Changing display mode does not change ticket inventory or pricing.
+
+## Choose the correct Shopify block
+
+| Block or feature | Purpose |
+|---|---|
+| **Ticket Selector** | Advanced ticket selection on a product template, inline or modal. |
+| **Event Widget** | An event listing embedded in a theme section. Set **Widget Id** to the widget you created in Ticket Spot. |
+| **Additional Questions** | A separate product-page app block for Ticket Spot questions. Review the installed purchase flow so questions are collected in the intended place. |
+| **Event Controls / Ticket Spot Controls** | Legacy app embed/product controls. Its setting is separate from the current Ticket Selector block. |
+| **Ticket Spot – Ticket Access** | Post-purchase ticket access on the Thank You page. Configure it separately in the checkout editor. |
+
+## Product settings and attendee details
+
+Open the event's **Shopify Setup**. Collection controls where the product is organized; Location is the Shopify inventory location, separate from the attendee-facing venue. Product configuration includes **Buy Tickets Button Text** (or **Button Text**), **Use Advanced Ticket Selector**, and **Display Ticket Status on Button**. The last option disables the product button and shows its status when the event is ended, sold out, or unavailable. Select **Save Changes** in this panel.
+
+For per-ticket details, use **Design → Widget → Checkout → Collect attendee details for each ticket** and configure event questions.
+
+Logged-in Shopify customer details can prefill the selector. Test both a signed-in customer and a guest.
+
+## Dates, seats, and access
+
+Choose the event occurrence before checking its availability. Depending on the widget configuration, tickets may appear before dates or on the same step. [Custom day tickets](/event-management/day-specific-tickets) can differ from the shared event offer.
+
+For seating, select available objects on the map and choose the applicable ticket price when a category offers multiple ticket types. Confirm the chosen seats, quantities, and total before continuing. A temporary seat selection is not a completed booking.
+
+For hidden tickets, enable the access-code field in widget Checkout settings. Keep full invitation links intact for [waitlist purchases](/event-management/waitlist); removing their personalized information can remove access.
+
+## Verify the complete purchase
+
+Test each feature the event uses:
+
+- Two dates/time slots, including one with different custom tickets or sold-out inventory.
+- Each seating category and price choice, plus an unavailable seat and mobile full-screen selection.
+- A valid and invalid access code; a dependent ticket with and without its Required Ticket.
+- Minimum/maximum quantities, per-attendee details, and required questions.
+- A waitlist invitation, its ticket restriction, and its quantity limit.
+- The handoff to Shopify cart or checkout, completed order, Ticket Spot attendee records, ticket delivery, and Thank You page access.
+
+## Troubleshooting
+
+| Problem | Check |
+|---|---|
+| Selector missing | The event is published to the linked product, the app block is saved, and that product uses the edited template. |
+| A date/ticket is missing | Event status, sales window, advance-purchase rule, capacity, day ticket source, hidden/member access, and Shopify synchronization. |
+| Wrong ticket or outdated price | Update the linked product after changing the ticket offer, then test the published product again. |
+| Seating map unavailable | Published chart, category assignments, occurrence setup, and reserved-seating quota. |
+| Duplicate buy controls or question forms | Review the product template's native controls, legacy embed, and installed app blocks together. |
+| Tickets missing after payment | Confirm the Shopify order completed and reached the correct event's attendee list. Thank You block installation and email delivery are separate checks. |
+
+Continue with [Shopify connection and Thank You setup](./connect-shopify) or [seat selection](/seating-charts/seat-selection).

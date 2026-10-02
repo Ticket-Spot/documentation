@@ -1,102 +1,88 @@
 ---
-title: "Checkout Settings"
-description: "Customize widget checkout fields, labels, date display, and ticket-selection options."
+title: "Widget checkout settings"
+description: "Set attendee-information collection, date display, discount and access-code fields, and order summaries."
 ---
 
-**Checkout** settings allow you to control how the checkout experience looks and functions inside
-the widget. You can adjust what details appear, how dates and times are shown, whether promo
-codes are allowed, and what information attendees must provide before completing their order.
-This helps you create a smooth, clear, and reliable checkout flow so attendees can complete
-their purchase without confusion.
+Open **Design → Widget → All Settings → Checkout** for the selected widget. The sections are **Date & time on the checkout page**, **Promo & access codes**, **Attendee information**, **Cart & pricing**, and **Multi-event cart**.
 
+1. Choose checkout date/time formats and which start/end values and timezone to show.
+2. Enable **Show promo code field** for discounts and **Show access code field** for hidden-ticket codes. Choose whether either input opens automatically and where promo codes appear.
+3. Turn on **Collect attendee details for each ticket** if each guest must supply their own information. Enable **Ask buyers to re-enter their email** to require matching entries.
+4. Choose whether to show remaining ticket quantity, hide the cart summary, or hide the free-ticket price label.
+5. Wait for saving, then complete a test checkout using the installed widget.
 
-From the Widget Customization dropdown, select the **Checkout** option.
+See the [complete checkout reference](./widget-checkout-reference) for every control. Configure actual ticket rules in [Tickets](/event-management/ticket-setup) and question requirements in [Additional Info](/event-management/additional-information).
 
-![design](../assets/branding-and-design/checkout-settings/checkout-1.png)
+## Cart across multiple events
 
-You will see the list of available settings:
+Open **Checkout → Multi-event cart** and turn on **Allow a cart across events and time slots** to let buyers collect tickets across events or time slots and pay once. This setting applies to every widget on the site. With it off, checkout contains one event selection and its add-ons.
 
-- Date and Time
-- Promo Code
-- Attendee Information
-- Ticket Information
-- Pricing Details
+<Frame caption="All Settings → Checkout → Multi-event cart enables one cart across events and time slots for this site.">
+  <img src="../assets/refresh/branding-and-design/widget-checkout-dates-prices-cart.png" alt="All Settings → Checkout → Multi-event cart enables one cart across events and time slots for this site." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-Click the **arrow icon** next to the setting you want to customize to open its configuration options.
+The same site-wide switch is also available as **Settings → General → Enable Cart**. Changing either location affects the same site setting. It is separate from **Hide the cart summary**, which only changes the checkout presentation.
 
-![design](../assets/branding-and-design/checkout-settings/arrow-2.png)
+To check the result, add tickets from one event or time slot, return to the event list, add another eligible selection, and review both in the cart before payment. Recheck quantities, dates, required companion tickets, and seat availability. For Shopify's product-page flow, also verify the [Ticket Selector](../plugins/shopify-ticket-selector) and Shopify cart handoff.
 
-## Date and Time
+Choose **Add to Cart**, then **Back to Events** to keep browsing or **Go to Payment** to review. The cart button shows the current ticket count. The Ticket Spot browsing cart is available in its standard checkout; waitlist registration, Shopify checkout handoff, and POS follow their own flows.
 
-**Date and Time** controls how event dates, times, and time zones are shown during checkout,
-helping attendees clearly understand when the event begins and ends.
+<AccordionGroup>
+<Accordion title="Add tickets to the cart">
+<Frame caption="Complete attendee details, then choose Add to Cart to keep browsing or Continue to review.">
+  <img src="../assets/refresh/branding-and-design/widget-checkout-result-add-to-cart.png" alt="Attendee details with Add to Cart and Continue highlighted" />
+</Frame>
+<Frame caption="Choose Back to Events to keep browsing or Go to Payment to review the cart.">
+  <img src="../assets/refresh/branding-and-design/widget-checkout-result-added.png" alt="Added to Cart confirmation with Back to Events and Go to Payment highlighted" style={{ maxWidth: "500px" }} />
+</Frame>
+</Accordion>
+<Accordion title="Review the cart before checkout">
+<Frame caption="Check events, quantities, attendee details, discounts, and the total before completing registration or payment.">
+  <img src="../assets/refresh/branding-and-design/widget-checkout-result-review.png" alt="Cart review showing two free Standard tickets and the order total" />
+</Frame>
+</Accordion>
+</AccordionGroup>
 
-The table below explains each field.
+Adding a selection checks availability and attendee details. It does not create a paid order or reserve ordinary ticket inventory. Seat holds still expire according to the seating checkout rules.
 
-| Field            | Description                                                                                   |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| **Date Display**     | Select how the event date appears during checkout (e.g., Sat 29th Nov).                       |
-| **Time Display**     | Choose the time format shown to attendees: 12-hour or 24-hour styles.                         |
-| **Show Start Date**  | Displays the event’s start date on the checkout screen.                                       |
-| **Show Start Time**  | Shows the event’s start time so attendees know when the event begins.                         |
-| **Show End Date**    | Displays the event’s end date, useful for multi-day or long events.                           |
-| **Show End Time**    | Shows the event’s end time to give attendees clear schedule expectations.                     |
-| **Include Timezone** | Adds the event’s timezone to avoid confusion for attendees in different regions.              |
+Combined selections must belong to the same organizer, use the same currency, and pay the same receiving account. Otherwise they must be purchased separately. A combined checkout accepts up to 20 event/time-slot selections and 500 tickets or attendees; ticket-specific order limits still apply. Returning to the same event/time slot updates its existing cart selection.
 
-![design](../assets/branding-and-design/checkout-settings/date-time-3.gif)
+The browsing cart is kept in memory for the current page session. Reloading the page clears it. Keep the widget open while collecting selections, and check the final review before paying. Removing a ticket updates that selection's quantity and associated attendee/seat data.
 
-## Promo Code
+## Related controls in other sections
 
-**Promo Code** settings control how discount codes appear and function during the checkout
-process. You can choose whether to show the promo code field, automatically expand it, and
-decide where it should be placed for better visibility.
+**Display → Checkout & payment** contains ticket-first and combined date/time/ticket selection. **Text → Checkout** changes headings, buttons, per-attendee progress, copy-details actions, validation messages, and review-step wording. **Design → Customize components** styles the checkout.
 
-| Field               | Description                                                                                                  |
-| ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Display Promo Code**  | Shows or hides the promo code field during checkout.                                                         |
-| **Auto-Open Promo Code** | When enabled, it automatically expands the promo code field when the checkout page loads.                  |
-| **Promo Code Placement** | Choose where the promo code field appears:<br/>• **Top of Checkout** – visible immediately when the user starts checkout.<br/>• **Next to Checkout Summary** – placed near the order totals for quick access. |
+Hiding the cart summary or a free-price label does not change the price. Showing a promo or access-code input does not create a code. The Ticket Spot selector on Shopify hands the purchase to Shopify checkout; verify both parts.
 
-![design](../assets/branding-and-design/checkout-settings/promo-code-4.gif)
+{/* CURRENT CAPTURES */}
 
-## Attendee Information
+## Current controls
 
-**Attendee Information** controls how attendee details are collected during checkout. These
-settings determine whether information is captured for each attendee or only for the primary
-buyer, and whether certain fields appear on the checkout form.
+<AccordionGroup>
 
-| Setting                    | Description                                                                                      |
-| -------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Per-Ticket Attendee Data**   | When enabled, a separate attendee information form appears for every ticket purchased. When disabled, only the buyer’s details are collected. |
-| **Show Confirm Email**         | Displays an additional email confirmation field during checkout to ensure accuracy before submission. |
+<Accordion title="Attendee details and email confirmation">
 
-![design](../assets/branding-and-design/checkout-settings/attendee-5.gif)
+<Frame caption="All Settings → Attendee information — Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email.">
+  <img src="/assets/refresh/branding-and-design/widget-checkout-attendee.png" alt="All Settings → Attendee information — Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-## Ticket Information
+</Accordion>
 
-**Ticket Information** in Widget Customization controls what ticket-related details are shown to
-users during checkout. This helps you decide how much availability information you want to
-display within your widget’s design.
+<Accordion title="Promo and access-code fields">
 
-### Ticket Availability
+<Frame caption="All Settings → Promo &amp; access codes — Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically.">
+  <img src="/assets/refresh/branding-and-design/widget-checkout-codes.png" alt="All Settings → Promo &amp; access codes — Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-**Enable** this option to show the number of tickets remaining for the selected event. When turned
-on, attendees can see how many spots are left before completing their purchase.
+</Accordion>
 
-Turn it **off** if you prefer not to display availability or want to keep the checkout interface simpler.
+<Accordion title="Checkout dates, availability and price summary">
 
-![design](../assets/branding-and-design/checkout-settings/ticket-avialability-6.png)
+<Frame caption="All Settings → Cart &amp; pricing — Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary.">
+  <img src="/assets/refresh/branding-and-design/widget-checkout-dates-prices.png" alt="All Settings → Cart &amp; pricing — Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-## Pricing Details
+</Accordion>
 
-**Pricing Details** settings allow you to control how pricing information appears during checkout.
-These settings help you manage what users see in the cost breakdown, keeping the interface
-as simple or detailed as you prefer.
-
-- **Hide Cart Summary:** Enable this option to hide the full cart summary during checkout. When enabled, users will not see the detailed order breakdown or total cost section.
-- **Hide Free Price Label:** Enable this option to remove the “Free” label from events that do not require payment. This is useful when you prefer a cleaner or more neutral presentation for zero-cost tickets.
-
-![design](../assets/branding-and-design/checkout-settings/pricing-7.png)
-
-A live preview of each setting appears in the right panel, allowing you to confirm the design
-before applying it.
+</AccordionGroup>

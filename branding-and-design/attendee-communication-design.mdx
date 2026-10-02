@@ -3,10 +3,7 @@ title: "Attendee Communication Design"
 description: "Customize attendee email templates, checkout result pages, Shopify thank-you messages, POS confirmation, and kiosk text."
 ---
 
-**Attendee Communication Design** allows you to control every message sent to your attendees. You can adjust the titles, labels, and details for confirmations, reminders, announcements, waitlist updates, and checkout messages. Each communication type can be customized so the information is clear, consistent, and aligned with your event. This ensures attendees receive the right details at the right time throughout their entire event experience.
-
-This configuration creates a seamless communication journey—from ticket confirmation to post-event updates—so attendees always receive clear, timely, and relevant information.
-
+Use **Design → Attendee Communication** to customize template wording and visible details for attendee emails, checkout result pages, and check-in screens. Configure delivery and scheduling in each event’s **Email Communication** or **SMS Communication** settings.
 
 ## Current navigation and template choices
 
@@ -14,19 +11,22 @@ Open **Design → Attendee Communication**, then **Select Communication Type**. 
 
 The [Design option reference](./design-options-reference) lists the controls for every choice, including membership confirmation fields and the pending-payment/order screens. Designing a message does not enable or schedule its delivery: configure that under the event's Email Communication or SMS Communication step.
 
+<Note>
+The **Ticket Action Buttons — PREVIEW ONLY** switches change the sample shown in the design preview. To choose which ticket PDF, wallet, or receipt buttons attendees actually receive, open the event’s **Email Communication**, select the campaign, and configure **Ticket Actions**. Plan restrictions still apply.
+</Note>
+
 ## Navigation
+
+
+<Frame caption="Open Select Communication Type to choose a template. The first email templates appear here; scroll the menu for checkout and check-in templates.">
+  <img src="../assets/refresh/branding-and-design/communication-template-navigation.png" alt="Attendee Communication template menu with Ticket Confirmation circled" style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
 
 **Step 1:** Log in to your **Ticket Spot** account and click on the **Design** tab.
 
-![design](../assets/branding-and-design/attendee-communication-design/design-1.png)
-
 **Step 2:** Click on the **Attendee Communication** tab to open the design settings.
 
-![sales-tax](../assets/branding-and-design/attendee-communication-design/attendee-2.png)
-
 **Step 3:** Use **Select Communication Type** to choose a specific template, such as Ticket Confirmation, Checkout Complete, or Self Check-In Kiosk. The dropdown groups templates under Email Communication, Checkout, and Check-In.  
-
-![sales-tax](../assets/branding-and-design/attendee-communication-design/communication-type-3.gif)
 
 You will be navigated to the design settings for the selected type.
 
@@ -49,17 +49,21 @@ Email Communication includes all the automated messages sent to attendees, such 
 
 ## Ticket Confirmation
 
-Ticket Confirmation design controls how the confirmation email appears when an attendee completes a registration or ticket purchase. This includes customizing the main heading shown at the top of the email, choosing whether event details such as date and time are displayed, and updating the text used for action buttons like View Event, View Tickets, or View Location.
 
-![sales-tax](../assets/branding-and-design/attendee-communication-design/ticket-confirmation-4.png)
+<Frame caption="Choose Ticket Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-confirmation-design.png" alt="Choose Ticket Confirmation in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+Ticket Confirmation design controls how the confirmation email appears when an attendee completes a registration or ticket purchase. This includes customizing the main heading shown at the top of the email, choosing whether event details such as date and time are displayed, and updating the text used for action buttons like View Event, View Tickets, or View Location.
 
 ### Confirmation Email Labels
 
 | Field | Description | Example |
 |-------|-------------|---------|
-| Header Title | The main title is displayed at the top of the confirmation email. | “You have secured a spot at” |
-
-![sales-tax](../assets/branding-and-design/attendee-communication-design/header-5.gif)
+| **Confirmation Title (Ticket Only)** | Heading for an order containing tickets. | “Your ticket is confirmed” |
+| **Confirmation Title (With Membership)** | Heading when the order includes a membership. | “Your order is confirmed” |
+| **Booked Text** | Text introducing the booked tickets. | “You are booked for” |
+| **Membership Active Text** | Text introducing the membership confirmation. | Use your membership wording. |
 
 ### Display Settings
 
@@ -68,25 +72,24 @@ Ticket Confirmation design controls how the confirmation email appears when an a
 | **Show Event Date** | When enabled, the event date is displayed inside the confirmation email. |
 | **Show Event Time** | When enabled, the event time appears inside the confirmation email. |
 | **Show Event Button** | When enabled, a button linking to the event page is shown in the email. |
-| **Show View Tickets Button** | When enabled, a button that opens the attendee’s ticket is included in the email. |
-
-![sales-tax](../assets/branding-and-design/attendee-communication-design/display-setting-6.gif)
+| **Show Manage Tickets Button** | When enabled, a button that opens the attendee’s ticket is included in the email. |
 
 ### Button Labels
 
 | Field | Description | Example |
 |--------|-------------|---------|
 | **View Location Text** | The text for the button that shows the event location in confirmation emails. | View Location |
-| **View Tickets Text** | The text for the button that links to the attendee's tickets in confirmation emails. | View Tickets |
+| **Manage Tickets Text** | The text for the button that links to the attendee's tickets in confirmation emails. | View Tickets |
 | **View Event Text** | The text for the button that links to the event page in confirmation emails. | View Event |
-
-![sales-tax](../assets/branding-and-design/attendee-communication-design/communication-type-7.gif)
 
 ## Event Reminder
 
-Event Reminder design controls the appearance of reminder emails sent before the event begins. These settings allow you to customize the title, countdown text, time-unit labels, and the action buttons included in the reminder email.
 
-![sales-tax](../assets/branding-and-design/attendee-communication-design/event-remainder-8.png)
+<Frame caption="Choose Event Reminder in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-reminder-design.png" alt="Choose Event Reminder in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+Event Reminder design controls the appearance of reminder emails sent before the event begins. These settings allow you to customize the title, countdown text, time-unit labels, and the action buttons included in the reminder email.
 
 ### Reminder Email Labels
 
@@ -95,8 +98,6 @@ Event Reminder design controls the appearance of reminder emails sent before the
 | **Header Title** | The main display is at the top of the reminder email. |
 | **Event Starts Text** | The text shown before the countdown to the event start time. |
 
-![sales-tax](../assets/branding-and-design/attendee-communication-design/email-remainder-9.gif)
-
 ### Time Units
 
 | Field | Description |
@@ -104,23 +105,22 @@ Event Reminder design controls the appearance of reminder emails sent before the
 | **Days Text** | The label for the number of days remaining before the event. |
 | **Hours Text** | The label for the number of hours remaining before the event. |
 
-![sales-tax](../assets/branding-and-design/attendee-communication-design/time-units-10.gif)
-
 ### Button Labels
 
 | Field | Description |
 |--------|-------------|
 | **View Location Text** | The text for the button that opens the event location. |
 | **View Event Text** | The text for the button that links to the event page. |
-| **View Tickets Text** | The text for the button that links to the attendee’s tickets. |
-
-![sales-tax](../assets/branding-and-design/attendee-communication-design/button-label-11.gif)
+| **Manage Tickets Text** | The text for the button that links to the attendee’s tickets. |
 
 ## Post Event
 
-Post Event design controls the email sent to attendees after the event has ended. This message is typically used to thank participants, share follow-up information, or include a note from the host. The settings allow you to customize the main heading and the title that appears above any custom message you want to include.
 
-![post-event](../assets/branding-and-design/attendee-communication-design/post-event-12.png)
+<Frame caption="Select Post Event in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-template-navigation-post-event.png" alt="Select Post Event in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Post Event design controls the email sent to attendees after the event has ended. This message is typically used to thank participants, share follow-up information, or include a note from the host. The settings allow you to customize the main heading and the title that appears above any custom message you want to include.
 
 ### Post Event Configuration
 
@@ -129,13 +129,14 @@ Post Event design controls the email sent to attendees after the event has ended
 | **Header Title** | The main title is displayed at the top of the post-event email. |
 | **Custom Message Title** | The title is shown before any custom message you want to include. |
 
-![post-event](../assets/branding-and-design/attendee-communication-design/post-event-13.gif)
-
 ## Announcement
 
-**Announcement** design controls how announcement emails appear when you need to send important updates or extra information to attendees. These settings let you customize the announcement title, sender label, and the button text that links attendees back to the event page.
 
-![announcement](../assets/branding-and-design/attendee-communication-design/announcement-14.png)
+<Frame caption="Choose Announcement in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-announcement-design.png" alt="Choose Announcement in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+**Announcement** design controls how announcement emails appear when you need to send important updates or extra information to attendees. These settings let you customize the announcement title, sender label, and the button text that links attendees back to the event page.
 
 ### Announcement Email and Button Labels
 
@@ -145,13 +146,14 @@ Post Event design controls the email sent to attendees after the event has ended
 | **Sent By Label** | The label shown before the sender’s name. If left blank, the sender name will not appear. |
 | **View Event Text** | The text for the button that links to the event page. |
 
-![post-event](../assets/branding-and-design/attendee-communication-design/announcement-15.gif)
-
 ## Pending Approval
 
-**Pending Approval** Email Design helps you customize how the message appears to attendees when their registration is waiting for host approval, including the title, subject line, and the message shown inside the approval notification.
 
-![post-event](../assets/branding-and-design/attendee-communication-design/pending-16.png)
+<Frame caption="Choose Pending Approval in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-approval-design.png" alt="Choose Pending Approval in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+**Pending Approval** Email Design helps you customize how the message appears to attendees when their registration is waiting for host approval, including the title, subject line, and the message shown inside the approval notification.
 
 ### Pending Approval Configuration
 
@@ -161,13 +163,14 @@ Post Event design controls the email sent to attendees after the event has ended
 | **Email Subject** | The subject line used for pending approval notifications. |
 | **Message Content** | The message explaining their registration is awaiting host approval. |
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-17.gif)
-
 ## Approval Declined
 
-**Approval Declined** Email Design allows you to customize the message shown to attendees when their registration request is not approved. This includes updating the title, subject line, and the explanation provided in the declined notification.
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-18.png)
+<Frame caption="Select Approval Declined in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-approval-design-declined.png" alt="Select Approval Declined in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+**Approval Declined** Email Design allows you to customize the message shown to attendees when their registration request is not approved. This includes updating the title, subject line, and the explanation provided in the declined notification.
 
 ### Approval Declined Configuration
 
@@ -177,13 +180,14 @@ Post Event design controls the email sent to attendees after the event has ended
 | **Email Subject** | The subject line used for approval-declined notifications. |
 | **Message Content** | The message explaining why registration was not accepted. |
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-19.gif)
-
 ## Approval Confirmed
 
-**Approval Confirmed** Email Design allows you to customize the message shown to attendees when their registration has been approved. This includes setting the title, email subject, and confirmation message that appears in the notification.
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-20.png)
+<Frame caption="Select Approval Confirmed in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-approval-design-confirmed.png" alt="Select Approval Confirmed in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+**Approval Confirmed** Email Design allows you to customize the message shown to attendees when their registration has been approved. This includes setting the title, email subject, and confirmation message that appears in the notification.
 
 ### Approval Confirmed Configuration
 
@@ -193,13 +197,14 @@ Post Event design controls the email sent to attendees after the event has ended
 | **Email Subject** | The subject line used for approval confirmation. |
 | **Message Content** | The confirmation message shown after approval. |
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-21.gif)
-
 ## Waitlist Confirmation
 
-Waitlist Confirmation Email Design allows you to customize the message sent when an attendee joins the waitlist for an event. This includes setting the title, subject line, and notification message that explains their waitlist status.
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/approval-22.png)
+<Frame caption="Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-waitlist-design-confirmation.png" alt="Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Waitlist Confirmation Email Design allows you to customize the message sent when an attendee joins the waitlist for an event. This includes setting the title, subject line, and notification message that explains their waitlist status.
 
 ### Waitlist Confirmation Configuration
 
@@ -209,13 +214,14 @@ Waitlist Confirmation Email Design allows you to customize the message sent when
 | **Email Subject** | The subject line used for waitlist confirmations. |
 | **Message Content** | Message informing the attendee they have been added to the waitlist. |
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/waitlist-23.gif)
-
 ## Waitlist Ticket Released
 
-Waitlist Ticket Released Email Design allows you to customize the message sent when a spot becomes available for someone on the waitlist. This notification confirms their registration approval and provides event details.
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/waitlist-24.png)
+<Frame caption="Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-waitlist-design.png" alt="Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+Waitlist Ticket Released Email Design allows you to customize the message sent when a spot becomes available for someone on the waitlist. This notification confirms their registration approval and provides event details.
 
 ### Waitlist Ticket Released Configuration
 
@@ -225,13 +231,14 @@ Waitlist Ticket Released Email Design allows you to customize the message sent w
 | **Email Subject** | Subject line used when informing attendees that a spot has opened. |
 | **Message Content** | Message confirming their place and next steps. |
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/waitlist-25.gif)
-
 ## Not Attending
 
-Not Attending Email Design allows you to customize the message sent when an attendee is marked as not going. This notification email helps the attendee know their status has been updated and provides a clear message from the event host.
 
-![pending-approval](../assets/branding-and-design/attendee-communication-design/not-26.png)
+<Frame caption="Select Not Attending in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-template-navigation-not-attending.png" alt="Select Not Attending in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Not Attending Email Design allows you to customize the message sent when an attendee is marked as not going. This notification email helps the attendee know their status has been updated and provides a clear message from the event host.
 
 ### Not Attending Notification Configuration
 
@@ -241,17 +248,18 @@ Not Attending Email Design allows you to customize the message sent when an atte
 | **Email Subject** | Subject line for notifying an attendee they’re marked as not attending. |
 | **Message Content** | Message confirming the change and relevant info. |
 
-![not](../assets/branding-and-design/attendee-communication-design/not-27.gif)
-
 ## Checkout
 
 **Checkout communication** templates allow you to customize what attendees see immediately after completing their purchase. This includes the order confirmation page, labels, buttons, and optional actions like viewing receipts or downloading passes. These settings help you create a clear, branded post-purchase experience.
 
 ## Checkout Complete
 
-**Checkout Complete** design settings allow you to control how the final confirmation screen appears once an attendee finishes their order. You can customize the header, labels, and action buttons so the page clearly summarizes the order and gives attendees quick access to tickets, receipts, and other follow-up actions.
 
-![checkout](../assets/branding-and-design/attendee-communication-design/checkout-28.png)
+<Frame caption="Choose Checkout Complete in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-checkout-design.png" alt="Choose Checkout Complete in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+**Checkout Complete** design settings allow you to control how the final confirmation screen appears once an attendee finishes their order. You can customize the header, labels, and action buttons so the page clearly summarizes the order and gives attendees quick access to tickets, receipts, and other follow-up actions.
 
 ### Confirmation Page Labels
 
@@ -261,8 +269,6 @@ Not Attending Email Design allows you to customize the message sent when an atte
 | **Order ID Label** | The label before the order ID. |
 | **Confirmation Message** | The message confirming tickets have been sent. |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/labels-29.gif)
-
 ### Display Settings
 
 Each toggle controls whether a specific element appears on the checkout complete page:
@@ -271,13 +277,11 @@ Each toggle controls whether a specific element appears on the checkout complete
 |--------|-------------|
 | **Show Confirmation Message** | Displays confirmation text. |
 | **Show Order ID** | Displays the order ID. |
-| **Show View Tickets Button** | Shows View Tickets button. |
+| **Show Manage Tickets Button** | Shows View Tickets button. |
 | **Show View Receipt Button** | Shows View Receipt button. |
 | **Show Download Pass Button** | Shows Apple Wallet pass button. |
 | **Show Custom Link Button** | Shows a custom external link button. |
 | **Show Add to Calendar** | Displays Add to Calendar option. |
-
-![checkout](../assets/branding-and-design/attendee-communication-design/display-30.gif)
 
 ### Button Labels
 
@@ -289,8 +293,6 @@ Each toggle controls whether a specific element appears on the checkout complete
 | 4.   | **Custom Link Button Text**  | Label for the custom button that opens an external link. |
 | 5.   | **Custom Link URL**          | The URL that opens when the custom button is clicked (must include https://). |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/labels-31.png)
-
 ### Event Information Labels
 
 | Ref. | Field                | Description |
@@ -301,21 +303,20 @@ Each toggle controls whether a specific element appears on the checkout complete
 | 4.   | **You Ordered From Text** | Text displayed before the host/organizer information. |
 | 5.  | **Custom Message Title**  | The title is used if you add a custom message from the host. |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/labels-32.png)
-
 ## Shopify Thank You Page
 
-**Shopify Thank You Page** design settings allow you to control how the final confirmation screen appears after customers complete their purchase through Shopify. These options enable you to edit the header, labels, and action buttons, allowing customers to quickly access their tickets, download passes, or add the event to their calendar directly from the Shopify checkout flow.
 
-![checkout](../assets/branding-and-design/attendee-communication-design/page-33.png)
+<Frame caption="Choose Shopify Thank You Page in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-shopify-design.png" alt="Choose Shopify Thank You Page in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+**Shopify Thank You Page** design settings allow you to control how the final confirmation screen appears after customers complete their purchase through Shopify. These options enable you to edit the header, labels, and action buttons, allowing customers to quickly access their tickets, download passes, or add the event to their calendar directly from the Shopify checkout flow.
 
 ## Page Configuration
 
 **Header Title:** Main heading at the top of the Shopify Thank You Page.
 
 Example: Access Your Tickets
-
-![checkout](../assets/branding-and-design/attendee-communication-design/page-34.png)
 
 ### Display Settings
 
@@ -327,8 +328,6 @@ Example: Access Your Tickets
 | 4.   | **Show Download Pass Button** | When enabled, the “Add to Wallet” (Download Pass) button appears. |
 | 5.   | **Show Add to Calendar**      | When enabled, customers see the option to add the event to their calendar. |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/display-35.png)
-
 ### Button Labels
 
 | Ref. | Field                     | Description |
@@ -338,7 +337,13 @@ Example: Access Your Tickets
 | 3.   | **Download Pass Button Text** | The label for the button that lets customers add the pass to their wallet. <br/>Example: Add to Wallet |
 | 4.   | **Add to Calendar Text**      | The label for the option that lets customers add the event to their calendar. <br/>Example: Add to Calendar |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/labels-36.png)
+## Square POS Confirmation
+
+<Frame caption="Choose Square POS Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-pos-design.png" alt="Choose Square POS Confirmation in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+Customize the success title, confirmation message, print/email/SMS/new-sale labels, printing message, and card/cash labels. Review cash payment, auto-print, receipt, and QR-ticket switches. This configures Ticket Spot’s confirmation screen; connecting Square and testing a physical print are separate steps.
 
 ## Check-In
 
@@ -346,9 +351,12 @@ The **Check-In** allows event organizers to customize the interface used for sca
 
 ## Self Check-In Kiosk
 
-**Self Check-In Kiosk** interface is used at the venue to help attendees check themselves in by scanning their tickets. This design panel allows you to customize all on-screen text, success messages, warnings, and error states shown during the check-in process. It ensures your kiosk experience is clear, branded, and easy for attendees to follow.
 
-![checkout](../assets/branding-and-design/attendee-communication-design/kiosk-37.png)
+<Frame caption="Select Self Check-In Kiosk in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-kiosk-design.png" alt="Select Self Check-In Kiosk in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+**Self Check-In Kiosk** interface is used at the venue to help attendees check themselves in by scanning their tickets. This design panel allows you to customize all on-screen text, success messages, warnings, and error states shown during the check-in process. It ensures your kiosk experience is clear, branded, and easy for attendees to follow.
 
 ### Idle Screen
 
@@ -356,8 +364,6 @@ The **Check-In** allows event organizers to customize the interface used for sca
 |-----|------------------|-------------|
 | 1.   | **Header Title**     | The main title was displayed on the kiosk idle screen while waiting for an attendee to scan their ticket. |
 | 2.   | **Header Subtitle**  | Instructions displayed below the header guide attendees on how to initiate the scan. |
-
-![checkout](../assets/branding-and-design/attendee-communication-design/idle-38.png)
 
 ### Success Messages
 
@@ -367,15 +373,11 @@ The **Check-In** allows event organizers to customize the interface used for sca
 | 2.   | **Printing Message** | The message shown while the ticket is printing (if printing is enabled). |
 | 3.   | **Scans Label**      | The label shown above the scan counter (e.g., “Scans:” to display total check-ins). |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/success-39.png)
-
 ### Printing Settings
 
 #### Enable Auto Print 
 
 When this option is enabled, the kiosk prints tickets automatically after a successful scan. If disabled, tickets will not print on their own and must be printed manually if needed.
-
-![checkout](../assets/branding-and-design/attendee-communication-design/auto-40.png)
 
 ### Warning Messages
 
@@ -385,8 +387,6 @@ When this option is enabled, the kiosk prints tickets automatically after a succ
 | 2.   | **Warning Help Message**    | Optional help text is shown to guide the attendee (e.g., “Please see staff if you need help”). |
 | 3.  | **Warning Countdown Text**  | Countdown message before returning to the scan screen. Use seconds as a placeholder. |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/warning-41.png)
-
 ### Error Messages
 
 | Ref. | Field                | Description |
@@ -394,8 +394,6 @@ When this option is enabled, the kiosk prints tickets automatically after a succ
 | 1.   | **Error Title**           | The title is displayed when the scan fails or the ticket is invalid. |
 | 2.   | **Error Help Message**    | Help text is shown when an error occurs (e.g., “Please see staff for assistance”). |
 | 3.   | **Error Countdown Text**  | Countdown message displayed before returning to the scan screen. |
-
-![checkout](../assets/branding-and-design/attendee-communication-design/error-42.png)
 
 ### Loading & Invalid States
 
@@ -405,6 +403,34 @@ When this option is enabled, the kiosk prints tickets automatically after a succ
 | 2.  | **Invalid Kiosk Title**  | The title is shown when the kiosk code is invalid. |
 | 3.   | **Invalid Kiosk Message** | The message is displayed when the kiosk URL/code cannot be validated. |
 
-![checkout](../assets/branding-and-design/attendee-communication-design/loading-43.png)
-
 With all communication types configured, attendees receive clear and timely updates at every step—making their event experience more organized, predictable, and seamless.
+
+## Languages and membership downloads
+
+Use [Multilingual communications](./multilingual-communications) to edit outgoing template text in the attendee's checkout language and add language variants to an event email. English is the fallback; layout and delivery rules remain shared.
+
+For membership orders, review **Show Membership PDF Button** and **Membership PDF Button Text** in confirmation and reminder design, plus the campaign's own membership-PDF inclusion setting.
+
+## Pending Installment
+
+<Frame caption="Select Pending Installment in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-installment-design.png" alt="Select Pending Installment in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Review the template wording and the preview. Configure when a message is sent in the event’s communication settings.
+
+## Installment Order Confirmation
+
+<Frame caption="Select Installment Order Confirmation in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-installment-design-order.png" alt="Select Installment Order Confirmation in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Review the template wording and the preview. Configure when a message is sent in the event’s communication settings.
+
+## Pending Approval Order
+
+<Frame caption="Select Pending Approval Order in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-checkout-design-pending-approval.png" alt="Select Pending Approval Order in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Review the template wording and the preview. Configure when a message is sent in the event’s communication settings.

@@ -1,81 +1,55 @@
 ---
-title: "Sales Analytics"
-description: "Review ticket sales, order totals, and revenue trends with event and date filters."
+title: "Sales analytics"
+description: "Read gross and net revenue, compare ticket and order trends, review ticket types, and export sales."
 ---
 
-The **Sales Analytics** dashboard helps you understand how your event is performing in terms of revenue, orders, and ticket sales. This page provides clear insights through metrics, graphs, and detailed order data.
+Open **Analytics**, select the event or occurrence, and choose **Sales**. See [shared filters](/analytics/analytics-overview#range-and-group-by) for range and grouping controls. Screenshots use illustrative data.
 
+## Headline metrics
 
-## Navigation
+| Card | Meaning |
+| --- | --- |
+| **Gross Sales** | Ticket value before discounts. |
+| **Net Revenue** | Total charged after discounts, including tax and fees, less refunds and disputes. This is not a bank payout or profit figure. |
+| **Tickets Sold** | Sold ticket count, with tickets per order beneath it. |
+| **Orders** | Order count, with average order value beneath it. |
 
-**Step 1:** Log in to your **TicketSpot** account and click the **Analytics** tab from the top navigation bar.
+**Sales Period** normally covers the first order through the event end. Use **Custom** to compare a specific campaign or sales period. The resolved dates appear beside the range button.
 
-![analytics-tab](../assets/analytics/sales-analytics/analytics-tab.png)
+<Frame caption="Illustrative analytics data. The Sales tab shows gross sales, net revenue, tickets, orders, and a selectable trend.">
+  <img src="../assets/refresh/analytics/analytics-sales-summary.png" alt="The Sales tab shows gross sales, net revenue, tickets, orders, and a selectable trend." />
+</Frame>
 
-**Step 2:** Click on the **Analytics Type drop-down** menu and select the **Sales Analytics** type.
+## Sales over time
 
-![select-analytic-type](../assets/analytics/sales-analytics/select-analytic-type.gif)
+Use **Revenue**, **Tickets Sold**, or **Orders** to choose the chart measure. Within Revenue, switch between **Gross Sales** and **Net Revenue**. Hover over a bar or point for the bucket’s value. The chart automatically uses bars for shorter series and a line when there are more than 14 buckets.
 
+The line below the chart shows average ticket value, average order value, and tickets per order. When refunds exist, another line shows refunded tickets, refunded money, and refund rate. **Refund rate is the refunded amount as a share of money charged**, not the percentage of tickets refunded.
 
-Your dashboard will instantly update to show all sales-related insights.
+## Revenue Breakdown
 
-## Select Event
+The breakdown explains the difference between the headline monetary figures:
 
-Use the Select Event dropdown to choose the event you want to analyze.
+**Gross sales − discounts + tax + fees − refunds − disputes = net revenue.**
 
-![select-event](../assets/analytics/sales-analytics/select-event.gif)
+<Frame caption="Illustrative analytics data. Revenue Breakdown lists discounts, tax, fees, refunds, and disputes.">
+  <img src="../assets/refresh/analytics/analytics-sales-summary-breakdown.png" alt="Revenue Breakdown lists discounts, tax, fees, refunds, and disputes." />
+</Frame>
 
+## Sales by Ticket Type
 
-Once selected, all the metrics, graphs, and tables on the page will reflect the sales activity for that specific event.
+Each ticket type shows its sold count, capacity where configured, percentage sold, ticket amount, and average ticket price. Unlimited/unconfigured capacity has no meaningful percentage bar. A type above its configured capacity is labeled **Over capacity**.
 
-## Date Filters
+When more than eight types are available, use **Show all** and **Show top 8**. The report may limit the breakdown to the 50 best-selling types and says so when truncated. A preparation message means the ticket breakdown is still being built; it does not make the other panels unavailable.
 
-You can filter analytics by preset date ranges like **1 day**, **7 days**, or **1 year**, or choose a **custom date** range.
+Ticket-type amounts come from ticket records, while the headline financial amounts come from orders. Cart-level adjustments can prevent the per-type amounts from adding up to the financial cards.
 
-![date-filter](../assets/analytics/sales-analytics/date-filter.gif)
+<Frame caption="Illustrative analytics data. Ticket-type sales are followed by an Orders summary and the View Orders shortcut.">
+  <img src="../assets/refresh/analytics/analytics-sales-orders.png" alt="Ticket-type sales are followed by an Orders summary and the View Orders shortcut." />
+</Frame>
 
+## View orders and export
 
-The dashboard updates instantly based on your selected timeframe.
+**View Orders →** opens this event’s **Attendees** page. Open an attendee/order there to inspect its tickets, payment details, seating, or permitted actions. Sales Analytics no longer contains the older expandable order table.
 
-## Summary Metrics
-
-Get a quick snapshot of the most important sales highlights for your event.
-
-| Ref No. | Metric Name        | Description                            |
-|--------|---------------------|----------------------------------------|
-| 1.     | **₹ Total Sales**      | Shows the total revenue generated.     |
-| 2.     | **Total Orders**        | Displays the total number of orders placed. |
-| 3.     | **Tickets Sold**        | Indicates how many tickets were purchased. |
-| 4.     | **₹ Tickets Refunded**  | Shows the total amount refunded (if any). |
-
-![card-metrices](../assets/analytics/sales-analytics/card-metrices.png)
-
-
-## Sales Trend Graph
-
-The **Sales Trend Graph** shows how your sales have progressed over the selected date range.
-
-This visual includes:
-
-- A line representing **Total Sales (₹)**
-- A line representing **Tickets Sold**
-
-![graph](../assets/analytics/sales-analytics/graph.png)
-
-
-The graph helps you understand revenue flow, peak sales periods, and overall activity patterns over time.
-
-## All Orders
-
-Explore detailed information for each order placed within the selected date range.
-
-| Ref No. | Field / Feature     | Description                                      |
-|--------|----------------------|--------------------------------------------------|
-| 1.      | **Order Date**           | Shows the date on which the order was created.   |
-| 2.      | **Order ID**             | Displays the unique identifier assigned to each order. |
-| 3.      | **Total (₹)**            | Indicates the total amount paid for the order.   |
-| 4.      | **Tickets Purchased**    | Shows the number of tickets purchased, displayed as a clickable link. |
-| 5.      | **Search**               | Allows you to search for specific orders or attendee details. |
-| 6.      | **Sorting**              | Lets you reorder the table by clicking the sort icons on the column headers. |
-
-![all-order](../assets/analytics/sales-analytics/all-order.png)
+The top **Export CSV** downloads sales rows for the selected event/occurrence and range. With Sales Period, it uses the resolved start and end dates. Rows include order/date/status, attendee and ticket details, prices, discounts, tax, fees, seat label, scan count, promo code, and order financial totals. An order with multiple attendees produces multiple rows: do not sum repeated order-level totals as if each row were a separate order.

@@ -1,113 +1,72 @@
 ---
 title: "Widget customization overview"
-description: "Create and customize event widgets with brand styling, layout, filters, checkout controls, and attendee-facing text."
+description: "Create and install widgets, use Quick Settings and search, and customize all seven settings categories."
 ---
 
-**Widget Customization** provides full control over how your event widgets appear and behave across your website or embedded pages. This area allows you to adjust display settings, layout, text, filters, and user-interaction options so each widget fits your branding and delivers the right information to your audience.
+A widget is a configurable event listing and checkout experience. Create separate widgets when different pages need different layouts, filters, or wording.
 
-By configuring these settings, event organizers can create a consistent visual experience, highlight essential details, and ensure widgets function smoothly across different devices and placements.
+## Open the widget editor
 
+1. Select the correct site, then open **Design → Widget**.
+2. Choose the widget in **Editing Widget**. To create one, open that dropdown and select **Create new widget**, enter a **Widget Name**, and select **Create**. Leave **Set as Default** off for a separate embed configuration.
+3. Start with **Quick Settings**, use **Search settings**, or choose **All Settings**.
+4. Open a category and subsection. Use the breadcrumb to return to its parent or search results.
 
-## Navigation
+The dropdown also provides edit and duplicate actions. The **Default** widget is used on Ticket Spot event pages and the Shopify Ticket Selector app block; choosing a different widget for editing does not change which widget is the default.
 
-**Step 1:** Log in to your **Ticket Spot** account and click on the **Design** tab.
+<Frame caption="Open Editing Widget to switch widgets or choose Create new widget. Each widget has its own layout, text, and filters.">
+  <img src="../assets/refresh/branding-and-design/widget-create-open.png" alt="Open Editing Widget to switch widgets or choose Create new widget. Each widget has its own layout, text, and filters." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![click-design-tab](../assets/branding-and-design/widget-customization-overview/click-design-tab.png)
+<Accordion title="Create a separate widget">
+<Frame caption="Give the widget a name and choose whether it should become the Default widget. Leave Set as Default off to create a separate configuration for another embed.">
+  <img src="../assets/refresh/branding-and-design/widget-create-open-form.png" alt="Give the widget a name and choose whether it should become the Default widget. Leave Set as Default off to create a separate configuration for another embed." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+</Accordion>
 
-**Step 2:** Click on the **Widget** tab to open the design settings.
+## Settings categories
 
-![widget-cust-tab](../assets/branding-and-design/widget-customization-overview/widget-cust-tab.png)
+| Category | Configure | Full option reference |
+|---|---|---|
+| **Design** | Theme, colors, fonts, and component overrides. Hidden for Wix sites. | [Colors and fonts](./widget-design-reference) |
+| **Display** | Event details, images, date display, buttons, descriptions, recurring behavior, counts, and checkout-step choices. | [Display options](./widget-display-reference) |
+| **Layout** | Separate desktop, mobile, and date/time layouts. | [All layouts](./widget-layout-reference) |
+| **Event Filters** | Which live, past, private, or sold-out events appear; draft preview; advanced matching rules. | [Event filters](./widget-event-filters-reference) |
+| **Visitor search & filters** | The search and filter controls customers can use. | [Visitor filters](./widget-visitor-filters-reference) |
+| **Checkout** | Attendee details, date formatting, promo/access-code inputs, availability, and cart display. | [Checkout options](./widget-checkout-reference) |
+| **Text** | Buttons, labels, empty/error states, required-ticket messages, memberships, add-ons, seating, and Shopify wording. | [Text options](./widget-text-reference) |
 
-**Step 3:** Use the settings category dropdown to select the widget you want to customize, such as:
+[Quick Settings](./quick-settings) changes the same values as the full categories. It is not a separate configuration.
 
-- Display  
-- Checkout  
-- Text  
-- Layout  
-- Filters  
-- User Search Filters  
+## Brand and component styling
 
-![widget-cust-dropdown-list](../assets/branding-and-design/widget-customization-overview/widget-cust-dropdown-list.png)
+Set [Brand](./brand-design) first. Choose **All Settings → Design → Your Brand** to follow later shared color/font changes. Local component overrides apply only to this widget. A preset theme uses its own palette.
 
+**More Themes** opens the theme gallery. **Customize components** opens individual color/font controls. Choosing a theme replaces existing overrides. **Reset** removes component customizations and returns to the currently selected theme; it does not switch a preset to Your Brand.
 
-You will be navigated to the design settings for the selected type.
+For Wix, right-click the app in the Wix Editor and open **Settings → Design** for colors and fonts. The dashboard's widget preview is unstyled for Wix.
 
+## Save and install
 
-## Create & Install Widget
+Widget controls generally save and publish automatically after a change. Font edits require **Apply**. Wait for the update to finish and verify the preview; do not assume a separate event Publish button is required for widget settings.
 
-**Widgets** allow you to display your events anywhere—your website, Shopify store, WordPress site, or Wix pages. By creating different widgets, you can customize layouts, apply filters, and show specific event groups using tags. This helps you control exactly how your events appear across different pages and platforms.
+Select **Installation**, choose the target platform, and copy the provided embed code or widget ID. Use [Any Website](../plugins/embed-on-your-website), [Shopify](../plugins/connect-shopify), [WordPress](../plugins/connect-wordpress), [Wix](../plugins/connect-wix), or [Lovable](../plugins/connect-lovable) instructions.
 
-**Create a Widget**
+The Shopify **Event Widget** lists events; the [Ticket Selector](../plugins/shopify-ticket-selector) belongs on the event product template. They are different blocks.
 
-**Step 1:** Click on the **Editing Widget dropdown** at the top of the page to view all your existing widgets.
+<Frame caption="Choose the widget in Editing Widget, then open Installation. The Default widget is also used on Ticket Spot event pages and the Shopify Ticket Selector app block.">
+  <img src="../assets/refresh/branding-and-design/widget-install.png" alt="Choose the widget in Editing Widget, then open Installation. The Default widget is also used on Ticket Spot event pages and the Shopify Ticket Selector app block." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![click-edit-widget](../assets/branding-and-design/widget-customization-overview/click-edit-widget.png)
+## Verify the installed widget
 
+Open its actual website page on desktop and mobile. Check event inclusion, dates and timezones, images, button behavior, checkout, and confirmation. Test a no-results state and any waitlist, seating, membership, or add-on flow you use. Preview-only drafts do not appear on the live widget.
 
-**Step 2:** Click on the **Add Widget** button to create a new widget.
+{/* CURRENT CAPTURES */}
 
-![click-add-widget](../assets/branding-and-design/widget-customization-overview/click-add-widget-btn.png)
-
-
-A modal window will appear asking for your widget name. Enter a widget name (e.g., “Custom”, “Music Events Widget”) and click on the **Create** button.
-
-![click-create-btn](../assets/branding-and-design/widget-customization-overview/click-create-btn.png)
-
-Your new widget will be added to the list, ready for customization.
-
-
-**Install Widget**
-
-Installing a widget allows you to display your customized event view on any website or platform. Each widget you create comes with its own unique code or ID, so you can embed it wherever you need—whether it’s your homepage, a landing page, or a partner site.
-
-To install the widget, click the **Installation** button, choose your platform (**Any Website**, **[Shopify](../plugins/connect-shopify)**, [WordPress](/plugins/connect-wordpress), **[Wix](../plugins/connect-wix)** or [Lovable](/plugins/connect-lovable)), and **copy** the code shown on the screen. Paste it into your website or follow the steps provided in each tab to complete the setup.
-
-![click-install](../assets/branding-and-design/widget-customization-overview/click-install.gif)
-
-
-## Design Settings
-
-**Design Settings** control the visual style of your widget. Use this section to change colors, fonts, and how different parts of your widget look.
-
-1. Click on the **paintbrush icon** at the top-right corner of the Widget Customization page.
-
-![brush-icon](../assets/branding-and-design/widget-customization-overview/brush-icon.png)
+## Current controls
 
 
-2. You can choose a theme such as **Ticket Spot** or **Your Brand**. These themes apply preset color palettes and styles to your widget.
-
-![theme](../assets/branding-and-design/widget-customization-overview/theme.png)
-
-
-3. You can click **More Themes** to select from several pre-built theme options. Each theme gives your widget a different visual style.
-
-![more-theme](../assets/branding-and-design/widget-customization-overview/more-theme.png)
-
-
-4. You can also use the **Customize** option to adjust individual design elements. Here you can change opacity, desktop text colors, mobile text colors, button styles, calendar appearance, attendee form styling, checkout appearance, multi-day selection, and more.
-
-![customize-btn](../assets/branding-and-design/widget-customization-overview/customize-btn.png)
-
-
-5. Click on the **arrow icon** next to the setting you want to customize, and make your changes based on what fits your design.
-
-![customize-theme](../assets/branding-and-design/widget-customization-overview/customize-theme.gif)
-
-
-You can now customize each widget exactly the way you want—from layout to settings—and use them anywhere you need.
-
-## Current Widget navigation
-
-Open **Design → Widget** and select the widget you want to customize. The categories are:
-
-| Category | Use it for |
-|---|---|
-| **Design** | Colors and fonts for this widget. Start from your shared Brand settings; individual overrides can change the result. This category is hidden for Wix sites. |
-| **Display** | [How each event looks in the listing](./display-settings). |
-| **Layout** | [Desktop and mobile event arrangement](./layout). |
-| **Event Filters** | [Which events this widget includes](./filters). |
-| **Visitor search & filters** | [Search and filter controls offered to visitors](./user-search-filter). |
-| **Checkout** | [Ticket checkout behavior](./checkout-settings). |
-| **Text** | [Widget and checkout wording](./text-settings). |
-
-Set your [Brand colors and logo](./brand-design) first. A widget using the brand theme follows later brand changes; selecting a different theme replaces the widget's existing overrides. Check the preview before changing an already customized widget.
+<Frame caption="Open Design → Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search &amp; filters, Checkout, and Text.">
+  <img src="/assets/refresh/branding-and-design/design-navigation.png" alt="Open Design → Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search &amp; filters, Checkout, and Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>

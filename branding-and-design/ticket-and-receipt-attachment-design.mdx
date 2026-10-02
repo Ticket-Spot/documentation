@@ -1,151 +1,110 @@
 ---
-title: "Ticket and Receipt Attachment Design"
-description: "Customize ticket and receipt PDF fields, Apple passes, membership PDFs, and print-format presentation."
+title: "Ticket and receipt attachment design"
+description: "Set ticket and receipt labels, build custom ticket print formats, and verify the downloaded PDF."
 ---
 
-**Ticket and Receipt Attachment Design** allows you to configure how your event tickets, receipts, and Apple Pass files appear when they are sent to attendees. These attachments are important touchpoints that provide essential event information, access details, and confirmation of purchase.
+Open **Design → Tickets & Passes** and choose **Select Ticket Type**. Ticket PDF, Ticket Receipt PDF, Membership PDF, Apple Pass, Star MC Print3, and Boca Printer have separate settings. See [Tickets and passes](./tickets-and-passes) for membership and printer formats.
 
-With these settings, you can customize labels, colors, and layout elements for each attachment type—ensuring your tickets and receipts match your branding and deliver a clear, professional experience to attendees.
+<Frame caption="Choose the document or pass to customize.">
+  <img src="../assets/refresh/branding-and-design/ticket-format-picker.png" alt="Ticket format menu with Membership PDF and Apple Pass highlighted" style={{ maxWidth: "440px" }} />
+</Frame>
 
+## Basic ticket PDF
 
-## Navigation
+Choose **Ticket PDF → Basic** to change visibility, labels, and colors. The basic settings update automatically; wait for the update before downloading a sample.
 
-**Step 1:** Log in to your **Ticket Spot** account and click on the **Design** tab.
+<Frame caption="Basic ticket settings control the details shown on the PDF.">
+  <img src="../assets/refresh/branding-and-design/ticket-basic-design.png" alt="Basic Ticket PDF settings with attendee name, QR code, and site logo highlighted" />
+</Frame>
 
-![click-design-tab](../assets/branding-and-design/ticket-and-receipt-attachment-design/click-design-tab.png)
+| Controls | Effect |
+|---|---|
+| Show Venue, Show Date, Show Time | Display the event's location and schedule. |
+| Show Ticket Type, Show Attendee Name, Show QR Code, Show Site Logo | Include ticket identity, admission code, and branding. |
+| Ticket Type Label, Attendee Name Label | Rename the headings without changing the underlying ticket or attendee. |
+| Ticket Background Color, Page Background Color | Set the ticket and surrounding page backgrounds. |
+| Event Name Color, Ticket Text Color, Event Details Text Color | Set the corresponding text colors. |
+| Ticket Shadow | Show or hide the ticket shadow. |
 
-**Step 2:** Click on the **Tickets & Passes** tab to open the design settings.
+## Custom ticket designer
 
-![ticket-receipt-attach-tab](../assets/branding-and-design/ticket-and-receipt-attachment-design/ticket-receipt-attach-tab.png)
+<Frame caption="Design mode provides format tabs, text and QR placement, and a separate Save action. This demonstration layout has not been saved.">
+  <img src="../assets/refresh/branding-and-design/ticket-custom-designer.png" alt="Design mode provides format tabs, text and QR placement, and a separate Save action. This demonstration layout has not been saved." />
+</Frame>
 
+The **Basic / Design** switch enables custom ticket design on **Business Plus**. The switch saves immediately. Canvas changes use the designer's separate **Save** button.
 
-**Step 3:** Select the **ticket type** you want to customize from the dropdown menu:
-
-- **Ticket PDF**  
-- **Ticket Receipt PDF**
-- **Membership PDF**
-- **Apple Pass**
-- **Star MC Print3**
-- **Boca Printer** 
-
-![dropdown-list](../assets/branding-and-design/ticket-and-receipt-attachment-design/dropdown-list.png)
-
-
-You will be navigated to the design settings for the selected type. See [Tickets & Passes](./tickets-and-passes) for membership and printer formats, and the [Design option reference](./design-options-reference) for all current fields.
-
-
-## Ticket PDF
-
-**Ticket PDF** customization allows you to control how the digital ticket appears when attendees download or receive it after registration or purchase. You can modify labels, colors, and visual elements so the ticket aligns with your branding and clearly presents the event information attendees need.
-
-**Ticket PDF Modes (Basic / Design)**
-
-Ticket PDF editor provides two modes that help you to choose how you want to customize your ticket layout:
-
-**Basic mode** provides simple label and color fields for quick edits, while **Design mode** unlocks the full drag-and-drop canvas for creating a completely custom ticket layout.
-
-![basic-design-toggle](../assets/branding-and-design/ticket-and-receipt-attachment-design/basic-design-toggle.gif)
+1. Switch to **Design** and select a print-format tab.
+2. Use **Add Format** (the plus button) to choose another available paper or badge format. Each tab has its own canvas and dimensions supplied by that format.
+3. Add text and QR elements, place them on the canvas, and drag or resize them.
+4. Select a text element to edit its content, insert personalization tokens, and change its formatting.
+5. Click **Save** to save the format designs. A dot beside the tab name indicates unsaved changes.
+6. Download a ticket in the corresponding format to check actual attendee data and the QR code.
 
 
-### Basic Mode
+<Frame caption="Select a text element to edit its wording, tokens, formatting, color, and size. Save stores the format designs.">
+  <img src="../assets/refresh/branding-and-design/ticket-custom-designer-text.png" alt="Select a text element to edit its wording, tokens, formatting, color, and size. Save stores the format designs." />
+</Frame>
 
-#### Ticket Labels
-
-**Ticket Labels** allow you to customize the text headings that appear on the Ticket PDF. These fields help you rename or localize the default labels so they match your event’s branding and terminology.
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Ticket Type Label** | The heading displayed above the ticket type shown on the PDF ticket. | Ticket Type, Pass Type, Registration Type |
-| **Attendee Name Label** | The heading that appears before the attendee’s name on the ticket. | Name, Attendee, Guest Name |
-| **Date and Time Label** | The heading displayed before the event’s date and time information. | Date and Time, Event Schedule, When |
-
-![ticket-labels](../assets/branding-and-design/ticket-and-receipt-attachment-design/ticket-labels.gif)
-
-#### Ticket Appearance
-
-**Ticket Appearance** settings allow you to control the colors used on the Ticket PDF. These options help your ticket match your event branding and maintain a clean, readable layout.
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Ticket Background Color** | Sets the background color of the PDF ticket. Choose a color that complements your branding and keeps the ticket readable. | #FFFFFF |
-| **Ticket Text Color** | Sets the color of all text displayed on the ticket. Select a color that contrasts well with the background. | #000000 |
-| **Event Details Text Color** | Controls the text color specifically for event details such as date, time, and venue. | #444444 |
-
-![ticket-apperarance](../assets/branding-and-design/ticket-and-receipt-attachment-design/ticket-apperarance.gif)
+| Tool | How to use it |
+|---|---|
+| Upload Background | Choose an image as the format's background. It is a background, rather than a freely positioned image element. |
+| Add Text | Select the tool, then click the canvas to place text. |
+| Add QR Code | Select the tool, then click the canvas to place an admission QR element. Keep enough clear space around it. |
+| Tokens… | Search attendee and event fields. Use **Insert** to add the selected token to the text or **Copy** to copy it. Keep the token intact so each ticket receives its own data. |
+| Text content… | Edit the selected text element's wording and tokens. |
+| Bold, Italic, alignment | Format the selected text, with left, center, or right alignment. |
+| Text Color, Font Size | Set the selected text's color and size. The size field accepts 8–72. |
+| Delete Selected Element | Remove the selected text or QR element. |
+| Clear Canvas | Clear the current canvas; inspect it before saving. |
 
 
-### Design Mode
+<Frame caption="Search the token menu, then use the insert or copy icon beside an attendee or event field.">
+  <img src="../assets/refresh/branding-and-design/ticket-custom-designer-tokens.png" alt="Search the token menu, then use the insert or copy icon beside an attendee or event field." style={{ maxWidth: "560px" }} />
+</Frame>
 
-If Design Mode is **enabled**, it gives you full control over the layout and visual structure of your Ticket PDF. Instead of basic text fields, you can use a drag-and-drop designer to place elements exactly where you want them on the ticket.
-
-#### Layout Type
-
-- **A4** – A standard full-page ticket layout suitable for printing.  
-- **Badge Layout** – A compact layout designed for badges and passes used during check-in or on-site events.
-
-![a4-standard-print](../assets/branding-and-design/ticket-and-receipt-attachment-design/a4-standard-print.png)
+To remove a format, close its tab and confirm **Remove Format**. This removes its design elements. The last format cannot be removed. Save after changing the set of formats.
 
 
-#### Design Tools
-
-| Tool | Description |
-|------|-------------|
-| **Text** | Add custom text anywhere on the ticket (e.g., section titles, instructions, notes). |
-| **Tokens** | Insert dynamic fields such as attendee name, ticket type, event name, date, venue, and more. These automatically fill with attendee-specific data. |
-| **QR Code** | Add a QR code that attendees will scan at the venue for check-in. You can adjust placement and size. |
-| **Image** | Upload and place images such as logos, background banners, or decorative elements. |
-| **Shapes** | Add design elements like boxes or dividers to structure the layout. |
-| **Move / Resize Controls** | Drag, resize, and position each element to create your own layout. |
-
-![a4-standard-print](../assets/branding-and-design/ticket-and-receipt-attachment-design/design.gif)
+<Frame caption="Each print format has its own canvas. Standard Badge is designed separately from the A4 ticket.">
+  <img src="../assets/refresh/branding-and-design/ticket-custom-designer-badge.png" alt="Each print format has its own canvas. Standard Badge is designed separately from the A4 ticket." />
+</Frame>
 
 
-## Ticket Receipt PDF
+<Frame caption="Closing a format asks for confirmation before removing its design. This example was cancelled.">
+  <img src="../assets/refresh/branding-and-design/ticket-custom-designer-remove.png" alt="Closing a format asks for confirmation before removing its design. This example was cancelled." />
+</Frame>
 
-**Ticket Receipt PDF** customization allows you to edit the labels and visual elements shown on the receipt that attendees receive after purchasing tickets. These settings help you tailor the receipt to match your event terminology, branding, and formatting preferences.
+## Ticket receipt PDF
 
-![ticket-receipt-pdf-selec](../assets/branding-and-design/ticket-and-receipt-attachment-design/ticket-receipt-pdf-select.png)
+Choose **Ticket Receipt PDF** to set receipt visibility and labels. Hiding a payment or tax label does not change the order calculation.
 
-### Receipt Labels
+<Frame caption="Receipt settings control the customer, order, payment, and total labels.">
+  <img src="../assets/refresh/branding-and-design/receipt-pdf-design.png" alt="Ticket Receipt PDF settings" style={{ maxWidth: "440px" }} />
+</Frame>
 
-**Receipt Labels** allow you to rename the headings shown on the ticket receipt. This helps you match the wording to your event style.
-
-| Ref. | Field | Description | Example |
-|------|-------|-------------|---------|
-| 1. | **Customer Name Label** | The heading is shown before the purchaser’s name on the receipt. | Customer Name, Buyer, Registered By |
-|2.  | **Payment Info Label** | The heading that appears above the payment method information. | Payment Info, Payment Method, Billing Details |
-| 3. | **Charge Label** | The heading for the amount charged to the customer. | Charge, Amount, Total Due |
-| 4. | **Payment Details Label** | The heading that appears above transaction details, such as transaction ID. | Payment Details, Transaction Info |
-| 5. | **Tax Label** | The heading used for tax information on the receipt. | Tax, GST, VAT |
-| 6. | **Total Label** | The heading for the final total amount. | Total, Grand Total |
-| 7. | **Order Date Label** | The heading displayed before the receipt’s order date. | Order Date, Purchase Date |
-
-![ticket-receipt-labels](../assets/branding-and-design/ticket-and-receipt-attachment-design/ticket-receipt-labels.png)
-
+| Controls | Effect |
+|---|---|
+| Show Venue, Show Date, Show Time | Include event details. |
+| Show Customer Name, Show Order Date, Show Charge, Show Payment Details | Include the corresponding order details. |
+| Customer Name Label, Payment Info Label, Charge Label, Payment Details Label | Rename customer and payment headings. |
+| Tax Label, Total Label, Order Date Label | Rename the tax, total, and order-date headings. |
 
 ## Apple Pass
 
-**Apple Pass** allows attendees to save their event ticket directly to Apple Wallet on iOS devices, giving them a convenient and secure way to access their ticket during check-in. This section lets you configure basic settings for the Apple Pass and preview how it will appear to attendees.
+Choose **Apple Pass** to show or hide venue, date/time, ticket, attendee, QR code, logo, and site name. Keep **Show QR Code** enabled when the pass is used for admission.
 
-![apple-pass-select](../assets/branding-and-design/ticket-and-receipt-attachment-design/apple-pass-select.png)
+<Frame caption="Apple Pass has its own visibility settings.">
+  <img src="../assets/refresh/branding-and-design/apple-pass-design.png" alt="Apple Pass settings including the QR code visibility control" style={{ maxWidth: "440px" }} />
+</Frame>
 
+## Verify the finished output
 
-### Show QR Code
-
-Use this toggle to enable the **QR code** on the **Apple Pass**, allowing attendees to scan it for ticket validation.
-
-![show-qr-code](../assets/branding-and-design/ticket-and-receipt-attachment-design/show-qr-code.gif)
-
-
-## Preview Your Customizations
-
-After making changes to your ticket, receipt, or Apple Pass design, you can preview how each attachment will appear on different devices. This helps ensure your layout, colors, labels, and elements display correctly across both desktop and mobile views.
-
-**Desktop Preview:** Click the **Desktop Preview** tab to see how the attachment will appear on larger screens or when downloaded as a PDF.
-
-**Mobile Preview:** Click the **Mobile Preview** tab to check how the attachment will look on mobile devices, including Apple Wallet Pass.
-
-![preview](../assets/branding-and-design/ticket-and-receipt-attachment-design/preview.gif)
+The design preview helps check presentation. Download a PDF from a synthetic attendee's order to verify actual names, event details, seat assignments, and QR codes. Use **Print ticket → Print A4** in attendee management for the full-page ticket; custom badge output requires an enabled design. Check wallet passes on a compatible device and printer formats on the actual printer.
 
 
-> **Tip:** Use both previews to confirm that your ticket, receipt, or Apple Pass design is clear, readable, and correctly formatted before finalizing your layout.
+<Frame caption="Actual A4 ticket PDF from a synthetic Demo order, showing the attendee, assigned seat, and admission QR code.">
+  <img src="../assets/refresh/branding-and-design/ticket-pdf-output.png" alt="Downloaded A4 ticket for Taylor Demo with the Standard ticket and seat Patio de butacas–1–19" style={{ maxWidth: "640px" }} />
+</Frame>
+
+See the [complete design option reference](./design-options-reference) and [attendee details guide](../attendee-management/viewing-attendee-details).

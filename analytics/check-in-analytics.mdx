@@ -1,64 +1,52 @@
 ---
-title: "Check-in Analytics"
-description: "Review check-in activity and attendance trends for your events using date and event filters."
+title: "Attendance analytics"
+description: "Compare unique arrivals and repeat scans, inspect checked-in attendees, and understand export limits."
 ---
 
-The **Check-in Analytics** dashboard gives you a clear, real-time view of how attendees are checking into your event. You can track total check-ins, unique attendees, and quickly understand check-in activity trends over time.
+Open **Analytics**, select an event or occurrence, and choose **Attendance**. Choose a range that includes the expected arrivals. Screenshots use illustrative data.
 
+## Attendance totals and activity
 
-## Navigation
+The summary shows **Tickets Sold**, **Checked In**, **No-shows**, and **Attendance**. Checked In and attendance percentage use unique attendees; scanning someone again must not count as another attendee. For an upcoming or ongoing event, people who have not checked in may still arrive later.
 
-**Step 1:** Log in to your **TicketSpot** account and click the **Analytics** tab from the top navigation bar.
+<Frame caption="Illustrative analytics data. Attendance totals and Check-in Activity distinguish people from scans.">
+  <img src="../assets/refresh/analytics/analytics-checkin.png" alt="Attendance totals and Check-in Activity distinguish people from scans." />
+</Frame>
 
-![analytics-tab](../assets/analytics/check-in-analytics/analytics-tab.png)
+Turn on **Include repeat scans** to inspect repeat scanning. A separate **Scans** total appears, and the timeline includes the repeated activity. The sold count, unique checked-in count, no-shows, and attendance percentage remain based on unique attendance.
 
-**Step 2:** Click on the **Analytics Type drop-down** menu and select the **Check-in Analytics** type.
+<Frame caption="Illustrative analytics data. Include repeat scans adds scan activity without increasing unique attendance.">
+  <img src="../assets/refresh/analytics/analytics-checkin-repeat.png" alt="Include repeat scans adds scan activity without increasing unique attendance." />
+</Frame>
 
-![select-analytics-type](../assets/analytics/check-in-analytics/select-analytics-type.gif)
+Use **Group by** to inspect the arrival pattern at an appropriate interval. Hover over the timeline for bucket values.
 
+## Check-ins by Ticket Type
 
-Your dashboard instantly updates to show all check-in-related insights.
+Each ticket type shows checked-in versus sold, configured capacity, percentage checked in, and the number not checked in. This helps compare arrival progress across ticket types.
 
-## Select Event
+<Frame caption="Illustrative analytics data. Compare attendance and remaining arrivals by ticket type.">
+  <img src="../assets/refresh/analytics/analytics-attendance-detail-types.png" alt="Compare attendance and remaining arrivals by ticket type." />
+</Frame>
 
-Use the **Select Event** dropdown to choose the event you want to analyze.
+## Attendees table
 
-![select-event](../assets/analytics/check-in-analytics/select-event.gif)
+The table contains people with check-in activity. It is not a list of everyone who bought a ticket. To find people who never checked in, use the event’s [Attendees dashboard](/attendee-management/managing-attendees).
 
+**Search this page…** matches the loaded page’s name, email, or ticket type. **All ticket types** narrows that loaded page as well; it does not search every server page. Pagination loads another page, with **25, 50, or 100** rows per page. The columns are **Attendee**, **Ticket**, **Status**, and **Check-in time**.
 
-Once selected, all charts and metrics on the page will update to reflect that specific event’s check-ins.
+<Frame caption="Illustrative analytics data. Search and ticket-type filtering apply to the loaded attendee page.">
+  <img src="../assets/refresh/analytics/analytics-attendance-detail.png" alt="Search and ticket-type filtering apply to the loaded attendee page." />
+</Frame>
 
-## Date Filters
+With repeat scans enabled, choose **Scanned N Times** to open **All Scan Times** for that attendee. Otherwise the table displays the check-in timestamp.
 
-You can filter analytics by preset date ranges like **1 day**, **7 days**, or **1 year**, or choose a **custom date** range.
+<Frame caption="Illustrative analytics data. Open the repeat-scan count to inspect every recorded scan time.">
+  <img src="../assets/refresh/analytics/analytics-attendance-detail-scans.png" alt="Open the repeat-scan count to inspect every recorded scan time." />
+</Frame>
 
-![date-filter](../assets/analytics/check-in-analytics/date-filter.gif)
+## Export
 
-After applying the filters, the dashboard updates automatically based on the selected time window.
+The top **Export CSV** currently requests unique attendance regardless of the repeat-scan toggle. It does not carry the table search or ticket-type selection.
 
-## Summary Metrics
-
-These metrics give you an instant snapshot of your event’s check-in activity, offering a quick overview of overall attendance.
-
-| Ref No. | Metric Name      | Description                                           |
-|--------|-------------------|-------------------------------------------------------|
-| 1.     | **Total Check-ins**   | Shows the total number of check-ins recorded.         |
-| 2.     | **Unique Attendees**  | Indicates how many individual attendees checked in.   |
-| 3.     | **Time Interval**     | Displays the selected check-in interval (e.g., 15m).  |
-
-![card-metrices](../assets/analytics/check-in-analytics/card-metrices.png)
-
-
-## Check-in Timeline Graph
-
-The **Check-in Timeline** graph displays how check-ins occurred over time within your selected date and interval.
-
-The graph includes:
-
-- A line for **Total Check-ins**  
-- A line for **Unique Attendees**  
-
-![timeline-graph](../assets/analytics/check-in-analytics/timeline-graph.png)
-
-
-This graph helps you see when most people checked in, when it was slow, and whether check-ins were steady or suddenly increased.
+<Warning>In the reviewed build, this Attendance export calls a summary endpoint that does not generate CSV. The downloaded file may contain JSON even though its name ends in .csv. Use the attendee dashboard’s [check-in export](/attendee-management/export-attendees-and-check-in-data) for a usable check-in file while this issue is corrected.</Warning>

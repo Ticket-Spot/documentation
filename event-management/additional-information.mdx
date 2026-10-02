@@ -1,101 +1,94 @@
 ---
-title: "Additional Information"
-description: "Add registration questions, map attendee answers, and configure ticket-specific questions."
+title: "Registration questions and check-in requirements"
+description: "Add custom questions, editable dropdown choices, ticket-specific rules, and separate requirements at checkout and check-in."
 ---
 
-The **Additional Information** step allows you to collect extra details from attendees during registration. You can add custom registration questions to gather any information needed for planning or organizing your event.  
+Open **Events → Edit event → Additional Info** (also labeled **Additional Information**). Questions collect information for registration, attendee follow-up, or admission.
 
-Use **Quick Add** to insert common questions instantly, or choose **Add Custom Question** to create your own. This helps you control exactly what information you collect from attendees.
-
-
-## Adding Your First Question
-
-You can start collecting attendee information by adding your first question to the form. You can either choose a pre-built question using **Quick Add** or create your own using **Add Custom Question**.
-
-![additional-info](../assets/create-events/additional-information/additional-info.png)
-
-### Quick Add
-
-Use **Quick Add** to insert commonly used RSVP questions instantly—no setup required. This is the fastest way to collect essential attendee details without creating each question manually.  
-
-1. Click on the **Quick Add** button to instantly open a list of questions you can add to your event.
-
-![click-quick-add](../assets/create-events/additional-information/click-quick-add.png)
-
-2. A pop-up will appear showing preset questions you can choose from. Select any question you want to add to your event (e.g., **Phone Number**, **Company Name**, **Meal Preference**, **Number of Guests**, etc.).
-
-![click-quick-add](../assets/create-events/additional-information/common-quest-list.png)
-
-3. Click any question (e.g., Phone Number) to instantly add it to your list of RSVP questions. You can edit these questions anytime based on your event needs.
-
-![quest-created-success](../assets/create-events/additional-information/quest-created-success.png)
+## Add a question
 
 
-### Add Custom Question
+<Frame caption="Quick Add inserts a preset question into the event form. Open its pencil/edit action to review the wording and requirements before saving the event.">
+  <img src="../assets/refresh/event-management/question-create-presets.png" alt="Quick Add inserts a preset question into the event form. Open its pencil/edit action to review the wording and requirements before saving the event." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-Use **Add Custom Question** when you need full control over the question text, answer type, or how the response is stored. This option lets you create completely customized fields so you can collect any additional attendee information that isn’t covered by the quick-add options. 
+<Frame caption="Add Custom Question lets you choose a response type, enter the question, and configure attendee-property mapping and separate checkout/check-in requirements.">
+  <img src="../assets/refresh/event-management/question-create.png" alt="Add Custom Question lets you choose a response type, enter the question, and configure attendee-property mapping and separate checkout/check-in requirements." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-1. Click on the **Add Custom Questions** button to create your own RSVP question.
+1. **Quick Add** inserts a preset directly into the event form. Use its pencil/edit action to review the wording and requirements. Use **Add Custom Question** to define a question from scratch.
+2. Choose **Response Type Selection** and enter **Custom Question Text**.
+3. Configure answer options, required settings, waitlist visibility, and ticket applicability.
+4. Select **Create question** or **Update question**, then save the event where requested.
+5. Test the applicable ticket's checkout and inspect the saved attendee answer.
 
-![click-add-custom-question](../assets/create-events/additional-information/click-add-custom-question.png)
+Quick Add includes Phone Number, How did you hear about us?, Dietary Restrictions, T-shirt Size, Team Name, Special Accommodations, Emergency Contact, Company/Organization, Job Title, waiver presets, and Photo/Video Release. Review each preset's wording and requirements before using it.
 
-
-2. A modal window will appear, allowing you to add and customize the question.
-
-![quick-add-ques-modal-win](../assets/create-events/additional-information/quick-add-ques-modal-win.png)
-
-3. Fill out the fields to control how the question appears and how attendee responses are collected. The table below explains each option.
-
-| Ref. | Field                     | Description                                                                | Example                                   |
-|------|---------------------------|----------------------------------------------------------------------------|-------------------------------------------|
-|   1.   | **Response Type Selection** | Choose the type of input you want attendees to provide.                   | Text Field, Dropdown, Checkbox, Multiple Choice |
-| 2.     | **Exclude from Waitlist**  | Toggle ON if this question should not appear when someone joins the waitlist. | Disabled for standard RSVP questions      |
-|   3.   | **Custom Question Text**   | The question label attendees will see.                                     | Phone Number, Your Shirt Size, etc.       |
-|   4.   | **Assign to Attendee Property** | Map the answer to an existing attendee property for reporting.          | Phone, Job Title, Company                 |
-|   5.   | **Required**               | Marks the question as mandatory for attendees.                             | ON for Phone Number                       |
-|    6.  | **Ticket-Specific Question** | Apply the question only to selected ticket types.                        | Only for “VIP Pass”                       |
-
-![fill-details-questions](../assets/create-events/additional-information/fill-details-questions.gif)
-
-> **Note:** Some fields may change depending on the Response Type Selection. For example, choosing multiple choice, checkbox, or dropdown will display additional options for adding answer choices.
-
-4. Click on the **Create Question** button to save and add it to your event.
-
-![click-create-question](../assets/create-events/additional-information/click-create-question.png)
+## Response types
 
 
-> **Tip:** You can add as many questions as you need to collect all the required information from your attendees.
-![multiple-quest-add](../assets/create-events/additional-information/multiple-quest-add.png)
+<Frame caption="Response Type Selection offers text, radio buttons, dropdown, checkboxes, waiver/terms, Shopify product variants and a date picker.">
+  <img src="../assets/refresh/event-management/question-types.png" alt="Response Type Selection offers text, radio buttons, dropdown, checkboxes, waiver/terms, Shopify product variants and a date picker." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+| Type | Configuration |
+|---|---|
+| **Text Field (Single Line)** | A short written response. |
+| **Choice (Radio Buttons)** | A single choice from **Answer Options**. |
+| **Choice (DropdownMultiselect Menu)** | Dropdown choices, a placeholder, and optional attendee-created choices. |
+| **Multiple Selections (Checkboxes)** | A set of choices where multiple answers are allowed. |
+| **Date Picker** | A date response. |
+| **Waiver/Terms Agreement** | Document link, uploaded PDF, or entered text, plus checkbox/name/signature acknowledgement. Requires the supported plan. See [waivers](./waivers). |
+| **Shopify Product Variant** | An **Option Name** and choices for a Shopify product option when offered by the site's setup. Its controls differ from ordinary attendee questions. Verify the synchronized product. |
+
+## Question options
 
 
-## Manage Questions
+<Frame caption="Assign to Attendee Property stores an answer in the selected attendee field. Scroll the picker to find supported fields such as Company or Job Title.">
+  <img src="../assets/refresh/event-management/question-scope-mapping.png" alt="Assign to Attendee Property stores an answer in the selected attendee field. Scroll the picker to find supported fields such as Company or Job Title." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-After adding your RSVP questions, you can manage them anytime. You can edit an existing question or delete one if it’s no longer needed.
+<Frame caption="Dropdown questions accept one option per line. You can customize the placeholder, let attendees add choices, and keep those choices alphabetically sorted.">
+  <img src="../assets/refresh/event-management/question-dropdown.png" alt="Dropdown questions accept one option per line. You can customize the placeholder, let attendees add choices, and keep those choices alphabetically sorted." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-### Edit Question
+| Option | Effect |
+|---|---|
+| **Custom Question Text** | The label the attendee sees. |
+| **Answer Options** | Enter the available choices for radio, dropdown, or checkbox questions, one per line. |
+| **Placeholder Text** | The prompt before a dropdown selection is made. |
+| **Allow attendees to add new options** | Allows new dropdown values during registration; they become available to future attendees. Duplicate options are prevented. |
+| **Keep options alphabetically sorted** | Sorts dropdown options when attendee-added choices are enabled. |
+| **Assign to Attendee Property** | Stores the answer in a supported attendee property for reporting/personalization. Requires the supported plan and is not offered for every response type. |
+| **Required at checkout** | Prevents completing checkout without an answer. |
+| **Required at check-in** | Requires the answer before admission. Leave Required at checkout off when attendees may answer later. |
+| **Exclude from Waitlist** | Omits the question from the waitlist form. |
+| **Ticket-Specific Question** | Shows the question only for the selected ticket types. |
 
-1. Click on the **Edit** icon next to the question you want to update.  
+Requirements and ticket applicability are independent. For example, a VIP waiver can be required at check-in while an optional dietary question applies to all guests.
 
-![edit-icon](../assets/create-events/additional-information/edit-icon.png)
+<Accordion title="View more current controls">
 
-2. Update the question text, response type, or any other details in the form. 
+<Frame caption="Checkout and check-in requirements are independent. This example allows checkout without an answer but requires it before admission.">
+  <img src="../assets/refresh/event-management/question-required-rules.png" alt="Checkout and check-in requirements are independent. This example allows checkout without an answer but requires it before admission." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![edit-details](../assets/create-events/additional-information/edit-details.gif)
+<Frame caption="Ticket-Specific Question limits the question to selected ticket types. Leave it unrestricted to collect the answer for all tickets; set checkout and check-in requirements separately.">
+  <img src="../assets/refresh/event-management/question-scope.png" alt="Ticket-Specific Question limits the question to selected ticket types. Leave it unrestricted to collect the answer for all tickets; set checkout and check-in requirements separately." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-3. Click **Update Question** to save your changes.
+</Accordion>
 
-![click-update-question](../assets/create-events/additional-information/click-update-question.png)
+## Collect answers from every participant
 
+In **Design → Widget → Checkout → Attendee information**, enable **Collect attendee details for each ticket** when every guest must answer individually. Test an order for two people and verify both attendee records. A required question alone does not establish whether the form collects each guest or only the buyer.
 
-### Delete Question
+For later completion, attendees need access to editing on their [ticket page](/branding-and-design/attendee-ticket-page). Check both **Allow Attendee Edits** and the actual missing-answer/check-in experience before using a “complete later” workflow.
 
-1. Click the **Delete** icon next to the question you want to remove.
+## Maintain and verify questions
 
-![click-delete-icon](../assets/create-events/additional-information/click-delete-icon.png)
+Use the row's edit control to change a question. Use Delete and confirm to remove one. Recheck the form after changing choices or ticket scope.
 
+Test an empty required answer, an optional answer, a ticket that should not see the question, waitlist signup, a newly added dropdown option, and any waiver. For check-in requirements, test an attendee with a missing answer and then with the answer completed.
 
-2. A confirmation pop-up will appear asking if you want to delete the question – Click **Yes** to confirm.
-
-![confirm-delete](../assets/create-events/additional-information/confirm-delete.png)
-
-After you confirm, the question is removed from the question list. Review the registration form before saving your event.
+See [waivers](./waivers), [attendee details](/attendee-management/viewing-attendee-details), and [attendee exports](/attendee-management/export-attendees-and-check-in-data).

@@ -1,0 +1,239 @@
+{
+  "page": "getting-started/platform-overview.mdx",
+  "scope": "Approved first-page sample; remaining documentation refresh authorized.",
+  "approved_style": {
+    "color": "#9c26dc",
+    "shape": "unfilled oval",
+    "stroke_css_px": 4,
+    "max_targets": 3,
+    "browser_chrome": false
+  },
+  "status": "Approved by user; full refresh in progress.",
+  "shots": [
+    {
+      "id": "navigation",
+      "section": "Welcome / navigation",
+      "asset": "assets/refresh/getting-started/platform-navigation.png",
+      "alt": "Ticket Spot Demo navigation with the site selector and Design highlighted",
+      "caption": "Choose your site from the top-left menu, then use the navigation tabs to open each area.",
+      "provenance": "Live Demo navigation",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2680,
+        310
+      ],
+      "bytes": 66230
+    },
+    {
+      "id": "brand",
+      "section": "Start with your brand",
+      "asset": "assets/refresh/getting-started/platform-brand.png",
+      "alt": "Brand editor with Upload Image and the primary color swatch highlighted",
+      "caption": "Open Design → Brand to upload a logo and choose your primary color. The preview shows how the selected brand appears.",
+      "provenance": "Live Demo brand editor",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2110,
+        1130
+      ],
+      "bytes": 478908
+    },
+    {
+      "id": "memberships",
+      "section": "Memberships",
+      "asset": "assets/refresh/getting-started/platform-memberships.png",
+      "alt": "Create Membership editor with Pricing and Access Rules highlighted",
+      "caption": "In Memberships, create a membership and review Pricing, Access Rules, and assigned Events. This example shows a $99 one-year pass.",
+      "provenance": "Unsaved example form; no membership created",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        1800,
+        1180
+      ],
+      "bytes": 118567
+    },
+    {
+      "id": "events",
+      "section": "Event Management",
+      "asset": "assets/refresh/getting-started/platform-events.png",
+      "alt": "Sunset Yoga event card with Open dashboard and Manage event highlighted",
+      "caption": "Choose Manage event to edit the event, or Open dashboard to manage its attendees.",
+      "provenance": "Live Demo event card",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        970,
+        1290
+      ],
+      "bytes": 988159
+    },
+    {
+      "id": "analytics",
+      "section": "Analytics",
+      "asset": "assets/refresh/getting-started/platform-analytics.png",
+      "alt": "Analytics overview with the date range and Sales tab highlighted",
+      "caption": "Select an event and date range, then switch between Overview, Sales, Attendance, Traffic, Abandoned Carts, and Email.",
+      "provenance": "Live Demo analytics; example figures",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2540,
+        1140
+      ],
+      "bytes": 114395
+    },
+    {
+      "id": "attendees",
+      "section": "Attendee Management",
+      "asset": "assets/refresh/getting-started/platform-attendees.png",
+      "alt": "Attendee dashboard with Add Attendee and search highlighted; identity concealed",
+      "caption": "Use Add Attendee for a manual registration, search or filter the list, and use Export for a report. Personal details are concealed in this example.",
+      "provenance": "Live Demo attendee list; name and email masked",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        1290,
+        793
+      ],
+      "bytes": 79746
+    },
+    {
+      "id": "portal",
+      "section": "Attendee Portal",
+      "asset": "assets/refresh/getting-started/platform-portal.png",
+      "alt": "Attendee ticket-page preview showing QR access, documents, and contact actions",
+      "caption": "Attendees can view their QR code, download documents, and contact the host. This built-in preview shows the available sections; hosts control their visibility in Design → Attendee Ticket Page.",
+      "provenance": "Built-in product preview with sample order data; not a customer order",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        1350,
+        1530
+      ],
+      "bytes": 84983
+    },
+    {
+      "id": "mobile",
+      "section": "Mobile App",
+      "asset": "assets/refresh/getting-started/platform-mobile.png",
+      "alt": "Check-in launcher with App Store and Google Play installation links circled",
+      "caption": "From Events → View activity, choose Check In Attendees. Use the mobile installation QR codes or links for iOS and Android, or start desktop check-in.",
+      "provenance": "Live app installation panel; not a native mobile-app screen",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        960,
+        974
+      ],
+      "bytes": 74765
+    },
+    {
+      "id": "design",
+      "section": "Branding and Design",
+      "asset": "assets/refresh/getting-started/platform-design.png",
+      "alt": "Widget editor with Quick Settings and View all layouts highlighted",
+      "caption": "Open Design → Widget. Start in Quick Settings, use View all layouts for layout choices, or open All Settings for the complete set of controls.",
+      "provenance": "Live Demo widget editor and preview",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2370,
+        1350
+      ],
+      "bytes": 462476
+    },
+    {
+      "id": "integrations",
+      "section": "Integrations",
+      "asset": "assets/refresh/getting-started/platform-integrations.png",
+      "alt": "Event platform integration cards with Eventbrite and Ticket Tailor highlighted",
+      "caption": "In Integrations, find Event Platforms and choose View Details or Connect for the service you want to use.",
+      "provenance": "Live integration cards; no services connected during capture",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2560,
+        830
+      ],
+      "bytes": 77321
+    },
+    {
+      "id": "site-settings",
+      "section": "Site Settings",
+      "asset": "assets/refresh/getting-started/platform-settings.png",
+      "alt": "Settings navigation with Domains and Sender Identity and Mobile Check-in highlighted",
+      "caption": "Open Settings to configure domains, sender identity, analytics, event submissions, mobile check-in, and marketplace options.",
+      "provenance": "Live Demo settings; no settings changed",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2480,
+        1010
+      ],
+      "bytes": 87978
+    },
+    {
+      "id": "plugins",
+      "section": "Plugins",
+      "asset": "assets/refresh/getting-started/platform-plugins.png",
+      "alt": "Platform integration cards showing Shopify connected to Ticket Spot Demo and Wix installation highlighted",
+      "caption": "Website and ecommerce connections are under Integrations → Platform Integrations. The example shows the Demo Shopify connection alongside Wix and Ecwid.",
+      "provenance": "Live platform cards; no apps installed during capture",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        2560,
+        790
+      ],
+      "bytes": 71031
+    },
+    {
+      "id": "team",
+      "section": "Team",
+      "asset": "assets/refresh/getting-started/platform-team.png",
+      "alt": "Add team member form with Ticket Checker and Event Manager role selectors circled",
+      "caption": "Choose Invite Team → Invite Team Member, enter an email address, and select Admin, Ticket Checker, Support Manager, or Event Manager.",
+      "provenance": "Live invitation form; no invitation sent",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        1200,
+        1538
+      ],
+      "bytes": 152393
+    },
+    {
+      "id": "account",
+      "section": "Account",
+      "asset": "assets/refresh/getting-started/platform-account.png",
+      "alt": "Account menu with Account Setting and Notifications highlighted",
+      "caption": "Open Account in the top-right corner for profile settings, payouts, and notifications. Billing is available separately in the header.",
+      "provenance": "Live account menu; profile identity cropped out",
+      "status": "Captured and visually checked",
+      "dimensions": [
+        424,
+        380
+      ],
+      "bytes": 23358
+    }
+  ],
+  "captured_date": "2026-10-01",
+  "source": "Authenticated localhost Ticket Spot dashboard, Ticket Spot Demo selected; original UI with native SVG circle overlays.",
+  "animation": {
+    "asset": "assets/refresh/getting-started/platform-widget-tour.gif",
+    "poster": "assets/refresh/getting-started/platform-widget-tour-poster.png",
+    "action": "Design → Widget: Quick Settings to All Settings",
+    "duration_ms": 7240,
+    "zoom": "1.0× → 1.25× → 1.0×",
+    "dimensions": [
+      1270,
+      675
+    ],
+    "bytes": 2534555,
+    "provenance": "Live browser frames with temporary presentation zoom, restored after capture; no settings changed."
+  },
+  "review_notes": [
+    "All 11 old image placements replaced; navigation, Brand and Memberships images added.",
+    "Attendee portal uses the built-in sample preview. Mobile section uses the installation launcher.",
+    "No browser address bars in any asset. No invitations, emails, purchases, or saved product edits made.",
+    "The pre-existing YouTube overview embed has not been re-recorded in this batch."
+  ],
+  "validation": {
+    "mdx_pages_compiled": 108,
+    "local_links_and_media_checked": 1023,
+    "review_gallery_images_loaded": 14,
+    "documentation_media_loaded": 15,
+    "responsive_preview": "Desktop 1440px and mobile 390px verified with no horizontal overflow",
+    "gif": "Browser-captured start, zoom, click result and final frames visually checked; play and stop controls verified"
+  }
+}

@@ -1,50 +1,58 @@
 ---
-title: "Export Attendees and Check-In Data"
-description: "Export registration and check-in data for reporting, event operations, and reconciliation."
+title: "Export Attendees, Check-In and Financial Data"
+description: "Choose the right CSV report, export selected or filtered attendees, and understand the location and financial fields."
 ---
 
-When you **export attendee** data, you get a complete record of registrations, attendance, and event activity. This gives you clear visibility into who joined and how they interacted and helps with verification, reporting, order checking, and maintaining accurate event documentation.
+Open your event's **Attendees** page and choose **Export** above the attendee table. The menu offers three CSV reports.
 
+<Frame caption="Choose an attendee, check-in, or financial CSV. The two switches apply to Export Attendees.">
+  <img src="../assets/refresh/attendee-management/attendee-financial-export.png" alt="Export menu with Financial Report, Export all attendees, and Include location circled" />
+</Frame>
 
-Once generated, the export downloads automatically. You can review it, store it, or import it into your CRM or analytics tools to support post-event follow-ups and streamline your internal workflows.
+| Report | What it contains | Scope |
+| --- | --- | --- |
+| **Export Attendees** | Registration and contact details, ticket and attendance status, question answers, seat label, ticket amounts, and scan information. Membership and add-on fields are included where applicable. | Selected rows, all attendees, or active filters, as explained below. |
+| **Export Check-in Activity** | Attendee and ticket details, the recorded check-in timestamp, and the account that performed the action when available. | The event currently open. Row selection and attendee filters do not narrow this report. |
+| **Export Financial Report** | Order-level totals, discounts, fees, taxes, refunds, disputes, net totals, currency, and available payment-reference information. | The event or series currently open. Row selection and attendee filters do not narrow this report. |
 
+## Export from an event card
 
-**Step 1**: Log in to your Ticket Spot account, then click the Attendee icon next to the event you want to export attendee data for.
+On **Events**, open the card's **More actions → Export attendees**. The dialog offers **Attendees**, **Check-in activity**, and **Financial report**, with **Include location** for the attendee CSV.
 
-![click-attendee-icon](../assets/attendee-management/export-attendees-and-check-in-data/click-attendee-icon.png)
+<Frame caption="Read Exporting before choosing a report. A series card starts with its next upcoming date.">
+  <img src="../assets/refresh/attendee-management/attendee-export-event-card.png" alt="Event-card export dialog showing the selected date, Check-in activity, and Include location" style={{ maxWidth: "620px" }} />
+</Frame>
 
-**Step 2**: Click on **Manage Attendees** to open the attendee dashboard for that event.
+For a series, the card automatically chooses its next upcoming occurrence. If none is available or the lookup fails, it falls back to the series. It does not reuse attendee-page filters or row selections. To choose another date, open that occurrence's attendee page and export there. For check-in or financial details from a timed-entry slot, open the particular slot; the date-level card caption does not guarantee that these reports combine every time slot.
 
-![click-manage-attendee](../assets/attendee-management/export-attendees-and-check-in-data/click-manage-attendee.png)
+## Export selected, filtered, or all attendees
 
+The attendee export follows this order:
 
-The detailed **Attendees Dashboard** will appear, showing the full list of attendees for the selected event.
+1. **Selected rows:** tick the checkboxes beside the people you need. **Export Attendees** exports those selections, even if **Export all attendees** is on.
+2. **Everyone:** clear the row selection and leave **Export all attendees** on. Active filters do not limit the export.
+3. **Filtered results:** clear the row selection, apply your filters, and switch **Export all attendees** off. Then choose **Export Attendees**. The export uses the current filters, including status, ticket, payment, and question-answer filters.
 
-![attendee-dashboard](../assets/attendee-management/export-attendees-and-check-in-data/attendee-dashboard.png)
+<Note>
+**Export all attendees** is on when you first open the page. Turn it off if you intend to export filtered results. Selecting the header checkbox selects the attendees loaded in the table; use the export switch to export everyone without loading every row.
+</Note>
 
+For the available filters, see [Managing Attendees](./managing-attendees#search-and-filter-attendees).
 
-**Step 3**: Click the **Export** button at the bottom right of the Attendees Dashboard.
+## Include location
 
-![click-export-btn](../assets/attendee-management/export-attendees-and-check-in-data/click-export-btn.png)
+Turn on **Include location** to add the visitor's **city, region, and country** to the attendee CSV when that information is available from their tracked visit. These fields may be blank. This switch does not add check-in stations or entry gates and does not change the check-in or financial report.
 
-**Step 4**: A dropdown menu will appear, showing the following export types and fields (as listed in the table below):
+## Dates, seats, and scans
 
-| Ref. | Field | Description | Example (When Toggle Is ON) |
-|------|--------|-------------|------------------------------|
-| 1. | **Export Attendees Data** | Downloads attendee information for the selected event. | Generates a file with all attendee details currently visible in the dashboard. |
-| 2. | **Export Check-In Activity** | Downloads detailed check-in activity records. | Includes each check-in action with timestamps and operator details. |
-| 3. | **Export All Attendees** | Toggles between exporting only filtered attendees or exporting everyone. | When ON, all attendees are exported, even if filters are applied (e.g., “VIP only”). |
-| 4. | **Include Location** | Adds location-related details to the exported file (if multiple check-in points exist). | When ON, the export includes the check-in station or entry point used by each attendee. |
+The attendee CSV includes separate event start and end dates, times, and the event timezone. It also includes a **seat label**, scan code, scan count, and first/last scan timestamps when recorded. Question answers and available add-on information appear as additional columns.
 
-![export-dropdown-list](../assets/attendee-management/export-attendees-and-check-in-data/export-dropdown-list.png)
+For an event series, the attendee and financial exports can include its occurrences. The check-in activity export currently uses the event that is open; open the particular occurrence's attendee page when you need its check-in history.
 
+## Download and reconcile
 
-**Export Attendees Data**: Downloads the full attendee list for the event, including registration details, ticket type, and attendance status.
+Choose the report and wait for the download. The filename includes the event title, report type, and export time. Your browser saves it according to your download settings.
 
-**Export Check-In Activity**: Downloads detailed check-in records, including timestamps, check-in method, operator, and location (if enabled).
+Use the attendee CSV for a registration list and the financial CSV for order reconciliation. An order can contain several attendees, so the reports have different row counts and measures. **Net total** in the financial CSV is the order's gross total less recorded refunds and disputes; it is not a payment-provider payout statement.
 
-
-![export-data-gif](../assets/attendee-management/export-attendees-and-check-in-data/export-data-gif.gif)
-
-
->**Note:** A **CSV** file is automatically downloaded and saved to the device’s default download location.
+An event with no recorded check-ins has no check-in activity rows. Available fields also depend on your team role and the information recorded for the booking.

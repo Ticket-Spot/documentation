@@ -1,0 +1,9 @@
+{
+  "purpose": "Annotation style approval only; AI-edited from a legacy screenshot. Not a fresh product capture and not approved for production documentation.",
+  "source": "assets/create-events/ticket-setup/create-ticket-5.png",
+  "output": "media-review/samples/create-ticket-circle-style.png",
+  "method": "Built-in image_gen edit",
+  "color": "#9c26dc",
+  "prompt_summary": "Replace the existing purple arrow beside Create New Ticket with one unfilled purple oval; preserve the UI, match the annotation color, and show no browser chrome or URLs.",
+  "review": "Purple oval surrounds the intended button without covering its label. No browser chrome or address bar is visible. The AI output is a style concept; it is not guaranteed to preserve source screenshot pixels."
+}

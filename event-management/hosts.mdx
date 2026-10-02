@@ -1,72 +1,40 @@
 ---
 title: "Event Hosts"
-description: "Add event hosts and event-level managers and choose how they appear to attendees."
+description: "Invite event hosts, assign event-level roles, and manage active hosts and pending invitations."
 ---
 
-The **Event Hosts** section helps you add hosts, special guests, or event-level managers to a specific event. These individuals can help manage the event, support check-ins, or appear publicly on the event page (if enabled in Display Settings).
+Open **Events → Edit event → Hosts**. Event hosts can help manage this event, check tickets, or appear publicly when host display is enabled. Event roles are separate from site-wide team access.
 
-Adding hosts at the event level ensures you control exactly who can access and manage each event—without giving them permissions for your entire site. You can assign the access level that best matches each person’s role.
+## Invite a host
 
+1. Under **Manage Hosts**, click **Add Host**.
+2. Choose **Select Team Member**, or use **Or Enter Email Manually**.
+3. Complete **First Name** and **Last Name**.
+4. Select the appropriate **Role**.
+5. Click **Add Host** to send the event invitation. It appears under **Pending Invitations** until accepted; it does not immediately become an active host.
 
-**Step 1**: Click the **Add Host** button to add a host, guest, or event-level manager to this event.
+<Frame caption="Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.">
+  <img src="../assets/refresh/event-management/event-hosts.png" alt="Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![add-host](../assets/create-events/hosts/add-host.png)
+| Role | Event access |
+|---|---|
+| **Manager** | Can manage the event and its settings. |
+| **Ticket Checker** | Can check tickets. |
+| **Non Manager** | Has no event-management access. |
 
-A modal window will appear where you can enter the host’s details, including their name, email, and the role you want to assign.
+## Active members
 
-![add-host-modal-win](../assets/create-events/hosts/add-host-modal-win.png)
+Select **Active Members** to see accepted, active hosts and their role badges. Use the pencil icon to edit a host's **First Name**, **Last Name**, or **Role**, then choose **Save Changes**. The email address is read-only.
 
+Use the remove icon and confirm to remove an eligible host from the event. The event owner's row does not offer removal. Removing an event host does not revoke separate site-team permissions they may hold.
 
-**Step 2**: You’ll see required fields that need to be filled out before adding the host. The table below explains what each field means and how it’s used.
+## Pending invitations
 
-| **Ref.** | **Field**              | **Description**                                                | **Example**                  |
-|---------|-------------------------|----------------------------------------------------------------|------------------------------|
-| 1.       | **Select Team Member**      | Choose an existing team member from your site.                 | `alex@example.com`             |
-| 2.       | **Email (Manual Entry)**    | Enter an email if the person is not already a team member.     | `john.doe@example.com`         |
-| 3.       | **First Name**              | The host’s first name as it will appear on the event.          | John                         |
-| 4.       | **Last Name**               | The host’s last name as it will appear on the event.           | Doe                          |
-| 5.      | **Role**                    | Assign the host’s access level for this specific event.        | Manager, Ticket Checker, Non-Manager |
+Select **Pending Invitations** to inspect invitations awaiting acceptance. Open a row's actions menu to **Resend Invitation** or **Delete** it. Resending sends another invitation email; deleting asks for confirmation.
 
-![add-host-details-gif](../assets/create-events/hosts/add-host-details-gif.gif)
+## Show hosts to attendees
 
-**Step 3**: Click **Add Host** to save the host details and assign them to the event.
+Configure host visibility in [Event Page design](../branding-and-design/event-page-design) and [Widget Display settings](../branding-and-design/widget-display-reference). Use this event's [Display Settings](./display-settings) to override its host name, logo, and Meet the Host content.
 
-![click-add-host-final-btn](../assets/create-events/hosts/click-add-host-final-btn.png)
-
-The host will now appear in the Manage Hosts list for this event.
-
-![host-add](../assets/create-events/hosts/host-add.png)
-
-> **Note:** You can add as many hosts as needed for the event and assign each one a specific role.
-![multiple-hosts](../assets/create-events/hosts/multiple-hosts.png)
-
-
-## Manage Hosts
-
-Manage Hosts is where you can update or remove hosts already added to the event. You can edit a host to change their name or role, or remove them entirely if they no longer need access.
-
-### Edit Host
-
-1. Click the **Edit** icon next to the host you want to update.
-
-![edit-icon-btn](../assets/create-events/hosts/edit-icon-btn.png)
-
-2. Update the **First Name**, **Last Name**, or **Role**, then click **Save Changes** to apply the update.
-
-![edit-details](../assets/create-events/hosts/edit-details.gif)
-
-> **Note:** The host’s email address cannot be edited after the host is created. You can only update their first name, last name, and role.
-![email-cannot-change](../assets/create-events/hosts/email-cannot-change.png)
-
-### Delete Host
-
-1. Click the **Delete** icon next to the host you want to remove.
-
-![click-delete-btn](../assets/create-events/hosts/click-delete-btn.png)
-
-
-2. A confirmation pop-up will appear asking if you want to remove the selected host from the event—click **Remove** to confirm.
-
-![confirm-remove](../assets/create-events/hosts/confirm-remove.png)
-
-Once you confirm the deletion, the host is removed from the event immediately and will no longer have any access or visibility for this event.
+For site-wide collaborators, use [Invite Team](../team/invite-team-roles).

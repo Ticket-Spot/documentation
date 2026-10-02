@@ -1,40 +1,36 @@
 ---
 title: "Adding Attendees Manually"
-description: "Register an attendee manually, select their ticket, and confirm their details and admission status."
+description: "Choose an occurrence, enter contact details and required answers, set ticket quantity and status, and control the notification email."
 ---
 
-You can **manually add attendees** to any event in **Ticket Spot** whenever you need to register someone yourself—whether they signed up offline, were added by your team, or require a custom ticket entry. This guide walks you through each step of the process so you can quickly enter attendee details and keep your event list up to date.
+Open the event's **Attendees** page and choose **Add Attendee**. The **Add New Attendee** dialog creates a registration using the details you provide.
 
+<Frame caption="Manual registration includes ticket quantity, status, and an optional notification. The notification is off in this unsaved example.">
+  <img src="../assets/refresh/attendee-management/attendee-add.png" alt="Add New Attendee dialog with Ticket Information, Status, and the notification switch highlighted" />
+</Frame>
 
-**Step 1**: Log in to your Ticket Spot account, then click the Attendee icon next to the event where you want to add attendees.
+1. For a series, choose the **Event Occurrence**. Select the date and, for a time-based event, the time slot. The form requires a specific occurrence; the series itself is not a bookable date.
+2. Enter the required **First Name**, **Last Name**, and valid **Email Address**.
+3. Choose **Ticket Type**, then set **Quantity**. Tickets load for the selected occurrence. Quantity becomes available after choosing a ticket.
+4. Set **Status**: **Attending**, **Checked In**, **Not Attending**, **Pending**, or **Waitlist**. The default is **Attending**.
+5. Expand **Additional Questions** and complete any required registration questions.
+6. Choose whether to enable **Send notification email to attendee**. It is on by default and sends the email appropriate to the selected status, such as a waitlist confirmation or pending-approval email.
+7. Choose **Add Attendee**, wait for the success message, and check the resulting attendee records. **Cancel** closes the form without adding anyone.
 
-![click-attendee-icon](../assets/attendee-management/adding-attendees-manually/click-attendee-icon.png)
+<Frame caption="Expand Additional Questions to enter the event's registration answers.">
+  <img src="../assets/refresh/attendee-management/attendee-add-questions.png" alt="Manual attendee form with Additional Questions expanded and notification email switched off" />
+</Frame>
 
+## Quantity and allowance
 
-**Step 2**: Click **Manage Attendees** to open the attendee dashboard for that event.
+The dialog shows the site's monthly attendee usage and remaining allowance. The quantity limit takes that allowance into account, with an upper limit of 365 ticket units per submission. A group ticket can create several attendees per unit, so its allowed quantity may be lower. Review the **attendees per ticket** message when it appears.
 
-![manage-attendee](../assets/attendee-management/adding-attendees-manually/manage-attendee.png)
+If the quantity is above the available allowance, reduce it or review the site's [billing and plan allowance](../account/billing-and-plans). A group ticket whose composition exceeds the remaining allowance cannot be added through the form.
 
+## Seating and payment
 
-**Step 3**: After clicking on the **Manage Attendees** button, you will be taken to the Attendees page for that event. Here, click the **Add Attendee** button on the top-right to manually add a new attendee.
+For a reserved-seating event, use the [attendee seating view](../seating-charts/seat-selection#assign-seats-to-existing-attendees) to review and assign actual seats after checking the new registrations.
 
-![click-add-attendee](../assets/attendee-management/adding-attendees-manually/click-add-attendee.png)
+This form does not ask for a card payment. Adding a paid ticket manually is not proof that money has been collected. Review the associated order and payment record as part of your offline-registration process.
 
-
-**Step 4**: A modal window titled **“Add New Attendee”** will appear. Fill in the following details:
-
-| Ref. | Field | Description |
-|-----|--------|-------------|
-| 1. | **First Name** | Enter the attendee’s first name. This field is required. |
-| 2. | **Last Name** | Enter the attendee’s last name. This field is required. |
-| 3. | **Email Address** | Enter a valid email address for the attendee. Required for sending tickets. |
-| 4. | **Ticket Type** | Select the ticket type from the dropdown. |
-| 5. | **Quantity** | Choose how many tickets to assign (default is 1). |
-| 6. | **Send confirmation email to attendee** | Toggle ON/OFF to automatically send a confirmation email. |
-
-![modal-win](../assets/attendee-management/adding-attendees-manually/modal-win.png)
-
-
-**Step 5**: Once you fill in all the required details, click on the **Add Attendee** button to save the information and add the attendee to the event.
-
-![click-add-attednee-btn](../assets/attendee-management/adding-attendees-manually/click-add-attednee-btn.png)
+For later changes, see [Managing Attendees](./managing-attendees) and [Viewing Attendee Details](./viewing-attendee-details).

@@ -1,130 +1,68 @@
 ---
 title: "Widget display settings"
-description: "Choose which event details, images, descriptions, and actions appear in your event widget."
+description: "Configure the information and actions shown on events, recurring-event browsing, pagination, and checkout step order."
 ---
 
-**Display** settings control how event information appears inside your widget. This includes options for showing full descriptions, selecting image sizes, adjusting text behavior, and enabling or disabling visual elements. These settings help you create a clear, readable event layout that matches your design preferences.
+Open **Design → Widget**, select your widget, then **All Settings → Display**. Search settings can take you directly to a control.
 
+## Choose a section
 
-In the Display settings section, you’ll see a list of available settings you can customize:
+| Section | What to configure |
+|---|---|
+| **Event details** | Event title/status, venue/address, online/Zoom details, ongoing events, session choices, availability icons, and RSVP form-only mode. |
+| **Date & time** | Date and time format, start/end visibility, timezone label, and visitor-timezone conversion. |
+| **Images** | Event image visibility, size, zoom, and carousel. |
+| **Header & actions** | Widget header, event link, linked title, attend button, and rounded corners. |
+| **Event description** | Summary/full description, character limit, More behavior, formatting, and right-to-left text. |
+| **Event count & pagination** | Plan ceiling, all-events toggle, maximum count, order, Load more, and events per load. |
+| **Recurring events** | Next occurrence versus expanded occurrences, date grouping, and skipping a single date/time option. |
+| **Hosts & attendees** | Host/attendee sections, their labels, and host avatars. |
+| **Visitor engagement** | Add to Calendar, external checkout embedding, event-page redirection, and new-tab behavior. |
+| **Submit event request** | Submission button, label, and explanatory text. Configure the approval workflow in Site Settings. |
+| **Workshops & add-ons** | Selection subtitle and maximum-reached message. |
+| **Memberships** | Subtitle, image, validity, visit limits, and featured badge. |
+| **Checkout & payment** | Ticket-first or combined date/ticket steps and optional installment information. |
 
-- Event Details  
-- Event Count Preferences  
-- Visitor Engagement  
-- Hosts & Attendees  
-- Time and Date  
-- Components Visibility  
-- Event Types and Status  
-- Event Occurrences  
+The [complete display reference](./widget-display-reference) lists every control and its effect. [Event Filters](./filters) determines which events appear at all.
 
-Click the **arrow icon** next to the setting you want to customize to open its configuration options.
+## Configure and test
 
-![design](../assets/branding-and-design/display-settings/arrow-1.png)
+1. Change one group of related controls and wait for saving to finish.
+2. Preview a normal event and a recurring event.
+3. Check event count and pagination with more events than fit in the first load. Show all does not override the plan limit.
+4. Test the buy/attend button to confirm whether it opens checkout, an event page, or an external destination.
+5. Test the selected checkout step order and session options on the installed widget.
 
-## Event Details
+Dates shown in the listing and dates shown in checkout have separate formatting controls. Hiding a field does not change the underlying event information.
 
-| Field                    | Description                                                                                                                             |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Display Full Description** | Shows the entire event description instead of a shortened preview, or you can also select the length of the description.               |
-| **Image Size**               | Sets the size of the event image. Options: Small, Medium, Large.                                                                        |
-| **Disable Image Zoom**       | Prevents users from zooming into event images.                                                                                          |
-| **Use Plain Text**           | Displays the event description without any formatting.                                                                                  |
-| **Right to Left Text**       | Enables right-to-left text orientation for supported languages.                                                                         |
-| **Remove Title URL Link**    | Removes the clickable link from the event title so it appears as plain text.                                                            |
-| **Image Carousel**           | Shows multiple images as a swipeable carousel instead of a single image.                                                                |
+{/* CURRENT CAPTURES */}
 
-![design](../assets/branding-and-design/display-settings/event-2.gif)
+## Current controls
 
-## Event Count Preferences
+<AccordionGroup>
 
-| Field                     | Description                                                                                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Show All Available Events** | Enable the display of every published event in the widget. Disable if you want to limit the number of events shown.                    |
-| **Limit Total Events**        | Set the maximum number of events to display (e.g., 5). Only applies when “Show All Available Events” is turned off.                    |
-| **Event Display Order**       | Choose how events are sorted: • Start Time Ascending – Shows the earliest upcoming events first. • Start Time Descending – Shows the latest upcoming events first. |
-| **Display ‘Load More’ Button** | When enabled, a “Load More” button appears to let visitors view additional events beyond the initial limit.                            |
+<Accordion title="Display: Date &amp; time">
 
-![design](../assets/branding-and-design/display-settings/count-3.gif)
+<Frame caption="All Settings → Display — Date &amp; time. The circles identify Show start date and Show end date.">
+  <img src="/assets/refresh/branding-and-design/widget-display-dates.png" alt="All Settings → Display — Date &amp; time. The circles identify Show start date and Show end date." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-## Visitor Engagement
+</Accordion>
 
-| Field                      | Description                                                                                                          |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Embed Third-Party Checkout** | Allows you to embed an external checkout flow inside the widget instead of redirecting users to another page.       |
-| **Display ‘Add to Calendar’**  | Shows an Add to Calendar option so visitors can save the event directly from the widget.                             |
+<Accordion title="Display: Event details">
 
-![design](../assets/branding-and-design/display-settings/visitor-4.png)
+<Frame caption="All Settings → Display — Event details. The circles identify Show event title and Show event status.">
+  <img src="/assets/refresh/branding-and-design/widget-display-details.png" alt="All Settings → Display — Event details. The circles identify Show event title and Show event status." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-## Hosts & Attendees
+</Accordion>
 
-| Field                  | Description                                                                                                                           |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Show Hosted By Section** | Enables the “Hosted By” block on the widget. When turned on, users will see the event host information. You can also edit the Hosted by label. |
-| **Show Attendees Section** | Displays the list of attendees when enabled. If turned off, attendee names will not be shown on the widget. You can also edit the Attendees label. |
+<Accordion title="Display: Checkout &amp; payment">
 
-![design](../assets/branding-and-design/display-settings/host-attendess-5.gif)
+<Frame caption="All Settings → Display — Checkout &amp; payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times.">
+  <img src="/assets/refresh/branding-and-design/widget-display-checkout.png" alt="All Settings → Display — Checkout &amp; payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
 
-## Time and Date
+</Accordion>
 
-| Field                | Description                                                                                                      |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Date Display Format**  | Select how the event date appears (e.g., Sat 29th November).                                                     |
-| **Include Timezone**     | Adds the event’s timezone next to the date/time.                                                                 |
-| **Auto-Adjust Timezone** | Automatically adjusts the displayed time based on the viewer’s location.                                         |
-| **Show Start Time**      | Displays the event’s start time on the widget.                                                                   |
-| **Show End Time**        | Displays the event’s end time on the widget.                                                                     |
-| **Time Display Format**  | Choose between 12-hour and 24-hour time formats: 1:24 PM, 13:24, or 13:24 PM.                                    |
-| **Show Start Date**      | Enables or hides the start date for the event.                                                                   |
-| **Show End Date**        | Enables or hides the end date for the event.                                                                     |
-
-![design](../assets/branding-and-design/display-settings/time-date-6.gif)
-
-## Components Visibility
-
-| Field                      | Description                                                                                                  |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Display Widget Header**      | Shows or hides the header area at the top of the widget.                                                     |
-| **Display Attend Button**      | Shows the main action button attendees use to view or join the event.                                        |
-| **Show Event Title**           | Displays the event title in the card. Turn off to hide titles.                                               |
-| **Show Event Logo**            | Shows the event’s image or logo on the event listing card.                                                   |
-| **Show Zoom Host Details**     | Displays the Zoom host name/details for virtual events.                                                      |
-| **Show Event Status**          | Displays the event status (e.g., Sold Out, Closed, In Progress).                                             |
-| **Display Online Event Label** | Shows an “Online Event” tag for virtual events.                                                              |
-| **Show Until End**             | Displays how long the event will remain active/visible.                                                      |
-| **Display Venue Name**         | Shows the venue name for in-person events.                                                                   |
-| **Display City**               | Shows the event’s city.                                                                                      |
-| **Display Full Address**       | Displays the complete venue address.                                                                         |
-| **Button Corners**             | Enables rounded corners for buttons to match your theme styling.                                             |
-| **Show Submit Event Button**   | Shows a button that allows visitors to submit their own event suggestions.                                   |
-| **Submit Event Label**         | Custom text that appears above the submit event prompt.                                                       |
-| **Submit Event Button Text**   | Customizes the button text for submitting an event.                                                           |
-
-![design](../assets/branding-and-design/display-settings/components-7.gif)
-
-## Event Types and Status
-
-| Field               | Description                                                                                                                  |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Show Private Events** | Displays events marked as private on your site. Turn off if private events should remain hidden from public view.           |
-| **Show Live Events**    | Shows events currently marked as “Live.” Recommended to keep on for active event listings.                                  |
-| **Show Previous Events**| Displays events that have already ended. Turn off to avoid showing past events.                                             |
-| **Show Draft Events**   | Shows events still in draft mode. Useful for internal reviews before going live.                                            |
-| **Show Sold Out Events**| Displays events that are fully booked. Helpful when you still want attendees to see demand or join a waitlist elsewhere.    |
-
-![design](../assets/branding-and-design/display-settings/event-types-8.gif)
-
-## Event Occurrences
-
-| Field               | Description                                                                                                           |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Display All Events**  | Shows every scheduled occurrence of an event. Turn off to display only the next upcoming occurrence.                 |
-| **Enable Date Grouping**| Groups recurring events under a date selector to help attendees browse events by their preferred dates.               |
-
-![design](../assets/branding-and-design/display-settings/event-occurence-8.gif)
-
-A live preview of each setting appears in the right panel, allowing you to confirm the design before applying it.
-
-
-## Add an event to a calendar
-
-Enable **Display ‘Add to Calendar’** in the widget display settings and open the public widget. An attendee can open the event, choose **Add to Calendar**, and select the offered Google, Apple, or Outlook option. Review the event date, time, timezone, and location in the calendar before saving. Saving a calendar entry is not a ticket purchase or registration.
+</AccordionGroup>

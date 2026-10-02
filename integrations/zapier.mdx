@@ -17,21 +17,21 @@ Before setting up the integration, make sure you have:
 
 ## Integration
 
-**Step 1**: Log in to your **Ticket Spot** account and click on the **Integrations** tab from the top navigation bar to open the integrations page.
+**Step 1:** Open **Integrations** in the Ticket Spot sidebar.
 
-![integration-tab](../assets/integrations/zapier/integration-tab.png)
+**Step 2:** Under **Marketing Automation**, choose **Show API Key** on the **Zapier** card.
 
-**Step 2**: Find the **Zapier** platform under the **Marketing Automation** category and click the **Show API Key** button to open the connection details.
+<Frame caption="Open the Zapier key controls from its integration card.">
+  <img src="../assets/refresh/integrations/zapier-key-controls-card.png" alt="Open the Zapier key controls from its integration card." style={{ maxWidth: "440px" }} />
+</Frame>
 
-![show-api-btn](../assets/integrations/zapier/show-api-btn.png)
+**Step 3:** If you do not have an active Zapier key, choose **Generate Zapier API Key**.
 
-**Step 3**: Click **Generate Zapier API Key** to create your API key.
+<Frame caption="The key-generation control is shown before creating a credential.">
+  <img src="../assets/refresh/integrations/zapier-key-controls.png" alt="The key-generation control is shown before creating a credential." />
+</Frame>
 
-![generate-api-key](../assets/integrations/zapier/generate-api-key.png)
-
-**Step 4**: Copy the **Zapier API Key** displayed in the modal window. You’ll use this key when creating your Ticket Spot Zap for the first time.
-
-![copy-api](../assets/integrations/zapier/copy-api.png)
+**Step 4:** Copy and store the full key when it is first displayed. Reopening this window shows only a masked preview of an existing key; that preview cannot authenticate a new Zapier connection. If you no longer have the full key, manage your credentials in [Developers → API Keys](/api-reference/introduction) and update affected connections with the replacement key.
 
 **Step 5**: Open the **[Ticket Spot Zap](https://zapier.com/apps/ticket-spot/integrations)** page on Zapier to set up your first Zap and authenticate it using your Zapier account credentials.
 
@@ -90,22 +90,22 @@ Here’s a breakdown of the fields you'll configure:
 
 ![configure-gmail](../assets/integrations/zapier/configure-gmail.gif)
 
-**Step 15**: Test your Zap by confirming that the data from Ticket Spot triggers the desired action (e.g., sending a draft email in Gmail), then click **Publish** to activate the Zap and automate the workflow.
+**Step 15**: Test your Zap by confirming that the data from Ticket Spot triggers the desired action (e.g., creating a draft email in Gmail), then click **Publish** to activate the Zap and automate the workflow.
 
 ![test-publish](../assets/integrations/zapier/test-publish.gif)
 
 ## Trigger the Action: Ticket Purchase
 
-As we’ve set up, when a new **ticket is purchased**, the **trigger event** activates, and the corresponding action (e.g., sending a draft email) will occur.
+As we’ve set up, when a new **ticket is purchased**, the **trigger event** activates, and the corresponding action (e.g., creating a draft email) will occur.
 
 - **Ticket Purchase:** When a user buys a ticket, it triggers the Zap.
-- **Action:** A draft email is automatically sent to the recipient (as configured earlier in Gmail).
+- **Action:** A draft email is created in Gmail for review; a Create Draft action does not send it.
 
 ![purchase-ticket](../assets/integrations/zapier/purchase-ticket.gif)
 
 ## View the Draft Email in Gmail
 
-After triggering the Zap, open **Gmail** and check for the **draft email**. You’ll see that the draft email was automatically created and sent after a new ticket purchase in Ticket Spot.
+After triggering the Zap, open **Gmail** and check for the **draft email**. You’ll see that the draft email was automatically created after a new ticket purchase in Ticket Spot.
 
 ![draft-email](../assets/integrations/zapier/draft-email.gif)
 

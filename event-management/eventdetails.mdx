@@ -3,50 +3,31 @@ title: "Event Details"
 description: "Set an event title, category, registration type, capacity, images, video, public link, and kiosk access."
 ---
 
-Creating your event starts with configuring event details. **Ticket Spot** lets you add all the essential information that define your event and how it appears to attendees.  
-This section forms the business backbone of your event — determining how it’s categorized, discovered, and sold on the platform.
-
-By setting up details like type, category, registration method, capacity, and visuals, you control your event’s visibility, audience targeting, and revenue potential, ensuring it’s optimized for both engagement and sales performance.
-
-
-
-
-## Type
-
-Select the event type that best describes your event. It helps attendees easily understand what kind of event you’re hosting.
-
-**Example:**
-
-- For a music show, select **Concert** or **Performance**.  
-- For a learning session, choose **Class**, **Training**, or **Workshop**.
-
-![event-type](../assets/create-events/eventdetails/event-type.gif)
-
+Open an event and choose **Event Details** to configure its category, registration method, privacy, capacity, timezone, title, and media. Save the event after making changes.
 
 ## Category
 
-Based on the event type you select, Ticket Spot will show you the list of associated categories in a dropdown. Choose the category that best matches your event — this improves visibility and ensures it appears in relevant searches.
-
-**Example:**
-
-- Food festival → **Food & Drink**  
-- Art exhibition → **Performing & Visual Arts**
-
-![event-category](../assets/create-events/eventdetails/event-category.gif)
-
+Choose **Category** first, then choose its **Subcategory**. The current editor derives the event type from the selected category; there is no separate Type dropdown.
 
 ## Subcategory
 
-Based on the **category** you select, Ticket Spot will show you a list of **associated subcategories** in the dropdown list. Choose the subcategory that best describes your event. This helps further define your event and makes it easier for people to find in searches.
+The **Subcategory** field appears after you select a category. Choose the closest match from that category’s list.
 
 
 **Example:**  
 If your category is **Food & Drink**, you can select **Beer**, **Wine**, or **Food** depending on your event type.
 
-![event-subcategory](../assets/create-events/eventdetails/event-subcategory.gif)
+<Frame caption="Choose a category, then a subcategory from its list.">
+  <img src="../assets/refresh/event-management/event-details-types-category.png" alt="Choose a category, then a subcategory from its list." style={{ maxWidth: "440px" }} />
+</Frame>
 
 
 ## Event Setup
+
+
+<Frame caption="Event Details → Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events.">
+  <img src="../assets/refresh/event-management/event-details-types.png" alt="Event Details → Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
 
 Select from the options listed below on how you want people to register or view your event. Each option defines how attendees can interact with your event listing.
 
@@ -59,14 +40,11 @@ Allow guests to RSVP through a form and collect basic attendee details.
 ### **External URL**
 Redirect attendees to an external website or hosted event page.
 
-**Options:**
-- **Redirect users** to a dedicated event page when they click *Register*.
-- **Link to hosted event page**:  
-  - When **ON**, the event is hosted on the default page (e.g., `https://ticketspotapp.com/e/ccg99`).  
-  - When **OFF**, you can enter your own domain (e.g., `https://mybrand.com/event/ccg99`).
+Turn **Link to hosted event page** on to use the Ticket Spot event page. Turn it off to enter a separate registration or information URL in the field below. This field changes the destination for this event; custom-domain setup is handled separately in [Domain and tracking](/site-settings/domain-and-analytics).
 
-  ![ext-url-options](../assets/create-events/eventdetails/ext-url-options.png)
-
+<Frame caption="External URL events can use the hosted event page or a separate destination.">
+  <img src="../assets/refresh/event-management/event-details-types-external.png" alt="External URL events can use the hosted event page or a separate destination." style={{ maxWidth: "440px" }} />
+</Frame>
 
 ### **Display Only**
 Show event info without registration or checkout options.
@@ -77,35 +55,38 @@ Show event info without registration or checkout options.
 - For a free community meetup, choose **RSVP** or **Simple Registration**.
 
 
-![event-setup](../assets/create-events/eventdetails/event-setup.png)
-
-
 ## Privacy
+
+<Frame caption="Event Details → Privacy separates hiding the event from listings and requiring an access code.">
+  <img src="../assets/refresh/event-management/event-details-privacy.png" alt="Event Details → Privacy separates hiding the event from listings and requiring an access code." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
 Use **Hide Event from Event Listing** to remove an event from listings. Someone with its direct URL may still be able to open it. 
 
 **Instruction:**
 
 Select **Hide Event from Event Listing** to hide the listing. For the hosted event page, enable **Require Access Code** and set **Access Code** when visitors must enter a code before accessing the event and ticket purchases. Test the public page with and without the code. Ticket-level hidden access codes are configured separately in [Tickets](/event-management/ticket-setup).
 
-![privacy](../assets/create-events/eventdetails/privacy.png)
-
-
 ## Event Capacity
+
+
+<Frame caption="Event Capacity controls whether registration is unlimited or has a maximum attendee count. Configure the waitlist in its separate step.">
+  <img src="../assets/refresh/event-management/event-details-capacity.png" alt="Event Capacity controls whether registration is unlimited or has a maximum attendee count. Configure the waitlist in its separate step." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
 
 Set the overall attendee capacity for the event, alongside each ticket type’s quantity. Review capacity again before manually approving pending attendees because an organizer approval can exceed the configured limit. Subscription ticket allowances are separate from event capacity.
 
 **Example:** If you’re hosting an event in a **mall** and have space for **40 people**, set the event capacity to **40 tickets**. Check that checkout reports the event as full when that capacity is reached.
 If your event is **open to everyone**, like a **public concert** or **festival**, simply toggle on **Unlimited Capacity**. This removes the event-wide cap; ticket quantities, purchase rules, and subscription allowances still apply.
 
-![event-capacity](../assets/create-events/eventdetails/event-capacity.gif)
-
-
 > **Tip:** Enable **Unlimited attendee capacity** if there’s no limit on the number of attendees.
 
-![unlim-capacity](../assets/create-events/eventdetails/unlim-capacity.png)
-
-
 ## Event Page
+
+
+<Frame caption="Event Details includes the event-page handle and timezone. Language settings do not change the event timezone.">
+  <img src="../assets/refresh/event-management/event-details-page-timezone.png" alt="Event Details includes the event-page handle and timezone. Language settings do not change the event timezone." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
 
 Customize how your event page looks to attendees. You can create a short, shareable link and adjust design elements like button text or site name to match your brand.
 
@@ -121,10 +102,9 @@ Your event link will appear as `https://ticketspotapp.com/e/your-handle`.
 > **Note:** The handle must be at least **5 characters** long.
 
 
-![event-page-cust-handle](../assets/create-events/eventdetails/event-page-cust-handle.png)
-
-
 ## Calendar Design Override
+
+Open the event’s **Display Settings → Widget Text Overrides** for this control; older screenshots place it in Event Details.
 
 Customize how your event appears in the Calendar View by updating the Event Button Text. This lets you create a more personalized call-to-action for individual events.
 
@@ -134,10 +114,16 @@ Leave this field empty to use the default button text from the Design Widget tab
 Change Book your event now to **Reserve Your Spot** or **Join This Session** for a better fit with your event’s tone.
 
 
-![calender-design](../assets/create-events/eventdetails/calender-design.png)
+
+<Frame caption="Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings.">
+  <img src="../assets/refresh/event-management/event-display-overrides.png" alt="Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings." />
+</Frame>
+
 
 
 ## Event Page Design Override
+
+Open **Display Settings → Event Page Customization** for the current controls, including Host Logo and Host Information.
 
 Customize your event page appearance by updating the Buy Tickets Button Text or Site Name.
 You can override default settings for individual events to better match campaign-specific designs or messaging.
@@ -150,10 +136,14 @@ You can override default settings for individual events to better match campaign
 
 **Example**: Enter EventSphere or MyBrand Live.
 
-> **Info:** Leave these fields empty to use the default settings from the Design Widget tab and your site name.
+> **Info:** Leave these fields empty to use the default settings from Design → Event Page and your site name.
 
 
-![event-page-design](../assets/create-events/eventdetails/event-page-design.png)
+
+<Frame caption="Event Page Customization has separate logo, purchase-button, and site/host-name overrides. Empty text fields use the shared event-page design defaults.">
+  <img src="../assets/refresh/event-management/event-display-overrides-page.png" alt="Event Page Customization has separate logo, purchase-button, and site/host-name overrides. Empty text fields use the shared event-page design defaults." />
+</Frame>
+
 
 
 ## Timezone
@@ -164,21 +154,18 @@ Select the timezone where your event will take place. This ensures the event tim
 If your event is happening in **Los Angeles**, select **Pacific Time (US/Canada)** so the timing reflects the local schedule of that city.
 
 > **Tip:** Always select the timezone of the event location, not your own — this ensures that all attendees see the correct event time.
-
-
-![timezone](../assets/create-events/eventdetails/timezone.gif)
-
-
 ## Title
+
+
+<Frame caption="Set the event title and primary image. Secondary images and the description follow in the same Event Details column.">
+  <img src="../assets/refresh/event-management/event-details-media.png" alt="Set the event title and primary image. Secondary images and the description follow in the same Event Details column." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Enter a clear and descriptive name for your event. The title helps attendees quickly understand what your event is about. 
 
 **Examples:**  
 - **Summer Food Festival 2025**  
 - **Digital Marketing Workshop for Beginners**
-
-![title](../assets/create-events/eventdetails/title.png)
-
 
 ## Primary Image
 
@@ -189,29 +176,23 @@ Upload the main image for your event. This image appears on your event listing a
 
 **Example:**  
 Use your event’s banner, logo, or a relevant promotional image
-
-
-![primary-img](../assets/create-events/eventdetails/primary-images.gif)
-
-
 ## Secondary Image
 
 Upload additional images to showcase more details about your event. These images can include venue photos, guest speakers, schedules, or highlights from past events.
 
 **Example:**  
 Add images of the event location or promotional posters to make your listing more appealing.
-
-![secondary-img-title](../assets/create-events/eventdetails/secondary-image-title.gif)
-
 ## Description
+
+
+<Frame caption="Event Details includes a rich-text description and optional description images.">
+  <img src="../assets/refresh/event-management/event-details-media-description.png" alt="Event Details includes a rich-text description and optional description images." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Write a clear and engaging summary of your event. Include important details such as purpose, activities, date, and what attendees can expect.
 
 **Example:**  
 Join us for a fun-filled evening at the **Annual Food Fest 2025** featuring local breweries, live music, and food stalls.
-
-![description](../assets/create-events/eventdetails/description.png)
-
 
 ## Description Images
 
@@ -219,21 +200,25 @@ Add **Thumbnail Images** that appear directly below your event description. Thes
 
 **Example:**  
 Include a flyer showing the event schedule or a sponsor banner to give attendees more context and make your listing more engaging.
-
-![description-img](../assets/create-events/eventdetails/description-img.gif)
-
-
 ## Promotional Video
+
+
+<Frame caption="Event Details → Promotional Video accepts a supported video URL.">
+  <img src="../assets/refresh/event-management/event-details-media-video.png" alt="Event Details → Promotional Video accepts a supported video URL." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Add a **Promotional Video** to your event page to highlight speakers, showcase past events, or provide important information to attendees. You can embed videos from **YouTube** or **Vimeo** by pasting the video link in the field provided.
 
 **Video URL**: Enter a valid HTTPS link from YouTube or Vimeo (e.g., `https://www.youtube.com/watch?v=...`). 
 
-![promotional-video](../assets/create-events/eventdetails/promotional-video.png)
-
 The video will automatically appear on your public event page once saved.
 
 ## Self-Serve Check-In
+
+
+<Frame caption="Self-Serve Check-In lets you prepare an expiring kiosk link. This screenshot shows the setup controls before generating a link.">
+  <img src="../assets/refresh/event-management/event-details-self-checkin.png" alt="Self-Serve Check-In lets you prepare an expiring kiosk link. This screenshot shows the setup controls before generating a link." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Generate a dedicated kiosk URL that allows guests to check in on their own. When enabled, attendees can scan their tickets and complete check-in without staff assistance.
 
@@ -241,16 +226,13 @@ Generate a dedicated kiosk URL that allows guests to check in on their own. When
 
 1. Select the kiosk link expiry duration (1–5 days) from the dropdown, then click **Generate Kiosk URL** to create the link.
 
-![generate-kiosk-url](../assets/create-events/eventdetails/generate-kiosk-url.gif)
-
 2. Copy the generated kiosk URL and share it with attendees so they can access the self-check-in screen and scan their tickets.
 
-![copy-kiosk-url](../assets/create-events/eventdetails/copy-kiosk-url.png)
-
 > **Note:** You can regenerate the kiosk URL anytime. Just choose a new expiry duration and click **Generate Kiosk URL** to create a fresh link.
-![click-regenerate-kiosk-url](../assets/create-events/eventdetails/click-regenerate-kiosk-url.png)
-
-
-
-
 See [self check-in kiosk setup](/on-site/self-check-in-kiosk) for link generation and expiry, and [custom domains](/site-settings/domain-and-analytics) for branded hostnames. A Custom Handle changes the path for one event; it is not a DNS domain setting.
+
+## Organization and invitation-only capacity
+
+If **Organization** is offered, choose the organization responsible for the event. Confirm the selected site and organization before saving.
+
+A finite **Event Capacity** is required for **Waitlist → Limit waitlist purchases to event capacity**. The waitlist threshold can be 0 for invitation-only purchasing from the start. See [waitlist capacity and invitations](./waitlist).

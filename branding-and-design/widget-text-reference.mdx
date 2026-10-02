@@ -1,0 +1,818 @@
+---
+title: "Widget and checkout text reference"
+description: "Find every customizable label and message for events, checkout, seating, membership verification, required tickets, and Shopify."
+---
+
+Open **Design → Widget → All Settings → Text**, then choose the section shown below. **Search settings** also finds individual labels. Wording changes do not enable a feature or change its purchase rules.
+
+Preserve placeholders exactly as shown in each field's help. For example, keep `{ticket}`, `{quantity}`, `{count}`, `{step}`, `{completed}`, `{total}`, `{remaining}`, `{price}`, and `{duration}` in messages that need those values. Installment fields may use double braces such as `{{amount}}` and `{{count}}`. These examples are shown as placeholders in the reference tables below.
+
+**Automatic translation** changes supported event text to the visitor's language; the search-filter translation control depends on it. Outgoing emails and tickets have separate [Multilingual communications](./multilingual-communications) settings. Shopify variant labels apply to the Shopify product experience.
+
+New checkout wording includes per-attendee progress, copy-from-purchaser and save/next actions, review/order errors, waitlist details, required-ticket guidance, seat-limit/unavailable messages, add-on quantities and conflicts, and membership verification/pricing. Test the corresponding states after changing their wording; a normal purchase will not exercise error and sold-out messages.
+
+{/* BEGIN WIDGET OPTIONS */}
+
+## Checkout › Add-ons
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format.">
+  <img src="/assets/refresh/branding-and-design/widget-text-addons.png" alt="All Settings → Text — Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format.">
+  <img src="/assets/refresh/branding-and-design/widget-text-addons-2.png" alt="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message.">
+  <img src="/assets/refresh/branding-and-design/widget-text-addons-3.png" alt="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-addons-4.png" alt="All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: addonConflictFormat */}
+{/* widget-option: addonFreePriceText */}
+{/* widget-option: addonMaxReachedFormat */}
+{/* widget-option: addonMinNotMetFormat */}
+{/* widget-option: addonQuantityAvailableFormat */}
+{/* widget-option: addonQuantityDecreaseText */}
+{/* widget-option: addonQuantityIncreaseText */}
+{/* widget-option: addonQuantityLabelText */}
+{/* widget-option: addonQuantityMaximumFormat */}
+{/* widget-option: addonSelectedText */}
+{/* widget-option: addonSelectionHeaderText */}
+{/* widget-option: addonSelectionOptionalFormat */}
+{/* widget-option: addonSelectionRequiredFormat */}
+{/* widget-option: addonSelectText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add-on Availability** | Setting | How many places remain on an add-on. Use &#123;count&#125; as a placeholder. Shown only when capacity is what limits the buyer. |
+| **Add-on Quantity Label** | Setting | Set the attendee-facing wording for this item. |
+| **Add-ons Header Text** | Setting | Header text displayed at the top of the add-ons selection screen. |
+| **Decrease Add-on Quantity Text** | Setting | Set the attendee-facing wording for this item. |
+| **Free Add-on Price Text** | Setting | Text displayed for free add-ons instead of price. |
+| **Increase Add-on Quantity Text** | Setting | Set the attendee-facing wording for this item. |
+| **Maximum Add-on Quantity** | Setting | Use &#123;max&#125; for the maximum quantity. |
+| **Maximum Reached Message Format** | Setting | Message when maximum add-ons are selected. Use &#123;max&#125; placeholder. Example: 'Maximum of &#123;max&#125; workshops selected' |
+| **Minimum Add-ons Message** | Setting | Use &#123;remaining&#125; for the number of workshops still required. |
+| **Optional Add-ons Subtitle Format** | Setting | Format for optional add-ons subtitle. Use &#123;max&#125; placeholder. Example: 'Select up to &#123;max&#125; workshops' |
+| **Overlapping Add-on Message** | Setting | Use &#123;title&#125; for the conflicting workshop. |
+| **Required Add-ons Subtitle Format** | Setting | Format for required add-ons subtitle. Use &#123;min&#125; and &#123;max&#125; placeholders. Example: 'Select &#123;min&#125; / &#123;max&#125; workshops required' |
+| **Selected Add-on Text** | Setting | Text shown on selected add-on button. |
+| **Unselected Add-on Text** | Setting | Text shown on unselected add-on button. |
+
+## Checkout › Attendee information
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-attendee.png" alt="All Settings → Text — Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-attendee-2.png" alt="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading.">
+  <img src="/assets/refresh/branding-and-design/widget-text-attendee-3.png" alt="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning.">
+  <img src="/assets/refresh/branding-and-design/widget-text-attendee-4.png" alt="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-attendee-5.png" alt="All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: checkoutAttendeeAddDetails */}
+{/* widget-option: checkoutAttendeeDetailsIntro */}
+{/* widget-option: checkoutAttendeeDetailsTitle */}
+{/* widget-option: checkoutAttendeeEditText */}
+{/* widget-option: checkoutAttendeeLabel */}
+{/* widget-option: checkoutAttendeeNeedsDetails */}
+{/* widget-option: checkoutAttendeeNextAttendeeButtonText */}
+{/* widget-option: checkoutAttendeeProgress */}
+{/* widget-option: checkoutAttendeeSaveButtonText */}
+{/* widget-option: checkoutCopyAttendeeButtonText */}
+{/* widget-option: checkoutCopyAttendeeMenuTitle */}
+{/* widget-option: checkoutCopyAttendeePurchaserLabel */}
+{/* widget-option: checkoutFormConfirmEmail */}
+{/* widget-option: checkoutFormEmail */}
+{/* widget-option: checkoutFormEmailPlaceholder */}
+{/* widget-option: checkoutFormFirstName */}
+{/* widget-option: checkoutFormFirstNamePlaceholder */}
+{/* widget-option: checkoutFormLastName */}
+{/* widget-option: checkoutFormLastNamePlaceholder */}
+{/* widget-option: checkoutWaitlistDetailsTitle */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add Attendee Details Prompt** | Setting | Prompt on a collapsed row for an attendee who has not been filled in yet. |
+| **Attendee Details Heading** | Setting | Heading above the list of people the buyer is entering details for. |
+| **Attendee Details Instructions** | Setting | One line of instruction shown once above the whole attendee list. |
+| **Attendee Edit Link Text** | Setting | Action that reopens a completed attendee for changes. |
+| **Attendee Email Label** | Setting | Label for the attendee email input. |
+| **Attendee First Name Label** | Setting | Label for the attendee first name input. |
+| **Attendee Label** | Setting | Noun used when counting the people on an order, e.g. "Attendee 2". |
+| **Attendee Last Name Label** | Setting | Label for the attendee last name input. |
+| **Attendee Needs Details Warning** | Setting | Warning on a collapsed row for an attendee the checkout rejected. |
+| **Attendee Progress Text** | Setting | Shows how many attendees are filled in. Use &#123;completed&#125; and &#123;total&#125; as placeholders. |
+| **Confirm Email Label** | Setting | Label for the input that repeats the attendee email address. |
+| **Copy Attendee Details Button** | Setting | Secondary action that fills an attendee in from someone already entered. |
+| **Copy Attendee Details Menu Heading** | Setting | Heading inside the menu listing who an attendee can be copied from. |
+| **Email Placeholder** | Setting | Example email address shown greyed out inside the empty input. |
+| **First Name Placeholder** | Setting | Example first name shown greyed out inside the empty input. |
+| **Last Name Placeholder** | Setting | Example surname shown greyed out inside the empty input. |
+| **Next Attendee Button Text** | Setting | Closes this attendee's form and opens the next one still to be filled in. |
+| **Purchaser Label** | Setting | Names the person placing the order as a source to copy attendee details from. |
+| **Save Attendee Button Text** | Setting | Closes the attendee's form when there are no others left to fill in. |
+| **Waitlist Heading** | Setting | Heading above the form for joining an event waitlist. |
+
+## Checkout › Cart
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Cart — Checkout: Cart. The circles identify Added to Cart! and Back to Events.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart.png" alt="All Settings → Cart — Checkout: Cart. The circles identify Added to Cart! and Back to Events." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-2.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-3.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-4.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-5.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-6.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-7.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-cart-8.png" alt="All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: checkoutBookingFeeTotalText */}
+{/* widget-option: checkoutButtonText */}
+{/* widget-option: checkoutFreeOrderButtonText */}
+{/* widget-option: checkoutOrderErrorRetryText */}
+{/* widget-option: checkoutOrderErrorTitle */}
+{/* widget-option: checkoutOrderSummaryHeading */}
+{/* widget-option: checkoutProcessingFeeTotalText */}
+{/* widget-option: checkoutTicketSalesTaxText */}
+{/* widget-option: checkoutTicketSummaryHeading */}
+{/* widget-option: checkoutTicketSummaryText */}
+{/* widget-option: checkoutTicketTotalText */}
+{/* widget-option: multiEventCartAdd */}
+{/* widget-option: multiEventCartAdded */}
+{/* widget-option: multiEventCartAddedTitle */}
+{/* widget-option: multiEventCartBack */}
+{/* widget-option: multiEventCartBackToEvents */}
+{/* widget-option: multiEventCartButton */}
+{/* widget-option: multiEventCartCheckout */}
+{/* widget-option: multiEventCartContinue */}
+{/* widget-option: multiEventCartEmpty */}
+{/* widget-option: multiEventCartGoToPayment */}
+{/* widget-option: multiEventCartHeading */}
+{/* widget-option: multiEventCartRemove */}
+{/* widget-option: multiEventCartTicket */}
+{/* widget-option: multiEventCartTotal */}
+{/* widget-option: payWhatYouWantText */}
+{/* widget-option: ticketAvailabilityText */}
+{/* widget-option: ticketQuantityAddLabel */}
+{/* widget-option: ticketRequirementAddMany */}
+{/* widget-option: ticketRequirementAddOne */}
+{/* widget-option: ticketRequirementBadge */}
+{/* widget-option: ticketRequirementHint */}
+{/* widget-option: ticketRequirementInvalidCart */}
+{/* widget-option: ticketRequirementTitleMany */}
+{/* widget-option: ticketRequirementTitleOne */}
+{/* widget-option: ticketRequirementUnavailableHint */}
+{/* widget-option: ticketRequirementUnavailableMessage */}
+{/* widget-option: ticketRequirementUnavailableTitle */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add ticket accessibility label** | Setting | Accessible label for the plus button. Use &#123;ticket&#125; for its name. |
+| **Add to Cart** | Setting | Set the attendee-facing wording for this item. |
+| **Added to Cart!** | Setting | Set the attendee-facing wording for this item. |
+| **Back to cart** | Setting | Set the attendee-facing wording for this item. |
+| **Back to Events** | Setting | Set the attendee-facing wording for this item. |
+| **Booking Fees Label** | Setting | Label to show the booking fee amount in the checkout. |
+| **Cart (&#123;count&#125;)** | Setting | Set the attendee-facing wording for this item. |
+| **Checkout Cart Title** | Setting | Title for the checkout cart that contains all the details of the purchased tickets. |
+| **Continue** | Setting | Set the attendee-facing wording for this item. |
+| **Continue to Payment** | Setting | Set the attendee-facing wording for this item. |
+| **Delete ticket** | Setting | Set the attendee-facing wording for this item. |
+| **Existing selection requirement warning** | Setting | Shown if a required ticket is removed from an existing selection. |
+| **Free Order Button Text** | Setting | Replaces the checkout button when the order total is zero and there is nothing to pay. |
+| **Go to Payment** | Setting | Set the attendee-facing wording for this item. |
+| **Order Error Heading** | Setting | Heading shown on the review step when placing the order failed. |
+| **Order Error Retry Button** | Setting | Action that restarts checkout after a failed order. |
+| **Order Summary Heading** | Setting | Heading above the order breakdown on the final review step. |
+| **Pay What You Want Text** | Setting | The label for the pay what you want input field |
+| **Payment Processing Fee Label** | Setting | Label for payment processing fees in the order total. |
+| **Required ticket heading (multiple)** | Setting | Use &#123;quantity&#125; and &#123;ticket&#125; for the minimum and ticket name. |
+| **Required ticket heading (one)** | Setting | Use &#123;ticket&#125; for the required ticket name. |
+| **Required ticket highlight badge** | Setting | Use &#123;ticket&#125; for the ticket the customer tried to add. |
+| **Required ticket hint** | Setting | Use &#123;ticket&#125; for the required ticket name. |
+| **Required ticket instruction (multiple)** | Setting | Use &#123;quantity&#125; and &#123;ticket&#125; for the number still needed and ticket name. |
+| **Required ticket instruction (one)** | Setting | Use &#123;ticket&#125; for the required ticket name. |
+| **RSVP/Checkout Button Text** | Setting | Text for the checkout button. |
+| **Sales Tax Label** | Setting | Label for sales tax if it's included in the checkout. |
+| **Ticket** | Setting | Set the attendee-facing wording for this item. |
+| **Ticket Availability Message** | Setting | Message indicating how many tickets are available for purchase. |
+| **Ticket Summary Heading** | Setting | Heading above the read-only list of tickets on the workshops and memberships steps. |
+| **Ticket Total Label** | Setting | Label to show the final payment amount in the checkout. |
+| **Tickets added. You can continue browsing or proceed to payment.** | Setting | Set the attendee-facing wording for this item. |
+| **Total** | Setting | Set the attendee-facing wording for this item. |
+| **Unavailable required ticket heading** | Setting | Shown when the required ticket cannot be found in the available tickets. |
+| **Unavailable required ticket hint** | Setting | Used instead of exposing the name of a hidden ticket. |
+| **Unavailable required ticket instruction** | Setting | Shown when the prerequisite cannot be selected. |
+| **Your cart is empty. Choose tickets to continue.** | Setting | Set the attendee-facing wording for this item. |
+| **Your ticket cart** | Setting | Set the attendee-facing wording for this item. |
+
+## Checkout › Date &amp; time selection
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Date &amp; time selection. The circles identify Availability Text and Unavailable Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-date.png" alt="All Settings → Text — Checkout: Date &amp; time selection. The circles identify Availability Text and Unavailable Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Date &amp; time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-date-2.png" alt="All Settings → Text — Checkout: Date &amp; time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: dateTimeSelectionAvailabilityText */}
+{/* widget-option: dateTimeSelectionUnAvailabilityText */}
+{/* widget-option: dateTimeSelectionWaitlistText */}
+{/* widget-option: timeBasedAfternoonPeriodText */}
+{/* widget-option: timeBasedEveningPeriodText */}
+{/* widget-option: timeBasedMorningPeriodText */}
+{/* widget-option: timeBasedNightPeriodText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Afternoon Time Slot Label** | Setting | Change the text for the afternoon time slot label. |
+| **Availability Text** | Setting | This text indicates that tickets for the event are currently available for purchase. |
+| **Evening Time Slot Label** | Setting | Change the text for the evening time slot label. |
+| **Morning Time Slot Label** | Setting | Change the text for the morning time slot label. |
+| **Night Time Slot Label** | Setting | Change the text for the night time slot label. |
+| **Unavailable Text** | Setting | This text indicates that all tickets for the event have been sold. |
+| **Waitlist Text** | Setting | Text shown when the selected date or time has a waitlist. |
+
+## Checkout › Fast checkout
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Fast checkout. The circles identify Session logout text and Welcome text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-fast.png" alt="All Settings → Text — Checkout: Fast checkout. The circles identify Session logout text and Welcome text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-fast-2.png" alt="All Settings → Text — Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: disconnectSessionText */}
+{/* widget-option: emailVerificationText */}
+{/* widget-option: fastCheckoutSaveDetails */}
+{/* widget-option: selectCardText */}
+{/* widget-option: welcomeCheckoutText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Card selection text** | Setting | Set the attendee-facing wording for this item. |
+| **Email verification text** | Setting | Set the attendee-facing wording for this item. |
+| **Save Details Text** | Setting | Label for saving buyer details for faster checkout next time. |
+| **Session logout text** | Setting | Set the attendee-facing wording for this item. |
+| **Welcome text** | Setting | Set the attendee-facing wording for this item. |
+
+## Checkout › General
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: General. The circles identify Form Pre Text and Continue Button Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-general.png" alt="All Settings → Text — Checkout: General. The circles identify Form Pre Text and Continue Button Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-general-2.png" alt="All Settings → Text — Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-general-3.png" alt="All Settings → Text — Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: checkoutBackButtonText */}
+{/* widget-option: checkoutContinueToStepText */}
+{/* widget-option: checkoutNextButtonText */}
+{/* widget-option: checkoutNoTicketsSelectedText */}
+{/* widget-option: checkoutPreText */}
+{/* widget-option: multi_session_additional_text */}
+{/* widget-option: multi_session_label_text */}
+{/* widget-option: multi_session_selection_text */}
+{/* widget-option: single_session_selection_text */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Back Button Text** | Setting | Set the text for the button returning users to the previous checkout step. |
+| **Continue Button Text** | Setting | Button that advances checkout, naming the step it leads to. Use &#123;step&#125; as a placeholder for the step name. |
+| **Event Access Additional Information** | Setting | Set the attendee-facing wording for this item. |
+| **Form Pre Text** | Setting | Initial checkout information text shown to users when they open the checkout. |
+| **Multi Session Header Text** | Setting | Set the attendee-facing wording for this item. |
+| **Multi Session Selection Text** | Setting | Set the attendee-facing wording for this item. |
+| **Next Button Text** | Setting | Fallback for the continue button when there is no next step to name. |
+| **No Tickets Selected Text** | Setting | Set the attendee-facing wording for this item. |
+| **Single Session Selection Text** | Setting | Set the attendee-facing wording for this item. |
+
+## Checkout › Memberships
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. The circles identify Member Prompt and Verification Instructions.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships.png" alt="All Settings → Memberships — Checkout: Memberships. The circles identify Member Prompt and Verification Instructions." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-2.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-3.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-4.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-5.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-6.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-7.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-8.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What&#x27;s Included Header.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-9.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What&#x27;s Included Header." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-10.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-memberships-11.png" alt="All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: membershipAddButtonText */}
+{/* widget-option: membershipAddedText */}
+{/* widget-option: membershipAddedToOrderText */}
+{/* widget-option: membershipAvailableText */}
+{/* widget-option: membershipBenefitCheckmark */}
+{/* widget-option: membershipBenefitUsedText */}
+{/* widget-option: membershipBestValueIcon */}
+{/* widget-option: membershipBestValueText */}
+{/* widget-option: membershipChangeText */}
+{/* widget-option: membershipEventChangedText */}
+{/* widget-option: membershipEventVisitsText */}
+{/* widget-option: membershipFreePriceText */}
+{/* widget-option: membershipIneligibleTicketText */}
+{/* widget-option: membershipLimitedVisitsIcon */}
+{/* widget-option: membershipMemberNumberText */}
+{/* widget-option: membershipMembersOnlyText */}
+{/* widget-option: membershipNoEligibleTicketsText */}
+{/* widget-option: membershipNumberLabel */}
+{/* widget-option: membershipNumberPlaceholder */}
+{/* widget-option: membershipPriceAvailableText */}
+{/* widget-option: membershipPriceBreakdownText */}
+{/* widget-option: membershipPriceLabel */}
+{/* widget-option: membershipPromptText */}
+{/* widget-option: membershipRemoveText */}
+{/* widget-option: membershipSelectionHeaderText */}
+{/* widget-option: membershipSelectionSubtitle */}
+{/* widget-option: membershipSoldOutText */}
+{/* widget-option: membershipStandardBenefitUsedText */}
+{/* widget-option: membershipStandardBreakdownText */}
+{/* widget-option: membershipStandardPriceText */}
+{/* widget-option: membershipTicketAvailableText */}
+{/* widget-option: membershipTotalVisitsText */}
+{/* widget-option: membershipUnlimitedEventVisitsText */}
+{/* widget-option: membershipUnlimitedIcon */}
+{/* widget-option: membershipUnlimitedVisitsText */}
+{/* widget-option: membershipUpdatingText */}
+{/* widget-option: membershipValidForText */}
+{/* widget-option: membershipValidityOneMonth */}
+{/* widget-option: membershipValidityOneYear */}
+{/* widget-option: membershipValiditySixMonths */}
+{/* widget-option: membershipValiditySuffix */}
+{/* widget-option: membershipValidityThreeMonths */}
+{/* widget-option: membershipValidityUnlimited */}
+{/* widget-option: membershipVerificationFailedText */}
+{/* widget-option: membershipVerificationLabel */}
+{/* widget-option: membershipVerifiedText */}
+{/* widget-option: membershipVerifyAboveText */}
+{/* widget-option: membershipVerifyButtonText */}
+{/* widget-option: membershipVerifyDescriptionText */}
+{/* widget-option: membershipVerifyingText */}
+{/* widget-option: membershipWhatsIncludedText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add Button Text** | Setting | Text for add membership button. |
+| **Added Status Text** | Setting | Text shown when membership is added to cart. |
+| **Added to Order** | Setting | Quiet confirmation after adding a membership. |
+| **Available Text** | Setting | Text shown for available quantity. Example: '5 available' |
+| **Benefit Already Applied Message** | Setting | Explains that the member benefit is applied to another ticket. |
+| **Benefit Checkmark** | Setting | Character shown next to each benefit (e.g., ✓, ✔, •). |
+| **Best Value Badge Icon** | Setting | Icon shown before best value text (e.g., ⭐, 🏆, 👑). |
+| **Best Value Badge Text** | Setting | Text shown on featured membership badge. |
+| **Change Membership Button** | Setting | Button for changing the verified membership. |
+| **Eligible Ticket Label** | Setting | Label when a verified member can purchase the ticket. |
+| **Event Changed Message** | Setting | Asks the visitor to verify again after the selected event changes. |
+| **Event Visits** | Setting | Use &#123;count&#125; for the total number of event visits. |
+| **Free Membership Price Text** | Setting | Text displayed for free memberships instead of price. |
+| **Ineligible Membership Message** | Setting | Message when the verified membership does not qualify for this ticket. |
+| **Lifetime / Unlimited Text** | Setting | Text for unlimited/lifetime validity period. |
+| **Limited Visits Icon** | Setting | Icon for limited visits (e.g., 🎫, 🎟, 🔢). |
+| **Member Number Label** | Setting | Label above the member number field. |
+| **Member Number Placeholder** | Setting | Placeholder inside the member number field. |
+| **Member Price Available Message** | Setting | Invitation to verify and see the member price. |
+| **Member Price Breakdown** | Setting | Price summary for one member ticket. Use &#123;price&#125; for the formatted member price. |
+| **Member Price Label** | Setting | Label beside the discounted member price. |
+| **Member Prompt** | Setting | Short heading inviting existing members to verify. |
+| **Members Only Label** | Setting | Label for tickets restricted to members. |
+| **Membership Duration** | Setting | Use &#123;duration&#125; for the membership validity period. |
+| **Memberships Header Text** | Setting | Header text displayed at the top of the memberships selection screen. |
+| **Memberships Subtitle Text** | Setting | Subtitle text explaining membership benefits. Example: 'Purchase memberships for multi-event access' |
+| **No Eligible Tickets Message** | Setting | Message when the membership does not qualify for any tickets. |
+| **One Month Text** | Setting | Text for one-month validity period. |
+| **One Year Text** | Setting | Text for one-year validity period. |
+| **Remove Link Text** | Setting | Text for remove membership link. |
+| **Six Months Text** | Setting | Text for six-month validity period. |
+| **Sold Out Text** | Setting | Text shown when membership is sold out. |
+| **Standard Price After Benefit Used** | Setting | Explains the standard price when another ticket uses the member benefit. |
+| **Standard Price Breakdown** | Setting | Summary for additional tickets. Use &#123;quantity&#125; for the ticket count and &#123;price&#125; for the formatted standard price. |
+| **Standard Price Message** | Setting | Message when this membership receives the standard ticket price. |
+| **Three Months Text** | Setting | Text for three-month validity period. |
+| **Total Visits Text** | Setting | Text for limited visit memberships. Example: '10 total visits' |
+| **Unlimited Event Visits** | Setting | Describes a membership without a total visit limit. |
+| **Unlimited Visits Icon** | Setting | Icon for unlimited access (e.g., ∞, ♾, ⭐). |
+| **Unlimited Visits Text** | Setting | Text for unlimited visit memberships. |
+| **Updating Status** | Setting | Button text while changing the membership. |
+| **Validity Period Suffix** | Setting | Text appended after validity period (e.g., '1 Year [Membership]'). |
+| **Verification Accessibility Label** | Setting | Section label announced by screen readers. |
+| **Verification Failed Message** | Setting | Fallback error if membership verification fails. |
+| **Verification Instructions** | Setting | Explains how verification unlocks member tickets and pricing. |
+| **Verification Required Message** | Setting | Guidance shown on a locked ticket before verification. |
+| **Verified Member Number** | Setting | Displays the verified member number. Use &#123;number&#125; for the member number. |
+| **Verified Status** | Setting | Confirmation shown after successful verification. |
+| **Verify Button** | Setting | Button that verifies the member number. |
+| **Verifying Status** | Setting | Button text while verification is in progress. |
+| **What's Included Header** | Setting | Header for benefits list section. |
+
+## Checkout › Payment information
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-payment.png" alt="All Settings → Text — Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title.">
+  <img src="/assets/refresh/branding-and-design/widget-text-payment-2.png" alt="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-payment-3.png" alt="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-payment-4.png" alt="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description.">
+  <img src="/assets/refresh/branding-and-design/widget-text-payment-5.png" alt="All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: _installmentWidget_autoChargeNotice */}
+{/* widget-option: _installmentWidget_consentMessage */}
+{/* widget-option: _installmentWidget_dueTodayLabel */}
+{/* widget-option: _installmentWidget_futurePaymentLabel */}
+{/* widget-option: _installmentWidget_payInFullDescription */}
+{/* widget-option: _installmentWidget_payInFullLabel */}
+{/* widget-option: _installmentWidget_payInInstallmentsDescription */}
+{/* widget-option: _installmentWidget_payInInstallmentsLabel */}
+{/* widget-option: _installmentWidget_paymentCountText */}
+{/* widget-option: _installmentWidget_paymentOptionLabel */}
+{/* widget-option: _installmentWidget_paymentPlanTitle */}
+{/* widget-option: _installmentWidget_todayLabel */}
+{/* widget-option: _installmentWidget_totalPurchaseLabel */}
+{/* widget-option: _posConfirmation_cardButtonText */}
+{/* widget-option: _posConfirmation_cashButtonText */}
+{/* widget-option: cardExpiryText */}
+{/* widget-option: cardNumberText */}
+{/* widget-option: cardSecurityCodeText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Additional Consent Message** | Setting | Set the attendee-facing wording for this item. |
+| **Card Expiry Date Text** | Setting | Set the attendee-facing wording for this item. |
+| **Card Number Text** | Setting | Set the attendee-facing wording for this item. |
+| **Card Payment Button Text** | Setting | Set the attendee-facing wording for this item. |
+| **Card Security Code Text** | Setting | Set the attendee-facing wording for this item. |
+| **Cash Payment Button Text** | Setting | Set the attendee-facing wording for this item. |
+| **Collection Notice** | Setting | Set the attendee-facing wording for this item. |
+| **Due Today Label** | Setting | Set the attendee-facing wording for this item. |
+| **Future Payment Label** | Setting | Set the attendee-facing wording for this item. |
+| **Installment Description** | Setting | Use &#123;&#123;count&#125;&#125; for the payment count and &#123;&#123;amount&#125;&#125; for each payment. |
+| **Pay in Full Description** | Setting | Use &#123;&#123;amount&#125;&#125; for the amount due today. |
+| **Pay in Full Label** | Setting | Set the attendee-facing wording for this item. |
+| **Pay in Installments Label** | Setting | Set the attendee-facing wording for this item. |
+| **Payment Count Text** | Setting | Set the attendee-facing wording for this item. |
+| **Payment Option Label** | Setting | Set the attendee-facing wording for this item. |
+| **Payment Plan Title** | Setting | Set the attendee-facing wording for this item. |
+| **Today Label** | Setting | Set the attendee-facing wording for this item. |
+| **Total Purchase Label** | Setting | Set the attendee-facing wording for this item. |
+
+## Checkout › Promotional messages
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder.">
+  <img src="/assets/refresh/branding-and-design/widget-text-promo.png" alt="All Settings → Text — Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: accessCodePlaceholderText */}
+{/* widget-option: accessCodeText */}
+{/* widget-option: applyDiscountText */}
+{/* widget-option: promoCodePlaceholderText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Access Code Label** | Setting | Set the attendee-facing wording for this item. |
+| **Access Code Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Promo Code Label** | Setting | Set the attendee-facing wording for this item. |
+| **Promo Code Placeholder** | Setting | Set the attendee-facing wording for this item. |
+
+## Checkout › Seating
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message.">
+  <img src="/assets/refresh/branding-and-design/widget-text-seating.png" alt="All Settings → Text — Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: seatingSelectionLimitMessage */}
+{/* widget-option: seatingSelectionLimitTitle */}
+{/* widget-option: seatingUnavailableHelpText */}
+{/* widget-option: seatingUnavailableMessage */}
+{/* widget-option: seatingUnavailableTitle */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Seat Limit Heading** | Setting | Heading on the notice shown when the buyer cannot add any more seats. |
+| **Seat Limit Message** | Setting | Explanation shown when the buyer cannot add any more seats. |
+| **Seating Unavailable Heading** | Setting | Heading on the card shown over a seating chart that cannot take selections. |
+| **Seating Unavailable Help Text** | Setting | Suggested next step for a buyer who cannot select seats online. |
+| **Seating Unavailable Message** | Setting | Explanation shown over a seating chart that cannot take selections. |
+
+## Checkout › Section labels
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-sections.png" alt="All Settings → Text — Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-sections-2.png" alt="All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-sections-3.png" alt="All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: checkoutAttendeeAddonStepText */}
+{/* widget-option: checkoutAttendeeDatesStepText */}
+{/* widget-option: checkoutAttendeeDateTimeStepText */}
+{/* widget-option: checkoutAttendeeDateTimeTicketsStepText */}
+{/* widget-option: checkoutAttendeeDetailsStepText */}
+{/* widget-option: checkoutAttendeeReviewStepText */}
+{/* widget-option: checkoutAttendeeTicketsStepText */}
+{/* widget-option: checkoutAttendeeTimesStepText */}
+{/* widget-option: checkoutAttendeeWaitlistDetailsStepText */}
+{/* widget-option: checkoutMembershipStepText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add-ons Section Label** | Setting | Label for the section where attendees select optional event add-ons (workshops, sessions, etc.). |
+| **Date/Time Section Label** | Setting | Label for the section where attendees select the dates or times. |
+| **Dates and Tickets Section Label** | Setting | Label for the combined date and ticket selection step. |
+| **Dates Section Label** | Setting | Label for the section where attendees select the dates only. |
+| **Details Section Label** | Setting | Label for the section where attendees enter their details. |
+| **Memberships Section Label** | Setting | Label for the section where attendees select memberships (products, passes, etc.). |
+| **Review Section Label** | Setting | Label for the final checkout step, where the order is confirmed and paid for if there is anything to pay. |
+| **Tickets Section Label** | Setting | Label for the section where attendees select their tickets. |
+| **Times Section Label** | Setting | Label for the section where attendees select the times only. |
+| **Waitlist Details Section Label** | Setting | Label for the section where attendees enter their details for the waitlist. |
+
+## Event details
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Event details. The circles identify Automatic translation and Automatic search filter translation.">
+  <img src="/assets/refresh/branding-and-design/widget-text-event.png" alt="All Settings → Text — Event details. The circles identify Automatic translation and Automatic search filter translation." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-event-2.png" alt="All Settings → Text — Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-event-3.png" alt="All Settings → Text — Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Event details. Continued controls. The circles identify Sold Out Text and Canceled Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-event-4.png" alt="All Settings → Text — Event details. Continued controls. The circles identify Sold Out Text and Canceled Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Event details. Continued controls. The circles identify Canceled Text and Show Details Text.">
+  <img src="/assets/refresh/branding-and-design/widget-text-event-5.png" alt="All Settings → Text — Event details. Continued controls. The circles identify Canceled Text and Show Details Text." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: addToCalendarText */}
+{/* widget-option: attendBtnText */}
+{/* widget-option: autoTranslateEvent */}
+{/* widget-option: autoTranslateEventSearchFilters */}
+{/* widget-option: cancelledText */}
+{/* widget-option: mapText */}
+{/* widget-option: nextEventText */}
+{/* widget-option: notYetOnSale */}
+{/* widget-option: onlineEventText */}
+{/* widget-option: onSaleText */}
+{/* widget-option: otherAvailableDateText */}
+{/* widget-option: pastAttendBtnText */}
+{/* widget-option: postponedText */}
+{/* widget-option: salesEndedText */}
+{/* widget-option: salesNotStartedText */}
+{/* widget-option: selectMultiEventDatesText */}
+{/* widget-option: showLessText */}
+{/* widget-option: showMoreText */}
+{/* widget-option: soldOutText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Add to Calendar** | Setting | Text for the 'Add to Calendar' button. |
+| **Attend button text** | Setting | Set the attendee-facing wording for this item. |
+| **Automatic search filter translation** | Setting | Automatically translates search filters, including time periods like months and weeks. |
+| **Automatic translation** | Setting | Event components will be automatically translated based on the user's current language. |
+| **Canceled Text** | Setting | Text displayed when the event or ticket sales have been canceled. |
+| **Close Details Text** | Setting | Button label to hide the additional information. |
+| **Next Event Text** | Setting | Set the attendee-facing wording for this item. |
+| **Not on Sale Text** | Setting | Text displayed when tickets are not available for purchase. |
+| **On Sale Text** | Setting | Text displayed when tickets are available for purchase. |
+| **Online Event Text** | Setting | Text displayed when the event is taking place online. |
+| **Other Available Dates Text** | Setting | Label for other dates in a recurring event series. |
+| **Past Event Button Text** | Setting | Set the attendee-facing wording for this item. |
+| **Postponed Text** | Setting | Text displayed when ticket sales have been delayed or rescheduled. |
+| **Sales Ended Text** | Setting | Text displayed when the sale period for tickets has ended. |
+| **Sales Not Started Text** | Setting | Text displayed when the sale period for tickets has not started. |
+| **Select Dates Button Text** | Setting | Button shown instead of Register when visitors select dates for a multi-date event. |
+| **Show Details Text** | Setting | Button label to reveal additional information. |
+| **Sold Out Text** | Setting | Text displayed when all available tickets have been purchased. |
+| **View Map Text** | Setting | Button for viewing the event location on a map. |
+
+## Search filters
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Search filters. The circles identify Search Placeholder and Language Filter Placeholder.">
+  <img src="/assets/refresh/branding-and-design/widget-text-search.png" alt="All Settings → Text — Search filters. The circles identify Search Placeholder and Language Filter Placeholder." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Text — Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder.">
+  <img src="/assets/refresh/branding-and-design/widget-text-search-2.png" alt="All Settings → Text — Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: searchbarText */}
+{/* widget-option: searchFilterCategoryText */}
+{/* widget-option: searchFilterCityText */}
+{/* widget-option: searchFilterCountryText */}
+{/* widget-option: searchFilterLanguageText */}
+{/* widget-option: searchFilterMonthText */}
+{/* widget-option: searchFilterRegionText */}
+{/* widget-option: searchFilterVenueText */}
+{/* widget-option: searchFilterWeekText */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Category Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **City Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Country Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Language Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Month Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Region Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Search Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Venue Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+| **Week Filter Placeholder** | Setting | Set the attendee-facing wording for this item. |
+
+## Shopify product page
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Shopify product page. The circles identify Ticket Variant Label and Date Variant Label.">
+  <img src="/assets/refresh/branding-and-design/widget-text-shopify.png" alt="All Settings → Text — Shopify product page. The circles identify Ticket Variant Label and Date Variant Label." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: shopifyDateVariantLabel */}
+{/* widget-option: shopifyTicketVariantLabel */}
+{/* widget-option: shopifyTimeslotVariantLabel */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Date Variant Label** | Setting | Set the attendee-facing wording for this item. |
+| **Ticket Variant Label** | Setting | Set the attendee-facing wording for this item. |
+| **Timeslot Variant Label** | Setting | Set the attendee-facing wording for this item. |
+
+## Widget
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Text — Widget. The circles identify Main Header and No Events Message.">
+  <img src="/assets/refresh/branding-and-design/widget-text-widget.png" alt="All Settings → Text — Widget. The circles identify Main Header and No Events Message." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: hostText */}
+{/* widget-option: loadMoreButtonText */}
+{/* widget-option: noEventsText */}
+{/* widget-option: widgetTitle */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Host text** | Setting | Visitors will see this message when you have no upcoming events. |
+| **Load More Events Text** | Setting | Set the attendee-facing wording for this item. |
+| **Main Header** | Setting | Set the attendee-facing wording for this item. |
+| **No Events Message** | Setting | Visitors will see this message when you have no events. |
+
+{/* END WIDGET OPTIONS */}
+
+## Save and verify
+
+Wait for the setting update to finish, check the preview, and open the installed widget to confirm the result. If a control is unavailable, review its prerequisite, site type, and plan. [Return to widget setup](./widget-customization-overview).

@@ -1,138 +1,157 @@
 ---
-title: "Waitlist"
-description: "Enable an event waitlist, customize its emails, and notify selected subscribers when tickets are available."
+title: "Waitlists and invitation-only purchasing"
+description: "Set waitlist triggers and capacity thresholds, configure emails, and invite guests through event links or private Shopify invoices."
 ---
 
-Once you’ve configured your **Email Communication** settings, the next step is to set up the **Waitlist**. This feature helps you manage attendee demand even after your event reaches full capacity. When enabled, interested attendees can join a waitlist to be notified if additional tickets become available — ensuring you never miss potential registrations.
+A waitlist collects interested guests and lets you invite selected people to purchase. Joining is not a completed booking or guaranteed admission.
 
+## What the buyer sees
+
+When the configured trigger or invitation-only threshold is reached, an affected ticket offers **Add to Waitlist**. The form collects contact details and applicable questions. **Back** returns without joining; submitting the form adds a waitlist entry rather than a ticket purchase.
+
+<Frame caption="At the invitation-only threshold, the ticket offers Add to Waitlist.">
+  <img src="../assets/refresh/event-management/waitlist-buyer-view-entry.png" alt="Public ticket with Add to Waitlist and Sold out highlighted" />
+</Frame>
+
+<Frame caption="Contact details are collected before the buyer submits the waitlist form.">
+  <img src="../assets/refresh/event-management/waitlist-buyer-view-form.png" alt="Join the waitlist form with its heading, Email, and Back highlighted" />
+</Frame>
+
+## Open and enable a waitlist
+
+1. Open **Events**, edit the ticketed or RSVP event, and select **Waitlist**.
+2. Turn on **Enable Waitlist** in **Settings**.
+3. Configure the triggers, wording, and capacity behavior below.
+4. Save the event. Use **Subscribers** to manage the queue. Shared waitlist email templates are under **Design → Attendee Communication**.
+
+The waitlist step is not used for Display Only or external-registration events. For a series, check the parent configuration and any [date-specific overrides](./day-specific-tickets).
 
 ## Settings
-The Settings section lets you control when and how the waitlist is displayed to attendees.
 
-| S.no | Field | Description|
-|------|-------|------------|
-| 1.    | **Enable Waitlist** | Toggle this option to allow attendees to join a waitlist when tickets are sold out or the event has reached capacity. Once enabled, additional configuration options become available. |
-| 2.   | **Show When Tickets Sold Out**   | Enable this toggle to display the waitlist option as soon as all tickets for the event are sold out.                                                                                            |
-| 3.    | **Show When Event at Capacity**  | Enable this toggle to display the waitlist option when the total event capacity (across all tickets) is reached.                                                                                |
-| 4.    | **Call to Action**               | Enter the text that will appear on the button attendees click to join the waitlist. Keep it short and clear — for example, **Join Waitlist** or **Notify Me**.                                      |
-| 5.    | **Description**                  | Provide a brief message explaining how the waitlist works. You can personalize this message using available tokens (e.g., `attendee_first_name`).                                              |
-| 6.    | **Confirmation Message**         | Add the message that will appear on-screen after an attendee successfully joins the waitlist. This confirmation is shown instantly, but is not sent via email.
 
-![Waitlist Settings](../assets/create-events/waitlist/waitlist-settings.png)
+<Frame caption="Customize the waitlist button, description, and on-screen confirmation. The confirmation message shown here is separate from an email.">
+  <img src="../assets/refresh/event-management/waitlist-settings-messages.png" alt="Customize the waitlist button, description, and on-screen confirmation. The confirmation message shown here is separate from an email." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
+<Frame caption="Enable Waitlist, then choose whether sold-out tickets or event capacity should show the waitlist. Invitation-only capacity controls require an event capacity.">
+  <img src="../assets/refresh/event-management/waitlist-settings.png" alt="Enable Waitlist, then choose whether sold-out tickets or event capacity should show the waitlist. Invitation-only capacity controls require an event capacity." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+| Option | Effect |
+|---|---|
+| **Enable Waitlist** | Enables the event's waitlist. |
+| **Tickets are sold out** | Offers a waitlist for sold-out tickets. This is not limited to the point when every ticket type has sold out. |
+| **Event reaches capacity** | Offers a waitlist when the event's total capacity is exhausted. |
+| **Call to Action** | Text for joining, such as “Join Waitlist”. |
+| **Description** | Explanation shown to someone considering joining. |
+| **Confirmation Message** | On-screen message after joining. This is separate from the confirmation email. |
+| **Limit waitlist purchases to event capacity** | Enables invitation-only purchasing with a fixed event-capacity ceiling. Requires a finite event capacity. |
+| **Start waitlist when bookings reach** | Number of booked attendees after which further purchases need a valid invitation. Use a whole number from 0 through the event capacity. |
+
+Use the personalization picker where provided instead of guessing token syntax. Registration questions appear on the waitlist unless their **Exclude from Waitlist** setting is enabled under [Additional Info](./additional-information).
+
+## Invitation-only purchasing within event capacity
+
+
+<Frame caption="A threshold of zero makes purchases invitation-only from the start, while the event capacity remains the maximum.">
+  <img src="../assets/refresh/event-management/waitlist-invitation-only.png" alt="A threshold of zero makes purchases invitation-only from the start, while the event capacity remains the maximum." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="With capacity 50 and a waitlist threshold of 40, public bookings stop at 40. Invited purchases use the remaining capacity without increasing the event limit.">
+  <img src="../assets/refresh/event-management/waitlist-fixed-capacity.png" alt="With capacity 50 and a waitlist threshold of 40, public bookings stop at 40. Invited purchases use the remaining capacity without increasing the event limit." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+1. In **Event Details → Event Capacity**, turn off unlimited capacity and set the maximum number of attendees.
+2. In **Waitlist → Settings**, enable **Limit waitlist purchases to event capacity**.
+3. Set **Start waitlist when bookings reach**. Enabling the switch initially sets this to **0**, so choose the intended threshold before saving.
+4. Save, then test a public checkout and an invited checkout.
+
+| Example with capacity 100 | Result |
+|---|---|
+| Threshold **0** | Only invited waitlist customers can purchase from the beginning. |
+| Threshold **80** | Public bookings can fill the first 80 attendee places. Further purchases need a valid invitation, up to the overall 100-attendee capacity. |
+| Threshold **100** | Public booking can use the entire capacity. An invitation does not create an extra place beyond 100. |
+
+Invitations do not increase event capacity in this mode. Ticket quantities, group-ticket attendee counts, invitation quantity limits, and the event ceiling all matter. Before returning the event to unlimited capacity, turn off **Limit waitlist purchases to event capacity**, then change **Event Details → Unlimited attendee capacity** and save. If you need to reduce an existing fixed capacity, reconcile outstanding orders and reservations first; the application can reject the reduction.
+
+With the switch off, the threshold does not apply. Older waitlist release flows can make additional inventory available, so use the fixed-capacity option when invitations must remain inside a firm venue limit.
 
 ## Communications
-The Communications section lets you automate and personalize the messages (via email) sent to attendees who interact with your waitlist — whether they’ve just joined it or have been offered a spot when one becomes available.  
-
-There are two email templates available:
-
-- **Spot Available Notification**: Sent when a spot opens up, inviting the attendee to claim it.
-- **Waitlist Confirmation Email**: Sent immediately after someone joins the waitlist to confirm their submission.
-
-> **Info**: You can enable either (or both) templates as needed.
-![Waitlist Communications](../assets/create-events/waitlist/communications.png)
 
 
-### Spot Available Notification
+<Frame caption="Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.">
+  <img src="../assets/refresh/branding-and-design/communication-waitlist-design-confirmation.png" alt="Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-This template notifies attendees when a spot becomes available for your event, inviting them to claim it within a specified time frame. You can enable this template using the toggle switch and customize the message content to ensure it matches your event’s tone and urgency.  
+<Frame caption="Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.">
+  <img src="../assets/refresh/branding-and-design/communication-waitlist-design.png" alt="Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
 
-Click the **Spot Available Notification** template, and a customization panel opens on the right-hand side of the interface, allowing you to configure all message details.
+The current Waitlist screen has **Settings** and **Subscribers** tabs. Configure shared email appearance and text in **Design → Attendee Communication**:
 
-| **Field**       | **Description**                                                                                                                                                                                                                                                                               |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Property**    | Use this dropdown to select event-related details such as Event Title, Event Summary, Event Start Date, Event Start Time, or Event End Date.                                                                                                                                                         |
-| **Token**       | Displays the corresponding token for the selected property (e.g., `event_title`). Click *Copy* to quickly insert it into your message. Tokens act as placeholders that automatically resolve to real data, such as attendee's name or event details.                                    |
-| **Subject**     | Add the subject line for your message. Combine regular text with tokens for personalization — for example, “A Spot Just Opened for `event_title`!”.                                                                                                                                           |
-| **Message Body**| Write your email content here. You can include personalization tokens like `attendee_first_name`, `attendee_email`, and `event_title` to make your message feel personal and relevant.                                                                                                    |
+- **Waitlist Confirmation** supplies the confirmation after joining.
+- **Waitlist Ticket Released** supplies the invitation when a spot becomes available.
+- **Customize Email Template** in the invitation dialog opens the release template.
 
-![Spot Available Notification](../assets/create-events/waitlist/spot-available-notification.gif)
+The on-screen **Confirmation Message** in Waitlist Settings is separate from an email. For per-language defaults and overrides, see [multilingual emails and tickets](../branding-and-design/multilingual-communications).
 
-#### Notification Settings
+The current manual notification flow creates access links valid for **48 hours**. The invitation deadline and a Shopify inventory hold are separate. A queued message is not proof of delivery; review the attendee's email activity when investigating a missing message.
 
-At the bottom of the customization panel, you’ll find additional settings to fine-tune the email’s behavior.
-
-| S.no | Field                     | Description                                                                                                                                                   |
-|------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.    | **Include Ticket Information** | Enable this toggle to include details about available tickets in the email, helping attendees make quick decisions.                                           |
-| 2.    | **Expiration Time (hours)**   | Define how long the recipient has to claim their spot using the invitation link. This helps maintain fairness and ensures seats are filled promptly. |
-
-![waitlist-notify-email-settings](../assets/create-events/waitlist/waitlist-notify-email-settings.png)
-
-After finalizing your changes, click Save Changes to update and activate your customized notification.
-
-![waitlist-notify-email-save](../assets/create-events/waitlist/waitlist-notify-email-save.png)
+## Subscribers and notification status
 
 
-### Waitlist Confirmation Email
+<Frame caption="The subscriber filter separates notified and not-notified guests. Inspect each row for the current invitation status.">
+  <img src="../assets/refresh/event-management/waitlist-queue-status-filter.png" alt="The subscriber filter separates notified and not-notified guests. Inspect each row for the current invitation status." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-This template sends an automatic confirmation to attendees right after they join the waitlist, assuring them that their request has been received successfully. You can enable this template using the toggle switch and customize the message content to align with your event’s tone and communication style.  
+<Frame caption="Subscribers lists waitlisted guests and their notification status. This synthetic Demo entry is Pending; select it before opening Notify Guests.">
+  <img src="../assets/refresh/event-management/waitlist-queue-status.png" alt="Subscribers lists waitlisted guests and their notification status. This synthetic Demo entry is Pending; select it before opening Notify Guests." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-Click the **Waitlist Confirmation Email** template, and a customization panel opens on the right-hand side of the interface, allowing you to configure all message details.
+Open **Subscribers** to see ticket availability, email, ticket type, waitlist status, and the date added. Search by email or ticket, filter by notification status, and select the guests you want to contact.
 
-| Field         | Description                                                                                                                                                                                                                           |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Property**      | Use this dropdown to select event-related details such as **Event Title, Event Summary, Event Start Date, Event Start Time, or Event End Date**.                                                                                          |
-| **Token**         | Displays the token value corresponding to the selected property (e.g.,`event_title`). Click **Copy** to easily insert it into your message body or subject line.                                                                      |
-| **Subject**       | Enter the subject line for your confirmation email. You can combine text and tokens — for example, “You’re on the Waitlist for `event_title`!”.                                                                                    |
-| **Message Body**  | Write your email message here. Use tokens like `attendee_first_name`, `attendee_email`, and `event_title` to personalize your message. Tokens automatically resolve to the attendee’s actual details, ensuring a friendly and relevant confirmation. |
+**Notify Guests** opens the invitation dialog. You can notify up to **500 selected attendees** in one request. Guests who are no longer waitlisted or have already purchased are skipped. The result reports **queued**, **skipped**, and **failed** counts. A **Notified** state records notification processing; it does not mean the guest purchased or read the email.
 
-![Waitlist-confirmation-email-vid](../assets/create-events/waitlist/waitlist-confirmation-email-vid.gif)
+Use the row's delete action and confirm only when you intend to remove that subscriber from the waitlist.
 
-After finalizing your changes, click **Save Changes** to update and activate your customized notification.
+## Send an event or product-page invitation
 
-![waitlist-confirmation-email-save](../assets/create-events/waitlist/waitlist-confirmation-email-save.png)
+1. Select waitlist guests and click **Notify Guests**.
+2. On Shopify, choose **Purchase from Event Page**.
+3. Enter **Destination URL**, or use **Use Event Page URL** / **Use Shopify Product URL**. Leaving it blank uses the event page when available. A valid event or product URL is required.
+4. Optionally set **Ticket Restriction** to one ticket type. Leave it clear to allow available tickets permitted by the invitation and event.
+5. Set **Maximum Quantity Per Person** from **1–100**; the initial value is 1. This is the invitation's ticket quantity limit, not extra event capacity.
+6. Review the email with **Customize Email Template**, then return and select **Send Notification** when ready.
+7. Review queued/skipped/failed counts, then check a test recipient's complete link and checkout.
 
+<Frame caption="Review the destination, optional ticket restriction, and invitation quantity. This preview has not been sent.">
+  <img src="../assets/refresh/event-management/waitlist-invite-page.png" alt="Notify Waitlist Guests dialog with event-page destination and quantity controls highlighted" />
+</Frame>
 
-## Subscribers
-The Subscribers section allows you to manage the individuals who are on your event's waitlist. From here, you can view the status of each waitlisted attendee, notify them when a spot becomes available, and track their progress through the waitlist queue.
+For ticket-restricted invitations spanning different events, notify each event separately. Keep the full personalized access link intact. Do not replace it with a plain event URL, since that removes the invitation information.
 
-| S.no | Field               | Description                                                                                                                                                                                                 |
-|------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.    | **Ticket Availability** | Displays the number of tickets available for the event. For example, “100 Tickets Available” or the number of tickets remaining for specific types (e.g., General Admission).                               |
-| 2.    | **Notify Guests**       | This button allows you to send notifications to waitlisted attendees when a spot becomes available. You can select which guests to notify if tickets are available.                                          |
-| 3.    | **Search**              | Use the search bar to find specific waitlist subscribers by email, ticket type, or other details.                                                                                                           |
-| 4.    | **Filter**              | Apply filters to view only those guests who are still on the waitlist or those who have been notified.                                                                                                       |
-| 5.    | **Subscriber Information** | This section displays detailed information for each subscriber, including their email, ticket type, waitlist status (e.g., Pending), and the date they were added to the waitlist.                      |
-| 6.    | **Action Buttons**      | For each subscriber, you can use action buttons to either notify the guest or delete them from the waitlist if necessary.                                                                                    |
+## Private Shopify invoices
 
-![Waitlist Subscribers](../assets/create-events/waitlist/waitlist-subscribers.png)
+For Shopify sites, **Private Shopify Invoice** is an alternative to the ordinary page link.
 
+1. Publish the event and ensure the selected ticket is synced to a Shopify variant.
+2. Select waitlist guests, open **Notify Guests**, and choose **Private Shopify Invoice**.
+3. Select **Ticket Type**; this is required.
+4. Set **Quantity Per Invoice** from **1–100**; the initial value is 1.
+5. Select **Send Private Invoice Access** and review the result.
 
-### Notifying Waitlist Attendees
+<Frame caption="The invoice setup requires a ticket type. This Demo preview has no ticket options, so Send Private Invoice Access remains disabled.">
+  <img src="../assets/refresh/event-management/waitlist-shopify-invoice.png" alt="Private Shopify Invoice setup with quantity and disabled send action" />
+</Frame>
 
-Once a ticket becomes available, you can notify attendees who are on the waitlist and allow them to claim the spot. Here’s how to notify your guests:
+If **Select Ticket** has no available options, do not send an invoice invitation. Confirm the event and ticket synchronization and retry loading the dialog; contact support if a saved, synced ticket is still missing.
 
-1. Choose the attendees from the list, or use the search and filter options to select those you want to notify about the available ticket, and click on the **Notify Guests**.
+In the legacy release flow, the email gives the customer a private access link. Opening it creates the Shopify draft order and redirects to its invoice; the requested inventory hold is **30 minutes from that click**, not from sending the email. This flow can increase inventory for a sold-out ticket and consumes the access token when the invoice is created. If the ticket mapping is missing or draft-order creation fails, the customer may be sent to the product page instead.
 
-![notifying-waitlist-attendees](../assets/create-events/waitlist/notifying-waitlist-attendees.gif)
+**When “Limit waitlist purchases to event capacity” is on, the current flow uses capacity-checked event/product checkout even if Private Shopify Invoice was selected.** It does not create a legacy invoice that increases inventory. Test this path with the [Ticket Selector](../plugins/shopify-ticket-selector) before inviting customers.
 
-2. Click on the **Customize Email Template** button if you wish to send a personalized message to the attendee.
+## Verify before inviting a large group
 
-![cust-email-template](../assets/create-events/waitlist/cust-email-template.gif)
+Test public access before and after the threshold, a valid invitation, a wrong ticket type, a quantity over the invitation limit, an expired link, and a full event. For a series, test two dates and any overridden day. Verify the completed order and attendee record; selecting a seat or receiving an invitation is not a purchase.
 
-3. Click on the **Send Notification** button. A confirmation email will be sent to the attendee, allowing them to claim the available ticket.
-
-![send-notification](../assets/create-events/waitlist/send-notification.png)
-
-You can check the status of the attendee, which will change from **Pending** to **Notified** once the notification has been sent.
-
-![status-notification](../assets/create-events/waitlist/status-notified.png)
-
-By using this process, you ensure timely and efficient communication with your waitlisted guests, providing them with the opportunity to claim available spots before they are offered to others.
-
-### Delete Attendee from Waitlist
-
-To remove an attendee from the waitlist, simply find the attendee in the list and click **Delete** next to their name. This will permanently remove them from the waitlist, and they will no longer be notified if a spot becomes available.
-
-![delete-attendee-waitlist](../assets/create-events/waitlist/delete-attendee-waitlist.gif)
-
-### View Attendee Analytics
-
-You can manage attendee details and track important metrics such as how many tickets have been sold. You can also view check-ins, add new attendees, and analyze the status of each attendee, ensuring smooth event management.
-
-![view-attend-analysis-attendee-waitlist](../assets/create-events/waitlist/view-attend-analysis-attendee-waitlist.gif)
-
-## Verify the release workflow
-
-Save the event and test the sold-out or capacity condition you enabled. Join with a test attendee and verify the confirmation. When inventory is available, use **Notify Guests** and **Send Notification** for the selected subscribers. Check their notification status and the claim link. Joining the waitlist is not a purchase or guaranteed admission; the attendee still needs to complete the offered booking. Do not assume expired invitations automatically notify the next person.
+If someone cannot purchase, check capacity, ticket availability and sales windows, the selected date, ticket restriction, invitation quantity, expiration, and Shopify synchronization. Do not assume expired invitations automatically invite the next person.

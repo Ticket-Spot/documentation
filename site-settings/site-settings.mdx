@@ -1,43 +1,49 @@
 ---
-title: "Site Settings"
-description: "Update your site name, URL, description, and general settings in the Ticket Spot dashboard."
+title: "General site settings"
+description: "Set site details, cart checkout, seat-hold duration, SMS country, and shared date/time formats."
 ---
 
-The **Site Settings** page is where you set the main details of your event site. Here, you can update your site name, site URL, and a short description that appears on your public pages. These settings help visitors quickly understand who you are and what your event site is about.
+Choose the correct site, then open **Settings → General**. Edit the site fields and select **Save** at the top right. **Date Display** and **Time Display** save automatically when changed.
 
+## Site identity
 
-**Step 1**: Log in to your **Ticket Spot** account and click on the **Settings** tab from the top navigation bar.
+| Field | Purpose |
+|---|---|
+| **Site Name** | The site's display name. |
+| **Site URL** | The website associated with the site. Use Domains & Sender Identity to configure a hosted Ticket Spot URL or custom domain. |
+| **Host Information** | Rich text introducing you or your organization in the event page's **Meet the Host** section. Supports bold, italic, underline, and links. |
 
-![site-settings-tab](../assets/site-settings/site-settings/site-settings-tab.png)
+<Frame caption="Settings → General contains the site name, site URL, and Host Information shown in the event page’s Meet the Host section. Save applies site-form edits.">
+  <img src="../assets/refresh/site-settings/site-settings-general.png" alt="Settings → General contains the site name, site URL, and Host Information shown in the event page’s Meet the Host section. Save applies site-form edits." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-**Step 2**: Select the **Site Settings** option from the left sidebar to view and edit your site name, URL, and description fields.
+## Checkout
 
-![click-site-sett](../assets/site-settings/site-settings/click-site-sett.png)
+**Enable Cart** lets customers add tickets for multiple events or time slots and pay in one transaction. It applies to every event on the site.
 
-**Step 3**: When the Site Settings page opens, you’ll see three fields you can update. Here’s what each field does:
+**Seat Hold Time in Minutes** accepts a whole number from **1 to 120**; the default is **15**. Selected seats are held for that duration, and starting payment renews the hold for the same duration. Save after changing either setting.
 
-| **Field**   | **Description**                                                                 | **Example**                         |
-|-------------|---------------------------------------------------------------------------------|-------------------------------------|
-| **Site Name** | The name displayed on your event site. It appears in the header and public pages. | Company Events Hub                  |
-| **Site URL**  | The link visitors use to access your event site.                               | company.ticketspot.events           |
-| **About**     | A short description that explains what your site or organization is about. This appears on public pages. | Your place to explore all upcoming company events. |
+<Frame caption="Enable Cart allows checkout across multiple events or time slots. Seat Hold Time accepts whole minutes from 1 to 120, with 15 minutes as the default; starting payment renews that hold.">
+  <img src="../assets/refresh/site-settings/site-settings-general-checkout.png" alt="Enable Cart allows checkout across multiple events or time slots. Seat Hold Time accepts whole minutes from 1 to 120, with 15 minutes as the default; starting payment renews that hold." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![all-fields](../assets/site-settings/site-settings/all-fields.png)
+## Regional settings
 
+**SMS Country** lists the regions supported by the account. It selects the destination region used for SMS sending. Save after changing it.
 
-**Step 4**: Review your site details and click the **Save** button in the top-right corner to apply your changes.
+**Date & Time Format** contains **Date Display** and **Time Display** for emails, event pages, tickets, and other attendee-facing surfaces. These controls update automatically and show a current-date/time example for each choice.
 
-![click-save](../assets/site-settings/site-settings/click-save.png)
+<Frame caption="Regional Settings contains SMS Country and the shared Date Display and Time Display formats. Date and time format changes update automatically; save other General fields with Save.">
+  <img src="../assets/refresh/site-settings/site-settings-general-regional.png" alt="Regional Settings contains SMS Country and the shared Date Display and Time Display formats. Date and time format changes update automatically; save other General fields with Save." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
+Date choices include abbreviated or full month names, optional weekday and year, and numeric month/day/year or day/month/year with two- or four-digit years. Time choices include 12-hour time with AM/PM, 24-hour time, and 24-hour time with an AM/PM suffix.
 
-After saving, a confirmation message will appear to show that your site settings have been successfully updated.
+These formats do not change the event timezone or payment currency. Widget-specific formatting is in **Design → Widget → All Settings → Display → Date & time**. See [Language, translation, and locale settings](/branding-and-design/language-and-locale) and the [locale FAQ](/getting-started/language-and-locale-faq).
 
-![success-message](../assets/site-settings/site-settings/success-message.png)
+## Other settings
 
-
-## Best Practices
-
-- **Use a clear site name** so visitors can quickly understand what your event site represents.
-- **Keep your About section short and helpful** to give visitors a quick overview of your site or organization.
-- **Review your URL** before sharing it publicly to make sure it’s correct.
-- **Update your information regularly** to keep your event site accurate and up to date.
+- [Domains, email sender, reply-to address, and tracking IDs](./domain-and-analytics)
+- [Event submissions](./event-submissions)
+- [Mobile check-in](./mobile-check-in)
+- [Marketplace and organizations](./marketplace-and-organizations)

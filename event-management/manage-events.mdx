@@ -1,107 +1,110 @@
 ---
 title: "Manage Events"
-description: "Edit, share, publish, cancel, copy, or remove events from the Ticket Spot dashboard."
+description: "Use event-card actions, save and publish controls, scoped cancellation, restoration, duplication, sharing, and deletion."
 ---
 
-**Manage Events** allows organizers to update, share, or cancel events directly from their event dashboard. You can edit event details, copy and share event links, save changes, cancel upcoming events, or delete events that are no longer needed — all from one place.
+Open **Events**, find the event, and choose **Manage event**. The card's three-dot **More actions** menu provides shortcuts to tickets, exports, the event page, attendees, duplication, sharing, messages, and Analytics. Availability depends on your role and the event.
 
+<Frame caption="More actions on the event card provides shortcuts to the main workflows.">
+  <img src="../assets/refresh/event-management/event-actions.png" alt="Event-card action menu with Manage tickets, Share, and View analytics highlighted" style={{ maxWidth: "320px" }} />
+</Frame>
 
 ## Edit Event
 
-To make changes to an existing event, select the event you want to edit from your event dashboard and click **Edit Event**. You can update details such as the event title, description, date, time, venue, waitlist, and other key information. 
-
-After reviewing your updates, click **Save** to apply the changes. The dashboard will refresh automatically, displaying the updated event details.
-
-![edit-event](../assets/create-events/manage-events/edit-event.gif)
-
-## Cancel Event
-
-If you want to remove an event from your dashboard without deleting it permanently, you can use the **Remove Event** option. This hides the event from your active listings while keeping its data stored for future access or reactivation.
-
-1. Select the event you want to remove from your event dashboard and click on the **Edit Event**.
-
-![click-edit-event-cancel](../assets/create-events/manage-events/click-edit-event-cancel.png)
-
-2. Click on the **Event Actions** at the top-right corner of the event page and select **Cancel Event**.
-
-![select-cancel-event](../assets/create-events/manage-events/select-cancel-event.png)
-
-
-3. If you want to notify attendees about the event cancellation, keep the toggle **on**, enter an **email subject** and **message**, and click on **Cancel Event** to confirm.
-
-![click-cancel-toggle-on](../assets/create-events/manage-events/click-cancel-toggle-on.png)
-
-
-4. If you don’t want to notify attendees, turn the toggle **off** and click **Cancel Event** to confirm the cancellation.
-
-![click-cancel-toggle-off](../assets/create-events/manage-events/click-cancel-toggle-off.png)
-
-
-> **Note:** Cancelling an event only removes it from your active dashboard and marks it as Cancelled. It’s not deleted and can be restored later if needed.
-
-
-## Restore Event (as Draft)
-
-If you want to bring back a previously canceled or removed event, you can restore it as a draft. This allows you to make updates before publishing it again.
-
-1. Select the event you want to restore from your event dashboard and click on **Edit Event**.
-
-![select-edit-event-restore-draft](../assets/create-events/manage-events/select-edit-event-restore-draft.png)
-
-2. Click on the **Event Actions** at the top-right corner of the event page and select **Restore as Draft**.
-
-![select-restore-as-draft](../assets/create-events/manage-events/select-restore-as-draft.png)
-
-
-The event will be marked as **Draft** instead of **Cancelled** in the event status indicator after restoration.
-
-![status-draft](../assets/create-events/manage-events/status-draft.png)
-
-
-> **Note:** Restored events remain in draft mode until you manually publish them. Review all event details carefully before making it live again.
-
-## Delete Event
-
-If an event is no longer required, you can permanently remove it from your dashboard to keep your event list organized and up to date. Deleting an event ensures that all related data is removed from your account.
-
-1. Select the event you want to delete from your event dashboard and click on **Edit Event**.
-
-![click-edit-event-delete](../assets/create-events/manage-events/click-edit-event-delete.png)
-
-2. Click on the **Event Actions** at the top-right corner of the event page and select **Delete Event**.
-
-![select-delete-event](../assets/create-events/manage-events/select-delete-event.png)
-
-3. A confirmation window will appear — review the message carefully, then click **Delete Permanently** to remove the event.
-
-![delete-permanent-btn](../assets/create-events/manage-events/delete-permanent-btn.png)
-
-Your event will be permanently deleted and will no longer appear in your dashboard.
-
-> **Note:** Unlike canceling, which keeps the event in your system but marks it as canceled, deleting completely removes it and all associated information. Once confirmed, the event cannot be restored.
-
-
-## Copy Event Link
-
-The **Copy Event Link** feature allows you to easily share your event with others. Whether you want to send the link via email, post it on social media, or share it directly with others, this option makes it quick and easy to distribute your event details.
-
-Click on the **Event Actions** at the top-right corner of the event page and choose **Copy Link**.
-
-![event-link-copy](../assets/create-events/manage-events/event-link-copy.png)
-
-The event link will be copied to your clipboard, ready to be shared via email, social media, or other platforms.
-
+Choose **Manage event**, open the relevant setup step, and edit its fields. Some sub-editors—such as saved tickets—have their own save button. Save those changes before leaving the sub-editor, then use the event's **Save** control as needed. See the [event editor steps](./create-event-overview) and [complete option checklist](./event-options-reference).
 
 ## Save Event
 
-The **Save Event** option lets you save any changes made to the event without publishing it right away. This keeps your event in draft mode, allowing you to make further updates later. Simply click **Save Event** to store the changes until you’re ready to publish the event.
+**Save** preserves the event's current status. Saving a draft keeps it a draft; saving an already live event does not turn it into a draft. A new event uses **Create Event** for its initial save.
 
-![save-event](../assets/create-events/manage-events/save-event.gif)
+<Frame caption="Save and the connected-platform publish controls perform different actions.">
+  <img src="../assets/refresh/event-management/event-publish-share-editor.png" alt="Save, Publish to Shopify, and Publish to Square buttons highlighted" />
+</Frame>
 
 ## Publish Event
 
-Once your event is finalized and ready to be visible to attendees, click **Publish Event** at the top-right corner of the event page. 
+The controls adapt to the site and event:
 
-![publish-event](../assets/create-events/manage-events/publish-event.gif)
+| Control | What to review |
+| --- | --- |
+| **Publish / Approve and Publish** | Publishes an eligible draft or reviewed event. Complete the required fields and inspect the resulting status. |
+| **Publish to Shopify / Publish to Square / Publish to Ecwid** | Opens the relevant integration's publishing flow. Review the product/catalog settings and final confirmation. Multiple connected integrations can have separate buttons. |
+| **Change to Live** | Where offered in the editor's three-dot menu, changes Ticket Spot's event status. It does not by itself publish the event to Shopify or sync it to Square Catalog. |
+| **Submit Event** | Sends a marketplace host's draft for review where that workflow is enabled. Submission and approval are separate steps. |
 
-This will make the event live, allowing attendees to view and register for the event.
+An individual occurrence has its own Save control; platform publishing is handled from the appropriate parent event. After publishing, check event privacy, dates, sales windows, ticket availability, and the actual event page or installed widget. For Shopify, also verify the [Ticket Selector](../plugins/shopify-ticket-selector).
+
+<Accordion title="Editor menu and Change to Live confirmation">
+<Frame caption="The editor menu changes with status. A draft offers Change to Live; cancellation and deletion are separate actions.">
+  <img src="../assets/refresh/event-management/event-actions-editor.png" alt="Editor overflow menu showing Change to Live, Cancel all Events, and Delete Event" style={{ maxWidth: "340px" }} />
+</Frame>
+<Frame caption="The confirmation explains that changing Ticket Spot status does not publish to Shopify.">
+  <img src="../assets/refresh/event-management/event-publish-share-live-confirmation.png" alt="Change to Live Status confirmation explaining the separate Shopify publishing step" style={{ maxWidth: "500px" }} />
+</Frame>
+</Accordion>
+
+## Duplicate an event
+
+Choose **More actions → Duplicate** on the event card. **Event properties** are always included. Choose whether to copy **Tickets**, **Communication**, **Hosts**, and **Promo codes**. Events with assigned seating also offer **Seating chart**. Promo codes start unchecked; the other offered copy options start checked.
+
+<Frame caption="Choose the parts to copy, including the chart when the source event uses assigned seating.">
+  <img src="../assets/refresh/event-management/event-actions-duplicate.png" alt="Duplicate dialog with Tickets, Promo codes, and Seating chart highlighted" />
+</Frame>
+
+Select **Duplicate** to create the copy, then review its name, dates, ticket rules, communications, hosts, and seating before publishing. A copy of the layout is not a transfer of existing attendees or reservations. **Cancel** closes the dialog without creating a copy.
+
+## Copy Event Link
+
+Choose **More actions → Share** on the event card. **Copy** copies the displayed event link. **Facebook**, **Tweet**, **LinkedIn**, **Email**, and **Text** open the corresponding sharing flow. Opening this dialog alone does not send a message.
+
+<Frame caption="Share provides the event link and destination shortcuts.">
+  <img src="../assets/refresh/event-management/event-publish-share-share.png" alt="Share Event dialog and Copy link button highlighted" style={{ maxWidth: "500px" }} />
+</Frame>
+
+**View event page** on the card or **Event Page** in the editor opens the public page. Check the target event and date before distributing a link. Use [tracking links](./tracking-links) when you need campaign attribution.
+
+## Export attendees and reports
+
+Choose **More actions → Export attendees**. Read the **Exporting** scope before downloading **Attendees**, **Check-in activity**, or **Financial report**. For a series, the card starts with the next upcoming occurrence. Use the occurrence's attendee page to choose another date or a specific time slot. See [export scope and fields](../attendee-management/export-attendees-and-check-in-data).
+
+## Cancel Event
+
+Open the editor's three-dot menu and choose **Cancel Event**. A series can label this entry **Cancel all Events**; the dialog still lets you choose the scope.
+
+1. Choose **Specific date or time** or **All upcoming dates and times**. Select the intended date/time when cancelling one occurrence.
+2. Review the affected-attendee count and, when shown, the number of unique email recipients.
+3. Set **Notify Attendees**. It starts on. With notifications on, review **Email Subject** and **Message**; with it off, the confirmation says no notification emails will be sent.
+4. Select the cancellation button to open **Confirm cancellation**.
+5. Review the scope again, then confirm only when ready. **Back to details** returns to the form; **Keep Event** closes it without cancelling.
+
+<Accordion title="Review cancellation scope and confirmation">
+<Frame caption="A series cancellation can target one date/time or all upcoming dates.">
+  <img src="../assets/refresh/event-management/event-cancel-scope-specific.png" alt="Specific date or time, All upcoming dates and times, and Notify Attendees highlighted" />
+</Frame>
+<Frame caption="Changing the scope also changes the audience and suggested email wording.">
+  <img src="../assets/refresh/event-management/event-cancel-scope-upcoming.png" alt="All-upcoming cancellation scope and notification fields" />
+</Frame>
+<Frame caption="The final confirmation states the scope, attendance effect, notification choice, and refund behavior.">
+  <img src="../assets/refresh/event-management/event-cancel-scope-confirm.png" alt="Cancellation confirmation with no notification emails and no automatic refunds highlighted" />
+</Frame>
+</Accordion>
+
+Cancellation stops registration and marks affected attendees as not attending. **Refunds are not issued automatically.** A queued notification is not proof of delivery. If the dialog reports an uncertain or partial failure, use **Retry Cancellation** and inspect the result before starting a separate cancellation.
+
+## Restore Event as Draft
+
+Open a cancelled event and choose **Restore as Draft** from the editor's three-dot menu. Review attendee statuses, dates, tickets, availability, and platform synchronization before publishing again. Restoring as draft does not make the event live.
+
+<Frame caption="A cancelled event offers Restore as Draft in the editor menu.">
+  <img src="../assets/refresh/event-management/event-restore-delete-restore.png" alt="Restore as Draft highlighted in a cancelled event's menu" style={{ maxWidth: "340px" }} />
+</Frame>
+
+## Delete Event
+
+Choose **Delete Event** from the editor menu and read the confirmation before **Delete Permanently**. **Back** closes the confirmation without deleting.
+
+<Frame caption="Review the deletion confirmation. Back leaves the event unchanged.">
+  <img src="../assets/refresh/event-management/event-restore-delete-delete.png" alt="Delete Event confirmation with Back and Delete Permanently highlighted" style={{ maxWidth: "600px" }} />
+</Frame>
+
+Deletion removes the event from normal dashboard listings and has no normal Restore as Draft action. Deleting a series affects its associated dates. A linked Shopify product is archived as part of deletion; handle refunds separately. Deleting the event is distinct from erasing attendee, order, or payment records, so do not interpret the confirmation as a guarantee that every associated record is erased.

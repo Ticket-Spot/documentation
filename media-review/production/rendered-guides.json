@@ -1,0 +1,1014 @@
+{
+  "checked_at": "2026-10-02T05:54:36.213Z",
+  "results": [
+    {
+      "path": "branding-and-design/design-overview",
+      "status": 200,
+      "title": "Design your Ticket Spot experience",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "getting-started/platform-overview",
+      "status": 200,
+      "title": "Platform Overview",
+      "images": 17,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "getting-started/language-and-locale-faq",
+      "status": 200,
+      "title": "Language and locale FAQ",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/create-event-overview",
+      "status": 200,
+      "title": "Create and update an event",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/eventdetails",
+      "status": 200,
+      "title": "Event Details",
+      "images": 14,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/event-options-reference",
+      "status": 200,
+      "title": "Event options and setup checklist",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/datetime",
+      "status": 200,
+      "title": "Dates and Times",
+      "images": 13,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/day-specific-tickets",
+      "status": 200,
+      "title": "Customize individual dates and day tickets",
+      "images": 20,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/venuelocation",
+      "status": 200,
+      "title": "Venue and Location",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/ticket-setup",
+      "status": 200,
+      "title": "Ticket Setup",
+      "images": 32,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/event-add-ons",
+      "status": 200,
+      "title": "Add workshops and extra events to checkout",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/ticket-options-reference",
+      "status": 200,
+      "title": "Ticket options reference",
+      "images": 16,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/email-communication",
+      "status": 200,
+      "title": "Email Communication",
+      "images": 12,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/sms-communication",
+      "status": 200,
+      "title": "Configure event SMS messages",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/additional-information",
+      "status": 200,
+      "title": "Registration questions and check-in requirements",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/waitlist",
+      "status": 200,
+      "title": "Waitlists and invitation-only purchasing",
+      "images": 14,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/tags-and-custom-fields",
+      "status": 200,
+      "title": "Tags & Custom Fields",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/checkout-complete-message",
+      "status": 200,
+      "title": "Checkout Complete",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/display-settings",
+      "status": 200,
+      "title": "Event display overrides",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/hosts",
+      "status": 200,
+      "title": "Event Hosts",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/manage-events",
+      "status": 200,
+      "title": "Manage Events",
+      "images": 13,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/tracking-links",
+      "status": 200,
+      "title": "Create and monitor event tracking links",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/installment-payments",
+      "status": 200,
+      "title": "Set up Stripe installment payments",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/waivers",
+      "status": 200,
+      "title": "Collect waivers and attendee signatures",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "event-management/timed-entry-and-passes",
+      "status": 200,
+      "title": "Set up timed entry, recurring classes, and passes",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "memberships/overview",
+      "status": 200,
+      "title": "Memberships and annual passes",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "memberships/assign-to-events",
+      "status": 200,
+      "title": "Assign memberships to events",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "memberships/create-membership",
+      "status": 200,
+      "title": "Create and configure a membership",
+      "images": 10,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "memberships/manage-members",
+      "status": 200,
+      "title": "View and manage membership holders",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "memberships/ticket-access-and-pricing",
+      "status": 200,
+      "title": "Set members-only tickets and member pricing",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/eventbrite",
+      "status": 200,
+      "title": "Eventbrite",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/integrations-overview",
+      "status": 200,
+      "title": "Integrations overview",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/tickettailor",
+      "status": 200,
+      "title": "Ticket Tailor",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/ticketspice",
+      "status": 200,
+      "title": "Ticket Spice",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/zoom",
+      "status": 200,
+      "title": "Zoom",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/google",
+      "status": 200,
+      "title": "Google Calendar integration",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/zapier",
+      "status": 200,
+      "title": "Zapier",
+      "images": 17,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/twitch",
+      "status": 200,
+      "title": "Twitch",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/mailchimp",
+      "status": 200,
+      "title": "Mailchimp Transactional",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "integrations/klaviyo",
+      "status": 200,
+      "title": "Klaviyo",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-portal/qr-code-digital-wallets",
+      "status": 200,
+      "title": "QR Codes and Digital Wallets",
+      "images": 11,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-portal/viewing-your-tickets",
+      "status": 200,
+      "title": "Viewing Your Tickets",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-portal/view-download-receipt",
+      "status": 200,
+      "title": "View Receipt & Download PDF",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-portal/cancel-transfer-event",
+      "status": 200,
+      "title": "Cancel or transfer a registration",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-portal/contact-host",
+      "status": 200,
+      "title": "Contact Host",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-management/viewing-attendee-details",
+      "status": 200,
+      "title": "Viewing Attendee Details",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-management/adding-attendees-manually",
+      "status": 200,
+      "title": "Adding Attendees Manually",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-management/managing-attendees",
+      "status": 200,
+      "title": "Managing Attendees",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "attendee-management/export-attendees-and-check-in-data",
+      "status": 200,
+      "title": "Export Attendees, Check-In and Financial Data",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/brand-design",
+      "status": 200,
+      "title": "Set up your brand colors and logo",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/event-page-design",
+      "status": 200,
+      "title": "Event page design",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/site-design",
+      "status": 200,
+      "title": "Site Design",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/quick-settings",
+      "status": 200,
+      "title": "Quick Settings and settings search",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-customization-overview",
+      "status": 200,
+      "title": "Widget customization overview",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/display-settings",
+      "status": 200,
+      "title": "Widget display settings",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/checkout-settings",
+      "status": 200,
+      "title": "Widget checkout settings",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/text-settings",
+      "status": 200,
+      "title": "Widget and checkout text settings",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/layout",
+      "status": 200,
+      "title": "Desktop and mobile widget layouts",
+      "images": 10,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/user-search-filter",
+      "status": 200,
+      "title": "Visitor search and filters",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/filters",
+      "status": 200,
+      "title": "Widget event filters",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-display-reference",
+      "status": 200,
+      "title": "Widget display options reference",
+      "images": 19,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-design-reference",
+      "status": 200,
+      "title": "Widget colors and fonts reference",
+      "images": 42,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-layout-reference",
+      "status": 200,
+      "title": "Widget layout options reference",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-event-filters-reference",
+      "status": 200,
+      "title": "Widget event filter options reference",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-visitor-filters-reference",
+      "status": 200,
+      "title": "Visitor search and filter options reference",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-checkout-reference",
+      "status": 200,
+      "title": "Widget checkout options reference",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/widget-text-reference",
+      "status": 200,
+      "title": "Widget and checkout text reference",
+      "images": 56,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/tickets-and-passes",
+      "status": 200,
+      "title": "Design tickets, membership passes, and printed tickets",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/ticket-and-receipt-attachment-design",
+      "status": 200,
+      "title": "Ticket and receipt attachment design",
+      "images": 12,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/attendee-communication-design",
+      "status": 200,
+      "title": "Attendee Communication Design",
+      "images": 20,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/language-and-locale",
+      "status": 200,
+      "title": "Language, translation, and locale settings",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/multilingual-communications",
+      "status": 200,
+      "title": "Multilingual emails and tickets",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/attendee-ticket-page",
+      "status": 200,
+      "title": "Customize the attendee ticket page",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/design-options-reference",
+      "status": 200,
+      "title": "Design option reference",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "branding-and-design/white-label-setup",
+      "status": 200,
+      "title": "Set up branded and white-label ticketing",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/analytics-overview",
+      "status": 200,
+      "title": "Analytics overview",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/sales-analytics",
+      "status": 200,
+      "title": "Sales analytics",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/check-in-analytics",
+      "status": 200,
+      "title": "Attendance analytics",
+      "images": 7,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/abandoned-cart-analytics",
+      "status": 200,
+      "title": "Abandoned cart analytics",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/event-view-analytics",
+      "status": 200,
+      "title": "Traffic analytics",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "analytics/email-analytics",
+      "status": 200,
+      "title": "Email analytics",
+      "images": 11,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "mobile-app/mobile-app-overview",
+      "status": 200,
+      "title": "Mobile App Overview",
+      "images": 12,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "mobile-app/mobile-check-in",
+      "status": 200,
+      "title": "Mobile Check-In",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "mobile-app/attendee-details",
+      "status": 200,
+      "title": "Attendee Details",
+      "images": 11,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "mobile-app/offline-check-in",
+      "status": 200,
+      "title": "Prepare the mobile app for offline check-in",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "account/account-settings",
+      "status": 200,
+      "title": "Account Settings",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "account/get-paid",
+      "status": 200,
+      "title": "Get Paid",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "account/notifications",
+      "status": 200,
+      "title": "Notifications",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "account/billing-and-plans",
+      "status": 200,
+      "title": "Ticket Spot plans, billing, and usage",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "account/feature-reference",
+      "status": 200,
+      "title": "Complete Ticket Spot feature and plan reference",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "team/invite-team-roles",
+      "status": 200,
+      "title": "Invite team members and assign roles",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "team/manage-invitations",
+      "status": 200,
+      "title": "Manage invitations",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/site-settings",
+      "status": 200,
+      "title": "General site settings",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/domain-and-analytics",
+      "status": 200,
+      "title": "Custom domains, sender identity, and analytics",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/event-submissions",
+      "status": 200,
+      "title": "Event submissions",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/mobile-check-in",
+      "status": 200,
+      "title": "Site check-in settings",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/add-and-switch-sites",
+      "status": 200,
+      "title": "Create and switch workspaces",
+      "images": 5,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "site-settings/marketplace-and-organizations",
+      "status": 200,
+      "title": "Set up a multi-organizer event marketplace",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/connect-shopify",
+      "status": 200,
+      "title": "Connect Shopify",
+      "images": 28,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/shopify-ticket-selector",
+      "status": 200,
+      "title": "Shopify Ticket Selector setup and options",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/connect-wix",
+      "status": 200,
+      "title": "Connect Wix",
+      "images": 18,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/connect-lovable",
+      "status": 200,
+      "title": "Connect Lovable",
+      "images": 9,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/connect-wordpress",
+      "status": 200,
+      "title": "Add Ticket Spot to WordPress",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "plugins/embed-on-your-website",
+      "status": 200,
+      "title": "Embed tickets on your website",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "seating-charts/create-and-assign",
+      "status": 200,
+      "title": "Create and assign a seating chart",
+      "images": 8,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "seating-charts/advanced-layouts",
+      "status": 200,
+      "title": "Floor plans, whole tables, booths, and multi-floor seating",
+      "images": 6,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "seating-charts/seat-selection",
+      "status": 200,
+      "title": "Seat selection and attendee assignment",
+      "images": 28,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "on-site/box-office-pos",
+      "status": 200,
+      "title": "Sell tickets at the box office with Square POS",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "on-site/ticket-printing",
+      "status": 200,
+      "title": "Print QR tickets with Star or Boca printers",
+      "images": 4,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "on-site/self-check-in-kiosk",
+      "status": 200,
+      "title": "Set up a self check-in kiosk",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "api-reference/introduction",
+      "status": 200,
+      "title": "Ticket Spot API authentication and access",
+      "images": 3,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    },
+    {
+      "path": "api-reference/endpoint/create",
+      "status": 200,
+      "title": "Create an event with the API",
+      "images": 2,
+      "broken": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

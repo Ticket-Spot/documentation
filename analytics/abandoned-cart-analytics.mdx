@@ -1,136 +1,68 @@
 ---
-title: "Abandoned Cart Analytics"
-description: "Review incomplete checkouts, recovery eligibility, and abandoned-cart activity by period and event."
+title: "Abandoned cart analytics"
+description: "Review abandonment stages and recoverable contacts, prepare recovery messages, and export opportunities."
 ---
 
-The **Abandoned Cart Analytics** dashboard shows you how many customers began the checkout process but didn’t finish their purchase. It helps you track abandoned sessions, see which ones can be recovered, and review when and where users dropped off during checkout.
+Open **Analytics**, select an event or occurrence, and choose **Abandoned Carts**. Set **Range** and **Group by** for the period you want to inspect. Screenshots use illustrative data; no recovery messages were sent for them.
 
+## Summary and charts
 
-## Navigation
+The six summary cards show **Total Sessions**, **Abandoned Sessions**, **Abandonment Rate**, **With Email**, **Without Email**, and **Recovery Potential**.
 
-**Step 1:** Log in to your **Ticket Spot** account and click the **Analytics** tab from the top navigation bar.
+**Recovery Potential** is the percentage of abandoned sessions with an email address. It is not a measured recovery-success rate. The timeline compares total abandonments with the subset that has email, while the stage chart shows where sessions stopped.
 
-![analytics-tab](../assets/analytics/abandoned-cart-analytics/analytics-tab.png)
+<Frame caption="Illustrative analytics data. Compare abandonment totals, email availability, timeline activity, and stages.">
+  <img src="../assets/refresh/analytics/analytics-abandonment.png" alt="Compare abandonment totals, email availability, timeline activity, and stages." />
+</Frame>
 
-**Step 2:** Click on the **Analytics Type dropdown** and select **Abandoned Cart Analytics**.
+Recorded stages can include **Added to Cart**, **Continued Shopping**, **Went to Payment**, **Removed a Ticket**, **Ticket Selection**, **Ticket Details**, **Customer Information**, **Payment Failed**, **Payment Attempted**, and **Event View**, depending on the captured journey. Not every view or ticket selection is automatically an abandoned checkout.
 
-![select-analytics-type](../assets/analytics/abandoned-cart-analytics/select-analytics-type.gif)
-
-Your dashboard will instantly update to show all cart abandonment insights.
-
-
-## Select Event
-
-Use the **Select Event** dropdown to choose the event you want to analyze.
-
-![select-event-type](../assets/analytics/abandoned-cart-analytics/select-event-type.gif)
-
-Once selected, all metrics, graphs, and tables will reflect abandoned sessions for that specific event.
-
-
-## Date Filters
-
-You can filter analytics by preset ranges like **1 day**, **7 days**, or **1 year**, or choose a **custom date range** using the calendar. 
-
-![date-filter](../assets/analytics/abandoned-cart-analytics/date-filter.gif)
-
-The dashboard updates automatically based on your selected timeframe.
-
-
-## Summary Metrics
-
-These metrics give you a quick snapshot of your event’s cart abandonment activity.
-
-| Ref No. | Metric Name           | Description                                                       |
-|--------|-----------------------|-------------------------------------------------------------------|
-| 1.     | **Total Sessions**        | Total checkout sessions started.                                  |
-| 2.     | **Abandoned Sessions**    | Number of sessions where checkout was not completed.              |
-| 3.     | **Abandonment Rate (%)**  | Percentage of sessions that ended without a purchase.             |
-| 4.     | **With Email**            | Abandoned sessions where the user provided an email (recoverable). |
-| 5.     | **Without Email**         | Sessions abandoned before email was entered (non-recoverable).    |
-| 6.     | **Recovery Potential (%)** | Percentage of abandoned sessions that can be recovered via email. |
-
-![summary-cards](../assets/analytics/abandoned-cart-analytics/summary-cards.png)
-
-
-## Cart Abandonment Over Time
-
-This graph shows when cart abandonments happened during your selected date range.  
-
-- The **pink line** shows the total number of abandonment events.  
-- The **blue line** shows recoverable abandonments where the customer entered an email.
-
-![card-abandon-overtime](../assets/analytics/abandoned-cart-analytics/card-abandon-overtime.png)
-
-This helps you see patterns, spikes, and the overall timing of abandoned sessions.
-
-
-## Abandonment by Stage
-
-This donut chart shows which step of the checkout process customers abandoned. For example, all abandonments happened at the **Customer Information** stage.  
-
-This helps you quickly identify where users drop off so you can improve that part of the checkout flow.
-
-![abandon-stage](../assets/analytics/abandoned-cart-analytics/abandon-stage.png)
-
+Saved-cart journeys require **30 minutes of inactivity** before being considered abandoned. A completed payment excludes a journey, and removing the last cart item excludes an empty saved cart. The report also checks for later attendee records to avoid offering recovery to people who subsequently completed registration. Cart abandonment and seat-hold expiration are separate rules.
 
 ## Recovery Opportunities
 
-The **Recovery Opportunities** section lists all abandoned checkout sessions where customers entered an email address. These sessions are recoverable, meaning you can contact the customer to complete their purchase. 
+Expand the panel to see contact name, email, stage abandoned, abandonment time, and email status. Search the returned opportunities by name, email, or stage; sort the columns and use ten-row pages. The API can return up to 100 opportunities for the on-screen list even when the total is larger.
 
-This table helps you see who abandoned their cart, when they left, and whether follow-up emails have been sent.
+<Frame caption="Illustrative analytics data. Recovery Opportunities lists contacts, stage, timing, and email status.">
+  <img src="../assets/refresh/analytics/analytics-recovery.png" alt="Recovery Opportunities lists contacts, stage, timing, and email status." />
+</Frame>
 
-| Ref No. | Fields            | Description                                           |
-|--------|-------------------|-------------------------------------------------------|
-| 1.     | **Name**              | The customer's name was captured during checkout.     |
-| 2.     | **Email**             | The email address entered by the customer.            |
-| 3.     | **Stage Abandoned**   | The step at which the customer dropped off.           |
-| 4.     | **Abandonment Time**  | The exact time the abandonment occurred.              |
-| 5.     | **Email Status**      | Shows whether the recovery email is Pending, Sent, or Failed. |
+Select one or more pending opportunities to reveal the action bar. **Email Sent** rows cannot be selected again through this list. The header checkbox selects eligible opportunities in the loaded result set, which can span multiple table pages; check the selected count before acting.
 
-![recovery-opportunities](../assets/analytics/abandoned-cart-analytics/recovery-opportunities.png)
+- **Ignore** removes the selected contacts from the recovery workflow and updates the list. It does not send an email.
+- **Send Recovery Emails** opens a composition dialog; opening it does not send the messages.
+- The close control clears the selection.
 
-To take action on an abandoned cart, simply check the box next to the customer’s name in the Recovery Opportunities table. The available actions will appear.
+<Frame caption="Illustrative analytics data. Select pending opportunities to reveal Ignore and Send Recovery Emails.">
+  <img src="../assets/refresh/analytics/analytics-recovery-actions.png" alt="Select pending opportunities to reveal Ignore and Send Recovery Emails." />
+</Frame>
 
-![ignore-recovery-email](../assets/analytics/abandoned-cart-analytics/ignore-recovery-email.png)
+## Prepare a recovery email
 
+Review the recipient count, enter **Subject Line** and **Email Content**, then use **Send N Emails** only when you are ready to send immediately. Both fields are required. **Cancel** closes the dialog without sending.
 
-### Ignore
+The content supports `{{first_name}}`, `{{last_name}}`, and `{{event_title}}`. Ticket Spot automatically includes a link to the event page; the dialog does not promise to restore the recipient’s exact previous cart.
 
-Use Ignore when you do not want to send a recovery email to the selected customer. This simply marks the entry so you can skip it.
+<Frame caption="Illustrative analytics data. Review recipients and compose the recovery email before sending.">
+  <img src="../assets/refresh/analytics/analytics-recovery-compose.png" alt="Review recipients and compose the recovery email before sending." />
+</Frame>
 
-![ignore](../assets/analytics/abandoned-cart-analytics/ignore.gif)
+## Timeline Details and drill-down
 
+Expand **Timeline Details** to see timestamp, total abandonments, email availability, and the recovery-potential label for each bucket. The panel also displays the entry count and summary figures. Its **Average Daily** label divides total abandonments by returned buckets, so when grouping is not daily, interpret it as an average per bucket.
 
-### Send Recovery Emails
+Search and sort the timeline or page through its twenty-row pages. The timeline and opportunity search fields currently share a search value: clear a search before switching tables if results disappear unexpectedly.
 
-Use Send Recovery Emails to contact the customer and remind them to complete their purchase. This helps recover abandoned carts and increase your event revenue.
+Click a plotted timeline point to reveal **Abandonment Details** for that bucket. Expand it to inspect totals, recovery potential, and the **Stage Breakdown**.
 
-![send-recovery-email](../assets/analytics/abandoned-cart-analytics/send-recovery-email.gif)
+<Frame caption="Illustrative analytics data. Timeline Details and a selected chart point provide a closer view of the abandonment stages.">
+  <img src="../assets/refresh/analytics/analytics-recovery-timeline.png" alt="Timeline Details and a selected chart point provide a closer view of the abandonment stages." />
+</Frame>
 
-## Timeline Details
+<Frame caption="Illustrative analytics data. A selected timeline point exposes a stage breakdown.">
+  <img src="../assets/refresh/analytics/analytics-recovery-stage-detail.png" alt="Abandonment Details and Stage Breakdown for a selected chart point." />
+</Frame>
 
-The Timeline Details section provides a breakdown of all abandonment events by date. This helps you understand when users are leaving the checkout flow and how often abandonment occurs over time.
+## Export
 
-At the top, you’ll see a quick summary showing:
-
-- **Total Timeline Entries** – number of unique dates with abandonment activity  
-- **Total Abandonments** – total number of abandoned sessions  
-- **With Email** – how many of those abandonments included an email (recoverable)  
-- **Average Daily** – the average number of abandonments per day  
-
-![timeline-details1](../assets/analytics/abandoned-cart-analytics/timeline-details1.png)
-
-
-Below the summary, the table lists each date with detailed metrics:
-
-| Ref No. | Fields             | Description                                                    |
-|--------|--------------------|----------------------------------------------------------------|
-| 1.     | **Date**               | The date on which the abandonment occurred.                    |
-| 2.     | **Total Abandonments** | The number of abandonments recorded on that day.               |
-| 3.     | **With Email**         | How many abandonments included an email address.               |
-| 4.     | **Recovery Potential** | Shows the likelihood of recovering the abandoned cart (e.g., high). |
-
-![timeline-details2](../assets/analytics/abandoned-cart-analytics/timeline-details2.png)
-
-This section helps you track daily abandonment trends and identify days with higher recovery potential.
+The top **Export CSV** exports recoverable opportunities in the selected event/range, including contact and stage information, abandonment time, completed steps, cart reference where available, and recovery-email history. The export is not narrowed by the on-screen search or checkbox selection and can include more than the 100 opportunities shown on screen.

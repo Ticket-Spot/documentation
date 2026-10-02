@@ -1,55 +1,41 @@
 ---
 title: "Widget event filters"
-description: "Filter the events displayed in a widget by tags, location, keywords, type, and other criteria."
+description: "Choose which events a widget includes and combine advanced rules for tags, location, and event text."
 ---
 
-**Filter settings** allow you to control which events appear in your widget. By setting filters such
-as event type, keywords, city, tags, or language, you can ensure only the most relevant events
-are shown to your users.
+Open **Design → Widget → All Settings → Event Filters**. These settings choose the organizer's event list; [Visitor search & filters](./user-search-filter) lets customers narrow that list.
 
-This helps keep the widget clean and focused, especially when you have many events.
+## Which events appear
 
 
-Click on the **dropdown menu** and select **Event Filters**. You will be navigated to the Filters settings,
-where you can enable filtering and configure which events should appear in your widget.
+<Frame caption="Which events appear controls the statuses included by this widget. Draft preview visibility does not publish drafts, and private-event visibility does not remove access restrictions.">
+  <img src="../assets/refresh/branding-and-design/widget-event-visibility.png" alt="Which events appear controls the statuses included by this widget. Draft preview visibility does not publish drafts, and private-event visibility does not remove access restrictions." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![filters](../assets/branding-and-design/filters/filters-1.png)
+Choose whether to show **live**, **past**, **sold out**, and **private** events. **Show draft events in preview only** includes drafts while designing; it never publishes drafts to the live widget. Showing private events does not remove their access restrictions.
 
-## Enable Filters & Match Rules
+## Advanced filter rules
 
-Toggle **Enable Filters** ON to start using filtering options.
 
-Once enabled, you can choose how filters are applied using the Operator:
+<Frame caption="Enable advanced filtering and choose Any rule or All rules. Text matches are case-insensitive; separate several terms with commas and leave unused rules blank.">
+  <img src="../assets/refresh/branding-and-design/widget-advanced-filters.png" alt="Enable advanced filtering and choose Any rule or All rules. Text matches are case-insensitive; separate several terms with commas and leave unused rules blank." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-- **AND** — All selected conditions must match for an event to be displayed.
-- **OR** — Any one matching condition will display the event.
+1. Turn on **Enable advanced filtering**.
+2. Under **An event must match**, select **All rules** or **Any rule**.
+3. Fill the rules you want to apply: **Event is online**, **Event is in person**, **Title contains**, **Summary contains**, **Tags contain**, **Description contains**, **Venue name contains**, **Address contains**, **City contains**, **Region contains**, or **Language is**.
+4. Wait for saving and check both an expected match and an excluded event.
 
-Example: If you select **Online Event + City: San Diego**
+Text matches anywhere in the field and ignores capitalization. Separate several terms with commas to match any of them. Leave unused rules blank.
 
-- With **AND**, only events that are online AND in San Diego will show.  
-- With **OR**, events that are online OR in San Diego will show.
+For example, **All rules** with tag “music” and city “San Diego” shows events matching both. **Any rule** accepts either match. Turning advanced filtering off ignores those rules while preserving the choices in Which events appear.
 
-![design](../assets/branding-and-design/filters/rules-2.gif)
+See the [full event-filter reference](./widget-event-filters-reference). If events are missing, also check their publish status, the widget's maximum count, the plan limit, and any visitor-selected filters.
 
-## Filter Fields
+<Accordion title="More advanced rule fields">
 
-Below is a table of all available fields you can configure when filters are enabled:
+<Frame caption="Advanced rules cover event format, title, summary, tags, description, venue, address, city, region, and language. Only filled rules participate in matching.">
+  <img src="../assets/refresh/branding-and-design/widget-advanced-filters-rules.png" alt="Advanced rules cover event format, title, summary, tags, description, venue, address, city, region, and language. Only filled rules participate in matching." style={{ width: "100%", maxWidth: "520px", height: "auto" }} />
+</Frame>
 
-| Field        | Description                                                                                     |
-| ------------ | ----------------------------------------------------------------------------------------------- |
-| **Online Event** | Shows only events marked as online.                                                             |
-| **In-Person Event** | Shows only events taking place at a physical location.                                       |
-| **Name**         | Displays events whose title contains the keywords entered (e.g., “party”, “weekend”).           |
-| **Summary**      | Filters events by text in the event’s summary field.                                            |
-| **Tags**         | Shows events that match the tags you enter (e.g., “promotion”, “free event”).                  |
-| **Description**  | Filters events based on matching keywords in the full description.                              |
-| **Venue Name**   | Shows events hosted at venues matching the text you provide (e.g., “Walmart”, “Club Fun”).      |
-| **Address**      | Filters events based on text appearing in their address.                                        |
-| **City**         | Shows events located in the cities you enter.                                                   |
-| **Region**       | Filters events by regions or states (e.g., “CA”, “MA”, “NV”).                                   |
-| **Language**     | Displays events available in the languages you list (e.g., “en”, “fr”, “it”).                   |
-
-![design](../assets/branding-and-design/filters/field-3.gif)
-
-A live preview of each setting appears in the right panel, allowing you to confirm the design
-before applying it.
+</Accordion>
