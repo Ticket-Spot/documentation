@@ -1,15 +1,15 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 321,
-    "annotated_screenshots": 270,
+    "capture_units": 343,
+    "annotated_screenshots": 292,
     "zoom_gifs": 51,
     "static_gif_posters": 51,
-    "pages_covered": 112,
+    "pages_covered": 139,
     "newly_illustrated_pages": 54,
     "priority_0": 159,
-    "priority_1": 162,
-    "demo_browser_units": 251
+    "priority_1": 184,
+    "demo_browser_units": 273
   },
   "samples": [
     {
@@ -3508,7 +3508,8 @@
     {
       "id": "installment-manage",
       "pages": [
-        "event-management/installment-payments.mdx"
+        "event-management/installment-payments.mdx",
+        "attendee-management/managing-orders.mdx"
       ],
       "area": "event-management",
       "format": "Annotated screenshot",
@@ -4831,7 +4832,8 @@
       "id": "waiver-response",
       "pages": [
         "event-management/additional-information.mdx",
-        "event-management/waivers.mdx"
+        "event-management/waivers.mdx",
+        "attendee-management/viewing-attendee-details.mdx"
       ],
       "area": "event-management",
       "format": "Annotated screenshot",
@@ -6161,6 +6163,7 @@
         "assets/refresh/attendee-management/attendee-bulk-actions-send.png"
       ],
       "integrated_pages": [
+        "attendee-management/email-and-sms-delivery.mdx",
         "attendee-management/managing-attendees.mdx"
       ],
       "capture_qa": {
@@ -11550,6 +11553,677 @@
       "delivered_formats": [
         "PNG"
       ]
+    },
+    {
+      "id": "attendee-row-menu",
+      "pages": [
+        "attendee-management/managing-attendees.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Attendee row actions",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-row-menu.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-row-menu.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/managing-attendees.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-question-edit",
+      "pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Review and edit registration answers",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-question-edit.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-question-edit.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-notes-history",
+      "pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Internal attendee notes",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-notes-history.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-notes-history.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-activity-history",
+      "pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Attendee activity log",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-activity-history.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-activity-history.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/viewing-attendee-details.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-email-history",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Email delivery history",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-email-history.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-email-history.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-email-resend",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Resend ticket confirmation",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-email-resend.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-email-resend.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-sms-history",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "SMS delivery history",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-sms-history.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-sms-history.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-actions",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Order summary and actions",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-order-actions.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-order-actions.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-tickets",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Attendees within an order",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-order-tickets.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-order-tickets.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-email",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Email all tickets in an order",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-order-email.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-order-email.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-refund",
+      "pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Select attendees and refund options",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-order-refund.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-order-refund.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-cancel-only",
+      "pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Cancel an order without a refund",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-order-cancel-only.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-order-cancel-only.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-transfer-target",
+      "pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Choose a transfer event and tickets",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-transfer-target.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-transfer-target.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-transfer-options",
+      "pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Transfer reason and ticket notification",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-transfer-options.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-transfer-options.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-change-ticket",
+      "pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Change an attendee ticket type",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-change-ticket.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-change-ticket.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-bulk-refund-preview",
+      "pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Review selected attendee refunds",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-bulk-refund-preview.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-bulk-refund-preview.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-remove-confirmation",
+      "pages": [
+        "attendee-management/managing-attendees.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Remove an attendee",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/attendee-management/attendee-remove-confirmation.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo browser authenticated",
+      "captured_assets": [
+        "assets/refresh/attendee-management/attendee-remove-confirmation.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/managing-attendees.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "attendee-order-addons",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Order add-ons and main-event links",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "TODO — conditional Demo example not captured",
+      "output": "assets/refresh/attendee-management/attendee-order-addons.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Demo order with linked add-on attendees and an unassigned legacy add-on",
+      "dependency": "Demo order with linked add-on attendees and an unassigned legacy add-on"
+    },
+    {
+      "id": "attendee-order-group",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Group-ticket order badge",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "TODO — conditional Demo example not captured",
+      "output": "assets/refresh/attendee-management/attendee-order-group.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Confirmed Demo group booking",
+      "dependency": "Confirmed Demo group booking"
+    },
+    {
+      "id": "attendee-transfer-occurrence",
+      "pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Transfer to a future date and time slot",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "TODO — conditional Demo example not captured",
+      "output": "assets/refresh/attendee-management/attendee-transfer-occurrence.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Live recurring Demo destination with future occurrences and assignable tickets",
+      "dependency": "Live recurring Demo destination with future occurrences and assignable tickets"
+    },
+    {
+      "id": "attendee-sms-outcomes",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Delivered, failed and opted-out SMS examples",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "TODO — conditional Demo example not captured",
+      "output": "assets/refresh/attendee-management/attendee-sms-outcomes.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Existing Demo SMS delivery/failure/opt-out records; do not send messages to manufacture states",
+      "dependency": "Existing Demo SMS delivery/failure/opt-out records; do not send messages to manufacture states"
+    },
+    {
+      "id": "attendee-bulk-refund-results",
+      "pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
+      ],
+      "area": "attendee-management",
+      "format": "Annotated screenshot",
+      "title": "Completed and uncertain bulk refund outcomes",
+      "callouts": [],
+      "access": "Demo browser",
+      "fixture": "Actual Demo account records; personal data concealed",
+      "priority": "P1",
+      "status": "TODO — conditional Demo example not captured",
+      "output": "assets/refresh/attendee-management/attendee-bulk-refund-results.png",
+      "poster": null,
+      "capture_rule": "Actual application content only; no browser chrome or URL. Purple circles; conceal identities. Do not submit messages or refunds.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Capture readable dialog/panel crops and verify against current source.",
+      "readiness": "Existing provider-verified sandbox refund job; no real refunds for documentation",
+      "dependency": "Existing provider-verified sandbox refund job; no real refunds for documentation"
     }
   ],
   "page_decisions": {
@@ -11580,16 +12254,16 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-02T05:58:20.899660+00:00",
+    "updated_at": "2026-10-02T15:34:38.767132+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-    "planned_capture_units": 321,
-    "units_with_any_capture": 253,
-    "checked_screenshots": 516,
+    "planned_capture_units": 343,
+    "units_with_any_capture": 270,
+    "checked_screenshots": 533,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 94,
+    "guides_with_current_media": 98,
     "external_capture_units_deferred": 70,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },
@@ -11628,5 +12302,38 @@
     "reviewed_at": "2026-10-02T05:57:56.633378+00:00",
     "remaining_dependency_units": 11,
     "remaining_coverage": "media-review/remaining-coverage.json"
+  },
+  "attendee_action_review": {
+    "date": "2026-10-02",
+    "report": "ATTENDEE_DASHBOARD_REVIEW.md",
+    "new_reviewed_capture_ids": [
+      "attendee-question-edit",
+      "attendee-notes-history",
+      "attendee-email-history",
+      "attendee-email-resend",
+      "attendee-sms-history",
+      "attendee-activity-history",
+      "attendee-order-actions",
+      "attendee-order-tickets",
+      "attendee-change-ticket",
+      "attendee-order-email",
+      "attendee-order-refund",
+      "attendee-order-cancel-only",
+      "attendee-transfer-target",
+      "attendee-transfer-options",
+      "attendee-row-menu",
+      "attendee-remove-confirmation",
+      "attendee-bulk-refund-preview"
+    ],
+    "conditional_follow_ups": [
+      "attendee-order-addons",
+      "attendee-order-group",
+      "attendee-transfer-occurrence",
+      "attendee-sms-outcomes",
+      "attendee-bulk-refund-results",
+      "installment-manage",
+      "waiver-response"
+    ],
+    "formats": "Annotated screenshots; existing screenshots reused where current."
   }
 }
