@@ -1,9 +1,12 @@
 ---
-title: "Managing Attendees"
-description: "Review attendee statistics, search and filter registrations, update statuses, use bulk actions, and open seating and export tools."
+title: "Attendee Dashboard and Event Attendee Management"
+sidebarTitle: "Dashboard, filters and actions"
+description: "Manage event attendees in Ticket Spot: filter registrations, review statistics, change statuses, print tickets, use bulk actions, and open seating and export tools."
 ---
 
 Open **Events**, find the event, and open its **Attendees** page. This page combines financial statistics, the attendee list, registration filters, and event-day tools. Available actions depend on your team role and event setup.
+
+For actions inside the drawers, use [attendee details, answers and notes](./viewing-attendee-details), [order details](./managing-orders), [refunds and cancellations](./refunds-and-cancellations), [transfers and ticket changes](./transfers-and-ticket-changes), or [email and SMS delivery](./email-and-sms-delivery).
 
 ## Dashboard statistics
 
@@ -23,6 +26,10 @@ The six cards summarize the current attendee results. Changing the attendee filt
 | **Discount** | Recorded discount amount. |
 
 These are financial cards, not counts of arrivals. Use the **Checked In** status filter and the result count to review checked-in attendees. Use [Analytics](../analytics/analytics-overview) for broader reporting. Financial cards are hidden from Support Manager accounts.
+
+### Re-calculate Totals
+
+If the recorded dashboard totals need rebuilding after attendee changes, select **Re-calculate Totals** above the table. This requests a background recalculation for the event. Allow it to finish, then refresh the view and check the current filters. It does not submit a refund or change ticket prices.
 
 ## Search and filter attendees
 
@@ -97,6 +104,18 @@ Select attendee checkboxes to open the bulk toolbar. It offers **Change Status**
 
 Review each action's dialog before confirming. Selecting the header checkbox selects the currently loaded rows, and changing filters clears the selection. A bulk status change supports up to 200 attendees at a time.
 
+| Action | Steps and scope |
+| --- | --- |
+| **Change Status** | Open **Bulk Change Status**, review the count, choose **Select a new status**, optionally enable **Notify All Guests**, then **Update Status**. **Cancel** leaves records unchanged. Review the result notification and list after updating. |
+| **Send Tickets** | Review the **Resend Ticket Confirmations** count before **Send Tickets**. Confirmations are grouped by booking; [check the recipient scope](./email-and-sms-delivery#send-tickets-from-the-bulk-toolbar). |
+| **Refund** | Review verified paid amounts, type the attendee count, enter a reason, and confirm. See [bulk refunds and result statuses](./refunds-and-cancellations#refund-selected-attendees-in-bulk). |
+| **Delete** | **Confirm Bulk Deletion** shows how many selected attendees will be removed. **Delete Attendees** confirms; **Cancel** leaves them unchanged. Review the final notification for failures. |
+| **Notify Waitlist Guests** | Appears when waitlisted attendees are selected. Review the invitation and ticket-purchase instructions using the [waitlist notification workflow](../event-management/waitlist). |
+
+<Frame caption="Bulk status changes have their own status selector and Notify All Guests option.">
+  <img src="../assets/refresh/attendee-management/attendee-bulk-actions-status.png" alt="Bulk Change Status dialog with the new status and Notify All Guests controls" />
+</Frame>
+
 <Warning>
 **Delete** removes mistaken or test registrations and clears their recorded financial amounts. It is not the refund workflow. For a real paid booking that needs cancellation or money returned, review the **Refund** or **Cancel & Refund** controls instead.
 </Warning>
@@ -105,6 +124,10 @@ Review each action's dialog before confirming. Selecting the header checkbox sel
 
 Open the three-dot menu on an attendee row:
 
+<Frame caption="The attendee row menu opens details, the linked order, printing, and removal. Personal details are concealed.">
+  <img src="../assets/refresh/attendee-management/attendee-row-menu.png" alt="Attendee row menu with View Attendee, View Order, Print Ticket, and Remove" />
+</Frame>
+
 | Action | Result |
 | --- | --- |
 | **View Attendee** | Opens contact details, questions, notes, and communication history. |
@@ -112,10 +135,23 @@ Open the three-dot menu on an attendee row:
 | **Print Ticket** | Opens **Print Ticket PDF**. Choose **A4 Full Page**, or print/design a **Badge** depending on your setup. |
 | **Remove** | Opens the removal confirmation for that attendee. |
 
+### Print a ticket or badge
+
+Choose **Print Ticket** from the row menu. In **Print Ticket PDF**, select **Print A4** for the full-page ticket, or **Print Badge** when a badge design is available. If a badge has not been set up, **Design Badge** opens the design workflow. The **Ticket PDF Design Tool** link provides further customization. **Cancel** closes the print chooser.
 
 <Frame caption="Choose an A4 ticket or a badge. The badge option depends on your ticket design setup.">
   <img src="../assets/refresh/attendee-management/attendee-ticket-print.png" alt="Print Ticket PDF dialog with A4 Full Page and Badge circled" />
 </Frame>
+
+### Remove a registration
+
+Choose **Remove** and review the attendee name in **Confirm Removal**. Confirm only for the registration you intend to remove; declining or closing leaves it unchanged. For several registrations use the selected-row **Delete** action and review **Confirm Bulk Deletion**.
+
+<Frame caption="Review the attendee name before confirming removal. Identity is concealed; removal has not been submitted.">
+  <img src="../assets/refresh/attendee-management/attendee-remove-confirmation.png" alt="Confirm Removal dialog for one attendee" />
+</Frame>
+
+Removal is not a refund and cannot be undone from this dialog. Use [refunds and cancellations](./refunds-and-cancellations) for paid bookings that need money returned.
 
 ## Event-day tools
 

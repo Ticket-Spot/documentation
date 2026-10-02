@@ -1,0 +1,301 @@
+{
+  "checked_at": "2026-10-02T15:38:51.169342+00:00",
+  "scope": "Attendee Dashboard menu and drawer documentation follow-up",
+  "new_annotated_screenshots": [
+    "attendee-question-edit",
+    "attendee-notes-history",
+    "attendee-email-history",
+    "attendee-email-resend",
+    "attendee-sms-history",
+    "attendee-activity-history",
+    "attendee-order-actions",
+    "attendee-order-tickets",
+    "attendee-change-ticket",
+    "attendee-order-email",
+    "attendee-order-refund",
+    "attendee-order-cancel-only",
+    "attendee-transfer-target",
+    "attendee-transfer-options",
+    "attendee-row-menu",
+    "attendee-remove-confirmation",
+    "attendee-bulk-refund-preview"
+  ],
+  "image_review": "All 17 new images individually inspected after final recaptures. No browser chrome/URL or attendee names/email addresses remain visible.",
+  "source_review": "ATTENDEE_DASHBOARD_REVIEW.md",
+  "mdx_compilation": {
+    "pages": 139,
+    "result": "passed"
+  },
+  "documentation_check": {
+    "pages": 139,
+    "navigation_entries": 139,
+    "local_links_and_media": 1535,
+    "widget_controls": 503,
+    "plan_features": 111,
+    "onboarding_templates": 21,
+    "result": "passed"
+  },
+  "render_checks": {
+    "results": [
+      {
+        "slug": "attendee-management/viewing-attendee-details",
+        "status": 200,
+        "title": "Viewing Attendee Details - Ticket Spot",
+        "h1": "Viewing Attendee Details",
+        "description": "Review and edit contact information and answers, add internal notes, inspect communication history, and open the linked order.",
+        "ogTitle": "Viewing Attendee Details - Ticket Spot",
+        "sidebarLabels": [
+          "Viewing Attendee Details",
+          "Contact information",
+          "Questions",
+          "Notes",
+          "Email and SMS history",
+          "Activity log",
+          "Linked order",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      },
+      {
+        "slug": "attendee-management/managing-attendees",
+        "status": 200,
+        "title": "Attendee Dashboard and Event Attendee Management - Ticket Spot",
+        "h1": "Attendee Dashboard and Event Attendee Management",
+        "description": "Manage event attendees in Ticket Spot: filter registrations, review statistics, change statuses, print tickets, use bulk actions, and open seating and export tools.",
+        "ogTitle": "Attendee Dashboard and Event Attendee Management - Ticket Spot",
+        "sidebarLabels": [
+          "Dashboard, filters and actions",
+          "Dashboard statistics",
+          "Re-calculate Totals",
+          "Search and filter attendees",
+          "More filters",
+          "Question-answer filters",
+          "Read the attendee list",
+          "Change an attendee\u2019s status",
+          "Review pending approvals",
+          "Bulk actions",
+          "Row actions",
+          "Print a ticket or badge",
+          "Remove a registration",
+          "Event-day tools",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      },
+      {
+        "slug": "attendee-management/managing-orders",
+        "status": 200,
+        "title": "View and Manage Attendee Orders - Ticket Spot",
+        "h1": "View and Manage Attendee Orders",
+        "description": "Open an attendee order in Ticket Spot to review totals, tickets, add-ons and installments, resend confirmations, refund tickets, or transfer a booking.",
+        "ogTitle": "View and Manage Attendee Orders - Ticket Spot",
+        "sidebarLabels": [
+          "Order details and actions",
+          "Read the order summary",
+          "Every order action",
+          "Attendees in the order",
+          "Add-ons",
+          "Payment installments",
+          "Related attendee tools",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      },
+      {
+        "slug": "attendee-management/refunds-and-cancellations",
+        "status": 200,
+        "title": "Refund Event Tickets and Cancel Registrations - Ticket Spot",
+        "h1": "Refund Event Tickets and Cancel Registrations",
+        "description": "Refund event tickets in Ticket Spot, cancel an order without a refund, select Shopify line items, and review bulk refund amounts and results.",
+        "ogTitle": "Refund Event Tickets and Cancel Registrations - Ticket Spot",
+        "sidebarLabels": [
+          "Refunds and cancellations",
+          "Cancel and refund an order",
+          "Shopify attendee selection and restocking",
+          "Cancel without a refund",
+          "Refund selected attendees in bulk",
+          "Selections that need individual review",
+          "Understand bulk refund results",
+          "Common questions",
+          "Does Remove or Delete return money?",
+          "Does Not Attending mean the ticket has been refunded?",
+          "Why is Cancel and Refund missing?",
+          "Can I retry a refund after a timeout?",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      },
+      {
+        "slug": "attendee-management/transfers-and-ticket-changes",
+        "status": 200,
+        "title": "Transfer Event Tickets and Change Ticket Types - Ticket Spot",
+        "h1": "Transfer Event Tickets and Change Ticket Types",
+        "description": "Transfer an attendee order to another event or occurrence, assign destination tickets, control notifications, or change a ticket type without repricing the order.",
+        "ogTitle": "Transfer Event Tickets and Change Ticket Types - Ticket Spot",
+        "sidebarLabels": [
+          "Transfers and ticket changes",
+          "Transfer an order to another event",
+          "Transfer scope and follow-up",
+          "Change a ticket type within the same event",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      },
+      {
+        "slug": "attendee-management/email-and-sms-delivery",
+        "status": 200,
+        "title": "Check Ticket Email and SMS Delivery Status - Ticket Spot",
+        "h1": "Check Ticket Email and SMS Delivery Status",
+        "description": "Check ticket confirmation email and SMS delivery status, inspect attendee activity, troubleshoot missing tickets, and resend confirmations in Ticket Spot.",
+        "ogTitle": "Check Ticket Email and SMS Delivery Status - Ticket Spot",
+        "sidebarLabels": [
+          "Email and SMS delivery",
+          "Read the list\u2019s delivery indicators",
+          "Email overview and activity",
+          "Resend from the attendee\u2019s Email tab",
+          "Email tickets for an order",
+          "Send tickets from the bulk toolbar",
+          "SMS overview and activity",
+          "Send a separate announcement",
+          "Troubleshoot a missing ticket confirmation",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b",
+          "\u200b"
+        ],
+        "desktopOverflow": false,
+        "mobileOverflow": false,
+        "issues": []
+      }
+    ],
+    "errors": []
+  },
+  "rendered_anchor_checks": [
+    {
+      "slug": "attendee-management/email-and-sms-delivery",
+      "anchor": "send-tickets-from-the-bulk-toolbar",
+      "found": true
+    },
+    {
+      "slug": "attendee-management/refunds-and-cancellations",
+      "anchor": "refund-selected-attendees-in-bulk",
+      "found": true
+    },
+    {
+      "slug": "seating-charts/seat-selection",
+      "anchor": "assign-seats-to-existing-attendees",
+      "found": true
+    },
+    {
+      "slug": "attendee-management/email-and-sms-delivery",
+      "anchor": "email-tickets-for-an-order",
+      "found": true
+    },
+    {
+      "slug": "attendee-management/transfers-and-ticket-changes",
+      "anchor": "change-a-ticket-type-within-the-same-event",
+      "found": true
+    },
+    {
+      "slug": "event-management/installment-payments",
+      "anchor": "collect-a-due-installment",
+      "found": true
+    },
+    {
+      "slug": "attendee-management/managing-attendees",
+      "anchor": "remove-a-registration",
+      "found": true
+    },
+    {
+      "slug": "event-management/email-communication",
+      "anchor": "send-message",
+      "found": true
+    },
+    {
+      "slug": "attendee-management/viewing-attendee-details",
+      "anchor": "activity-log",
+      "found": true
+    }
+  ],
+  "capture_actions": {
+    "demo_internal_notes_saved": 1,
+    "bulk_refund_preview": "Opened, verified paid amount and canceled; no start request",
+    "messages_sent": 0,
+    "refunds_submitted": 0,
+    "transfers_submitted": 0,
+    "deletions_submitted": 0,
+    "response_fixtures": false,
+    "cleanup": "Dialogs canceled; dashboard reloaded to clear drafts and temporary capture annotations."
+  },
+  "conditional_capture_ids": [
+    "attendee-order-addons",
+    "attendee-order-group",
+    "attendee-transfer-occurrence",
+    "attendee-sms-outcomes",
+    "attendee-bulk-refund-results",
+    "installment-manage",
+    "waiver-response"
+  ],
+  "seo_evidence": "seo/attendee-actions-2026-10-02.json",
+  "gallery_check": {
+    "checked_at": "2026-10-02T15:37:18.230Z",
+    "gallery": {
+      "stats": "533 checked screenshots \u00b7 3 zoom GIF \u00b7 0 captures to redo \u00b7 0 pending review",
+      "cards": 41,
+      "missing": [],
+      "overflow": false,
+      "mobileOverflow": false,
+      "lightbox": true
+    },
+    "errors": []
+  },
+  "validation_workspace": "Shared documentation workspace; pre-existing unrelated starter-file deletions and edits excluded from this change. Page totals are not a separate clean-checkout count."
+}

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T05:57:56.633378+00:00",
+  "checked_at": "2026-10-02T15:34:38.293085+00:00",
   "demo_dependency_captures": [
     {
       "id": "event-details-organization",
@@ -22,7 +22,8 @@
       "title": "Manage installments on an order",
       "dependency": "Stripe test connection with payments enabled",
       "pages": [
-        "event-management/installment-payments.mdx"
+        "event-management/installment-payments.mdx",
+        "attendee-management/managing-orders.mdx"
       ]
     },
     {
@@ -34,12 +35,21 @@
       ]
     },
     {
+      "id": "waitlist-shopify-invoice",
+      "title": "Shopify invitation mode selection",
+      "dependency": "Ticket selector response-shape issue must be resolved; actual invoice checkout also requires the unavailable Shopify demo account",
+      "pages": [
+        "event-management/waitlist.mdx"
+      ]
+    },
+    {
       "id": "waiver-response",
       "title": "Saved waiver and missing check-in answer",
       "dependency": "Matching Demo attendee login to review and accept the saved demonstration agreement; organizer login cannot access attendee-scoped tickets.",
       "pages": [
         "event-management/additional-information.mdx",
-        "event-management/waivers.mdx"
+        "event-management/waivers.mdx",
+        "attendee-management/viewing-attendee-details.mdx"
       ]
     },
     {
@@ -93,6 +103,46 @@
       "pages": [
         "team/invite-team-roles.mdx",
         "team/manage-invitations.mdx"
+      ]
+    },
+    {
+      "id": "attendee-order-addons",
+      "title": "Order add-ons and main-event links",
+      "dependency": "Demo order with linked add-on attendees and an unassigned legacy add-on",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ]
+    },
+    {
+      "id": "attendee-order-group",
+      "title": "Group-ticket order badge",
+      "dependency": "Confirmed Demo group booking",
+      "pages": [
+        "attendee-management/managing-orders.mdx"
+      ]
+    },
+    {
+      "id": "attendee-transfer-occurrence",
+      "title": "Transfer to a future date and time slot",
+      "dependency": "Live recurring Demo destination with future occurrences and assignable tickets",
+      "pages": [
+        "attendee-management/transfers-and-ticket-changes.mdx"
+      ]
+    },
+    {
+      "id": "attendee-sms-outcomes",
+      "title": "Delivered, failed and opted-out SMS examples",
+      "dependency": "Existing Demo SMS delivery/failure/opt-out records; do not send messages to manufacture states",
+      "pages": [
+        "attendee-management/email-and-sms-delivery.mdx"
+      ]
+    },
+    {
+      "id": "attendee-bulk-refund-results",
+      "title": "Completed and uncertain bulk refund outcomes",
+      "dependency": "Existing provider-verified sandbox refund job; no real refunds for documentation",
+      "pages": [
+        "attendee-management/refunds-and-cancellations.mdx"
       ]
     }
   ],

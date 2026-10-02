@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-02T05:58:20.899660+00:00",
+  "updated_at": "2026-10-02T15:34:38.767132+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-  "planned_capture_units": 321,
-  "units_with_any_capture": 253,
-  "checked_screenshots": 516,
+  "planned_capture_units": 343,
+  "units_with_any_capture": 270,
+  "checked_screenshots": 533,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
   "needs_recapture": 0,
-  "guides_with_current_media": 94,
+  "guides_with_current_media": 98,
   "external_capture_units_deferred": 70,
   "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.",
   "pages": [
@@ -188,6 +188,23 @@
       ]
     },
     {
+      "path": "attendee-management/email-and-sms-delivery.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-bulk-actions-send.png",
+        "assets/refresh/attendee-management/attendee-email-history.png",
+        "assets/refresh/attendee-management/attendee-email-resend.png",
+        "assets/refresh/attendee-management/attendee-order-email.png",
+        "assets/refresh/attendee-management/attendee-sms-history.png"
+      ],
+      "capture_ids": [
+        "attendee-email-history",
+        "attendee-email-resend",
+        "attendee-sms-history",
+        "attendee-order-email",
+        "attendee-sms-outcomes"
+      ]
+    },
+    {
       "path": "attendee-management/export-attendees-and-check-in-data.mdx",
       "current_assets": [
         "assets/refresh/attendee-management/attendee-export-event-card.png",
@@ -202,10 +219,13 @@
       "path": "attendee-management/managing-attendees.mdx",
       "current_assets": [
         "assets/refresh/attendee-management/attendee-answer-filters.png",
+        "assets/refresh/attendee-management/attendee-bulk-actions-status.png",
         "assets/refresh/attendee-management/attendee-bulk-actions.png",
         "assets/refresh/attendee-management/attendee-dashboard-filters-more.png",
         "assets/refresh/attendee-management/attendee-dashboard-filters.png",
         "assets/refresh/attendee-management/attendee-dashboard-stats.png",
+        "assets/refresh/attendee-management/attendee-remove-confirmation.png",
+        "assets/refresh/attendee-management/attendee-row-menu.png",
         "assets/refresh/attendee-management/attendee-status-approval.png",
         "assets/refresh/attendee-management/attendee-ticket-print.png"
       ],
@@ -220,26 +240,77 @@
         "attendee-dashboard-stats",
         "attendee-dashboard-filters",
         "attendee-answer-filters",
-        "attendee-financial-export"
+        "attendee-financial-export",
+        "attendee-row-menu",
+        "attendee-remove-confirmation"
+      ]
+    },
+    {
+      "path": "attendee-management/managing-orders.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-order-actions.png",
+        "assets/refresh/attendee-management/attendee-order-tickets.png"
+      ],
+      "capture_ids": [
+        "installment-manage",
+        "attendee-order-actions",
+        "attendee-order-tickets",
+        "attendee-order-addons",
+        "attendee-order-group"
+      ]
+    },
+    {
+      "path": "attendee-management/refunds-and-cancellations.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-bulk-refund-preview.png",
+        "assets/refresh/attendee-management/attendee-order-cancel-only.png",
+        "assets/refresh/attendee-management/attendee-order-refund.png"
+      ],
+      "capture_ids": [
+        "attendee-order-refund",
+        "attendee-order-cancel-only",
+        "attendee-bulk-refund-preview",
+        "attendee-bulk-refund-results"
+      ]
+    },
+    {
+      "path": "attendee-management/transfers-and-ticket-changes.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-change-ticket.png",
+        "assets/refresh/attendee-management/attendee-transfer-options.png",
+        "assets/refresh/attendee-management/attendee-transfer-target.png"
+      ],
+      "capture_ids": [
+        "attendee-transfer-target",
+        "attendee-transfer-options",
+        "attendee-change-ticket",
+        "attendee-transfer-occurrence"
       ]
     },
     {
       "path": "attendee-management/viewing-attendee-details.mdx",
       "current_assets": [
+        "assets/refresh/attendee-management/attendee-activity-history.png",
         "assets/refresh/attendee-management/attendee-detail-add-note.png",
         "assets/refresh/attendee-management/attendee-detail-contact-edit.png",
         "assets/refresh/attendee-management/attendee-detail-email.png",
         "assets/refresh/attendee-management/attendee-detail.png",
-        "assets/refresh/attendee-management/attendee-order.png"
+        "assets/refresh/attendee-management/attendee-notes-history.png",
+        "assets/refresh/attendee-management/attendee-order.png",
+        "assets/refresh/attendee-management/attendee-question-edit.png"
       ],
       "capture_ids": [
+        "waiver-response",
         "attendee-bulk-actions",
         "attendee-detail",
         "attendee-list",
         "attendee-order",
         "attendee-refund-remove",
         "attendee-status-approval",
-        "attendee-ticket-print"
+        "attendee-ticket-print",
+        "attendee-question-edit",
+        "attendee-notes-history",
+        "attendee-activity-history"
       ]
     },
     {
@@ -1306,6 +1377,121 @@
         "waiver-response",
         "waiver-setup"
       ]
+    },
+    {
+      "path": "event-types/assigned-seating.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/bus-tour.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/class.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/comedy-show.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/concert.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/conference.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/dinner.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/festival.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/free-rsvp.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/market.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/meetup.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/multi-day-event.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/overview.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/party.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/repeating-event.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/retreat.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/seminar.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/single-event.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/sports-event.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/start-from-scratch.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/theatre.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/wine-tour.mdx",
+      "current_assets": [],
+      "capture_ids": []
+    },
+    {
+      "path": "event-types/workshop.mdx",
+      "current_assets": [],
+      "capture_ids": []
     },
     {
       "path": "getting-started/language-and-locale-faq.mdx",

@@ -11486,7 +11486,9 @@
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "integrated_pages": []
+    "integrated_pages": [
+      "attendee-management/managing-attendees.mdx"
+    ]
   },
   "attendee-bulk-actions-send": {
     "id": "attendee-bulk-actions",
@@ -11514,7 +11516,9 @@
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "integrated_pages": []
+    "integrated_pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ]
   },
   "attendee-refund-remove-delete": {
     "id": "attendee-refund-remove",
@@ -15430,6 +15434,511 @@
     "qa": "passed visual review",
     "integrated_pages": [
       "analytics/email-analytics.mdx"
+    ]
+  },
+  "attendee-question-edit": {
+    "id": "attendee-question-edit",
+    "key": "attendee-question-edit",
+    "asset": "assets/refresh/attendee-management/attendee-question-edit.png",
+    "pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ],
+    "title": "Review and edit registration answers",
+    "caption": "Questions has its own Edit, Save, and Cancel controls. Update not submitted.",
+    "alt": "Questions has its own Edit, Save, and Cancel controls. Update not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:25:26.765Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "",
+      "Save"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 628.84375,
+      "width": 460,
+      "height": 236.15625
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ]
+  },
+  "attendee-notes-history": {
+    "id": "attendee-notes-history",
+    "key": "attendee-notes-history",
+    "asset": "assets/refresh/attendee-management/attendee-notes-history.png",
+    "pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ],
+    "title": "Internal attendee notes",
+    "caption": "Saved internal note with author and timestamp. A documentation note was added to the Demo record; author concealed.",
+    "alt": "Saved internal note with author and timestamp. A documentation note was added to the Demo record; author concealed.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:25:31.538Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "Add Note"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 584.34375,
+      "width": 460,
+      "height": 280.65625
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ]
+  },
+  "attendee-email-history": {
+    "id": "attendee-email-history",
+    "key": "attendee-email-history",
+    "asset": "assets/refresh/attendee-management/attendee-email-history.png",
+    "pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ],
+    "title": "Email delivery history",
+    "caption": "Email Overview shows sent, first delivery, and first open dates above the activity timeline. Personal details concealed.",
+    "alt": "Email Overview shows sent, first delivery, and first open dates above the activity timeline. Personal details concealed.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:26:38.623Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "Email Overview",
+      "Resend"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 80,
+      "width": 460,
+      "height": 780
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ]
+  },
+  "attendee-email-resend": {
+    "id": "attendee-email-resend",
+    "key": "attendee-email-resend",
+    "asset": "assets/refresh/attendee-management/attendee-email-resend.png",
+    "pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ],
+    "title": "Resend ticket confirmation",
+    "caption": "Review the recipient before resending a ticket confirmation. Recipient concealed; no message sent.",
+    "alt": "Review the recipient before resending a ticket confirmation. Recipient concealed; no message sent.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:00:39.937Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "Send"
+    ],
+    "clip": {
+      "x": 485,
+      "y": 292.75,
+      "width": 470,
+      "height": 314.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ]
+  },
+  "attendee-sms-history": {
+    "id": "attendee-sms-history",
+    "key": "attendee-sms-history",
+    "asset": "assets/refresh/attendee-management/attendee-sms-history.png",
+    "pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ],
+    "title": "SMS delivery history",
+    "caption": "SMS Overview shows sent count, first send, and first device-delivery dates. This attendee has no recorded SMS activity.",
+    "alt": "SMS Overview shows sent count, first send, and first device-delivery dates. This attendee has no recorded SMS activity.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:30:35.621Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "SMS Overview"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 712.84375,
+      "width": 460,
+      "height": 200.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ]
+  },
+  "attendee-activity-history": {
+    "id": "attendee-activity-history",
+    "key": "attendee-activity-history",
+    "asset": "assets/refresh/attendee-management/attendee-activity-history.png",
+    "pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ],
+    "title": "Attendee activity log",
+    "caption": "Recorded attendee activity with timestamps and system attribution.",
+    "alt": "Recorded attendee activity with timestamps and system attribution.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:05:01.804Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "Back to Attendee Information"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 12,
+      "width": 460,
+      "height": 875
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/viewing-attendee-details.mdx"
+    ]
+  },
+  "attendee-order-actions": {
+    "id": "attendee-order-actions",
+    "key": "attendee-order-actions",
+    "asset": "assets/refresh/attendee-management/attendee-order-actions.png",
+    "pages": [
+      "attendee-management/managing-orders.mdx"
+    ],
+    "title": "Order summary and actions",
+    "caption": "Order totals and actions. Identity and order reference concealed.",
+    "alt": "Order totals and actions. Identity and order reference concealed.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:06:22.348Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Email Tickets",
+      "Cancel and Refund",
+      "Transfer to Another Event"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 15,
+      "width": 460,
+      "height": 875
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/managing-orders.mdx"
+    ]
+  },
+  "attendee-order-tickets": {
+    "id": "attendee-order-tickets",
+    "key": "attendee-order-tickets",
+    "asset": "assets/refresh/attendee-management/attendee-order-tickets.png",
+    "pages": [
+      "attendee-management/managing-orders.mdx"
+    ],
+    "title": "Attendees within an order",
+    "caption": "Open attendee details or Change Ticket Type from the order card. Identity concealed.",
+    "alt": "Open attendee details or Change Ticket Type from the order card. Identity concealed.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:26:46.653Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Change Ticket Type"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 588.21875,
+      "width": 460,
+      "height": 287
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/managing-orders.mdx"
+    ]
+  },
+  "attendee-change-ticket": {
+    "id": "attendee-change-ticket",
+    "key": "attendee-change-ticket",
+    "asset": "assets/refresh/attendee-management/attendee-change-ticket.png",
+    "pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ],
+    "title": "Change an attendee ticket type",
+    "caption": "Choose a replacement ticket; the order cost stays unchanged. Update not submitted.",
+    "alt": "Choose a replacement ticket; the order cost stays unchanged. Update not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:17:48.698Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Standing Only\nStanding Only",
+      "Update"
+    ],
+    "clip": {
+      "x": 410,
+      "y": 271.75,
+      "width": 620,
+      "height": 356.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ]
+  },
+  "attendee-order-email": {
+    "id": "attendee-order-email",
+    "key": "attendee-order-email",
+    "asset": "assets/refresh/attendee-management/attendee-order-email.png",
+    "pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ],
+    "title": "Email all tickets in an order",
+    "caption": "Email Tickets sends the configured confirmation to all attendees in the order. Not submitted.",
+    "alt": "Email Tickets sends the configured confirmation to all attendees in the order. Not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:17:53.019Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Send"
+    ],
+    "clip": {
+      "x": 485,
+      "y": 258,
+      "width": 470,
+      "height": 384
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/email-and-sms-delivery.mdx"
+    ]
+  },
+  "attendee-order-refund": {
+    "id": "attendee-order-refund",
+    "key": "attendee-order-refund",
+    "asset": "assets/refresh/attendee-management/attendee-order-refund.png",
+    "pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
+    ],
+    "title": "Select attendees and refund options",
+    "caption": "Review selected Shopify attendees, refund total, and restocking. Preview only; no refund submitted.",
+    "alt": "Review selected Shopify attendees, refund total, and restocking. Preview only; no refund submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:18:39.424Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Select Attendees to Refund",
+      "Process full refund to customer",
+      "Restock items in Shopify inventory"
+    ],
+    "clip": {
+      "x": 410,
+      "y": 90.25,
+      "width": 620,
+      "height": 719.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
+    ]
+  },
+  "attendee-order-cancel-only": {
+    "id": "attendee-order-cancel-only",
+    "key": "attendee-order-cancel-only",
+    "asset": "assets/refresh/attendee-management/attendee-order-cancel-only.png",
+    "pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
+    ],
+    "title": "Cancel an order without a refund",
+    "caption": "Clearing the refund checkbox enables cancellation without returning the payment. Not submitted.",
+    "alt": "Clearing the refund checkbox enables cancellation without returning the payment. Not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:18:43.547Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Process full refund to customer",
+      "Cancel Without Refund"
+    ],
+    "clip": {
+      "x": 410,
+      "y": 228.25,
+      "width": 620,
+      "height": 443.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
+    ]
+  },
+  "attendee-transfer-target": {
+    "id": "attendee-transfer-target",
+    "key": "attendee-transfer-target",
+    "asset": "assets/refresh/attendee-management/attendee-transfer-target.png",
+    "pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ],
+    "title": "Choose a transfer event and tickets",
+    "caption": "Choose the destination and a ticket for every attendee. Identity concealed; transfer not submitted.",
+    "alt": "Choose the destination and a ticket for every attendee. Identity concealed; transfer not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:31:46.888Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Sunset Yoga in the Park\nSunset Yoga in the Park",
+      "Attendees & Ticket Assignment *"
+    ],
+    "clip": {
+      "x": 410,
+      "y": 214,
+      "width": 620,
+      "height": 406.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ]
+  },
+  "attendee-transfer-options": {
+    "id": "attendee-transfer-options",
+    "key": "attendee-transfer-options",
+    "asset": "assets/refresh/attendee-management/attendee-transfer-options.png",
+    "pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ],
+    "title": "Transfer reason and ticket notification",
+    "caption": "Transfer reason, optional email notification, and the final Transfer Order action. Nothing submitted.",
+    "alt": "Transfer reason, optional email notification, and the final Transfer Order action. Nothing submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:31:51.102Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees/card/cfa49ac9-66de-440f-9875-e982b15f7c90",
+    "callouts": [
+      "Send ticket notification to attendees",
+      "Transfer Order"
+    ],
+    "clip": {
+      "x": 410,
+      "y": 584.5,
+      "width": 620,
+      "height": 470.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/transfers-and-ticket-changes.mdx"
+    ]
+  },
+  "attendee-row-menu": {
+    "id": "attendee-row-menu",
+    "key": "attendee-row-menu",
+    "asset": "assets/refresh/attendee-management/attendee-row-menu.png",
+    "pages": [
+      "attendee-management/managing-attendees.mdx"
+    ],
+    "title": "Attendee row actions",
+    "caption": "Row menu: View Attendee, View Order, Print Ticket, and Remove. Identity concealed.",
+    "alt": "Row menu: View Attendee, View Order, Print Ticket, and Remove. Identity concealed.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:22:56.851Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "View Attendee",
+      "View Order"
+    ],
+    "clip": {
+      "x": 696,
+      "y": 533.5234375,
+      "width": 650,
+      "height": 366.4765625
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/managing-attendees.mdx"
+    ]
+  },
+  "attendee-remove-confirmation": {
+    "id": "attendee-remove-confirmation",
+    "key": "attendee-remove-confirmation",
+    "asset": "assets/refresh/attendee-management/attendee-remove-confirmation.png",
+    "pages": [
+      "attendee-management/managing-attendees.mdx"
+    ],
+    "title": "Remove an attendee",
+    "caption": "Confirm removal for this attendee. Identity concealed; removal not submitted.",
+    "alt": "Confirm removal for this attendee. Identity concealed; removal not submitted.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:22:59.768Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "Yes"
+    ],
+    "clip": {
+      "x": 418.9296875,
+      "y": 337.25,
+      "width": 594.1328125,
+      "height": 225.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/managing-attendees.mdx"
+    ]
+  },
+  "attendee-bulk-refund-preview": {
+    "id": "attendee-bulk-refund-preview",
+    "key": "attendee-bulk-refund-preview",
+    "asset": "assets/refresh/attendee-management/attendee-bulk-refund-preview.png",
+    "pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
+    ],
+    "title": "Review selected attendee refunds",
+    "caption": "Bulk refund preview verifies the selected ticket amount and requires the exact count and a reason. No refund started.",
+    "alt": "Bulk refund preview verifies the selected ticket amount and requires the exact count and a reason. No refund started.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-02T15:24:44.215Z",
+    "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
+    "callouts": [
+      "",
+      ""
+    ],
+    "clip": {
+      "x": 326,
+      "y": 70,
+      "width": 780,
+      "height": 760
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
+    "integrated_pages": [
+      "attendee-management/refunds-and-cancellations.mdx"
     ]
   }
 }

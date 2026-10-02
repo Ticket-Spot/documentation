@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-10-02",
+  "tool": "Ahrefs Keywords Explorer",
+  "country": "US",
+  "keywords": [
+    {
+      "keyword": "attendee management",
+      "volume": 100,
+      "global_volume": 400,
+      "difficulty": 0,
+      "parent_topic": "attendee management",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": false
+      },
+      "serp_last_update": "2026-08-25T08:29:29Z"
+    },
+    {
+      "keyword": "event attendee management",
+      "volume": 80,
+      "global_volume": 400,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {},
+      "serp_last_update": null
+    },
+    {
+      "keyword": "ticket confirmation email",
+      "volume": 20,
+      "global_volume": 50,
+      "difficulty": 0,
+      "parent_topic": "amc order number lookup",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": false,
+        "local": false
+      },
+      "serp_last_update": "2026-09-11T14:13:04Z"
+    },
+    {
+      "keyword": "refund event tickets",
+      "volume": 40,
+      "global_volume": 50,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {},
+      "serp_last_update": null
+    },
+    {
+      "keyword": "ticket refund",
+      "volume": 40,
+      "global_volume": 700,
+      "difficulty": 33,
+      "parent_topic": "cinemark refund",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": false,
+        "transactional": true,
+        "branded": false,
+        "local": false
+      },
+      "serp_last_update": "2026-09-03T05:57:15Z"
+    },
+    {
+      "keyword": "event ticket refund",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {},
+      "serp_last_update": null
+    },
+    {
+      "keyword": "resend tickets",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {},
+      "serp_last_update": null
+    },
+    {
+      "keyword": "email delivery status",
+      "volume": 10,
+      "global_volume": 40,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": false,
+        "transactional": false,
+        "branded": false,
+        "local": false
+      },
+      "serp_last_update": null
+    },
+    {
+      "keyword": "transfer event tickets",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": null,
+      "serp_last_update": null
+    },
+    {
+      "keyword": "sms delivery status",
+      "volume": 10,
+      "global_volume": 20,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {},
+      "serp_last_update": null
+    },
+    {
+      "keyword": "change ticket type",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": null,
+      "serp_last_update": null
+    }
+  ],
+  "decisions": {
+    "overview": "Use attendee management naturally while labeling navigation Attendee Dashboard.",
+    "refunds": "Use refund event tickets; avoid the broad ticket refund query's unrelated cinema intent.",
+    "communications": "Use ticket confirmation email and email/SMS delivery status naturally.",
+    "transfers": "Retain task-specific transfer and change-ticket wording despite reported zero volume; support coverage matters."
+  },
+  "limitations": "Ahrefs estimates, not guaranteed demand or rankings. Null metrics remain unknown; zero volume is a reported estimate."
+}
