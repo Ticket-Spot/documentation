@@ -22,3 +22,11 @@ When connectivity returns, allow queued check-ins to synchronize. Review any fai
 Two offline devices cannot immediately share a new scan with one another. Plan separate entry lines or ticket allocations when duplicate-entry prevention across disconnected devices matters. Handle an unknown ticket with an online staff device rather than assuming it is valid because its QR code can be read.
 
 Keep membership admission and other live eligibility decisions online unless the app explicitly confirms it can validate that record offline.
+
+## Confirm synchronization and resolve failures
+
+Wait for **Attendees saved on this device for offline scans** before leaving connectivity. While offline, the banner reports scans saved locally. Reconnect with the app open or choose **Sync**; if the session expired, sign back into the same account. Saved scans survive an app restart.
+
+Use **Review** for rejected uploads and read the reason before changing the attendee's status. Failed uploads remain available for retry or review. Do not clear the app's data while uploads are pending.
+
+Offline mode currently supports one admission per attendee. Re-entry and tickets with check-in time restrictions require an online connection.

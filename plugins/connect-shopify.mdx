@@ -213,3 +213,17 @@ Test an available and sold-out seat, the correct event date/time, ticket minimum
 ## Complete selector and block reference
 
 See [Shopify Ticket Selector setup and options](./shopify-ticket-selector) for every block setting, inline/modal behavior, product controls, the difference between Event Widget / Additional Questions / Ticket Access, and end-to-end verification. For invitation-only sales and private invoices, use the [waitlist guide](/event-management/waitlist).
+
+## Keep products synchronized
+
+Republish the event after changing its ticket offer, then check the linked product and [Ticket Selector](./shopify-ticket-selector). When a corresponding setting is omitted from an update, Ticket Spot preserves the product's existing type, theme template, vendor, variant tax settings, collections, and publication channels. Explicit changes to those settings still apply.
+
+Import an existing Shopify product through the connected-store import flow. Ticket Spot checks for an existing link to prevent duplicate event creation; inspect the linked event when an import is rejected rather than creating a second copy to bypass it.
+
+Deleting a linked event archives its Shopify product. Review the [Delete Event confirmation](/event-management/manage-events#delete-event) before proceeding; this is separate from canceling one event date or refunding an order.
+
+<Frame caption="Ticket Spot asks for confirmation before deleting an event. For a linked Shopify event, deletion also archives its product; this image shows the Ticket Spot confirmation, not Shopify admin.">
+  <img src="../assets/refresh/event-management/event-restore-delete-delete.png" alt="Ticket Spot Delete Event confirmation" />
+</Frame>
+
+These protections apply when you perform a new import, update, or deletion. They do not automatically repair an old duplicate link or restore settings that were overwritten earlier.

@@ -30,3 +30,11 @@ Ticket selection happens in Ticket Spot; the Square app handles the payment step
 If payment is canceled or the app loses connection, check both the Ticket Spot order and the Square transaction before charging again. A successful payment and a printed ticket are separate results: if printing fails after a successful order, recover the existing ticket rather than creating a second sale.
 
 Review [sales analytics](/analytics/sales-analytics) and attendee records alongside your payment provider's transactions. Cash collected at the desk is not a Square card payout.
+
+## Deliver tickets and reprint an order
+
+After a successful sale, the confirmation screen offers **Print Receipt & Tickets**, **Text Tickets**, and **Email Tickets**. Check the customer's saved contact details before sending. Printing or sending uses the attendee records created by checkout; it does not require another sale.
+
+If the order has already been printed, another print request opens **Reprint this order?**. Choose **Reprint** only when another physical copy is needed. A second printout is the same ticket, not additional admission.
+
+Review **Settings → Printer Configuration** for printing and **Settings → Square Payments** for the payment connection. If checkout was interrupted, reconcile the existing order and Square payment before collecting money again.
