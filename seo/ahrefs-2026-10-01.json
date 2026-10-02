@@ -1,0 +1,2504 @@
+{
+  "review_date": "2026-10-01",
+  "review_timezone": "America/Los_Angeles",
+  "provider": "Ahrefs API v3 via connected Ahrefs plugin",
+  "country": "US",
+  "notes": [
+    "Keyword Explorer volume is an estimated monthly average over the latest known 12 months; global_volume covers all countries. Site Explorer volume is for the latest month and may differ.",
+    "Missing keyword rows and null metrics are unavailable, not zero. Returned zero volume is an estimate, not proof that nobody searches.",
+    "SERP snapshots have their own update_date and may omit positions excluded by the organic filter. Parent topics and page types are hints, not verified intent.",
+    "Traffic potential describes all-keyword traffic to the current leading page; it is not a Ticket Spot traffic forecast.",
+    "Research contains public keyword and ranking data only; subscription/account details are omitted."
+  ],
+  "requested_seed_keywords": [
+    "sell tickets on shopify",
+    "how to sell tickets on shopify",
+    "shopify event tickets",
+    "shopify ticket selector",
+    "wix event tickets",
+    "sell tickets on wix",
+    "event ticketing widget",
+    "event registration widget",
+    "embed event calendar",
+    "event calendar widget",
+    "recurring events",
+    "recurring event tickets",
+    "timed entry tickets",
+    "event time slots",
+    "event waitlist",
+    "event waiting list",
+    "reserved seating tickets",
+    "assigned seating tickets",
+    "event seating chart",
+    "ticket payment plans",
+    "event ticket installments",
+    "event check in app",
+    "qr code event check in",
+    "event registration form",
+    "ticket types",
+    "early bird tickets",
+    "event promo codes",
+    "group ticket discounts",
+    "event confirmation email",
+    "event reminder email",
+    "event email marketing",
+    "multilingual event registration",
+    "event ticket analytics",
+    "event attendance tracking",
+    "event sales report",
+    "abandoned cart emails",
+    "event tracking google analytics",
+    "ticket spot",
+    "ticketspot",
+    "ticket spot documentation",
+    "event ticket scanner",
+    "free event tickets",
+    "private event tickets",
+    "event ticket transfer",
+    "event refund policy",
+    "apple wallet event tickets",
+    "google wallet event tickets",
+    "event registration questions",
+    "event check in qr code",
+    "zapier eventbrite",
+    "eventbrite import",
+    "shopify event registration",
+    "wix ticketing",
+    "event booking system",
+    "event calendar embed",
+    "event ticket pricing",
+    "add event calendar to website",
+    "white label ticketing",
+    "event ticketing software",
+    "sell event tickets online",
+    "ticket sales analytics",
+    "create an event online",
+    "event analytics",
+    "event registration analytics",
+    "event attendance report",
+    "event check in",
+    "event ticket payment plan",
+    "ticket installment payments",
+    "event installment payments",
+    "event waitlist management",
+    "waitlist registration",
+    "event registration waitlist",
+    "event seating chart software",
+    "reserved seating ticketing",
+    "seating chart creator",
+    "event calendar for website",
+    "selling tickets on shopify",
+    "how to sell event tickets on shopify",
+    "wix ticket sales",
+    "how to sell tickets on wix",
+    "event registration questions examples",
+    "event reminder email template",
+    "event confirmation email template",
+    "event registration confirmation email",
+    "early bird ticket pricing",
+    "event discount codes",
+    "event translation",
+    "multilingual events",
+    "event ticket cart",
+    "event tickets payment plans",
+    "recurring event registration",
+    "timed entry ticketing",
+    "event registration form questions",
+    "event ticket refunds",
+    "ticket transfer",
+    "email event reminders"
+  ],
+  "seed_keywords_not_returned": [
+    "shopify ticket selector",
+    "event registration widget",
+    "recurring event tickets",
+    "event time slots",
+    "event waiting list",
+    "assigned seating tickets",
+    "event ticket installments",
+    "event ticket analytics",
+    "event sales report",
+    "ticket spot documentation",
+    "event ticket transfer",
+    "event ticket payment plan",
+    "ticket installment payments",
+    "event installment payments",
+    "event registration waitlist",
+    "event registration questions examples",
+    "event ticket cart",
+    "event tickets payment plans",
+    "recurring event registration",
+    "event ticket refunds"
+  ],
+  "requests": [
+    {
+      "tool": "keywords-explorer-overview",
+      "params": {
+        "country": "US",
+        "keywords": "sell tickets on shopify,how to sell tickets on shopify,shopify event tickets,shopify ticket selector,wix event tickets,sell tickets on wix,event ticketing widget,event registration widget,embed event calendar,event calendar widget,recurring events,recurring event tickets,timed entry tickets,event time slots,event waitlist,event waiting list,reserved seating tickets,assigned seating tickets,event seating chart,ticket payment plans,event ticket installments,event check in app,qr code event check in,event registration form,ticket types,early bird tickets,event promo codes,group ticket discounts,event confirmation email,event reminder email,event email marketing,multilingual event registration,event ticket analytics,event attendance tracking,event sales report,abandoned cart emails,event tracking google analytics,ticket spot,ticketspot,ticket spot documentation,event ticket scanner,free event tickets,private event tickets,event ticket transfer,event refund policy,apple wallet event tickets,google wallet event tickets,event registration questions,event check in qr code,zapier eventbrite,eventbrite import,shopify event registration,wix ticketing,event booking system,event calendar embed,event ticket pricing,add event calendar to website,white label ticketing,event ticketing software,sell event tickets online",
+        "select": "keyword,volume,global_volume,difficulty,traffic_potential,parent_topic,intents,serp_last_update",
+        "limit": 60,
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "ticket types",
+            "volume": 100,
+            "global_volume": 250,
+            "difficulty": 1,
+            "traffic_potential": 150,
+            "parent_topic": "types of ticket",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-24T04:31:13Z"
+          },
+          {
+            "keyword": "qr code event check in",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": 1,
+            "traffic_potential": 300,
+            "parent_topic": "qr code event check in",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-27T21:30:37Z"
+          },
+          {
+            "keyword": "event ticket scanner",
+            "volume": 60,
+            "global_volume": 250,
+            "difficulty": 0,
+            "traffic_potential": 350,
+            "parent_topic": "ticket scanning",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-15T20:05:50Z"
+          },
+          {
+            "keyword": "ticketspot",
+            "volume": 60,
+            "global_volume": 250,
+            "difficulty": 7,
+            "traffic_potential": 60,
+            "parent_topic": "ticketspot",
+            "intents": {
+              "informational": true,
+              "navigational": true,
+              "commercial": true,
+              "transactional": true,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-08-24T19:58:54Z"
+          },
+          {
+            "keyword": "event registration form",
+            "volume": 1000,
+            "global_volume": 2200,
+            "difficulty": 5,
+            "traffic_potential": 700,
+            "parent_topic": "online event registration form",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-21T08:48:58Z"
+          },
+          {
+            "keyword": "abandoned cart emails",
+            "volume": 350,
+            "global_volume": 800,
+            "difficulty": 21,
+            "traffic_potential": 1900,
+            "parent_topic": "abandoned cart email examples",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-15T22:07:29Z"
+          },
+          {
+            "keyword": "early bird tickets",
+            "volume": 200,
+            "global_volume": 2600,
+            "difficulty": 0,
+            "traffic_potential": 50,
+            "parent_topic": "early bird ticket",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-04T16:22:21Z"
+          },
+          {
+            "keyword": "event promo codes",
+            "volume": 10,
+            "global_volume": 60,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "sell event tickets online",
+            "volume": 300,
+            "global_volume": 1000,
+            "difficulty": 46,
+            "traffic_potential": 9800,
+            "parent_topic": "event ticketing",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-04T23:44:16Z"
+          },
+          {
+            "keyword": "white label ticketing",
+            "volume": 100,
+            "global_volume": 400,
+            "difficulty": 0,
+            "traffic_potential": 70,
+            "parent_topic": "white label ticketing software",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-19T01:39:06Z"
+          },
+          {
+            "keyword": "apple wallet event tickets",
+            "volume": 10,
+            "global_volume": 30,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event waitlist",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "embed event calendar",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event reminder email",
+            "volume": 200,
+            "global_volume": 300,
+            "difficulty": 0,
+            "traffic_potential": 90,
+            "parent_topic": "event reminder email",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-19T18:56:12Z"
+          },
+          {
+            "keyword": "event refund policy",
+            "volume": 60,
+            "global_volume": 80,
+            "difficulty": 0,
+            "traffic_potential": 30,
+            "parent_topic": "event cancellation policy",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-16T22:59:17Z"
+          },
+          {
+            "keyword": "sell tickets on shopify",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": 1,
+            "traffic_potential": 30,
+            "parent_topic": "selling tickets on shopify",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-12T19:31:11Z"
+          },
+          {
+            "keyword": "reserved seating tickets",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "timed entry tickets",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": 30,
+            "traffic_potential": 1500,
+            "parent_topic": "rocky mountain national park reservations",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": "2026-09-18T08:16:03Z"
+          },
+          {
+            "keyword": "event booking system",
+            "volume": 450,
+            "global_volume": 1500,
+            "difficulty": 40,
+            "traffic_potential": 600,
+            "parent_topic": "event booking system",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-10-01T02:19:04Z"
+          },
+          {
+            "keyword": "group ticket discounts",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "private event tickets",
+            "volume": 0,
+            "global_volume": 40,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "wix ticketing",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": 1,
+            "traffic_potential": 20,
+            "parent_topic": "wix tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-19T22:50:04Z"
+          },
+          {
+            "keyword": "free event tickets",
+            "volume": 150,
+            "global_volume": 300,
+            "difficulty": 2,
+            "traffic_potential": 500,
+            "parent_topic": "discount concert tickets",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": true,
+              "branded": false,
+              "local": true
+            },
+            "serp_last_update": "2026-08-19T23:05:33Z"
+          },
+          {
+            "keyword": "sell tickets on wix",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event check in app",
+            "volume": 500,
+            "global_volume": 1600,
+            "difficulty": 0,
+            "traffic_potential": 1200,
+            "parent_topic": "event check in app",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-29T15:05:06Z"
+          },
+          {
+            "keyword": "recurring events",
+            "volume": 100,
+            "global_volume": 200,
+            "difficulty": 0,
+            "traffic_potential": 70,
+            "parent_topic": "recurring schedule",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-27T10:47:44Z"
+          },
+          {
+            "keyword": "event confirmation email",
+            "volume": 90,
+            "global_volume": 150,
+            "difficulty": 0,
+            "traffic_potential": 100,
+            "parent_topic": "event confirmation email",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-28T20:04:26Z"
+          },
+          {
+            "keyword": "event registration questions",
+            "volume": 80,
+            "global_volume": 90,
+            "difficulty": 0,
+            "traffic_potential": 60,
+            "parent_topic": "event registration questions",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-25T19:11:27Z"
+          },
+          {
+            "keyword": "ticket spot",
+            "volume": 60,
+            "global_volume": 250,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": true,
+              "commercial": true,
+              "transactional": true,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event ticketing widget",
+            "volume": 0,
+            "global_volume": 70,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event calendar embed",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "wix event tickets",
+            "volume": 10,
+            "global_volume": 20,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "google wallet event tickets",
+            "volume": 0,
+            "global_volume": 10,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "shopify event registration",
+            "volume": 50,
+            "global_volume": 70,
+            "difficulty": 4,
+            "traffic_potential": 20,
+            "parent_topic": "shopify event registration",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-08-23T06:17:18Z"
+          },
+          {
+            "keyword": "eventbrite import",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "add event calendar to website",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event tracking google analytics",
+            "volume": 100,
+            "global_volume": 200,
+            "difficulty": 49,
+            "traffic_potential": 1100,
+            "parent_topic": "google analytics event tracking",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-22T08:42:21Z"
+          },
+          {
+            "keyword": "multilingual event registration",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event email marketing",
+            "volume": 200,
+            "global_volume": 500,
+            "difficulty": 4,
+            "traffic_potential": 800,
+            "parent_topic": "event email marketing examples",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-21T23:21:59Z"
+          },
+          {
+            "keyword": "event attendance tracking",
+            "volume": 200,
+            "global_volume": 500,
+            "difficulty": 0,
+            "traffic_potential": 400,
+            "parent_topic": "event attendance tracking",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-02T23:29:07Z"
+          },
+          {
+            "keyword": "shopify event tickets",
+            "volume": 50,
+            "global_volume": 70,
+            "difficulty": 11,
+            "traffic_potential": 100,
+            "parent_topic": "shopify ticket system",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-28T01:59:00Z"
+          },
+          {
+            "keyword": "event ticketing software",
+            "volume": 1000,
+            "global_volume": 2100,
+            "difficulty": 0,
+            "traffic_potential": 8900,
+            "parent_topic": "tix",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-07T01:57:40Z"
+          },
+          {
+            "keyword": "how to sell tickets on shopify",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": null
+          },
+          {
+            "keyword": "ticket payment plans",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event check in qr code",
+            "volume": 100,
+            "global_volume": 150,
+            "difficulty": 3,
+            "traffic_potential": 300,
+            "parent_topic": "qr code event check in",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-26T14:52:57Z"
+          },
+          {
+            "keyword": "zapier eventbrite",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "traffic_potential": 150,
+            "parent_topic": "eventbrite integrations",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-08-25T22:13:39Z"
+          },
+          {
+            "keyword": "event calendar widget",
+            "volume": 60,
+            "global_volume": 100,
+            "difficulty": 30,
+            "traffic_potential": 300,
+            "parent_topic": "calendar widget for website",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-08-17T14:49:34Z"
+          },
+          {
+            "keyword": "event seating chart",
+            "volume": 250,
+            "global_volume": 500,
+            "difficulty": 16,
+            "traffic_potential": 8300,
+            "parent_topic": "seating chart maker",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-16T03:13:51Z"
+          },
+          {
+            "keyword": "event ticket pricing",
+            "volume": 60,
+            "global_volume": 100,
+            "difficulty": 39,
+            "traffic_potential": 1300,
+            "parent_topic": "ticket price tracker",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-22T08:46:38Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-overview",
+      "params": {
+        "country": "US",
+        "keywords": "ticket sales analytics,create an event online,event analytics,event registration analytics,event attendance report,event sales report,event check in,event ticket payment plan,ticket installment payments,event installment payments,event waitlist management,event waiting list,waitlist registration,event registration waitlist,event seating chart software,reserved seating ticketing,seating chart creator,event registration widget,event calendar for website,selling tickets on shopify,how to sell event tickets on shopify,wix ticket sales,how to sell tickets on wix,event registration questions examples,event reminder email template,event confirmation email template,event registration confirmation email,early bird ticket pricing,event discount codes,event translation,multilingual events,event ticket cart,event tickets payment plans,recurring event registration,timed entry ticketing,event registration form questions,event ticket refunds,ticket transfer,email event reminders",
+        "select": "keyword,volume,global_volume,difficulty,traffic_potential,parent_topic,intents,serp_last_update",
+        "limit": 39,
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "event calendar for website",
+            "volume": 50,
+            "global_volume": 70,
+            "difficulty": 63,
+            "traffic_potential": 500,
+            "parent_topic": "calendar embed",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-16T12:59:05Z"
+          },
+          {
+            "keyword": "ticket sales analytics",
+            "volume": 200,
+            "global_volume": 350,
+            "difficulty": 0,
+            "traffic_potential": 70,
+            "parent_topic": "ticket sales analytics",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-30T22:50:00Z"
+          },
+          {
+            "keyword": "event discount codes",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "reserved seating ticketing",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "create an event online",
+            "volume": 90,
+            "global_volume": 250,
+            "difficulty": 0,
+            "traffic_potential": 700,
+            "parent_topic": "how to create an event on eventbrite",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": true,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-27T09:24:02Z"
+          },
+          {
+            "keyword": "event seating chart software",
+            "volume": 200,
+            "global_volume": 450,
+            "difficulty": 31,
+            "traffic_potential": 8500,
+            "parent_topic": "seating chart template",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-07T20:35:39Z"
+          },
+          {
+            "keyword": "ticket transfer",
+            "volume": 350,
+            "global_volume": 1300,
+            "difficulty": 1,
+            "traffic_potential": 700,
+            "parent_topic": "ticketmaster ticket transfer",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-08T05:02:50Z"
+          },
+          {
+            "keyword": "how to sell event tickets on shopify",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "how to sell tickets on wix",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "email event reminders",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": null,
+            "serp_last_update": null
+          },
+          {
+            "keyword": "waitlist registration",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event analytics",
+            "volume": 800,
+            "global_volume": 1200,
+            "difficulty": 6,
+            "traffic_potential": 250,
+            "parent_topic": "event analytics",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-16T06:59:44Z"
+          },
+          {
+            "keyword": "seating chart creator",
+            "volume": 900,
+            "global_volume": 1100,
+            "difficulty": 6,
+            "traffic_potential": 14000,
+            "parent_topic": "seating chart maker",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-09T23:13:53Z"
+          },
+          {
+            "keyword": "event translation",
+            "volume": 100,
+            "global_volume": 150,
+            "difficulty": 25,
+            "traffic_potential": 1900,
+            "parent_topic": "ai translation",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-18T09:38:42Z"
+          },
+          {
+            "keyword": "selling tickets on shopify",
+            "volume": 30,
+            "global_volume": 40,
+            "difficulty": 1,
+            "traffic_potential": 20,
+            "parent_topic": "sell tickets on shopify",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-01T16:09:17Z"
+          },
+          {
+            "keyword": "event confirmation email template",
+            "volume": 90,
+            "global_volume": 150,
+            "difficulty": 0,
+            "traffic_potential": 150,
+            "parent_topic": "event confirmation email",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-07T17:18:05Z"
+          },
+          {
+            "keyword": "early bird ticket pricing",
+            "volume": 10,
+            "global_volume": 20,
+            "difficulty": 0,
+            "traffic_potential": 100,
+            "parent_topic": "early bird ticket",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-07T23:44:11Z"
+          },
+          {
+            "keyword": "event waitlist management",
+            "volume": 0,
+            "global_volume": 40,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "event reminder email template",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 1,
+            "traffic_potential": 250,
+            "parent_topic": "event reminder email",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-19T18:12:35Z"
+          },
+          {
+            "keyword": "event attendance report",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "multilingual events",
+            "volume": 20,
+            "global_volume": 50,
+            "difficulty": 33,
+            "traffic_potential": 10,
+            "parent_topic": "multilingual events",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-09T22:22:37Z"
+          },
+          {
+            "keyword": "event registration form questions",
+            "volume": 40,
+            "global_volume": 60,
+            "difficulty": 0,
+            "traffic_potential": 60,
+            "parent_topic": "event registration questions",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-06T02:25:16Z"
+          },
+          {
+            "keyword": "event registration analytics",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "traffic_potential": null,
+            "parent_topic": null,
+            "intents": {},
+            "serp_last_update": null
+          },
+          {
+            "keyword": "wix ticket sales",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": 0,
+            "traffic_potential": 20,
+            "parent_topic": "wix ticketing system",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": true,
+              "local": false
+            },
+            "serp_last_update": "2026-09-28T18:39:55Z"
+          },
+          {
+            "keyword": "event check in",
+            "volume": 200,
+            "global_volume": 450,
+            "difficulty": 0,
+            "traffic_potential": 150,
+            "parent_topic": "event check in",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-30T20:45:00Z"
+          },
+          {
+            "keyword": "event registration confirmation email",
+            "volume": 20,
+            "global_volume": 40,
+            "difficulty": 0,
+            "traffic_potential": 100,
+            "parent_topic": "event confirmation email",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": false,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-09-05T23:19:22Z"
+          },
+          {
+            "keyword": "timed entry ticketing",
+            "volume": 100,
+            "global_volume": 150,
+            "difficulty": 32,
+            "traffic_potential": 2700,
+            "parent_topic": "rmnp",
+            "intents": {
+              "informational": true,
+              "navigational": false,
+              "commercial": true,
+              "transactional": false,
+              "branded": false,
+              "local": false
+            },
+            "serp_last_update": "2026-10-01T22:10:22Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "site-explorer-organic-keywords",
+      "params": {
+        "target": "docs.ticketspotapp.com",
+        "mode": "subdomains",
+        "country": "US",
+        "date": "2026-10-01",
+        "select": "keyword,best_position,best_position_url,volume,sum_traffic,keyword_difficulty,last_update",
+        "limit": 50,
+        "order_by": "sum_traffic:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "create an event online",
+            "best_position": 2,
+            "best_position_url": "https://docs.ticketspotapp.com/event-management/create-event-overview",
+            "volume": 40,
+            "sum_traffic": 8,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-27T09:24:02Z"
+          },
+          {
+            "keyword": "ticket sales analytics",
+            "best_position": 8,
+            "best_position_url": "https://docs.ticketspotapp.com/analytics/sales-analytics",
+            "volume": 200,
+            "sum_traffic": 6,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-30T22:50:00Z"
+          },
+          {
+            "keyword": "ticketspot",
+            "best_position": 1,
+            "best_position_url": "https://docs.ticketspotapp.com/attendee-portal/viewing-your-tickets",
+            "volume": 60,
+            "sum_traffic": 2,
+            "keyword_difficulty": 7,
+            "last_update": "2026-08-24T19:58:54Z"
+          },
+          {
+            "keyword": "spot ticket",
+            "best_position": 7,
+            "best_position_url": "https://docs.ticketspotapp.com/getting-started/platform-overview",
+            "volume": 30,
+            "sum_traffic": 2,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-24T16:46:27Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "site-explorer-organic-keywords",
+      "params": {
+        "target": "ticketspotapp.com",
+        "mode": "subdomains",
+        "country": "US",
+        "date": "2026-10-01",
+        "select": "keyword,best_position,best_position_url,volume,sum_traffic,keyword_difficulty,last_update",
+        "limit": 50,
+        "order_by": "sum_traffic:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "ticketspot",
+            "best_position": 1,
+            "best_position_url": "https://ticketspotapp.com/",
+            "volume": 60,
+            "sum_traffic": 46,
+            "keyword_difficulty": 7,
+            "last_update": "2026-08-24T19:58:54Z"
+          },
+          {
+            "keyword": "create an event online",
+            "best_position": 2,
+            "best_position_url": "https://docs.ticketspotapp.com/event-management/create-event-overview",
+            "volume": 40,
+            "sum_traffic": 8,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-27T09:24:02Z"
+          },
+          {
+            "keyword": "spot ticket",
+            "best_position": 2,
+            "best_position_url": "https://ticketspotapp.com/",
+            "volume": 30,
+            "sum_traffic": 6,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-24T16:46:27Z"
+          },
+          {
+            "keyword": "ticket sales analytics",
+            "best_position": 8,
+            "best_position_url": "https://docs.ticketspotapp.com/analytics/sales-analytics",
+            "volume": 200,
+            "sum_traffic": 6,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-30T22:50:00Z"
+          },
+          {
+            "keyword": "november in dc",
+            "best_position": 1,
+            "best_position_url": "https://ticketspotapp.com/e/t5ebv",
+            "volume": 30,
+            "sum_traffic": 2,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-16T05:19:47Z"
+          },
+          {
+            "keyword": "yves tour",
+            "best_position": 6,
+            "best_position_url": "https://ticketspotapp.com/e/r83ca",
+            "volume": 30,
+            "sum_traffic": 1,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-28T05:20:41Z"
+          },
+          {
+            "keyword": "stuttgart events",
+            "best_position": 4,
+            "best_position_url": "https://ticketspotapp.com/e/tp17m",
+            "volume": 20,
+            "sum_traffic": 1,
+            "keyword_difficulty": 0,
+            "last_update": "2026-08-19T07:30:57Z"
+          },
+          {
+            "keyword": "wix ticket sales",
+            "best_position": 9,
+            "best_position_url": "https://ticketspotapp.com/blog/features/wix-event-ticketing-widget",
+            "volume": 10,
+            "sum_traffic": 0,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-28T18:39:55Z"
+          },
+          {
+            "keyword": "jung jinhyeong tour",
+            "best_position": 10,
+            "best_position_url": "https://ticketspotapp.com/e/7n573",
+            "volume": 0,
+            "sum_traffic": 0,
+            "keyword_difficulty": 0,
+            "last_update": "2026-09-22T11:42:26Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "ticket sales analytics",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "Ticket Sales Analysis Report",
+            "url": "https://www.boldreports.com/solutions/sales-reporting/ticket-sales-analysis/",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-09-30T22:50:00Z"
+          },
+          {
+            "position": 3,
+            "title": "Why analytics is your best ticket vendor",
+            "url": "https://www.sas.com/en_nz/insights/articles/analytics/analytics-your-best-ticket-vendor.html",
+            "page_type": "/Article,/Article/Opinion_Piece",
+            "update_date": "2026-09-30T22:50:00Z"
+          },
+          {
+            "position": 4,
+            "title": "SeatData.io: Ticket Sales Data & Event Analytics",
+            "url": "https://seatdata.io/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-30T22:50:00Z"
+          },
+          {
+            "position": 5,
+            "title": "Leveraging Analytics to Improve Your Ticket Selling Strategy",
+            "url": "https://www.eventbookings.com/blog/leveraging-analytics-to-improve-event-ticket-selling/",
+            "page_type": "/Article,/Article/Tutorial_or_Guide",
+            "update_date": "2026-09-30T22:50:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "sell tickets on shopify",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "How to Sell Tickets on Shopify (2026)",
+            "url": "https://www.shopify.com/blog/how-to-sell-tickets",
+            "page_type": "/Article,/Article/How_to",
+            "update_date": "2026-09-12T19:31:11Z"
+          },
+          {
+            "position": 3,
+            "title": "What's the best way to sell event or class tickets on Shopify?",
+            "url": "https://www.google.com/goto?url=CAESmwEB6zswFaPwDyQ3cjbU8chq-YSxXtx0f75acWW6p8i2syonWV9NsFpoF4nQFGbkc1FpdCiKURpZncGPELSOUqje4wpBwNUstSEQnTO7yfdfhyJ-LFYlw89R7HCcSY3fK4I7fDH-CziesMDUwiTpimucscqPq3Vp4dtq16gMLV3hcBGMPn4YkIgt7GGKFKrHtpxuB8vhmFb6hWyTog",
+            "page_type": null,
+            "update_date": "2026-09-12T19:31:11Z"
+          },
+          {
+            "position": 5,
+            "title": "GM Event Ticketing - Design, sell, and scan event tickets",
+            "url": "https://apps.shopify.com/event-ticketing",
+            "page_type": "/Listing,/Listing/Product",
+            "update_date": "2026-09-12T19:31:11Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "event registration questions",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 1,
+            "title": "[Solved] Select 7 common event registration materials and ...",
+            "url": "https://www.studocu.com/en-au/messages/question/10008443/select-7-common-event-registration-materials-and-resources-that-apply-to-face-to-face-hybrid-and",
+            "page_type": null,
+            "update_date": "2026-09-25T19:11:27Z"
+          },
+          {
+            "position": 2,
+            "title": "Pro Partner Event Registration 2026",
+            "url": "https://www.keimcompany.com/propartner26",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-09-25T19:11:27Z"
+          },
+          {
+            "position": 4,
+            "title": "Event Registration",
+            "url": "https://www.pma-dc.org/events/pma-sustainability-council-practical-tips-for-pursuing-beps-compliance/register",
+            "page_type": null,
+            "update_date": "2026-09-25T19:11:27Z"
+          },
+          {
+            "position": 5,
+            "title": "Data Tech Summit",
+            "url": "https://www.ibm.com/events/reg/flow/ibm/vqtqcamb/createaccount/page/contactInfo",
+            "page_type": null,
+            "update_date": "2026-09-25T19:11:27Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "event reminder email",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "5 Event Reminder Email Templates (Free)",
+            "url": "https://www.addevent.com/blog/5-event-reminder-email-templates-free",
+            "page_type": "/Article,/Article/Listicle",
+            "update_date": "2026-09-19T18:56:12Z"
+          },
+          {
+            "position": 4,
+            "title": "Event Reminder Emails: Templates, Examples + AI ...",
+            "url": "https://www.eventbrite.com/blog/event-reminder-email/",
+            "page_type": "/Article,/Article/How_to",
+            "update_date": "2026-09-19T18:56:12Z"
+          },
+          {
+            "position": 5,
+            "title": "How to create and send event reminders",
+            "url": "https://www.eventleaf.com/how-to/how-to-create-reminders",
+            "page_type": "/Article,/Article/How_to",
+            "update_date": "2026-09-19T18:56:12Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "qr code event check in",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "QR Code Event Check-In for Free with rsvpBOOK",
+            "url": "https://www.rsvpbook.com/free-qr-code-event-check-in.php",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-08-27T21:30:37Z"
+          },
+          {
+            "position": 3,
+            "title": "The Event Planner's Guide to QR Code Check-In",
+            "url": "https://www.cvent.com/en/blog/events/qr-code-check-in-guide",
+            "page_type": null,
+            "update_date": "2026-08-27T21:30:37Z"
+          },
+          {
+            "position": 4,
+            "title": "Best Event Check-in App",
+            "url": "https://rsvpify.com/event-check-in-app/",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-08-27T21:30:37Z"
+          },
+          {
+            "position": 5,
+            "title": "Use QR codes for event registration, links to content, or URLs",
+            "url": "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-qr-code",
+            "page_type": null,
+            "update_date": "2026-08-27T21:30:37Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "event attendance tracking",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "10 Best Event Attendance Tracking Software Tools (2026 ...",
+            "url": "https://invitedesk.com/en-gb/blog/event-attendance-tracking-software/",
+            "page_type": "/Article,/Article/Listicle",
+            "update_date": "2026-09-02T23:29:07Z"
+          },
+          {
+            "position": 3,
+            "title": "MyAttendanceTracker :: Track, and Report Attendance Online!",
+            "url": "https://www.myattendancetracker.com/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-02T23:29:07Z"
+          },
+          {
+            "position": 4,
+            "title": "Event Attendee Tracking : r/nonprofit",
+            "url": "https://www.reddit.com/r/nonprofit/comments/1cy891l/event_attendee_tracking/",
+            "page_type": null,
+            "update_date": "2026-09-02T23:29:07Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "event seating chart",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 1,
+            "title": "SeatPlan.io: Free Seating Chart Maker for Weddings & Events",
+            "url": "https://seatplan.io/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-16T03:13:51Z"
+          },
+          {
+            "position": 2,
+            "title": "Free Seating Chart Maker - Create Seating Charts",
+            "url": "https://www.canva.com/create/seating-charts/",
+            "page_type": "/Interactive_Tools,/Interactive_Tools/Generator",
+            "update_date": "2026-09-16T03:13:51Z"
+          },
+          {
+            "position": 3,
+            "title": "Free Seating Chart Maker – No Signup",
+            "url": "https://www.seatplanning.com/free-seating-chart",
+            "page_type": "/Landing_Page,/Landing_Page/Service_Page",
+            "update_date": "2026-09-16T03:13:51Z"
+          },
+          {
+            "position": 4,
+            "title": "Wedding Seating Chart Tool — Drag & Drop Online",
+            "url": "https://planning.wedding/seating-chart",
+            "page_type": "/Interactive_Tools,/Interactive_Tools/Generator",
+            "update_date": "2026-09-16T03:13:51Z"
+          },
+          {
+            "position": 5,
+            "title": "Make a Seating Chart, Seating Chart Templates",
+            "url": "https://www.smartdraw.com/seating-chart/",
+            "page_type": "/Article,/Article/How_to",
+            "update_date": "2026-09-16T03:13:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "serp-overview",
+      "params": {
+        "country": "US",
+        "keyword": "event analytics",
+        "select": "position,title,url,page_type,update_date",
+        "top_positions": 5,
+        "type": "organic",
+        "output": "json"
+      },
+      "data": {
+        "positions": [
+          {
+            "position": 2,
+            "title": "About Event Analytics",
+            "url": "https://www.ibm.com/docs/en/noi/1.6.13?topic=analytics-about-event",
+            "page_type": "/Article,/Article/Definitions",
+            "update_date": "2026-09-16T06:59:44Z"
+          },
+          {
+            "position": 3,
+            "title": "Event Analytics: Measure event footfall, engagement, ROI ...",
+            "url": "https://eventanalytics.tech/",
+            "page_type": "/Core_Page,/Core_Page/Homepage",
+            "update_date": "2026-09-16T06:59:44Z"
+          },
+          {
+            "position": 5,
+            "title": "About events - Analytics Help",
+            "url": "https://support.google.com/analytics/answer/9322688?hl=en",
+            "page_type": "/Article,/Article/Tutorial_or_Guide",
+            "update_date": "2026-09-16T06:59:44Z"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-matching-terms",
+      "params": {
+        "country": "US",
+        "keywords": "shopify tickets,event waitlist,ticket payment,event analytics,event registration questions,event reminder email,qr code event check in",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic",
+        "match_mode": "terms",
+        "limit": 45,
+        "order_by": "volume:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "www.njmcdirect.com ticket payment online",
+            "volume": 1800,
+            "global_volume": 1800,
+            "difficulty": 10,
+            "parent_topic": "njmcdirect"
+          },
+          {
+            "keyword": "nyc parking ticket payment",
+            "volume": 800,
+            "global_volume": 800,
+            "difficulty": 20,
+            "parent_topic": "pay nyc parking ticket"
+          },
+          {
+            "keyword": "event analytics",
+            "volume": 800,
+            "global_volume": 1200,
+            "difficulty": 6,
+            "parent_topic": "event analytics"
+          },
+          {
+            "keyword": "dc ticket payment",
+            "volume": 700,
+            "global_volume": 700,
+            "difficulty": 14,
+            "parent_topic": "dc tickets"
+          },
+          {
+            "keyword": "chicago ticket payment plan",
+            "volume": 600,
+            "global_volume": 600,
+            "difficulty": 0,
+            "parent_topic": "payment plan"
+          },
+          {
+            "keyword": "nyc ticket payment",
+            "volume": 600,
+            "global_volume": 600,
+            "difficulty": 39,
+            "parent_topic": "pay parking ticket nyc"
+          },
+          {
+            "keyword": "chicago ticket payment",
+            "volume": 600,
+            "global_volume": 600,
+            "difficulty": 0,
+            "parent_topic": "city of chicago tickets"
+          },
+          {
+            "keyword": "parking ticket payment plan",
+            "volume": 500,
+            "global_volume": 500,
+            "difficulty": 8,
+            "parent_topic": "payment plan for tickets"
+          },
+          {
+            "keyword": "ticket payment plan",
+            "volume": 450,
+            "global_volume": 450,
+            "difficulty": 5,
+            "parent_topic": "payment plan"
+          },
+          {
+            "keyword": "www.njmcdirect.com ticket payment",
+            "volume": 350,
+            "global_volume": 350,
+            "difficulty": 22,
+            "parent_topic": "njmcdirect"
+          },
+          {
+            "keyword": "google analytics event tracking",
+            "volume": 350,
+            "global_volume": 600,
+            "difficulty": 13,
+            "parent_topic": "google analytics event tracking"
+          },
+          {
+            "keyword": "delete ga4 event google analytics 4",
+            "volume": 300,
+            "global_volume": 600,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "city of chicago parking ticket payment plans",
+            "volume": 250,
+            "global_volume": 250,
+            "difficulty": 18,
+            "parent_topic": "chicago ticket payment plan"
+          },
+          {
+            "keyword": "what is event count in google analytics",
+            "volume": 250,
+            "global_volume": 700,
+            "difficulty": 1,
+            "parent_topic": "what is event count in google analytics"
+          },
+          {
+            "keyword": "chicago parking ticket payment",
+            "volume": 250,
+            "global_volume": 250,
+            "difficulty": 0,
+            "parent_topic": "chicago tickets"
+          },
+          {
+            "keyword": "ny ticket payment",
+            "volume": 250,
+            "global_volume": 250,
+            "difficulty": 0,
+            "parent_topic": "new york ticket pay"
+          },
+          {
+            "keyword": "discounted payment for a plane ticket",
+            "volume": 250,
+            "global_volume": 300,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event data analytics",
+            "volume": 200,
+            "global_volume": 250,
+            "difficulty": 5,
+            "parent_topic": "event analytics"
+          },
+          {
+            "keyword": "mass ticket payment",
+            "volume": 200,
+            "global_volume": 200,
+            "difficulty": 16,
+            "parent_topic": "massachusetts uniform citation"
+          },
+          {
+            "keyword": "event reminder email",
+            "volume": 200,
+            "global_volume": 300,
+            "difficulty": 0,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event based analytics",
+            "volume": 200,
+            "global_volume": 350,
+            "difficulty": 3,
+            "parent_topic": "event based analytics"
+          },
+          {
+            "keyword": "www njmcdirect com payment ticket",
+            "volume": 200,
+            "global_volume": 200,
+            "difficulty": 42,
+            "parent_topic": "njmcdirect"
+          },
+          {
+            "keyword": "parking ticket payment",
+            "volume": 200,
+            "global_volume": 450,
+            "difficulty": 0,
+            "parent_topic": "south carolina tickets"
+          },
+          {
+            "keyword": "top ai-powered event analytics services",
+            "volume": 200,
+            "global_volume": 400,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "google analytics create event",
+            "volume": 200,
+            "global_volume": 200,
+            "difficulty": 25,
+            "parent_topic": "setting up events in google analytics"
+          },
+          {
+            "keyword": "traffic ticket payment",
+            "volume": 200,
+            "global_volume": 300,
+            "difficulty": 33,
+            "parent_topic": "how to pay a ticket online"
+          },
+          {
+            "keyword": "event qr code check in",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 1,
+            "parent_topic": "qr code event check in"
+          },
+          {
+            "keyword": "event analytics tools",
+            "volume": 150,
+            "global_volume": 250,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "qr code event check in",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": 1,
+            "parent_topic": "qr code event check in"
+          },
+          {
+            "keyword": "chicago parking ticket payment plan",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "parent_topic": "payment plan for tickets"
+          },
+          {
+            "keyword": "universal analytics event tracking",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 9,
+            "parent_topic": "google analytics event tracking"
+          },
+          {
+            "keyword": "qr code event check in free",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "st charles parish ticket payment",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "parent_topic": "st charles parish ticket payment"
+          },
+          {
+            "keyword": "www njmcdirect com ticket payment online español",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "top data analytics for event demand forecasting",
+            "volume": 150,
+            "global_volume": 250,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event analytics heatmap organizers tools",
+            "volume": 150,
+            "global_volume": 350,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "what does event count mean in google analytics",
+            "volume": 150,
+            "global_volume": 300,
+            "difficulty": 1,
+            "parent_topic": "what is event count in google analytics"
+          },
+          {
+            "keyword": "nyc parking ticket payment plan",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 9,
+            "parent_topic": "payment plan"
+          },
+          {
+            "keyword": "event management analytics",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": 0,
+            "parent_topic": "event management analytics"
+          },
+          {
+            "keyword": "event analytics solutions",
+            "volume": 150,
+            "global_volume": 200,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event reminder email template",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 1,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event count google analytics",
+            "volume": 150,
+            "global_volume": 300,
+            "difficulty": 0,
+            "parent_topic": "what is event count in google analytics"
+          },
+          {
+            "keyword": "adobe analytics purchase event",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 0,
+            "parent_topic": "adobe analytics purchase event"
+          },
+          {
+            "keyword": "analytics event",
+            "volume": 150,
+            "global_volume": 350,
+            "difficulty": 0,
+            "parent_topic": "session attendance tracking"
+          },
+          {
+            "keyword": "leading event intelligence analytics provider",
+            "volume": 150,
+            "global_volume": 300,
+            "difficulty": null,
+            "parent_topic": null
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-matching-terms",
+      "params": {
+        "country": "US",
+        "keywords": "shopify tickets",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic",
+        "match_mode": "terms",
+        "limit": 15,
+        "order_by": "volume:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "shopify tickets",
+            "volume": 60,
+            "global_volume": 80,
+            "difficulty": 19,
+            "parent_topic": "shopify ticket system"
+          },
+          {
+            "keyword": "best ai for shopify support tickets?",
+            "volume": 60,
+            "global_volume": 60,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "sell event tickets on shopify",
+            "volume": 50,
+            "global_volume": 50,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "shopify event tickets",
+            "volume": 50,
+            "global_volume": 70,
+            "difficulty": 11,
+            "parent_topic": "shopify ticket system"
+          },
+          {
+            "keyword": "sell tickets on shopify",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": 1,
+            "parent_topic": "selling tickets on shopify"
+          },
+          {
+            "keyword": "selling event tickets on shopify",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "selling tickets on shopify",
+            "volume": 30,
+            "global_volume": 40,
+            "difficulty": 1,
+            "parent_topic": "sell tickets on shopify"
+          },
+          {
+            "keyword": "shopify sell event tickets",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "how to reduce support tickets for shopify stores",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "automate support tickets shopify",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "how to sell event tickets on shopify",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "shopify sell tickets",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "can you sell tickets on shopify",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": 2,
+            "parent_topic": "sell tickets on shopify"
+          },
+          {
+            "keyword": "how to sell tickets on shopify",
+            "volume": 20,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "shopify pos event tickets",
+            "volume": 10,
+            "global_volume": 10,
+            "difficulty": null,
+            "parent_topic": null
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-matching-terms",
+      "params": {
+        "country": "US",
+        "keywords": "event waitlist,event registration questions,event reminder email",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic",
+        "match_mode": "terms",
+        "limit": 15,
+        "order_by": "volume:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "event reminder email",
+            "volume": 200,
+            "global_volume": 300,
+            "difficulty": 0,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event reminder email template",
+            "volume": 150,
+            "global_volume": 150,
+            "difficulty": 1,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event software with waitlist management",
+            "volume": 80,
+            "global_volume": 80,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event registration questions",
+            "volume": 80,
+            "global_volume": 90,
+            "difficulty": 0,
+            "parent_topic": "event registration questions"
+          },
+          {
+            "keyword": "event reminder email sample",
+            "volume": 70,
+            "global_volume": 80,
+            "difficulty": 2,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "friendly reminder email for event sample",
+            "volume": 70,
+            "global_volume": 80,
+            "difficulty": 0,
+            "parent_topic": "friendly reminder email for event sample"
+          },
+          {
+            "keyword": "reminder email for event",
+            "volume": 60,
+            "global_volume": 80,
+            "difficulty": 1,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event reminder email examples",
+            "volume": 50,
+            "global_volume": 80,
+            "difficulty": 0,
+            "parent_topic": "event reminder email"
+          },
+          {
+            "keyword": "event email reminder template",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event invitation reminder email sample",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "friendly event reminder email sample",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event reminder email message sample",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "reminder email for event template",
+            "volume": 40,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event registration form questions",
+            "volume": 40,
+            "global_volume": 60,
+            "difficulty": 0,
+            "parent_topic": "event registration questions"
+          },
+          {
+            "keyword": "pre event reminder email",
+            "volume": 30,
+            "global_volume": 30,
+            "difficulty": null,
+            "parent_topic": null
+          }
+        ]
+      }
+    },
+    {
+      "tool": "keywords-explorer-matching-terms",
+      "params": {
+        "country": "US",
+        "keywords": "event ticket payment,event payment plan,event installment",
+        "select": "keyword,volume,global_volume,difficulty,parent_topic",
+        "match_mode": "terms",
+        "limit": 15,
+        "order_by": "volume:desc",
+        "output": "json"
+      },
+      "data": {
+        "keywords": [
+          {
+            "keyword": "school event ticket sales and payment solutions.",
+            "volume": 20,
+            "global_volume": 20,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "can you renegotiate an installment agreement with the irs in the event of a substantial payment",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "payment plan event britw",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "pm event 16th installment date",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "critical event in revenue recognition under installment sales vs cost recovery first",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event processing ticket sales with our payment gateway",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "xiao long bao model installment for marketing event",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "simple wordpress event ticket payment",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "event ticket payment systems",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "critical event in revenue recognition under installment sales",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "6000000 \"in the event of accidental death\" installment payments as an annuity",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "how to set up payment plan for event ticket wordpress",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "pm event 19th installment date",
+            "volume": 0,
+            "global_volume": 10,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "pm event 20th installment date",
+            "volume": 0,
+            "global_volume": 40,
+            "difficulty": null,
+            "parent_topic": null
+          },
+          {
+            "keyword": "pm event 18th installment date",
+            "volume": 0,
+            "global_volume": 0,
+            "difficulty": null,
+            "parent_topic": null
+          }
+        ]
+      }
+    }
+  ]
+}
