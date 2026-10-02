@@ -1,9 +1,10 @@
 ---
-title: "Email Communication"
-description: "Configure confirmations, reminders, post-event emails, targeted announcements, ticket actions, attachments, and language variants."
+title: "Set up event confirmation and reminder emails"
+sidebarTitle: "Email Communication"
+description: "Customize event confirmation emails, schedule reminder emails, and send attendee updates with ticket links, attachments, and language variants."
 ---
 
-Open an event and select **Email Communication**. **Ticket Confirmation**, **Event Reminders**, and **Post-Event Feedback** each have **Manage** and **Send Test** actions. **Send Message** opens attendee announcements.
+Use event confirmation emails to deliver booking information, reminder emails to prepare guests for arrival, and post-event emails to request feedback. Open an event and select **Email Communication**. **Ticket Confirmation**, **Event Reminders**, and **Post-Event Feedback** each have **Manage** and **Send Test** actions. **Send Message** opens attendee announcements.
 
 ## Ticket Confirmation
 
@@ -62,6 +63,16 @@ Review both the selected actions and uploaded files before saving. Ticket, walle
 
 The Demo event shows separate one-hour and one-day reminders. Review every reminder you leave enabled. Email and [SMS communication](./sms-communication) have their own content and delivery settings.
 
+### Event reminder email example
+
+For an in-person workshop, start with a short subject and the information guests need at the door:
+
+**Subject:** `Reminder: {{event_title}} is coming up`
+
+**Additional message:** “We're looking forward to seeing you. Please arrive 15 minutes before the start and have your ticket QR code ready at the entrance. Reply to this email if you need help finding the venue.”
+
+Adapt the arrival instructions to your event and check the reply-to address. Insert any additional event or attendee details with the personalization picker, enable the appropriate ticket action, and use **Send Test** to review the complete email. For an online event, replace the arrival instructions with your joining instructions. This is example copy, not a default template or a new reminder schedule.
+
 ## Post-Event Feedback
 
 Select **Manage** under Post-Event Feedback. In **Event End Appreciation**, use the **Post-Event Message** switch, write the subject and additional message, configure its actions and attachments, then select **Save**. Use a feedback link in the message when you want responses through a form or survey.
@@ -118,3 +129,5 @@ Turn on **Multilingual communications** in **Design → Attendee Communication**
 Select **Save translation** and confirm it succeeds. **Customized** can appear before changes are saved. Fields without a translation use the original message, and translations retain the email's recipients and schedule. A translated field can use only variables already in its original field; keep translated subjects on one line.
 
 Use **Use original** for a field and save the change. **Reset language** removes an existing saved language variant. See [multilingual emails and tickets](/branding-and-design/multilingual-communications), [language and locale settings](/branding-and-design/language-and-locale), and the [language FAQ](/getting-started/language-and-locale-faq).
+
+After sending, use [event email analytics](/analytics/email-analytics) to inspect delivery, engagement, failures, and scheduled reminders.

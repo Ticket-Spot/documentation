@@ -2,6 +2,10 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Ticket Spot",
+  "description": "Ticket Spot documentation for event setup, ticket sales, widgets, seating charts, attendee check-in, and analytics.",
+  "seo": {
+    "indexing": "navigable"
+  },
   "colors": {
     "primary": "#9c26dc",
     "light": "#bc6be7",
