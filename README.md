@@ -11,3 +11,24 @@ Each article needs a descriptive title, unique description, entry point, prerequ
 ## Preview and validation
 
 Use the Mintlify CLI to preview `docs.json` and MDX content. Check navigation, links, media, desktop/mobile rendering, and the workflows described before release. Publishing behavior depends on this repository's Mintlify deployment connection; editing files locally does not publish them.
+
+Run these checks from this repository after installing the locked dependencies with `npm ci`:
+
+```sh
+python3 scripts/check-documentation.py
+node scripts/check-mdx.mjs
+npx mintlify broken-links
+npx mintlify dev --no-open
+```
+
+The widget reference pages contain generated tables with hand-written setup notes around them. Refresh the tables from the dashboard checkout, then check source coverage:
+
+```sh
+python3 scripts/sync-widget-reference.py --dashboard /path/to/eventviewer-dashboard
+python3 scripts/sync-widget-reference.py --dashboard /path/to/eventviewer-dashboard --check
+python3 scripts/check-documentation.py --dashboard /path/to/eventviewer-dashboard
+```
+
+The source check compares every indexed widget control and all named plan features; it does not prove that authenticated purchases, delivery, or check-in work. Keep the generated option markers inside the reference pages. Update the surrounding workflow prose when behavior or prerequisites change.
+
+See [the October 2026 review](./DOCUMENTATION_REVIEW.md) for coverage, source evidence, product-label mismatches, and the remaining browser verification checklist.

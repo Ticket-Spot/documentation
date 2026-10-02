@@ -7,22 +7,52 @@ Use **Seat Charts** to create a reusable venue map and assign it to a ticketed e
 
 ## Build and publish a chart
 
+
+<Frame caption="Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart’s actions menu → Edit.">
+  <img src="../assets/refresh/seating-charts/seating-chart-create.png" alt="Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart’s actions menu → Edit." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
 <Steps>
 <Step title="Create the venue map">
-Open **Seat Charts** in the top navigation and click **Create Chart** or **Create Your First Chart**. Choose a starting template or create a map. Give the chart a recognizable venue name.
+Open **Seat Charts** in the top navigation and click **Create Chart** or **Create Your First Chart**. Choose **Blank** or a venue template, then **Create Map**. If the designer does not open automatically, open the new chart’s actions menu and choose **Edit**. Use the pencil beside its name in the chart list to give it a recognizable venue name.
 </Step>
 <Step title="Lay out the venue">
 Use the designer to add rows, tables, sections, or general admission areas. Label seats and areas so staff and attendees can identify them. Check the number of bookable places against the venue's intended capacity.
 </Step>
 <Step title="Create seat categories">
-Group places by the ticket options you sell, such as Standard, Balcony, or VIP. Categories connect seats to ticket types; the ticket price is configured on the event.
+Use **Manage → Create new category** to add categories such as Standard or VIP. Select rows or seats, then assign a **Category** in their properties panel. In a chart with sections, enter each section to categorize the seats inside. Every bookable object needs a category; the ticket price is configured on the event.
 </Step>
 <Step title="Publish">
 Save the chart and choose **Publish Chart** in the editor or **Publish** in the chart list. Resolve the issues shown in **Cannot Publish Chart**, then publish again. Confirm the chart is marked **Published**.
 </Step>
 </Steps>
 
+<Accordion title="See the designer, categories, and published result">
+
+<Frame caption="The designer reports uncategorized seats before publishing. Use Manage to create categories, assign every bookable object, then Publish Chart.">
+  <img src="../assets/refresh/seating-charts/seating-chart-create-designer.png" alt="The designer reports uncategorized seats before publishing. Use Manage to create categories, assign every bookable object, then Publish Chart." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Create named seat categories in the designer. Ticket prices are assigned later on the event.">
+  <img src="../assets/refresh/seating-charts/seating-chart-create-categories.png" alt="Create named seat categories in the designer. Ticket prices are assigned later on the event." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Select rows or seats and choose a Category. The same properties panel controls row and seat labels, spacing and orientation.">
+  <img src="../assets/refresh/seating-charts/seating-chart-create-seat-category.png" alt="Select rows or seats and choose a Category. The same properties panel controls row and seat labels, spacing and orientation." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Confirm the chart is Published in Seat Charts before assigning it to an event. Rename with the pencil; the actions menu contains Edit, Duplicate and Delete.">
+  <img src="../assets/refresh/seating-charts/seating-chart-create-published.png" alt="Confirm the chart is Published in Seat Charts before assigning it to an event. Rename with the pencil; the actions menu contains Edit, Duplicate and Delete." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
 ## Assign the chart to an event
+
+
+<Frame caption="Enable Assigned Seating in Tickets and choose a published chart. Wait for the saved confirmation, then assign seat categories to tickets below.">
+  <img src="../assets/refresh/seating-charts/seating-chart-assign.png" alt="Enable Assigned Seating in Tickets and choose a published chart. Wait for the saved confirmation, then assign seat categories to tickets below." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 1. Open or create your ticketed event and save it.
 2. In **Tickets**, find **Seating & Seat Selection** and enable **Assigned Seating**.
@@ -30,7 +60,7 @@ Save the chart and choose **Publish Chart** in the editor or **Publish** in the 
 4. Create or edit each ticket type. In its **Seat Categories** settings, select the categories that this ticket can book, and set its price and applicable ticket controls.
 5. Save the ticket and event. Check that every category offered for sale has an appropriate ticket assignment.
 
-For a recurring event, use **Apply Chart to All Dates** when each occurrence needs its own seating inventory. A seat sold for one occurrence must be checked against that occurrence, not assumed sold for every date.
+For a series, **Seating for all dates** confirms that the chart applies automatically to occurrences using event defaults, including dates you add later. Each date/time has separate seat availability. If setup is incomplete, use **Retry seating setup** and review any reported failed dates before selling.
 
 ## Verify the attendee experience
 
@@ -49,3 +79,7 @@ If a selected chart is invalid, follow **Fix in Designer**, correct the reported
 - [Advanced venue layouts](/seating-charts/advanced-layouts)
 - [Ticket controls and category pricing](/event-management/ticket-setup)
 - [On-site ticket sales](/on-site/box-office-pos)
+
+## Seat selection, date overrides, and reassignment
+
+Follow [Seat selection and attendee assignment](./seat-selection) to offer multiple ticket prices in one category, verify per-date seating, replace or inherit charts, inspect seating allowance, and assign existing orders to seats. Test both the buyer's map and the attendee-management result.

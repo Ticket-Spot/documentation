@@ -1,56 +1,32 @@
 ---
-title: "Mailchimp"
-description: "Connect Mailchimp and configure the audience used for Ticket Spot attendee synchronization."
+title: "Mailchimp Transactional"
+description: "Connect Mailchimp Transactional (Mandrill) to use its templates for Ticket Spot event communications."
 ---
 
-Connect your **Mailchimp** account with **Ticket Spot** to automatically add event attendees to your Mailchimp audience and email marketing campaigns.  
-This integration allows you to manage audience lists, automate communications, and track attendee engagement directly from your Mailchimp dashboard.
+The **Mailchimp** integration connects **Mailchimp Transactional (Mandrill)** for event-email templates. It requires a Transactional account and API key; a regular Mailchimp Marketing audience is a separate product.
+
+## Connect the account
+
+1. Open **Integrations → Marketing Automation**.
+2. Find **Mailchimp** and choose **Connect**.
+3. Paste the API key from your Mailchimp Transactional account into **API Key**.
+4. Choose **Connect** and wait for the connection result.
 
 
-## Prerequisites
+<Frame caption="Open Integrations and choose Connect on the Mailchimp card. External authorization is a separate step.">
+  <img src="../assets/refresh/integrations/integration-mailchimp-setup-card.png" alt="Open Integrations and choose Connect on the Mailchimp card. External authorization is a separate step." style={{ maxWidth: "640px" }} />
+</Frame>
 
-Before setting up the integration, make sure you have:
+<Frame caption="Paste a Mailchimp Transactional (Mandrill) API key in the connection form. This capture uses an empty field and does not connect an account.">
+  <img src="../assets/refresh/integrations/integration-mailchimp-setup.png" alt="Paste a Mailchimp Transactional (Mandrill) API key in the connection form. This capture uses an empty field and does not connect an account." style={{ maxWidth: "640px" }} />
+</Frame>
 
-- ✅ An active **[Ticket Spot](https://ticketspotapp.com/)** account with access to the **Integrations** page.  
-- ✅ A valid **[Mailchimp](https://login.mailchimp.com/)** account with an API key generated. Follow the guide: **[How to Generate a Mailchimp API Key](https://mailchimp.com/developer/transactional/guides/quick-start/)** to create one.
+## Use a template in an event
 
+In the event's [Email Communication](../event-management/email-communication) settings, choose Mailchimp where the email-provider option is available. Mailchimp delivery requires Business Plus. Select an available template and sender configuration, keep personalization fields intact, and test delivery to a demo recipient before using the campaign for attendees.
 
-## Integration
+Connecting the account alone does not create an attendee audience-sync workflow. Ticket Spot's Mailchimp flow validates the Transactional key and uses its template-email delivery API.
 
+## Review or disconnect
 
-**Step 1**: Log in to your **Ticket Spot** account and click the **Integrations** tab from the top navigation bar to open the integrations page.
-
-![integration-tab](../assets/integrations/mailchimp/integration-tab.png)
-
-
-**Step 2**: Find the **Mailchimp** platform under the **Marketing Automation** category and click the **Connect** button to open the integration setup window.
-
-![click-connect](../assets/integrations/mailchimp/click-connect1.png)
-
-
-**Step 3**: Paste the **API key** you generated from your Mailchimp account and click **Connect** to complete the integration.
-
-![click-connect2](../assets/integrations/mailchimp/click-connect2.png)
-
-
-**Step 4**: Once the integration is connected successfully, a **green check mark** will appear — confirming that Mailchimp integration is active in Ticket Spot.
-
-![green-status](../assets/integrations/mailchimp/green-status.png)
-
-
-## View Details
-
-Review the connection details for your Mailchimp integration, including the linked account and current status. To view details, click the **horizontal ellipsis (⋯)** icon on the **Mailchimp integration** tile and select **View Details** from the dropdown menu.
-
-![view-details](../assets/integrations/mailchimp/view-details.png)
-
-
-## Disconnect
-
-Remove the existing connection between your **Mailchimp** account and **Ticket Spot**. Once disconnected, Ticket Spot will no longer be connected to the Mailchimp platform.
-Click the **horizontal ellipsis (⋯)** icon on the Mailchimp integration tile and select **Disconnect** from the dropdown menu.
-
-![disconnect](../assets/integrations/mailchimp/disconnect.png)
-
-
-Your Mailchimp integration will be successfully disconnected from Ticket Spot.
+**View Details** explains the integration's capabilities. On a connected card, use its **three-dot menu** for the available actions. **Disconnect** removes the Ticket Spot connection; review any event campaigns that still select Mailchimp before disconnecting.

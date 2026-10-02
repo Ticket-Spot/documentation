@@ -1,64 +1,46 @@
 ---
-title: "Add and Switch Sites"
-description: "Create or switch Ticket Spot sites to manage separate websites and event setups."
+title: "Create and switch workspaces"
+description: "Create a Ticket Spot workspace, connect an existing store, or switch between your sites."
 ---
 
-If you manage multiple sites, switching between them—or creating a new one—keeps your workspace organized and helps you move quickly between different event setups. From the site dropdown menu, you can jump to another site or add a brand-new one in just a few clicks. This guide walks you through how to do it smoothly.
+A workspace groups a site's events, settings, and design. Open the current site name at the top of the dashboard to see **Workspaces**. Choose the correct workspace before editing events or settings.
+
+## Switch workspaces
+
+1. Click the current site name.
+2. Use **Search sites...** to filter by workspace name or platform.
+3. Select a workspace. Ticket Spot reloads the dashboard for that workspace.
+
+<Frame caption="Open the site name to show Workspaces. Search by site name or platform type, then select the workspace you want; Create Workspace starts a separate setup.">
+  <img src="../assets/refresh/site-settings/site-switcher.png" alt="Open the site name to show Workspaces. Search by site name or platform type, then select the workspace you want; Create Workspace starts a separate setup." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
+</Frame>
+
+## Create a workspace
+
+1. Open the workspace menu and select **+ Create Workspace**.
+2. Enter a **Workspace name**, up to 60 characters. A website URL is not required in this form.
+3. Select **Continue**. Ticket Spot creates the workspace and opens its Events page.
+
+<Frame caption="Create Workspace asks for a workspace name, then Continue creates it and switches to its Events page. This example was left as a draft.">
+  <img src="../assets/refresh/site-settings/site-create-connect.png" alt="Create Workspace asks for a workspace name, then Continue creates it and switches to its Events page. This example was left as a draft." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+You can close the dialog before continuing to leave without creating a workspace. After creation, configure its [general site settings](/site-settings/site-settings) and [brand](/branding-and-design/brand-design), then [create an event](/event-management/create-event-overview).
+
+## Connect an existing store
 
 
-## Add a New Site
+<Frame caption="Expand Connect an existing store instead to see Shopify, Ecwid, WordPress, and Wix. Shopify, Ecwid, and Wix open platform-specific connection or installation pages.">
+  <img src="../assets/refresh/site-settings/site-create-connect-platforms.png" alt="Expand Connect an existing store instead to see Shopify, Ecwid, WordPress, and Wix. Shopify, Ecwid, and Wix open platform-specific connection or installation pages." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-Creating a new site allows you to manage additional event pages within your TicketSpot account. Whether you're hosting a new event or setting up a different site, this process ensures seamless organization.
+In the creation dialog, expand **Connect an existing store instead** to view the platform choices.
 
-**Step 1:** Click on the **site name** in the top-left corner, open the dropdown menu, and select **+ Add New Site** to start adding a new site.
+- **Connect Shopify** starts the Shopify connection flow.
+- **Connect Ecwid** opens the Ticket Spot listing in Ecwid's app marketplace.
+- **Connect WiX** opens the Wix App Market listing.
+- For **WordPress**, follow the [WordPress installation guide](/plugins/connect-wordpress) to install the plugin and add your widget shortcode.
 
-![add-new-site-btn](../assets/site-settings/add-and-switch-sites/add-new-site-btn.png)
+The external platform completes its own installation or authorization steps. See the [Shopify](/plugins/connect-shopify) and [Wix](/plugins/connect-wix) guides for the steps specific to those platforms.
 
-A modal window will appear where you can **Create or Connect Your Site.**
-
-![create-connect-modal-win](../assets/site-settings/add-and-switch-sites/create-connect-modal-win.png)
-
-### Create Your Site
-
-1. Enter your **Site Name** and **Site URL** — this will define the name and web address for your new site.
-
-![enter-site-name-url](../assets/site-settings/add-and-switch-sites/enter-site-name-url.png)
-
-2. Click the **Create** button to finalize the setup of your new site.
-
-![click-create-btn](../assets/site-settings/add-and-switch-sites/click-create-btn.png)
-
-Your new site will now appear in the dropdown list. Select it anytime to switch between sites.
-
-![click-create-site-gif](../assets/site-settings/add-and-switch-sites/click-create-site-gif.gif)
-
-
-### Connect Your Site
-
-If you want to connect your site using one of our integrations, follow these steps for each platform:
-
-- **Shopify Integration:** If you're using Shopify, click **Connect Shopify** to link your Shopify store with TicketSpot.
-- **Ecwid Integration:** For Ecwid users, click **Connect Ecwid** to sync your Ecwid store with your TicketSpot account.
-- **WordPress Integration:** To connect a WordPress site, click **Connect WordPress** and follow the instructions to link your WordPress site with TicketSpot.
-- **WiX Integration:** If you have a site on WiX, click **Connect WiX** to integrate it with TicketSpot.
-
-![connect-site](../assets/site-settings/add-and-switch-sites/connect-site.png)
-
-For each integration, a modal window will appear where you can enter the necessary credentials to link your site. Once connected, your site will be available for selection in the dropdown menu.
-
-## Switch Site
-
-**Step 1:** Log in to your Ticket Spot account and click on the **Site Name** (e.g., My Site or company event hub) in the top-left corner of the page.
-
-![click-site-name](../assets/site-settings/add-and-switch-sites/click-site-name.png)
-
-**Step 2:** Select the site you want to switch to from the dropdown menu, which lists all the sites you’ve created for your events.
-
-![switch-site-dropdown](../assets/site-settings/add-and-switch-sites/switch-site-dropdown.png)
-
-
-**Step 3:** Click on the site you want to switch to, and the page will refresh, automatically directing you to the selected site.
-
-![switch-site](../assets/site-settings/add-and-switch-sites/switch-site.gif)
-
-Once you've added a new site or connected an existing one, it will appear in the dropdown menu, and you can easily switch between sites as needed.
+To embed Ticket Spot in another website, create a workspace and use the [website embed instructions](/plugins/embed-on-your-website).

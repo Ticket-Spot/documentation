@@ -11,17 +11,24 @@ Open **Events**, create or edit the event, then select **Tickets**. Create a tic
 
 Set up [brand colors and logo](../branding-and-design/brand-design) first. For Shopify events using seating, dates/time slots, access codes, or quantity controls, configure the [Ticket Selector](../plugins/connect-shopify#configure-the-ticket-selector-for-advanced-ticketing).
 
-For the ticket editor, use the field names below; older screenshots may show “Booking Fee” where the current label is “Service Fee”.
+Use the [current ticket options reference](./ticket-options-reference) to locate each field. The main editor groups settings into Details, Pricing & Access, Sales & Capacity, Check-in, Autopilot, and Seat Categories. The custom day editor uses its own section labels and is documented in [Date-specific Tickets](./day-specific-tickets).
 
 ## Sales Tax
+
+The **Sales Tax** field appears for supported non-Shopify sites. For events sold as Shopify products, configure tax in Shopify and verify the storefront checkout.
 
 Add a sales tax to your tickets, and it will be automatically applied at checkout. The configured percentage changes the checkout total; choose the rate appropriate to your event.  
 For example, if your ticket price is 50 dollar and you set a 10% sales tax, the total amount charged at checkout will be 55 dollar.
 
 > **INFO:** Leave this as it is if you don’t need to apply any tax to your ticket sales.
-![sales-tax](../assets/create-events/ticket-setup/sales-1.png)
+
 
 ## Tickets
+
+
+<Frame caption="Tickets contains seating setup, currency, event capacity, the ticket list, and promo codes. Create Ticket opens the full ticket editor.">
+  <img src="../assets/refresh/event-management/ticket-overview.png" alt="Tickets contains seating setup, currency, event capacity, the ticket list, and promo codes. Create Ticket opens the full ticket editor." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Create tickets for your event to define how attendees can register or gain access. You can set up free, paid, or donation-based tickets depending on your event type. Each ticket can have its own name, price, quantity, and sales start and end date — giving you full control over availability and pricing.
 
@@ -29,31 +36,29 @@ Create tickets for your event to define how attendees can register or gain acces
 
 Select the currency in which you want to sell your tickets. You can choose from multiple options such as USD (dollar), EUR (€), JPY (¥), GBP (£), AUD (AU$), or CAD (CA$) based on your event’s location and payment preferences.
 
-![currency](../assets/create-events/ticket-setup/currency-2.png)
-
 ## Get Paid
 
-Click the **Get Paid** button to set up how you’ll receive payouts from your ticket sales.
+Use **Get Paid** to open [payment settings](../account/get-paid). Available providers depend on your site's platform and configuration. Connect the provider you intend to use, then verify a test checkout and its payment record. Installments specifically require an enabled Stripe connection; a Square connection alone does not enable them.
 
-![paid](../assets/create-events/ticket-setup/paid-3.png)
-
-Once clicked, a **Payment Settings** window will appear with three available options to connect your preferred payment provider:
-
-- Connect Stripe
-- Connect Square
-- Connect PayPal
-
-![payment-setting](../assets/create-events/ticket-setup/payment-setting-4.png)
-
-Choose the provider you want to use and follow the on-screen steps to link your account. After connecting, verify a completed payment in the provider account. The provider controls settlement and payout timing.
+<Frame caption="Payment connections available to this Demo site. Provider details are concealed.">
+  <img src="../assets/refresh/account/payment-connections.png" alt="Current payment connection settings" />
+</Frame>
 
 ## Create Ticket
 
-Click the **Create New Ticket** button to start creating a new ticket for your event.
 
-![create-ticket](../assets/create-events/ticket-setup/create-ticket-5.png)
+<Frame caption="The ticket editor groups options into Details, Pricing &amp; Access, Sales &amp; Capacity, Check-in, and Autopilot. Seat Categories appears when assigned seating is configured.">
+  <img src="../assets/refresh/event-management/ticket-editor-tabs.png" alt="The ticket editor groups options into Details, Pricing &amp; Access, Sales &amp; Capacity, Check-in, and Autopilot. Seat Categories appears when assigned seating is configured." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Click **Create Ticket** to create a ticket. For a saved ticket, use its pencil/edit action in the ticket list.
 
 ## Basic Ticket Information
+
+
+<Frame caption="Create Ticket → Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket.">
+  <img src="../assets/refresh/event-management/ticket-details.png" alt="Create Ticket → Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 This section allows you to define the essential details for your ticket — from its visibility and visuals to access rules and validity duration.
 
@@ -61,19 +66,19 @@ This section allows you to define the essential details for your ticket — from
 
 | S.no | Field | Description |
 |------|--------|-------------|
-| 1 | **Hide / Access Code** | Use this toggle to temporarily hide a ticket from public view. When enabled, the ticket will not appear for attendees, but remains valid and can be made visible again anytime. |
-| 2 | **Images** | Add one or more images by clicking on the + button to visually represent your ticket. The images appear next to the ticket, and if multiple images are added, they will rotate automatically in a carousel display. |
-| 3 | **Ticket Name** | Enter a clear, recognizable name for your ticket. |
-| 4 | **Status** | Choose from the dropdown — On Sale, Cancelled, or Postponed — to define the current state of the ticket. |
-| 5 | **Description** | Use this box to add a short description for your ticket, such as access details, inclusions, or benefits. |
-| 6 | **Check-In Limit** | Set the maximum number of entries allowed per ticket — ideal for multi-entry scenarios like theme parks or exhibitions. Set to 0 for unlimited check-ins. Once the limit is reached, a notice will alert the host to decide on further access. |
-| 7 | **Ticket Validity Period** | Choose how long the ticket remains valid after purchase. Options include Unlimited, One Day, One Week, One Month, and One Year. Select the duration that best matches your event type or access policy. |
-
-![basic-ticket](../assets/create-events/ticket-setup/basic-ticket-6.png)
+| 1 | **Images** | Add one or more images by clicking on the + button to visually represent your ticket. The images appear next to the ticket, and if multiple images are added, they will rotate automatically in a carousel display. |
+| 2 | **Ticket Name** | Enter a clear, recognizable name for your ticket. |
+| 3 | **Status** | Choose from the dropdown — On Sale, Cancelled, or Postponed — to define the current state of the ticket. |
+| 4 | **Description** | Use this box to add a short description for your ticket, such as access details, inclusions, or benefits. |
 
 ## Hidden tickets and access codes
 
-1. Enable **Hide / Access Code** to hide the ticket from normal public selection.
+
+<Frame caption="Hidden tickets can use an access code. Shopify events also offer Include in Shopify Variant.">
+  <img src="../assets/refresh/event-management/ticket-hidden-access.png" alt="Hidden tickets can use an access code. Shopify events also offer Include in Shopify Variant." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+1. In **Pricing & Access**, enable **Hidden ticket** to hide the ticket from normal public selection.
 2. Enter an **Access Code** if attendees should be able to reveal and buy it by entering that code. Leaving the code blank does not create a code to share.
 3. On a Shopify site, review **Include in Shopify Variant**. Hidden tickets are excluded from Shopify product variants by default; enabling this explicitly includes the hidden ticket in those variants.
 4. Save the ticket and update the event. Test the public selector without a code, with the correct code, and with an incorrect code.
@@ -82,11 +87,33 @@ A ticket access code is different from a private event's access code. Hiding an 
 
 ## Membership access
 
+
+<Frame caption="Members only restricts ticket purchase to the selected active membership programs. Choose at least one eligible membership, then save the ticket and event.">
+  <img src="../assets/refresh/memberships/membership-ticket-access.png" alt="Members only restricts ticket purchase to the selected active membership programs. Choose at least one eligible membership, then save the ticket and event." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Enable Member pricing, select eligible programs, and enter a member price. This example offers a $15 member ticket against the $25 regular price.">
+  <img src="../assets/refresh/memberships/membership-ticket-price.png" alt="Enable Member pricing, select eligible programs, and enter a member price. This example offers a $15 member ticket against the $25 regular price." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
 Under **Who can purchase this ticket?**, choose **Everyone** or **Members only**. For Members only, select the eligible active membership programs. Under **Member Pricing**, enable **Offer members a special price**, select eligible memberships, and enter the member price (0 for a free ticket).
 
 These controls are independent. See [members-only tickets and member pricing](../memberships/ticket-access-and-pricing) for the one-ticket-per-verified-membership pricing limit and test cases.
 
 ## Pricing and Fees
+
+
+<Frame caption="Service fee reveals a Custom Service Fee for this ticket. Review how the resulting total appears at checkout.">
+  <img src="../assets/refresh/event-management/ticket-service-fee.png" alt="Service fee reveals a Custom Service Fee for this ticket. Review how the resulting total appears at checkout." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Pay What You Want lets buyers choose an amount and supports a Minimum Price.">
+  <img src="../assets/refresh/event-management/ticket-pricing-modes-pwyw.png" alt="Pay What You Want lets buyers choose an amount and supports a Minimum Price." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Pricing &amp; Access offers Free, Paid, and Pay What You Want. A paid ticket has a fixed price, with service fees configured separately.">
+  <img src="../assets/refresh/event-management/ticket-pricing-modes.png" alt="Pricing &amp; Access offers Free, Paid, and Pay What You Want. A paid ticket has a fixed price, with service fees configured separately." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Choose how you want to charge for this ticket:
 
@@ -94,13 +121,9 @@ Choose how you want to charge for this ticket:
 
 Select this option if you would like your attendees to register for the event at no cost.
 
-![free](../assets/create-events/ticket-setup/free-7.png)
-
 ### Paid  
 
 This option activates the **Price** field, which allows you to define the ticket cost that attendees will pay for registering for the event.
-
-![paid](../assets/create-events/ticket-setup/paid-8.png)
 
 ### Pay What You Want  
 
@@ -108,24 +131,26 @@ When you select this option, attendees have the flexibility to decide how much t
 Additionally, you can specify a minimum amount in the **Minimum Price** field.  
 For example, if you set the minimum price to 30, attendees can choose to pay 30 or any higher amount.
 
-![pay-want](../assets/create-events/ticket-setup/pay-want-9.png)
-
 ### Enable Service Fee  
 
 Toggle this option ON to apply a custom booking fee to each ticket. When enabled, the **Custom Service Fee** field becomes active, allowing you to enter a fixed amount. The specified fee will then be added to the ticket price.
 
-![currency](../assets/create-events/ticket-setup/enable-booking-10.png)
-
 ## Bulk Ticket Discounts (Volume Discount Pricing)
 
-Use this section to define pricing rules for bulk ticket purchases. Click the **Add Rule** button to create custom quantity and price pairs. For instance, if 1–4 tickets are priced at 50 each, you can add a rule to set the price at 45 each when 5 or more tickets are purchased.
 
-![volume-pricing](../assets/create-events/ticket-setup/volume-pricing-11.png)
+<Frame caption="Add a bulk pricing rule: this example changes the unit ticket price to $20 when the quantity reaches five tickets.">
+  <img src="../assets/refresh/event-management/ticket-volume-pricing.png" alt="Add a bulk pricing rule: this example changes the unit ticket price to $20 when the quantity reaches five tickets." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
->**INFO:** Add more rules anytime using **Add Rule**, or remove them using the Trash icon.
-![info](../assets/create-events/ticket-setup/enable-group-12.png)
+Use this section to define pricing rules for bulk ticket purchases. Click the **Add rule** button to create custom quantity and price pairs. For instance, if 1–4 tickets are priced at 50 each, you can add a rule to set the price at 45 each when 5 or more tickets are purchased.
 
+>**INFO:** Add more rules anytime using **Add rule**, or remove them using the Trash icon.
 ## Group Ticket Settings
+
+
+<Frame caption="A group ticket bundles quantities of saved ticket types. This example includes two Standard tickets.">
+  <img src="../assets/refresh/event-management/ticket-group-composition.png" alt="A group ticket bundles quantities of saved ticket types. This example includes two Standard tickets." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 This section lets you bundle multiple ticket types together under one group ticket — ideal for family packages, team passes, or combo offers that include different ticket types at a single price.
 
@@ -133,22 +158,23 @@ This section lets you bundle multiple ticket types together under one group tick
 
 Enable this toggle to create a bundled ticket that includes multiple tickets of different types. Attendees will receive the individual tickets within the group rather than a single group ticket.
 
-![info](../assets/create-events/ticket-setup/group-ticket-13.png)
-
 ### Group Ticket Composition 
 
-After enabling the “Enable Group Ticket” toggle, use this section to define what the group includes by clicking on the **Add Ticket** button.
-
-![info](../assets/create-events/ticket-setup/group-ticket-14.png)
+After enabling **Group ticket**, use this section to define what the group includes by clicking on the **Add Ticket** button.
 
 Specify the **Quantity** and select the **Ticket Type** from the dropdown (previously created tickets).
 
-![info](../assets/create-events/ticket-setup/quantity-15.png)
-
 > **INFO:** You can similarly add additional tickets at any time by clicking the **Add Ticket** button, or remove existing ones whenever needed by clicking the **Trash** icon
-![info](../assets/create-events/ticket-setup/info-16.png)
-
 ## Sales and Capacity Settings
+
+
+<Frame caption="Set ticket inventory separately from the minimum and maximum quantity in each order.">
+  <img src="../assets/refresh/event-management/ticket-capacity-order-limits.png" alt="Set ticket inventory separately from the minimum and maximum quantity in each order." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="This example opens sales 24 hours before the event and closes them one hour before it starts. Start sales immediately removes the opening offset.">
+  <img src="../assets/refresh/event-management/ticket-sales-window.png" alt="This example opens sales 24 hours before the event and closes them one hour before it starts. Start sales immediately removes the opening offset." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 This section helps you control when your tickets go on sale, when they stop selling, and how many can be sold — ensuring you stay within your event’s capacity limits and manage ticket availability effectively.
 
@@ -158,7 +184,7 @@ Set when ticket sales should begin relative to the event’s start time.
 
 - Specify a value in **days, hours, or minutes** before the event.
 
-- Alternatively, toggle the **Immediately** button **ON** to start sales instantly, which disables manual input.
+- Alternatively, turn **Start sales immediately** **ON** to start sales instantly, which disables manual input.
 
 ### Ticket Sales End  
 
@@ -173,9 +199,13 @@ Define how many tickets can be sold for this type. You can also set:
 - **Min Per Order:** Minimum number of tickets a buyer must purchase.  
 - **Max Per Order:** Maximum number of tickets per purchase.
 
-![create](../assets/create-events/ticket-setup/capacity-17.gif)
 
 ## Required Ticket
+
+
+<Frame caption="Require a minimum quantity of another ticket in the same order. This example requires one Standard ticket.">
+  <img src="../assets/refresh/event-management/ticket-required-ticket.png" alt="Require a minimum quantity of another ticket in the same order. This example requires one Standard ticket." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 Use **Required Ticket** to require a minimum quantity of another ticket **in the same order**. For example, a Child ticket can require at least one Adult ticket.
 
@@ -195,11 +225,29 @@ Required Ticket is available on Business and higher. If the dropdown has no choi
 
 ## Advance Purchase Window
 
-Enable **Advance Purchase Window** and enter **Days in advance** to require booking at least that many days before an event. This is a minimum booking lead time, not the maximum distance into the future a customer can book.
+
+<Frame caption="Require advance booking sets the minimum number of days before the event when this ticket can be bought.">
+  <img src="../assets/refresh/event-management/ticket-advance-purchase.png" alt="Require advance booking sets the minimum number of days before the event when this ticket can be bought." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+In **Sales & Capacity**, enable **Require advance booking** and enter **Days in advance** to require booking at least that many days before an event. This is a minimum booking lead time, not the maximum distance into the future a customer can book.
 
 For example, 10 days means dates closer than 10 days are unavailable for purchase. Check the date picker around the cutoff before promoting it, and review the event timezone and other sales-window settings.
 
 ## Check-In Timing Controls
+
+
+<Frame caption="Delayed entry opens check-in after the event starts. If both opening rules are enabled, delayed entry takes priority.">
+  <img src="../assets/refresh/event-management/ticket-checkin-rules-delayed.png" alt="Delayed entry opens check-in after the event starts. If both opening rules are enabled, delayed entry takes priority." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Set the opening time before the event and the cutoff after it starts. A cutoff alone does not prevent early scans.">
+  <img src="../assets/refresh/event-management/ticket-checkin-rules-window.png" alt="Set the opening time before the event and the cutoff after it starts. A cutoff alone does not prevent early scans." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Control how many times a ticket can be scanned and its validity after purchase.">
+  <img src="../assets/refresh/event-management/ticket-checkin-rules.png" alt="Control how many times a ticket can be scanned and its validity after purchase." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 These settings control scanning, independently of when a ticket can be purchased. They are available on Business and higher.
 
@@ -209,9 +257,14 @@ These settings control scanning, independently of when a ticket can be purchased
 | **Late Check-In Cutoff** | Enable, set **Check-in closes (after start)** and **Unit**. Controls when admission closes after the start. | 2 hours closes check-in at 20:00. |
 | **Delayed Check-In Window** | Enable, set **Check-in opens (after start)** and **Unit**. Opens admission after the event has started. | 30 minutes opens check-in at 18:30. |
 
-Delayed Check-In takes priority over Early Check-In if both are enabled. Do not set a closing time earlier than the effective opening time. Review the editor's scan-window summary and test before, inside, and after the permitted window. Check-In Limit and Ticket Validity Period remain separate constraints.
+Delayed Check-In takes priority over Early Check-In if both are enabled. Do not set a closing time earlier than the effective opening time. Review the editor's scan-window summary and test before, inside, and after the permitted window. **Entries allowed** and **Ticket Validity Period** remain separate constraints. Entries allowed is the scan limit (0 means unlimited); validity can be Unlimited, One Day, One Week, One Month, or One Year after purchase.
 
 ## Approval & Payment Settings
+
+
+<Frame caption="Require approval controls pending registration; Allow payment later provides the later-payment option.">
+  <img src="../assets/refresh/event-management/ticket-approval.png" alt="Require approval controls pending registration; Allow payment later provides the later-payment option." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 This section allows you to control how registrations are approved and when payments are collected — giving you more flexibility in managing attendees and payment timing.
 
@@ -225,49 +278,61 @@ Attendees will appear as **Pending** until approved, which applies to both free 
 Toggle this **ON** to let approved guests complete their payments at a later time.
 Ideal for corporate or sponsor-based registrations where payment is collected post-approval.
 
-![info](../assets/create-events/ticket-setup/allow-later-18.png)
-
 ## Autopilot
 
-The Autopilot tab allows you to create automated rules that modify ticket properties based on time triggers relative to your event’s start or end time. This feature helps you manage ticket visibility, pricing, or status automatically — without manual intervention.
+
+<Frame caption="An Autopilot rule combines timing relative to the event with an action. Review the resulting timeline before saving.">
+  <img src="../assets/refresh/event-management/ticket-autopilot.png" alt="An Autopilot rule combines timing relative to the event with an action. Review the resulting timeline before saving." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Autopilot can hide or show a ticket, change its price, or change its inventory.">
+  <img src="../assets/refresh/event-management/ticket-autopilot-actions.png" alt="Autopilot can hide or show a ticket, change its price, or change its inventory." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+The Autopilot tab allows you to create automated rules that modify ticket properties based on time triggers relative to your event’s start or end time. Rules can hide or show a ticket, change its price, or change its inventory.
 
 ### How It Works
 
-Click the **Add Rule** button to create your first automation rule.
-
-![info](../assets/create-events/ticket-setup/works-19.png)
+Click the **Add rule** button to create your first automation rule.
 
 Each rule defines when and how a ticket property should change, using time-based conditions and actions.
 
 | S.no | Field | Description |
 |------|--------|-------------|
-| 1 | **Enabled** | Toggle to activate or deactivate a rule. Disabled rules remain saved but inactive. |
+| 1 | **Enabled** | Shown for saved rules. Turn a rule on or off; disabled rules remain saved but inactive. |
 | 2 | **Trigger Value** | Set the numerical trigger value (e.g., 1). |
 | 3 | **Unit** | Choose Minutes, Hours, or Days. |
 | 4 | **Timing** | Select Before Event Starts or Before Event Ends. |
-| 5 | **Action Type** | Choose what property to modify — Hide/Show Ticket, Change Price, Change Capacity, etc. |
-| 6 | **Action** | Define the specific action to perform based on the Action Type. |
+| 5 | **Action** | Choose Hide ticket, Show ticket, Change price, or Change inventory. The current editor combines the action type and action choice. |
+| 6 | **New value** | Enter the new amount for Change price or Change inventory. Hide/Show needs no amount. |
 
-![info](../assets/create-events/ticket-setup/rule-20.png)
-
->**INFO:** You can similarly add additional rules at any time by clicking the **Add Rule** button, or remove existing ones whenever needed by clicking the **Trash** icon.
-![info](../assets/create-events/ticket-setup/info-20.png)
-
+>**INFO:** You can similarly add additional rules at any time by clicking the **Add rule** button, or remove existing ones whenever needed by clicking the **Trash** icon.
 Click on the **Create** button to proceed. Your ticket will be created successfully.
-
-![create](../assets/create-events/ticket-setup/create-21.png)
 
 ## Manage Tickets
 
-Once your tickets are created, you can manage them directly from the **Tickets** list. You can **edit, duplicate**, or **delete** tickets as needed — giving you full flexibility to keep your event details accurate and organized.
+<Frame caption="Compare inventory, sold tickets, and what remains available to sell. The row controls edit, duplicate, and delete; the left handle changes order.">
+  <img src="../assets/refresh/event-management/ticket-management.png" alt="Saved ticket table with Create Ticket, Ticket inventory, and Available to sell highlighted" />
+</Frame>
 
-| Action | Description |
-|--------|-------------|
-| **Edit Ticket** | Click the **Edit** icon next to a ticket to modify its details. You can update fields like name, price, quantity, validity, or status at any time before the event starts. Editing helps you make quick adjustments — for example, changing a ticket’s price, updating its availability, or correcting a typo. |
-| **Duplicate Ticket** | Use the **Duplicate** option to instantly create a copy of an existing ticket. This is especially useful when you want to create similar tickets (like “Early Bird” and “Regular”) without re-entering all details manually. After duplicating, you can edit the new ticket to adjust pricing, capacity, or timing as needed. |
-| **Delete Ticket** | Select **Delete** to permanently remove a ticket that’s no longer required. This helps maintain a clean and organized list. Once deleted, the ticket and its related data cannot be recovered, so make sure to confirm before deleting. |
+The saved ticket table shows **Name**, **Price**, **Ticket inventory**, **Sold**, **Available to sell**, status, and row actions. **Available to sell** can be lower than inventory because event capacity is shared across ticket types. A group ticket uses the number of attendee spots in its composition; the table shows that requirement when applicable.
 
-![create](../assets/create-events/ticket-setup/manage-22.gif)
+The **Event capacity** panel shows used and remaining attendee spots, or **Unlimited**. Sales stop when a ticket's inventory or the overall event capacity is reached. Status messages distinguish **Ticket sold out**, **Event at capacity**, and **Unavailable**.
+
+- Use the pencil to **Edit ticket**.
+- Use **Duplicate ticket** to create a similar offer, then review its name, price, inventory, dates, and restrictions.
+- Drag the row handle to change ticket order. Sorting a column changes the table view; dragging changes the saved order.
+- **Delete ticket** opens **Confirm Delete**. **No** keeps the ticket; **Yes** confirms removal. Do not use deletion to handle a paid attendee refund.
+
+<Accordion title="Delete confirmation">
+
+<Frame caption="Delete ticket asks for confirmation. Choose No to keep the ticket; this example was canceled.">
+  <img src="../assets/refresh/event-management/ticket-management-delete-confirmation.png" alt="Confirm Delete dialog with No and Yes buttons" />
+</Frame>
+
+</Accordion>
+
+Saving the main ticket editor creates or updates the ticket immediately. The event's other unsaved fields have a separate Save action. If the ticket saves but its seat-category update fails, retry and verify the category mappings before selling it.
 
 ## Promo Codes
 
@@ -275,35 +340,49 @@ Promo Codes allow you to offer **discounts or special pricing** to your attendee
 
 To create a new promo code, click **Create Promo Code**.
 
-![create](../assets/create-events/ticket-setup/promo-code-23.png)
-
 ## Promo Code Setup Fields
 
-| S.no | Field | Description |
-|------|--------|-------------|
-| 1 | **Code Name** | Enter a unique code attendees will use at checkout. |
-| 2 | **Multi-Event Code** | Enable to make the code valid across all events. |
-| 3 | **Ticket Limit** | Choose Unlimited or Limited, and specify the number if limited. |
-| 4 | **Discount Amount** | Choose fixed amount or percentage (mutually exclusive). |
-| 5 | **Promo Code Starts** | Set to Now or Scheduled Time. |
-| 6 | **Promo Code Ends** | Set to When Ticket Sales End or a Scheduled Time. |
 
-![create](../assets/create-events/ticket-setup/setup-field-24.png)
+<Frame caption="Set the code name, percentage or fixed discount, eligible tickets and total discounted-ticket limit. This example limits DEMO10 to 100 discounted Standard tickets.">
+  <img src="../assets/refresh/event-management/promo-code-fields.png" alt="Set the code name, percentage or fixed discount, eligible tickets and total discounted-ticket limit. This example limits DEMO10 to 100 discounted Standard tickets." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-Once you’ve configured the general promo code details, you can further refine how and where the discount applies using the fields below:
+| Control | What it does |
+|---|---|
+| **Code name** | The code the buyer enters. |
+| **Discount** | Choose a percentage or fixed amount using the adjacent selector. |
+| **Apply to tickets** | Choose the eligible ticket types for an event-specific code. |
+| **Ticket limit** | **Unlimited** or **Limited to** a total number of discounted tickets. |
+| **Starts** | **Immediately** or **Schedule** a date and time. |
+| **Ends** | **Event End** or **Schedule** a date and time. |
+| **Multi-Event Code** | Apply across all current and future events. The ticket-specific picker is hidden when enabled. |
+| **Volume Discounts** | Require a **Minimum Quantity** before the promo discount applies. |
+| **Sync with Shopify** | Create and maintain a matching discount code in the connected Shopify store. |
 
-| S.no | Field | Description |
-|------|--------|-------------|
-| 7 | **Enable Volume Discounts** | Activate bulk purchase discounts by specifying a Minimum Quantity. |
-| 8 | **Apply to Tickets** | Choose whether the promo applies to all tickets or specific ticket types. |
+Choose **Add** to create the code. Advanced controls depend on the site's plan. A promo code is separate from a hidden ticket's access code; enable the appropriate buyer input in [Checkout settings](../branding-and-design/checkout-settings).
 
-![create](../assets/create-events/ticket-setup/discount-25.png)
+<Accordion title="Scheduling, volume discounts and multi-event codes">
 
-Click on the **Add** button to proceed. Your promo code will be created successfully.
+<Frame caption="Choose Immediately or Schedule for the start, and Event End or Schedule for the end. A scheduled code has its own start and end date/time.">
+  <img src="../assets/refresh/event-management/promo-code-fields-schedule.png" alt="Choose Immediately or Schedule for the start, and Event End or Schedule for the end. A scheduled code has its own start and end date/time." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![create](../assets/create-events/ticket-setup/add-26.png)
+<Frame caption="Volume Discounts adds a minimum ticket quantity. Multi-Event Code applies to current and future events; Sync with Shopify creates and maintains a matching Shopify discount code.">
+  <img src="../assets/refresh/event-management/promo-code-fields-advanced.png" alt="Volume Discounts adds a minimum ticket quantity. Multi-Event Code applies to current and future events; Sync with Shopify creates and maintains a matching Shopify discount code." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Multi-Event Code applies across current and future events. Its ticket-specific picker is hidden while this site-wide option is enabled.">
+  <img src="../assets/refresh/event-management/promo-code-fields-shared.png" alt="Multi-Event Code applies across current and future events. Its ticket-specific picker is hidden while this site-wide option is enabled." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+</Accordion>
 
 ## Manage Promo Codes
+
+
+<Frame caption="The promo list offers copy, usage, edit and delete actions. Open the editor to verify the saved schedule; Import from Shopify opens the connected-store import workflow.">
+  <img src="../assets/refresh/event-management/promo-code-fields-list.png" alt="The promo list offers copy, usage, edit and delete actions. Open the editor to verify the saved schedule; Import from Shopify opens the connected-store import workflow." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
 After creating promo codes, you can manage them directly from the **Promo Codes** list.
 You can **copy, view usage, edit**, or **delete** any existing promo code — helping you stay organized and monitor how your discounts are performing.
@@ -314,8 +393,6 @@ You can **copy, view usage, edit**, or **delete** any existing promo code — he
 | **View Usages** | Check how often the promo has been used. |
 | **Edit Promo Code** | Modify any promo code details. |
 | **Delete Promo Code** | Permanently delete a promo code (cannot be recovered). |
-
-![create](../assets/create-events/ticket-setup/promos-27.gif)
 
 ## Verify the complete ticket flow
 
@@ -331,3 +408,12 @@ See [all event creation steps](./create-event-overview), [tracking links](./trac
 - [Seating charts and ticket categories](/seating-charts/create-and-assign)
 - [Timed entry and passes](/event-management/timed-entry-and-passes)
 - [Registration waivers](/event-management/waivers)
+
+## Shopify customer-tag discounts
+
+
+<Frame caption="Open a saved promo’s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag.">
+  <img src="../assets/refresh/event-management/promo-shopify-tags.png" alt="Open a saved promo’s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Create and save the promo code first. Edit the saved code, open **Shopify Tags**, enter the exact customer tag and select **Add Tag**. Tags must match capitalization. A matching customer can receive that promo automatically at checkout. Remove a mapping with its tag remove control, and test a signed-in customer with and without the tag. This is a promo rule, separate from event tags and widget filtering.

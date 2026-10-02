@@ -1,130 +1,110 @@
 ---
-title: "Dates, times, and recurring schedules"
-description: "Create one-time, recurring, specific-date, and time-based event schedules and review their occurrences."
+title: "Dates and Times"
+description: "Choose one-time, recurring, specific-date, time-slot, or undecided-date schedules and configure whole-event passes."
 ---
 
-Once you are done with defining the Event Details, the next step is to configure the **Date & Times** section, which helps you define when your event takes place. You can set up single-day, recurring, or time-based schedules depending on your event format. Adding the correct date and time ensures your event appears correctly for attendees.
+Open **Dates & Times** in the event editor. Choose the schedule format before taking registrations. Once confirmed attendees exist, the editor restricts format changes; review cancellation and attendee transfer before restructuring an event that is already on sale.
 
-- [One-Time Event](#one-time-event)
-- [Recurring](#recurring)
-- [No Date in Mind](#no-date-in-mind)
-- [Specific Dates](#specific-dates)
-- [Time Based](#time-based)
+The event's **Timezone** is in **Event Details**. Widget language, date formatting, and visitor-timezone conversion are separate [language and locale settings](../branding-and-design/language-and-locale).
 
-
-> **Note:** Existing registrations can restrict changes to the schedule type. Review the warning shown in the editor before changing an event with attendees. Do not cancel an event merely to edit its schedule without first checking the available rescheduling controls.
+<Frame caption="An event with confirmed attendees has disabled schedule-format choices.">
+  <img src="../assets/refresh/event-management/date-format-locked.png" alt="Disabled date-format choices on an event with existing attendees" />
+</Frame>
 
 ## One-Time Event
 
-Select this option if your event is scheduled to happen only once on a specific date and time. It’s ideal for events like concerts, product launches, or seminars that don’t repeat.
+Choose **One-Time Event**, then set **Start Date & Time** and **End Date & Time**. Enable **All Day Event** when specific hours are not appropriate. Save the event and check its displayed date and timezone.
 
-**Instruction:**  
-Select the **Start Date**, **Start Time**, **End Date**, and **End Time** for your event. This determines when your event will begin and end, ensuring the correct schedule is displayed to attendees.
-
-![one-time-event](../assets/create-events/datetime/one-time-event.gif)
-
-
-> **Tip:** Check the **All Day Event** box if your event runs for the entire day or doesn’t have a specific start and end time. This helps display your event properly on the schedule without fixed hours.
-![onetime-all-day-event](../assets/create-events/datetime/onetime-all-day-event.png)
-
+<Frame caption="Dates &amp; Times → One-Time Event provides start/end dates and times and an All Day Event option.">
+  <img src="../assets/refresh/event-management/date-one-time.png" alt="Dates &amp; Times → One-Time Event provides start/end dates and times and an All Day Event option." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
 ## Recurring
 
-Recurring Events let you schedule events that repeat automatically on a regular pattern — daily, weekly, monthly, or yearly — without creating each one manually. This is ideal for ongoing activities like classes, workshops, or meetings.
+Choose **Recurring**, select **Repeat Frequency**, and set **Start Date & Time** and **Series End Date & Time**. The dates bound the series; the times define the duration of each occurrence.
 
-When you select **Recurring**, you’ll be able to:
+| Frequency | Additional setup |
+|---|---|
+| **Daily** | Check the series dates and daily start/end times. Review the warning if an overnight range could overlap occurrences. |
+| **Weekly** | Select **Repeat on these days of the week**. Only weekdays within the selected series range are available. |
+| **Monthly** | Optionally use **Months to repeat** to move the series end date forward. Check the displayed occurrence count; a short range may create only one occurrence. |
+| **Yearly** | Optionally use **Years to repeat** and review the listed dates and occurrence count. |
 
-### 1. Set Start Date & Time and End Date & Time
-Choose the date and time of when your event begins and ends. The system will generate all recurring occurrences between these dates and time pairs.
+<Frame caption="Recurring schedules define a repeat frequency, series start and end, and the time range of each occurrence. This is an unsaved configuration example.">
+  <img src="../assets/refresh/event-management/date-recurring.png" alt="Recurring schedules define a repeat frequency, series start and end, and the time range of each occurrence. This is an unsaved configuration example." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
-### 2. Choose a Repeat Frequency
+<Frame caption="Weekly recurring events let you choose the repeat weekdays. Monthly and yearly frequencies expose their own repeat rules.">
+  <img src="../assets/refresh/event-management/date-recurring-rules.png" alt="Weekly recurring events let you choose the repeat weekdays. Monthly and yearly frequencies expose their own repeat rules." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
-From the dropdown, select how often your event repeats between the selected Start Date & Time and End Date & Time:
+<Accordion title="See yearly recurrence and its occurrence summary">
+<Frame caption="Yearly recurrence includes Years to repeat as an optional helper for setting the series end date. Check the occurrence summary before saving.">
+  <img src="../assets/refresh/event-management/date-recurring-rules-yearly.png" alt="Yearly recurrence includes Years to repeat as an optional helper for setting the series end date. Check the occurrence summary before saving." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
-- **Daily:**  
-The event will occur every day within your selected dates and time range.
+</Accordion>
 
-![recurring-daily](../assets/create-events/datetime/recurring-daily.gif)
-
-- **Weekly:**  
-The event will repeat every week on your chosen days (e.g., Monday, Wednesday, Friday).
-
-![recurring-weekly](../assets/create-events/datetime/recurring-weekly.gif)
-
-> **For example**, if you have selected the start date as 22/10/2025 and the end date as 24/10/2025, you will only be able to select the days of the week that fall within the specified start and end dates, i.e., Wednesday, Thursday, and Friday.
-![weekly-note](../assets/create-events/datetime/weekly-note.png)
-
-- **Monthly:**  
-The event will repeat on the same dates and time each month (e.g., 15th of every month).
-
-  ✅ **Using dropdown:**  
-Use the dropdown to select how many months (1–12) you want the event to repeat from its start date. This helps when you need a set duration, like a 6-month course or a 12-month membership.
-![recurring-monthly](../assets/create-events/datetime/recurring-monthly.gif)
-
-  ✅**Using the end date:**  
-If you want your event to repeat for more than 12 months (for example, 13 months or longer), set a custom end date from the calendar. This lets you extend the recurrence beyond the dropdown limit while keeping your event schedule accurate.
-![monthly-end-date](../assets/create-events/datetime/monthly-end-date.gif)
-
-- **Yearly:**  
-The event will occur once every year on the same dates and time.
-
-   ✅**Using dropdown:**  
-Use the dropdown to select how many years (1–10) you want the event to repeat from its start date. This is useful when scheduling long-term events — for example, a 3-year contract renewal or a 5-year maintenance plan.
-![recurring-yearly](../assets/create-events/datetime/recurring-yearly.gif)
-
-   ✅**Using End Date:**  
-If you want your event to repeat for more than 10 years (the default dropdown limit), you can manually set a custom end date from the calendar. This allows you to extend the recurrence beyond the dropdown limit while keeping your event timeline accurate.
-![yearly-end-date](../assets/create-events/datetime/yearly-end-date.gif)
-
+After saving, inspect **Event days** and its counts. **Upcoming Only** and **Hide Canceled** change the list you see; check those filters when a date appears to be missing.
 
 ## No Date in Mind
 
-Select this when your event date is not yet confirmed, but you still want to start setting up other details like venue and tickets.
+Choose **No Date In Mind** if the date is not confirmed yet. Continue configuring the event details and tickets, then review the date and any existing registrations before changing the schedule format.
 
-**Example:** Ideal for tentative events awaiting final date confirmation.
+<Frame caption="No Date In Mind lets you configure an event before its date is confirmed.">
+  <img src="../assets/refresh/event-management/date-no-date.png" alt="No Date In Mind lets you configure an event before its date is confirmed." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
-![no-date-in-mind](../assets/create-events/datetime/no-date-in-mind.png)
+<Frame caption="Monthly recurrence includes Months to repeat as an optional helper for setting the series end date. Review the occurrence summary before saving.">
+  <img src="../assets/refresh/event-management/date-recurring-rules-monthly.png" alt="Monthly recurrence includes Months to repeat as an optional helper for setting the series end date. Review the occurrence summary before saving." />
+</Frame>
 
 ## Specific Dates
 
-Use this option for events that take place over multiple days — such as a festival, conference, or tournament. It lets you set a **Start Date & Time** and an **End Date & Time** for each event day instead of applying one fixed schedule to all days.
+Use **Specific Dates** when you need individual event days, such as a festival with different performances.
 
-Click **➕ Add Specific Date** to open the date selector. Choose the **Start Date & Time** (when your event begins) and the **End Date & Time** (when it ends for that day), then click **Add Date** to save it.
+1. Choose **Specific Dates**, then **Manage dates & times**.
+2. Select **+ Add dates**.
+3. Choose **Select dates** for individual calendar dates or **Select a range** for a date range.
+4. Set the **Time** range. Use **+ Add another time** for additional sessions, or **All day** when appropriate.
+5. Select **Add [number] dates** to add the selected dates to the manager.
+6. Review the dates and times, adjust the ones that differ, and select **Save**. Review **Save this schedule?**, then select **Save [number] changes**. Verify the resulting date list.
 
-If your event continues on other days, click **➕ Add Specific Date** again to add more dates. Each entry appears under **Occurrences**, where you can review, reschedule, or cancel it anytime before publishing.
+<Frame caption="Manage dates &amp; times → Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them.">
+  <img src="../assets/refresh/event-management/date-specific.png" alt="Manage dates &amp; times → Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
 
-**Example:**  
-Suppose you’re hosting a 3-day cultural festival. You can set:  
-- **Day 1:** 16 Oct 2025, 10:00 AM – 6:00 PM  
-- **Day 2:** 24 Oct 2025, 9:00 AM – 8:00 PM  
-- **Day 3:** 30 Oct 2025, 11:00 AM – 7:00 PM  
-
-Each date can be different and can have its own start and end time, giving you full control over your event schedule.
-
-![specific-dates](../assets/create-events/datetime/specific-dates.gif)
-
-
-> **Tip:** Check the **All Day Event** box if your event runs for the entire day or doesn’t have a specific start and end time. This helps display your event properly on the schedule without fixed hours.
-![spec-date-all-day-event](../assets/create-events/datetime/spec-date-all-day-event.png)
-
+The shared times apply to each selected date. You can adjust individual dates afterwards. See [custom day tickets](./day-specific-tickets) for date-specific titles, ticket choices, capacity, and waitlist overrides.
 
 ## Time Based
 
-Use this option to organize **time slot-based events** that run over a specific period — for example, from 16 Oct to 16 Dec — with multiple sessions each day. Instead of creating separate events for each day, you can set them up once using **Time-Based** to automatically repeat your chosen time slots throughout the duration.
+Choose **Time-Based**, then **Add Times** to create available time slots.
 
-Click **➕ Add Times** to start. Select your **Start Date (16 Oct)** and **End Date (16 Dec)**. Then, choose your **Start Time** and **End Time** for each session — for example:
-- 2:00 PM – 3:00 PM  
-- 4:00 PM – 5:00 PM  
-- 7:00 PM – 8:00 PM
+- **Manual Entry:** choose **Day 1** and use **Add Another Day** for additional dates sharing the same slots.
+- **Date Range:** select **Start Date**, **End Date**, and **Days of Week**. Review the calculated date/slot count, then use **Generate [number] Dates**.
+- **Available Time Slots:** set each **Start Time** and **End Time**, use **Add Time Slot** to add another range, or remove an unneeded slot.
 
-If you want to add more sessions, click **➕ Add Time Slot** and repeat the process. Once done, click **Create** to save your schedule.
+Review the complete schedule and select **Create** when ready. Check the saved date list and the buyer's date/time selection before opening sales.
 
-**Example:**  
-Suppose you’re hosting an **MMA training session** from **16 Oct to 16 Dec**. You can set three time slots each day — **2:00 PM** to **3:00 PM**, **4:00 PM** to **5:00 PM**, and **7:00 PM** to **8:00 PM**.  
+<Frame caption="Time-Based → Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation.">
+  <img src="../assets/refresh/event-management/date-time-slots.png" alt="Time-Based → Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation." style={{ width: "100%", maxWidth: "500px", height: "auto" }} />
+</Frame>
 
-The system will automatically repeat these time slots for every day within the selected duration, so you don’t have to create each day’s schedule manually.
+<Accordion title="See Date Range and weekday selection">
+<Frame caption="Date Range applies the same set of available time slots across the chosen start and end dates.">
+  <img src="../assets/refresh/event-management/date-time-slots-range.png" alt="Date Range applies the same set of available time slots across the chosen start and end dates." style={{ width: "100%", maxWidth: "500px", height: "auto" }} />
+</Frame>
 
-![time-based](../assets/create-events/datetime/time-based.gif)
+</Accordion>
 
+For the complete booking workflow, see [timed entry, recurring classes, and passes](./timed-entry-and-passes). Recurring dates alone do not create membership access.
 
-For the full booking workflow, see [timed entry, recurring classes, and passes](/event-management/timed-entry-and-passes). Recurring dates alone do not create membership access.
+## Individual dates and whole-event passes
+
+For **Specific Dates**, **Sell a pass for the whole event** adds an all-days offer alongside individual dates. Click a date’s row to open its drawer and choose shared or custom tickets and override its title, capacity, or waitlist threshold.
+
+<Frame caption="Specific Dates can offer one pass covering the whole event alongside individual date tickets. Customize each date separately after creating its schedule.">
+  <img src="../assets/refresh/event-management/whole-event-pass.png" alt="Specific Dates can offer one pass covering the whole event alongside individual date tickets. Customize each date separately after creating its schedule." style={{ width: "100%", maxWidth: "1000px", height: "auto" }} />
+</Frame>
+
+Follow [Customize individual dates and day tickets](./day-specific-tickets) before changing a date that is already on sale.

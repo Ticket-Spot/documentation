@@ -17,17 +17,21 @@
             "group": "Getting started",
             "pages": [
               "getting-started/platform-overview",
-              "branding-and-design/design-overview"
+              "branding-and-design/design-overview",
+              "getting-started/language-and-locale-faq"
             ]
           },
           {
             "group": "Event Management",
             "pages": [
               "event-management/create-event-overview",
+              "event-management/event-options-reference",
               "event-management/eventdetails",
               "event-management/datetime",
+              "event-management/day-specific-tickets",
               "event-management/venuelocation",
               "event-management/ticket-setup",
+              "event-management/ticket-options-reference",
               "event-management/event-add-ons",
               "event-management/email-communication",
               "event-management/sms-communication",
@@ -57,6 +61,7 @@
           {
             "group": "Integrations",
             "pages": [
+              "integrations/integrations-overview",
               "integrations/eventbrite",
               "integrations/tickettailor",
               "integrations/ticketspice",
@@ -97,17 +102,32 @@
                 "group": "Widget Customization",
                 "pages": [
                   "branding-and-design/widget-customization-overview",
+                  "branding-and-design/quick-settings",
                   "branding-and-design/display-settings",
                   "branding-and-design/checkout-settings",
                   "branding-and-design/text-settings",
                   "branding-and-design/layout",
                   "branding-and-design/filters",
-                  "branding-and-design/user-search-filter"
+                  "branding-and-design/user-search-filter",
+                  {
+                    "group": "All Widget Options",
+                    "pages": [
+                      "branding-and-design/widget-design-reference",
+                      "branding-and-design/widget-display-reference",
+                      "branding-and-design/widget-layout-reference",
+                      "branding-and-design/widget-event-filters-reference",
+                      "branding-and-design/widget-visitor-filters-reference",
+                      "branding-and-design/widget-checkout-reference",
+                      "branding-and-design/widget-text-reference"
+                    ]
+                  }
                 ]
               },
               "branding-and-design/tickets-and-passes",
               "branding-and-design/ticket-and-receipt-attachment-design",
               "branding-and-design/attendee-communication-design",
+              "branding-and-design/language-and-locale",
+              "branding-and-design/multilingual-communications",
               "branding-and-design/attendee-ticket-page",
               "branding-and-design/design-options-reference",
               "branding-and-design/white-label-setup"
@@ -119,8 +139,9 @@
               "analytics/analytics-overview",
               "analytics/sales-analytics",
               "analytics/check-in-analytics",
+              "analytics/event-view-analytics",
               "analytics/abandoned-cart-analytics",
-              "analytics/event-view-analytics"
+              "analytics/email-analytics"
             ]
           },
           {
@@ -164,6 +185,7 @@
             "group": "Plugins",
             "pages": [
               "plugins/connect-shopify",
+              "plugins/shopify-ticket-selector",
               "plugins/connect-wix",
               "plugins/connect-lovable",
               "plugins/connect-wordpress",
@@ -174,7 +196,8 @@
             "group": "Seating Charts",
             "pages": [
               "seating-charts/create-and-assign",
-              "seating-charts/advanced-layouts"
+              "seating-charts/advanced-layouts",
+              "seating-charts/seat-selection"
             ]
           },
           {

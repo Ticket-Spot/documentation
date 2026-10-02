@@ -1,54 +1,35 @@
 ---
-title: Manage Invitations
-description: "Review team invitations, resend an invitation, change access, or remove a team member."
+title: "Manage invitations"
+description: "Review active members and pending invitations, change a member's role, resend invitations, or remove access."
 ---
 
-Managing invitations helps you control access, update roles, or remove users who haven’t joined yet. Each pending or active team member has a menu where you can take quick actions such as updating their role, resending their invite, or removing them from your team.
+Open **Invite Team** for the selected workspace. Use the row's three-dot menu for actions; the available actions depend on whether the row is an active member or a pending invitation.
 
+## Active Members
 
-**Step 1**: Log in to your **Ticket Spot** account and click on the **Invite Team** tab from the top navigation bar to open the team management page.
+The table shows **Team Member**, **Role**, **Account Status**, and **Invited**. An account status of **Signed Up** or **Pending** describes account registration. It is separate from the dedicated pending-invitation list. The owner row is marked **Owner** and has no management menu.
 
-![invite-team-tab](../assets/team/manage-invitations/invite-team-tab.png)
+<Frame caption="Invite Team separates Active Members from Pending Invitations. The owner row has no removal menu; personal email values are concealed.">
+  <img src="../assets/refresh/team/team-members.png" alt="Invite Team separates Active Members from Pending Invitations. The owner row has no removal menu; personal email values are concealed." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-**Step 2**:Select the invitation you want to manage and click the vertical ellipsis (⋮) next to it to open the available actions.
+| Action | What happens |
+|---|---|
+| **Change Role** | Opens the role editor. Choose a role and select **Update**. |
+| **Resend Invitation** | Sends the invitation email again. |
+| **Remove** | Opens **Confirm Removal**. Confirm to remove the member's workspace access, or cancel to keep it. |
 
-![list-options](../assets/team/manage-invitations/list-options.png)
+## Pending Invitations
 
-## Change Role
-Select **Change Role** to update the team member’s access. This option lets you assign a new role if their responsibilities change or if they need more (or less) permission within your Ticket Spot account.
+The table shows **Email**, **Role**, **Status**, **Expires**, and **Sent**. Status identifies pending or expired invitations.
 
-1. Select **Change Role** from the list of options to update the member’s access level.
+<Frame caption="Pending Invitations lists invitations awaiting acceptance, including their role and expiry status. This Demo site currently has no pending invitations.">
+  <img src="../assets/refresh/team/team-members-pending.png" alt="Pending Invitations lists invitations awaiting acceptance, including their role and expiry status. This Demo site currently has no pending invitations." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![change-role-btn](../assets/team/manage-invitations/change-role-btn.png)
+| Action | What happens |
+|---|---|
+| **Resend Invitation** | Sends another invitation to the listed email address. |
+| **Delete** | Opens **Confirm Deletion** for the pending invitation. Confirm to remove it, or cancel to keep it. |
 
-2. Choose the **new role** from the list to update the team member’s permissions, then click **Update** to save the changes.
-
-![update-btn](../assets/team/manage-invitations/update-btn.png)
-
-## Resend Invitation
-Use this option when a team member hasn’t accepted their invite or missed the original email.
-
-1. Select **Resend Invitation** from the list of options to send a new invite link to the team member.
-![resend-invitation](../assets/team/manage-invitations/resend-invitation.png)
-
-
-2. The system will resend the invitation to their email so they can join your team, and a confirmation message will appear once the invite is sent.
-
-![success-resend-invite](../assets/team/manage-invitations/success-resend-invite.png)
-
-
-## Remove
-Use this option to delete a pending or existing team member from your list and remove their access.
-
-1. Select **Remove** from the list of options to delete the team member from your account.
-
-![remove-btn](../assets/team/manage-invitations/remove-btn.png)
-
-
-2. A confirmation window will appear. Click **Yes** to remove the member or **No** to cancel the action.
-![confirm-remove](../assets/team/manage-invitations/confime-remove.png)
-
-
-A confirmation message will appear indicating that the team member has been successfully removed.
-
-![success-remove](../assets/team/manage-invitations/success-remove.png)
+To invite someone with a new role, follow [Invite team members](./invite-team-roles). Deleting an invitation and removing an active member are different actions; check the tab and email before confirming.

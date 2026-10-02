@@ -1,34 +1,32 @@
 ---
-title: "Visitor search filters"
-description: "Enable visitor-facing search controls for venue, city, category, date, and other event filters."
+title: "Visitor search and filters"
+description: "Give visitors keyword, date, category, language, and location controls for browsing your events."
 ---
 
-**Visitor search & filters** enable visitors to quickly filter event listings using criteria such as venue,
-city, category, date, and more. These filters streamline the browsing experience by displaying
-only the events that align with the visitor’s selected preferences, helping them find relevant
-options with minimal effort.
+Open **Design → Widget → All Settings → Visitor search & filters**.
 
+Enable **Show event search** for a keyword box. Choose the venue, city, region, country, category, language, month, and week filters appropriate to your event data. See [every visitor-filter option](./widget-visitor-filters-reference).
 
-Click on the dropdown menu and select **Visitor search & filters**. You will be navigated to the **User
-Search Filter Design** settings.
+Edit placeholders under **Text → Search filters**. Edit their appearance under **Design → Customize components → Visitor search & filters**. Automatic search-filter translation is under **Text → Event details**.
 
-![filters](../assets/branding-and-design/user-search-filter/filters-1.png)
+Wait for saving, then test selecting and clearing each filter on desktop and mobile. Visitors only search the events already included by the widget's [Event Filters](./filters), publication status, and applicable limits.
 
-The table below displays each filter field along with its description.
+## Filter controls
 
-| Field               | Description                                                                 |
-| ------------------- | --------------------------------------------------------------------------- |
-| **Show Event Search**   | Enables a search bar for users to search events by title or keyword.        |
-| **Show Venue Filter**   | Adds a filter allowing users to narrow events by venue.                     |
-| **Show City Filter**    | Allows users to filter events based on city.                                |
-| **Show Region Filter**  | Let's users filter events by region.                                        |
-| **Show Country Filter** | Displays a filter for selecting events by country.                          |
-| **Show Language Filter** | Enables filtering events based on language preferences.                    |
-| **Show Month Filter**   | Allows users to refine events by month.                                     |
-| **Show Week Filter**    | Adds a filter to browse events by week of the year.                         |
-| **Show Category Filter** | Let's users filter events by event category or type.                       |
+<Frame caption="Visitor search and filters narrow the events already included in the widget. Turn on keyword search and the category, date, or location filters your visitors need.">
+  <img src="../assets/refresh/branding-and-design/widget-visitor-filter-settings.png" alt="Visitor search and filters narrow the events already included in the widget. Turn on keyword search and the category, date, or location filters your visitors need." style={{ width: "100%", maxWidth: "520px", height: "auto" }} />
+</Frame>
 
-![filters](../assets/branding-and-design/user-search-filter/fields-2.gif)
+<Accordion title="Location and language controls">
 
-A live preview of each setting appears in the right panel, allowing you to confirm the design
-before applying it.
+<Frame caption="Location and language filters use the event’s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design.">
+  <img src="../assets/refresh/branding-and-design/widget-visitor-filter-settings-location.png" alt="Location and language filters use the event’s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design." style={{ width: "100%", maxWidth: "520px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+## Visitor example
+
+<Frame caption="Visitors can combine keyword search with enabled category and month filters. This search narrows the Demo widget to its matching yoga event.">
+  <img src="../assets/refresh/branding-and-design/widget-visitor-filter-use.png" alt="Visitors can combine keyword search with enabled category and month filters. This search narrows the Demo widget to its matching yoga event." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>

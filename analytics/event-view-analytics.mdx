@@ -1,106 +1,56 @@
 ---
-title: "Event View Analytics"
-description: "Review event-page views, conversions, and visitor locations to assess event promotion."
+title: "Traffic analytics"
+description: "Compare event views, conversion activity, visitor locations, and traffic exports."
 ---
 
-The **Event View Analytics** dashboard helps you understand how people are viewing your event page. You can track total views, conversions, and visitor locations and see how different locations perform over time.
+Open **Analytics**, select an event or occurrence, and choose **Traffic**. Use **Range** to set the analysis period. The screenshots use illustrative data.
 
+## Metrics and charts
 
-## Navigation
+| Metric | Meaning |
+| --- | --- |
+| **Total Views** | Recorded event-view activity in the selected period. Repeat views can increase this number. |
+| **Total Conversions** | Distinct tracked sessions with a successful payment/registration completion. |
+| **Conversion Rate** | Converting sessions divided by total event views. |
+| **Unique Locations** | Distinct visitor locations in the report. |
 
-**Step 1:** Log in to your **Ticket Spot** account and click the **Analytics** tab from the top navigation bar.
+<Frame caption="Illustrative analytics data. Traffic compares views, conversions, conversion rate, and visitor locations.">
+  <img src="../assets/refresh/analytics/analytics-views.png" alt="Traffic compares views, conversions, conversion rate, and visitor locations." />
+</Frame>
 
-![analytics-tab](../assets/analytics/event-view-analytics/analytics-tab.png)
-
-**Step 2:** Click on the **Analytics Type drop-down** menu and select **Event View Analytics**.
-
-![analytics-type](../assets/analytics/event-view-analytics/analytics-type.gif)
-
-
-Your dashboard will instantly update to show all event view–related insights.
-
-
-## Select Event
-
-Use the **Select Event** dropdown to choose the event you want to analyze.
-
-![select-event](../assets/analytics/event-view-analytics/select-event.gif)
-
-
-Once selected, all metrics, graphs, and tables will update based on that event’s view activity.
-
-
-## Date Filters
-
-You can filter your analytics by preset ranges like **1 day**, **7 days**, or **1 year**, or choose a **custom date range** using the calendar.
-
-![date-filter](../assets/analytics/event-view-analytics/date-filter.gif)
-
-The dashboard updates automatically based on your chosen timeframe.
-
-
-## Summary Metrics
-
-Get a quick snapshot of your event's view performance.
-
-| Ref No. | Metric Name        | Description                                              |
-|--------|---------------------|----------------------------------------------------------|
-| 1.     | **Total Views**         | Shows how many times your event page was viewed.        |
-| 2.     | **Total Conversions**   | Displays the number of viewers who converted (e.g., purchased or registered). |
-| 3.     | **Conversion Rate**     | Shows the percentage of viewers who converted.          |
-| 4.     | **Unique Locations**    | Indicates how many unique viewer locations were detected. |
-
-![summary-cards](../assets/analytics/event-view-analytics/summary-cards.png)
-
-
-## Location Insights Graphs
-
-This section helps you understand how different locations interact with your event page. You can see which regions bring the most views and how those views convert into actions.
-
-### Top Locations by Views
-
-This bar chart shows which locations generate the most views and conversions for your event. The **blue bars** represent total views, while the **green bars** show conversions.  
-
-This helps you quickly spot where your audience is coming from and which regions are performing best.
-
-![top-loc-views](../assets/analytics/event-view-analytics/top-loc-views.png)
-
-### Views vs Conversion Rate by Location
-This chart shows how viewer volume compares to conversion performance across different locations.
-
-It helps you identify:
-
-- Locations with high views  
-- Locations with strong conversion rates  
-- Regions that may need more promotion  
-
-![view-convert-rate](../assets/analytics/event-view-analytics/view-convert-rate.png)
-
+The charts compare views and conversions for leading locations, and conversion rates by location. Hover to inspect a value; use a chart legend to show or hide its series where available. These are geographic comparisons rather than a chronological traffic timeline.
 
 ## Performance Insights
-The Performance Insights section highlights:
 
-- **Best Performing Location** — the location with the highest conversion rate.  
-- **Highest Volume** — the location with the most total views.  
+**Best Performing Location** highlights a location with strong conversion, **Highest Volume** identifies the most views, and **Untapped Potential** points to locations with meaningful traffic but conversion below the overall comparison rate. Use these as prompts for investigation rather than proof of what caused a sale.
 
-![performance-insights](../assets/analytics/event-view-analytics/performance-insights.png)
+<Frame caption="Illustrative analytics data. Performance Insights highlights location comparisons.">
+  <img src="../assets/refresh/analytics/analytics-view-detail-insights.png" alt="Performance Insights highlights location comparisons." />
+</Frame>
 
-These insights help you instantly understand your top-performing audience segments.
+## Location Performance
 
+Expand or collapse the panel. **Search locations…** searches the returned location data. Sort the columns and use the table’s pagination to compare:
 
-## Location Performance Table
+- **Location:** visitor city, region, and country, or **Unknown Location** when unavailable.
+- **Total Views:** all recorded views attributed to the location.
+- **Unique Sessions:** distinct tracked browser sessions there.
+- **Conversions:** sessions with a successful tracked completion.
+- **Conversion Rate:** conversions divided by **unique sessions** for that location.
+- **Repeat Visitors:** sessions that recorded more than one view in that location.
 
-Explore detailed performance data for every viewer location.
+<Frame caption="Illustrative analytics data. Search and sort the location table, including unique sessions and repeat visitors.">
+  <img src="../assets/refresh/analytics/analytics-view-detail.png" alt="Search and sort the location table, including unique sessions and repeat visitors." />
+</Frame>
 
-| Ref No. | Field             | Description                                     |
-|--------|-------------------|-------------------------------------------------|
-| 1.     | **Location**          | The viewer’s detected location.                 |
-| 2.     | **Total Views**       | Total number of views from that location.       |
-| 3.     | **Unique Sessions**   | Indicates unique view sessions.                 |
-| 4.     | **Conversions**       | Total conversions from that location.           |
-| 5.     | **Conversion Rate (%)** | Percentage of viewers who converted.         |
-| 6.     | **Repeat Visitors**   | Number of repeat visitors.                      |
+Location conversion percentages use a different denominator from the overall Traffic percentage. Overview’s conversion also uses a different measure—tickets sold divided by views—so the three comparisons need not match. Session counts do not establish the number of distinct people, and these locations are visitor geography, not seating sections or check-in entrances.
 
-![location-performance](../assets/analytics/event-view-analytics/location-performance.png)
+When present, the **Untapped Potential** table lists the lower-converting locations with their views, conversions, and conversion rate. It can be expanded, collapsed, sorted, and paged separately.
 
-That’s all for Event View Analytics — use these insights to understand your audience better and improve your event’s performance.
+<Frame caption="Illustrative analytics data. Expand Untapped Potential to inspect lower-converting locations.">
+  <img src="../assets/refresh/analytics/analytics-view-detail-potential.png" alt="Untapped Potential location table." />
+</Frame>
+
+## Export
+
+Use the top **Export CSV** for location, city, region, country, views, unique sessions, conversions, conversion rate, and repeat-visitor fields in the chosen event/range. Table search and sorting do not narrow that export. A report with no activity can produce an empty result in the current build.

@@ -1,50 +1,37 @@
 ---
-title: "Event display settings"
-description: "Override the hosts, attendee list, buttons, and labels displayed for an individual event."
+title: "Event display overrides"
+description: "Override widget and event-page button text, host logo, host name, and Meet the Host content for one event."
 ---
 
-The **Display Settings** section controls what information is shown on your event page and widget, such as hosts and attendee lists. It also lets you override the default text used for buttons and labels on a per-event basis.  
-From here, you can decide whether to show hosts or the attendee list, customize the event button text in your widget, and change key labels on the event page—without affecting the global design settings for other events.
+Open **Events → Edit event → Display Settings**. These overrides apply to this event; shared appearance is configured under Design.
+
+| Area / control | Effect |
+|---|---|
+| **Widget Text Overrides → Event Button Text** | Replaces the calendar/widget attend-button text for this event. Leave blank to use Design → Widget text. |
+| **Event Page Customization → Host Logo** | Upload an event-specific host logo, recommended 200×200px or larger. Use **Remove Logo** to remove the override. |
+| **Text Overrides → Buy Tickets Button Text** | Replaces the hosted event page's purchase-button text. Leave blank to use Design → Event Page. |
+| **Text Overrides → Site Name / Host Name** | Overrides the name on the event page and kiosk. Leave blank to use the site's name. |
+| **Host Information** | Rich text for this event's Meet the Host section; supports bold, italic, underline, and links. |
+
+Save/update the event, then inspect both the hosted event page and the widget. A change to the widget button does not also change the hosted-page button.
+
+Older screenshots show event-level **Show Hosts** and **Show Attendee List** controls. The current event editor does not expose those switches. Use **Design → Event Page** for host/attendee visibility, and **Design → Widget → Display → Hosts & attendees** for the listing. The Meet the Host section must be visible for its content to appear.
+
+For all shared styling controls, use the [design reference](/branding-and-design/design-options-reference) and [widget settings](/branding-and-design/widget-customization-overview).
+
+## Widget button override
+
+<Frame caption="Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings.">
+  <img src="../assets/refresh/event-management/event-display-overrides.png" alt="Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+## Event page overrides
 
 
-## Display Options
+<Frame caption="Host Information supplies this event’s Meet the Host content. Enable that section in the shared event-page design, then save the event.">
+  <img src="../assets/refresh/event-management/event-display-overrides-host.png" alt="Host Information supplies this event’s Meet the Host content. Enable that section in the shared event-page design, then save the event." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-The **Display Options** control what information appears on the event page and widget. Use these toggles to show or hide key event details based on what you want attendees to see.
-
-- **Show Hosts:** Turns on the list of event hosts so attendees can see who is managing or presenting the event.
-
-- **Show Attendee List:** Shows everyone who has registered for the event on both the event page and widget.
-
-![display-options](../assets/create-events/display-settings/display-options.gif)
-
-These options help you control exactly what attendees can view, keeping your event page clean, relevant, and aligned with your preferences.
-
-## Widget Text Overrides
-
-**Widget Text Overrides** helps you replace the default button text in the calendar widget for this specific event. This is useful when you want custom wording that applies only to this event, without changing the global settings.
-
-![widget-text-overrides](../assets/create-events/display-settings/widget-text-overrides.png)
-
-
-> **Tip:** If you leave a field blank, the widget will automatically use the **global default** text from the **Design Widget** tab.
-
-## Event Page Text Overrides
-
-**Event Page Text Overrides** allow customization of the text shown on the event page for this specific event. These changes apply only to this event and do not affect the global text set in the Design Event Page tab.
-
-- **Buy Tickets Button Text:** Enter custom text to change the label on the Buy Tickets button. This is useful if the event requires different wording, such as “Register Now,” “Reserve Seat,” or “Join Event.”
-
-- **Site Name / Host Name:** Update the site or host name shown on the event page and kiosk check-in. This is helpful when the event needs a different display name than the main site or when a specific host should appear for this event only.
-
-![event-page-text-overrides](../assets/create-events/display-settings/event-page-text-overrides.png)
-
-
-> **Tip:** If you leave a field blank, the widget will automatically use the **global default** text from the **Event Page** tab.
-
-## Event Page Preview
-
-Before you **publish** your event, this preview shows exactly what attendees will see. As you update your display settings, text, and host visibility, the preview refreshes automatically. 
-
-![event-page-preview](../assets/create-events/display-settings/event-page-preview.gif)
-
-This helps you check that everything looks correct before the event goes live.
+<Frame caption="Event Page Customization has separate logo, purchase-button, and site/host-name overrides. Empty text fields use the shared event-page design defaults.">
+  <img src="../assets/refresh/event-management/event-display-overrides-page.png" alt="Event Page Customization has separate logo, purchase-button, and site/host-name overrides. Empty text fields use the shared event-page design defaults." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>

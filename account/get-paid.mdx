@@ -8,20 +8,30 @@ The **Get Paid** feature helps you connect a payment provider to start accepting
 
 ## Connect a Payment Provider
 
-1. Log in to your **Ticket Spot** account, click on your **Profile icon** in the top-right corner, and select **Get Paid** from the dropdown menu.
-
-![click-get-paid](../assets/account/get-paid/click-get-paid.png)
+1. Log in to your **Ticket Spot** account, open **Account** in the top navigation, and select **Get Paid** from the dropdown menu.
 
 2. A modal window will open, allowing you to connect a payment provider — such as **Stripe**, **Square**, or **PayPal** to start receiving payments for your events.
 
-![payment-options](../assets/account/get-paid/payment-options.png)
-
-
 3. Click **Connect Stripe** (or your preferred provider, such as **Square**, **PayPal**) and follow the on-screen instructions to complete the setup.
 
-![click-connt-stripe](../assets/account/get-paid/click-connt-stripe.png)
-
 After setup, confirm the provider shows as connected and check a completed test purchase in both Ticket Spot and the provider dashboard. Review payout timing and any outstanding verification requirements in the provider account.
+
+## Connected-provider controls
+
+
+<Frame caption="Get Paid shows the connected provider. For Square, choose the location used for payments; this Demo account is connected to its test location. Merchant details are concealed.">
+  <img src="../assets/refresh/account/payment-connections.png" alt="Get Paid shows the connected provider. For Square, choose the location used for payments; this Demo account is connected to its test location. Merchant details are concealed." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+The controls shown after connection depend on the provider and its account status:
+
+| Provider | Controls in Ticket Spot |
+|---|---|
+| **Stripe** | **View Account**, connected or **Setup Required** status, and payment-method switches for Card, Apple Pay, Google Pay, Ideal, Bancontact, P24, EPS, and Twint. Select **Save Changes** after editing payment methods. |
+| **Square** | Connected-account status and **Select Location**. A location change saves when selected. |
+| **PayPal** | PayPal checkout, credit/debit-card fields, and Pay Later switches. Keep at least one method enabled, then select **Save Changes**. Where supported, review account readiness and refresh its status. Card fields require PayPal approval. Older connections may offer **Upgrade PayPal connection**. |
+
+**Disconnect** removes the selected provider connection. Marketplace sites offer Stripe onboarding. A payment-method switch does not guarantee that method is available to every buyer; the provider also determines eligibility.
 
 ## Choose the correct payment workflow
 

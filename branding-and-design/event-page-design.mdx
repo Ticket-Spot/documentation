@@ -1,114 +1,80 @@
 ---
-title: "Event Page Design"
-description: "Customize hosted event page buttons, colors, visible sections, and private-event access messages."
+title: "Event page design"
+description: "Customize hosted event-page buttons, colors, visibility, sharing, and private-event messages."
 ---
 
-**Event Page Design** gives you an easy way to customize your event page to match your brand. You can adjust colors, update button labels, and modify layout elements to create a clean and consistent experience for your attendees.
-These settings help you highlight key details—such as ticket options and event information—so attendees can quickly understand what they need and complete their purchase without confusion.
+Open **Design → Event Page**. These settings control the hosted event page. Use [Widget design](./widget-customization-overview) for embedded widget settings. Changes save automatically; wait for the update and check a real event page.
+
+## Ticket buttons
+
+<Frame caption="Choose the wording for each ticket availability state and whether selection opens automatically.">
+  <img src="../assets/refresh/branding-and-design/event-page-design-fields.png" alt="Event page ticket-button labels and Auto Open Tickets" style={{ maxWidth: "440px" }} />
+</Frame>
+
+| Setting | Purpose |
+|---|---|
+| Buy Tickets Button Text | Main action when tickets are available. |
+| Sold Out Button Text | Button wording when the event is sold out. |
+| Event Ended Button Text | Button wording after the event ends. |
+| Tickets Unavailable Button Text | Button wording when tickets are unavailable. |
+| Auto Open Tickets | Open ticket selection automatically when visitors arrive. |
+
+Button wording does not change availability, capacity, or sales dates. Configure those in the event and its tickets.
+
+## Colors
+
+<Frame caption="Set button, page, and host-section colors independently.">
+  <img src="../assets/refresh/branding-and-design/event-page-design-fields-colors.png" alt="Set button, page, and host-section colors independently." style={{ maxWidth: "560px" }} />
+</Frame>
+
+Set **Button Background Color** and **Button Text Color** for actions, **Page Background Color** and **Page Text Color** for the page, and **About Host Background Color** and **About Host Text Color** for the host section. Check text contrast after changing either background or text.
+
+## Visible sections and sharing
+
+<Frame caption="Choose the host, attendee, sharing, and date information visitors can see.">
+  <img src="../assets/refresh/branding-and-design/event-page-host-visibility.png" alt="Event page visibility controls" style={{ maxWidth: "440px" }} />
+</Frame>
+
+| Setting | Purpose |
+|---|---|
+| Hide Share Button | Hide the built-in sharing action. Visitors can still copy the page link. |
+| Hide Price | Hide the event-page price display; this does not make paid tickets free. |
+| Show Contact Host Button | Offer the contact-host action. |
+| Show Host Logo | Show the organizer's logo. |
+| Show Attendee List | Show the attendee section. Review this before publishing. |
+| Show Host List | Show the event's host list. |
+| Show Meet the Host Section | Show the organizer introduction. |
+| Show Announcements | Show event announcements. |
+| Hide Date, Hide Time | Hide those details on the page without changing the event schedule. |
+| Social Share Platforms | Choose the platforms offered in the sharing interface. |
 
 
-## Navigation
+<Frame caption="Choose which platforms appear in the event Share action.">
+  <img src="../assets/refresh/branding-and-design/event-page-design-fields-sharing.png" alt="Choose which platforms appear in the event Share action." style={{ maxWidth: "560px" }} />
+</Frame>
 
-**Step 1:** Log in to your **Ticket Spot** account and click on the **Design** tab.
+## Private-event messages
 
-![click-design-tab](../assets/branding-and-design/event-page-design/click-design-tab.png)
+<Frame caption="Customize the title, subtitles, input, actions, help, and error messages for private-event access.">
+  <img src="../assets/refresh/branding-and-design/event-page-design-fields-private.png" alt="Customize the title, subtitles, input, actions, help, and error messages for private-event access." style={{ maxWidth: "560px" }} />
+</Frame>
 
-**Step 2:** Click on the **Event Page** tab to open the Event Page design settings.
+The **Private Event Modal** has separate **Modal Title**, **Subtitle (With Code)**, **Subtitle (Without Code)**, **Input Placeholder**, **Button Text**, **Button Text (Submitting)**, **Help Text**, and **Error Message** fields.
 
-![click-design-tab](../assets/branding-and-design/event-page-design/click-design-tab.png)
+These fields change presentation. Configure whether an event is private and which codes work in [Event Details](../event-management/eventdetails).
 
+## Preview the result
 
-You will be navigated to the **Event Page Design** page, where you can customize how your event details appear to attendees.
-
-![dashboard](../assets/branding-and-design/event-page-design/dashboard.png)
-
-
-## Event Button Text
-
-**Event Button Text** section allows you to customize the text displayed on various action buttons across your event page. Updating these labels helps you maintain consistent messaging and ensures attendees clearly understand each event state.
+Select a suitable event where the preview offers an event selector. Compare **Desktop Preview** and **Mobile Preview**, then open the event's actual page. Check the ticket action, host information, sharing, and any private-event dialog you use. An event must exist before its content can appear in the preview.
 
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Buy Tickets Button Text** | Appears when tickets are available for purchase. You can customize the main call-to-action shown on the event page. | Buy Tickets, Get Tickets, Register Now |
-| **Sold Out Button Text** | Displayed when all tickets for the event have been sold out. Clearly communicates that no more tickets are available. | Sold Out, Fully Booked |
-| **Event Ended Button Text** | Shown after the event has concluded. Lets visitors know the event is no longer active. | Event Ended, This Event Has Ended |
-| **Tickets Unavailable Button Text** | Displayed when tickets are not available yet or temporarily paused. Useful for upcoming or restricted events. | Tickets Unavailable, Coming Soon |
-
-![event-btn-text](../assets/branding-and-design/event-page-design/event-btn-text.gif)
-
-## Date and Time Format
-
-**Date and Time** Format section allows you to choose how dates and times are displayed on your event page. Adjusting these formats helps ensure the event information matches your preferred style or regional format.
+<Frame caption="The hosted Demo event shows its image, schedule, price, ticket action, description, sharing, and contact-host link.">
+  <img src="../assets/refresh/branding-and-design/event-page-result.png" alt="The hosted Demo event shows its image, schedule, price, ticket action, description, sharing, and contact-host link." style={{ maxWidth: "100%" }} />
+</Frame>
 
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Date Display** | Controls how the event date appears on your event page. Choose the format that best suits your audience or brand style. | 27 Nov, 27 Nov 2025, Thu 27th November, Thu 27th Nov 2025 |
-| **Time Display** | Controls how the event time appears. You can choose between 12-hour or 24-hour styles. | 16:56, 16:56 PM, 4:56 PM |
+<Frame caption="The same hosted event on a phone, with its ticket action and description below the event image.">
+  <img src="../assets/refresh/branding-and-design/event-page-result-mobile.png" alt="The same hosted event on a phone, with its ticket action and description below the event image." style={{ maxWidth: "390px" }} />
+</Frame>
 
-![date-time-format](../assets/branding-and-design/event-page-design/date-time-format.gif)
-
-
-## Page Colors
-
-**Page Colors** section allows you to customize the overall color theme of your event page. You can adjust both the background and text colors to match your brand’s identity and ensure a visually consistent experience.
-
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Page Background Color** | Sets the background color for the entire event page. Choose a color that supports readability and fits your brand style. | #FAFAFA |
-| **Page Text Color** | Sets the color for all general text on the event page. Select a color that contrasts well with the page background. | #000000 |
-
-![page-colors](../assets/branding-and-design/event-page-design/page-colors.gif)
-
-
-## About Host Section
-
-**About Host** section allows you to customize the colors used in the host information area on your event page. Adjusting these settings helps you maintain a consistent visual design and ensure the host details remain easy to read.
-
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| **About Host Background Color** | Sets the background color for the host information section on the event page. Choose a color that complements your page background and supports readability. | #FFF67F |
-| **About Host Text Color** | Sets the text color for all content displayed in the host information section. Use a color that contrasts well with the background. | #FFFFFF |
-
-![about-host-section](../assets/branding-and-design/event-page-design/about-host-section.gif)
-
-
-## Event Page Visibility
-
-**Event Page Visibility** section allows you to control what information and actions are visible on your event page. You can enable or disable specific elements to create the experience you want attendees to see.
-
-| Field | Description |
-|-------|-------------|
-| **Hide Share Button** | When enabled, the share button will be hidden from the event page, preventing attendees from sharing the event link. |
-| **Hide Price** | When enabled, ticket prices will not be shown on the event page, which is useful for private or invitation-only events. |
-| **Show Contact Host Button** | When enabled, a “Contact Host” button will appear on the event page, allowing attendees to reach out directly. |
-| **Show Attendee List** | When enabled, the attendee list will be visible on the event page, showing who is attending. |
-| **Show Host Information** | When enabled, the host details section will appear on the event page, giving attendees more context about the organizer. |
-| **Show Announcements** | When enabled, event announcements will be displayed, helping you share updates with attendees. |
-
-![event-page-visibility](../assets/branding-and-design/event-page-design/event-page-visibility.gif)
-
-
-## Preview Your Customizations
-
-After making changes to your event page design, you can preview how it will appear on different devices. This helps ensure your layout, colors, and text display correctly on both desktop and mobile screens.
-
-**Desktop Preview:** Click the **Desktop Preview** tab to see how your event page will appear on desktop devices.
-
-**Mobile Preview:** Click the **Mobile Preview** tab to view how your event page will look on mobile devices.
-
-![preview](../assets/branding-and-design/event-page-design/preview.gif)
-
-
->**Tip:** Use both previews to confirm that your event page design looks clean, readable, and well-structured across all screen sizes before publishing event.
-
-## Current Event Page controls
-
-Open **Design → Event Page**. In addition to colors and button text, review **Auto Open Tickets**, **Hide Share Button**, **Hide Price**, **Show Contact Host Button**, **Show Host Logo**, **Show Attendee List**, **Show Host List**, **Show Meet the Host Section**, **Show Announcements**, **Hide Date**, **Hide Time**, and **Social Share Platforms**.
-
-Private-event presentation has separate **Modal Title**, **Subtitle (With Code)**, **Subtitle (Without Code)**, **Input Placeholder**, **Button Text**, **Button Text (Submitting)**, **Help Text**, and **Error Message** fields. These change the access dialog's wording; configure event privacy and valid codes in the event itself.
-
-Review the [full option reference](./design-options-reference#event-page) and test both an accessible event and any private-event dialog you use.
+See [locale and translation settings](./language-and-locale) for language and regional display, and the [design option reference](./design-options-reference#event-page) for the field inventory.

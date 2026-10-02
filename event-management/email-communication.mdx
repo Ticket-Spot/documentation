@@ -1,255 +1,120 @@
 ---
 title: "Email Communication"
-description: "Configure confirmation emails, event reminders, post-event messages, announcements, and attachments."
+description: "Configure confirmations, reminders, post-event emails, targeted announcements, ticket actions, attachments, and language variants."
 ---
 
-Set up automated emails to keep your attendees informed at every stage of the event. You can
-send confirmation emails after a ticket purchase, schedule reminders, gather post-event
-feedback, or send a custom message anytime. All communication is handled directly inside
-Ticket Spot, so you can stay connected with your guests effortlessly.
-
-
-**Step 1:** Select the **Event** you want to manage and click on the **Email Communication** to open
-all communication options for that event.
-
-![email-communication](../assets/create-events/email-commuication/email-communication-1.png)
-
-You will see four communication options, each supporting a different stage of your event’s
-attendee communication.
-
-![communication-option](../assets/create-events/email-commuication/communication-window-2.png)
+Open an event and select **Email Communication**. **Ticket Confirmation**, **Event Reminders**, and **Post-Event Feedback** each have **Manage** and **Send Test** actions. **Send Message** opens attendee announcements.
 
 ## Ticket Confirmation
 
-This email is sent automatically when someone buys a ticket for your event. You can enable it,
-customize the subject and message, attach ticket files, and use tokens to insert real event data
-into the email.
 
-1. Click on the **Manage** button to open a settings panel for the ticket confirmation email.
+<Frame caption="Manage Ticket Confirmation to edit the subject, custom message, confirmation actions, and attachments.">
+  <img src="../assets/refresh/event-management/email-confirmation.png" alt="Manage Ticket Confirmation to edit the subject, custom message, confirmation actions, and attachments." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![manage-button](../assets/create-events/email-commuication/ticket-confirmation-manage-3.png)
+Select **Manage** under Ticket Confirmation. In **Order Confirmation**, use **Enabled** to control the email, edit the **Subject** and **Additional message**, and select **Save**.
 
-2. In the side panel, turn on the **toggle** button to activate the **Ticket Confirmation** email for
-   this event.
+The confirmation follows a ticket purchase or registration. Its message content is separate from the shared colors, layout, and labels configured in [Attendee Communication design](/branding-and-design/attendee-communication-design).
 
-![ticket-confirmation](../assets/create-events/email-commuication/pannel-4.png)
+## Personalize the subject and message
 
-### Customize the Message
+- **Insert personalization** inserts a selected token into the subject.
+- **Copy personalization token** provides a token to paste into the additional message.
+- Keep placeholders such as `{{event_title}}` intact. Use the names supplied by the picker, such as `{{attendee_first_name}}`, rather than inventing a placeholder.
+- **Set reply-to email** opens the site setting for replies. This does not change the sending identity by itself.
+- **Use Mailchimp Template** requires a connected [Mailchimp account](/integrations/mailchimp).
 
-You can customize the email message using tokens that automatically insert real event and
-attendee information. The table below explains each field.
+<Frame caption="Insert personalization opens the available subject tokens. Choose Event Title to insert the event title placeholder.">
+  <img src="../assets/refresh/event-management/email-personalization.png" alt="Insert personalization opens the available subject tokens. Choose Event Title to insert the event title placeholder." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-| Field      | Description                                                                 | Example                                             |
-| ---------- | --------------------------------------------------------------------------- | --------------------------------------------------- |
-| **Property**   | Select the type of information you want to insert into the email (e.g., Event Title, summary). | Property selected: Event Title                      |
-| **Token**      | Auto-generated placeholder that pulls real event data into the email       | `{{event_title}}`                                   |
-| **Subject**    | The email subject line was sent to attendees. Supports tokens for personalization. | Your tickets for `{{event_title}}` are ready!       |
-| **Email Body** | The main email content. You can personalize it with tokens and custom text. | “Hi `{{first_name}}`, your ticket for `{{event_title}}` is confirmed.” |
+## Ticket actions and PDF attachments
 
-![customize-message](../assets/create-events/email-commuication/customize-5.gif)
+Ticket actions provide links in the email. They are separate from uploaded file attachments.
 
-### Attachment Options
+| Control | What the attendee receives |
+|---|---|
+| **Manage Tickets**, where available | Opens the attendee portal. When enabled, it is the leading action. |
+| **Download PDF** | A button to download ticket PDFs containing entry QR codes. It becomes the main action when Manage Tickets is off. |
+| **Apple Wallet** | A button to add the order's tickets to Apple Wallet. |
+| **Google Wallet** | A button to add the order's tickets to Google Wallet. |
+| **View receipt** | A receipt link below the ticket actions. |
+| **PDF Attachments → Upload PDF** | Up to five organizer-supplied PDF files attached to each copy of the email. |
 
-You can choose to include additional ticket files with the confirmation email. These options help
-attendees access their tickets easily in different formats.
+<Frame caption="Use confirmation action switches for ticket and wallet links. Upload PDF adds your own attachments, with up to five files per email.">
+  <img src="../assets/refresh/event-management/email-attachments.png" alt="Use confirmation action switches for ticket and wallet links. Upload PDF adds your own attachments, with up to five files per email." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-Turn on the toggle next to each attachment you want to include.
-
-| Attachment          | Description                                                                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Ticket Passes PDF**   | Attaches a PDF containing the attendee’s Ticket Passes. Each pass includes a unique QR code for event entry and verification.      |
-| **Ticket Receipt PDF**  | Adds a PDF receipt that shows a detailed breakdown of the purchase, including ticket items and the total amount billed.            |
-| **Apple Wallet**        | Includes an Apple Wallet pass so attendees can add their ticket directly to their Wallet for quick access and scanning.            |
-
-![attachment-options](../assets/create-events/email-commuication/attach-6.png)
-
-Once you’re done customizing the message, click on the Save button to apply your changes.
-
-![save-button](../assets/create-events/email-commuication/save-7.png)
-
-> **Note:** If you want to use your own email template, enable the [Mailchimp integration](../integrations/mailchimp) with Ticket Spot. After connecting Mailchimp, turn on the Use Mailchimp Template toggle to apply
-your custom template to this email.
-![note-button](../assets/create-events/email-commuication/note-8.png)
-
-### Preview Ticket Confirmation Email
-
-You can also preview the email template by sending a test email.
-
-1. Click the Preview button to open the test email window.
-
-![perview](../assets/create-events/email-commuication/preview-9.png)
-
-2. Enter your email, first name, and last name, then click the Send Test button to send the
-   test email.
-
-![send-test](../assets/create-events/email-commuication/send-10.png)
-
-You will receive the test email in your inbox, where you can review the message and formatting.
+Review both the selected actions and uploaded files before saving. Ticket, wallet, and receipt labels can be changed in Attendee Communication design.
 
 ## Event Reminders
 
-Event reminders are sent automatically to your attendees by email and SMS before the event
-starts. You can enable or disable each reminder and choose when it should be delivered.
+1. Select **Manage** under Event Reminders.
+2. Use each reminder's switch to enable or disable it.
+3. Select its **+** button to expand the settings.
+4. Set **Time Before Event**, with minutes, hours, or days.
+5. Edit the subject, additional message, ticket actions, and attachments.
+6. Select **Save**.
 
-1. Click on the Manage button to open a settings panel for the event start reminders.
+<Frame caption="Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder’s switch to enable or disable it.">
+  <img src="../assets/refresh/event-management/email-reminder.png" alt="Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder’s switch to enable or disable it." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![manage](../assets/create-events/email-commuication/event-11.png)
-
-2. You can use the toggle next to each reminder to enable or disable it at any time.
-
-![toggle-reminder](../assets/create-events/email-commuication/reminder-12.png)
-
-3. In the side panel, you’ll see two default reminders—click the + icon next to any reminder
-   to customize its timing and message.
-
-![customize-reminder](../assets/create-events/email-commuication/plus-13.png)
-
-4. Enter how long before the event the reminder should be sent, and choose the unit
-   (Minutes / Hours / Days).
-
-![remider-time](../assets/create-events/email-commuication/choose-reminder-14.png)
-
-### Customize the Reminder Message
-
-You can customize the reminder message using tokens that automatically insert real event and
-attendee information. The table below explains each field.
-
-| Field    | Description                                          | Example                                   |
-| -------- | ---------------------------------------------------- | ----------------------------------------- |
-| **Property** | Select event or attendee information to insert into the reminder. | Property selected: Event Title            |
-| **Token**    | Placeholder that automatically pulls real event data. | Copy and use `{{event_title}}` placeholder |
-| **Subject**  | The reminder subject line was sent to attendees.     | `{{event_title}}` is starting in 1 hour   |
-| **Message Body** | The content of the reminder message.             | “Hi `{{first_name}}`, we’re excited to see you at `{{event_title}}`.” |
-
-![customize-reminder-message](../assets/create-events/email-commuication/customize-15.gif)
-
-After updating your event reminder message, click Save to apply all changes.
-
-![save-reminder](../assets/create-events/email-commuication/save-16.png)
-
-> **Note:** If you want to use your own email template, enable the [Mailchimp integration](../integrations/mailchimp) with Ticket Spot. After connecting Mailchimp, turn on the Use Mailchimp Template toggle to apply your custom template to this email.
-![note-reminder](../assets/create-events/email-commuication/note-17.png)
-
-### Preview Event Reminder Email
-
-You can also preview the reminder email by sending a test email.
-
-1. Click on the Preview button to open the test email window.
-
-![preview-reminder](../assets/create-events/email-commuication/preview-18.png)
-
-2. Enter your email, first name, and last name, then click Send Test to send the reminder
-   preview.
-
-![send-test-reminder](../assets/create-events/email-commuication/send-test-19.png)
-
-You will receive the test email in your inbox, where you can review the reminder content and
-formatting.
+The Demo event shows separate one-hour and one-day reminders. Review every reminder you leave enabled. Email and [SMS communication](./sms-communication) have their own content and delivery settings.
 
 ## Post-Event Feedback
 
-A feedback email can be scheduled to send automatically after your event ends. This helps you
-collect insights from attendees and understand their experience.
+Select **Manage** under Post-Event Feedback. In **Event End Appreciation**, use the **Post-Event Message** switch, write the subject and additional message, configure its actions and attachments, then select **Save**. Use a feedback link in the message when you want responses through a form or survey.
 
-1. Click on the Manage button to open a settings panel for Post-Event Feedback.
+<Frame caption="Post-Event Feedback opens the post-event message editor for its subject, additional message, actions, and attachments.">
+  <img src="../assets/refresh/event-management/email-post-event.png" alt="Post-Event Feedback opens the post-event message editor for its subject, additional message, actions, and attachments." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![manage-feedback](../assets/create-events/email-commuication/manage-20.png)
+## Preview with Send Test
 
-2. In the side panel, turn on the toggle button to activate the Post Event Feedback email
-   for this event.
 
-![post-event-feedback](../assets/create-events/email-commuication/event-21.png)
+<Frame caption="Send Test opens a separate form for your test recipient’s email and name. This example is filled without sending a message.">
+  <img src="../assets/refresh/event-management/email-confirmation-test.png" alt="Send Test opens a separate form for your test recipient’s email and name. This example is filled without sending a message." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-### Customize the Message
-
-You can customize the post-event message using tokens that automatically insert event or
-attendee information. The table below explains each available field.
-
-| Field      | Description                                              | Example                                              |
-| ---------- | -------------------------------------------------------- | ---------------------------------------------------- |
-| **Property**   | Select the event or attendee information you want to include. | Property selected: Event Title                       |
-| **Token**      | Placeholder that inserts real data into the email.       | Used in subject: Thank you for joining `{{event_title}}` |
-| **Subject**    | The email subject was sent to attendees. Supports tokens. | Thank you for joining `{{event_title}}`              |
-| **Email Body** | The content of the follow-up message. Supports formatting and tokens. | “We appreciate you joining us at `{{event_title}}`.” |
-
-![customize-feedback-message](../assets/create-events/email-commuication/customize-22.gif)
-
-After customizing your post-event message, click on the Save button to apply your changes.
-
-![save-feedback](../assets/create-events/email-commuication/save-23.png)
-
-> **Note:** If you want to use your own email template, enable the [Mailchimp integration](../integrations/mailchimp) with Ticket Spot. After connecting Mailchimp, turn on the Use Mailchimp Template toggle to apply your custom template to this email.
-![note-feedback](../assets/create-events/email-commuication/note-24.png)
-
-### Preview Post-Event Feedback Email
-
-You can preview the post-event feedback message before it gets scheduled.
-
-1. Click on the Preview button to open the test email window.
-
-![preview-feedback](../assets/create-events/email-commuication/preview-25.png)
-
-2. Enter your email, first name, and last name, then click Send Test to receive the preview.
-
-![send-test-feedback](../assets/create-events/email-commuication/save-26.png)
-
-You will get the test email in your inbox, allowing you to review the message exactly as
-attendees will see it.
+Use **Send Test** on the communication card to open the test-email form. Enter your test recipient details and submit the form to receive a sample. Check the rendered subject, message, tokens, links, and any attachments before enabling a customer-facing message.
 
 ## Send Message
 
-Use Send Message to send targeted announcements or updates to your attendees based on
-their registration status. This also allows you to send bulk messages to specific groups, keeping
-your audience informed with important event details at any stage.
+Use **Send Message → Create Announcement** for an update to selected attendee groups.
 
-1. Click on the Send Message button.
+1. Select the **Event**. For a series, use the offered all-events choice when the announcement should cover its occurrences.
+2. Choose **Email**, **SMS**, or **Email + SMS** under **Delivery Method**. Review the available credits shown for the selected channels.
+3. Select **Recipients**: Going, Not Going, Pending Approval, In Waitlist, or Attended. Multiple groups can be selected.
+4. Write the email subject and message. For SMS or Email + SMS, complete the SMS version too.
+5. Choose ticket action buttons and any additional PDFs for the email.
+6. Review the event, recipients, content, and channels, then select **Send Announcement**.
 
-![send-message](../assets/create-events/email-commuication/send-msg-27.png)
+<Frame caption="Create Announcement lets you choose the event, Email, SMS or Email + SMS, and the attendee-status recipient groups.">
+  <img src="../assets/refresh/event-management/email-campaign.png" alt="Create Announcement lets you choose the event, Email, SMS or Email + SMS, and the attendee-status recipient groups." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-2. In the side panel, click on the Create Message button to create a new message.
+<Accordion title="See the announcement message and ticket actions">
 
-![create-message](../assets/create-events/email-commuication/msg-28.png)
+<Frame caption="Compose the announcement and choose ticket actions and PDF attachments. Send Announcement submits it to the selected recipients.">
+  <img src="../assets/refresh/event-management/email-campaign-message.png" alt="Compose the announcement and choose ticket actions and PDF attachments. Send Announcement submits it to the selected recipients." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-A modal window will appear, where you can create and send a message to your selected
-attendees.
+</Accordion>
 
-![mesage-modal](../assets/create-events/email-commuication/window-29.png)
+## Language variants
 
-3. Enter the required details for your message—select a recipient group, add a subject, and
-   write the message body. The table below explains each field.
 
-### Message Fields
+<Frame caption="Enter a language-specific subject and message, preserving the original template variables. Customized marks the edited field; Save translation is required to persist it. This example is an unsaved draft.">
+  <img src="../assets/refresh/branding-and-design/communication-default-override-campaign-spanish.png" alt="Enter a language-specific subject and message, preserving the original template variables. Customized marks the edited field; Save translation is required to persist it. This example is an unsaved draft." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-| Field        | Description                                                                                     | Example                                      |
-| ------------ | ----------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **Recipients**   | Choose the attendee group you want to message. (e.g., Going, Not Going, Pending Approval, In Waitlist, Attended). | Selected: Going                              |
-| **Subject**      | Enter the subject line for your announcement or update.                                         | “Event Update for Going Attendees”          |
-| **Message Body** | Write your message. You can format text, add bullet points, and include links.                  | “Hi everyone, here’s the latest update for tomorrow’s event…” |
+<Frame caption="Event Email translations uses the original subject and message until you supply a variant for the selected language.">
+  <img src="../assets/refresh/branding-and-design/communication-default-override-campaign-original.png" alt="Event Email translations uses the original subject and message until you supply a variant for the selected language." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
 
-![message-field](../assets/create-events/email-commuication/window-30.gif)
+Turn on **Multilingual communications** in **Design → Attendee Communication**. For a saved event email, expand **Email translations**, select a language, and edit **Subject** and **Message (HTML supported)** or **Email HTML**.
 
->**Tip:** You can also select multiple recipient groups at once if you want to send the same
-message to more than one attendee segment.
+Select **Save translation** and confirm it succeeds. **Customized** can appear before changes are saved. Fields without a translation use the original message, and translations retain the email's recipients and schedule. A translated field can use only variables already in its original field; keep translated subjects on one line.
 
-### Attachment Options
-
-You can attach additional ticket files when sending a message to attendees. These attachments
-help attendees access their tickets or receipts directly from your message.
-
-Turn on the toggle next to each attachment you want to include.
-
-| Attachment         | Description                                                                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Ticket Passes PDF**  | Attaches a PDF of the attendee’s Ticket Passes. Each pass includes a unique QR code that can be used for event entry and verification. |
-| **Ticket Receipt PDF** | Adds a PDF receipt with a full breakdown of the ticket purchase, including each item and the total billed amount.                 |
-| **Apple Wallet**       | Includes the Apple Wallet pass so attendees can add their ticket directly to Apple Wallet for quick access and scanning.          |
-
-![toggle](../assets/create-events/email-commuication/attachment-31.png)
-
-After entering your message details, click Create and Send to deliver the message to the
-selected recipients.
-
-![send](../assets/create-events/email-commuication/send-32.png)
-
-Together, these communication tools help you keep your attendees informed at every stage of
-the event, ensuring a smooth and engaging experience from purchase to post-event follow-up.
+Use **Use original** for a field and save the change. **Reset language** removes an existing saved language variant. See [multilingual emails and tickets](/branding-and-design/multilingual-communications), [language and locale settings](/branding-and-design/language-and-locale), and the [language FAQ](/getting-started/language-and-locale-faq).
