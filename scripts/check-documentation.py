@@ -39,7 +39,7 @@ for page, count in Counter(nav_pages).items():
 for page in pages.keys() - set(nav_pages):
     errors.append(f"Page missing from navigation: {page}")
 
-descriptions = {}
+metadata_values = {"title": {}, "description": {}}
 local_links = 0
 for slug, path in pages.items():
     content = path.read_text()
@@ -51,10 +51,11 @@ for slug, path in pages.items():
         match = re.search(rf"^{field}:\s*[\"']?(.+?)[\"']?\s*$", frontmatter[1], re.M)
         if not match:
             errors.append(f"No {field}: {slug}")
-        elif field == "description":
-            if match[1] in descriptions:
-                errors.append(f"Repeated description: {slug} and {descriptions[match[1]]}")
-            descriptions[match[1]] = slug
+        else:
+            normalized = match[1].strip().casefold()
+            if normalized in metadata_values[field]:
+                errors.append(f"Repeated {field}: {slug} and {metadata_values[field][normalized]}")
+            metadata_values[field][normalized] = slug
     body = re.sub(r"```.*?```", "", content, flags=re.S)
     links = re.findall(r"!?\[[^\]\n]*\]\(([^)\n]+)\)", body)
     links += re.findall(r"(?:href|src)=[\"']([^\"']+)[\"']", body)
