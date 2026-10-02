@@ -5813,6 +5813,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx",
       "event-management/ticket-setup.mdx"
     ],
     "qa_notes": "Reviewed real unsaved ticket editor; full modal crop with correct labels and purple callouts."
@@ -12797,6 +12798,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "event-types/overview.mdx",
       "event-management/create-event-overview.mdx"
     ]
   },
@@ -13031,6 +13033,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "plugins/connect-shopify.mdx",
       "event-management/manage-events.mdx"
     ]
   },

@@ -4,7 +4,7 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 533 reviewed screenshots and 3 reviewed GIFs across 98 guides; 3 companion posters.
+- 533 reviewed screenshots and 3 reviewed GIFs across 101 guides; 3 companion posters.
 - All 139 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
 - [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 343 planned briefs. A captured image does not establish complete acceptance of every dependent state.

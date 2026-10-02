@@ -4364,7 +4364,8 @@
       ],
       "integrated_pages": [
         "event-management/ticket-options-reference.mdx",
-        "event-management/ticket-setup.mdx"
+        "event-management/ticket-setup.mdx",
+        "plugins/shopify-ticket-selector.mdx"
       ],
       "capture_qa": {
         "passed visual review": 2
@@ -8071,7 +8072,8 @@
         "assets/refresh/event-management/event-restore-delete-delete.png"
       ],
       "integrated_pages": [
-        "event-management/manage-events.mdx"
+        "event-management/manage-events.mdx",
+        "plugins/connect-shopify.mdx"
       ],
       "capture_qa": {
         "passed visual review": 2
@@ -10757,7 +10759,8 @@
         "assets/refresh/event-management/event-create-template-picker.png"
       ],
       "integrated_pages": [
-        "event-management/create-event-overview.mdx"
+        "event-management/create-event-overview.mdx",
+        "event-types/overview.mdx"
       ],
       "capture_qa": {
         "passed visual review": 1
@@ -12254,7 +12257,7 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-02T15:34:38.767132+00:00",
+    "updated_at": "2026-10-02T23:43:23.874369+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
     "planned_capture_units": 343,
     "units_with_any_capture": 270,
@@ -12263,7 +12266,7 @@
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 98,
+    "guides_with_current_media": 101,
     "external_capture_units_deferred": 70,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },
