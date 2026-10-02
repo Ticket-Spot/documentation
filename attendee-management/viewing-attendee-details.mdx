@@ -23,16 +23,31 @@ Use the event's [seating view](../seating-charts/seat-selection#assign-seats-to-
 
 ## Questions
 
-The **Questions** tab shows answers collected during registration. Choose that section's **Edit** button to update supported answers, then save or cancel.
+The **Questions** tab shows answers collected during registration. This edits an attendee's recorded answers; to change what future registrants are asked, edit the event's [Additional Information](../event-management/additional-information) instead.
 
-For waiver or terms questions, the record can also show the terms label, signed time, checkbox confirmation, entered name, and digital signature. **View Content**, **View Link**, or **View Document** opens the recorded terms when available. These details depend on what the question collected; an ordinary text answer does not contain signature evidence.
+1. Open **Questions** and review the existing responses.
+2. Choose the **Edit** button inside the Questions section (separate from Contact Information's Edit).
+3. Change the supported answer fields and select **Save**, or **Cancel** to leave edit mode without submitting.
+4. Reopen the record to verify the saved answers. An empty Questions panel means there are no recorded responses to edit.
+
+<Frame caption="Questions has its own Edit, Save, and Cancel controls. Contact details are concealed.">
+  <img src="../assets/refresh/attendee-management/attendee-question-edit.png" alt="Attendee Questions in edit mode with the recorded answer and Save highlighted" />
+</Frame>
+
+For waiver or terms questions, the record can also show the terms label, signed time, checkbox confirmation, entered name, and digital signature. **View Content**, **View Link**, or **View Document** opens the recorded terms when available. Waiver confirmations are read-only, including in edit mode. These details depend on what the question collected; an ordinary text answer does not contain signature evidence.
 
 ## Notes
 
 Use **Notes → Add Note** to record internal information for your team. Enter the note and choose **Save**, or cancel to leave the record unchanged. Saved notes show their author and creation time.
 
+The add-note dialog requires note text. **Cancel** clears the draft; use its close control to leave the dialog if it remains open. Existing note cards are read-only: this panel does not offer edit or delete actions for a saved note.
+
 <Frame caption="Add an internal note without changing the attendee's registration answers.">
   <img src="../assets/refresh/attendee-management/attendee-detail-add-note.png" alt="Add Note dialog with an empty note field and the author concealed" />
+</Frame>
+
+<Frame caption="Saved notes remain with the attendee record and show an author and timestamp. Identity is concealed in this Demo example.">
+  <img src="../assets/refresh/attendee-management/attendee-notes-history.png" alt="Notes tab with Add Note highlighted and a saved documentation demo note" />
 </Frame>
 
 ## Email and SMS history
@@ -45,11 +60,19 @@ Use **Notes → Add Note** to record internal information for your team. Enter t
 
 **Resend** opens a confirmation dialog. Check the recipient and choose **Send** only when you want to send another ticket confirmation. **SMS** provides the recorded text-message delivery overview and timeline when available.
 
+See [Check Ticket Email and SMS Delivery Status](./email-and-sms-delivery) for every indicator, the overview fields, failure troubleshooting, and the differences between attendee, order, and bulk confirmation actions.
+
 Communication history is read-only. Contact details, supported answers, and internal notes have separate editing controls; there is no general edit action for every tab.
 
 ## Activity log
 
 Choose **Activity Log** at the top of the panel to review recorded attendee actions and updates, including timestamps and the responsible account or system where available. Choose **Back to Attendee Information** to return.
+
+<Frame caption="Activity Log records attendee actions and updates. Names and account details are concealed.">
+  <img src="../assets/refresh/attendee-management/attendee-activity-history.png" alt="Attendee activity timeline and Back to Attendee Information control" />
+</Frame>
+
+Each entry can include an action title, details, an **Updated by** or **Auto-applied by** attribution, and a timestamp. The log is read-only and can also include communication activity. Use the Email and SMS tabs for the channel-specific summaries and timelines.
 
 ## Linked order
 
@@ -59,6 +82,6 @@ Choose **View Order** when the attendee belongs to an order. The order panel sho
   <img src="../assets/refresh/attendee-management/attendee-order.png" alt="Order Information with order details, Email Tickets, and Transfer to Another Event highlighted" />
 </Frame>
 
-Depending on the order, you can open **View Event**, **Email Tickets**, **Cancel and Refund**, **Transfer to Another Event**, or **Change Ticket Type**. Each action has its own workflow; review the affected attendees, amounts, and destination before confirming. A Shopify-linked record can also show **View Shopify Order**, which opens Shopify admin and requires access to that store.
+The order has its own actions and attendee cards. Follow the dedicated instructions for [order details and add-ons](./managing-orders), [refunds and cancellations](./refunds-and-cancellations), [transfers and ticket changes](./transfers-and-ticket-changes), and [email confirmations](./email-and-sms-delivery#email-tickets-for-an-order). A Shopify-linked record can also show **View Shopify Order**, which opens Shopify admin and requires access to that store.
 
 For outstanding scheduled payments, see [Payment Installments](../event-management/installment-payments). For list filters, bulk actions, and status changes, see [Managing Attendees](./managing-attendees).

@@ -136,10 +136,14 @@
             ]
           },
           {
-            "group": "Attendee Management",
+            "group": "Attendee Dashboard",
             "pages": [
-              "attendee-management/viewing-attendee-details",
               "attendee-management/managing-attendees",
+              "attendee-management/viewing-attendee-details",
+              "attendee-management/managing-orders",
+              "attendee-management/refunds-and-cancellations",
+              "attendee-management/transfers-and-ticket-changes",
+              "attendee-management/email-and-sms-delivery",
               "attendee-management/adding-attendees-manually",
               "attendee-management/export-attendees-and-check-in-data"
             ]

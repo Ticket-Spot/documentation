@@ -4,12 +4,13 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 516 reviewed screenshots and 3 reviewed GIFs across 94 guides; 3 companion posters.
-- All 112 public guides compile and render on desktop and mobile without broken images or horizontal overflow.
+- 533 reviewed screenshots and 3 reviewed GIFs across 98 guides; 3 companion posters.
+- All 139 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
-- [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 321 planned briefs. A captured image does not establish complete acceptance of every dependent state.
-- [remaining-coverage.json](../remaining-coverage.json) lists eleven Demo-state dependencies, seventy external/device briefs, retained legacy images, and five long videos awaiting freshness review.
+- [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 343 planned briefs. A captured image does not establish complete acceptance of every dependent state.
+- [remaining-coverage.json](../remaining-coverage.json) lists sixteen Demo-state dependencies, seventy external/device briefs, retained legacy images, and five long videos awaiting freshness review.
 - [analytics-acceptance.json](analytics-acceptance.json) records temporary fixture cleanup and real export checks. Analytics fixtures were removed and the real API verified; no fixture data was written to stored records.
+- [attendee-actions-acceptance.json](attendee-actions-acceptance.json) records 17 additional annotated screenshots, six rendered guides, nine checked heading links, and the unsubmitted refund/transfer/message boundaries. See [the action review](../../ATTENDEE_DASHBOARD_REVIEW.md) for the full menu inventory and conditional visual TODOs.
 
 ## Review locally
 

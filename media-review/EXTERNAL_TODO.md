@@ -91,7 +91,7 @@ Current Ticket Spot setup cards and the RegFox key form are refreshed in the int
 
 ## Remaining Demo account states
 
-These 11 uncaptured briefs need the state listed below. Their available controls and prerequisites are documented; the missing result screenshots remain TODO.
+These 16 uncaptured briefs need the state listed below. Their available controls and prerequisites are documented; the missing result screenshots remain TODO.
 
 | Capture | Required state |
 |---|---|
@@ -106,5 +106,12 @@ These 11 uncaptured briefs need the state listed below. Their available controls
 | Organization setup and access (`marketplace-organizations`) | Platform account with Demo organizations; current Demo site is Business Plus |
 | Review a demo submitted event (`marketplace-review`) | Platform account with a submitted Demo event awaiting review |
 | Change role, resend or remove confirmation (`team-manage`) | Existing non-owner Demo team member; no invitation email authorized |
+| Order add-ons and main-event links (`attendee-order-addons`) | Demo order with linked add-on attendees and an unassigned legacy add-on |
+| Group-ticket order badge (`attendee-order-group`) | Confirmed Demo group booking |
+| Transfer to a future date/time (`attendee-transfer-occurrence`) | Live recurring Demo destination with future occurrences and assignable tickets |
+| SMS delivered/failed/opted-out examples (`attendee-sms-outcomes`) | Existing Demo SMS records; no messages sent to manufacture states |
+| Bulk refund outcome examples (`attendee-bulk-refund-results`) | Existing provider-verified sandbox job showing completed, submitted, or uncertain results; no real refund submitted for documentation |
+
+The October 2 attendee follow-up adds 17 reviewed screenshots of the available menu, drawer, and confirmation states. The existing installment and signed-waiver dependencies also apply to those new guides. See [the attendee review](../ATTENDEE_DASHBOARD_REVIEW.md) and [acceptance evidence](production/attendee-actions-acceptance.json).
 
 The complete retained-media and five-video review list is in [remaining-coverage.json](remaining-coverage.json). Older media remains only in external-integration, mobile/device, and attendee-portal guides. Alternative current close-ups are retained in the gallery without adding redundant article images.
