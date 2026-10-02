@@ -7,7 +7,7 @@
     "light": "#bc6be7",
     "dark": "#7a1cad"
   },
-  "favicon": "https://cdn.ticketspot.io/icon.svg",
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -16,7 +16,8 @@
           {
             "group": "Getting started",
             "pages": [
-              "getting-started/platform-overview"
+              "getting-started/platform-overview",
+              "branding-and-design/design-overview"
             ]
           },
           {
@@ -27,34 +28,47 @@
               "event-management/datetime",
               "event-management/venuelocation",
               "event-management/ticket-setup",
+              "event-management/event-add-ons",
               "event-management/email-communication",
+              "event-management/sms-communication",
               "event-management/waitlist",
               "event-management/additional-information",
               "event-management/checkout-complete-message",
               "event-management/tags-and-custom-fields",
               "event-management/hosts",
               "event-management/display-settings",
-              "event-management/manage-events"
-              
-             
+              "event-management/manage-events",
+              "event-management/tracking-links",
+              "event-management/installment-payments",
+              "event-management/waivers",
+              "event-management/timed-entry-and-passes"
             ]
           },
-  {
+          {
+            "group": "Memberships",
+            "pages": [
+              "memberships/overview",
+              "memberships/create-membership",
+              "memberships/assign-to-events",
+              "memberships/ticket-access-and-pricing",
+              "memberships/manage-members"
+            ]
+          },
+          {
             "group": "Integrations",
             "pages": [
               "integrations/eventbrite",
-               "integrations/tickettailor",
-               "integrations/ticketspice",
-                "integrations/google",
-                 "integrations/zoom",
-                  "integrations/twitch",
-                  "integrations/zapier",
-                 "integrations/mailchimp",
-                 "integrations/klaviyo"
-
+              "integrations/tickettailor",
+              "integrations/ticketspice",
+              "integrations/google",
+              "integrations/zoom",
+              "integrations/twitch",
+              "integrations/zapier",
+              "integrations/mailchimp",
+              "integrations/klaviyo"
             ]
           },
- {
+          {
             "group": "Attendee Portal",
             "pages": [
               "attendee-portal/viewing-your-tickets",
@@ -62,112 +76,120 @@
               "attendee-portal/view-download-receipt",
               "attendee-portal/cancel-transfer-event",
               "attendee-portal/contact-host"
-          
             ]
           },
-
- {
+          {
             "group": "Attendee Management",
             "pages": [
               "attendee-management/viewing-attendee-details",
               "attendee-management/managing-attendees",
               "attendee-management/adding-attendees-manually",
               "attendee-management/export-attendees-and-check-in-data"
-          
             ]
           },
-
-
-
-{
+          {
             "group": "Branding and Design",
             "pages": [
-             "branding-and-design/brand-design",
-             "branding-and-design/site-design",
-             "branding-and-design/event-page-design",
-             {
-          "group": "Widget Customization",
-          "pages": [
-            "branding-and-design/widget-customization-overview",
-            "branding-and-design/display-settings",
-            "branding-and-design/checkout-settings",
-            "branding-and-design/text-settings",
-            "branding-and-design/layout",
-            "branding-and-design/filters",
-            "branding-and-design/user-search-filter"
-          ]
-        },
-            "branding-and-design/ticket-and-receipt-attachment-design",
-            "branding-and-design/attendee-communication-design"
-
+              "branding-and-design/brand-design",
+              "branding-and-design/site-design",
+              "branding-and-design/event-page-design",
+              {
+                "group": "Widget Customization",
+                "pages": [
+                  "branding-and-design/widget-customization-overview",
+                  "branding-and-design/display-settings",
+                  "branding-and-design/checkout-settings",
+                  "branding-and-design/text-settings",
+                  "branding-and-design/layout",
+                  "branding-and-design/filters",
+                  "branding-and-design/user-search-filter"
+                ]
+              },
+              "branding-and-design/tickets-and-passes",
+              "branding-and-design/ticket-and-receipt-attachment-design",
+              "branding-and-design/attendee-communication-design",
+              "branding-and-design/attendee-ticket-page",
+              "branding-and-design/design-options-reference",
+              "branding-and-design/white-label-setup"
             ]
-            
           },
-
           {
             "group": "Analytics",
             "pages": [
-             "analytics/analytics-overview",
+              "analytics/analytics-overview",
               "analytics/sales-analytics",
               "analytics/check-in-analytics",
               "analytics/abandoned-cart-analytics",
               "analytics/event-view-analytics"
-    
             ]
           },
-
-              {
+          {
             "group": "Mobile App",
             "pages": [
-             "mobile-app/mobile-app-overview",
+              "mobile-app/mobile-app-overview",
               "mobile-app/mobile-check-in",
-              "mobile-app/attendee-details"
-          
-             
+              "mobile-app/attendee-details",
+              "mobile-app/offline-check-in"
             ]
           },
-
-
-
-{
+          {
             "group": "Account",
             "pages": [
               "account/account-settings",
               "account/get-paid",
               "account/notifications",
-              "account/billing-and-plans"
-    
+              "account/billing-and-plans",
+              "account/feature-reference"
             ]
           },
-
- {
+          {
             "group": "Team",
             "pages": [
               "team/invite-team-roles",
               "team/manage-invitations"
-    
             ]
           },
-
-           {
+          {
             "group": "Site Settings",
             "pages": [
               "site-settings/site-settings",
               "site-settings/domain-and-analytics",
               "site-settings/event-submissions",
               "site-settings/mobile-check-in",
-              "site-settings/add-and-switch-sites"
+              "site-settings/add-and-switch-sites",
+              "site-settings/marketplace-and-organizations"
             ]
           },
-
-           {
+          {
             "group": "Plugins",
             "pages": [
               "plugins/connect-shopify",
               "plugins/connect-wix",
-              "plugins/connect-lovable"
-              
-    
+              "plugins/connect-lovable",
+              "plugins/connect-wordpress",
+              "plugins/embed-on-your-website"
+            ]
+          },
+          {
+            "group": "Seating Charts",
+            "pages": [
+              "seating-charts/create-and-assign",
+              "seating-charts/advanced-layouts"
+            ]
+          },
+          {
+            "group": "On-Site Sales and Check-In",
+            "pages": [
+              "on-site/box-office-pos",
+              "on-site/ticket-printing",
+              "on-site/self-check-in-kiosk"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction",
+              "api-reference/endpoint/create"
             ]
           }
         ]
@@ -175,7 +197,6 @@
     ],
     "global": {
       "anchors": [
-      
         {
           "anchor": "Blog",
           "href": "https://ticketspotapp.com/blog",
@@ -204,21 +225,14 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   }
 }

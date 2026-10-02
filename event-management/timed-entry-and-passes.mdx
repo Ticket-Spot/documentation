@@ -1,0 +1,38 @@
+---
+title: "Set up timed entry, recurring classes, and passes"
+description: "Connect dates, time slots, ticket quantities, admission windows, and memberships for repeat visits."
+---
+
+Choose the booking model first: a ticket for one occurrence, a ticket valid for a period after purchase, or a membership covering multiple assigned events.
+
+| Booking model | Setup |
+|---|---|
+| A tour or attraction arrival slot | Create a **Time Based** schedule and sell tickets for the selected occurrence. |
+| A weekly class | Use **Recurring** dates and configure tickets for the series. |
+| A festival on selected dates | Use **Specific Dates** and check what each ticket admits the holder to. |
+| A pass with purchase-based expiry | Configure **Ticket Validity** on the ticket. |
+| A class pack or annual admission program | Create a [membership](/memberships/create-membership), assign events, and set visit limits. |
+
+## Build a timed-entry event
+
+1. Create the event and select its timezone.
+2. In **Dates & Times**, choose **Time Based**, click **Add Times**, and enter the date range and session times. Add additional time slots as needed, then create the schedule.
+3. In **Tickets**, create the ticket types and set their available quantities and minimum/maximum per order. Check the resulting occurrences before selling so each session has the intended capacity.
+4. Configure sales start/end and **Advance Purchase Window** if needed. The advance purchase setting requires a minimum number of days ahead; it is not the furthest date a visitor can book.
+5. Set early, delayed, or late check-in controls to match your arrival policy. Delayed check-in takes precedence over an early window.
+6. Save and open the public calendar or time-slot selector. On Shopify, use the [Ticket Selector](/plugins/connect-shopify) for this booking experience.
+
+## Verify capacity and admission
+
+Check two dates and two times on each date. Confirm the selected occurrence appears in the summary and ticket. Test a sold-out or unavailable slot and an invalid quantity. A recurring schedule creates dates; it does not by itself grant one buyer admission to all dates.
+
+For repeat admission, set the appropriate **Check-In Limit** and **Ticket Validity**, or use a membership with total and per-event visit limits. Explain the scope on the ticket description so a customer knows whether they are buying one session, re-entry, or a multi-event entitlement.
+
+For a festival with workshops, use [event add-ons](/event-management/event-add-ons) to sell session selections and [Required Ticket](/event-management/ticket-setup) for a same-order ticket prerequisite.
+
+## Related guides
+
+- [Dates and times field reference](/event-management/datetime)
+- [Ticket fields and admission windows](/event-management/ticket-setup)
+- [Membership use cases](/memberships/overview)
+- [Mobile check-in](/mobile-app/mobile-check-in)

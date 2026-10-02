@@ -1,5 +1,6 @@
 ---
 title: "Connect Shopify"
+description: "Connect Shopify event products, configure the Ticket Selector for seating and advanced ticket controls, and enable thank-you ticket access."
 ---
 
 Connecting **Ticket Spot** to your **Shopify** store makes it easy to publish events as products and sell tickets directly through Shopify Checkout. Once connected, you can send any Ticket Spot event to Shopify, add the Ticket Selector to your product page, and allow guests to receive their tickets immediately after purchase.
@@ -15,9 +16,6 @@ This guide shows how to install the app and enable optional Shopify features so 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 />
-
-Let’s get started 🚀
-
 
 
 ## Navigation
@@ -62,7 +60,7 @@ Your **Shopify** store is now **connected**, and you will be redirected back to 
 
 To create your event, enter the basic details, such as the event name, date, time, and venue. These fields help set up your event in Ticket Spot and prepare it for publishing.
 
-For a full step-by-step walkthrough, please refer to our guide: **[How to Create an Event with Ticket Spot](../essentials/create-event-overview)**.
+For a full step-by-step walkthrough, please refer to our guide: **[How to Create an Event with Ticket Spot](../event-management/create-event-overview)**.
 
 ![click-create-event](../assets/plugins/connect-shopify/click-create-event.gif)
 
@@ -110,32 +108,34 @@ From here, you can see the full attendee list, update their status, view their d
 ![attendee-list](../assets/plugins/connect-shopify/attendee-list.png)
 
 
-## Enable the Ticket Spot Selector (App Embed)
+## Configure the Ticket Selector for advanced ticketing
 
-The App Embed allows you to replace Shopify’s basic variant dropdown with a clean **Buy Tickets** button. When enabled, it opens the Ticket Spot Selector—allowing guests to pick dates, timeslots, and ticket types directly on your product page.
+Use the **Ticket Selector** for seating charts, a calendar/date/time-slot selection experience, access codes, and ticket quantity controls. A standard Shopify variant dropdown does not provide the full Ticket Spot selection flow. Configure the event and its ticket rules in Ticket Spot first.
 
 <iframe
   width="100%"
   height="400"
-  src="https://www.youtube.com/embed/uIWOPFxqMhA"
-  title="YouTube video"
+  src="https://www.youtube.com/embed/grq-oS9AFgI"
+  title="Set up the Ticket Spot Ticket Selector on Shopify"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 />
 
+[Watch the Shopify setup video](https://www.youtube.com/watch?v=grq-oS9AFgI).
 
-1. In Shopify, open **Online Store** from the left-side menu and click on the **Customize** button.
+1. Publish or update the event's linked Shopify product from Ticket Spot.
+2. Open your Shopify theme editor and select the **product template** used by that event product.
+3. In the product section, add the **Ticket Selector** app block.
+4. Choose **Display Mode → Embed inline** to show the selector on the page, or **Modal** for the modal experience.
+5. Save the template and open the published event product page.
+6. Test the configured seating chart, calendar/time slots, access codes, and quantity rules in the selector, then continue through Shopify checkout.
 
-![click-online-store](../assets/plugins/connect-shopify/click-online-store.gif)
+The Ticket Selector handles ticket selection on the product page; the Shopify product flow still checks out through Shopify. The **Thank You Page** ticket-access block is separate and should be configured below.
 
+Older installations may use the **Event Controls / Ticket Spot Controls** app embed. Do not confuse that body-level embed with the **Ticket Selector** product app block. Use the current product block workflow for the advanced selection experience described here.
 
-2. Go to **App Embeds**, enable **Ticket Spot Controls**, and click **Save** to activate.
-
-![enable-event-controls](../assets/plugins/connect-shopify/enable-event-controls.gif)
-
-
-## Configure Advanced Ticket Controls
+## Existing product configuration controls
 
 Go back to your Ticket Spot event and click on the **Shopify Setup** button.
 
@@ -146,7 +146,7 @@ In Shopify Setup, you can:
 
 - **Select a Collection** — Organize your event by adding it to a specific collection so customers can easily find it.
 
-- **Select a Location** — Assign where the event will take place, helping you manage event details more accurately.
+- **Select a Location** — Select the Shopify inventory location used for the product. Configure the attendee-facing venue separately under Venue & Location.
 
 ![shopify-setup](../assets/plugins/connect-shopify/shopify-setup.gif)
 
@@ -158,12 +158,12 @@ In Shopify Setup, you can:
 ![enable-ticketspot-selector](../assets/plugins/connect-shopify/product-page-config.gif)
 
 
-- **Enable Ticket Spot Selector:** Activates a cleaner ticket-selection experience by replacing Shopify’s default checkout flow with Ticket Spot’s built-in ticket interface.
+- **Enable Ticket Spot Selector:** Controls the selector experience for installations using this product configuration. The selector changes ticket selection; the product flow continues through Shopify checkout.
 
 ![enable-ticketspot-selector](../assets/plugins/connect-shopify/enable-ticketspot-selector.gif)
 
 
-After enabling the **Ticket Spot Selector**, your product page updates with a **Buy Tickets** button instead of variants. Clicking it opens the Ticket Spot Selector, where customers pick tickets, enter details, and proceed to checkout.
+For a modal selector installation, the **Buy Tickets** button opens the selector. For the app block, the selected Display Mode determines whether selection is inline or modal. Test the product template you actually use before sharing it.
 
 ![ticketspot-selector-buy-ticket](../assets/plugins/connect-shopify/ticketspot-selector-buy-ticket.gif)
 
@@ -204,3 +204,7 @@ Ticket Spot gives customers instant access to their tickets—QR code, PDF, and 
 ![view-ticket-add-wallet](../assets/plugins/connect-shopify/view-ticket-add-wallet.gif)
 
 These features streamline your entire ticketing flow—helping you sell more, simplifying checkout, and giving guests a smoother, more enjoyable experience.
+
+## Verify advanced ticket controls
+
+Test an available and sold-out seat, the correct event date/time, ticket minimum/maximum quantities, a hidden ticket with an access code, and any [Required Ticket](../event-management/ticket-setup#required-ticket) dependency you configured. Confirm that the selected event/ticket data survives checkout and appears in Ticket Spot's attendee records. Test ticket access on the thank-you page separately.

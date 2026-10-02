@@ -1,0 +1,24 @@
+---
+title: "Prepare the mobile app for offline check-in"
+description: "Download event attendees before going offline, scan stored tickets, and reconcile queued check-ins after reconnecting."
+---
+
+Offline scanning uses attendee data downloaded to the staff device. Prepare each device while it has an internet connection.
+
+## Before losing connectivity
+
+1. Sign in to the mobile app and select the correct site and event.
+2. Open the event's attendee list and choose **Download for offline scanning**.
+3. Wait for the download to finish successfully. If it reports **Download incomplete**, reconnect and try again.
+4. Refresh the download close to the event so recent sales and cancellations are included.
+5. Check each scanning device separately; a download on one device does not prepare the others.
+
+## Scan and reconnect
+
+Use the normal [mobile check-in](/mobile-app/mobile-check-in) flow. While disconnected, the app displays **Offline — downloaded tickets only**. It cannot rely on purchases or changes that arrived after the download.
+
+When connectivity returns, allow queued check-ins to synchronize. Review any failures or conflicts and confirm the attendee's final check-in record before treating the reconciliation as complete.
+
+Two offline devices cannot immediately share a new scan with one another. Plan separate entry lines or ticket allocations when duplicate-entry prevention across disconnected devices matters. Handle an unknown ticket with an online staff device rather than assuming it is valid because its QR code can be read.
+
+Keep membership admission and other live eligibility decisions online unless the app explicitly confirms it can validate that record offline.

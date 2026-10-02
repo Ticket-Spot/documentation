@@ -1,70 +1,54 @@
 ---
-title: "Domain & Analytics"
+title: "Custom domains, sender identity, and analytics"
+description: "Connect event and attendee dashboard domains, configure your sender identity, and add analytics IDs."
 ---
 
-The **Domain & Analytics** section allows you to set up tracking tools and custom domains for your event site. By adding your Google Analytics ID and Facebook Pixel ID, you can track visitor activity and improve your ad campaigns. You can also customize your event URLs with a personalized site handle and set up branded domains for a more professional and consistent experience.
+Open **Settings** in the top navigation. Domain settings are in **Domains & Sender Identity**; tracking IDs are in the separate **Analytics** tab.
 
-Let’s get started 🚀
+## Use a custom Ticket Spot URL
 
+On Business and higher, enable **Use custom Ticket Spot URL** to use a URL based on your site name. Copy **Your Ticket Spot URL** after saving. This is a Ticket Spot-hosted address, not a domain you own.
 
-**Step 1**:Log in to your **Ticket Spot** account and click on the **Site Settings** option from the top navigation bar.
+## Connect your own domains
 
-![site-settings-tab](../assets/site-settings/domain-and-analytics/site-settings-tab.png)
+Custom domains require **Business+ or Platform**.
 
+<Steps>
+<Step title="Choose the domain type">
+Open **Settings → Domains & Sender Identity → Custom Domains**. If custom Ticket Spot URLs are enabled, choose **Switch to custom domains** or turn off **Use custom Ticket Spot URL**.
+</Step>
+<Step title="Enter your subdomain">
+Use **Event Page Domain** for public event pages and **Attendee Dashboard Domain** for the pages where attendees view their tickets. Enter a hostname without a path, such as `events.example.com` or `tickets.example.com`.
+</Step>
+<Step title="Create the DNS record">
+At your DNS provider, create a CNAME for the chosen subdomain:
 
-**Step 2**: Select the **Domain & Analytics** option from the left sidebar.
+| Purpose | Example host/name | CNAME target |
+|---|---|---|
+| Event pages | `events` | `connect.ticketspotapp.com` |
+| Attendee dashboard | `tickets` | `connect.ticketspotapp.com` |
 
-![domain-analytics-win](../assets/site-settings/domain-and-analytics/domain-analytics-win.png)
+Use the instructions shown for your domain. Both domain types use the same target. Remove a conflicting record only for the subdomain you are configuring.
+</Step>
+<Step title="Save and verify">
+Save the settings, allow the DNS change to become available, and use **Verify Domain**. Confirm the verified state, then open an event or attendee ticket link on the correct domain using HTTPS.
+</Step>
+</Steps>
 
-## Google Analytics and Facebook Pixel Configuration
+If verification fails, check the hostname, CNAME target, and any conflicting DNS records. An event domain and attendee dashboard domain are separate settings. A custom domain does not by itself remove branding from templates.
 
-Add your Google Analytics ID and Facebook Pixel ID to track visitor behavior and improve your ad campaigns. These tools help you measure engagement and optimize marketing for your event site.
+## Email sender identity
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Google Analytics Measurement ID** | Track visitor behavior on your event pages and site using **Google Analytics**. | UA-XXXXXXXXX-X or G-XXXXXXXXXX |
-| **Facebook Pixel ID** | Track conversions and optimize ad campaigns targeting event attendees with **Facebook Pixel**. | XXXXXXXXXXXXXXXX |
+In **Domains & Sender Identity**, review **Email Sender Address** and complete the sender verification instructions before using a custom sender. Use an address you control. Check the sender on a delivered confirmation email as well as its [Brand styling](/branding-and-design/brand-design).
 
-![google-fb-pixel-id](../assets/site-settings/domain-and-analytics/google-fb-pixel-id.png)
+## Add analytics IDs
 
-## Use Custom Site Handle
+Open **Settings → Analytics** and enter your **Google Analytics Measurement ID** and **Facebook Pixel ID** in the corresponding fields. Use a GA4 measurement ID such as `G-XXXXXXXXXX` for Google Analytics. Save, then verify a visit using the provider's own reporting tools.
 
-When you toggle on the **Use Custom Site Handle** option, you personalize your event calendar URL with a custom handle derived from your site name. This makes it easier for visitors to find and share your events. 
+Use [event tracking links](/event-management/tracking-links) to compare individual campaigns inside Ticket Spot. A page view, a ticket sale, and payment-provider revenue are different measurements and should be compared over the same period.
 
-For example, instead of a generic URL, you will have a custom URL like:  
-`https://www.ticketspotapp.com/calendar/your-site-name`
+## Related guides
 
-![custom-url](../assets/site-settings/domain-and-analytics/custom-url.png)
-
-You can copy your custom URL and easily share it with others, making it simple for attendees to access your event calendar.
-
-> **Note:** This feature is available with the Business plan and helps enhance your branding by creating a unique and memorable URL for your event calendar.
-
-
-## Configure Custom Domain
-
-If you're on the **Enterprise plan**, you can configure a **Custom Domain** for your event pages and attendee dashboard. This allows you to completely remove the TicketSpot branding and use your own domain (e.g., `events.yourcompany.com`), providing a fully branded and professional experience for your event site.
-
-### Domain Setup Details
-
-| Domain Type | Description | Steps |
-|-------------|-------------|-------|
-| **Event Page Domain** | This is the domain your attendees will see for all your event pages. | 1. Enter your subdomain (e.g., 1events.yourdomain.com1).<br/>2. Add a CNAME record to your DNS settings:<br/>`Host/Name: events`<br/>`Target: connect.ticketspotapp.com`<br/>3. Verify the domain after DNS changes propagate (`up to 24–48 hours`). |
-| **Dashboard Domain** | This is the domain where attendees will view their tickets and event information. | 1. Enter your subdomain (e.g., dashboard.yourdomain.com).<br/>2. Add a CNAME record to your DNS settings:<br/>`Host/Name: dashboard`<br/>`Target: dashboard.ticketspotapp.com`<br/>3. Verify the domain after DNS changes propagate (`up to 24–48 hours`). |
-
-![eventpage-dashboard-win](../assets/site-settings/domain-and-analytics/eventpage-dashboard-win.png)
-
-After completing the DNS setup, click **Verify Domain** to ensure everything is properly configured.
-
-![verify-dom-dashboard-btn](../assets/site-settings/domain-and-analytics/verify-dom-dashboard-btn.png)
-
-#### DNS Setup Instructions
-
-To set up your custom domain, enter your subdomain and add the required CNAME record in your DNS settings. Once the DNS changes have propagated, click **Verify Domain** to complete the setup.
-
-![dns-instructions](../assets/site-settings/domain-and-analytics/dns-instructions.png)
-
-> **Note:** To configure a custom domain, keep **Use Custom Site Handle** toggled off. This option, available with the **Enterprise plan**, allows you to set up your own branded domain (e.g., `events.yourcompany.com`) for a fully personalized event site experience.
-![toggle-btn](../assets/site-settings/domain-and-analytics/toggle-btn.png)
-
-Once everything is verified, your custom domain will be successfully configured.
+- [Brand-first setup](/branding-and-design/brand-design)
+- [White-label setup](/branding-and-design/white-label-setup)
+- [Website embedding](/plugins/embed-on-your-website)
