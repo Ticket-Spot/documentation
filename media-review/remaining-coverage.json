@@ -1,0 +1,385 @@
+{
+  "checked_at": "2026-10-02T05:57:56.633378+00:00",
+  "demo_dependency_captures": [
+    {
+      "id": "event-details-organization",
+      "title": "Organization assignment",
+      "dependency": "Platform account with an existing Demo organization",
+      "pages": [
+        "event-management/eventdetails.mdx"
+      ]
+    },
+    {
+      "id": "installment-buyer-summary",
+      "title": "Buyer payment-plan summary",
+      "dependency": "Stripe test connection with payments enabled",
+      "pages": [
+        "event-management/installment-payments.mdx"
+      ]
+    },
+    {
+      "id": "installment-manage",
+      "title": "Manage installments on an order",
+      "dependency": "Stripe test connection with payments enabled",
+      "pages": [
+        "event-management/installment-payments.mdx"
+      ]
+    },
+    {
+      "id": "installment-schedule",
+      "title": "Ticket installment schedule",
+      "dependency": "Stripe test connection with payments enabled",
+      "pages": [
+        "event-management/installment-payments.mdx"
+      ]
+    },
+    {
+      "id": "waiver-response",
+      "title": "Saved waiver and missing check-in answer",
+      "dependency": "Matching Demo attendee login to review and accept the saved demonstration agreement; organizer login cannot access attendee-scoped tickets.",
+      "pages": [
+        "event-management/additional-information.mdx",
+        "event-management/waivers.mdx"
+      ]
+    },
+    {
+      "id": "seating-limit",
+      "title": "Seating allowance or unavailable map",
+      "dependency": "A genuine Demo site with exhausted seating allowance; do not fabricate this state outside the authorized Analytics fixtures",
+      "pages": [
+        "seating-charts/create-and-assign.mdx",
+        "seating-charts/seat-selection.mdx"
+      ]
+    },
+    {
+      "id": "site-responsive-preview",
+      "title": "Preview the site on desktop and mobile",
+      "dependency": "Demo site has no site_preview_url; Design → Site reports No preview URL available. Public organizer link leads to Shopify, whose demo account is deferred.",
+      "pages": [
+        "branding-and-design/site-design.mdx",
+        "branding-and-design/design-options-reference.mdx"
+      ]
+    },
+    {
+      "id": "event-host-edit",
+      "title": "Edit or remove a host",
+      "dependency": "Existing accepted Demo host; no host invitation email authorized",
+      "pages": [
+        "event-management/hosts.mdx"
+      ]
+    },
+    {
+      "id": "marketplace-organizations",
+      "title": "Organization setup and access",
+      "dependency": "Platform account with Demo organizations; current Demo site is Business Plus",
+      "pages": [
+        "site-settings/event-submissions.mdx",
+        "site-settings/marketplace-and-organizations.mdx"
+      ]
+    },
+    {
+      "id": "marketplace-review",
+      "title": "Review a demo submitted event",
+      "dependency": "Platform account with a submitted Demo event awaiting review",
+      "pages": [
+        "site-settings/event-submissions.mdx",
+        "site-settings/marketplace-and-organizations.mdx"
+      ]
+    },
+    {
+      "id": "team-manage",
+      "title": "Change role, resend or remove confirmation",
+      "dependency": "Existing non-owner Demo team member; no invitation email authorized",
+      "pages": [
+        "team/invite-team-roles.mdx",
+        "team/manage-invitations.mdx"
+      ]
+    }
+  ],
+  "external_device_briefs": 70,
+  "external_briefs_with_partial_demo_assets": 13,
+  "guides_with_retained_legacy_media": {
+    "mobile-app/attendee-details.mdx": [
+      "../assets/mobile-app/attendee-details/all-attend-checkin.gif",
+      "../assets/mobile-app/attendee-details/all-upcoming-past.gif",
+      "../assets/mobile-app/attendee-details/attendee-info.png",
+      "../assets/mobile-app/attendee-details/click-attendee.gif",
+      "../assets/mobile-app/attendee-details/click-event.png",
+      "../assets/mobile-app/attendee-details/click-site.png",
+      "../assets/mobile-app/attendee-details/edit-name.gif",
+      "../assets/mobile-app/attendee-details/event-dashboard.png",
+      "../assets/mobile-app/attendee-details/status-change.gif"
+    ],
+    "mobile-app/mobile-check-in.mdx": [
+      "../assets/mobile-app/mobile-check-in/checkin-success.png",
+      "../assets/mobile-app/mobile-check-in/click-checin-btn.png",
+      "../assets/mobile-app/mobile-check-in/click-scan-another-ticket.png",
+      "../assets/mobile-app/mobile-check-in/scanner.gif"
+    ],
+    "mobile-app/mobile-app-overview.mdx": [
+      "../assets/mobile-app/mobile-app-overview/all-upcoming-past-event.gif",
+      "../assets/mobile-app/mobile-app-overview/bottom-tab.png",
+      "../assets/mobile-app/mobile-app-overview/click-checkin-btn.png",
+      "../assets/mobile-app/mobile-app-overview/click-site.png",
+      "../assets/mobile-app/mobile-app-overview/enter-email.png",
+      "../assets/mobile-app/mobile-app-overview/install-andriod.png",
+      "../assets/mobile-app/mobile-app-overview/ios-get.png",
+      "../assets/mobile-app/mobile-app-overview/otp-submit.png",
+      "../assets/mobile-app/mobile-app-overview/search.png",
+      "../assets/mobile-app/mobile-app-overview/sites-dashboard.png"
+    ],
+    "plugins/connect-shopify.mdx": [
+      "../assets/plugins/connect-shopify/app-embed-ticketspot.png",
+      "../assets/plugins/connect-shopify/attendee-list.png",
+      "../assets/plugins/connect-shopify/checkout-thankyou-page.gif",
+      "../assets/plugins/connect-shopify/click-buy-tickets-btn.gif",
+      "../assets/plugins/connect-shopify/click-conenct-shopify-btn.png",
+      "../assets/plugins/connect-shopify/click-create-event.gif",
+      "../assets/plugins/connect-shopify/click-event-page-btn.gif",
+      "../assets/plugins/connect-shopify/click-install-btn1.png",
+      "../assets/plugins/connect-shopify/click-install-btn2.png",
+      "../assets/plugins/connect-shopify/click-publish-btn.png",
+      "../assets/plugins/connect-shopify/click-site.png",
+      "../assets/plugins/connect-shopify/create-connect-site-modal.png",
+      "../assets/plugins/connect-shopify/enable-ticketspot-selector.gif",
+      "../assets/plugins/connect-shopify/go-shopify-setup1.gif",
+      "../assets/plugins/connect-shopify/manage-attendees-btn.gif",
+      "../assets/plugins/connect-shopify/my-store-dashboard.png",
+      "../assets/plugins/connect-shopify/product-page-config.gif",
+      "../assets/plugins/connect-shopify/publish-to-shopify-btn.png",
+      "../assets/plugins/connect-shopify/select-thankyou-page-save.gif",
+      "../assets/plugins/connect-shopify/share-btn.png",
+      "../assets/plugins/connect-shopify/shopify-login.png",
+      "../assets/plugins/connect-shopify/shopify-setup.gif",
+      "../assets/plugins/connect-shopify/thankyou-page-display.png",
+      "../assets/plugins/connect-shopify/thankyou-page1.gif",
+      "../assets/plugins/connect-shopify/ticketspot-selector-buy-ticket.gif",
+      "../assets/plugins/connect-shopify/view-ticket-add-wallet.gif"
+    ],
+    "plugins/connect-lovable.mdx": [
+      "../assets/plugins/connect-lovable/checkout.gif",
+      "../assets/plugins/connect-lovable/click-enter-btn.gif",
+      "../assets/plugins/connect-lovable/copy-prompt.gif",
+      "../assets/plugins/connect-lovable/describe-event.png",
+      "../assets/plugins/connect-lovable/sign-in.png",
+      "../assets/plugins/connect-lovable/view-dwlnd-ticket.png"
+    ],
+    "plugins/connect-wix.mdx": [
+      "../assets/plugins/connect-wix/add-to-site-btn.png",
+      "../assets/plugins/connect-wix/agree-add-btn.png",
+      "../assets/plugins/connect-wix/analytics-tab.gif",
+      "../assets/plugins/connect-wix/buy-ticket-btn.png",
+      "../assets/plugins/connect-wix/checkout.gif",
+      "../assets/plugins/connect-wix/click-event-manage.gif",
+      "../assets/plugins/connect-wix/click-site.png",
+      "../assets/plugins/connect-wix/create-connect-modal-win.png",
+      "../assets/plugins/connect-wix/create-event.gif",
+      "../assets/plugins/connect-wix/manage-attendee-btn.gif",
+      "../assets/plugins/connect-wix/option2-app-store.gif",
+      "../assets/plugins/connect-wix/publish-event.gif",
+      "../assets/plugins/connect-wix/ticket-attendee-design.gif",
+      "../assets/plugins/connect-wix/view-atendee.png",
+      "../assets/plugins/connect-wix/view-ticket.png",
+      "../assets/plugins/connect-wix/wix-connect.png"
+    ],
+    "integrations/klaviyo.mdx": [
+      "../assets/integrations/klaviyo/klaviyo-disconnect.png"
+    ],
+    "integrations/tickettailor.mdx": [
+      "../assets/integrations/tickettailor/disconnect.png",
+      "../assets/integrations/tickettailor/green-status.png"
+    ],
+    "integrations/zapier.mdx": [
+      "../assets/integrations/zapier/action-event-accnt.gif",
+      "../assets/integrations/zapier/app-trigger-event.png",
+      "../assets/integrations/zapier/click-continue1.png",
+      "../assets/integrations/zapier/click-continue2.png",
+      "../assets/integrations/zapier/configure-gmail.gif",
+      "../assets/integrations/zapier/conti-select-record.png",
+      "../assets/integrations/zapier/draft-email.gif",
+      "../assets/integrations/zapier/purchase-ticket.gif",
+      "../assets/integrations/zapier/select-app.gif",
+      "../assets/integrations/zapier/sign-in.png",
+      "../assets/integrations/zapier/signin-btn.png",
+      "../assets/integrations/zapier/test-publish.gif",
+      "../assets/integrations/zapier/yes-conti-ts.png"
+    ],
+    "integrations/eventbrite.mdx": [
+      "../assets/integrations/eventbrite/allow-button.png",
+      "../assets/integrations/eventbrite/disconnect.png",
+      "../assets/integrations/eventbrite/green-status.png",
+      "../assets/integrations/eventbrite/sign-in.png"
+    ],
+    "integrations/zoom.mdx": [
+      "../assets/integrations/zoom/allow-button.png",
+      "../assets/integrations/zoom/disconnect.png",
+      "../assets/integrations/zoom/green-status.png",
+      "../assets/integrations/zoom/list-zoom-events.png",
+      "../assets/integrations/zoom/sign-in.png",
+      "../assets/integrations/zoom/switch-account.png"
+    ],
+    "integrations/google.mdx": [
+      "../assets/integrations/google/continue-btn.png",
+      "../assets/integrations/google/disconnect.png",
+      "../assets/integrations/google/green-status.png",
+      "../assets/integrations/google/sign-in.png"
+    ],
+    "integrations/twitch.mdx": [
+      "../assets/integrations/twitch/autorize-btn.png",
+      "../assets/integrations/twitch/disconnect.png",
+      "../assets/integrations/twitch/green-check.png",
+      "../assets/integrations/twitch/sign-in.png"
+    ],
+    "integrations/ticketspice.mdx": [
+      "../assets/integrations/ticketspice/disconnect.png",
+      "../assets/integrations/ticketspice/green-status.png"
+    ],
+    "attendee-portal/qr-code-digital-wallets.mdx": [
+      "../assets/attendee-portal/qr-code-digital-wallets/add-btn-google.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/add-to-apple-wallet.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/add-to-google-btn.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/btn-view-qr-code.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/ios-add-to-wallet.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/my-ticket-tab.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/ticket-google-wallet.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/upcom-event.png",
+      "../assets/attendee-portal/qr-code-digital-wallets/view-qr-code-mod-win.png"
+    ],
+    "attendee-portal/viewing-your-tickets.mdx": [
+      "../assets/attendee-portal/viewing-your-tickets/confirmation-email.gif",
+      "../assets/attendee-portal/viewing-your-tickets/event-details.png",
+      "../assets/attendee-portal/viewing-your-tickets/event-website.gif",
+      "../assets/attendee-portal/viewing-your-tickets/upcoming-events.png"
+    ],
+    "attendee-portal/contact-host.mdx": [
+      "../assets/attendee-portal/contact-host/click-contact-host.png",
+      "../assets/attendee-portal/contact-host/cont-host-modal-win.gif",
+      "../assets/attendee-portal/contact-host/myticket-tab.png",
+      "../assets/attendee-portal/contact-host/success.png",
+      "../assets/attendee-portal/contact-host/upcoming-event.png"
+    ],
+    "attendee-portal/view-download-receipt.mdx": [
+      "../assets/attendee-portal/view-download-receipt-pdf/click-downld-pdf.gif",
+      "../assets/attendee-portal/view-download-receipt-pdf/click-view-receipt.gif",
+      "../assets/attendee-portal/view-download-receipt-pdf/myticket-tab.png",
+      "../assets/attendee-portal/view-download-receipt-pdf/panel-event-details.png",
+      "../assets/attendee-portal/view-download-receipt-pdf/upcoming-event.png"
+    ],
+    "attendee-portal/cancel-transfer-event.mdx": [
+      "../assets/attendee-portal/cancel-transfer-event/btn-cancel-transfer.png",
+      "../assets/attendee-portal/cancel-transfer-event/cancel-event.gif",
+      "../assets/attendee-portal/cancel-transfer-event/click-view-ticket.png",
+      "../assets/attendee-portal/cancel-transfer-event/myticket-tab.png",
+      "../assets/attendee-portal/cancel-transfer-event/transfer-event.gif"
+    ]
+  },
+  "embedded_video_review": [
+    {
+      "page": "getting-started/platform-overview.mdx",
+      "source": "https://www.youtube.com/embed/Rxd7gFCTVpg?si=j4-coC1GeWatVHgE",
+      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    },
+    {
+      "page": "plugins/connect-lovable.mdx",
+      "source": "https://www.youtube.com/embed/dmWbe77wXZE",
+      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    },
+    {
+      "page": "plugins/connect-shopify.mdx",
+      "source": "https://www.youtube.com/embed/xIv6NPcxX4s",
+      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    },
+    {
+      "page": "plugins/connect-shopify.mdx",
+      "source": "https://www.youtube.com/embed/grq-oS9AFgI",
+      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    },
+    {
+      "page": "plugins/connect-wix.mdx",
+      "source": "https://www.youtube.com/embed/RbGp4tIfsy4",
+      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    }
+  ],
+  "unplaced_current_assets": [
+    {
+      "key": "membership-list-saved",
+      "asset": "assets/refresh/memberships/membership-list-saved.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "day-ticket-editor-sales",
+      "asset": "assets/refresh/event-management/day-ticket-editor-sales.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "day-ticket-fees-fees",
+      "asset": "assets/refresh/event-management/day-ticket-fees-fees.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "day-ticket-editor-checkin",
+      "asset": "assets/refresh/event-management/day-ticket-editor-checkin.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "day-ticket-editor-group",
+      "asset": "assets/refresh/event-management/day-ticket-editor-group.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "day-ticket-editor-autopilot",
+      "asset": "assets/refresh/event-management/day-ticket-editor-autopilot.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-answer-filters-choices",
+      "asset": "assets/refresh/attendee-management/attendee-answer-filters-choices.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-detail-notes",
+      "asset": "assets/refresh/attendee-management/attendee-detail-notes.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-status-approval-options",
+      "asset": "assets/refresh/attendee-management/attendee-status-approval-options.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-bulk-actions-status",
+      "asset": "assets/refresh/attendee-management/attendee-bulk-actions-status.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-bulk-actions-send",
+      "asset": "assets/refresh/attendee-management/attendee-bulk-actions-send.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-refund-remove-delete",
+      "asset": "assets/refresh/attendee-management/attendee-refund-remove-delete.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "attendee-list-actions",
+      "asset": "assets/refresh/attendee-management/attendee-list-actions.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "seating-assign-order-single",
+      "asset": "assets/refresh/seating-charts/seating-assign-order-single.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "seating-assign-order-search",
+      "asset": "assets/refresh/seating-charts/seating-assign-order-search.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    },
+    {
+      "key": "integrations-directory-regfox",
+      "asset": "assets/refresh/integrations/integrations-directory-regfox.png",
+      "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
+    }
+  ]
+}

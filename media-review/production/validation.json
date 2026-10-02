@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-02T05:59:50.371896+00:00",
+  "mdx_pages_compiled": 112,
+  "navigation_entries": 112,
+  "local_references_checked": 1274,
+  "updated_guides_rendered": 112,
+  "updated_guide_http_status": 200,
+  "updated_guide_broken_images": 0,
+  "browser_page_errors": 0,
+  "updated_guide_desktop_overflow": false,
+  "updated_guide_mobile_overflow": false,
+  "widget_options_checked": 503,
+  "gallery_checked_screenshots": 516,
+  "gallery_checked_gifs": 3,
+  "companion_posters": 3,
+  "pending_visual_review": 0,
+  "needs_recapture": 0,
+  "capture_scope": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
+  "rendered_guides_evidence": "rendered-guides.json",
+  "gallery_check": {
+    "checked_at": "2026-10-02T05:58:25.276Z",
+    "gallery": {
+      "stats": "516 checked screenshots \u00b7 3 zoom GIF \u00b7 0 captures to redo \u00b7 0 pending review",
+      "cards": 519,
+      "missing": [],
+      "overflow": false,
+      "mobileOverflow": false,
+      "lightbox": true
+    },
+    "errors": []
+  },
+  "root_board_check": {
+    "checked_at": "2026-10-02T05:58:23.454Z",
+    "gallery": {
+      "stats": "516Reviewed screenshots3Reviewed zoom GIFs94Guides with current media70External / device TODOs112Guides accounted for",
+      "cards": 25,
+      "missing": [],
+      "overflow": false,
+      "mobileOverflow": false,
+      "sampleBadges": [
+        "Current assets reviewed",
+        "Current assets reviewed"
+      ]
+    },
+    "errors": []
+  },
+  "analytics_review_check": {
+    "checked_at": "2026-10-02T05:59:10.267Z",
+    "gallery": {
+      "cards": 34,
+      "area": "analytics",
+      "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO. External-platform captures are deferred as requested; the full inventory still tracks all remaining work."
+    },
+    "custom_date_workaround_rendered": true
+  },
+  "analytics_mock_cleanup": {
+    "checked_at": "2026-10-02T05:55:15.458Z",
+    "routes_removed": true,
+    "fixture_requests_before_restore": 27,
+    "fixture_requests_after_restore": 27,
+    "real_overview_status": 200,
+    "real_response_keys": [
+      "event_id",
+      "generated_at",
+      "metrics",
+      "sales_summary",
+      "attendance",
+      "tickets",
+      "engagement"
+    ],
+    "real_metrics": {
+      "gross_sales": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "tickets_sold": {
+        "value": 0,
+        "subtitle": "0% capacity"
+      },
+      "checked_in": {
+        "value": 0,
+        "subtitle": null
+      },
+      "attendance_rate": {
+        "value": 0,
+        "unit": "percent"
+      }
+    },
+    "fixture_data_written_to_database": false,
+    "product_source_modified_for_analytics": false
+  },
+  "remaining_coverage": "../remaining-coverage.json"
+}

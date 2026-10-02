@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-10-02T05:57:56.633378+00:00",
+  "scope": "All six Analytics tabs; real UI with illustrative read-only response fixtures for screenshots. No messages sent.",
+  "reviewed_screenshots": 34,
+  "guides": [
+    "analytics/abandoned-cart-analytics.mdx",
+    "analytics/check-in-analytics.mdx",
+    "analytics/analytics-overview.mdx",
+    "analytics/email-analytics.mdx",
+    "analytics/sales-analytics.mdx",
+    "analytics/event-view-analytics.mdx"
+  ],
+  "restoration": {
+    "checked_at": "2026-10-02T05:55:15.458Z",
+    "routes_removed": true,
+    "fixture_requests_before_restore": 27,
+    "fixture_requests_after_restore": 27,
+    "real_overview_status": 200,
+    "real_response_keys": [
+      "event_id",
+      "generated_at",
+      "metrics",
+      "sales_summary",
+      "attendance",
+      "tickets",
+      "engagement"
+    ],
+    "real_metrics": {
+      "gross_sales": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "tickets_sold": {
+        "value": 0,
+        "subtitle": "0% capacity"
+      },
+      "checked_in": {
+        "value": 0,
+        "subtitle": null
+      },
+      "attendance_rate": {
+        "value": 0,
+        "unit": "percent"
+      }
+    },
+    "fixture_data_written_to_database": false,
+    "product_source_modified_for_analytics": false
+  },
+  "real_export_checks": {
+    "checked_at": "2026-10-02T05:32:40.992Z",
+    "source": "Real APIRequestContext GET requests, unaffected by page.route screenshot fixtures",
+    "results": [
+      {
+        "status": "fulfilled",
+        "value": {
+          "endpoint": "sales-analytics",
+          "status": 200,
+          "content_type": "application/octet-stream; charset=utf-8",
+          "bytes": 1053,
+          "json_shape": null,
+          "csv_header": "\"order_id\",\"order_date\",\"payment_status\",\"event_title\",\"customer_email\",\"customer_name\",\"ticket_name\",\"ticket_price\",\"final_ticket_price\",\"discount_amount\",\"fee_amount\",\"sales_tax\",\"attendee_status\",\"seat_label\",\"checkin_scan_count\",\"promo_code\",\"gross_amount\",\"net_amount\",\"refund_amount\",\"dispute_amount\"",
+          "row_count": 5
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "endpoint": "checkin-analytics",
+          "status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 434,
+          "json_shape": [
+            "event_id",
+            "is_series_event",
+            "include_all_scans",
+            "total_checkins",
+            "unique_attendees",
+            "manual_checkins",
+            "scan_checkins",
+            "totals",
+            "interval",
+            "timeline",
+            "buckets_queried",
+            "source"
+          ],
+          "csv_header": null,
+          "row_count": 0
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "endpoint": "viewing-analytics",
+          "status": 200,
+          "content_type": "application/octet-stream; charset=utf-8",
+          "bytes": 2,
+          "json_shape": "array",
+          "csv_header": null,
+          "row_count": 0
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "endpoint": "abandoned-cart-analytics",
+          "status": 200,
+          "content_type": "application/octet-stream; charset=utf-8",
+          "bytes": 2,
+          "json_shape": "array",
+          "csv_header": null,
+          "row_count": 0
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "endpoint": "email-analytics",
+          "status": 200,
+          "content_type": "application/octet-stream; charset=utf-8",
+          "bytes": 2,
+          "json_shape": "array",
+          "csv_header": null,
+          "row_count": 0
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Attendance Export CSV returned JSON from its summary endpoint; the guide directs users to attendee-management check-in export.",
+    "Traffic, abandoned-cart, and email exports returned empty arrays for the selected real event; nonempty CSV contents were not verified."
+  ]
+}

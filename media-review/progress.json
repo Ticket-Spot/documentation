@@ -1,0 +1,1861 @@
+{
+  "updated_at": "2026-10-02T05:58:20.899660+00:00",
+  "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
+  "planned_capture_units": 321,
+  "units_with_any_capture": 253,
+  "checked_screenshots": 516,
+  "checked_gifs": 3,
+  "companion_posters": 3,
+  "pending_review": 0,
+  "needs_recapture": 0,
+  "guides_with_current_media": 94,
+  "external_capture_units_deferred": 70,
+  "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.",
+  "pages": [
+    {
+      "path": "account/account-settings.mdx",
+      "current_assets": [
+        "assets/refresh/account/account-profile-referral.png",
+        "assets/refresh/account/account-profile.png",
+        "assets/refresh/account/account-security.png"
+      ],
+      "capture_ids": [
+        "account-profile",
+        "account-security"
+      ]
+    },
+    {
+      "path": "account/billing-and-plans.mdx",
+      "current_assets": [
+        "assets/refresh/account/billing-packs-seat-rules.png",
+        "assets/refresh/account/billing-packs-seating.png",
+        "assets/refresh/account/billing-packs-sms-rules.png",
+        "assets/refresh/account/billing-packs-sms.png",
+        "assets/refresh/account/billing-packs-tickets.png",
+        "assets/refresh/account/billing-packs.png",
+        "assets/refresh/account/billing-usage.png"
+      ],
+      "capture_ids": [
+        "billing-packs",
+        "billing-usage"
+      ]
+    },
+    {
+      "path": "account/feature-reference.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "billing-packs",
+        "billing-usage"
+      ]
+    },
+    {
+      "path": "account/get-paid.mdx",
+      "current_assets": [
+        "assets/refresh/account/payment-connections.png"
+      ],
+      "capture_ids": [
+        "payment-connections"
+      ]
+    },
+    {
+      "path": "account/notifications.mdx",
+      "current_assets": [
+        "assets/refresh/account/account-notifications.png"
+      ],
+      "capture_ids": [
+        "account-notifications"
+      ]
+    },
+    {
+      "path": "analytics/abandoned-cart-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-abandonment.png",
+        "assets/refresh/analytics/analytics-recovery-actions.png",
+        "assets/refresh/analytics/analytics-recovery-compose.png",
+        "assets/refresh/analytics/analytics-recovery-stage-detail.png",
+        "assets/refresh/analytics/analytics-recovery-timeline.png",
+        "assets/refresh/analytics/analytics-recovery.png"
+      ],
+      "capture_ids": [
+        "analytics-abandonment",
+        "analytics-recovery",
+        "analytics-recovery-compose"
+      ]
+    },
+    {
+      "path": "analytics/analytics-overview.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-filters-custom.png",
+        "assets/refresh/analytics/analytics-filters-interval.png",
+        "assets/refresh/analytics/analytics-filters-occurrence.png",
+        "assets/refresh/analytics/analytics-filters-range.png",
+        "assets/refresh/analytics/analytics-navigation.png",
+        "assets/refresh/analytics/analytics-overview-engagement.png",
+        "assets/refresh/analytics/analytics-overview.png"
+      ],
+      "capture_ids": [
+        "analytics-navigation",
+        "analytics-overview",
+        "analytics-filters",
+        "analytics-email-summary",
+        "analytics-email-activity",
+        "analytics-email-failures"
+      ]
+    },
+    {
+      "path": "analytics/check-in-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-attendance-detail-scans.png",
+        "assets/refresh/analytics/analytics-attendance-detail-types.png",
+        "assets/refresh/analytics/analytics-attendance-detail.png",
+        "assets/refresh/analytics/analytics-checkin-repeat.png",
+        "assets/refresh/analytics/analytics-checkin.png"
+      ],
+      "capture_ids": [
+        "analytics-checkin",
+        "analytics-attendance-detail"
+      ]
+    },
+    {
+      "path": "analytics/email-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-email-activity-force-run.png",
+        "assets/refresh/analytics/analytics-email-activity-force-send.png",
+        "assets/refresh/analytics/analytics-email-activity-scheduled.png",
+        "assets/refresh/analytics/analytics-email-activity.png",
+        "assets/refresh/analytics/analytics-email-failures.png",
+        "assets/refresh/analytics/analytics-email-summary-funnel.png",
+        "assets/refresh/analytics/analytics-email-summary-insights.png",
+        "assets/refresh/analytics/analytics-email-summary-types.png",
+        "assets/refresh/analytics/analytics-email-summary.png"
+      ],
+      "capture_ids": [
+        "analytics-email-summary",
+        "analytics-email-activity",
+        "analytics-email-failures"
+      ]
+    },
+    {
+      "path": "analytics/event-view-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-view-detail-insights.png",
+        "assets/refresh/analytics/analytics-view-detail-potential.png",
+        "assets/refresh/analytics/analytics-view-detail.png",
+        "assets/refresh/analytics/analytics-views.png"
+      ],
+      "capture_ids": [
+        "analytics-view-detail",
+        "analytics-views"
+      ]
+    },
+    {
+      "path": "analytics/sales-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/analytics/analytics-sales-orders.png",
+        "assets/refresh/analytics/analytics-sales-summary-breakdown.png",
+        "assets/refresh/analytics/analytics-sales-summary.png"
+      ],
+      "capture_ids": [
+        "analytics-sales-orders",
+        "analytics-sales-summary"
+      ]
+    },
+    {
+      "path": "api-reference/endpoint/create.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "demo-navigation",
+        "event-editor-tour"
+      ]
+    },
+    {
+      "path": "api-reference/introduction.mdx",
+      "current_assets": [
+        "assets/refresh/api-reference/api-key-settings.png"
+      ],
+      "capture_ids": [
+        "api-key-settings"
+      ]
+    },
+    {
+      "path": "attendee-management/adding-attendees-manually.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-add-questions.png",
+        "assets/refresh/attendee-management/attendee-add.png"
+      ],
+      "capture_ids": [
+        "attendee-add"
+      ]
+    },
+    {
+      "path": "attendee-management/export-attendees-and-check-in-data.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-export-event-card.png",
+        "assets/refresh/attendee-management/attendee-financial-export.png"
+      ],
+      "capture_ids": [
+        "attendee-checkin-export",
+        "attendee-export"
+      ]
+    },
+    {
+      "path": "attendee-management/managing-attendees.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-answer-filters.png",
+        "assets/refresh/attendee-management/attendee-bulk-actions.png",
+        "assets/refresh/attendee-management/attendee-dashboard-filters-more.png",
+        "assets/refresh/attendee-management/attendee-dashboard-filters.png",
+        "assets/refresh/attendee-management/attendee-dashboard-stats.png",
+        "assets/refresh/attendee-management/attendee-status-approval.png",
+        "assets/refresh/attendee-management/attendee-ticket-print.png"
+      ],
+      "capture_ids": [
+        "attendee-bulk-actions",
+        "attendee-detail",
+        "attendee-list",
+        "attendee-order",
+        "attendee-refund-remove",
+        "attendee-status-approval",
+        "attendee-ticket-print",
+        "attendee-dashboard-stats",
+        "attendee-dashboard-filters",
+        "attendee-answer-filters",
+        "attendee-financial-export"
+      ]
+    },
+    {
+      "path": "attendee-management/viewing-attendee-details.mdx",
+      "current_assets": [
+        "assets/refresh/attendee-management/attendee-detail-add-note.png",
+        "assets/refresh/attendee-management/attendee-detail-contact-edit.png",
+        "assets/refresh/attendee-management/attendee-detail-email.png",
+        "assets/refresh/attendee-management/attendee-detail.png",
+        "assets/refresh/attendee-management/attendee-order.png"
+      ],
+      "capture_ids": [
+        "attendee-bulk-actions",
+        "attendee-detail",
+        "attendee-list",
+        "attendee-order",
+        "attendee-refund-remove",
+        "attendee-status-approval",
+        "attendee-ticket-print"
+      ]
+    },
+    {
+      "path": "attendee-portal/cancel-transfer-event.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "portal-cancel",
+        "portal-transfer"
+      ]
+    },
+    {
+      "path": "attendee-portal/contact-host.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "portal-contact-host"
+      ]
+    },
+    {
+      "path": "attendee-portal/qr-code-digital-wallets.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "portal-home",
+        "portal-ticket",
+        "portal-wallet-buttons",
+        "wallet-apple",
+        "wallet-google"
+      ]
+    },
+    {
+      "path": "attendee-portal/view-download-receipt.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "portal-receipt"
+      ]
+    },
+    {
+      "path": "attendee-portal/viewing-your-tickets.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "portal-home",
+        "portal-ticket",
+        "portal-wallet-buttons"
+      ]
+    },
+    {
+      "path": "branding-and-design/attendee-communication-design.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-announcement-design.png",
+        "assets/refresh/branding-and-design/communication-approval-design-confirmed.png",
+        "assets/refresh/branding-and-design/communication-approval-design-declined.png",
+        "assets/refresh/branding-and-design/communication-approval-design.png",
+        "assets/refresh/branding-and-design/communication-checkout-design-pending-approval.png",
+        "assets/refresh/branding-and-design/communication-checkout-design.png",
+        "assets/refresh/branding-and-design/communication-confirmation-design.png",
+        "assets/refresh/branding-and-design/communication-installment-design-order.png",
+        "assets/refresh/branding-and-design/communication-installment-design.png",
+        "assets/refresh/branding-and-design/communication-kiosk-design.png",
+        "assets/refresh/branding-and-design/communication-pos-design.png",
+        "assets/refresh/branding-and-design/communication-reminder-design.png",
+        "assets/refresh/branding-and-design/communication-shopify-design.png",
+        "assets/refresh/branding-and-design/communication-template-navigation-not-attending.png",
+        "assets/refresh/branding-and-design/communication-template-navigation-post-event.png",
+        "assets/refresh/branding-and-design/communication-template-navigation.png",
+        "assets/refresh/branding-and-design/communication-waitlist-design-confirmation.png",
+        "assets/refresh/branding-and-design/communication-waitlist-design.png"
+      ],
+      "capture_ids": [
+        "communication-language",
+        "communication-language-output",
+        "communication-reset",
+        "communication-announcement-design",
+        "communication-approval-design",
+        "communication-checkout-design",
+        "communication-confirmation-design",
+        "communication-installment-design",
+        "communication-kiosk-design",
+        "communication-pos-design",
+        "communication-reminder-design",
+        "communication-shopify-design",
+        "communication-template-navigation",
+        "communication-waitlist-design"
+      ]
+    },
+    {
+      "path": "branding-and-design/attendee-ticket-page.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/attendee-page-design.png",
+        "assets/refresh/getting-started/platform-portal.png"
+      ],
+      "capture_ids": [
+        "attendee-page-design",
+        "attendee-page-preview"
+      ]
+    },
+    {
+      "path": "branding-and-design/brand-design.mdx",
+      "current_assets": [
+        "assets/refresh/getting-started/platform-brand.png"
+      ],
+      "capture_ids": [
+        "brand-identity",
+        "brand-white-label"
+      ]
+    },
+    {
+      "path": "branding-and-design/checkout-settings.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-checkout-attendee.png",
+        "assets/refresh/branding-and-design/widget-checkout-codes.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices-cart.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices.png",
+        "assets/refresh/branding-and-design/widget-checkout-result-add-to-cart.png",
+        "assets/refresh/branding-and-design/widget-checkout-result-added.png",
+        "assets/refresh/branding-and-design/widget-checkout-result-review.png"
+      ],
+      "capture_ids": [
+        "widget-checkout-attendee",
+        "widget-checkout-codes",
+        "widget-checkout-dates-prices",
+        "widget-checkout-result"
+      ]
+    },
+    {
+      "path": "branding-and-design/design-options-reference.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "apple-pass-design",
+        "attendee-page-design",
+        "attendee-page-preview",
+        "brand-identity",
+        "brand-white-label",
+        "communication-announcement-design",
+        "communication-approval-design",
+        "communication-checkout-design",
+        "communication-confirmation-design",
+        "communication-installment-design",
+        "communication-kiosk-design",
+        "communication-pos-design",
+        "communication-reminder-design",
+        "communication-shopify-design",
+        "communication-template-navigation",
+        "communication-waitlist-design",
+        "event-page-design-fields",
+        "event-page-host-visibility",
+        "event-page-result",
+        "membership-pdf-design",
+        "receipt-pdf-design",
+        "site-colors-subscription",
+        "site-header-design",
+        "site-responsive-preview",
+        "ticket-basic-design",
+        "ticket-custom-designer",
+        "ticket-format-picker",
+        "ticket-pdf-output",
+        "printer-boca",
+        "printer-output",
+        "printer-star"
+      ]
+    },
+    {
+      "path": "branding-and-design/design-overview.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/design-navigation.png"
+      ],
+      "capture_ids": [
+        "design-navigation",
+        "widget-create-open",
+        "widget-install",
+        "widget-settings-navigation"
+      ]
+    },
+    {
+      "path": "branding-and-design/display-settings.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-display-checkout.png",
+        "assets/refresh/branding-and-design/widget-display-dates.png",
+        "assets/refresh/branding-and-design/widget-display-details.png"
+      ],
+      "capture_ids": [
+        "widget-display-actions",
+        "widget-display-addons",
+        "widget-display-checkout",
+        "widget-display-count",
+        "widget-display-dates",
+        "widget-display-description",
+        "widget-display-details",
+        "widget-display-engagement",
+        "widget-display-hosts",
+        "widget-display-images",
+        "widget-display-memberships",
+        "widget-display-recurring",
+        "widget-display-submit"
+      ]
+    },
+    {
+      "path": "branding-and-design/event-page-design.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/event-page-design-fields-colors.png",
+        "assets/refresh/branding-and-design/event-page-design-fields-private.png",
+        "assets/refresh/branding-and-design/event-page-design-fields-sharing.png",
+        "assets/refresh/branding-and-design/event-page-design-fields.png",
+        "assets/refresh/branding-and-design/event-page-host-visibility.png",
+        "assets/refresh/branding-and-design/event-page-result-mobile.png",
+        "assets/refresh/branding-and-design/event-page-result.png"
+      ],
+      "capture_ids": [
+        "event-page-design-fields",
+        "event-page-host-visibility",
+        "event-page-result"
+      ]
+    },
+    {
+      "path": "branding-and-design/filters.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-advanced-filters-rules.png",
+        "assets/refresh/branding-and-design/widget-advanced-filters.png",
+        "assets/refresh/branding-and-design/widget-event-visibility.png"
+      ],
+      "capture_ids": [
+        "widget-advanced-filters",
+        "widget-event-visibility"
+      ]
+    },
+    {
+      "path": "branding-and-design/language-and-locale.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-default-override-campaign-spanish.png",
+        "assets/refresh/branding-and-design/communication-default-override.png",
+        "assets/refresh/branding-and-design/communication-language.gif",
+        "assets/refresh/branding-and-design/widget-language-preview.png",
+        "assets/refresh/branding-and-design/widget-language-settings.png",
+        "assets/refresh/site-settings/site-settings-general-regional.png"
+      ],
+      "capture_ids": [
+        "communication-language",
+        "communication-language-output",
+        "communication-reset",
+        "widget-display-dates",
+        "widget-text-event",
+        "widget-language-settings",
+        "widget-language-preview",
+        "communication-default-override"
+      ]
+    },
+    {
+      "path": "branding-and-design/layout.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-calendar-options-hours.png",
+        "assets/refresh/branding-and-design/widget-calendar-options.png",
+        "assets/refresh/branding-and-design/widget-layout-date.png",
+        "assets/refresh/branding-and-design/widget-layout-desktop-grid.png",
+        "assets/refresh/branding-and-design/widget-layout-desktop-more.png",
+        "assets/refresh/branding-and-design/widget-layout-desktop.png",
+        "assets/refresh/branding-and-design/widget-layout-mobile-top.png",
+        "assets/refresh/branding-and-design/widget-layout-mobile.png"
+      ],
+      "capture_ids": [
+        "widget-calendar-options",
+        "widget-layout-date",
+        "widget-layout-desktop",
+        "widget-layout-mobile"
+      ]
+    },
+    {
+      "path": "branding-and-design/multilingual-communications.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-default-override-campaign-original.png",
+        "assets/refresh/branding-and-design/communication-default-override-campaign-spanish.png",
+        "assets/refresh/branding-and-design/communication-default-override.png",
+        "assets/refresh/branding-and-design/communication-language-output.png",
+        "assets/refresh/branding-and-design/communication-language.gif",
+        "assets/refresh/branding-and-design/communication-language.png",
+        "assets/refresh/branding-and-design/communication-reset.png"
+      ],
+      "capture_ids": [
+        "communication-language",
+        "communication-language-output",
+        "communication-reset",
+        "communication-default-override"
+      ]
+    },
+    {
+      "path": "branding-and-design/quick-settings.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/quick-settings-cards-lower.png",
+        "assets/refresh/branding-and-design/quick-settings-cards.png",
+        "assets/refresh/branding-and-design/quick-settings-save.png",
+        "assets/refresh/branding-and-design/quick-settings-search-results.png",
+        "assets/refresh/branding-and-design/quick-settings-search.gif",
+        "assets/refresh/getting-started/platform-design.png"
+      ],
+      "capture_ids": [
+        "quick-settings-cards",
+        "quick-settings-overview",
+        "quick-settings-save",
+        "quick-settings-search",
+        "widget-language-settings",
+        "widget-language-preview"
+      ]
+    },
+    {
+      "path": "branding-and-design/site-design.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/site-colors-subscription.png",
+        "assets/refresh/branding-and-design/site-header-design.png"
+      ],
+      "capture_ids": [
+        "site-colors-subscription",
+        "site-header-design",
+        "site-responsive-preview"
+      ]
+    },
+    {
+      "path": "branding-and-design/text-settings.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-text-attendee.png",
+        "assets/refresh/branding-and-design/widget-text-edit-result.png",
+        "assets/refresh/branding-and-design/widget-text-edit-setting.png",
+        "assets/refresh/branding-and-design/widget-text-event.png"
+      ],
+      "capture_ids": [
+        "widget-text-edit"
+      ]
+    },
+    {
+      "path": "branding-and-design/ticket-and-receipt-attachment-design.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/apple-pass-design.png",
+        "assets/refresh/branding-and-design/receipt-pdf-design.png",
+        "assets/refresh/branding-and-design/ticket-basic-design.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer-badge.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer-remove.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer-text.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer-tokens.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer.png",
+        "assets/refresh/branding-and-design/ticket-format-picker.png",
+        "assets/refresh/branding-and-design/ticket-pdf-output.png"
+      ],
+      "capture_ids": [
+        "apple-pass-design",
+        "membership-pdf-design",
+        "receipt-pdf-design",
+        "ticket-basic-design",
+        "ticket-custom-designer",
+        "ticket-format-picker",
+        "ticket-pdf-output"
+      ]
+    },
+    {
+      "path": "branding-and-design/tickets-and-passes.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/membership-pdf-design-output.png",
+        "assets/refresh/branding-and-design/membership-pdf-design.png",
+        "assets/refresh/branding-and-design/ticket-basic-design.png",
+        "assets/refresh/branding-and-design/ticket-custom-designer.png",
+        "assets/refresh/branding-and-design/ticket-format-picker.png",
+        "assets/refresh/branding-and-design/ticket-pdf-output.png"
+      ],
+      "capture_ids": [
+        "apple-pass-design",
+        "membership-pdf-design",
+        "receipt-pdf-design",
+        "ticket-basic-design",
+        "ticket-custom-designer",
+        "ticket-format-picker",
+        "ticket-pdf-output"
+      ]
+    },
+    {
+      "path": "branding-and-design/user-search-filter.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-visitor-filter-settings-location.png",
+        "assets/refresh/branding-and-design/widget-visitor-filter-settings.png",
+        "assets/refresh/branding-and-design/widget-visitor-filter-use.png"
+      ],
+      "capture_ids": [
+        "widget-visitor-filter-settings",
+        "widget-visitor-filter-use"
+      ]
+    },
+    {
+      "path": "branding-and-design/white-label-setup.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/brand-white-label.png",
+        "assets/refresh/getting-started/platform-brand.png"
+      ],
+      "capture_ids": [
+        "brand-identity",
+        "brand-white-label",
+        "site-custom-domain",
+        "site-sender",
+        "site-tracking"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-checkout-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-checkout-attendee.png",
+        "assets/refresh/branding-and-design/widget-checkout-codes.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices-cart.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices-date-2.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices-date.png",
+        "assets/refresh/branding-and-design/widget-checkout-dates-prices.png"
+      ],
+      "capture_ids": [
+        "widget-checkout-attendee",
+        "widget-checkout-codes",
+        "widget-checkout-dates-prices",
+        "widget-checkout-result"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-customization-overview.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/design-navigation.png",
+        "assets/refresh/branding-and-design/widget-create-open-form.png",
+        "assets/refresh/branding-and-design/widget-create-open.png",
+        "assets/refresh/branding-and-design/widget-install.png"
+      ],
+      "capture_ids": [
+        "design-navigation",
+        "widget-create-open",
+        "widget-install",
+        "widget-settings-navigation"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-design-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-component-style.png",
+        "assets/refresh/branding-and-design/widget-style-addons-2.png",
+        "assets/refresh/branding-and-design/widget-style-addons-3.png",
+        "assets/refresh/branding-and-design/widget-style-addons.png",
+        "assets/refresh/branding-and-design/widget-style-buttons-2.png",
+        "assets/refresh/branding-and-design/widget-style-buttons-3.png",
+        "assets/refresh/branding-and-design/widget-style-buttons-calendar.png",
+        "assets/refresh/branding-and-design/widget-style-buttons.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-2.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-3.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-4.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-multi-day-2.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-multi-day-3.png",
+        "assets/refresh/branding-and-design/widget-style-calendar-multi-day.png",
+        "assets/refresh/branding-and-design/widget-style-calendar.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-2.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-3.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-4.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-5.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-6.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-attendee-2.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-attendee-3.png",
+        "assets/refresh/branding-and-design/widget-style-checkout-attendee.png",
+        "assets/refresh/branding-and-design/widget-style-checkout.png",
+        "assets/refresh/branding-and-design/widget-style-installments-2.png",
+        "assets/refresh/branding-and-design/widget-style-installments-3.png",
+        "assets/refresh/branding-and-design/widget-style-installments-4.png",
+        "assets/refresh/branding-and-design/widget-style-installments.png",
+        "assets/refresh/branding-and-design/widget-style-membership-2.png",
+        "assets/refresh/branding-and-design/widget-style-membership-3.png",
+        "assets/refresh/branding-and-design/widget-style-membership-4.png",
+        "assets/refresh/branding-and-design/widget-style-membership.png",
+        "assets/refresh/branding-and-design/widget-style-search-2.png",
+        "assets/refresh/branding-and-design/widget-style-search.png",
+        "assets/refresh/branding-and-design/widget-typography-2.png",
+        "assets/refresh/branding-and-design/widget-typography-3.png",
+        "assets/refresh/branding-and-design/widget-typography-mobile-2.png",
+        "assets/refresh/branding-and-design/widget-typography-mobile-3.png",
+        "assets/refresh/branding-and-design/widget-typography-mobile.png",
+        "assets/refresh/branding-and-design/widget-typography.png"
+      ],
+      "capture_ids": [
+        "widget-component-style",
+        "widget-style-addons",
+        "widget-style-buttons",
+        "widget-style-calendar",
+        "widget-style-checkout",
+        "widget-style-installments",
+        "widget-style-membership",
+        "widget-style-search",
+        "widget-typography"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-display-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-display-actions.png",
+        "assets/refresh/branding-and-design/widget-display-addons.png",
+        "assets/refresh/branding-and-design/widget-display-checkout-2.png",
+        "assets/refresh/branding-and-design/widget-display-checkout.png",
+        "assets/refresh/branding-and-design/widget-display-count.png",
+        "assets/refresh/branding-and-design/widget-display-dates-2.png",
+        "assets/refresh/branding-and-design/widget-display-dates.png",
+        "assets/refresh/branding-and-design/widget-display-description.png",
+        "assets/refresh/branding-and-design/widget-display-details-2.png",
+        "assets/refresh/branding-and-design/widget-display-details-3.png",
+        "assets/refresh/branding-and-design/widget-display-details.png",
+        "assets/refresh/branding-and-design/widget-display-engagement.png",
+        "assets/refresh/branding-and-design/widget-display-hosts.png",
+        "assets/refresh/branding-and-design/widget-display-images.png",
+        "assets/refresh/branding-and-design/widget-display-memberships.png",
+        "assets/refresh/branding-and-design/widget-display-recurring.png",
+        "assets/refresh/branding-and-design/widget-display-submit.png"
+      ],
+      "capture_ids": [
+        "widget-display-actions",
+        "widget-display-addons",
+        "widget-display-checkout",
+        "widget-display-count",
+        "widget-display-dates",
+        "widget-display-description",
+        "widget-display-details",
+        "widget-display-engagement",
+        "widget-display-hosts",
+        "widget-display-images",
+        "widget-display-memberships",
+        "widget-display-recurring",
+        "widget-display-submit"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-event-filters-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-advanced-filters.png",
+        "assets/refresh/branding-and-design/widget-event-visibility.png"
+      ],
+      "capture_ids": [
+        "widget-advanced-filters",
+        "widget-event-visibility"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-layout-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-layout-date.png",
+        "assets/refresh/branding-and-design/widget-layout-desktop.png",
+        "assets/refresh/branding-and-design/widget-layout-mobile-top.png"
+      ],
+      "capture_ids": [
+        "widget-calendar-options",
+        "widget-layout-date",
+        "widget-layout-desktop",
+        "widget-layout-mobile"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-text-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-text-addons-2.png",
+        "assets/refresh/branding-and-design/widget-text-addons-3.png",
+        "assets/refresh/branding-and-design/widget-text-addons-4.png",
+        "assets/refresh/branding-and-design/widget-text-addons.png",
+        "assets/refresh/branding-and-design/widget-text-attendee-2.png",
+        "assets/refresh/branding-and-design/widget-text-attendee-3.png",
+        "assets/refresh/branding-and-design/widget-text-attendee-4.png",
+        "assets/refresh/branding-and-design/widget-text-attendee-5.png",
+        "assets/refresh/branding-and-design/widget-text-attendee.png",
+        "assets/refresh/branding-and-design/widget-text-cart-2.png",
+        "assets/refresh/branding-and-design/widget-text-cart-3.png",
+        "assets/refresh/branding-and-design/widget-text-cart-4.png",
+        "assets/refresh/branding-and-design/widget-text-cart-5.png",
+        "assets/refresh/branding-and-design/widget-text-cart-6.png",
+        "assets/refresh/branding-and-design/widget-text-cart-7.png",
+        "assets/refresh/branding-and-design/widget-text-cart-8.png",
+        "assets/refresh/branding-and-design/widget-text-cart.png",
+        "assets/refresh/branding-and-design/widget-text-date-2.png",
+        "assets/refresh/branding-and-design/widget-text-date.png",
+        "assets/refresh/branding-and-design/widget-text-event-2.png",
+        "assets/refresh/branding-and-design/widget-text-event-3.png",
+        "assets/refresh/branding-and-design/widget-text-event-4.png",
+        "assets/refresh/branding-and-design/widget-text-event-5.png",
+        "assets/refresh/branding-and-design/widget-text-event.png",
+        "assets/refresh/branding-and-design/widget-text-fast-2.png",
+        "assets/refresh/branding-and-design/widget-text-fast.png",
+        "assets/refresh/branding-and-design/widget-text-general-2.png",
+        "assets/refresh/branding-and-design/widget-text-general-3.png",
+        "assets/refresh/branding-and-design/widget-text-general.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-10.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-11.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-2.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-3.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-4.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-5.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-6.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-7.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-8.png",
+        "assets/refresh/branding-and-design/widget-text-memberships-9.png",
+        "assets/refresh/branding-and-design/widget-text-memberships.png",
+        "assets/refresh/branding-and-design/widget-text-payment-2.png",
+        "assets/refresh/branding-and-design/widget-text-payment-3.png",
+        "assets/refresh/branding-and-design/widget-text-payment-4.png",
+        "assets/refresh/branding-and-design/widget-text-payment-5.png",
+        "assets/refresh/branding-and-design/widget-text-payment.png",
+        "assets/refresh/branding-and-design/widget-text-promo.png",
+        "assets/refresh/branding-and-design/widget-text-search-2.png",
+        "assets/refresh/branding-and-design/widget-text-search.png",
+        "assets/refresh/branding-and-design/widget-text-seating.png",
+        "assets/refresh/branding-and-design/widget-text-sections-2.png",
+        "assets/refresh/branding-and-design/widget-text-sections-3.png",
+        "assets/refresh/branding-and-design/widget-text-sections.png",
+        "assets/refresh/branding-and-design/widget-text-shopify.png",
+        "assets/refresh/branding-and-design/widget-text-widget.png"
+      ],
+      "capture_ids": [
+        "widget-text-addons",
+        "widget-text-attendee",
+        "widget-text-cart",
+        "widget-text-date",
+        "widget-text-edit",
+        "widget-text-event",
+        "widget-text-fast",
+        "widget-text-general",
+        "widget-text-memberships",
+        "widget-text-payment",
+        "widget-text-promo",
+        "widget-text-search",
+        "widget-text-seating",
+        "widget-text-sections",
+        "widget-text-shopify",
+        "widget-text-widget"
+      ]
+    },
+    {
+      "path": "branding-and-design/widget-visitor-filters-reference.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/widget-visitor-filter-settings-location.png",
+        "assets/refresh/branding-and-design/widget-visitor-filter-settings.png"
+      ],
+      "capture_ids": [
+        "widget-visitor-filter-settings",
+        "widget-visitor-filter-use"
+      ]
+    },
+    {
+      "path": "event-management/additional-information.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/question-create-presets.png",
+        "assets/refresh/event-management/question-create.png",
+        "assets/refresh/event-management/question-dropdown.png",
+        "assets/refresh/event-management/question-required-rules.png",
+        "assets/refresh/event-management/question-scope-mapping.png",
+        "assets/refresh/event-management/question-scope.png",
+        "assets/refresh/event-management/question-types.png"
+      ],
+      "capture_ids": [
+        "question-create",
+        "question-dropdown",
+        "question-required-rules",
+        "question-scope",
+        "question-types",
+        "waiver-response",
+        "waiver-setup"
+      ]
+    },
+    {
+      "path": "event-management/checkout-complete-message.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/checkout-complete-editor.png"
+      ],
+      "capture_ids": [
+        "checkout-complete-editor"
+      ]
+    },
+    {
+      "path": "event-management/create-event-overview.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-create-template-picker.png",
+        "assets/refresh/getting-started/event-editor-tour.png"
+      ],
+      "capture_ids": [
+        "demo-navigation",
+        "event-editor-tour",
+        "event-create-template-picker"
+      ]
+    },
+    {
+      "path": "event-management/datetime.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/date-format-locked.png",
+        "assets/refresh/event-management/date-no-date.png",
+        "assets/refresh/event-management/date-one-time.png",
+        "assets/refresh/event-management/date-recurring-rules-monthly.png",
+        "assets/refresh/event-management/date-recurring-rules-yearly.png",
+        "assets/refresh/event-management/date-recurring-rules.png",
+        "assets/refresh/event-management/date-recurring.png",
+        "assets/refresh/event-management/date-specific.png",
+        "assets/refresh/event-management/date-time-slots-range.png",
+        "assets/refresh/event-management/date-time-slots.png",
+        "assets/refresh/event-management/whole-event-pass.png"
+      ],
+      "capture_ids": [
+        "date-format-locked",
+        "date-no-date",
+        "date-one-time",
+        "date-recurring",
+        "date-recurring-rules",
+        "date-specific",
+        "date-time-slots"
+      ]
+    },
+    {
+      "path": "event-management/day-specific-tickets.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/day-ticket-editor-access-code.png",
+        "assets/refresh/event-management/day-ticket-editor-access.png",
+        "assets/refresh/event-management/day-ticket-editor-autopilot-rule.png",
+        "assets/refresh/event-management/day-ticket-editor-basics.png",
+        "assets/refresh/event-management/day-ticket-editor-checkin-windows.png",
+        "assets/refresh/event-management/day-ticket-editor-group-composition.png",
+        "assets/refresh/event-management/day-ticket-editor-inventory.png",
+        "assets/refresh/event-management/day-ticket-editor-scheduled.png",
+        "assets/refresh/event-management/day-ticket-editor-seating.png",
+        "assets/refresh/event-management/day-ticket-editor-volume.png",
+        "assets/refresh/event-management/day-ticket-fees-optional.png",
+        "assets/refresh/event-management/day-ticket-overrides-title-label.png",
+        "assets/refresh/event-management/day-ticket-overrides.png",
+        "assets/refresh/event-management/day-ticket-revert-restored.png",
+        "assets/refresh/event-management/day-ticket-revert.png",
+        "assets/refresh/event-management/day-ticket-source-custom.png",
+        "assets/refresh/event-management/day-ticket-source-inherited.png",
+        "assets/refresh/event-management/day-ticket-source.png"
+      ],
+      "capture_ids": [
+        "day-ticket-editor",
+        "day-ticket-fees",
+        "day-ticket-overrides",
+        "day-ticket-revert",
+        "day-ticket-source",
+        "whole-event-pass"
+      ]
+    },
+    {
+      "path": "event-management/display-settings.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-display-overrides-host.png",
+        "assets/refresh/event-management/event-display-overrides-page.png",
+        "assets/refresh/event-management/event-display-overrides.png"
+      ],
+      "capture_ids": [
+        "event-display-overrides"
+      ]
+    },
+    {
+      "path": "event-management/email-communication.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-default-override-campaign-original.png",
+        "assets/refresh/branding-and-design/communication-default-override-campaign-spanish.png",
+        "assets/refresh/event-management/email-attachments.png",
+        "assets/refresh/event-management/email-campaign-message.png",
+        "assets/refresh/event-management/email-campaign.png",
+        "assets/refresh/event-management/email-confirmation-test.png",
+        "assets/refresh/event-management/email-confirmation.png",
+        "assets/refresh/event-management/email-personalization.png",
+        "assets/refresh/event-management/email-post-event.png",
+        "assets/refresh/event-management/email-reminder.png"
+      ],
+      "capture_ids": [
+        "communication-language",
+        "communication-language-output",
+        "communication-reset",
+        "email-attachments",
+        "email-campaign",
+        "email-confirmation",
+        "email-personalization",
+        "email-post-event",
+        "email-reminder"
+      ]
+    },
+    {
+      "path": "event-management/event-add-ons.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/addon-rules.png",
+        "assets/refresh/event-management/addon-selection.png"
+      ],
+      "capture_ids": [
+        "addon-rules",
+        "addon-selection"
+      ]
+    },
+    {
+      "path": "event-management/event-options-reference.mdx",
+      "current_assets": [
+        "assets/refresh/getting-started/event-editor-tour.png"
+      ],
+      "capture_ids": [
+        "demo-navigation",
+        "event-editor-tour"
+      ]
+    },
+    {
+      "path": "event-management/eventdetails.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-details-capacity.png",
+        "assets/refresh/event-management/event-details-media-description.png",
+        "assets/refresh/event-management/event-details-media-video.png",
+        "assets/refresh/event-management/event-details-media.png",
+        "assets/refresh/event-management/event-details-page-timezone.png",
+        "assets/refresh/event-management/event-details-privacy.png",
+        "assets/refresh/event-management/event-details-self-checkin.png",
+        "assets/refresh/event-management/event-details-types-category.png",
+        "assets/refresh/event-management/event-details-types-external.png",
+        "assets/refresh/event-management/event-details-types.png",
+        "assets/refresh/event-management/event-display-overrides-page.png",
+        "assets/refresh/event-management/event-display-overrides.png"
+      ],
+      "capture_ids": [
+        "event-details-capacity",
+        "event-details-media",
+        "event-details-organization",
+        "event-details-page-timezone",
+        "event-details-privacy",
+        "event-details-self-checkin",
+        "event-details-types"
+      ]
+    },
+    {
+      "path": "event-management/hosts.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-hosts.png"
+      ],
+      "capture_ids": [
+        "event-host-edit",
+        "event-hosts"
+      ]
+    },
+    {
+      "path": "event-management/installment-payments.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/day-ticket-editor-advanced.png"
+      ],
+      "capture_ids": [
+        "installment-buyer-summary",
+        "installment-manage",
+        "installment-schedule"
+      ]
+    },
+    {
+      "path": "event-management/manage-events.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-actions-duplicate.png",
+        "assets/refresh/event-management/event-actions-editor.png",
+        "assets/refresh/event-management/event-actions.png",
+        "assets/refresh/event-management/event-cancel-scope-confirm.png",
+        "assets/refresh/event-management/event-cancel-scope-specific.png",
+        "assets/refresh/event-management/event-cancel-scope-upcoming.png",
+        "assets/refresh/event-management/event-publish-share-editor.png",
+        "assets/refresh/event-management/event-publish-share-live-confirmation.png",
+        "assets/refresh/event-management/event-publish-share-share.png",
+        "assets/refresh/event-management/event-restore-delete-delete.png",
+        "assets/refresh/event-management/event-restore-delete-restore.png"
+      ],
+      "capture_ids": [
+        "event-actions",
+        "event-cancel-scope",
+        "event-publish-share",
+        "event-restore-delete"
+      ]
+    },
+    {
+      "path": "event-management/sms-communication.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/sms-settings.png",
+        "assets/refresh/event-management/sms-timing-content-post-event.png",
+        "assets/refresh/event-management/sms-timing-content-preview.png",
+        "assets/refresh/event-management/sms-timing-content-test.png",
+        "assets/refresh/event-management/sms-timing-content-tokens.png",
+        "assets/refresh/event-management/sms-timing-content.png"
+      ],
+      "capture_ids": [
+        "sms-settings",
+        "sms-timing-content"
+      ]
+    },
+    {
+      "path": "event-management/tags-and-custom-fields.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/event-custom-fields-value.png",
+        "assets/refresh/event-management/event-custom-fields.png",
+        "assets/refresh/event-management/event-tags.png"
+      ],
+      "capture_ids": [
+        "event-custom-fields",
+        "event-tags"
+      ]
+    },
+    {
+      "path": "event-management/ticket-options-reference.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/day-ticket-fees-optional.png",
+        "assets/refresh/event-management/ticket-advance-purchase.png",
+        "assets/refresh/event-management/ticket-approval.png",
+        "assets/refresh/event-management/ticket-autopilot-actions.png",
+        "assets/refresh/event-management/ticket-checkin-rules-delayed.png",
+        "assets/refresh/event-management/ticket-checkin-rules-window.png",
+        "assets/refresh/event-management/ticket-checkin-rules.png",
+        "assets/refresh/event-management/ticket-details.png",
+        "assets/refresh/event-management/ticket-group-composition.png",
+        "assets/refresh/event-management/ticket-hidden-access.png",
+        "assets/refresh/event-management/ticket-overview.png",
+        "assets/refresh/event-management/ticket-pricing-modes.png",
+        "assets/refresh/event-management/ticket-required-ticket.png",
+        "assets/refresh/event-management/ticket-volume-pricing.png"
+      ],
+      "capture_ids": [
+        "day-ticket-editor",
+        "day-ticket-fees",
+        "day-ticket-overrides",
+        "day-ticket-revert",
+        "day-ticket-source",
+        "promo-code-fields",
+        "promo-shopify-tags",
+        "ticket-advance-purchase",
+        "ticket-approval",
+        "ticket-autopilot",
+        "ticket-capacity-order-limits",
+        "ticket-checkin-rules",
+        "ticket-details",
+        "ticket-editor-tabs",
+        "ticket-group-composition",
+        "ticket-hidden-access",
+        "ticket-management",
+        "ticket-overview",
+        "ticket-pricing-modes",
+        "ticket-required-ticket",
+        "ticket-sales-window",
+        "ticket-service-fee",
+        "ticket-volume-pricing",
+        "whole-event-pass",
+        "membership-buyer-result",
+        "membership-ticket-access",
+        "membership-ticket-price"
+      ]
+    },
+    {
+      "path": "event-management/ticket-setup.mdx",
+      "current_assets": [
+        "assets/refresh/account/payment-connections.png",
+        "assets/refresh/event-management/promo-code-fields-advanced.png",
+        "assets/refresh/event-management/promo-code-fields-list.png",
+        "assets/refresh/event-management/promo-code-fields-schedule.png",
+        "assets/refresh/event-management/promo-code-fields-shared.png",
+        "assets/refresh/event-management/promo-code-fields.png",
+        "assets/refresh/event-management/promo-shopify-tags.png",
+        "assets/refresh/event-management/ticket-advance-purchase.png",
+        "assets/refresh/event-management/ticket-approval.png",
+        "assets/refresh/event-management/ticket-autopilot-actions.png",
+        "assets/refresh/event-management/ticket-autopilot.png",
+        "assets/refresh/event-management/ticket-capacity-order-limits.png",
+        "assets/refresh/event-management/ticket-checkin-rules-delayed.png",
+        "assets/refresh/event-management/ticket-checkin-rules-window.png",
+        "assets/refresh/event-management/ticket-checkin-rules.png",
+        "assets/refresh/event-management/ticket-details.png",
+        "assets/refresh/event-management/ticket-editor-tabs.png",
+        "assets/refresh/event-management/ticket-group-composition.png",
+        "assets/refresh/event-management/ticket-hidden-access.png",
+        "assets/refresh/event-management/ticket-management-delete-confirmation.png",
+        "assets/refresh/event-management/ticket-management.png",
+        "assets/refresh/event-management/ticket-overview.png",
+        "assets/refresh/event-management/ticket-pricing-modes-pwyw.png",
+        "assets/refresh/event-management/ticket-pricing-modes.png",
+        "assets/refresh/event-management/ticket-required-ticket.png",
+        "assets/refresh/event-management/ticket-sales-window.png",
+        "assets/refresh/event-management/ticket-service-fee.png",
+        "assets/refresh/event-management/ticket-volume-pricing.png",
+        "assets/refresh/memberships/membership-ticket-access.png",
+        "assets/refresh/memberships/membership-ticket-price.png"
+      ],
+      "capture_ids": [
+        "promo-code-fields",
+        "promo-shopify-tags",
+        "ticket-advance-purchase",
+        "ticket-approval",
+        "ticket-autopilot",
+        "ticket-capacity-order-limits",
+        "ticket-checkin-rules",
+        "ticket-details",
+        "ticket-editor-tabs",
+        "ticket-group-composition",
+        "ticket-hidden-access",
+        "ticket-management",
+        "ticket-overview",
+        "ticket-pricing-modes",
+        "ticket-required-ticket",
+        "ticket-sales-window",
+        "ticket-service-fee",
+        "ticket-volume-pricing"
+      ]
+    },
+    {
+      "path": "event-management/timed-entry-and-passes.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "date-format-locked",
+        "date-no-date",
+        "date-one-time",
+        "date-recurring",
+        "date-recurring-rules",
+        "date-specific",
+        "date-time-slots"
+      ]
+    },
+    {
+      "path": "event-management/tracking-links.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/tracking-link-create.png",
+        "assets/refresh/event-management/tracking-link-performance.png"
+      ],
+      "capture_ids": [
+        "tracking-link-create",
+        "tracking-link-performance"
+      ]
+    },
+    {
+      "path": "event-management/venuelocation.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/venue-online.png",
+        "assets/refresh/event-management/venue-physical.png"
+      ],
+      "capture_ids": [
+        "venue-online",
+        "venue-physical"
+      ]
+    },
+    {
+      "path": "event-management/waitlist.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-waitlist-design-confirmation.png",
+        "assets/refresh/branding-and-design/communication-waitlist-design.png",
+        "assets/refresh/event-management/waitlist-buyer-view-entry.png",
+        "assets/refresh/event-management/waitlist-buyer-view-form.png",
+        "assets/refresh/event-management/waitlist-fixed-capacity.png",
+        "assets/refresh/event-management/waitlist-invitation-only.png",
+        "assets/refresh/event-management/waitlist-invite-page.png",
+        "assets/refresh/event-management/waitlist-queue-status-filter.png",
+        "assets/refresh/event-management/waitlist-queue-status.png",
+        "assets/refresh/event-management/waitlist-settings-messages.png",
+        "assets/refresh/event-management/waitlist-settings.png",
+        "assets/refresh/event-management/waitlist-shopify-invoice.png"
+      ],
+      "capture_ids": [
+        "waitlist-buyer-view",
+        "waitlist-communications",
+        "waitlist-fixed-capacity",
+        "waitlist-invitation-only",
+        "waitlist-invite-page",
+        "waitlist-queue-status",
+        "waitlist-settings",
+        "waitlist-shopify-invoice"
+      ]
+    },
+    {
+      "path": "event-management/waivers.mdx",
+      "current_assets": [
+        "assets/refresh/event-management/waiver-setup-confirmation.png",
+        "assets/refresh/event-management/waiver-setup-text.png",
+        "assets/refresh/event-management/waiver-setup-upload.png",
+        "assets/refresh/event-management/waiver-setup.png"
+      ],
+      "capture_ids": [
+        "question-create",
+        "question-dropdown",
+        "question-required-rules",
+        "question-scope",
+        "question-types",
+        "waiver-response",
+        "waiver-setup"
+      ]
+    },
+    {
+      "path": "getting-started/language-and-locale-faq.mdx",
+      "current_assets": [
+        "assets/refresh/branding-and-design/communication-default-override.png",
+        "assets/refresh/branding-and-design/widget-language-settings.png",
+        "assets/refresh/site-settings/site-settings-general-regional.png"
+      ],
+      "capture_ids": [
+        "communication-language",
+        "communication-language-output",
+        "communication-reset",
+        "widget-display-dates",
+        "widget-text-event",
+        "widget-language-settings",
+        "widget-language-preview",
+        "communication-default-override"
+      ]
+    },
+    {
+      "path": "getting-started/platform-overview.mdx",
+      "current_assets": [
+        "assets/refresh/getting-started/platform-account.png",
+        "assets/refresh/getting-started/platform-analytics.png",
+        "assets/refresh/getting-started/platform-attendees.png",
+        "assets/refresh/getting-started/platform-brand.png",
+        "assets/refresh/getting-started/platform-design.png",
+        "assets/refresh/getting-started/platform-events.png",
+        "assets/refresh/getting-started/platform-integrations.png",
+        "assets/refresh/getting-started/platform-memberships.png",
+        "assets/refresh/getting-started/platform-mobile.png",
+        "assets/refresh/getting-started/platform-navigation.png",
+        "assets/refresh/getting-started/platform-plugins.png",
+        "assets/refresh/getting-started/platform-portal.png",
+        "assets/refresh/getting-started/platform-settings.png",
+        "assets/refresh/getting-started/platform-team.png",
+        "assets/refresh/getting-started/platform-widget-tour.gif"
+      ],
+      "capture_ids": [
+        "demo-navigation",
+        "event-editor-tour"
+      ]
+    },
+    {
+      "path": "integrations/eventbrite.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-eventbrite-setup-card.png"
+      ],
+      "capture_ids": [
+        "integration-eventbrite-setup",
+        "integration-eventbrite-status"
+      ]
+    },
+    {
+      "path": "integrations/google.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-google-setup-card.png"
+      ],
+      "capture_ids": [
+        "integration-google-setup",
+        "integration-google-status"
+      ]
+    },
+    {
+      "path": "integrations/integrations-overview.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integrations-directory-ecwid.png",
+        "assets/refresh/integrations/integrations-directory-lightspeed.png",
+        "assets/refresh/integrations/integrations-directory-omnisend.png",
+        "assets/refresh/integrations/integrations-directory-regfox-key.png"
+      ],
+      "capture_ids": [
+        "integrations-directory"
+      ]
+    },
+    {
+      "path": "integrations/klaviyo.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-klaviyo-setup-card.png"
+      ],
+      "capture_ids": [
+        "integration-klaviyo-setup",
+        "integration-klaviyo-status",
+        "klaviyo-event-data",
+        "klaviyo-flow"
+      ]
+    },
+    {
+      "path": "integrations/mailchimp.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-mailchimp-setup-card.png",
+        "assets/refresh/integrations/integration-mailchimp-setup.png"
+      ],
+      "capture_ids": [
+        "integration-mailchimp-setup",
+        "integration-mailchimp-status"
+      ]
+    },
+    {
+      "path": "integrations/ticketspice.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-ticketspice-setup-card.png",
+        "assets/refresh/integrations/integration-ticketspice-setup.png"
+      ],
+      "capture_ids": [
+        "integration-ticketspice-setup",
+        "integration-ticketspice-status"
+      ]
+    },
+    {
+      "path": "integrations/tickettailor.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-tickettailor-setup-card.png",
+        "assets/refresh/integrations/integration-tickettailor-setup.png"
+      ],
+      "capture_ids": [
+        "integration-tickettailor-setup",
+        "integration-tickettailor-status"
+      ]
+    },
+    {
+      "path": "integrations/twitch.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-twitch-setup-card.png"
+      ],
+      "capture_ids": [
+        "integration-twitch-setup",
+        "integration-twitch-status"
+      ]
+    },
+    {
+      "path": "integrations/zapier.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/zapier-key-controls-card.png",
+        "assets/refresh/integrations/zapier-key-controls.png"
+      ],
+      "capture_ids": [
+        "zapier-action",
+        "zapier-key-controls",
+        "zapier-trigger"
+      ]
+    },
+    {
+      "path": "integrations/zoom.mdx",
+      "current_assets": [
+        "assets/refresh/integrations/integration-zoom-setup-card.png"
+      ],
+      "capture_ids": [
+        "integration-zoom-events",
+        "integration-zoom-setup",
+        "integration-zoom-status"
+      ]
+    },
+    {
+      "path": "memberships/assign-to-events.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/membership-event-assignment.png",
+        "assets/refresh/memberships/membership-event-panel-admission.png",
+        "assets/refresh/memberships/membership-event-panel-custom-window.png",
+        "assets/refresh/memberships/membership-event-panel-defaults.png",
+        "assets/refresh/memberships/membership-event-panel.png"
+      ],
+      "capture_ids": [
+        "membership-event-assignment",
+        "membership-event-panel"
+      ]
+    },
+    {
+      "path": "memberships/create-membership.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/membership-access.png",
+        "assets/refresh/memberships/membership-details-images.png",
+        "assets/refresh/memberships/membership-details.png",
+        "assets/refresh/memberships/membership-event-assignment.png",
+        "assets/refresh/memberships/membership-list.png",
+        "assets/refresh/memberships/membership-numbering-preview.png",
+        "assets/refresh/memberships/membership-numbering.png",
+        "assets/refresh/memberships/membership-pricing.png"
+      ],
+      "capture_ids": [
+        "membership-access",
+        "membership-details",
+        "membership-list",
+        "membership-numbering",
+        "membership-pricing"
+      ]
+    },
+    {
+      "path": "memberships/manage-members.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/membership-holder-actions-cancel.png",
+        "assets/refresh/memberships/membership-holder-actions-details.png",
+        "assets/refresh/memberships/membership-holder-actions-extend.png",
+        "assets/refresh/memberships/membership-holders-add.png",
+        "assets/refresh/memberships/membership-holders-filters.png",
+        "assets/refresh/memberships/membership-holders.png"
+      ],
+      "capture_ids": [
+        "membership-holder-actions",
+        "membership-holders"
+      ]
+    },
+    {
+      "path": "memberships/overview.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/membership-list.png"
+      ],
+      "capture_ids": [
+        "membership-access",
+        "membership-details",
+        "membership-list",
+        "membership-numbering",
+        "membership-pricing"
+      ]
+    },
+    {
+      "path": "memberships/ticket-access-and-pricing.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/membership-buyer-result-ineligible.png",
+        "assets/refresh/memberships/membership-buyer-result-public.png",
+        "assets/refresh/memberships/membership-buyer-result-verified.png",
+        "assets/refresh/memberships/membership-ticket-access.png",
+        "assets/refresh/memberships/membership-ticket-price.png"
+      ],
+      "capture_ids": [
+        "membership-buyer-result",
+        "membership-ticket-access",
+        "membership-ticket-price"
+      ]
+    },
+    {
+      "path": "mobile-app/attendee-details.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "mobile-attendee",
+        "mobile-attendee-edit"
+      ]
+    },
+    {
+      "path": "mobile-app/mobile-app-overview.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "mobile-app-android-install",
+        "mobile-app-ios-install",
+        "mobile-login",
+        "mobile-navigation",
+        "mobile-tabs"
+      ]
+    },
+    {
+      "path": "mobile-app/mobile-check-in.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "mobile-manual-checkin",
+        "mobile-scan",
+        "mobile-scan-states"
+      ]
+    },
+    {
+      "path": "mobile-app/offline-check-in.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "mobile-offline-ready",
+        "mobile-offline-sync"
+      ]
+    },
+    {
+      "path": "on-site/box-office-pos.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "pos-result",
+        "pos-sale",
+        "pos-setup"
+      ]
+    },
+    {
+      "path": "on-site/self-check-in-kiosk.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "kiosk-checkin",
+        "kiosk-setup"
+      ]
+    },
+    {
+      "path": "on-site/ticket-printing.mdx",
+      "current_assets": [
+        "assets/refresh/on-site/printer-boca.png",
+        "assets/refresh/on-site/printer-star.png"
+      ],
+      "capture_ids": [
+        "printer-boca",
+        "printer-output",
+        "printer-star"
+      ]
+    },
+    {
+      "path": "plugins/connect-lovable.mdx",
+      "current_assets": [
+        "assets/refresh/plugins/lovable-export.png"
+      ],
+      "capture_ids": [
+        "lovable-export",
+        "lovable-widget-result"
+      ]
+    },
+    {
+      "path": "plugins/connect-shopify.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "shopify-block-install",
+        "shopify-blocks",
+        "shopify-cart-handoff",
+        "shopify-customer-details",
+        "shopify-display-mode",
+        "shopify-linked-product",
+        "shopify-membership-required",
+        "shopify-selector-use",
+        "shopify-thank-you-block",
+        "shopify-connect",
+        "shopify-publish"
+      ]
+    },
+    {
+      "path": "plugins/connect-wix.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "wix-connect",
+        "wix-editor-settings",
+        "wix-event-checkout"
+      ]
+    },
+    {
+      "path": "plugins/connect-wordpress.mdx",
+      "current_assets": [
+        "assets/refresh/plugins/widget-embed-options-wordpress.png"
+      ],
+      "capture_ids": [
+        "widget-embed-options",
+        "widget-embedded-result",
+        "wordpress-embed"
+      ]
+    },
+    {
+      "path": "plugins/embed-on-your-website.mdx",
+      "current_assets": [
+        "assets/refresh/plugins/widget-embed-options.png"
+      ],
+      "capture_ids": [
+        "widget-embed-options",
+        "widget-embedded-result",
+        "wordpress-embed"
+      ]
+    },
+    {
+      "path": "plugins/shopify-ticket-selector.mdx",
+      "current_assets": [],
+      "capture_ids": [
+        "shopify-block-install",
+        "shopify-blocks",
+        "shopify-cart-handoff",
+        "shopify-customer-details",
+        "shopify-display-mode",
+        "shopify-linked-product",
+        "shopify-membership-required",
+        "shopify-selector-use",
+        "shopify-thank-you-block"
+      ]
+    },
+    {
+      "path": "seating-charts/advanced-layouts.mdx",
+      "current_assets": [
+        "assets/refresh/seating-charts/seating-floors-zones-background.png",
+        "assets/refresh/seating-charts/seating-floors-zones.png",
+        "assets/refresh/seating-charts/seating-tables-booths-properties.png",
+        "assets/refresh/seating-charts/seating-tables-booths.png"
+      ],
+      "capture_ids": [
+        "seating-floors-zones",
+        "seating-tables-booths"
+      ]
+    },
+    {
+      "path": "seating-charts/create-and-assign.mdx",
+      "current_assets": [
+        "assets/refresh/seating-charts/seating-chart-assign.png",
+        "assets/refresh/seating-charts/seating-chart-create-categories.png",
+        "assets/refresh/seating-charts/seating-chart-create-designer.png",
+        "assets/refresh/seating-charts/seating-chart-create-published.png",
+        "assets/refresh/seating-charts/seating-chart-create-seat-category.png",
+        "assets/refresh/seating-charts/seating-chart-create.png"
+      ],
+      "capture_ids": [
+        "seating-assign-order",
+        "seating-availability",
+        "seating-buyer-selection",
+        "seating-category-prices",
+        "seating-chart-assign",
+        "seating-chart-create",
+        "seating-date-inheritance",
+        "seating-limit",
+        "seating-mobile-expand",
+        "seating-reassignment-review",
+        "seating-chart-replacement"
+      ]
+    },
+    {
+      "path": "seating-charts/seat-selection.mdx",
+      "current_assets": [
+        "assets/refresh/seating-charts/seating-assign-order-assigned.png",
+        "assets/refresh/seating-charts/seating-assign-order-individual.png",
+        "assets/refresh/seating-charts/seating-assign-order-multiple.png",
+        "assets/refresh/seating-charts/seating-assign-order-order-match.png",
+        "assets/refresh/seating-charts/seating-assign-order-result.png",
+        "assets/refresh/seating-charts/seating-availability-admin.png",
+        "assets/refresh/seating-charts/seating-availability-stats.png",
+        "assets/refresh/seating-charts/seating-buyer-selection-overview.png",
+        "assets/refresh/seating-charts/seating-buyer-selection-selected.png",
+        "assets/refresh/seating-charts/seating-buyer-selection-summary.png",
+        "assets/refresh/seating-charts/seating-category-prices-buyer-child.png",
+        "assets/refresh/seating-charts/seating-category-prices-buyer.png",
+        "assets/refresh/seating-charts/seating-category-prices.png",
+        "assets/refresh/seating-charts/seating-chart-replacement-credits.png",
+        "assets/refresh/seating-charts/seating-chart-replacement-review.png",
+        "assets/refresh/seating-charts/seating-chart-replacement-unsupported-layout.png",
+        "assets/refresh/seating-charts/seating-chart-replacement.png",
+        "assets/refresh/seating-charts/seating-date-inheritance-custom.png",
+        "assets/refresh/seating-charts/seating-date-inheritance-series.png",
+        "assets/refresh/seating-charts/seating-date-inheritance.png",
+        "assets/refresh/seating-charts/seating-mobile-expand-expanded.png",
+        "assets/refresh/seating-charts/seating-mobile-expand-open.png",
+        "assets/refresh/seating-charts/seating-reassignment-review-conflict.png",
+        "assets/refresh/seating-charts/seating-reassignment-review-move.png",
+        "assets/refresh/seating-charts/seating-reassignment-review-unbook.png",
+        "assets/refresh/seating-charts/seating-reassignment-review.png"
+      ],
+      "capture_ids": [
+        "seating-assign-order",
+        "seating-availability",
+        "seating-buyer-selection",
+        "seating-category-prices",
+        "seating-chart-assign",
+        "seating-chart-create",
+        "seating-date-inheritance",
+        "seating-limit",
+        "seating-mobile-expand",
+        "seating-reassignment-review",
+        "seating-chart-replacement"
+      ]
+    },
+    {
+      "path": "site-settings/add-and-switch-sites.mdx",
+      "current_assets": [
+        "assets/refresh/site-settings/site-create-connect-platforms.png",
+        "assets/refresh/site-settings/site-create-connect.png",
+        "assets/refresh/site-settings/site-switcher.png"
+      ],
+      "capture_ids": [
+        "site-create-connect",
+        "site-settings-general",
+        "site-switcher"
+      ]
+    },
+    {
+      "path": "site-settings/domain-and-analytics.mdx",
+      "current_assets": [
+        "assets/refresh/site-settings/site-custom-domain-dns.png",
+        "assets/refresh/site-settings/site-custom-domain-url.png",
+        "assets/refresh/site-settings/site-custom-domain.png",
+        "assets/refresh/site-settings/site-sender-form.png",
+        "assets/refresh/site-settings/site-sender-reply.png",
+        "assets/refresh/site-settings/site-sender.png",
+        "assets/refresh/site-settings/site-tracking.png"
+      ],
+      "capture_ids": [
+        "site-custom-domain",
+        "site-sender",
+        "site-tracking"
+      ]
+    },
+    {
+      "path": "site-settings/event-submissions.mdx",
+      "current_assets": [
+        "assets/refresh/site-settings/marketplace-submission-approval-message.png",
+        "assets/refresh/site-settings/marketplace-submission-review-message.png",
+        "assets/refresh/site-settings/marketplace-submission.png"
+      ],
+      "capture_ids": [
+        "marketplace-commissions",
+        "marketplace-organizations",
+        "marketplace-review",
+        "marketplace-submission"
+      ]
+    },
+    {
+      "path": "site-settings/marketplace-and-organizations.mdx",
+      "current_assets": [
+        "assets/refresh/site-settings/marketplace-commissions-plan.png"
+      ],
+      "capture_ids": [
+        "marketplace-commissions",
+        "marketplace-organizations",
+        "marketplace-review",
+        "marketplace-submission"
+      ]
+    },
+    {
+      "path": "site-settings/mobile-check-in.mdx",
+      "current_assets": [
+        "assets/refresh/getting-started/platform-settings.png"
+      ],
+      "capture_ids": [
+        "site-checkin-settings"
+      ]
+    },
+    {
+      "path": "site-settings/site-settings.mdx",
+      "current_assets": [
+        "assets/refresh/site-settings/site-settings-general-checkout.png",
+        "assets/refresh/site-settings/site-settings-general-regional.png",
+        "assets/refresh/site-settings/site-settings-general.png"
+      ],
+      "capture_ids": [
+        "site-create-connect",
+        "site-settings-general",
+        "site-switcher"
+      ]
+    },
+    {
+      "path": "team/invite-team-roles.mdx",
+      "current_assets": [
+        "assets/refresh/team/team-invite.png",
+        "assets/refresh/team/team-members.png"
+      ],
+      "capture_ids": [
+        "team-invite",
+        "team-manage",
+        "team-members"
+      ]
+    },
+    {
+      "path": "team/manage-invitations.mdx",
+      "current_assets": [
+        "assets/refresh/team/team-members-pending.png",
+        "assets/refresh/team/team-members.png"
+      ],
+      "capture_ids": [
+        "team-invite",
+        "team-manage",
+        "team-members"
+      ]
+    }
+  ]
+}
