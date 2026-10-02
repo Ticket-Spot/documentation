@@ -4,6 +4,10 @@ The documentation now covers the current searchable widget inventory and the req
 
 The initial audit used local source and documentation previews. The subsequent media refresh uses the authenticated Ticket Spot Demo in a dedicated Chrome capture session. Current screenshots and GIFs are recorded with captions and visual QA in [the production registry](media-review/production/captures.json). The available Demo documentation/media pass is reviewed; [current progress](media-review/progress.json) and [remaining coverage](media-review/remaining-coverage.json) distinguish current assets from deferred account/device states. No invitations, campaign emails, SMS, recovery messages, payments, or real attendee orders have been sent or placed for the refresh. Temporary Spanish communication overrides were reset and the original multilingual switch was restored after capture.
 
+## Ahrefs SEO follow-up
+
+The October 1 follow-up reviewed 96 distinct seed keywords, four matching-term searches, eight organic SERP snapshots, and current Ahrefs rankings for the docs and main domain. It refined 20 guides, retained stable URLs and concise sidebar labels, added practical email/question examples, and strengthened related-workflow links. See [SEO review](SEO_REVIEW.md) for keyword ownership, estimates, exclusions, and the saved research. Product support coverage remains independent of search volume.
+
 ## Coverage and changes
 
 | Area | Coverage in this review | Customer entry point |
