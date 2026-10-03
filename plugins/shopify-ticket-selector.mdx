@@ -1,7 +1,7 @@
 ---
 title: "Shopify Ticket Selector: setup, time slots and seating"
 sidebarTitle: "Shopify Ticket Selector"
-description: "Set up the Ticket Spot app block and product template to sell Shopify event tickets with time slots, seating charts, shared capacity, access codes and tracking links."
+description: "Set up the Ticket Spot app block and product template to sell Shopify event tickets with time slots, seating charts, shared capacity, waitlists, access codes and tracking links."
 ---
 
 Use the **Ticket Selector** to let customers choose dates, time slots, ticket types, and seats on your Shopify product page. Ticket Spot handles the event selection and booking rules; customers pay through Shopify checkout.
@@ -15,6 +15,7 @@ There are two parts to setup: **add the Ticket Selector app block to a Shopify p
 | **Reserved seating** | A seating chart where customers choose available seats and the applicable ticket price. Required for Ticket Spot seat selection on Shopify. |
 | **Dates and time slots** | A booking flow for recurring events, classes, tours, and timed entry, including a calendar layout. |
 | **Capacity across ticket types** | Ticket Spot checks the event or selected occurrence's shared attendee limit alongside individual ticket availability. |
+| **Waitlists** | Waitlist signup when tickets or public capacity run out, plus invitation-based access for eligible guests. Required for Ticket Spot waitlist use on a Shopify product page. |
 | **Access codes** | Entry of event or hidden-ticket access codes before selecting eligible tickets. |
 | **Tracking links** | Ticket Spot campaign information follows the customer into the selector from the generated Shopify product link. |
 | **Attendee details and questions** | Collect the information configured for your event before Shopify checkout. |
@@ -149,6 +150,22 @@ Shopify tracks inventory for individual variants. Ticket Spot also provides a sh
 For example, a workshop can offer **Adult** and **Child** tickets while allowing only **30 attendees in total**. Configure that shared capacity in Ticket Spot and use the Ticket Selector for the booking flow. Giving each Shopify variant stock of 30 does not, by itself, create one shared limit of 30.
 
 Keep ticket quantities and event/date capacities consistent, publish updates, and test a mixed-ticket selection near the limit. Review **Out of sync** warnings before selling. Do not assume a third-party buy button, POS flow, or direct Shopify variant link runs the Ticket Spot selector's booking checks.
+
+### Waitlists on Shopify
+
+Use the **Ticket Selector** for waitlists on Shopify, including invitation-only access from the start or after a chosen number of bookings. It displays the waitlist signup form and carries the guest's invitation into the booking flow. Shopify's standard variant picker does not provide those controls.
+
+1. Open the event's **Waitlist → Settings** and enable the waitlist. Choose the sold-out or event-capacity triggers you need.
+2. To choose when public booking ends, set a finite **Event Capacity**, enable **Limit waitlist purchases to event capacity**, and set **Start waitlist when bookings reach**. This is a count of attendee places, not a date. **0** requires an invitation from the beginning; **40** with capacity **50** allows 40 public places before invitation-based access.
+3. Save the event. Confirm its Shopify product uses the template containing **Ticket Selector**, with **Use Ticket Spot Selector** enabled.
+4. In **Waitlist → Subscribers → Notify Guests**, select **Purchase from Event Page** and **Use Shopify Product URL**. Review any ticket restriction and maximum quantity, then send when ready.
+5. Test the public product page and the complete personalized invitation link. Keep its invitation parameters intact. An invitation cannot exceed the event capacity or its allowed ticket quantity.
+
+<Frame caption="Configure the waitlist start value in Ticket Spot. This example starts it at 40 places within a total capacity of 50.">
+  <img src="../assets/refresh/event-management/waitlist-fixed-capacity.png" alt="Waitlist start threshold and fixed event capacity in Ticket Spot settings" style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+Waitlist signup still collects contact information when **Skip Attendee Details Form** is enabled. Joining the list does not purchase or reserve a ticket. See [waitlist setup, invitations, and Shopify invoice behavior](/event-management/waitlist) or the [Shopify waitlist FAQ](./shopify-ticketing-faq#can-i-use-a-waitlist-for-event-tickets-on-shopify).
 
 ### Access codes
 

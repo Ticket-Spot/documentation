@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T02:50:06.407862+00:00",
+  "updated_at": "2026-10-03T05:09:31.038070+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
   "planned_capture_units": 347,
   "units_with_any_capture": 278,
@@ -1338,6 +1338,7 @@
       "current_assets": [
         "assets/refresh/branding-and-design/communication-waitlist-design-confirmation.png",
         "assets/refresh/branding-and-design/communication-waitlist-design.png",
+        "assets/refresh/event-management/day-ticket-overrides.png",
         "assets/refresh/event-management/waitlist-buyer-view-entry.png",
         "assets/refresh/event-management/waitlist-buyer-view-form.png",
         "assets/refresh/event-management/waitlist-fixed-capacity.png",
@@ -1854,6 +1855,7 @@
       "path": "plugins/shopify-ticket-selector.mdx",
       "current_assets": [
         "assets/refresh/event-management/ticket-pricing-modes-pwyw.png",
+        "assets/refresh/event-management/waitlist-fixed-capacity.png",
         "assets/refresh/plugins/shopify-add-block.png",
         "assets/refresh/plugins/shopify-block-position.png",
         "assets/refresh/plugins/shopify-display-mode.png",
@@ -1883,6 +1885,7 @@
     {
       "path": "plugins/shopify-ticketing-faq.mdx",
       "current_assets": [
+        "assets/refresh/event-management/waitlist-fixed-capacity.png",
         "assets/refresh/plugins/shopify-seating-preview.png"
       ],
       "capture_ids": [

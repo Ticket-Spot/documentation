@@ -1,7 +1,7 @@
 ---
 title: "Set up event waitlists and invitation-only tickets"
 sidebarTitle: "Event waitlists"
-description: "Set up an event waitlist for sold-out tickets or capacity limits, customize signup and emails, and invite guests to buy tickets."
+description: "Choose when an event waitlist starts, set a booking threshold, customize signup and emails, and invite guests to buy tickets, including on Shopify."
 ---
 
 A waitlist collects interested guests and lets you invite selected people to purchase. Joining is not a completed booking or guaranteed admission.
@@ -17,6 +17,14 @@ When the configured trigger or invitation-only threshold is reached, an affected
 <Frame caption="Contact details are collected before the buyer submits the waitlist form.">
   <img src="../assets/refresh/event-management/waitlist-buyer-view-form.png" alt="Join the waitlist form with its heading, Email, and Back highlighted" />
 </Frame>
+
+## When does the waitlist start?
+
+You can offer a waitlist when tickets sell out, when the event reaches capacity, or when bookings reach a limit you choose. The **Start waitlist when bookings reach** field is the waitlist's “start at” setting: it is a number of attendee places, **not a start date or time**.
+
+For example, an event with capacity **50** can start its waitlist at **40**. Public bookings can use the first 40 places; further purchases require a valid waitlist invitation and must still fit within the total capacity of 50. Set **0** for invitation-only purchasing from the start.
+
+Follow [the threshold setup below](#invitation-only-purchasing-within-event-capacity). For a Shopify product page, use the [Ticket Selector](../plugins/shopify-ticket-selector#waitlists-on-shopify) so customers can join the waitlist and use their invitation links.
 
 ## Open and enable a waitlist
 
@@ -53,29 +61,50 @@ Use the personalization picker where provided instead of guessing token syntax. 
 
 ## Invitation-only purchasing within event capacity
 
-
-<Frame caption="A threshold of zero makes purchases invitation-only from the start, while the event capacity remains the maximum.">
-  <img src="../assets/refresh/event-management/waitlist-invitation-only.png" alt="A threshold of zero makes purchases invitation-only from the start, while the event capacity remains the maximum." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
-</Frame>
-
-<Frame caption="With capacity 50 and a waitlist threshold of 40, public bookings stop at 40. Invited purchases use the remaining capacity without increasing the event limit.">
-  <img src="../assets/refresh/event-management/waitlist-fixed-capacity.png" alt="With capacity 50 and a waitlist threshold of 40, public bookings stop at 40. Invited purchases use the remaining capacity without increasing the event limit." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
-</Frame>
-
 1. In **Event Details → Event Capacity**, turn off unlimited capacity and set the maximum number of attendees.
-2. In **Waitlist → Settings**, enable **Limit waitlist purchases to event capacity**.
-3. Set **Start waitlist when bookings reach**. Enabling the switch initially sets this to **0**, so choose the intended threshold before saving.
-4. Save, then test a public checkout and an invited checkout.
+2. In **Waitlist → Settings**, turn on **Enable Waitlist** and **Limit waitlist purchases to event capacity**.
+3. Set **Start waitlist when bookings reach** to a whole number from **0** through the event capacity. Enabling the capacity switch initially sets this to **0**, so choose the intended value before saving.
+4. Save the event, then check the public booking page and an invited checkout.
 
-| Example with capacity 100 | Result |
+<Frame caption="Start immediately: 0 requires a waitlist invitation from the first booking. The overall capacity is still 50.">
+  <img src="../assets/refresh/event-management/waitlist-invitation-only.png" alt="Start waitlist when bookings reach set to 0, with the invitation-only explanation circled" style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+<Frame caption="Start after public bookings: 40 lets the public book 40 places; invited guests can then book within the total capacity of 50.">
+  <img src="../assets/refresh/event-management/waitlist-fixed-capacity.png" alt="Waitlist capacity switch and start threshold of 40 highlighted, with event capacity 50" style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+| Start setting with capacity 50 | Result |
 |---|---|
-| Threshold **0** | Only invited waitlist customers can purchase from the beginning. |
-| Threshold **80** | Public bookings can fill the first 80 attendee places. Further purchases need a valid invitation, up to the overall 100-attendee capacity. |
-| Threshold **100** | Public booking can use the entire capacity. An invitation does not create an extra place beyond 100. |
+| **0** | A valid waitlist invitation is required from the beginning. |
+| **40** | Public bookings can fill the first 40 places. Further purchases need a valid invitation, within the overall capacity of 50. |
+| **50** | Public bookings can use the entire capacity. An invitation does not create an extra place beyond 50. |
 
-Invitations do not increase event capacity in this mode. Ticket quantities, group-ticket attendee counts, invitation quantity limits, and the event ceiling all matter. Before returning the event to unlimited capacity, turn off **Limit waitlist purchases to event capacity**, then change **Event Details → Unlimited attendee capacity** and save. If you need to reduce an existing fixed capacity, reconcile outstanding orders and reservations first; the application can reject the reduction.
+The threshold counts **places used from event capacity**, not orders or people on the waitlist. Group tickets and tickets configured to use several places count accordingly. A public purchase cannot cross the threshold: with 39 places used and a threshold of 40, only one more place is available without an invitation.
 
-With the switch off, the threshold does not apply. Older waitlist release flows can make additional inventory available, so use the fixed-capacity option when invitations must remain inside a firm venue limit.
+Invitations do not increase event capacity in this mode. Ticket availability and the invitation's ticket/quantity restrictions still apply. Joining the waitlist does not itself reserve a place or send a purchase invitation; manage those invitations under **Subscribers**.
+
+### Set a different start value for a date or time slot
+
+For a repeating event, open the date or time slot's drawer, find **Waitlist**, enable its customization, and set **Start waitlist when bookings reach**. The value must fit that occurrence's effective capacity. **0** means invitation-only from the start; leaving the custom field blank uses the existing waitlist behavior. Turning customization off restores the inherited value.
+
+<Frame caption="This unsaved example gives one date capacity 30 and a waitlist start value of 25.">
+  <img src="../assets/refresh/event-management/day-ticket-overrides.png" alt="Date drawer with capacity 30 and waitlist start threshold 25" style={{ width: "600px", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+See [date-specific settings](./day-specific-tickets#date-overrides) for the drawer workflow.
+
+### Turn off the threshold
+
+Turn off **Limit waitlist purchases to event capacity** to remove the start threshold. The other enabled sold-out/capacity waitlist triggers can still apply. Before changing the event to unlimited capacity, turn off this option, then change **Event Details → Unlimited attendee capacity** and save. Reconcile outstanding orders and reservations before reducing an existing capacity; the application can reject a reduction.
+
+Older waitlist release flows can make additional inventory available. Keep the fixed-capacity option enabled when invitations must stay within a firm venue limit.
+
+## Use a waitlist on Shopify
+
+Use the **Ticket Selector** on the Shopify product's assigned template for waitlist signup and invitation-based purchasing. The normal Shopify variant picker does not provide Ticket Spot's waitlist form or invitation flow.
+
+Configure the waitlist and its start threshold in Ticket Spot, then follow [Shopify Ticket Selector setup](../plugins/shopify-ticket-selector#waitlists-on-shopify). When inviting guests to the product page, choose **Purchase from Event Page → Use Shopify Product URL** in **Notify Guests** and keep each guest's full personalized invitation link intact. See the [Shopify waitlist FAQ](../plugins/shopify-ticketing-faq#can-i-use-a-waitlist-for-event-tickets-on-shopify).
 
 ## Communications
 
