@@ -3494,17 +3494,31 @@
         "total"
       ],
       "access": "Demo browser",
-      "fixture": "Demo installment event and test-mode order",
+      "fixture": "Isolated Stripe sandbox event with a real test-mode three-installment order",
       "priority": "P0",
-      "status": "TODO — Stripe test connection unavailable",
+      "status": "Current assets reviewed",
       "output": "assets/refresh/event-management/installment-buyer-summary.png",
       "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
-      "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "TODO: enable a Stripe test connection for installment configuration and buyer/order results. The Demo switch is disabled; prerequisite screenshot available.",
-      "dependency": "Stripe test connection with payments enabled"
+      "review_note": "Automatic consent, payment progress, filters, decline, replacement card, final New Order confirmation and organizer summary verified. Enabled ticket-editor setup remains separately pending.",
+      "readiness": "Real sandbox collection and manual/automatic races passed. Native email and PDF/QR renderer verified through a local transport sink. Hosted webhook delivery, outbound mail, financial rollups and browser 3DS remain separate deployment checks.",
+      "captured_assets": [
+        "assets/refresh/event-management/installment-agreement.png",
+        "assets/refresh/event-management/installment-deposit-checkout.png",
+        "assets/refresh/event-management/installment-deposit-complete.png",
+        "assets/refresh/event-management/installment-automatic-agreement.png"
+      ],
+      "integrated_pages": [
+        "event-management/installment-payments.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 4
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "installment-manage",
@@ -3521,17 +3535,42 @@
         "ticket-release status"
       ],
       "access": "Demo browser",
-      "fixture": "Demo installment event and test-mode order",
+      "fixture": "Isolated Stripe sandbox event with a real test-mode three-installment order",
       "priority": "P0",
-      "status": "TODO — Stripe test connection unavailable",
+      "status": "Current assets reviewed",
       "output": "assets/refresh/event-management/installment-manage.png",
       "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
-      "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "TODO: enable a Stripe test connection for installment configuration and buyer/order results. The Demo switch is disabled; prerequisite screenshot available.",
-      "dependency": "Stripe test connection with payments enabled"
+      "review_note": "Automatic consent, payment progress, filters, decline, replacement card, final New Order confirmation and organizer summary verified. Enabled ticket-editor setup remains separately pending.",
+      "readiness": "Real sandbox collection and manual/automatic races passed. Native email and PDF/QR renderer verified through a local transport sink. Hosted webhook delivery, outbound mail, financial rollups and browser 3DS remain separate deployment checks.",
+      "captured_assets": [
+        "assets/refresh/event-management/installment-next-due.png",
+        "assets/refresh/event-management/installment-confirm-charge.png",
+        "assets/refresh/event-management/installment-second-paid.png",
+        "assets/refresh/event-management/installment-saved-card-declined.png",
+        "assets/refresh/event-management/installment-recovery-consent.png",
+        "assets/refresh/event-management/installment-replacement-card.png",
+        "assets/refresh/event-management/installment-recovery-complete.png",
+        "assets/refresh/event-management/installment-all-paid.png",
+        "assets/refresh/event-management/installment-recovery-already-paid.png",
+        "assets/refresh/event-management/installment-automatic-paid-two.png",
+        "assets/refresh/event-management/installment-payment-filters.png",
+        "assets/refresh/event-management/installment-fully-paid-progress.png",
+        "assets/refresh/event-management/installment-organizer-summary.png",
+        "assets/refresh/event-management/installment-new-order-email.png"
+      ],
+      "integrated_pages": [
+        "attendee-management/managing-orders.mdx",
+        "event-management/installment-payments.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 14
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "installment-schedule",
@@ -12455,11 +12494,11 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-03T05:09:31.038070+00:00",
+    "updated_at": "2026-10-03T18:28:06.149829+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
     "planned_capture_units": 347,
-    "units_with_any_capture": 278,
-    "checked_screenshots": 542,
+    "units_with_any_capture": 280,
+    "checked_screenshots": 560,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,

@@ -16307,5 +16307,528 @@
     "integrated_pages": [
       "plugins/shopify-ticket-selector.mdx"
     ]
+  },
+  "installment-agreement": {
+    "id": "installment-buyer-summary",
+    "key": "installment-agreement",
+    "asset": "assets/refresh/event-management/installment-agreement.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Checkout payment schedule with the saved-card authorization checkbox circled",
+    "caption": "1. Review the three-payment schedule and accept the saved-card agreement before paying the deposit.",
+    "alt": "Checkout payment schedule with the saved-card authorization checkbox circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "event-widget checkout/confirmation",
+    "callouts": [
+      "Saved-card authorization"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified. Historical manual-collection agreement; superseded in the public guide by automatic consent.",
+    "integrated_pages": []
+  },
+  "installment-deposit-checkout": {
+    "id": "installment-buyer-summary",
+    "key": "installment-deposit-checkout",
+    "asset": "assets/refresh/event-management/installment-deposit-checkout.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Stripe card checkout with the $10 deposit due today circled",
+    "caption": "2. Due Today is $10 in this example. The remaining $20 is listed in the payment schedule.",
+    "alt": "Stripe card checkout with the $10 deposit due today circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "event-widget checkout/confirmation",
+    "callouts": [
+      "Due Today"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-deposit-complete": {
+    "id": "installment-buyer-summary",
+    "key": "installment-deposit-complete",
+    "asset": "assets/refresh/event-management/installment-deposit-complete.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Completed deposit checkout showing the order confirmation and pending tickets",
+    "caption": "3. Order complete confirms the deposit checkout. Tickets are still pending in this example because later installments remain unpaid.",
+    "alt": "Completed deposit checkout showing the order confirmation and pending tickets",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "event-widget checkout/confirmation",
+    "callouts": [
+      "Order complete"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-next-due": {
+    "id": "installment-manage",
+    "key": "installment-next-due",
+    "asset": "assets/refresh/event-management/installment-next-due.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Payment Installments dialog with Charge Now circled for the due second payment",
+    "caption": "4. Charge Now is available for the due second installment. The future third installment is unavailable.",
+    "alt": "Payment Installments dialog with Charge Now circled for the due second payment",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "#/events/manage/installment-event/attendees",
+    "callouts": [
+      "Charge Now"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-confirm-charge": {
+    "id": "installment-manage",
+    "key": "installment-confirm-charge",
+    "asset": "assets/refresh/event-management/installment-confirm-charge.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Confirmation dialog for charging the second $10 installment with Yes circled",
+    "caption": "5. Confirm Charge identifies the installment and amount. Review both before selecting Yes.",
+    "alt": "Confirmation dialog for charging the second $10 installment with Yes circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "#/events/manage/installment-event/attendees",
+    "callouts": [
+      "Yes"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-second-paid": {
+    "id": "installment-manage",
+    "key": "installment-second-paid",
+    "asset": "assets/refresh/event-management/installment-second-paid.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Installment record showing two paid payments and the remaining $10 circled",
+    "caption": "6. After the second payment, Paid 2 of 3 and a $10 remaining balance show that one installment is still outstanding.",
+    "alt": "Installment record showing two paid payments and the remaining $10 circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "#/events/manage/installment-event/attendees",
+    "callouts": [
+      "Remaining $10"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-saved-card-declined": {
+    "id": "installment-manage",
+    "key": "installment-saved-card-declined",
+    "asset": "assets/refresh/event-management/installment-saved-card-declined.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Automatic collection needs attention",
+    "caption": "Automatic collection needs attention",
+    "alt": "Failed automatic payment with one of three paid and $20 remaining",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Failed automatic payment with one of three paid and $20 remaining"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-recovery-consent": {
+    "id": "installment-manage",
+    "key": "installment-recovery-consent",
+    "asset": "assets/refresh/event-management/installment-recovery-consent.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Authorize a replacement card",
+    "caption": "Authorize a replacement card",
+    "alt": "Replacement-card authorization checkbox circled",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Replacement-card authorization checkbox circled"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-replacement-card": {
+    "id": "installment-manage",
+    "key": "installment-replacement-card",
+    "asset": "assets/refresh/event-management/installment-replacement-card.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Update card and pay",
+    "caption": "Update card and pay",
+    "alt": "Update card and pay button circled after consent",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Update card and pay button circled after consent"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-recovery-complete": {
+    "id": "installment-manage",
+    "key": "installment-recovery-complete",
+    "asset": "assets/refresh/event-management/installment-recovery-complete.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Replacement-card payment complete",
+    "caption": "Replacement-card payment complete",
+    "alt": "Payment complete message circled",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Payment complete message circled"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-all-paid": {
+    "id": "installment-manage",
+    "key": "installment-all-paid",
+    "asset": "assets/refresh/event-management/installment-all-paid.png",
+    "pages": [
+      "event-management/installment-payments.mdx",
+      "attendee-management/managing-orders.mdx"
+    ],
+    "title": "Completed installment record with the zero balance and All installments paid in full circled",
+    "caption": "11. All three installments are paid in this example. The remaining balance is $0 and the attendee is Attending.",
+    "alt": "Completed installment record with the zero balance and All installments paid in full circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "#/events/manage/installment-event/attendees",
+    "callouts": [
+      "Remaining $0",
+      "All installments paid in full"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx",
+      "attendee-management/managing-orders.mdx"
+    ]
+  },
+  "installment-recovery-already-paid": {
+    "id": "installment-manage",
+    "key": "installment-recovery-already-paid",
+    "asset": "assets/refresh/event-management/installment-recovery-already-paid.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Recovery link showing This installment is already paid with the message circled",
+    "caption": "12. Reopening the completion link after payment shows that the installment is already paid.",
+    "alt": "Recovery link showing This installment is already paid with the message circled",
+    "source": "Actual local Ticket Spot dashboard/widget/recovery UI with real Stripe sandbox payments in an isolated Datastore namespace; synthetic organizer and attendees.",
+    "capturedAt": "2026-10-03",
+    "route": "attendee payment recovery (private token omitted)",
+    "callouts": [
+      "This installment is already paid"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-automatic-agreement": {
+    "id": "installment-buyer-summary",
+    "key": "installment-automatic-agreement",
+    "asset": "assets/refresh/event-management/installment-automatic-agreement.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Automatic saved-card agreement",
+    "caption": "Automatic saved-card agreement",
+    "alt": "Saved-card authorization checkbox circled",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Saved-card authorization checkbox circled"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-automatic-paid-two": {
+    "id": "installment-manage",
+    "key": "installment-automatic-paid-two",
+    "asset": "assets/refresh/event-management/installment-automatic-paid-two.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Automatic collection reaches Paid 2/3",
+    "caption": "Automatic collection reaches Paid 2/3",
+    "alt": "Payment summary and installment progress after automatic collection",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Payment summary and installment progress after automatic collection"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-payment-filters": {
+    "id": "installment-manage",
+    "key": "installment-payment-filters",
+    "asset": "assets/refresh/event-management/installment-payment-filters.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Payment status and progress filters",
+    "caption": "Payment status and progress filters",
+    "alt": "Payment status and progress selectors circled",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Payment status and progress selectors circled"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-fully-paid-progress": {
+    "id": "installment-manage",
+    "key": "installment-fully-paid-progress",
+    "asset": "assets/refresh/event-management/installment-fully-paid-progress.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Fully paid installment progress",
+    "caption": "Fully paid installment progress",
+    "alt": "Fully paid three of three badge circled",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Fully paid three of three badge circled"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-organizer-summary": {
+    "id": "installment-manage",
+    "key": "installment-organizer-summary",
+    "asset": "assets/refresh/event-management/installment-organizer-summary.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Organizer collection period summary",
+    "caption": "Organizer collection period summary",
+    "alt": "Installment Summary identifies a failed payment and $0 collected",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Installment Summary identifies a failed payment and $0 collected"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-new-order-email": {
+    "id": "installment-manage",
+    "key": "installment-new-order-email",
+    "asset": "assets/refresh/event-management/installment-new-order-email.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Final New Order ticket confirmation",
+    "caption": "Final New Order ticket confirmation",
+    "alt": "Standard ticket confirmation email reused after final payment",
+    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
+    "capturedAt": "2026-10-03",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Standard ticket confirmation email reused after final payment"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
   }
 }
