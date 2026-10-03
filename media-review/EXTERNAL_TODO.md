@@ -75,7 +75,7 @@ Native apps, wallets, physical printing, and device workflows also require the l
 
 ## Additional dependency found during live capture
 
-The Demo ticket editor currently disables installment payments. The configured installment schedule, buyer summary, and order-management examples (`installment-schedule`, `installment-buyer-summary`, `installment-manage`) need an enabled Stripe test connection. These were originally assigned to the Demo browser; keep the three capture briefs pending until that connection is available.
+The October 3 isolated Stripe sandbox pass completed the buyer summary and order-management examples (`installment-buyer-summary`, `installment-manage`), including deposit checkout, later collection, declined-card recovery, and the paid result. Twelve screenshots and the payment integrity checks are recorded in [installment acceptance evidence](production/installment-acceptance.json). The configured ticket-editor schedule (`installment-schedule`) still needs an enabled editor capture; its existing prerequisite image does not show a configured schedule. Hosted webhook transport, email/background workers, and browser 3DS remain outside this verification.
 
 ## Platform-only marketplace dependency
 
@@ -87,13 +87,11 @@ Current Ticket Spot setup cards and the RegFox key form are refreshed in the int
 
 ## Remaining Demo account states
 
-These 16 uncaptured briefs need the state listed below. Their available controls and prerequisites are documented; the missing result screenshots remain TODO.
+These 14 uncaptured briefs need the state listed below. Their available controls and prerequisites are documented; the missing result screenshots remain TODO.
 
 | Capture | Required state |
 |---|---|
 | Organization assignment (`event-details-organization`) | Platform account with an existing Demo organization |
-| Buyer payment-plan summary (`installment-buyer-summary`) | Stripe test connection with payments enabled |
-| Manage installments on an order (`installment-manage`) | Stripe test connection with payments enabled |
 | Ticket installment schedule (`installment-schedule`) | Stripe test connection with payments enabled |
 | Saved waiver and missing check-in answer (`waiver-response`) | Matching Demo attendee login to review and accept the saved demonstration agreement; organizer login cannot access attendee-scoped tickets. |
 | Seating allowance or unavailable map (`seating-limit`) | A genuine Demo site with exhausted seating allowance; do not fabricate this state outside the authorized Analytics fixtures |
@@ -108,7 +106,7 @@ These 16 uncaptured briefs need the state listed below. Their available controls
 | SMS delivered/failed/opted-out examples (`attendee-sms-outcomes`) | Existing Demo SMS records; no messages sent to manufacture states |
 | Bulk refund outcome examples (`attendee-bulk-refund-results`) | Existing provider-verified sandbox job showing completed, submitted, or uncertain results; no real refund submitted for documentation |
 
-The October 2 attendee follow-up adds 17 reviewed screenshots of the available menu, drawer, and confirmation states. The existing installment and signed-waiver dependencies also apply to those new guides. See [the attendee review](../ATTENDEE_DASHBOARD_REVIEW.md) and [acceptance evidence](production/attendee-actions-acceptance.json).
+The October 2 attendee follow-up adds 17 reviewed screenshots of the available menu, drawer, and confirmation states. The signed-waiver dependency still applies to those new guides. The October 3 installment pass adds the paid payment-management result to the order guide. See [the attendee review](../ATTENDEE_DASHBOARD_REVIEW.md), [attendee acceptance evidence](production/attendee-actions-acceptance.json), and [installment acceptance evidence](production/installment-acceptance.json).
 
 Shopify setup screenshots and the seating preview are recorded in [Shopify acceptance evidence](production/shopify-selector-acceptance.json). The existing draft theme was inspected without saving or publishing changes.
 
