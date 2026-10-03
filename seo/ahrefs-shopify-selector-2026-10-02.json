@@ -127,5 +127,47 @@
     "Unreturned keywords have no returned metrics; do not treat them as zero search volume.",
     "Use Shopify event tickets and sell tickets on Shopify for relevance. Keep booking-app/appointment topics distinct from event time-slot setup.",
     "Seating, shared capacity, access codes, tracking links and product-template questions remain covered for support intent even where Ahrefs reports zero or returns no metrics."
-  ]
+  ],
+  "waitlist_followup": {
+    "reviewed_at": "2026-10-02",
+    "country": "us",
+    "source": "Ahrefs Keywords Explorer overview",
+    "requested_keywords": [
+      "shopify waitlist",
+      "shopify waitlist app",
+      "event waitlist",
+      "waitlist tickets"
+    ],
+    "keywords": [
+      {
+        "keyword": "shopify waitlist",
+        "volume": 150,
+        "global_volume": 150,
+        "difficulty": 0,
+        "parent_topic": "shopify waitlist"
+      },
+      {
+        "keyword": "shopify waitlist app",
+        "volume": 50,
+        "global_volume": 60,
+        "difficulty": null,
+        "parent_topic": null
+      },
+      {
+        "keyword": "waitlist tickets",
+        "volume": 10,
+        "global_volume": 20,
+        "difficulty": null,
+        "parent_topic": null
+      },
+      {
+        "keyword": "event waitlist",
+        "volume": 0,
+        "global_volume": 0,
+        "difficulty": null,
+        "parent_topic": null
+      }
+    ],
+    "application": "Add Shopify waitlist FAQ questions and a selector section about event waitlist signup, start thresholds, and invitations. Distinguish event ticketing from general merchandise back-in-stock alerts."
+  }
 }

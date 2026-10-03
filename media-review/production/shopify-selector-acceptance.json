@@ -46,7 +46,7 @@
     "Separate Event Widget, Additional Questions and Thank You blocks"
   ],
   "ahrefs_evidence": "../../seo/ahrefs-shopify-selector-2026-10-02.json",
-  "faq_questions": 11,
+  "faq_questions": 13,
   "validation": {
     "compiled_mdx": 140,
     "navigation_entries": 140,
@@ -219,5 +219,108 @@
   "remaining": [
     "Installation/authorization, full date/seat/cart handoff, customer form, membership and Thank You result captures remain on the external TODO list.",
     "Provided YouTube setup video embedded at five seconds. Retrieval was throttled; source and live UI were verified instead of claiming a video review."
-  ]
+  ],
+  "waitlist_followup": {
+    "checked_at": "2026-10-03T05:11:14.530828+00:00",
+    "scope": "Make the waitlist start threshold prominent and require the Ticket Selector for Shopify waitlist signup and invitation-based purchases",
+    "source_verified": [
+      "eventviewer-dashboard/src/modules/events/components/WaitlistCapacity.tsx",
+      "eventviewer-dashboard/src/modules/events/components/day-drawer.tsx",
+      "wix-eventviewer-server/routes/api/events/waitlist-capacity.js",
+      "wix-eventviewer-server/routes/api/tickets/capacity.js",
+      "shopify-app-extension/extensions/theme-extension/assets/ticket-selector.js"
+    ],
+    "reviewed_existing_screenshots": [
+      "assets/refresh/event-management/waitlist-invitation-only.png",
+      "assets/refresh/event-management/waitlist-fixed-capacity.png",
+      "assets/refresh/event-management/day-ticket-overrides.png"
+    ],
+    "new_media_files": 0,
+    "media_note": "Reused current annotated Demo captures after checking their labels and values against source. No Shopify result screenshot was fabricated.",
+    "validation": {
+      "compiled_mdx": 140,
+      "navigation_entries": 140,
+      "local_references_checked": 1585,
+      "pages": [
+        {
+          "route": "event-management/waitlist",
+          "status": 200,
+          "desktop": {
+            "overflow": false,
+            "broken": []
+          },
+          "mobile": {
+            "overflow": false
+          }
+        },
+        {
+          "route": "plugins/shopify-ticket-selector",
+          "status": 200,
+          "desktop": {
+            "overflow": false,
+            "broken": []
+          },
+          "mobile": {
+            "overflow": false
+          }
+        },
+        {
+          "route": "plugins/shopify-ticketing-faq",
+          "status": 200,
+          "desktop": {
+            "overflow": false,
+            "broken": []
+          },
+          "mobile": {
+            "overflow": false
+          }
+        },
+        {
+          "route": "plugins/connect-shopify",
+          "status": 200,
+          "desktop": {
+            "overflow": false,
+            "broken": []
+          },
+          "mobile": {
+            "overflow": false
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "route": "event-management/waitlist#when-does-the-waitlist-start",
+          "found": true
+        },
+        {
+          "route": "event-management/waitlist#invitation-only-purchasing-within-event-capacity",
+          "found": true
+        },
+        {
+          "route": "event-management/waitlist#set-a-different-start-value-for-a-date-or-time-slot",
+          "found": true
+        },
+        {
+          "route": "event-management/day-specific-tickets#date-overrides",
+          "found": true
+        },
+        {
+          "route": "plugins/shopify-ticket-selector#waitlists-on-shopify",
+          "found": true
+        },
+        {
+          "route": "plugins/shopify-ticketing-faq#can-i-use-a-waitlist-for-event-tickets-on-shopify",
+          "found": true
+        },
+        {
+          "route": "plugins/shopify-ticketing-faq#when-does-my-shopify-waitlist-start",
+          "found": true
+        }
+      ],
+      "errors": []
+    },
+    "ahrefs_evidence": "../../seo/ahrefs-shopify-selector-2026-10-02.json#waitlist_followup",
+    "live_events_changed": false,
+    "invitations_sent": false
+  }
 }

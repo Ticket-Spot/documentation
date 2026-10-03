@@ -2881,7 +2881,8 @@
         "assets/refresh/event-management/day-ticket-overrides-title-label.png"
       ],
       "integrated_pages": [
-        "event-management/day-specific-tickets.mdx"
+        "event-management/day-specific-tickets.mdx",
+        "event-management/waitlist.mdx"
       ],
       "capture_qa": {
         "passed visual review": 2
@@ -4632,7 +4633,9 @@
         "assets/refresh/event-management/waitlist-fixed-capacity.png"
       ],
       "integrated_pages": [
-        "event-management/waitlist.mdx"
+        "event-management/waitlist.mdx",
+        "plugins/shopify-ticket-selector.mdx",
+        "plugins/shopify-ticketing-faq.mdx"
       ],
       "capture_qa": {
         "passed visual review": 1
@@ -12452,7 +12455,7 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-03T02:50:06.407862+00:00",
+    "updated_at": "2026-10-03T05:09:31.038070+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
     "planned_capture_units": 347,
     "units_with_any_capture": 278,

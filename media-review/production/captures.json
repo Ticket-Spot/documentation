@@ -7034,7 +7034,9 @@
     "key": "waitlist-fixed-capacity",
     "asset": "assets/refresh/event-management/waitlist-fixed-capacity.png",
     "pages": [
-      "event-management/waitlist.mdx"
+      "event-management/waitlist.mdx",
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/shopify-ticketing-faq.mdx"
     ],
     "title": "Capacity-limited waitlist threshold",
     "caption": "With capacity 50 and a waitlist threshold of 40, public bookings stop at 40. Invited purchases use the remaining capacity without increasing the event limit.",
@@ -7055,6 +7057,8 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/shopify-ticketing-faq.mdx",
       "event-management/waitlist.mdx"
     ]
   },
@@ -10422,7 +10426,8 @@
     "asset": "assets/refresh/event-management/day-ticket-overrides.png",
     "pages": [
       "event-management/day-specific-tickets.mdx",
-      "event-management/ticket-options-reference.mdx"
+      "event-management/ticket-options-reference.mdx",
+      "event-management/waitlist.mdx"
     ],
     "title": "Title, capacity and waitlist overrides",
     "caption": "Customize Capacity and Waitlist for this date. This unsaved example allows 30 attendees and starts the waitlist at 25.",
@@ -10443,6 +10448,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "event-management/waitlist.mdx",
       "event-management/day-specific-tickets.mdx"
     ]
   },
