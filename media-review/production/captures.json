@@ -5813,6 +5813,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx",
       "event-management/ticket-setup.mdx"
     ],
     "qa_notes": "Reviewed real unsaved ticket editor; full modal crop with correct labels and purple callouts."
@@ -12797,6 +12798,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "event-types/overview.mdx",
       "event-management/create-event-overview.mdx"
     ]
   },
@@ -13031,6 +13033,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "integrated_pages": [
+      "plugins/connect-shopify.mdx",
       "event-management/manage-events.mdx"
     ]
   },
@@ -15939,6 +15942,364 @@
     "qa_note": "Checked crop, circle targets, readability, identity masks, and exclusion of browser chrome. Confirmation previews are not completed transactions.",
     "integrated_pages": [
       "attendee-management/refunds-and-cancellations.mdx"
+    ]
+  },
+  "shopify-linked-product-template": {
+    "id": "shopify-linked-product",
+    "key": "shopify-linked-product-template",
+    "asset": "assets/refresh/plugins/shopify-linked-product-template.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/connect-shopify.mdx"
+    ],
+    "title": "Linked product and selector configuration",
+    "caption": "Enable the Ticket Spot Selector and choose the product template containing its app block.",
+    "alt": "Use Ticket Spot Selector and Product Template highlighted in the Shopify Integration panel",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-03T02:26:14.983Z",
+    "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b",
+    "callouts": [
+      "Use Ticket Spot Selector",
+      "Product Template"
+    ],
+    "clip": {
+      "x": 1052,
+      "y": 416,
+      "width": 364,
+      "height": 367.4140625
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/connect-shopify.mdx"
+    ]
+  },
+  "shopify-linked-product-checkout": {
+    "id": "shopify-linked-product",
+    "key": "shopify-linked-product-checkout",
+    "asset": "assets/refresh/plugins/shopify-linked-product-checkout.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/connect-shopify.mdx"
+    ],
+    "title": "Linked product and selector configuration",
+    "caption": "Choose the Shopify cart, attendee details, and button-status behavior, then save settings.",
+    "alt": "Linked Shopify product options for direct checkout, skipping attendee details, and ticket status",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-03T02:17:18.497Z",
+    "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b",
+    "callouts": [
+      "Enable Direct Checkout",
+      "Skip Attendee Details Form",
+      "Show ticket status on button"
+    ],
+    "clip": {
+      "x": 1020,
+      "y": 70,
+      "width": 412,
+      "height": 1010
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-block-position": {
+    "id": "shopify-block-install",
+    "key": "shopify-block-position",
+    "asset": "assets/refresh/plugins/shopify-block-position.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Place Ticket Selector inside the product information section of your event template.",
+    "caption": "Place Ticket Selector inside the product information section of your event template.",
+    "alt": "Place Ticket Selector inside the product information section of your event template.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:34:55.879265+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        127,
+        354,
+        92,
+        17
+      ],
+      [
+        139,
+        518,
+        86,
+        17
+      ]
+    ],
+    "clip": {
+      "x": 12,
+      "y": 438,
+      "width": 286,
+      "height": 310
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-display-mode": {
+    "id": "shopify-display-mode",
+    "key": "shopify-display-mode",
+    "asset": "assets/refresh/plugins/shopify-display-mode.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Choose Embed inline or Modal in the Ticket Selector block settings.",
+    "caption": "Choose Embed inline or Modal in the Ticket Selector block settings.",
+    "alt": "Choose Embed inline or Modal in the Ticket Selector block settings.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:29:36.319987+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        1666,
+        157,
+        48,
+        17
+      ]
+    ],
+    "clip": {
+      "x": 1432,
+      "y": 177,
+      "width": 290,
+      "height": 226
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-seating-preview": {
+    "id": "shopify-seating-preview",
+    "key": "shopify-seating-preview",
+    "asset": "assets/refresh/plugins/shopify-seating-preview.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/shopify-ticketing-faq.mdx"
+    ],
+    "title": "Preview the seating chart in the Ticket Selector; the expand button opens a larger map.",
+    "caption": "Preview the seating chart in the Ticket Selector; the expand button opens a larger map.",
+    "alt": "Preview the seating chart in the Ticket Selector; the expand button opens a larger map.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:35:03.738193+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        1071,
+        461,
+        27,
+        22
+      ]
+    ],
+    "clip": {
+      "x": 1030,
+      "y": 535,
+      "width": 369,
+      "height": 440
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx",
+      "plugins/shopify-ticketing-faq.mdx"
+    ]
+  },
+  "shopify-template-picker": {
+    "id": "shopify-template-picker",
+    "key": "shopify-template-picker",
+    "asset": "assets/refresh/plugins/shopify-template-picker.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Open the theme template picker, then choose Products.",
+    "caption": "Open the theme template picker, then choose Products.",
+    "alt": "Open the theme template picker, then choose Products.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:39:55.750584+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        965,
+        29,
+        70,
+        17
+      ],
+      [
+        902,
+        149,
+        75,
+        17
+      ]
+    ],
+    "clip": {
+      "x": 795,
+      "y": 122,
+      "width": 345,
+      "height": 535
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-product-templates": {
+    "id": "shopify-product-templates",
+    "key": "shopify-product-templates",
+    "asset": "assets/refresh/plugins/shopify-product-templates.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Choose the ticket-spot product template or create a dedicated template for event products.",
+    "caption": "Choose the ticket-spot product template or create a dedicated template for event products.",
+    "alt": "Choose the ticket-spot product template or create a dedicated template for event products.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:40:33.943963+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        901,
+        223,
+        65,
+        17
+      ],
+      [
+        901,
+        273,
+        89,
+        17
+      ]
+    ],
+    "clip": {
+      "x": 795,
+      "y": 168,
+      "width": 345,
+      "height": 255
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-add-block": {
+    "id": "shopify-block-install",
+    "key": "shopify-add-block",
+    "asset": "assets/refresh/plugins/shopify-add-block.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Under Add block, choose Apps and Ticket Selector from Ticket Spot.",
+    "caption": "Under Add block, choose Apps and Ticket Selector from Ticket Spot.",
+    "alt": "Under Add block, choose Apps and Ticket Selector from Ticket Spot.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:45:03.891728+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        487,
+        483,
+        50,
+        18
+      ],
+      [
+        391,
+        632,
+        93,
+        18
+      ]
+    ],
+    "clip": {
+      "x": 292,
+      "y": 538,
+      "width": 267,
+      "height": 255
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-edit-theme": {
+    "id": "shopify-edit-theme",
+    "key": "shopify-edit-theme",
+    "asset": "assets/refresh/plugins/shopify-edit-theme.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Click Edit theme on the theme you want to configure; draft themes are listed below.",
+    "caption": "Click Edit theme on the theme you want to configure; draft themes are listed below.",
+    "alt": "Click Edit theme on the theme you want to configure; draft themes are listed below.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:44:13.964148+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        1344,
+        580,
+        55,
+        18
+      ]
+    ],
+    "clip": {
+      "x": 480,
+      "y": 635,
+      "width": 974,
+      "height": 303
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ]
+  },
+  "shopify-blocks": {
+    "id": "shopify-blocks",
+    "key": "shopify-blocks",
+    "asset": "assets/refresh/plugins/shopify-add-block.png",
+    "pages": [
+      "plugins/shopify-ticket-selector.mdx"
+    ],
+    "title": "Ticket Selector, Event Widget and Additional Questions in the app-block menu",
+    "caption": "Under Add block, choose Apps and Ticket Selector from Ticket Spot.",
+    "alt": "Under Add block, choose Apps and Ticket Selector from Ticket Spot.",
+    "source": "Ticket Spot Demo Shopify Admin in user-authenticated regular Chrome; existing theme configuration, no saved changes",
+    "capturedAt": "2026-10-03T02:45:03.891728+00:00",
+    "route": "Shopify Admin / theme editor",
+    "callouts": [
+      [
+        487,
+        483,
+        50,
+        18
+      ],
+      [
+        391,
+        632,
+        93,
+        18
+      ]
+    ],
+    "clip": {
+      "x": 292,
+      "y": 538,
+      "width": 267,
+      "height": 255
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "plugins/shopify-ticket-selector.mdx"
     ]
   }
 }

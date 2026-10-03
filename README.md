@@ -38,3 +38,7 @@ The source check compares every indexed widget control and all named plan featur
 The same source check compares the onboarding template IDs with `event-types/onboarding-map.json` and verifies that each maps to a navigable guide with a matching `onboardingTemplate` field. When onboarding changes, update the guide's starting choices and the coverage map together. See [the event-type review](EVENT_TYPE_REVIEW.md) for source evidence and the Ahrefs keyword decisions.
 
 See [the October 2026 review](./DOCUMENTATION_REVIEW.md) for coverage, source evidence, product-label mismatches, and the remaining browser verification checklist.
+
+## Product update documentation
+
+Every What's New entry in the server repository's `content/product-updates` must link to the guide that explains its feature and include a relevant screenshot or GIF used in that guide. Update the instructions and media together, preserve existing guide URLs, and verify the published section and asset before releasing the server entry. Keep device/account-dependent captures explicitly pending rather than presenting unrelated or outdated images as current. The server's `docs/product-updates.md` describes the authoring and cross-repository validation workflow.

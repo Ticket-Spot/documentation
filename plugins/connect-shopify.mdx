@@ -111,63 +111,34 @@ From here, you can see the full attendee list, update their status, view their d
 
 ## Configure the Ticket Selector for advanced ticketing
 
-Use the **Ticket Selector** for seating charts, a calendar/date/time-slot selection experience, access codes, and ticket quantity controls. A standard Shopify variant dropdown does not provide the full Ticket Spot selection flow. Configure the event and its ticket rules in Ticket Spot first.
+Use the **Ticket Selector** for seating charts, calendar and time-slot selection, capacity shared across ticket types, access codes, tracking links, and attendee questions on Shopify.
 
-<iframe
-  width="100%"
-  height="400"
-  src="https://www.youtube.com/embed/grq-oS9AFgI"
-  title="Set up the Ticket Spot Ticket Selector on Shopify"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+1. In **Shopify Admin → Online Store → Edit theme**, choose or create a product template for event tickets.
+2. In its product section, choose **Add block → Apps → Ticket Selector**. Set **Display Mode** to **Embed inline** or **Modal** and save the template.
+3. Return to the Ticket Spot event and open **Shopify · Product linked**.
+4. Enable **Use Ticket Spot Selector**, choose the **Product Template** containing the block, and click **Save Settings**.
+5. Open the actual Shopify product and test the date, time, seat, ticket quantities, and checkout path it needs.
 
-[Watch the Shopify setup video](https://www.youtube.com/watch?v=grq-oS9AFgI).
+<Frame caption="Choose the template containing the Ticket Selector app block, then save the linked-product settings.">
+  <img src="../assets/refresh/plugins/shopify-linked-product-template.png" alt="Ticket Spot Shopify Integration panel with selector and product-template controls highlighted" style={{ width: "440px", maxWidth: "100%" }} />
+</Frame>
 
-1. Publish or update the event's linked Shopify product from Ticket Spot.
-2. Open your Shopify theme editor and select the **product template** used by that event product.
-3. In the product section, add the **Ticket Selector** app block.
-4. Choose **Display Mode → Embed inline** to show the selector on the page, or **Modal** for the modal experience.
-5. Save the template and open the published event product page.
-6. Test the configured seating chart, calendar/time slots, access codes, and quantity rules in the selector, then continue through Shopify checkout.
+Adding the block and assigning the template are separate steps. The template list in Ticket Spot comes from the published Shopify theme. A template selected only for the editor preview has not yet been assigned to the product.
 
-The Ticket Selector handles ticket selection on the product page; the Shopify product flow still checks out through Shopify. The **Thank You Page** ticket-access block is separate and should be configured below.
-
-Older installations may use the **Event Controls / Ticket Spot Controls** app embed. Do not confuse that body-level embed with the **Ticket Selector** product app block. Use the current product block workflow for the advanced selection experience described here.
+Follow the [complete Ticket Selector setup guide](./shopify-ticket-selector) for the Shopify Admin walkthrough and [setup video](https://www.youtube.com/watch?v=grq-oS9AFgI&t=5s). Find answers about dates, seating, inventory, and template problems in the [Shopify ticketing FAQ](./shopify-ticketing-faq).
 
 ## Existing product configuration controls
 
-Go back to your Ticket Spot event and click on the **Shopify Setup** button.
+Open **Shopify · Product linked → Product Page Settings** in the event editor. Older screens may call this **Shopify Setup**.
 
-![go-shopify-setup1](../assets/plugins/connect-shopify/go-shopify-setup1.gif)
+- **Button text** sets the launch-button label.
+- **Use Ticket Spot Selector** enables the Ticket Spot selection experience.
+- **Product Template** assigns the template containing the selector block.
+- **Enable Direct Checkout** skips Shopify's cart page and continues to checkout.
+- **Skip Attendee Details Form** uses the Shopify purchaser's contact information. Leave it off when collecting guest names, event questions, or waivers.
+- **Show ticket status on button** displays availability such as sold out or ended.
 
-
-In Shopify Setup, you can:
-
-- **Select a Collection** — Organize your event by adding it to a specific collection so customers can easily find it.
-
-- **Select a Location** — Select the Shopify inventory location used for the product. Configure the attendee-facing venue separately under Venue & Location.
-
-![shopify-setup](../assets/plugins/connect-shopify/shopify-setup.gif)
-
-
-### Product Page Config:
-
-- **Customize the “Buy Tickets” Button:** You can customize the Buy Tickets button text—for example, change it to **Checkout** or any label you prefer.
-
-![enable-ticketspot-selector](../assets/plugins/connect-shopify/product-page-config.gif)
-
-
-- **Use Advanced Ticket Selector** (called Enable Ticket Spot Selector in older screenshots): Controls the selector experience for installations using this product configuration. The selector changes ticket selection; the product flow continues through Shopify checkout.
-
-![enable-ticketspot-selector](../assets/plugins/connect-shopify/enable-ticketspot-selector.gif)
-
-
-For a modal selector installation, the **Buy Tickets** button opens the selector. For the app block, the selected Display Mode determines whether selection is inline or modal. Test the product template you actually use before sharing it.
-
-![ticketspot-selector-buy-ticket](../assets/plugins/connect-shopify/ticketspot-selector-buy-ticket.gif)
-
+Click **Save Settings** to apply these options. See the [full linked-product settings reference](./shopify-ticket-selector#product-settings-and-attendee-details), including unlinking the product. Collection and Shopify inventory location are separate publishing settings; the inventory location does not change the event venue.
 
 ## Enable the Ticket Block on the Thank You Page
 
@@ -213,3 +184,17 @@ Test an available and sold-out seat, the correct event date/time, ticket minimum
 ## Complete selector and block reference
 
 See [Shopify Ticket Selector setup and options](./shopify-ticket-selector) for every block setting, inline/modal behavior, product controls, the difference between Event Widget / Additional Questions / Ticket Access, and end-to-end verification. For invitation-only sales and private invoices, use the [waitlist guide](/event-management/waitlist).
+
+## Keep products synchronized
+
+Republish the event after changing its ticket offer, then check the linked product and [Ticket Selector](./shopify-ticket-selector). When a corresponding setting is omitted from an update, Ticket Spot preserves the product's existing type, theme template, vendor, variant tax settings, collections, and publication channels. Explicit changes to those settings still apply.
+
+Import an existing Shopify product through the connected-store import flow. Ticket Spot checks for an existing link to prevent duplicate event creation; inspect the linked event when an import is rejected rather than creating a second copy to bypass it.
+
+Deleting a linked event archives its Shopify product. Review the [Delete Event confirmation](/event-management/manage-events#delete-event) before proceeding; this is separate from canceling one event date or refunding an order.
+
+<Frame caption="Ticket Spot asks for confirmation before deleting an event. For a linked Shopify event, deletion also archives its product; this image shows the Ticket Spot confirmation, not Shopify admin.">
+  <img src="../assets/refresh/event-management/event-restore-delete-delete.png" alt="Ticket Spot Delete Event confirmation" />
+</Frame>
+
+These protections apply when you perform a new import, update, or deletion. They do not automatically repair an old duplicate link or restore settings that were overwritten earlier.

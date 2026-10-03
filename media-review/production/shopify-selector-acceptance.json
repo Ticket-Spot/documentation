@@ -1,0 +1,223 @@
+{
+  "checked_at": "2026-10-03T02:52:42.004172+00:00",
+  "scope": "Shopify Ticket Selector installation, product templates, linked-product options and FAQ",
+  "assets": [
+    "assets/refresh/plugins/shopify-add-block.png",
+    "assets/refresh/plugins/shopify-block-position.png",
+    "assets/refresh/plugins/shopify-display-mode.png",
+    "assets/refresh/plugins/shopify-edit-theme.png",
+    "assets/refresh/plugins/shopify-linked-product-checkout.png",
+    "assets/refresh/plugins/shopify-linked-product-template.png",
+    "assets/refresh/plugins/shopify-product-templates.png",
+    "assets/refresh/plugins/shopify-seating-preview.png",
+    "assets/refresh/plugins/shopify-template-picker.png"
+  ],
+  "new_screenshots": 9,
+  "new_gifs": 0,
+  "capture_style": "Genuine current UI; unfilled #9c26dc circles at 4 CSS px; application-only crops without browser chrome/address bar",
+  "accounts": "Ticket Spot Demo dashboard and user-authenticated regular Chrome Shopify Admin",
+  "source_verified": [
+    "eventviewer-dashboard/src/modules/events/components/ShopifyIntegrationPanel.tsx",
+    "wix-eventviewer-server/routes/channels/shopify/graphql-queries.js — product templates from the main/published theme",
+    "wix-eventviewer-server/controllers/events.js — explicit linked settings and product template updates",
+    "shopify-app-extension/extensions/theme-extension/blocks/app-block-ticket-selector.liquid",
+    "shopify-app-extension/extensions/theme-extension/assets/ticket-selector.js",
+    "Widget checkout details step and Shopify webhook purchaser fallback"
+  ],
+  "settings_documented": [
+    "Open in Shopify",
+    "Button text",
+    "Use Ticket Spot Selector",
+    "Product Template",
+    "Enable Direct Checkout",
+    "Skip Attendee Details Form",
+    "Show ticket status on button",
+    "Save Settings",
+    "Disconnect Shopify",
+    "Display Mode: Embed inline / Modal"
+  ],
+  "feature_coverage": [
+    "Time slots and calendar selection",
+    "Seating charts and enlarged map",
+    "Shared event/occurrence capacity across variants",
+    "Event and hidden-ticket access codes",
+    "Tracking links with Shopify product destination",
+    "Attendee details and questions",
+    "Separate Event Widget, Additional Questions and Thank You blocks"
+  ],
+  "ahrefs_evidence": "../../seo/ahrefs-shopify-selector-2026-10-02.json",
+  "faq_questions": 11,
+  "validation": {
+    "compiled_mdx": 140,
+    "navigation_entries": 140,
+    "local_references_checked": 1571,
+    "widget_controls_checked": 503,
+    "plan_features_checked": 111,
+    "onboarding_templates_checked": 21,
+    "render_checks": {
+      "results": [
+        {
+          "route": "plugins/shopify-ticket-selector",
+          "status": 200,
+          "title": "Shopify Ticket Selector: setup, time slots and seating",
+          "images": 10,
+          "broken": [],
+          "overflow": false,
+          "mobileOverflow": false
+        },
+        {
+          "route": "plugins/shopify-ticketing-faq",
+          "status": 200,
+          "title": "Shopify event tickets FAQ: time slots, seating and inventory",
+          "images": 1,
+          "broken": [],
+          "overflow": false,
+          "mobileOverflow": false
+        },
+        {
+          "route": "plugins/connect-shopify",
+          "status": 200,
+          "title": "How to sell event tickets on Shopify",
+          "images": 2,
+          "broken": [],
+          "overflow": false,
+          "mobileOverflow": false
+        },
+        {
+          "route": "event-management/tracking-links",
+          "status": 200,
+          "title": "Create and monitor event tracking links",
+          "images": 2,
+          "broken": [],
+          "overflow": false,
+          "mobileOverflow": false
+        },
+        {
+          "route": "getting-started/platform-overview",
+          "status": 200,
+          "title": "Ticket Spot documentation and setup guide",
+          "images": 15,
+          "broken": [],
+          "overflow": false,
+          "mobileOverflow": false
+        }
+      ],
+      "anchors": [
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#how-do-i-add-time-slots-to-a-shopify-product",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-customers-choose-a-date-from-a-calendar-on-shopify",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-i-sell-tickets-with-a-seating-chart-on-shopify",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-ticket-variants-share-one-inventory-limit",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#which-product-template-should-i-select-in-ticket-spot",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#why-is-the-ticket-selector-missing-or-the-normal-buy-button-still-showing",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-i-restrict-shopify-event-tickets-with-an-access-code",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-i-track-ticket-sales-from-shopify-campaign-links",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-customers-skip-the-shopify-cart-page",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#can-i-use-the-buyer%E2%80%99s-shopify-details-instead-of-asking-for-every-guest",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticketing-faq#does-the-ticket-selector-also-display-tickets-after-payment",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#time-slots-and-calendar-selection-on-shopify",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#seating-charts-on-shopify",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#shared-inventory-across-ticket-variants",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#5-assign-the-template-to-the-linked-event-product",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#access-codes",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#tracking-links-to-shopify-products",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/shopify-ticket-selector#product-settings-and-attendee-details",
+          "found": true
+        },
+        {
+          "link": "http://localhost:3335/plugins/connect-shopify#enable-the-ticket-block-on-the-thank-you-page",
+          "found": true
+        }
+      ],
+      "errors": []
+    },
+    "gallery_and_mobile_frames": {
+      "gallery": {
+        "cards": 9,
+        "stats": "542 checked screenshots · 3 zoom GIF · 0 captures to redo · 0 pending review",
+        "broken": []
+      },
+      "frames": [
+        {
+          "slug": "shopify-ticket-selector",
+          "clipped": []
+        },
+        {
+          "slug": "shopify-ticketing-faq",
+          "clipped": []
+        },
+        {
+          "slug": "connect-shopify",
+          "clipped": []
+        }
+      ]
+    },
+    "visual_review": "All nine source images reviewed. Fixed image widths so mobile frames display the complete image and circles."
+  },
+  "cleanup": {
+    "temporary_highlights_removed": true,
+    "created_regular_chrome_capture_window_closed": true,
+    "original_user_windows_preserved": true,
+    "saved_shopify_theme_changes": false,
+    "published_theme": false,
+    "submitted_payment_or_refund": false,
+    "sent_email_or_sms": false,
+    "mocked_ui_or_api_data": false,
+    "product_source_modified": false
+  },
+  "remaining": [
+    "Installation/authorization, full date/seat/cart handoff, customer form, membership and Thank You result captures remain on the external TODO list.",
+    "Provided YouTube setup video embedded at five seconds. Retrieval was throttled; source and live UI were verified instead of claiming a video review."
+  ]
+}

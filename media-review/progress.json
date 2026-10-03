@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-02T15:34:38.767132+00:00",
+  "updated_at": "2026-10-03T02:50:06.407862+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-  "planned_capture_units": 343,
-  "units_with_any_capture": 270,
-  "checked_screenshots": 533,
+  "planned_capture_units": 347,
+  "units_with_any_capture": 278,
+  "checked_screenshots": 542,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
   "needs_recapture": 0,
-  "guides_with_current_media": 98,
-  "external_capture_units_deferred": 70,
+  "guides_with_current_media": 102,
+  "external_capture_units_deferred": 66,
   "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.",
   "pages": [
     {
@@ -1440,7 +1440,9 @@
     },
     {
       "path": "event-types/overview.mdx",
-      "current_assets": [],
+      "current_assets": [
+        "assets/refresh/event-management/event-create-template-picker.png"
+      ],
       "capture_ids": []
     },
     {
@@ -1799,7 +1801,10 @@
     },
     {
       "path": "plugins/connect-shopify.mdx",
-      "current_assets": [],
+      "current_assets": [
+        "assets/refresh/event-management/event-restore-delete-delete.png",
+        "assets/refresh/plugins/shopify-linked-product-template.png"
+      ],
       "capture_ids": [
         "shopify-block-install",
         "shopify-blocks",
@@ -1847,7 +1852,18 @@
     },
     {
       "path": "plugins/shopify-ticket-selector.mdx",
-      "current_assets": [],
+      "current_assets": [
+        "assets/refresh/event-management/ticket-pricing-modes-pwyw.png",
+        "assets/refresh/plugins/shopify-add-block.png",
+        "assets/refresh/plugins/shopify-block-position.png",
+        "assets/refresh/plugins/shopify-display-mode.png",
+        "assets/refresh/plugins/shopify-edit-theme.png",
+        "assets/refresh/plugins/shopify-linked-product-checkout.png",
+        "assets/refresh/plugins/shopify-linked-product-template.png",
+        "assets/refresh/plugins/shopify-product-templates.png",
+        "assets/refresh/plugins/shopify-seating-preview.png",
+        "assets/refresh/plugins/shopify-template-picker.png"
+      ],
       "capture_ids": [
         "shopify-block-install",
         "shopify-blocks",
@@ -1857,7 +1873,20 @@
         "shopify-linked-product",
         "shopify-membership-required",
         "shopify-selector-use",
-        "shopify-thank-you-block"
+        "shopify-thank-you-block",
+        "shopify-seating-preview",
+        "shopify-template-picker",
+        "shopify-product-templates",
+        "shopify-edit-theme"
+      ]
+    },
+    {
+      "path": "plugins/shopify-ticketing-faq.mdx",
+      "current_assets": [
+        "assets/refresh/plugins/shopify-seating-preview.png"
+      ],
+      "capture_ids": [
+        "shopify-seating-preview"
       ]
     },
     {

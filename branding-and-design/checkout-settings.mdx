@@ -49,6 +49,14 @@ Combined selections must belong to the same organizer, use the same currency, an
 
 The browsing cart is kept in memory for the current page session. Reloading the page clears it. Keep the widget open while collecting selections, and check the final review before paying. Removing a ticket updates that selection's quantity and associated attendee/seat data.
 
+## Review totals and wallet payments
+
+Before paying, customers review ticket quantities, attendee details, discounts, and the final total. Where the cart offers an event promo-code control, apply or remove the code for that event and check the updated total. Showing the input does not create a discount; [configure promo codes](/event-management/ticket-setup#promo-codes) first.
+
+Apple Pay or Google Pay appears only when Stripe, the checkout, and the customer's device/browser support it. There is no separate switch for the checkout display improvements. If a payment error appears, review it and verify the order/payment status before retrying. Shopify handoff uses Shopify's payment options.
+
+Configure [Seat Hold Time in Minutes](/site-settings/site-settings) separately. Adding tickets to a cart does not extend the seat hold; starting payment renews a valid hold for the configured duration.
+
 ## Related controls in other sections
 
 **Display → Checkout & payment** contains ticket-first and combined date/time/ticket selection. **Text → Checkout** changes headings, buttons, per-attendee progress, copy-details actions, validation messages, and review-step wording. **Design → Customize components** styles the checkout.

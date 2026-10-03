@@ -73,3 +73,11 @@ The Analytics overview, Traffic, Abandoned Carts, and Email pages also receive e
 - After deployment, compare the changed pages' impressions, clicks, and queries in Search Console if available, and recheck Ahrefs rankings after recrawling. No Search Console performance data was used here and no recurring monitor was scheduled.
 
 The implementation follows [Google's title guidance](https://developers.google.com/search/docs/appearance/title-link), [Mintlify's SEO settings](https://www.mintlify.com/docs/organize/settings-seo), and [Mintlify page metadata](https://www.mintlify.com/docs/organize/pages). Keyword selection combines the saved Ahrefs evidence with the actual task covered by each guide.
+
+## October 2 Shopify Ticket Selector follow-up
+
+Fresh US Ahrefs Keywords Explorer evidence is saved in [the Shopify keyword snapshot](seo/ahrefs-shopify-selector-2026-10-02.json). `shopify event tickets` returned 50 US / 70 global monthly searches (KD 11), and `sell tickets on shopify` returned 40 / 40 (KD 1). The connection guide keeps the broad selling/setup intent; the existing selector URL owns app-block installation, product templates, time slots, seats, and linked-product options. The new Shopify FAQ answers common support questions and links to those procedures.
+
+`shopify event calendar` returned 60 / 70 (KD 12); explain the difference between a multi-event listing and a calendar for booking one event. `shopify booking app` and `shopify appointment booking` have broader app-selection intent and are not forced into headings about event time slots. `shopify seating chart` and `shopify shared inventory` returned zero estimates. `shopify time slots`, `shopify inventory across variants`, and `shopify ticket selector` returned no rows: their volume is unknown, not zero. All remain documented because customers need these workflows.
+
+Keep the existing selector and connection URLs and established section anchors, including the pay-what-you-want section linked from What's New. Add the FAQ to navigation and link to it from both Shopify guides. Use exact UI labels in steps and descriptive image alt text; do not repeat keywords in every caption or add duplicate FAQ structured data.
