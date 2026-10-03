@@ -40,7 +40,7 @@ for shot in plan['shots']:
         shot['status'] = 'Captured; visual review pending'
     if shot.get('dependency'):
         shot['status'] += '; dependency TODO: ' + shot['dependency']
-    if shot['access'] != 'Demo browser':
+    if shot['access'] != 'Demo browser' and not shot.get('external_capture_complete'):
         shot['status'] += '; external result TODO'
     shot['delivered_formats'] = sorted({r.get('format', 'PNG') for r in found})
 now = datetime.now(timezone.utc).isoformat()
@@ -57,7 +57,7 @@ progress = {
     'pending_review': sum(not ready(r) and r.get('qa') != 'needs recapture' for r in primary_assets),
     'needs_recapture': sum(r.get('qa') == 'needs recapture' for r in primary_assets),
     'guides_with_current_media': len({p.removesuffix('.mdx') for r in primary_assets if ready(r) for p in r.get('integrated_pages', [])}),
-    'external_capture_units_deferred': sum(s['access'] != 'Demo browser' for s in plan['shots']),
+    'external_capture_units_deferred': sum(s['access'] != 'Demo browser' and not s.get('external_capture_complete') for s in plan['shots']),
     'coverage_note': 'An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.',
     'pages': [{
         'path': p,

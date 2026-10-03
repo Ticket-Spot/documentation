@@ -1,0 +1,131 @@
+{
+  "reviewed_at": "2026-10-02",
+  "source": "Ahrefs Keywords Explorer overview",
+  "country": "us",
+  "requested_keywords": [
+    "sell tickets on shopify",
+    "shopify event tickets",
+    "shopify ticketing app",
+    "shopify booking app",
+    "shopify appointment booking",
+    "shopify time slots",
+    "shopify seating chart",
+    "shopify event calendar",
+    "shopify shared inventory",
+    "shopify inventory across variants",
+    "shopify ticket selector"
+  ],
+  "keywords": [
+    {
+      "keyword": "shopify booking app",
+      "volume": 100,
+      "global_volume": 200,
+      "difficulty": 4,
+      "parent_topic": "shopify appointment booking app",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify event calendar",
+      "volume": 60,
+      "global_volume": 70,
+      "difficulty": 12,
+      "parent_topic": "shopify calendar app",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "sell tickets on shopify",
+      "volume": 40,
+      "global_volume": 40,
+      "difficulty": 1,
+      "parent_topic": "selling tickets on shopify",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify ticketing app",
+      "volume": 40,
+      "global_volume": 50,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify appointment booking",
+      "volume": 100,
+      "global_volume": 150,
+      "difficulty": 4,
+      "parent_topic": "shopify appointment booking app",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify seating chart",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": null
+    },
+    {
+      "keyword": "shopify event tickets",
+      "volume": 50,
+      "global_volume": 70,
+      "difficulty": 11,
+      "parent_topic": "shopify ticket system",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify shared inventory",
+      "volume": 0,
+      "global_volume": 0,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {}
+    }
+  ],
+  "notes": [
+    "Unreturned keywords have no returned metrics; do not treat them as zero search volume.",
+    "Use Shopify event tickets and sell tickets on Shopify for relevance. Keep booking-app/appointment topics distinct from event time-slot setup.",
+    "Seating, shared capacity, access codes, tracking links and product-template questions remain covered for support intent even where Ahrefs reports zero or returns no metrics."
+  ]
+}

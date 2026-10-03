@@ -4,13 +4,15 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 533 reviewed screenshots and 3 reviewed GIFs across 101 guides; 3 companion posters.
-- All 139 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
+- 542 reviewed screenshots and 3 reviewed GIFs across 102 guides; 3 companion posters.
+- All 140 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
-- [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 343 planned briefs. A captured image does not establish complete acceptance of every dependent state.
-- [remaining-coverage.json](../remaining-coverage.json) lists sixteen Demo-state dependencies, seventy external/device briefs, retained legacy images, and five long videos awaiting freshness review.
+- [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 347 planned briefs. A captured image does not establish complete acceptance of every dependent state.
+- [remaining-coverage.json](../remaining-coverage.json) lists sixteen Demo-state dependencies, sixty-six external/device briefs, retained legacy images, and five long videos awaiting freshness review.
 - [analytics-acceptance.json](analytics-acceptance.json) records temporary fixture cleanup and real export checks. Analytics fixtures were removed and the real API verified; no fixture data was written to stored records.
 - [attendee-actions-acceptance.json](attendee-actions-acceptance.json) records 17 additional annotated screenshots, six rendered guides, nine checked heading links, and the unsubmitted refund/transfer/message boundaries. See [the action review](../../ATTENDEE_DASHBOARD_REVIEW.md) for the full menu inventory and conditional visual TODOs.
+
+- [shopify-selector-acceptance.json](shopify-selector-acceptance.json) records nine fresh Shopify setup screenshots, the linked-product options, the FAQ, Ahrefs research, and desktop/mobile checks. Shopify Admin was captured through the user’s authenticated regular Chrome session without saving or publishing theme changes.
 
 ## Review locally
 
@@ -20,7 +22,7 @@ From the repository root, serve the files with `python3 -m http.server 3336 --bi
 
 Capture helpers require Playwright available to Node, either installed in the capture environment or exposed through `NODE_PATH`. GIF encoding additionally requires Python with Pillow. The normal documentation build does not depend on either capture tool.
 
-Connect only to a dedicated Chrome capture session with the user signed into Ticket Spot Demo. The defaults are CDP `http://127.0.0.1:9227` and dashboard `http://localhost:8080/`; override them with `TICKETSPOT_CDP_URL` and `TICKETSPOT_DASHBOARD_URL`. Confirm the visible Demo site identity. During concurrent backend work, returning to `http://localhost:8080/#/` can restore the existing session after a redirect.
+For dashboard captures, connect to a dedicated Chrome capture session with the user signed into Ticket Spot Demo. Shopify Admin can instead use the user-authorized regular Chrome session when automated-browser login is unavailable; isolate capture in a separate window and close only that window afterward. The defaults are CDP `http://127.0.0.1:9227` and dashboard `http://localhost:8080/`; override them with `TICKETSPOT_CDP_URL` and `TICKETSPOT_DASHBOARD_URL`. Confirm the visible Demo site identity. During concurrent backend work, returning to `http://localhost:8080/#/` can restore the existing session after a redirect.
 
 Load `capture.cjs` from a capture script, call `connect()`, and keep that connection alive during a batch. Bring the dashboard tab to the foreground before operating on it. `shot(page, id, options)` requires an ID in the plan and validates loading state, annotation targets, and crop boundaries before recording the asset. `first-page/record-widget.cjs` and `first-page/encode-gif.py` share the optional `TICKETSPOT_FRAMES` directory.
 

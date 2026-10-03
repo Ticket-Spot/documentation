@@ -1,13 +1,13 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 343,
-    "annotated_screenshots": 292,
-    "zoom_gifs": 51,
+    "capture_units": 347,
+    "annotated_screenshots": 297,
+    "zoom_gifs": 50,
     "static_gif_posters": 51,
-    "pages_covered": 139,
+    "pages_covered": 140,
     "newly_illustrated_pages": 54,
-    "priority_0": 159,
+    "priority_0": 163,
     "priority_1": 184,
     "demo_browser_units": 273
   },
@@ -5138,7 +5138,7 @@
         "plugins/connect-shopify.mdx"
       ],
       "area": "plugins",
-      "format": "Zoom GIF + static poster",
+      "format": "Annotated screenshot",
       "title": "Add Ticket Selector to the product template",
       "callouts": [
         "Template/product context",
@@ -5148,14 +5148,28 @@
       "access": "Shopify demo store + Demo browser",
       "fixture": "Demo Shopify product and test-mode checkout",
       "priority": "P0",
-      "status": "TODO — external session or device unavailable; user requested deferral",
-      "output": "assets/refresh/plugins/shopify-block-install.gif",
-      "poster": "assets/refresh/plugins/shopify-block-install-poster.png",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-add-block.png",
+      "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
-      "duration_seconds": "6–10, maximum 12",
-      "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "User confirmed external demo accounts unavailable. Capture the dashboard-side setup where possible; return to the external product or physical output later."
+      "duration_seconds": null,
+      "review_note": "Delivered as separate annotated setup screenshots for readable labels, including installed position. No duplicate block added or saved.",
+      "readiness": "Captured from authenticated Ticket Spot Demo dashboard and regular Chrome Shopify Admin.",
+      "external_capture_complete": true,
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-block-position.png",
+        "assets/refresh/plugins/shopify-add-block.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 2
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "shopify-blocks",
@@ -5174,14 +5188,27 @@
       "access": "Shopify demo store + Demo browser",
       "fixture": "Demo Shopify product and test-mode checkout",
       "priority": "P0",
-      "status": "TODO — external session or device unavailable; user requested deferral",
+      "status": "Current assets reviewed",
       "output": "assets/refresh/plugins/shopify-blocks.png",
       "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
       "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "User confirmed external demo accounts unavailable. Capture the dashboard-side setup where possible; return to the external product or physical output later."
+      "readiness": "Captured from authenticated Ticket Spot Demo dashboard and regular Chrome Shopify Admin.",
+      "external_capture_complete": true,
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-add-block.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "shopify-cart-handoff",
@@ -5251,14 +5278,27 @@
       "access": "Shopify demo store + Demo browser",
       "fixture": "Demo Shopify product and test-mode checkout",
       "priority": "P0",
-      "status": "TODO — external session or device unavailable; user requested deferral",
+      "status": "Current assets reviewed",
       "output": "assets/refresh/plugins/shopify-display-mode.png",
       "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
       "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "User confirmed external demo accounts unavailable. Capture the dashboard-side setup where possible; return to the external product or physical output later."
+      "readiness": "Captured from authenticated Ticket Spot Demo dashboard and regular Chrome Shopify Admin.",
+      "external_capture_complete": true,
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-display-mode.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "shopify-linked-product",
@@ -5270,21 +5310,36 @@
       "format": "Annotated screenshot",
       "title": "Linked product and selector configuration",
       "callouts": [
-        "Product configuration",
-        "Advanced Ticket Selector",
-        "status text"
+        "Use Ticket Spot Selector",
+        "Product Template",
+        "checkout and attendee options"
       ],
       "access": "Shopify demo store + Demo browser",
       "fixture": "Demo Shopify product and test-mode checkout",
       "priority": "P0",
-      "status": "TODO — external session or device unavailable; user requested deferral",
+      "status": "Current assets reviewed",
       "output": "assets/refresh/plugins/shopify-linked-product.png",
       "poster": null,
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
       "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
-      "readiness": "User confirmed external demo accounts unavailable. Capture the dashboard-side setup where possible; return to the external product or physical output later."
+      "readiness": "Captured from authenticated Ticket Spot Demo dashboard and regular Chrome Shopify Admin.",
+      "external_capture_complete": true,
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-linked-product-template.png",
+        "assets/refresh/plugins/shopify-linked-product-checkout.png"
+      ],
+      "integrated_pages": [
+        "plugins/connect-shopify.mdx",
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 2
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     },
     {
       "id": "shopify-membership-required",
@@ -12227,6 +12282,146 @@
       "review_note": "Capture readable dialog/panel crops and verify against current source.",
       "readiness": "Existing provider-verified sandbox refund job; no real refunds for documentation",
       "dependency": "Existing provider-verified sandbox refund job; no real refunds for documentation"
+    },
+    {
+      "id": "shopify-seating-preview",
+      "pages": [
+        "plugins/shopify-ticket-selector.mdx",
+        "plugins/shopify-ticketing-faq.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Preview the seating chart in the Ticket Selector; the expand button opens a larger map.",
+      "callouts": [
+        "Enlarge seating map"
+      ],
+      "access": "Shopify demo store + regular Chrome",
+      "fixture": "Existing Ticket Spot Demo Shopify configuration; no saved theme changes",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-seating-preview.png",
+      "poster": null,
+      "capture_rule": "Capture actual application UI with purple circles; exclude browser chrome/address bar.",
+      "external_capture_complete": true,
+      "review_note": "Reviewed October 2 Shopify follow-up.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-seating-preview.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx",
+        "plugins/shopify-ticketing-faq.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ],
+      "readiness": "Captured in the user-authorized regular Chrome session for Ticket Spot Demo."
+    },
+    {
+      "id": "shopify-template-picker",
+      "pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Open the theme template picker, then choose Products.",
+      "callouts": [
+        "Template picker",
+        "Products"
+      ],
+      "access": "Shopify demo store + regular Chrome",
+      "fixture": "Existing Ticket Spot Demo Shopify configuration; no saved theme changes",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-template-picker.png",
+      "poster": null,
+      "capture_rule": "Capture actual application UI with purple circles; exclude browser chrome/address bar.",
+      "external_capture_complete": true,
+      "review_note": "Reviewed October 2 Shopify follow-up.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-template-picker.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ],
+      "readiness": "Captured in the user-authorized regular Chrome session for Ticket Spot Demo."
+    },
+    {
+      "id": "shopify-product-templates",
+      "pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Choose the ticket-spot product template or create a dedicated template for event products.",
+      "callouts": [
+        "ticket-spot template",
+        "Create template"
+      ],
+      "access": "Shopify demo store + regular Chrome",
+      "fixture": "Existing Ticket Spot Demo Shopify configuration; no saved theme changes",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-product-templates.png",
+      "poster": null,
+      "capture_rule": "Capture actual application UI with purple circles; exclude browser chrome/address bar.",
+      "external_capture_complete": true,
+      "review_note": "Reviewed October 2 Shopify follow-up.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-product-templates.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ],
+      "readiness": "Captured in the user-authorized regular Chrome session for Ticket Spot Demo."
+    },
+    {
+      "id": "shopify-edit-theme",
+      "pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Click Edit theme on the theme you want to configure; draft themes are listed below.",
+      "callouts": [
+        "Edit theme"
+      ],
+      "access": "Shopify demo store + regular Chrome",
+      "fixture": "Existing Ticket Spot Demo Shopify configuration; no saved theme changes",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-edit-theme.png",
+      "poster": null,
+      "capture_rule": "Capture actual application UI with purple circles; exclude browser chrome/address bar.",
+      "external_capture_complete": true,
+      "review_note": "Reviewed October 2 Shopify follow-up.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-edit-theme.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-ticket-selector.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ],
+      "readiness": "Captured in the user-authorized regular Chrome session for Ticket Spot Demo."
     }
   ],
   "page_decisions": {
@@ -12257,17 +12452,17 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-02T23:43:23.874369+00:00",
+    "updated_at": "2026-10-03T02:50:06.407862+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-    "planned_capture_units": 343,
-    "units_with_any_capture": 270,
-    "checked_screenshots": 533,
+    "planned_capture_units": 347,
+    "units_with_any_capture": 278,
+    "checked_screenshots": 542,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 101,
-    "external_capture_units_deferred": 70,
+    "guides_with_current_media": 102,
+    "external_capture_units_deferred": 66,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },
   "final_production_stage": {

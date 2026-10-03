@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-02T15:34:38.293085+00:00",
+  "checked_at": "2026-10-03T02:47:51.838302+00:00",
   "demo_dependency_captures": [
     {
       "id": "event-details-organization",
@@ -146,7 +146,7 @@
       ]
     }
   ],
-  "external_device_briefs": 70,
+  "external_device_briefs": 66,
   "external_briefs_with_partial_demo_assets": 13,
   "guides_with_retained_legacy_media": {
     "mobile-app/attendee-details.mdx": [
@@ -191,19 +191,14 @@
       "../assets/plugins/connect-shopify/click-publish-btn.png",
       "../assets/plugins/connect-shopify/click-site.png",
       "../assets/plugins/connect-shopify/create-connect-site-modal.png",
-      "../assets/plugins/connect-shopify/enable-ticketspot-selector.gif",
-      "../assets/plugins/connect-shopify/go-shopify-setup1.gif",
       "../assets/plugins/connect-shopify/manage-attendees-btn.gif",
       "../assets/plugins/connect-shopify/my-store-dashboard.png",
-      "../assets/plugins/connect-shopify/product-page-config.gif",
       "../assets/plugins/connect-shopify/publish-to-shopify-btn.png",
       "../assets/plugins/connect-shopify/select-thankyou-page-save.gif",
       "../assets/plugins/connect-shopify/share-btn.png",
       "../assets/plugins/connect-shopify/shopify-login.png",
-      "../assets/plugins/connect-shopify/shopify-setup.gif",
       "../assets/plugins/connect-shopify/thankyou-page-display.png",
       "../assets/plugins/connect-shopify/thankyou-page1.gif",
-      "../assets/plugins/connect-shopify/ticketspot-selector-buy-ticket.gif",
       "../assets/plugins/connect-shopify/view-ticket-add-wallet.gif"
     ],
     "plugins/connect-lovable.mdx": [
@@ -340,14 +335,14 @@
       "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
     },
     {
-      "page": "plugins/connect-shopify.mdx",
-      "source": "https://www.youtube.com/embed/grq-oS9AFgI",
-      "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
-    },
-    {
       "page": "plugins/connect-wix.mdx",
       "source": "https://www.youtube.com/embed/RbGp4tIfsy4",
       "status": "Review separately; original long video is not replaced by a short screenshot GIF automatically."
+    },
+    {
+      "page": "plugins/shopify-ticket-selector.mdx",
+      "source": "https://www.youtube.com/embed/grq-oS9AFgI?start=5",
+      "status": "User-supplied setup video linked; video retrieval was throttled. Current setup verified in source and Shopify Admin, not from a claimed video review."
     }
   ],
   "unplaced_current_assets": [
@@ -431,5 +426,16 @@
       "asset": "assets/refresh/integrations/integrations-directory-regfox.png",
       "note": "Alternative close-up retained in the review gallery; not counted as a guide placement."
     }
-  ]
+  ],
+  "shopify_setup_followup": {
+    "completed_briefs": [
+      "shopify-block-install",
+      "shopify-blocks",
+      "shopify-display-mode",
+      "shopify-linked-product"
+    ],
+    "new_screenshots": 9,
+    "evidence": "production/shopify-selector-acceptance.json",
+    "remaining": "Post-purchase, payment, customer form, membership and full date/seat/cart demonstrations still need their own captures; theme setup access is now available."
+  }
 }
