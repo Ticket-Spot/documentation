@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T06:37:39.586672+00:00",
+  "checked_at": "2026-10-04T21:54:22.451960+00:00",
   "scope": "Payment-only widget checkout using shared Stripe, PayPal and Square forms; audited fulfillment, activity and configured New Order confirmations",
   "environment": {
     "namespace": "codex-payments-20261003",
@@ -469,7 +469,7 @@
   "assets": [
     {
       "asset": "assets/refresh/attendee-portal/payment-card-review.png",
-      "sha256": "545ea380beb494adb9d90a5edaca21e7dacc839f674355d1f10e5115890e595d"
+      "sha256": "2c8967c049e68de4bd852f5b8dbe71bf23c390c281eac3fda62c0fec4635683e"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-card-complete.png",
@@ -513,7 +513,11 @@
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-options-preview.png",
-      "sha256": "f5bb840ef370127bf7fc91a3ba5b1c8ba87671da638df7faaff856be5bddca79"
+      "sha256": "f8ec46fe715645fa252fc870e992e4bb0918bc23592e36ef04e02048f1d72cbe"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-options.png",
+      "sha256": "8993975aee356735eb075626a5cebc14470719aad91e3c186652363eaebc678e"
     }
   ],
   "annotation": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles; at most 3 per image; no browser chrome or bearer links",
@@ -597,5 +601,94 @@
     "square": "Existing form and checkout payment helper reused; routing, amount/currency/order/location checks and uncertain-outcome/decline retry checks pass; no connected sandbox location available for a real purchase",
     "stripe_wallets": "Existing Express Checkout reused when configured; device/domain eligibility not exercised",
     "saved_cards_and_installments": "Stripe cards only; automatic final payment and duplicate scheduler delivery verified"
+  },
+  "ui_followup": {
+    "date": "2026-10-04",
+    "dropdown": {
+      "passed": true,
+      "component": "Actual dashboard SelfServicePayments and PaymentOptionsPreview; synthetic payment options",
+      "checks": [
+        "PrimeReact replaces native select",
+        "First option selectable",
+        "Clear resets selection",
+        "Correct transfer payload",
+        "Busy state",
+        "Mobile popup fits",
+        "Preview disabled"
+      ]
+    },
+    "stripe": {
+      "passed": true,
+      "realStripeElements": true,
+      "chargesAttempted": 0,
+      "checks": [
+        "Visa/Mastercard logos load",
+        "Exactly card number, expiry, CVC",
+        "Visa accepted",
+        "Mastercard accepted",
+        "Invalid number border",
+        "No desktop/mobile overflow",
+        "Full-width buttons",
+        "Unpaid test action cancelled"
+      ]
+    },
+    "note": "Visual follow-up only. Historical payment acceptance cases remain unchanged.",
+    "documentation": {
+      "passed": true,
+      "pages": [
+        {
+          "path": "attendee-portal/manage-payments",
+          "width": 1440,
+          "overflow": false,
+          "images": [
+            {
+              "name": "payment-card-review.png",
+              "loaded": true
+            },
+            {
+              "name": "payment-options.png",
+              "loaded": true
+            }
+          ]
+        },
+        {
+          "path": "attendee-portal/manage-payments",
+          "width": 390,
+          "overflow": false,
+          "images": [
+            {
+              "name": "payment-card-review.png",
+              "loaded": true
+            },
+            {
+              "name": "payment-options.png",
+              "loaded": true
+            }
+          ]
+        },
+        {
+          "path": "branding-and-design/attendee-ticket-page",
+          "width": 1440,
+          "overflow": false,
+          "images": [
+            {
+              "name": "payment-options-preview.png",
+              "loaded": true
+            }
+          ]
+        },
+        {
+          "path": "branding-and-design/attendee-ticket-page",
+          "width": 390,
+          "overflow": false,
+          "images": [
+            {
+              "name": "payment-options-preview.png",
+              "loaded": true
+            }
+          ]
+        }
+      ]
+    }
   }
 }

@@ -16847,7 +16847,8 @@
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
     ],
-    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
+    "qa_note": "Current shared Stripe card form: Visa/Mastercard logos and exactly three visible card inputs. Real Stripe test Elements; own unpaid card-update action cancelled without submitting payment. Original browser pixels with #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "capturedAt": "2026-10-04"
   },
   "payment-card-complete": {
     "id": "payment-card-complete",
@@ -17040,8 +17041,8 @@
     "title": "Enabled payment options in the Design preview",
     "caption": "Enabled ticket upgrades appear in the sample preview. These example controls take no payment.",
     "alt": "Payments preview with the example VIP upgrade circled and payment controls disabled",
-    "source": "Actual local Design sample preview; synthetic sample choices; controls disabled; browser confirmed zero payment-action requests. Original application pixels cropped to the Payments card.",
-    "capturedAt": "2026-10-03",
+    "source": "Actual compiled dashboard PaymentOptionsPreview mounted in an isolated browser with synthetic sample choices. PrimeReact controls disabled; no backend payment requests. Original application pixels captured at the Payments card.",
+    "capturedAt": "2026-10-04",
     "format": "PNG",
     "qa": "passed visual review",
     "qa_note": "Reviewed original browser pixels with a #9c26dc unfilled 4 CSS pixel circle; no personal data, browser chrome or bearer link.",
@@ -17102,6 +17103,25 @@
     "format": "PNG",
     "qa": "passed visual review",
     "qa_note": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles, no browser chrome, personal data or bearer links. Article checked at 1440px and 390px.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-options": {
+    "id": "payment-options",
+    "key": "payment-options",
+    "asset": "assets/refresh/attendee-portal/payment-options.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Choose an upgrade or transfer",
+    "caption": "Choose an available upgrade or transfer, then select Review change. Prices shown are examples.",
+    "alt": "Available upgrade and transfer choices in the attendee portal dropdown with the first option circled",
+    "source": "Actual compiled dashboard SelfServicePayments mounted in an isolated browser with synthetic options. API responses and submit requests captured in browser memory; no backend payment submitted.",
+    "capturedAt": "2026-10-04",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser application pixels with #9c26dc unfilled 4 CSS pixel circle; no browser chrome, personal data or bearer links. First choice, clearing, exact submit payload, busy state and 390px popup verified.",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
     ]
