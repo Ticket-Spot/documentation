@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T03:02:18.715593+00:00",
+  "checked_at": "2026-10-04T04:21:45.040024+00:00",
   "scope": "Shared attendee payment actions: card updates, early installments and recovery, memberships, ticket changes and transfers",
   "environment": {
     "namespace": "codex-payments-20261003",
@@ -7,7 +7,10 @@
     "data": "Synthetic example.invalid identities",
     "transport": "Cloud Tasks and email captured locally; actual receipt/PDF code",
     "forced_dates": "Only isolated fixture installment due dates",
-    "apple_wallet": "No Apple Wallet signing verification; local signing credentials unavailable"
+    "apple_wallet": "No Apple Wallet signing verification; local signing credentials unavailable",
+    "test_site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
+    "test_event": "Payment QA Event (payments-event)",
+    "widget_url": "Dashboard WIDGET_CLIENT_URL with viewMode=payment; fragment-scoped action access"
   },
   "cases": {
     "business-flow-results.json": [
@@ -180,10 +183,104 @@
       "nestedWidgetPath": true,
       "completedActionResumed": true,
       "failedRequests": []
+    },
+    "embedded-followup-results.json": {
+      "optionsSpinner": true,
+      "checkoutSpinner": true,
+      "widget": {
+        "host": "localhost:8090",
+        "path": "/widget",
+        "view": "payment"
+      },
+      "cardUpdated": true,
+      "portalStayedOpen": true,
+      "noExtraTab": true,
+      "noNewTabLink": true,
+      "optionsRefreshedAfterCompletion": true
+    },
+    "embedded-retry-results.json": {
+      "blockedWidgetShowsRetry": true,
+      "retryLoadedInsidePortal": true,
+      "unpaidActionCancelled": true
+    },
+    "embedded-authentication-results.json": {
+      "embeddedBankChallenge": true,
+      "bankApproved": true,
+      "cardUpdatedWithoutCharge": true,
+      "noExtraTab": true
+    },
+    "production-widget-followup-results.json": {
+      "productionWidgetPaymentView": true,
+      "completedActionResumed": true,
+      "failedRequests": [
+        "/g/collect",
+        "/css2",
+        "/css2",
+        "/css2",
+        "/css2"
+      ]
+    },
+    "free-upgrade-browser-results.json": {
+      "freeToPaidUpgradeOffered": true,
+      "displayedAmount": "$40.00",
+      "completed": true,
+      "repeatFinish": [
+        200,
+        200
+      ]
+    },
+    "free-upgrade-audit.json": {
+      "freeCredit": 0,
+      "quotedMinor": 4000,
+      "chargedMinor": 4000,
+      "successfulPayments": 1,
+      "providerIntents": 1,
+      "ledgerTotal": 40,
+      "originalTotal": 0,
+      "attendeeCount": 1,
+      "upgradedToVIP": true,
+      "attendeeIdentityPreserved": true,
+      "fulfillmentApplications": 1
+    },
+    "webhook-routing-proof.json": {
+      "taggedOwnSandboxObjects": 16,
+      "providerAmountsAndStatusesUnchanged": true,
+      "originalEventStillUntagged": true,
+      "signedOriginalEventReplay": [
+        {
+          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        }
+      ],
+      "defaultObligationAbsentBeforeAndAfter": true,
+      "settledOwnObligationUnchanged": true
+    },
+    "manual-test-smoke-results.json": {
+      "site": "Payment QA — Stripe Sandbox",
+      "title": "Upgrade to VIP",
+      "amount": "$40.00",
+      "sandbox": true,
+      "ready": true
     }
   },
   "automated_checks": {
-    "server": 154,
+    "server": 170,
     "widget_installment_tests": 2,
     "production_client_build": "passed with local Dart Sass runtime",
     "dashboard_typecheck": "Existing project errors remain; no diagnostics in new SelfServicePayments component"
@@ -215,6 +312,10 @@
         {
           "ok": true,
           "name": "payment-membership-upgrade-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-free-ticket-upgrade-review.png"
         },
         {
           "ok": true,
@@ -280,12 +381,16 @@
     {
       "asset": "assets/refresh/attendee-portal/payment-update-pending.png",
       "sha256": "114f38f9cb1fb98881f9d1e5ec86e7430d6a85a9c88b72c3720a88d682486d95"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-free-ticket-upgrade-review.png",
+      "sha256": "5a274d11f8912c7e7b3c7dc7badd01de1bfb1038d4379555a153bfb21f1b5892"
     }
   ],
   "annotation": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles; at most 3 per image; no browser chrome or bearer links",
   "limitations": [
     "Hosted webhook delivery and live email/Cloud Tasks transport were not exercised",
     "Production deployment and enabling the paused installment cron remain rollout steps",
-    "Direct Stripe cards and standard fixed-price individual tickets supported; marketplace, other gateways and complex ticket pricing require adapters/host review"
+    "Direct Stripe cards and standard fixed-price individual tickets supported. Square, PayPal, wallet payment actions, marketplace settlement and complex ticket pricing still require adapters and verification."
   ]
 }
