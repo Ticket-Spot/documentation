@@ -4,15 +4,17 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 542 reviewed screenshots and 3 reviewed GIFs across 102 guides; 3 companion posters.
+- 560 reviewed screenshots and 3 reviewed GIFs across 102 guides; 3 companion posters.
 - All 140 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
 - [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 347 planned briefs. A captured image does not establish complete acceptance of every dependent state.
-- [remaining-coverage.json](../remaining-coverage.json) lists sixteen Demo-state dependencies, sixty-six external/device briefs, retained legacy images, and five long videos awaiting freshness review.
+- [remaining-coverage.json](../remaining-coverage.json) lists fourteen Demo-state dependencies, sixty-six external/device briefs, retained legacy images, and five long videos awaiting freshness review.
 - [analytics-acceptance.json](analytics-acceptance.json) records temporary fixture cleanup and real export checks. Analytics fixtures were removed and the real API verified; no fixture data was written to stored records.
 - [attendee-actions-acceptance.json](attendee-actions-acceptance.json) records 17 additional annotated screenshots, six rendered guides, nine checked heading links, and the unsubmitted refund/transfer/message boundaries. See [the action review](../../ATTENDEE_DASHBOARD_REVIEW.md) for the full menu inventory and conditional visual TODOs.
 
 - [shopify-selector-acceptance.json](shopify-selector-acceptance.json) records nine fresh Shopify setup screenshots, the linked-product options, the FAQ, Ahrefs research, and desktop/mobile checks. Shopify Admin was captured through the user’s authenticated regular Chrome session without saving or publishing theme changes.
+
+- [installment-acceptance.json](installment-acceptance.json) records manual and automatic Stripe sandbox collection, payment progress/filters, replacement-card recovery, organizer summaries, and final New Order email/PDF/QR rendering. Both automatic test orders collected exactly three $10 payments; concurrent manual/automatic requests and repeated worker deliveries produced no extra charges. Email transport was captured locally. The cloud installment cron is paused pending deployment; hosted webhooks, outbound email, financial rollups, browser 3DS, and the enabled ticket-editor setup capture remain separate checks.
 
 ## Review locally
 

@@ -1,17 +1,12 @@
 ---
 title: "Set up ticket payment plans with Stripe installments"
 sidebarTitle: "Installment payments"
-description: "Offer event ticket payment plans with a deposit and Stripe installments. Configure due dates, collect later payments, and resolve failed charges."
+description: "Offer event ticket payment plans with a deposit and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges."
 ---
 
 Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. They require **Business or higher**, a connected Stripe account, and Stripe card checkout.
 
 ## Create a payment schedule
-
-
-<Frame caption="Custom date ticket → Advanced. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.">
-  <img src="../assets/refresh/event-management/day-ticket-editor-advanced.png" alt="Custom date ticket → Advanced. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
-</Frame>
 
 <Steps>
 <Step title="Connect Stripe">
@@ -23,28 +18,136 @@ Edit the event, open **Tickets**, and edit a fixed-price paid ticket. Turn on **
 <Step title="Enter the payments">
 Add up to four payments. For each, enter the amount, **Due After (days)**, and an optional description. The first payment is due at checkout: its day offset is zero. Later offsets are measured from purchase, not from the event date. The amounts must add up to the ticket price.
 
-For a $300 ticket, an example is $100 at checkout, $100 after 30 days, and $100 after 60 days. Check that these dates fit your event and admission policy.
+For a \$300 ticket, an example is \$100 at checkout, \$100 after 30 days, and \$100 after 60 days. Check that these dates fit your event and admission policy.
 </Step>
 <Step title="Save and check checkout">
 Save the ticket and event. Preview the public checkout, select the ticket, and verify the deposit and future schedule. The attendee must accept the payment agreement. Check your [installment email templates](/branding-and-design/attendee-communication-design) before taking bookings.
 </Step>
 </Steps>
 
-<Note>Due dates do not automatically charge the attendee's card. An organizer initiates collection of later installments.</Note>
+<Note>New bookings authorize automatic saved-card collection on or after the accepted due dates. Collection runs every ten minutes. **Charge Now** remains available for a due payment. Older bookings that accepted a manual collection agreement remain manual.</Note>
 
-## Collect a due installment
+For [date-specific tickets](/event-management/day-specific-tickets), the custom date ticket's **Advanced** controls apply to that date's own tickets. Use **Save changes** in the date drawer to save edits.
+
+<Frame caption="Custom date ticket → Advanced. Save changes in the date drawer after editing that date's tickets.">
+  <img src="../assets/refresh/event-management/day-ticket-editor-advanced.png" alt="Advanced controls in the custom date ticket editor" />
+</Frame>
+
+## What the attendee sees at checkout
+
+The attendee reviews the total price, deposit due today, future amounts and due dates, then accepts the agreement to save their card and automatically collect later installments on or after those dates. They pay the deposit using Stripe card checkout. The order confirmation can show that tickets are pending while a balance remains.
+
+<Note>The following screenshots show a Stripe test event with a \$30 ticket paid in three \$10 installments. The names and booking details are synthetic.</Note>
+
+<Frame caption="1. Review the three-payment schedule and accept the saved-card agreement before paying the deposit.">
+  <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Checkout payment schedule with the saved-card authorization checkbox circled" />
+</Frame>
+
+<Frame caption="2. Due Today is $10 in this example. The remaining $20 is listed in the payment schedule.">
+  <img src="../assets/refresh/event-management/installment-deposit-checkout.png" alt="Stripe card checkout with the $10 deposit due today circled" />
+</Frame>
+
+<Frame caption="3. Order complete confirms the deposit checkout. Tickets are still pending in this example because later installments remain unpaid.">
+  <img src="../assets/refresh/event-management/installment-deposit-complete.png" alt="Completed deposit checkout showing the order confirmation and pending tickets" />
+</Frame>
+
+## Track payment progress
+
+The **Attendees** list shows **Paid 1/3**, **Paid 2/3**, or **Fully paid · 3/3**, plus the remaining balance. **Overdue** and **Needs attention** identify payments that need review. Click the progress badge to open **Payment Installments**.
+
+<Frame caption="An automatic payment advances the booking to Paid 2/3 and leaves one $10 payment outstanding.">
+  <img src="../assets/refresh/event-management/installment-automatic-paid-two.png" alt="Attendee dashboard showing two of three installments paid and the outstanding balance" />
+</Frame>
+
+Use **More filters → Payment** to select fully paid, outstanding, overdue, or attention needed. The progress dropdown filters exact fractions such as **1/3** or **2/3**. These filters combine with event, ticket, attendee status, and search. **Clear all filters** resets them.
+
+<Frame caption="Filter by payment status and the number of completed installments.">
+  <img src="../assets/refresh/event-management/installment-payment-filters.png" alt="Payment status and installment progress filters circled in More filters" />
+</Frame>
+
+The payment summary cards show the matching bookings and remaining balance. Click a card to apply its payment filter. Counts cover every matching attendee, including additional pages of results.
+
+<Frame caption="Fully paid · 3/3 confirms the balance is settled. The summary cards help find bookings that still need attention.">
+  <img src="../assets/refresh/event-management/installment-fully-paid-progress.png" alt="Attendee list with the Fully paid three of three progress badge circled" />
+</Frame>
+
+## Collect a due installment manually
 
 1. Open the event's **Attendees** list.
-2. In the ticket value column, click **Paid X of Y** to open **Payment Installments**.
+2. In the ticket value column, click **Paid X/Y** to open **Payment Installments**.
 3. Review the card, paid amount, remaining balance, due date, and payment status.
 4. Click **Charge Now** on the due installment and review **Confirm Charge** before confirming.
 5. Reopen the record after processing and verify the payment is marked paid and the remaining balance has decreased.
 
 The charge control is unavailable before the due date, without installment plan access, or when the attendee's status does not permit collection. A processing payment may display **Check payment**. Resolve its existing result before attempting another collection.
 
+<Frame caption="4. Charge Now is available for the due second installment. The future third installment is unavailable.">
+  <img src="../assets/refresh/event-management/installment-next-due.png" alt="Payment Installments dialog with Charge Now circled for the due second payment" />
+</Frame>
+
+<Frame caption="5. Confirm Charge identifies the installment and amount. Review both before selecting Yes.">
+  <img src="../assets/refresh/event-management/installment-confirm-charge.png" alt="Confirmation dialog for charging the second $10 installment with Yes circled" />
+</Frame>
+
+<Frame caption="6. After the second payment, Paid 2 of 3 and a $10 remaining balance show that one installment is still outstanding.">
+  <img src="../assets/refresh/event-management/installment-second-paid.png" alt="Installment record showing two paid payments and the remaining $10 circled" />
+</Frame>
+
+### Check the result before retrying
+
+After a slow response or error, reopen **Payment Installments** and check the existing payment's status and balance. Use **Check payment** when offered. A declined payment does not reduce the balance. If the result remains uncertain, review the matching Stripe payment before attempting another action.
+
 ## Help an attendee complete payment
 
-If authentication or a replacement card is needed, the dialog can show **Complete installment payment**. Share that attendee-specific link privately with the attendee. After they complete the flow, check the installment record again. Do not treat a failed or pending charge as collected money.
+If authentication or a replacement card is needed, the dialog can show **Update card or authenticate**. Share that attendee-specific link privately with the attendee. The link gives them a way to finish the outstanding payment.
+
+<Frame caption="7. A separate test booking shows Paid 1/3, Needs attention, and a $20 outstanding balance after its saved-card payment failed.">
+  <img src="../assets/refresh/event-management/installment-saved-card-declined.png" alt="Attendee list showing a failed automatic payment, one of three installments paid, and an unchanged $20 balance" />
+</Frame>
+
+For a replacement card, the attendee opens the link, checks the amount, enters their card details, and accepts the agreement to save that card for any remaining installments. They then select **Update card and pay** and follow any instructions from their bank. The saved replacement card is used for later collections under the accepted agreement.
+
+<Frame caption="8. Update your payment shows the $10 due installment and future schedule. Update card and pay stays disabled until the agreement is accepted.">
+  <img src="../assets/refresh/event-management/installment-recovery-consent.png" alt="Attendee payment recovery page showing the $10 amount, unchecked authorization, and disabled payment button" />
+</Frame>
+
+<Frame caption="9. Enter the replacement card, accept the agreement, and select Update card and pay.">
+  <img src="../assets/refresh/event-management/installment-replacement-card.png" alt="Replacement-card recovery with accepted saved-card consent and Update card and pay circled" />
+</Frame>
+
+<Frame caption="10. Payment complete confirms that the attendee finished the recovery payment.">
+  <img src="../assets/refresh/event-management/installment-recovery-complete.png" alt="Payment complete message circled after replacement-card recovery" />
+</Frame>
+
+After the attendee finishes, reopen the installment record and verify the payment is **Paid** and the remaining balance has decreased. Do not treat a failed or pending charge as collected money. When the final installment is paid, the record shows a zero balance and **All installments paid in full**.
+
+<Frame caption="11. All three installments are paid in this example. The remaining balance is $0 and the attendee is Attending.">
+  <img src="../assets/refresh/event-management/installment-all-paid.png" alt="Completed installment record with the zero balance and All installments paid in full circled" />
+</Frame>
+
+An attendee who opens the same link after the installment is paid sees **This installment is already paid**. They do not need to enter their card again.
+
+<Frame caption="12. Reopening the completion link after payment shows that the installment is already paid.">
+  <img src="../assets/refresh/event-management/installment-recovery-already-paid.png" alt="Recovery link showing This installment is already paid with the message circled" />
+</Frame>
+
+## Payment emails
+
+In **Settings → Attendee Communication → Pending Installment**, configure the messages for the first payment and later installments. The initial receipt confirms the deposit. Later automatic payments use **Subsequent Installment**; an organizer's manual charge uses **Host Charge Installment**. These receipts do not issue admission tickets while a balance remains.
+
+If a charge fails or the bank requires authentication, the attendee receives an attention email with a private link to update their card or authenticate the payment. Automatic collection pauses for that payment. Share recovery links only with the attendee they belong to.
+
+When the whole order is fully paid and eligible for admission, the attendee receives the existing **New Order** ticket confirmation email, using its configured content and branding, with the usual ticket PDF/QR and receipt. A separate installment completion template is not required. Approval and other admission holds still apply.
+
+<Frame caption="The final eligible payment sends the usual New Order ticket confirmation, with ticket and receipt PDFs attached.">
+  <img src="../assets/refresh/event-management/installment-new-order-email.png" alt="Standard Your ticket is confirmed email reused after the final installment" />
+</Frame>
+
+After the payments in a collection period finish, the organizer receives one **Installment Summary** for that event and currency. It reports payments collected, the amount collected, fully paid plans, failed payments, and known attendee email errors. These notifications use the same recipients and preferences as **New Registration**. A failed payment is not included in collected funds.
+
+<Frame caption="The organizer summary identifies a declined payment and reports $0 collected for that failed attempt.">
+  <img src="../assets/refresh/event-management/installment-organizer-summary.png" alt="Installment Summary email showing one payment needing attention and zero funds collected" />
+</Frame>
 
 ## Changes, refunds, and admission
 
@@ -58,4 +161,6 @@ Installment tickets used as event add-ons must be selected through the main even
 
 - [Ticket fields and purchase controls](/event-management/ticket-setup)
 - [Attendee management](/attendee-management/managing-attendees)
+- [Order details and payment summaries](/attendee-management/managing-orders#payment-installments)
+- [Refunds and cancellations](/attendee-management/refunds-and-cancellations)
 - [Billing and plans](/account/billing-and-plans)

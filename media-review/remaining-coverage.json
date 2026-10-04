@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T02:47:51.838302+00:00",
+  "checked_at": "2026-10-03",
   "demo_dependency_captures": [
     {
       "id": "event-details-organization",
@@ -7,23 +7,6 @@
       "dependency": "Platform account with an existing Demo organization",
       "pages": [
         "event-management/eventdetails.mdx"
-      ]
-    },
-    {
-      "id": "installment-buyer-summary",
-      "title": "Buyer payment-plan summary",
-      "dependency": "Stripe test connection with payments enabled",
-      "pages": [
-        "event-management/installment-payments.mdx"
-      ]
-    },
-    {
-      "id": "installment-manage",
-      "title": "Manage installments on an order",
-      "dependency": "Stripe test connection with payments enabled",
-      "pages": [
-        "event-management/installment-payments.mdx",
-        "attendee-management/managing-orders.mdx"
       ]
     },
     {

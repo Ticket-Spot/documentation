@@ -1,0 +1,462 @@
+{
+  "checked_at": "2026-10-03",
+  "scope": "Automatic and manual Stripe installment collection, progress/search/stats filters, attendee communications and final New Order ticket PDF/QR, organizer period summaries",
+  "guides": [
+    "event-management/installment-payments.mdx",
+    "attendee-management/managing-orders.mdx"
+  ],
+  "new_annotated_screenshots": [
+    "installment-agreement",
+    "installment-deposit-checkout",
+    "installment-deposit-complete",
+    "installment-next-due",
+    "installment-confirm-charge",
+    "installment-second-paid",
+    "installment-saved-card-declined",
+    "installment-recovery-consent",
+    "installment-replacement-card",
+    "installment-recovery-complete",
+    "installment-all-paid",
+    "installment-recovery-already-paid",
+    "installment-automatic-agreement",
+    "installment-automatic-paid-two",
+    "installment-payment-filters",
+    "installment-fully-paid-progress",
+    "installment-organizer-summary",
+    "installment-new-order-email"
+  ],
+  "image_review": "Eighteen registered original application/email browser captures, including refreshed recovery and attention states, with approved #9c26dc unfilled 4 CSS pixel circles. Seventeen installment images are placed in the guide; the old manual agreement is retained as historical evidence. No browser chrome, secrets or real attendee data.",
+  "environment": {
+    "payment_mode": "Stripe sandbox only",
+    "datastore_namespace": "codex-installments-20261003",
+    "data": "Synthetic organizer, event, ticket, and attendees; real sandbox PaymentIntents and payment journal entries",
+    "forced_due_dates": "Only this sandbox order’s later due dates were advanced. Consent, entitlement, amount, status, and reconciliation guards stayed active."
+  },
+  "payment_integrity": {
+    "passed": true,
+    "attendeeCount": 1,
+    "paymentTransactionCount": 3,
+    "paymentIntentCount": 3,
+    "successfulChargeCount": 3,
+    "failedChargeCount": 1,
+    "totalCollectedCents": 3000,
+    "paidInstallments": 3,
+    "remainingBalance": 0,
+    "status": "attending",
+    "liveCharges": false
+  },
+  "checks": {
+    "deposit_checkout": "passed",
+    "organizer_next_installment": "passed",
+    "future_installment_rejected": "passed",
+    "concurrent_retries_no_duplicate_charge": "passed",
+    "completed_order_retries_no_duplicate_charge": "passed",
+    "declined_saved_card_no_collected_funds": "passed",
+    "replacement_card_consent_and_saving": "passed",
+    "signed_webhook_reconciliation_and_duplicate_delivery": "passed",
+    "invalid_webhook_signature_rejected": "passed",
+    "paid_recovery_link_terminal_state": "passed",
+    "backend_tests": 139,
+    "widget_tests": 9,
+    "automatic_manual_race": "passed: one persisted payment and journal entry",
+    "automatic_decline": "passed: no funds collected, duplicate delivery pauses",
+    "automatic_replacement_card": "passed: same intent recovered and replacement card saved",
+    "search_stats_payment_filters": "passed: browser API and pagination regression",
+    "organizer_summaries": "passed: native renderer and local transport; duplicate runs do not resend",
+    "attendee_communications": "passed: initial receipt, payment receipts, failure email, standard New Order final delivery",
+    "ticket_pdf_qr": "passed: actual generated PDFs visually reviewed",
+    "strict_email_build_failure": "passed: retry rather than mark delivered",
+    "authenticated_dispatcher": "passed: OIDC identity and audience checks"
+  },
+  "limits": [
+    "Code is proposed in companion PRs; automatic production collection is not deployed or activated. The cloud job is paused.",
+    "Existing v1 agreements remain manual; new v2 checkout consent explicitly authorizes automatic collection.",
+    "Hosted Stripe webhook transport was not exercised; actual sandbox events were signed and delivered to the local endpoint.",
+    "Email content, native renderer, PDF/QR and duplicate handling were exercised with a local transport sink; live Postmark delivery and financial rollup workers remain deployment checks. Dashboard overview money metrics are not financial acceptance evidence.",
+    "The second automatic failure fixture starts with a seeded test agreement and real sandbox deposit; the primary automatic order used actual browser checkout.",
+    "Browser 3DS challenges and enabled ticket-editor setup screenshots remain pending.",
+    "Whole dashboard TypeScript check is blocked by existing repository errors; browser build and new API/UI behavior were verified."
+  ],
+  "companion_prs": [
+    "https://github.com/chrismccaw/wix-eventviewer-server/pull/200",
+    "https://github.com/chrismccaw/wix-eventviewer-client/pull/74",
+    "https://github.com/chrismccaw/wix-eventviewer-server/pull/201",
+    "https://github.com/chrismccaw/wix-eventviewer-dashboard/pull/177",
+    "https://github.com/chrismccaw/wix-eventviewer-client/pull/75"
+  ],
+  "mdx_compilation": {
+    "result": "passed",
+    "guides": 140
+  },
+  "documentation_check": {
+    "result": "passed"
+  },
+  "render_checks": {
+    "passed": true,
+    "pageErrors": [],
+    "results": [
+      {
+        "slug": "event-management/installment-payments",
+        "views": [
+          {
+            "label": "desktop",
+            "width": 1440,
+            "status": 200,
+            "title": "Set up ticket payment plans with Stripe installments - Ticket Spot",
+            "h1": "Set up ticket payment plans with Stripe installments",
+            "description": "Offer event ticket payment plans with a deposit and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges.",
+            "overflow": false,
+            "media": [
+              {
+                "src": "/assets/refresh/event-management/day-ticket-editor-advanced.png",
+                "alt": "Advanced controls in the custom date ticket editor",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-automatic-agreement.png",
+                "alt": "Checkout payment schedule with the saved-card authorization checkbox circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-deposit-checkout.png",
+                "alt": "Stripe card checkout with the $10 deposit due today circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-deposit-complete.png",
+                "alt": "Completed deposit checkout showing the order confirmation and pending tickets",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-automatic-paid-two.png",
+                "alt": "Attendee dashboard showing two of three installments paid and the outstanding balance",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-payment-filters.png",
+                "alt": "Payment status and installment progress filters circled in More filters",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-fully-paid-progress.png",
+                "alt": "Attendee list with the Fully paid three of three progress badge circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-next-due.png",
+                "alt": "Payment Installments dialog with Charge Now circled for the due second payment",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-confirm-charge.png",
+                "alt": "Confirmation dialog for charging the second $10 installment with Yes circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-second-paid.png",
+                "alt": "Installment record showing two paid payments and the remaining $10 circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-saved-card-declined.png",
+                "alt": "Attendee list showing a failed automatic payment, one of three installments paid, and an unchanged $20 balance",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-consent.png",
+                "alt": "Attendee payment recovery page showing the $10 amount, unchecked authorization, and disabled payment button",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-replacement-card.png",
+                "alt": "Replacement-card recovery with accepted saved-card consent and Update card and pay circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-complete.png",
+                "alt": "Payment complete message circled after replacement-card recovery",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-all-paid.png",
+                "alt": "Completed installment record with the zero balance and All installments paid in full circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-already-paid.png",
+                "alt": "Recovery link showing This installment is already paid with the message circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-new-order-email.png",
+                "alt": "Standard Your ticket is confirmed email reused after the final installment",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-organizer-summary.png",
+                "alt": "Installment Summary email showing one payment needing attention and zero funds collected",
+                "loaded": true
+              }
+            ],
+            "anchors": [
+              {
+                "id": "collect-a-due-installment-manually",
+                "found": true
+              },
+              {
+                "id": "help-an-attendee-complete-payment",
+                "found": true
+              },
+              {
+                "id": "track-payment-progress",
+                "found": true
+              },
+              {
+                "id": "payment-emails",
+                "found": true
+              }
+            ]
+          },
+          {
+            "label": "mobile",
+            "width": 390,
+            "status": 200,
+            "title": "Set up ticket payment plans with Stripe installments - Ticket Spot",
+            "h1": "Set up ticket payment plans with Stripe installments",
+            "description": "Offer event ticket payment plans with a deposit and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges.",
+            "overflow": false,
+            "media": [
+              {
+                "src": "/assets/refresh/event-management/day-ticket-editor-advanced.png",
+                "alt": "Advanced controls in the custom date ticket editor",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-automatic-agreement.png",
+                "alt": "Checkout payment schedule with the saved-card authorization checkbox circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-deposit-checkout.png",
+                "alt": "Stripe card checkout with the $10 deposit due today circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-deposit-complete.png",
+                "alt": "Completed deposit checkout showing the order confirmation and pending tickets",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-automatic-paid-two.png",
+                "alt": "Attendee dashboard showing two of three installments paid and the outstanding balance",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-payment-filters.png",
+                "alt": "Payment status and installment progress filters circled in More filters",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-fully-paid-progress.png",
+                "alt": "Attendee list with the Fully paid three of three progress badge circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-next-due.png",
+                "alt": "Payment Installments dialog with Charge Now circled for the due second payment",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-confirm-charge.png",
+                "alt": "Confirmation dialog for charging the second $10 installment with Yes circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-second-paid.png",
+                "alt": "Installment record showing two paid payments and the remaining $10 circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-saved-card-declined.png",
+                "alt": "Attendee list showing a failed automatic payment, one of three installments paid, and an unchanged $20 balance",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-consent.png",
+                "alt": "Attendee payment recovery page showing the $10 amount, unchecked authorization, and disabled payment button",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-replacement-card.png",
+                "alt": "Replacement-card recovery with accepted saved-card consent and Update card and pay circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-complete.png",
+                "alt": "Payment complete message circled after replacement-card recovery",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-all-paid.png",
+                "alt": "Completed installment record with the zero balance and All installments paid in full circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-recovery-already-paid.png",
+                "alt": "Recovery link showing This installment is already paid with the message circled",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-new-order-email.png",
+                "alt": "Standard Your ticket is confirmed email reused after the final installment",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-organizer-summary.png",
+                "alt": "Installment Summary email showing one payment needing attention and zero funds collected",
+                "loaded": true
+              }
+            ],
+            "anchors": [
+              {
+                "id": "collect-a-due-installment-manually",
+                "found": true
+              },
+              {
+                "id": "help-an-attendee-complete-payment",
+                "found": true
+              },
+              {
+                "id": "track-payment-progress",
+                "found": true
+              },
+              {
+                "id": "payment-emails",
+                "found": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "attendee-management/managing-orders",
+        "views": [
+          {
+            "label": "desktop",
+            "width": 1440,
+            "status": 200,
+            "title": "View and Manage Attendee Orders - Ticket Spot",
+            "h1": "View and Manage Attendee Orders",
+            "description": "Open an attendee order in Ticket Spot to review totals, tickets, add-ons and installments, resend confirmations, refund tickets, or transfer a booking.",
+            "overflow": false,
+            "media": [
+              {
+                "src": "/assets/refresh/attendee-management/attendee-order-actions.png",
+                "alt": "Order Information with Email Tickets, Cancel and Refund, and Transfer to Another Event highlighted",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/attendee-management/attendee-order-tickets.png",
+                "alt": "Attendee card in Order Information with the person icon and Change Ticket Type highlighted",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-all-paid.png",
+                "alt": "Payment-management dialog showing three paid installments and no remaining balance",
+                "loaded": true
+              }
+            ],
+            "anchors": [
+              {
+                "id": "payment-installments",
+                "found": true
+              }
+            ]
+          },
+          {
+            "label": "mobile",
+            "width": 390,
+            "status": 200,
+            "title": "View and Manage Attendee Orders - Ticket Spot",
+            "h1": "View and Manage Attendee Orders",
+            "description": "Open an attendee order in Ticket Spot to review totals, tickets, add-ons and installments, resend confirmations, refund tickets, or transfer a booking.",
+            "overflow": false,
+            "media": [
+              {
+                "src": "/assets/refresh/attendee-management/attendee-order-actions.png",
+                "alt": "Order Information with Email Tickets, Cancel and Refund, and Transfer to Another Event highlighted",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/attendee-management/attendee-order-tickets.png",
+                "alt": "Attendee card in Order Information with the person icon and Change Ticket Type highlighted",
+                "loaded": true
+              },
+              {
+                "src": "/assets/refresh/event-management/installment-all-paid.png",
+                "alt": "Payment-management dialog showing three paid installments and no remaining balance",
+                "loaded": true
+              }
+            ],
+            "anchors": [
+              {
+                "id": "payment-installments",
+                "found": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "automatic_payment_integrity": {
+    "passed": true,
+    "consentVersion": "installments-v2",
+    "collectionMode": "automatic",
+    "paidInstallments": 3,
+    "remainingBalance": 0,
+    "status": "attending",
+    "paymentIntents": 3,
+    "paymentTransactions": 3,
+    "successfulCharges": 3,
+    "totalCollectedCents": 3000,
+    "liveCharges": false
+  },
+  "automatic_failure_recovery_final": {
+    "status": "PASS",
+    "collection": [
+      204,
+      204
+    ],
+    "notification": [
+      204,
+      204
+    ],
+    "paid": 3,
+    "balance": 0,
+    "paymentIntentCount": 3,
+    "collectedMinor": 3000,
+    "liveCharges": false,
+    "sink": "local Postmark transport; real New Order renderer and PDF/QR"
+  },
+  "cloud_scheduler": {
+    "job": "projects/eventviewer-206815/locations/us-central1/jobs/installment-scheduler",
+    "schedule": "*/10 * * * *",
+    "timezone": "America/Los_Angeles",
+    "state": "PAUSED",
+    "oidc": true,
+    "production_enabled": false,
+    "reminder_job": "existing enabled ten-minute reminder cron remains separate",
+    "logs": "Current credentials cannot read Cloud Logging"
+  },
+  "communications": {
+    "final_template": "Existing enabled New Order event/site campaign, or standard New Order confirmation fallback",
+    "attachments": [
+      "tickets.pdf with QR",
+      "receipt.pdf"
+    ],
+    "transport": "Local Postmark sink; no outbound attendee or organizer mail",
+    "organizer_audience": "New Registration notification preferences, owner/admin and scoped event managers",
+    "delivery_integrity": "Persisted per-recipient progress and cart-level final lease; provider acknowledgement loss retains an at-least-once email window, independent of charge idempotency"
+  }
+}

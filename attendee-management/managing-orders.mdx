@@ -60,9 +60,18 @@ See [Event Add-ons](../event-management/event-add-ons) for setup.
 
 ## Payment installments
 
+The Attendees list shows installment progress such as **Paid 1/3**, **Paid 2/3**, and **Fully paid · 3/3**, with remaining balances. Use **More filters → Payment** or click a payment summary card to find paid, outstanding, overdue, or attention-needed bookings. New bookings authorize automatic collection on due dates, with **Charge Now** available as a manual override. The final eligible payment sends the usual **New Order** ticket confirmation and PDF/QR.
+
+
 For an order with a saved installment schedule, **Payment Installments** shows how many installments are paid, the remaining balance, and each payment's description, amount, due or paid date, and **Paid**, **Pending**, **Overdue**, or **Failed** status. A completed schedule shows **All installments paid in full**.
 
-This order section is a summary. Use the attendee list's installment/payment control for available payment-management actions, described in [Payment Installments](../event-management/installment-payments#collect-a-due-installment). Review scheduled payments individually before a cancellation; the bulk refund workflow does not accept installment tickets.
+This order section is a summary. Use the attendee list's installment/payment control for available payment-management actions, described in [Payment Installments](../event-management/installment-payments#collect-a-due-installment-manually). Review scheduled payments individually before a cancellation; the bulk refund workflow does not accept installment tickets.
+
+<Frame caption="The attendee list's payment-management dialog shows all three installments paid and a $0 balance in this Stripe test example. Booking details are synthetic.">
+  <img src="../assets/refresh/event-management/installment-all-paid.png" alt="Payment-management dialog showing three paid installments and no remaining balance" />
+</Frame>
+
+For a declined card, follow [Help an attendee complete payment](../event-management/installment-payments#help-an-attendee-complete-payment), then reopen the record to verify the paid status and remaining balance.
 
 ## Related attendee tools
 
