@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-04T04:53:57.369175+00:00",
-  "scope": "Shared attendee payment actions: card updates, early installments and recovery, memberships, ticket changes and transfers",
+  "checked_at": "2026-10-04T06:37:39.586672+00:00",
+  "scope": "Payment-only widget checkout using shared Stripe, PayPal and Square forms; audited fulfillment, activity and configured New Order confirmations",
   "environment": {
     "namespace": "codex-payments-20261003",
     "provider": "Real Stripe sandbox objects",
@@ -8,82 +8,18 @@
     "transport": "Cloud Tasks and email captured locally; actual receipt/PDF code",
     "forced_dates": "Only isolated fixture installment due dates",
     "apple_wallet": "No Apple Wallet signing verification; local signing credentials unavailable",
-    "test_site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
+    "test_site": "Payment QA \u2014 Stripe Sandbox (payment-actions-e2e)",
     "test_event": "Payment QA Event (payments-event)",
     "widget_url": "Dashboard WIDGET_CLIENT_URL with viewMode=payment; fragment-scoped action access",
     "additional_existing_booking": "User-selected Stripe sandbox free booking checked in the logged-in portal; no payment submitted, unpaid action cancelled; no personal details or booking screenshots published."
   },
   "cases": {
-    "business-flow-results.json": [
-      {
-        "name": "renewal",
-        "label": "Renew Standard Membership",
-        "completed": true,
-        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
-      },
-      {
-        "name": "upgrade",
-        "label": "Upgrade to Premium Membership",
-        "completed": true,
-        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
-      },
-      {
-        "name": "upgrade",
-        "label": "Upgrade to VIP",
-        "completed": true,
-        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
-      },
-      {
-        "name": "transfer",
-        "label": "Transfer to Destination",
-        "completed": true,
-        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
-      },
-      {
-        "name": "free_transfer",
-        "label": "Transfer to Budget Destination",
-        "completed": true,
-        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
-      }
-    ],
-    "card-and-early-results.json": [
-      {
-        "kind": "card_update",
-        "completed": true,
-        "charged": 0
-      },
-      {
-        "kind": "membership_card_update",
-        "completed": true,
-        "charged": 0
-      },
-      {
-        "kind": "early_installment",
-        "completed": true
-      }
-    ],
-    "decline-results.json": {
-      "declined": "Your card has been declined.",
-      "recovered": true
-    },
-    "authentication-results.json": {
-      "challengeShown": true,
-      "authenticated": true,
-      "completed": true
-    },
-    "reconciliation-results.json": {
-      "pending": {
-        "message": "Payment received. The booking update is pending; do not make another payment. The host has been notified.",
-        "button": "Finish booking update"
-      },
-      "resumed": true
-    },
-    "scheduler-results.json": {
+    "shared-scheduler-results.json": {
       "automaticFinalCharge": true,
       "paid": 3,
       "total": 3,
       "balance": 0,
-      "last4": "4444",
+      "last4": "4242",
       "cardSavedToCustomer": true,
       "oneProviderObjectPerInstallment": true,
       "duplicate": {
@@ -99,40 +35,144 @@
       "testOnlyDueWasForced": true,
       "finalNotificationQueued": true
     },
-    "original-scheduler-results.json": {
-      "savedCardRecoveryAfterCreationFailure": true,
-      "settled": {
-        "success": true,
-        "already_paid": true
-      },
-      "duplicate": {
-        "success": true,
-        "already_paid": true
-      },
-      "paid": 3,
-      "balance": 0
-    },
-    "access-cancel-results.json": {
-      "unpaidCancelled": true,
-      "forged": 404,
-      "unauthenticated": 401,
-      "outsider": 404
-    },
-    "concurrency-results.json": {
-      "repeatedCreation": true,
-      "oneAction": true,
-      "successResponses": 3
-    },
-    "expiry-results.json": {
-      "expired": true,
-      "payment_status": "cancelled",
-      "providerCancelled": true,
-      "ownLeaseReleasedAfterWorkerRestart": true
-    },
-    "outbox-results.json": {
-      "payments": [
+    "shared-financial-integrity.json": {
+      "actions": [
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 4000,
+          "chargedMinor": 4000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 4000,
+          "chargedMinor": 4000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
+        {
+          "kind": "membership_renewal",
+          "amountMinor": 10000,
+          "chargedMinor": 10000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 1,
+          "ownLedger": true
+        },
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 2000,
+          "chargedMinor": 2000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 4000,
+          "chargedMinor": 4000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
+        {
+          "kind": "card_update",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "state": "complete",
+          "providerObjects": 0,
+          "activityRows": 1,
+          "ownLedger": false
+        },
+        {
+          "kind": "event_transfer",
+          "amountMinor": 3000,
+          "chargedMinor": 3000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 4,
+          "ownLedger": true
+        },
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 4000,
+          "chargedMinor": 4000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
+        {
+          "kind": "ticket_upgrade",
+          "amountMinor": 4000,
+          "chargedMinor": 4000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 3,
+          "ownLedger": true
+        },
         {
           "kind": "membership_card_update",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "state": "complete",
+          "providerObjects": 0,
+          "activityRows": 1,
+          "ownLedger": false
+        },
+        {
+          "kind": "installment",
+          "amountMinor": 1000,
+          "chargedMinor": 1000,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 0,
+          "ownLedger": false
+        },
+        {
+          "kind": "event_transfer",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "state": "complete",
+          "providerObjects": 0,
+          "activityRows": 2,
+          "ownLedger": false
+        },
+        {
+          "kind": "membership_upgrade",
+          "amountMinor": 2027,
+          "chargedMinor": 2027,
+          "state": "complete",
+          "providerObjects": 1,
+          "activityRows": 1,
+          "ownLedger": true
+        }
+      ],
+      "actionCount": 13,
+      "activityCount": 34,
+      "installmentActivityCount": 6,
+      "installmentsPaid": 3,
+      "balance": 0,
+      "oneApplicationPerTicket": true,
+      "membershipIdentityAndVisitsPreserved": true,
+      "replayAddedActivityRows": 0,
+      "replayAddedActions": 0
+    },
+    "shared-email-results.json": {
+      "deliveries": [
+        {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "ticket_upgrade",
           "status": 204
         },
         {
@@ -144,6 +184,14 @@
           "status": 204
         },
         {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "card_update",
+          "status": 204
+        },
+        {
           "kind": "event_transfer",
           "status": 204
         },
@@ -152,15 +200,15 @@
           "status": 204
         },
         {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "membership_card_update",
+          "status": 204
+        },
+        {
           "kind": "event_transfer",
-          "status": 204
-        },
-        {
-          "kind": "card_update",
-          "status": 204
-        },
-        {
-          "kind": "card_update",
           "status": 204
         },
         {
@@ -168,146 +216,195 @@
           "status": 204
         },
         {
-          "kind": "ticket_upgrade",
-          "status": 204
-        },
-        {
-          "kind": "ticket_upgrade",
+          "kind": "final_installment",
           "status": 204
         }
       ],
-      "installmentTasks": 8,
-      "finalTasks": 2
+      "repeatAddedEmails": 0,
+      "actualPdfRendering": true,
+      "syntheticRecipientsOnly": true
     },
-    "production-smoke-results.json": {
+    "shared-width-results.json": {
+      "desktop": {
+        "primary": {
+          "x": 198,
+          "width": 504
+        },
+        "cancel": {
+          "x": 198,
+          "width": 504
+        },
+        "backButtons": 0,
+        "overflow": false
+      },
+      "mobile": {
+        "primary": {
+          "x": 20,
+          "width": 350
+        },
+        "cancel": {
+          "x": 20,
+          "width": 350
+        },
+        "backButtons": 0,
+        "overflow": false
+      },
+      "noPaymentTaken": true,
+      "unpaidWidthTestCancelled": true
+    },
+    "shared-production-results.json": {
       "builtBundleLoaded": true,
       "nestedWidgetPath": true,
-      "completedActionResumed": true,
-      "failedRequests": []
+      "sharedStripeCardForm": true,
+      "setupZeroCharge": true,
+      "fullWidthButton": true
     },
-    "embedded-followup-results.json": {
-      "optionsSpinner": true,
-      "checkoutSpinner": true,
-      "widget": {
-        "host": "localhost:8090",
-        "path": "/widget",
-        "view": "payment"
+    "shared-pdf-qr-results.json": {
+      "decoded": true
+    },
+    "shared-browser-results.jsonl": [
+      {
+        "name": "free_upgrade",
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
       },
-      "cardUpdated": true,
-      "portalStayedOpen": true,
-      "noExtraTab": true,
-      "noNewTabLink": true,
-      "optionsRefreshedAfterCompletion": true
-    },
-    "embedded-retry-results.json": {
-      "blockedWidgetShowsRetry": true,
-      "retryLoadedInsidePortal": true,
-      "unpaidActionCancelled": true
-    },
-    "embedded-authentication-results.json": {
-      "embeddedBankChallenge": true,
-      "bankApproved": true,
-      "cardUpdatedWithoutCharge": true,
-      "noExtraTab": true
-    },
-    "production-widget-followup-results.json": {
-      "productionWidgetPaymentView": true,
-      "completedActionResumed": true,
-      "failedRequests": [
-        "/g/collect",
-        "/css2",
-        "/css2",
-        "/css2",
-        "/css2"
-      ]
-    },
-    "free-upgrade-browser-results.json": {
-      "freeToPaidUpgradeOffered": true,
-      "displayedAmount": "$40.00",
-      "completed": true,
-      "repeatFinish": [
-        200,
-        200
-      ]
-    },
-    "free-upgrade-audit.json": {
-      "freeCredit": 0,
-      "quotedMinor": 4000,
-      "chargedMinor": 4000,
-      "successfulPayments": 1,
-      "providerIntents": 1,
-      "ledgerTotal": 40,
-      "originalTotal": 0,
-      "attendeeCount": 1,
-      "upgradedToVIP": true,
-      "attendeeIdentityPreserved": true,
-      "fulfillmentApplications": 1
-    },
-    "webhook-routing-proof.json": {
-      "taggedOwnSandboxObjects": 16,
-      "providerAmountsAndStatusesUnchanged": true,
-      "originalEventStillUntagged": true,
-      "signedOriginalEventReplay": [
-        {
-          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
-          "status": 200,
-          "acknowledged": true
-        },
-        {
-          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
-          "status": 200,
-          "acknowledged": true
-        },
-        {
-          "path": "/api/v1/stripe/webhook-sandbox",
-          "status": 200,
-          "acknowledged": true
-        },
-        {
-          "path": "/api/v1/stripe/webhook-sandbox",
-          "status": 200,
-          "acknowledged": true
-        }
-      ],
-      "defaultObligationAbsentBeforeAndAfter": true,
-      "settledOwnObligationUnchanged": true
-    },
-    "manual-test-smoke-results.json": {
-      "site": "Payment QA — Stripe Sandbox",
-      "title": "Upgrade to VIP",
-      "amount": "$40.00",
-      "sandbox": true,
-      "ready": true
-    },
-    "regular-free-options-results.json": {
-      "status": 200,
-      "durationMs": 10945,
-      "freeBooking": true,
-      "upgradeAvailable": true,
-      "upgradeMinor": 20000,
-      "offeredActions": 2
-    },
-    "regular-free-browser-results.json": {
-      "actualLoggedInPortal": true,
-      "optionsStatus": 200,
-      "freeToPaidUpgradeVisible": true,
-      "checkoutAmount": "$200.00",
-      "sandbox": true,
-      "unpaidActionCancelled": true,
-      "noPaymentSubmitted": true
-    },
-    "payment-preview-browser-results.json": {
-      "previewPaymentsVisible": true,
-      "selectedExample": "Upgrade to VIP · $40.00",
-      "disabled": true,
-      "noPaymentRequests": true
+      {
+        "name": "card_update",
+        "holder": false,
+        "amount": "$0.00",
+        "completed": true,
+        "noChargeMessage": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "transfer",
+        "holder": false,
+        "amount": "$30.00",
+        "completed": true,
+        "noChargeMessage": false,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "free_transfer",
+        "holder": false,
+        "amount": "$0.00",
+        "completed": true,
+        "noChargeMessage": false,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "upgrade",
+        "holder": true,
+        "amount": "$20.27",
+        "completed": true,
+        "noChargeMessage": false,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "card_update",
+        "holder": true,
+        "amount": "$0.00",
+        "completed": true,
+        "noChargeMessage": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "installments",
+        "holder": false,
+        "amount": "$10.00",
+        "completed": true,
+        "noChargeMessage": false,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "decline",
+        "declined": true,
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "authentication",
+        "bankChallenge": true,
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "reconcile",
+        "paidRecovery": true,
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "renewal",
+        "success": "Booking change complete",
+        "repeat": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "paid_upgrade",
+        "amount": "$20.00",
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      },
+      {
+        "name": "latest_upgrade",
+        "amount": "$40.00",
+        "completed": true,
+        "repeatFinish": [
+          200,
+          200
+        ]
+      }
+    ],
+    "shared-latest-activity-results.json": {
+      "activityRows": 3,
+      "signedInActorRecorded": true,
+      "ticketUpdateFormatter": true,
+      "zeroPaidValuePreserved": true,
+      "savedCardIdentifiersAbsent": true
     }
   },
   "automated_checks": {
-    "server": 174,
+    "server": 260,
     "widget_installment_tests": 2,
-    "production_client_build": "passed with local Dart Sass runtime",
-    "dashboard_typecheck": "Existing project errors remain; no diagnostics in new SelfServicePayments component"
+    "production_client_build": "Passed; shared Stripe card form mounted from the built bundle",
+    "dashboard_typecheck": "Existing project errors remain; no diagnostics in new SelfServicePayments component",
+    "widget_payment_tests": 7
   },
   "documentation": {
     "desktop": {
@@ -372,47 +469,47 @@
   "assets": [
     {
       "asset": "assets/refresh/attendee-portal/payment-card-review.png",
-      "sha256": "ee533fc6cb2703b468bd0830f14d86858b6e01d96d2cb4992802119dc1bb6735"
+      "sha256": "545ea380beb494adb9d90a5edaca21e7dacc839f674355d1f10e5115890e595d"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-card-complete.png",
-      "sha256": "fdce45a4c02b3202dee9a09dea36af35f1b919363d50a7ae6e450474526cbf59"
+      "sha256": "69e7c5a4adca09f97b1db7e67d2ae38eddfefc061b37d55bb57473c78e73a226"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-installment-review.png",
-      "sha256": "60a31668b2fd29a1296a52daf52ef71046f889164e66cda04ad51dd6050aa7c6"
+      "sha256": "f1820b57c8cf0aff3baffa634334d07f23f5c7f8d47345e1b2f97965955a5c62"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-installments-paid.png",
-      "sha256": "d7774d4f04ba34ed1a07999226fca706cf9046eb04184d26c0c5f0b1e9fbfee0"
+      "sha256": "8de9d822e433c65983ea991ce76cd7ecaff66521a81d22581434fe5da094a882"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-renewal-review.png",
-      "sha256": "ed629b5adc60deb765bda747bc0b23fa4c11088c9c08337540eaf66521e5338d"
+      "sha256": "b2a85ba0246021629ac01a7ad89d0b3b2e366ec3f4e6abc3f0d24da85560aa7c"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-membership-upgrade-review.png",
-      "sha256": "8bf79f66ab9edb53818ceb7ea738ffd138fdab4c41d6a6b7157a3627a6efd1bd"
+      "sha256": "a05fc1f4ee8975b05faf9696f5def554c243553aa5db8adfa9628fe75f4e1550"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-ticket-upgrade-review.png",
-      "sha256": "e67a845a2a515ffe59edcb14ca9d8e1c25eef03a05b839659b9078ded98a636d"
+      "sha256": "f1cd2eb31b6342b7a4e224c895d14fdcb27f20ef53681a8d9b12671c4a85213e"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-free-transfer-review.png",
-      "sha256": "d9c383ea91aa5dd0c583200ef034bcbc286edc74d848ffb357824dedd2b7e7f7"
+      "sha256": "001777b16e645fbc1e762e6bef6efe3b60e81abeebae43fadc6989c6aa1354f1"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-declined.png",
-      "sha256": "d911b0e3cdd05ab366647c29e9df97a3fea8f4904651b0d9ea21b5bcda6d5a1d"
+      "sha256": "83c24d0cd0c6c341e0c2c828f8911e65a6c83f8c9f1d4e432edd681391da36fc"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-update-pending.png",
-      "sha256": "114f38f9cb1fb98881f9d1e5ec86e7430d6a85a9c88b72c3720a88d682486d95"
+      "sha256": "4cb3b2c6b6f1d92a0ccb05ce6fae2e75e8be902675f1463861d2bb579486fec8"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-free-ticket-upgrade-review.png",
-      "sha256": "5a274d11f8912c7e7b3c7dc7badd01de1bfb1038d4379555a153bfb21f1b5892"
+      "sha256": "7b903ebf152971f27905ce5ffd7875a1e7a17598ae96de63ca5a089810d09c83"
     },
     {
       "asset": "assets/refresh/attendee-portal/payment-options-preview.png",
@@ -421,8 +518,84 @@
   ],
   "annotation": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles; at most 3 per image; no browser chrome or bearer links",
   "limitations": [
-    "Hosted webhook delivery and live email/Cloud Tasks transport were not exercised",
-    "Production deployment and enabling the paused installment cron remain rollout steps",
-    "Direct Stripe cards and standard fixed-price individual tickets supported. Square, PayPal, wallet payment actions, marketplace settlement and complex ticket pricing still require adapters and verification."
-  ]
+    "Actual PayPal/Square sandbox purchases could not be verified without connected sandbox accounts",
+    "Device wallet eligibility and production Apple Wallet signing were not verified; optional local signing failures are caught",
+    "Hosted webhook, live email and Cloud Tasks transport, deployment and activating the paused cron remain rollout checks",
+    "Marketplace splits and complex ticket pricing still require a host quote"
+  ],
+  "previous_regression_checks": {
+    "access-cancel-results.json": {
+      "unpaidCancelled": true,
+      "forged": 404,
+      "unauthenticated": 401,
+      "outsider": 404
+    },
+    "concurrency-results.json": {
+      "repeatedCreation": true,
+      "oneAction": true,
+      "successResponses": 3
+    },
+    "expiry-results.json": {
+      "expired": true,
+      "payment_status": "cancelled",
+      "providerCancelled": true,
+      "ownLeaseReleasedAfterWorkerRestart": true
+    },
+    "embedded-retry-results.json": {
+      "blockedWidgetShowsRetry": true,
+      "retryLoadedInsidePortal": true,
+      "unpaidActionCancelled": true
+    },
+    "webhook-routing-proof.json": {
+      "taggedOwnSandboxObjects": 16,
+      "providerAmountsAndStatusesUnchanged": true,
+      "originalEventStillUntagged": true,
+      "signedOriginalEventReplay": [
+        {
+          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/marketplace-webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        },
+        {
+          "path": "/api/v1/stripe/webhook-sandbox",
+          "status": 200,
+          "acknowledged": true
+        }
+      ],
+      "defaultObligationAbsentBeforeAndAfter": true,
+      "settledOwnObligationUnchanged": true
+    },
+    "regular-free-browser-results.json": {
+      "actualLoggedInPortal": true,
+      "optionsStatus": 200,
+      "freeToPaidUpgradeVisible": true,
+      "checkoutAmount": "$200.00",
+      "sandbox": true,
+      "unpaidActionCancelled": true,
+      "noPaymentSubmitted": true
+    },
+    "payment-preview-browser-results.json": {
+      "previewPaymentsVisible": true,
+      "selectedExample": "Upgrade to VIP \u00b7 $40.00",
+      "disabled": true,
+      "noPaymentRequests": true
+    }
+  },
+  "provider_verification": {
+    "stripe": "Real test-mode transactions in shared card fields for all action kinds; successful, declined/retried, bank-authenticated and paid-recovery cases",
+    "paypal": "Existing form and seller-aware Orders adapter implemented; routing and capture/security/replay checks pass; no connected sandbox seller available for a real purchase",
+    "square": "Existing form and checkout payment helper reused; routing, amount/currency/order/location checks and uncertain-outcome/decline retry checks pass; no connected sandbox location available for a real purchase",
+    "stripe_wallets": "Existing Express Checkout reused when configured; device/domain eligibility not exercised",
+    "saved_cards_and_installments": "Stripe cards only; automatic final payment and duplicate scheduler delivery verified"
+  }
 }

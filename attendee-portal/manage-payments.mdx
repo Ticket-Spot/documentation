@@ -4,7 +4,7 @@ sidebarTitle: "Manage payments"
 description: "Update a saved card, pay an installment early, renew a membership, or review an eligible ticket or membership change in your attendee portal."
 ---
 
-Open **My Passes**, select a ticket or membership, and find **Payments** in its details. Your organizer controls which actions are available. The secure widget checkout opens inside the portal and uses the organizer's name and branding. Updating a card keeps you in My Passes.
+Open **My Passes**, select a ticket or membership, and find **Payments** in its details. Your organizer controls which actions are available. The secure widget checkout opens inside the portal and uses the organizer's name and branding. Updating a card keeps you in My Passes. For one-time payments, the checkout uses the organizer’s configured Stripe, PayPal or Square form. Available payment methods depend on that provider and your device. Saved-card updates and automatic installment agreements use Stripe cards.
 
 <Note>These screenshots use synthetic bookings and Stripe test cards. Amounts are examples.</Note>
 
@@ -64,7 +64,7 @@ For an enabled **Membership Upgrade**, choose an eligible plan under **Upgrade o
   <img src="../assets/refresh/attendee-portal/payment-membership-upgrade-review.png" alt="Membership upgrade checkout showing the prorated amount due" />
 </Frame>
 
-A renewal or upgrade confirmation includes the updated membership PDF. Lifetime memberships do not need renewal. Upgrades need host review when a future renewal term is already purchased.
+The organizer’s usual order confirmation is resent after renewal or upgrade and includes the updated membership PDF and a receipt for the additional payment. Lifetime memberships do not need renewal. Upgrades need host review when a future renewal term is already purchased.
 
 ## Upgrade a ticket or transfer to another event
 
@@ -80,13 +80,13 @@ A free ticket can also be upgraded to a paid ticket when the organizer enables u
   <img src="../assets/refresh/attendee-portal/payment-ticket-upgrade-review.png" alt="Ticket upgrade checkout showing only the price difference due" />
 </Frame>
 
-A transfer at an equal or lower price can show **$0.00 → Confirm change**. It does not issue a refund. Once the change is complete, your confirmation contains the updated ticket PDF and QR code.
+A transfer at an equal or lower price can show **$0.00 → Confirm change**. It does not issue a refund. Once the change is complete, the organizer’s usual order confirmation is resent with the updated ticket PDF and QR code, plus a receipt for any additional payment. The change also appears in the booking’s activity history.
 
 <Frame caption="This lower-priced event transfer requires confirmation and takes no payment.">
   <img src="../assets/refresh/attendee-portal/payment-free-transfer-review.png" alt="Event transfer checkout showing zero due and Confirm change" />
 </Frame>
 
-Self-service changes currently support Stripe card payments and standard fixed-price individual tickets. Changes involving marketplace settlement, seats, groups, series, time slots, special access rules, taxes, discounts or extra fees require a host quote. Pending balances, refunded or disputed orders and checked-in tickets also require review. Existing [Cancel or Transfer](/attendee-portal/cancel-transfer-event) requests remain available separately where enabled.
+Self-service changes support standard fixed-price individual tickets using the organizer’s configured payment provider. Changes involving marketplace settlement, seats, groups, series, time slots, special access rules, taxes, discounts or extra fees require a host quote. Pending balances, refunded or disputed orders and checked-in tickets also require review. Existing [Cancel or Transfer](/attendee-portal/cancel-transfer-event) requests remain available separately where enabled.
 
 ## If a payment needs attention
 
