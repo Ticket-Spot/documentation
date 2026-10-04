@@ -4,7 +4,7 @@ sidebarTitle: "Manage payments"
 description: "Update a saved card, pay an installment early, renew a membership, or review an eligible ticket or membership change in your attendee portal."
 ---
 
-Open **My Passes**, select a ticket or membership, and find **Payments** in its details. Your organizer controls which actions are available. The secure checkout uses the organizer's name and branding.
+Open **My Passes**, select a ticket or membership, and find **Payments** in its details. Your organizer controls which actions are available. The secure widget checkout opens inside the portal and uses the organizer's name and branding. Updating a card keeps you in My Passes.
 
 <Note>These screenshots use synthetic bookings and Stripe test cards. Amounts are examples.</Note>
 
@@ -70,6 +70,12 @@ A renewal or upgrade confirmation includes the updated membership PDF. Lifetime 
 
 For an eligible fully paid booking, choose an option under **Upgrade or transfer**, then select **Review change**. The checkout credits the paid ticket value and shows the remaining price difference. Review the destination before confirming.
 
+A free ticket can also be upgraded to a paid ticket when the organizer enables upgrades. Its credit is $0, so the checkout charges the full price of the selected ticket.
+
+<Frame caption="A free admission upgraded to a $40 VIP ticket charges $40 once.">
+  <img src="../assets/refresh/attendee-portal/payment-free-ticket-upgrade-review.png" alt="Free admission to VIP upgrade showing forty dollars due in the embedded test checkout" />
+</Frame>
+
 <Frame caption="The existing paid ticket value is credited; this upgrade charges only the $20 difference.">
   <img src="../assets/refresh/attendee-portal/payment-ticket-upgrade-review.png" alt="Ticket upgrade checkout showing only the price difference due" />
 </Frame>
@@ -96,4 +102,6 @@ If payment succeeds but updating the booking is interrupted, the checkout says *
   <img src="../assets/refresh/attendee-portal/payment-update-pending.png" alt="Paid booking update pending message and Finish booking update button" />
 </Frame>
 
-Closing the window keeps **Resume [action]** in the portal. Use **Cancel this action** to release an unpaid action. An uncompleted action expires after 30 minutes. A processing or paid payment is reconciled instead of being cancelled. Only one payment action can be open for a booking or membership at a time. **Open payment in a new tab** is available if the embedded checkout cannot open your bank's confirmation.
+Closing the window keeps **Resume [action]** in the portal. Use **Cancel this action** to release an unpaid action. An uncompleted action expires after 30 minutes. A processing or paid payment is reconciled instead of being cancelled. Only one payment action can be open for a booking or membership at a time.
+
+Payment options and the secure checkout display a loading spinner while opening. If the checkout cannot load, select **Retry** in the payment window to continue inside the portal.

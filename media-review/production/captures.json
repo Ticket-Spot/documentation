@@ -16843,10 +16843,11 @@
     "alt": "Saved-card update showing zero charged today and the save-card consent",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-card-complete": {
     "id": "payment-card-complete",
@@ -16860,10 +16861,11 @@
     "alt": "Payment method updated with the confirmation circled",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-installment-review": {
     "id": "payment-installment-review",
@@ -16877,10 +16879,11 @@
     "alt": "Early installment checkout with the amount due today circled",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-installments-paid": {
     "id": "payment-installments-paid",
@@ -16894,10 +16897,11 @@
     "alt": "Attendee portal showing three of three installments paid and Paid in full",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-renewal-review": {
     "id": "payment-renewal-review",
@@ -16911,10 +16915,11 @@
     "alt": "Membership renewal checkout showing its term dates and the renewal amount circled",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-membership-upgrade-review": {
     "id": "payment-membership-upgrade-review",
@@ -16928,10 +16933,11 @@
     "alt": "Membership upgrade checkout showing the prorated amount due",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-ticket-upgrade-review": {
     "id": "payment-ticket-upgrade-review",
@@ -16945,10 +16951,11 @@
     "alt": "Ticket upgrade checkout showing only the price difference due",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-free-transfer-review": {
     "id": "payment-free-transfer-review",
@@ -16962,10 +16969,11 @@
     "alt": "Event transfer checkout showing zero due and Confirm change",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-declined": {
     "id": "payment-declined",
@@ -16979,10 +16987,11 @@
     "alt": "Card decline message circled in the secure checkout",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
   },
   "payment-update-pending": {
     "id": "payment-update-pending",
@@ -16996,9 +17005,29 @@
     "alt": "Paid booking update pending message and Finish booking update button",
     "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
     "format": "PNG",
-    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "qa": "passed visual review",
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
-    ]
+    ],
+    "qa_note": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links."
+  },
+  "payment-free-ticket-upgrade-review": {
+    "id": "payment-free-ticket-upgrade-review",
+    "key": "payment-free-ticket-upgrade-review",
+    "asset": "assets/refresh/attendee-portal/payment-free-ticket-upgrade-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Free admission to VIP ticket upgrade",
+    "caption": "A free admission upgraded to a $40 VIP ticket charges $40 once.",
+    "alt": "Free admission to VIP upgrade showing forty dollars due in the embedded test checkout",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "qa_note": "Reviewed the actual embedded widget checkout in Stripe test mode; $40 due circled with #9c26dc unfilled 4 CSS pixel circle. No browser chrome or bearer link.",
+    "capturedAt": "2026-10-03"
   }
 }
