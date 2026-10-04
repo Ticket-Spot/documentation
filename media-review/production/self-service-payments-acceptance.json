@@ -1,0 +1,291 @@
+{
+  "checked_at": "2026-10-04T03:02:18.715593+00:00",
+  "scope": "Shared attendee payment actions: card updates, early installments and recovery, memberships, ticket changes and transfers",
+  "environment": {
+    "namespace": "codex-payments-20261003",
+    "provider": "Real Stripe sandbox objects",
+    "data": "Synthetic example.invalid identities",
+    "transport": "Cloud Tasks and email captured locally; actual receipt/PDF code",
+    "forced_dates": "Only isolated fixture installment due dates",
+    "apple_wallet": "No Apple Wallet signing verification; local signing credentials unavailable"
+  },
+  "cases": {
+    "business-flow-results.json": [
+      {
+        "name": "renewal",
+        "label": "Renew Standard Membership",
+        "completed": true,
+        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
+      },
+      {
+        "name": "upgrade",
+        "label": "Upgrade to Premium Membership",
+        "completed": true,
+        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
+      },
+      {
+        "name": "upgrade",
+        "label": "Upgrade to VIP",
+        "completed": true,
+        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
+      },
+      {
+        "name": "transfer",
+        "label": "Transfer to Destination",
+        "completed": true,
+        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
+      },
+      {
+        "name": "free_transfer",
+        "label": "Transfer to Budget Destination",
+        "completed": true,
+        "text": "All doneYour payment and booking change are complete.You can return to your attendee portal."
+      }
+    ],
+    "card-and-early-results.json": [
+      {
+        "kind": "card_update",
+        "completed": true,
+        "charged": 0
+      },
+      {
+        "kind": "membership_card_update",
+        "completed": true,
+        "charged": 0
+      },
+      {
+        "kind": "early_installment",
+        "completed": true
+      }
+    ],
+    "decline-results.json": {
+      "declined": "Your card has been declined.",
+      "recovered": true
+    },
+    "authentication-results.json": {
+      "challengeShown": true,
+      "authenticated": true,
+      "completed": true
+    },
+    "reconciliation-results.json": {
+      "pending": {
+        "message": "Payment received. The booking update is pending; do not make another payment. The host has been notified.",
+        "button": "Finish booking update"
+      },
+      "resumed": true
+    },
+    "scheduler-results.json": {
+      "automaticFinalCharge": true,
+      "paid": 3,
+      "total": 3,
+      "balance": 0,
+      "last4": "4444",
+      "cardSavedToCustomer": true,
+      "oneProviderObjectPerInstallment": true,
+      "duplicate": {
+        "success": true,
+        "already_paid": true
+      },
+      "replay": {
+        "success": true,
+        "already_paid": true
+      },
+      "extraProviderObjects": 0,
+      "earlyPaymentSkipped": true,
+      "testOnlyDueWasForced": true,
+      "finalNotificationQueued": true
+    },
+    "original-scheduler-results.json": {
+      "savedCardRecoveryAfterCreationFailure": true,
+      "settled": {
+        "success": true,
+        "already_paid": true
+      },
+      "duplicate": {
+        "success": true,
+        "already_paid": true
+      },
+      "paid": 3,
+      "balance": 0
+    },
+    "access-cancel-results.json": {
+      "unpaidCancelled": true,
+      "forged": 404,
+      "unauthenticated": 401,
+      "outsider": 404
+    },
+    "concurrency-results.json": {
+      "repeatedCreation": true,
+      "oneAction": true,
+      "successResponses": 3
+    },
+    "expiry-results.json": {
+      "expired": true,
+      "payment_status": "cancelled",
+      "providerCancelled": true,
+      "ownLeaseReleasedAfterWorkerRestart": true
+    },
+    "outbox-results.json": {
+      "payments": [
+        {
+          "kind": "membership_card_update",
+          "status": 204
+        },
+        {
+          "kind": "membership_renewal",
+          "status": 204
+        },
+        {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "event_transfer",
+          "status": 204
+        },
+        {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "event_transfer",
+          "status": 204
+        },
+        {
+          "kind": "card_update",
+          "status": 204
+        },
+        {
+          "kind": "card_update",
+          "status": 204
+        },
+        {
+          "kind": "membership_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "ticket_upgrade",
+          "status": 204
+        },
+        {
+          "kind": "ticket_upgrade",
+          "status": 204
+        }
+      ],
+      "installmentTasks": 8,
+      "finalTasks": 2
+    },
+    "production-smoke-results.json": {
+      "builtBundleLoaded": true,
+      "nestedWidgetPath": true,
+      "completedActionResumed": true,
+      "failedRequests": []
+    }
+  },
+  "automated_checks": {
+    "server": 154,
+    "widget_installment_tests": 2,
+    "production_client_build": "passed with local Dart Sass runtime",
+    "dashboard_typecheck": "Existing project errors remain; no diagnostics in new SelfServicePayments component"
+  },
+  "documentation": {
+    "desktop": {
+      "title": "Manage payments, renewals and upgrades - Ticket Spot",
+      "images": [
+        {
+          "ok": true,
+          "name": "payment-card-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-card-complete.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-installment-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-installments-paid.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-renewal-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-membership-upgrade-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-ticket-upgrade-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-free-transfer-review.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-declined.png"
+        },
+        {
+          "ok": true,
+          "name": "payment-update-pending.png"
+        }
+      ],
+      "overflow": false
+    },
+    "mobile": {
+      "overflow": false,
+      "broken": 0
+    }
+  },
+  "assets": [
+    {
+      "asset": "assets/refresh/attendee-portal/payment-card-review.png",
+      "sha256": "ee533fc6cb2703b468bd0830f14d86858b6e01d96d2cb4992802119dc1bb6735"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-card-complete.png",
+      "sha256": "fdce45a4c02b3202dee9a09dea36af35f1b919363d50a7ae6e450474526cbf59"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-installment-review.png",
+      "sha256": "60a31668b2fd29a1296a52daf52ef71046f889164e66cda04ad51dd6050aa7c6"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-installments-paid.png",
+      "sha256": "d7774d4f04ba34ed1a07999226fca706cf9046eb04184d26c0c5f0b1e9fbfee0"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-renewal-review.png",
+      "sha256": "ed629b5adc60deb765bda747bc0b23fa4c11088c9c08337540eaf66521e5338d"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-membership-upgrade-review.png",
+      "sha256": "8bf79f66ab9edb53818ceb7ea738ffd138fdab4c41d6a6b7157a3627a6efd1bd"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-ticket-upgrade-review.png",
+      "sha256": "e67a845a2a515ffe59edcb14ca9d8e1c25eef03a05b839659b9078ded98a636d"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-free-transfer-review.png",
+      "sha256": "d9c383ea91aa5dd0c583200ef034bcbc286edc74d848ffb357824dedd2b7e7f7"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-declined.png",
+      "sha256": "d911b0e3cdd05ab366647c29e9df97a3fea8f4904651b0d9ea21b5bcda6d5a1d"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-update-pending.png",
+      "sha256": "114f38f9cb1fb98881f9d1e5ec86e7430d6a85a9c88b72c3720a88d682486d95"
+    }
+  ],
+  "annotation": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles; at most 3 per image; no browser chrome or bearer links",
+  "limitations": [
+    "Hosted webhook delivery and live email/Cloud Tasks transport were not exercised",
+    "Production deployment and enabling the paused installment cron remain rollout steps",
+    "Direct Stripe cards and standard fixed-price individual tickets supported; marketplace, other gateways and complex ticket pricing require adapters/host review"
+  ]
+}

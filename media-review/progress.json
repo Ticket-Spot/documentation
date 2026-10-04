@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-03T18:28:06.149829+00:00",
+  "updated_at": "2026-10-04T02:51:15.764090+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
   "planned_capture_units": 347,
-  "units_with_any_capture": 280,
+  "units_with_any_capture": 290,
   "checked_screenshots": 560,
   "checked_gifs": 3,
   "companion_posters": 3,
-  "pending_review": 0,
+  "pending_review": 10,
   "needs_recapture": 0,
   "guides_with_current_media": 102,
   "external_capture_units_deferred": 66,
@@ -328,6 +328,11 @@
       "capture_ids": [
         "portal-contact-host"
       ]
+    },
+    {
+      "path": "attendee-portal/manage-payments.mdx",
+      "current_assets": [],
+      "capture_ids": []
     },
     {
       "path": "attendee-portal/qr-code-digital-wallets.mdx",
