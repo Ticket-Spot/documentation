@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T04:21:45.040024+00:00",
+  "checked_at": "2026-10-04T04:53:57.369175+00:00",
   "scope": "Shared attendee payment actions: card updates, early installments and recovery, memberships, ticket changes and transfers",
   "environment": {
     "namespace": "codex-payments-20261003",
@@ -10,7 +10,8 @@
     "apple_wallet": "No Apple Wallet signing verification; local signing credentials unavailable",
     "test_site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
     "test_event": "Payment QA Event (payments-event)",
-    "widget_url": "Dashboard WIDGET_CLIENT_URL with viewMode=payment; fragment-scoped action access"
+    "widget_url": "Dashboard WIDGET_CLIENT_URL with viewMode=payment; fragment-scoped action access",
+    "additional_existing_booking": "User-selected Stripe sandbox free booking checked in the logged-in portal; no payment submitted, unpaid action cancelled; no personal details or booking screenshots published."
   },
   "cases": {
     "business-flow-results.json": [
@@ -277,10 +278,33 @@
       "amount": "$40.00",
       "sandbox": true,
       "ready": true
+    },
+    "regular-free-options-results.json": {
+      "status": 200,
+      "durationMs": 10945,
+      "freeBooking": true,
+      "upgradeAvailable": true,
+      "upgradeMinor": 20000,
+      "offeredActions": 2
+    },
+    "regular-free-browser-results.json": {
+      "actualLoggedInPortal": true,
+      "optionsStatus": 200,
+      "freeToPaidUpgradeVisible": true,
+      "checkoutAmount": "$200.00",
+      "sandbox": true,
+      "unpaidActionCancelled": true,
+      "noPaymentSubmitted": true
+    },
+    "payment-preview-browser-results.json": {
+      "previewPaymentsVisible": true,
+      "selectedExample": "Upgrade to VIP · $40.00",
+      "disabled": true,
+      "noPaymentRequests": true
     }
   },
   "automated_checks": {
-    "server": 170,
+    "server": 174,
     "widget_installment_tests": 2,
     "production_client_build": "passed with local Dart Sass runtime",
     "dashboard_typecheck": "Existing project errors remain; no diagnostics in new SelfServicePayments component"
@@ -339,6 +363,10 @@
     "mobile": {
       "overflow": false,
       "broken": 0
+    },
+    "host_preview": {
+      "imageLoaded": true,
+      "overflow": false
     }
   },
   "assets": [
@@ -385,6 +413,10 @@
     {
       "asset": "assets/refresh/attendee-portal/payment-free-ticket-upgrade-review.png",
       "sha256": "5a274d11f8912c7e7b3c7dc7badd01de1bfb1038d4379555a153bfb21f1b5892"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/payment-options-preview.png",
+      "sha256": "f5bb840ef370127bf7fc91a3ba5b1c8ba87671da638df7faaff856be5bddca79"
     }
   ],
   "annotation": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles; at most 3 per image; no browser chrome or bearer links",

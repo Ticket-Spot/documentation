@@ -17029,5 +17029,24 @@
     ],
     "qa_note": "Reviewed the actual embedded widget checkout in Stripe test mode; $40 due circled with #9c26dc unfilled 4 CSS pixel circle. No browser chrome or bearer link.",
     "capturedAt": "2026-10-03"
+  },
+  "payment-options-preview": {
+    "id": "payment-options-preview",
+    "key": "payment-options-preview",
+    "asset": "assets/refresh/attendee-portal/payment-options-preview.png",
+    "pages": [
+      "branding-and-design/attendee-ticket-page.mdx"
+    ],
+    "title": "Enabled payment options in the Design preview",
+    "caption": "Enabled ticket upgrades appear in the sample preview. These example controls take no payment.",
+    "alt": "Payments preview with the example VIP upgrade circled and payment controls disabled",
+    "source": "Actual local Design sample preview; synthetic sample choices; controls disabled; browser confirmed zero payment-action requests. Original application pixels cropped to the Payments card.",
+    "capturedAt": "2026-10-03",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed original browser pixels with a #9c26dc unfilled 4 CSS pixel circle; no personal data, browser chrome or bearer link.",
+    "integrated_pages": [
+      "branding-and-design/attendee-ticket-page.mdx"
+    ]
   }
 }
