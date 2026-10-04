@@ -16830,5 +16830,175 @@
     "integrated_pages": [
       "event-management/installment-payments.mdx"
     ]
+  },
+  "payment-card-review": {
+    "id": "payment-card-review",
+    "key": "payment-card-review",
+    "asset": "assets/refresh/attendee-portal/payment-card-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Saved-card update showing zero charged today and the save-card consent",
+    "caption": "Review Charged today: $0.00 and the authorization before saving a replacement card.",
+    "alt": "Saved-card update showing zero charged today and the save-card consent",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-card-complete": {
+    "id": "payment-card-complete",
+    "key": "payment-card-complete",
+    "asset": "assets/refresh/attendee-portal/payment-card-complete.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Payment method updated with the confirmation circled",
+    "caption": "The replacement card is saved without taking a payment.",
+    "alt": "Payment method updated with the confirmation circled",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-installment-review": {
+    "id": "payment-installment-review",
+    "key": "payment-installment-review",
+    "asset": "assets/refresh/attendee-portal/payment-installment-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Early installment checkout with the amount due today circled",
+    "caption": "Pay the next $10 installment now. The later installment keeps its existing due date.",
+    "alt": "Early installment checkout with the amount due today circled",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-installments-paid": {
+    "id": "payment-installments-paid",
+    "key": "payment-installments-paid",
+    "asset": "assets/refresh/attendee-portal/payment-installments-paid.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Attendee portal showing three of three installments paid and Paid in full",
+    "caption": "All three installments are paid and the remaining balance is zero.",
+    "alt": "Attendee portal showing three of three installments paid and Paid in full",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-renewal-review": {
+    "id": "payment-renewal-review",
+    "key": "payment-renewal-review",
+    "asset": "assets/refresh/attendee-portal/payment-renewal-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Membership renewal checkout showing its term dates and the renewal amount circled",
+    "caption": "Review the renewal price and the dates of the next membership term.",
+    "alt": "Membership renewal checkout showing its term dates and the renewal amount circled",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-membership-upgrade-review": {
+    "id": "payment-membership-upgrade-review",
+    "key": "payment-membership-upgrade-review",
+    "asset": "assets/refresh/attendee-portal/payment-membership-upgrade-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Membership upgrade checkout showing the prorated amount due",
+    "caption": "A current-term membership upgrade charges the prorated difference and preserves the expiry.",
+    "alt": "Membership upgrade checkout showing the prorated amount due",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-ticket-upgrade-review": {
+    "id": "payment-ticket-upgrade-review",
+    "key": "payment-ticket-upgrade-review",
+    "asset": "assets/refresh/attendee-portal/payment-ticket-upgrade-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Ticket upgrade checkout showing only the price difference due",
+    "caption": "The existing paid ticket value is credited; this upgrade charges only the $20 difference.",
+    "alt": "Ticket upgrade checkout showing only the price difference due",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-free-transfer-review": {
+    "id": "payment-free-transfer-review",
+    "key": "payment-free-transfer-review",
+    "asset": "assets/refresh/attendee-portal/payment-free-transfer-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Event transfer checkout showing zero due and Confirm change",
+    "caption": "This lower-priced event transfer requires confirmation and takes no payment.",
+    "alt": "Event transfer checkout showing zero due and Confirm change",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-declined": {
+    "id": "payment-declined",
+    "key": "payment-declined",
+    "asset": "assets/refresh/attendee-portal/payment-declined.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Card decline message circled in the secure checkout",
+    "caption": "After a declined attempt, replace the card and retry the same checkout. The booking stays unchanged until payment succeeds.",
+    "alt": "Card decline message circled in the secure checkout",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "payment-update-pending": {
+    "id": "payment-update-pending",
+    "key": "payment-update-pending",
+    "asset": "assets/refresh/attendee-portal/payment-update-pending.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Paid booking update pending message and Finish booking update button",
+    "caption": "Finish the booking update using the payment already received.",
+    "alt": "Paid booking update pending message and Finish booking update button",
+    "source": "Actual localhost dashboard/widget browser, isolated codex-payments-20261003 namespace, synthetic identities and real Stripe test objects; outbound email and tasks captured locally.",
+    "format": "PNG",
+    "qa": "Reviewed original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles; no browser chrome or bearer links.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
   }
 }

@@ -35,3 +35,5 @@ Only Analytics was authorized to use temporary response fixtures. Keep them scop
 ## Validation
 
 Run `node scripts/check-mdx.mjs` and `python3 scripts/check-documentation.py --dashboard /path/to/eventviewer-dashboard`. Visually review each new image and its article placement on desktop and mobile. [validation.json](validation.json) records the latest checks; [rendered-guides.json](rendered-guides.json) contains per-route results. Temporary QA screenshots are review evidence rather than documentation assets.
+
+- [self-service-payments-acceptance.json](self-service-payments-acceptance.json) records all shared Stripe payment actions, browser 3DS, declined-card recovery, early/automatic installment collection, cancellation/expiry, scoped access, concurrent creation, and recovery after a paid update failure. The new [manage payments guide](../../attendee-portal/manage-payments.mdx) uses ten reviewed screenshots and passes desktop/mobile rendering. Final New Order PDFs were regenerated after fixing numeric attendee QR IDs. Email and task transport were captured locally; production deployment, hosted webhooks and scheduler activation remain rollout checks.
