@@ -1,0 +1,372 @@
+{
+  "checked_at": "2026-10-04T16:57:56.998376+00:00",
+  "scope": "Opt-in attendee seat changes using the existing widget seating renderer and shared payment form",
+  "environment": {
+    "namespace": "codex-payments-20261003",
+    "seating": "Dedicated Seats.io sandbox test workspace; no production seat bookings changed",
+    "payments": "Real Stripe test-mode card transactions",
+    "identities": "Synthetic example.invalid attendees",
+    "event": "Seat Change Sandbox QA (76000006001)",
+    "site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
+    "transport": "Locally captured Cloud Tasks and email; actual configured NEW_ORDER and PDF rendering"
+  },
+  "cases": {
+    "paid": {
+      "name": "paid",
+      "amountMinor": 2000,
+      "chargedMinor": 2000,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": true
+    },
+    "free": {
+      "name": "free",
+      "amountMinor": 0,
+      "chargedMinor": 0,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": false
+    },
+    "cancel": {
+      "name": "cancel",
+      "amountMinor": 2000,
+      "chargedMinor": 0,
+      "state": "cancelled",
+      "oldSeat": "booked",
+      "newSeat": "free",
+      "attendeeMatches": false,
+      "foreignSeatRejected": true
+    },
+    "decline": {
+      "name": "decline",
+      "amountMinor": 2000,
+      "chargedMinor": 2000,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": true
+    },
+    "authentication": {
+      "name": "authentication",
+      "amountMinor": 2000,
+      "chargedMinor": 2000,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": true
+    },
+    "reconcile": {
+      "name": "reconcile",
+      "amountMinor": 2000,
+      "chargedMinor": 2000,
+      "state": "complete",
+      "oldSeat": "booked",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": true
+    },
+    "expiry": {
+      "name": "expiry",
+      "amountMinor": 2000,
+      "chargedMinor": 0,
+      "state": "cancelled",
+      "oldSeat": "booked",
+      "newSeat": "free",
+      "attendeeMatches": false,
+      "actualExpiryWorker": true
+    },
+    "sameTicket": {
+      "name": "sameTicket",
+      "amountMinor": 0,
+      "chargedMinor": 0,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": false
+    },
+    "lower": {
+      "name": "lower",
+      "amountMinor": 0,
+      "chargedMinor": 0,
+      "state": "complete",
+      "oldSeat": "free",
+      "newSeat": "booked",
+      "attendeeMatches": true,
+      "repeatFinish": [
+        200,
+        200
+      ],
+      "realSeatsioChart": true,
+      "realStripeForm": false
+    }
+  },
+  "checks": {
+    "optout": {
+      "optionsStatus": 200,
+      "seatActionVisible": false,
+      "createStatus": 403,
+      "noActionCreated": true
+    },
+    "capacity": {
+      "eventCapacity": 9,
+      "eventAttendees": 9,
+      "ticketCapacity": 5,
+      "ticketAttendees": 5
+    },
+    "hold-expiry": {
+      "replacementAfterTokenExpiry": "reservedForPaymentAction",
+      "originalBeforePayment": "booked",
+      "replacementOwned": true
+    },
+    "layout": {
+      "390": {
+        "overflow": false,
+        "primary": 334,
+        "cancel": 334
+      },
+      "1000": {
+        "overflow": false,
+        "primary": 504,
+        "cancel": 504
+      }
+    },
+    "integrity": {
+      "actions": [
+        {
+          "name": "expiry",
+          "amountMinor": 2000,
+          "chargedMinor": 0,
+          "providerObjects": 1,
+          "state": "cancelled",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "layout",
+          "amountMinor": 2000,
+          "chargedMinor": 0,
+          "providerObjects": 1,
+          "state": "cancelled",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "decline",
+          "amountMinor": 2000,
+          "chargedMinor": 2000,
+          "providerObjects": 1,
+          "state": "complete",
+          "ownLedger": true,
+          "guardCleared": true
+        },
+        {
+          "name": "lower",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "providerObjects": 0,
+          "state": "complete",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "free",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "providerObjects": 0,
+          "state": "complete",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "layout",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "providerObjects": 0,
+          "state": "cancelled",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "reconcile",
+          "amountMinor": 2000,
+          "chargedMinor": 2000,
+          "providerObjects": 1,
+          "state": "complete",
+          "ownLedger": true,
+          "guardCleared": true
+        },
+        {
+          "name": "sameTicket",
+          "amountMinor": 0,
+          "chargedMinor": 0,
+          "providerObjects": 0,
+          "state": "complete",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "cancel",
+          "amountMinor": 2000,
+          "chargedMinor": 0,
+          "providerObjects": 1,
+          "state": "cancelled",
+          "ownLedger": false,
+          "guardCleared": true
+        },
+        {
+          "name": "paid",
+          "amountMinor": 2000,
+          "chargedMinor": 2000,
+          "providerObjects": 1,
+          "state": "complete",
+          "ownLedger": true,
+          "guardCleared": true
+        },
+        {
+          "name": "authentication",
+          "amountMinor": 2000,
+          "chargedMinor": 2000,
+          "providerObjects": 1,
+          "state": "complete",
+          "ownLedger": true,
+          "guardCleared": true
+        }
+      ],
+      "originalCartTotalsPreserved": true,
+      "oneSeatActivityPerCompletedAction": true
+    },
+    "email": {
+      "actions": 7,
+      "deliveries": 7,
+      "repeatEmails": 0,
+      "pdfRendered": true,
+      "onlySyntheticRecipients": true
+    },
+    "pdf": {
+      "tickets": [
+        {
+          "file": "email-NEW_ORDER-6-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-3-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-5-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-2-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-7-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-4-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        },
+        {
+          "file": "email-NEW_ORDER-1-tickets.pdf",
+          "hasSeat": true,
+          "hasQrOrTicket": true,
+          "pages": 1
+        }
+      ],
+      "updatedSeatLabelsInPDF": true
+    },
+    "docs": {
+      "390": {
+        "images": 3,
+        "overflow": false,
+        "seatSection": true
+      },
+      "1440": {
+        "images": 3,
+        "overflow": false,
+        "seatSection": true
+      }
+    }
+  },
+  "automated_checks": {
+    "backend_tests": 77,
+    "widget_tests": 19,
+    "production_widget_build": "Passed with the existing local Dart Sass runtime",
+    "new_widget_files_lint": "Passed",
+    "dashboard_typecheck": "Existing project diagnostics remain; no new SelfServicePayments diagnostics",
+    "backend_command": "node --test routes/api/payment-actions/*.test.js routes/api/events/seating-controller.test.js routes/api/events/seating-session.test.js routes/api/memberships/admission-capacity.test.js routes/api/tickets/capacity.test.js"
+  },
+  "assets": [
+    {
+      "asset": "assets/refresh/attendee-portal/seat-selection.png",
+      "sha256": "adae81663682369cbeabfb45d96df9b4094c53494b40f5672e13adaa361e7777"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/seat-paid-review.png",
+      "sha256": "209acd282e10684cb394daf54ecf876ec522e98763024a4648f11369ccf045de"
+    },
+    {
+      "asset": "assets/refresh/attendee-portal/seat-paid-complete.png",
+      "sha256": "3924217e0d737be657f8da70e8e8d07014de051d6aaf2fd0d2ad0911bdebaee8"
+    }
+  ],
+  "annotation": "Original browser application pixels, #9c26dc unfilled circles with 4 CSS pixel stroke, no browser chrome or bearer links",
+  "limitations": [
+    "Actual PayPal and Square sandbox purchases remain unverified; the connected test provider is Stripe.",
+    "Device wallet eligibility and production Apple Wallet signing were not exercised.",
+    "Cloud Tasks and emails were captured locally; actual receipt and ticket PDF rendering was used. Hosted webhooks, production delivery and deployment remain rollout checks.",
+    "Direct Seats.io administrator edits outside the application must be coordinated with active payments. The vendor batch is atomic across seat statuses, while Datastore fulfillment is separately recoverable.",
+    "Only standard fixed-price individual seats on the same active event are supported; restricted channels, complex pricing and special booking types require host review."
+  ]
+}
