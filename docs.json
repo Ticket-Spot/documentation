@@ -131,6 +131,7 @@
               "attendee-portal/viewing-your-tickets",
               "attendee-portal/qr-code-digital-wallets",
               "attendee-portal/view-download-receipt",
+              "attendee-portal/manage-payments",
               "attendee-portal/cancel-transfer-event",
               "attendee-portal/contact-host"
             ]
