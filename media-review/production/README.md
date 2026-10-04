@@ -4,8 +4,8 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 560 reviewed screenshots and 3 reviewed GIFs across 102 guides; 3 companion posters.
-- All 140 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
+- 575 reviewed screenshots and 3 reviewed GIFs across 103 guides; 3 companion posters.
+- All 141 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
 - [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 347 planned briefs. A captured image does not establish complete acceptance of every dependent state.
 - [remaining-coverage.json](../remaining-coverage.json) lists fourteen Demo-state dependencies, sixty-six external/device briefs, retained legacy images, and five long videos awaiting freshness review.
@@ -37,3 +37,5 @@ Only Analytics was authorized to use temporary response fixtures. Keep them scop
 Run `node scripts/check-mdx.mjs` and `python3 scripts/check-documentation.py --dashboard /path/to/eventviewer-dashboard`. Visually review each new image and its article placement on desktop and mobile. [validation.json](validation.json) records the latest checks; [rendered-guides.json](rendered-guides.json) contains per-route results. Temporary QA screenshots are review evidence rather than documentation assets.
 
 - [self-service-payments-acceptance.json](self-service-payments-acceptance.json) records all shared Stripe payment actions, browser 3DS, declined-card recovery, early/automatic installment collection, cancellation/expiry, scoped access, concurrent creation, and recovery after a paid update failure. The new [manage payments guide](../../attendee-portal/manage-payments.mdx) uses ten reviewed screenshots and passes desktop/mobile rendering. Final New Order PDFs were regenerated after fixing numeric attendee QR IDs. Email and task transport were captured locally; production deployment, hosted webhooks and scheduler activation remain rollout checks.
+
+- [seat-changes-acceptance.json](seat-changes-acceptance.json) records the optional attendee seat-change flow on a dedicated Seats.io test workspace with real Stripe test cards. It covers higher/equal/lower prices, full-capacity same-ticket moves, decline/retry, bank authentication, cancellation, expiry, and recovery after the seat swap. Three standard purple-circle captures are registered and integrated into the manage-payments guide; its desktop/mobile render checks pass. Four paid moves each received $20 once, and seven New Order ticket PDFs contained their updated seats. PayPal/Square sandbox purchases, device wallets and production delivery remain separate checks.

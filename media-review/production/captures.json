@@ -17048,5 +17048,62 @@
     "integrated_pages": [
       "branding-and-design/attendee-ticket-page.mdx"
     ]
+  },
+  "seat-selection": {
+    "id": "seat-selection",
+    "key": "seat-selection",
+    "asset": "assets/refresh/attendee-portal/seat-selection.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Choose a replacement seat",
+    "caption": "Choose a replacement on the same seating chart. The current seat remains booked.",
+    "alt": "Seating chart with the current seat and selected ticket controls circled",
+    "source": "Actual local widget checkout, dedicated Seats.io sandbox test workspace and isolated codex-payments-20261003 namespace; synthetic identities and real Stripe test objects. Outbound email/tasks captured locally.",
+    "capturedAt": "2026-10-04",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles, no browser chrome, personal data or bearer links. Article checked at 1440px and 390px.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "seat-paid-review": {
+    "id": "seat-paid-review",
+    "key": "seat-paid-review",
+    "asset": "assets/refresh/attendee-portal/seat-paid-review.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Review the seat price difference",
+    "caption": "Moving from a $20 ticket to a $40 seat ticket charges $20.",
+    "alt": "Seat move review with twenty dollars due circled in the shared Stripe test checkout",
+    "source": "Actual local widget checkout, dedicated Seats.io sandbox test workspace and isolated codex-payments-20261003 namespace; synthetic identities and real Stripe test objects. Outbound email/tasks captured locally.",
+    "capturedAt": "2026-10-04",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles, no browser chrome, personal data or bearer links. Article checked at 1440px and 390px.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
+  },
+  "seat-paid-complete": {
+    "id": "seat-paid-complete",
+    "key": "seat-paid-complete",
+    "asset": "assets/refresh/attendee-portal/seat-paid-complete.png",
+    "pages": [
+      "attendee-portal/manage-payments.mdx"
+    ],
+    "title": "Completed seat change",
+    "caption": "The seat change is complete. Reopening the action does not take another payment.",
+    "alt": "Completed seat change with its confirmation circled",
+    "source": "Actual local widget checkout, dedicated Seats.io sandbox test workspace and isolated codex-payments-20261003 namespace; synthetic identities and real Stripe test objects. Outbound email/tasks captured locally.",
+    "capturedAt": "2026-10-04",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Original browser application pixels; #9c26dc unfilled 4 CSS pixel circles, no browser chrome, personal data or bearer links. Article checked at 1440px and 390px.",
+    "integrated_pages": [
+      "attendee-portal/manage-payments.mdx"
+    ]
   }
 }

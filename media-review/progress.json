@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-04T04:53:57.699532+00:00",
+  "updated_at": "2026-10-04T17:03:49.400201+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
   "planned_capture_units": 347,
-  "units_with_any_capture": 292,
-  "checked_screenshots": 572,
+  "units_with_any_capture": 295,
+  "checked_screenshots": 575,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
@@ -342,7 +342,10 @@
         "assets/refresh/attendee-portal/payment-membership-upgrade-review.png",
         "assets/refresh/attendee-portal/payment-renewal-review.png",
         "assets/refresh/attendee-portal/payment-ticket-upgrade-review.png",
-        "assets/refresh/attendee-portal/payment-update-pending.png"
+        "assets/refresh/attendee-portal/payment-update-pending.png",
+        "assets/refresh/attendee-portal/seat-paid-complete.png",
+        "assets/refresh/attendee-portal/seat-paid-review.png",
+        "assets/refresh/attendee-portal/seat-selection.png"
       ],
       "capture_ids": []
     },
