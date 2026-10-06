@@ -4,7 +4,7 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 583 reviewed screenshots and 3 reviewed GIFs across 104 guides; 3 companion posters.
+- 596 reviewed screenshots and 3 reviewed GIFs across 104 guides; 3 companion posters.
 - All 142 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
 - [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 354 planned briefs. A captured image does not establish complete acceptance of every dependent state.
@@ -15,6 +15,8 @@ The purple-circle style and first-page assets are approved. The available Demo d
 - [shopify-selector-acceptance.json](shopify-selector-acceptance.json) records nine fresh Shopify setup screenshots, the linked-product options, the FAQ, Ahrefs research, and desktop/mobile checks. Shopify Admin was captured through the user’s authenticated regular Chrome session without saving or publishing theme changes.
 
 - [installment-acceptance.json](installment-acceptance.json) records manual and automatic Stripe sandbox collection, payment progress/filters, replacement-card recovery, organizer summaries, and final New Order email/PDF/QR rendering. Both automatic test orders collected exactly three $10 payments; concurrent manual/automatic requests and repeated worker deliveries produced no extra charges. Email transport was captured locally. The cloud installment cron is paused pending deployment; hosted webhooks, outbound email, financial rollups, browser 3DS, and the enabled ticket-editor setup capture remain separate checks.
+
+- [payment-plan-templates-acceptance.json](payment-plan-templates-acceptance.json) records real dashboard template creation and event assignment, full payment, equal splits, $0 deposits, excluded/free tickets, declined-card recovery, browser 3DS and deadline enforcement. Both automatic $320 plans collected exactly $320 despite duplicate webhooks and worker deliveries. Seven current purple-circle images are integrated into the installment guide and checked on desktop/mobile. Stripe test mode, isolated stored QA records and local email/task sinks were used; production deployment and scheduler activation remain rollout checks.
 
 ## Review locally
 

@@ -10759,9 +10759,7 @@
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "day-ticket-fees-optional": {
     "id": "day-ticket-fees",
@@ -16360,9 +16358,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "installment-deposit-complete": {
     "id": "installment-buyer-summary",
@@ -16389,9 +16385,7 @@
     "format": "PNG",
     "qa": "passed visual review",
     "qa_note": "Original browser screenshot, application viewport only, approved #9c26dc unfilled circles at 4 CSS pixels; synthetic identities. Dashboard background rollup workers were not executed; modal balances and payment records were verified.",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "installment-next-due": {
     "id": "installment-manage",
@@ -16658,34 +16652,22 @@
     ]
   },
   "installment-automatic-agreement": {
-    "id": "installment-buyer-summary",
+    "id": "installment-automatic-agreement",
     "key": "installment-automatic-agreement",
     "asset": "assets/refresh/event-management/installment-automatic-agreement.png",
     "pages": [
       "event-management/installment-payments.mdx"
     ],
-    "title": "Automatic saved-card agreement",
-    "caption": "Automatic saved-card agreement",
-    "alt": "Saved-card authorization checkbox circled",
-    "source": "Actual widget browser checkout; installments-v3 accepted automatic mode and retry days 3 and 7; 2026-10-05",
-    "capturedAt": "2026-10-06T06:57:03.230021+00:00",
-    "route": "checkout/recovery, attendee dashboard or native rendered email",
-    "callouts": [
-      "Optional retry policy",
-      "Saved-card collection consent"
-    ],
-    "clip": {
-      "x": 0,
-      "y": 124,
-      "width": 1440,
-      "height": 514
-    },
-    "format": "PNG",
-    "qa": "passed visual review",
-    "qa_note": "Real browser pixels with #9c26dc unfilled 4px circles; synthetic identities. Stripe sandbox and local message transport only.",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
-    ]
+    ],
+    "title": "Compact equal split checkout",
+    "caption": "The saved-card agreement, exact future payments and total are shown before checkout.",
+    "alt": "The saved-card agreement, exact future payments and total are shown before checkout.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "installment-automatic-paid-two": {
     "id": "installment-manage",
@@ -17363,9 +17345,7 @@
     "qa": "passed visual review",
     "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
     "sha256": "7bdef4ed02698125402ebd5b609412ee4d123db5c08386241bdb8e2348ed43fb",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "installment-upgrade-notice": {
     "id": "installment-manage",
@@ -17393,69 +17373,43 @@
     "qa": "passed visual review",
     "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
     "sha256": "1d839e1c4b8c93da5b1dcac93f5b78381ce03ce0efdc9fcef09932afabeba589",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "installment-zero-checkout": {
-    "id": "installment-buyer-summary",
+    "id": "installment-zero-checkout",
     "key": "installment-zero-checkout",
     "asset": "assets/refresh/event-management/installment-zero-checkout.png",
     "pages": [
       "event-management/installment-payments.mdx"
     ],
-    "title": "Zero checkout installment agreement",
-    "caption": "No charge today: save a Stripe card and accept two later $50 payments for a $100 ticket.",
-    "alt": "Zero checkout installment agreement with purple circle annotations",
-    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
-    "capturedAt": "2026-10-06T14:25:20.300786+00:00",
-    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
-    "callouts": [
-      "No charge today"
-    ],
-    "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 984,
-      "height": 594
-    },
-    "format": "PNG",
-    "qa": "passed visual review",
-    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
-    "sha256": "7eff69cbc3210101d4bb55b2cf48c12cb89d30d5e2138fe37345f2f82b58d97d",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
-    ]
+    ],
+    "title": "Zero deposit installment checkout",
+    "caption": "Saving a card with no payment today leaves two future $160 payments.",
+    "alt": "Saving a card with no payment today leaves two future $160 payments.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "installment-checkout-text": {
-    "id": "installment-manage",
+    "id": "installment-checkout-text",
     "key": "installment-checkout-text",
     "asset": "assets/refresh/event-management/installment-checkout-text.png",
     "pages": [
       "event-management/installment-payments.mdx"
     ],
-    "title": "Customize translated installment review text",
-    "caption": "Design \u2192 Text \u2192 Checkout \u2192 Payment information: zero checkout notice and future payment variables.",
-    "alt": "Customize translated installment review text with purple circle annotations",
-    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
-    "capturedAt": "2026-10-06T14:09:04.353646+00:00",
-    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
-    "callouts": [
-      "Customize translated installment review text"
-    ],
-    "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 850,
-      "height": 850
-    },
-    "format": "PNG",
-    "qa": "passed visual review",
-    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
-    "sha256": "35f2555432fffe380f1023cb9df183dde035dd5a0cfed30684108a3131a2e615",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
-    ]
+    ],
+    "title": "Payment choice text settings",
+    "caption": "Edit payment-choice labels and preserve schedule variables in Design \u2192 Widget \u2192 Text.",
+    "alt": "Edit payment-choice labels and preserve schedule variables in Design \u2192 Widget \u2192 Text.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "payment-settings-tabs": {
     "id": "payment-connections",
@@ -17514,9 +17468,7 @@
     "qa": "passed visual review",
     "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
     "sha256": "418e9d6b481f241e6d28796b6c48907a677e3f2418423830785f825926eea77a",
-    "integrated_pages": [
-      "event-management/installment-payments.mdx"
-    ]
+    "integrated_pages": []
   },
   "installment-attendee-failure-email": {
     "id": "installment-manage",
@@ -17607,5 +17559,77 @@
     "integrated_pages": [
       "event-management/installment-payments.mdx"
     ]
+  },
+  "payment-plan-equal": {
+    "id": "payment-plan-equal",
+    "key": "payment-plan-equal",
+    "asset": "assets/refresh/event-management/payment-plan-equal.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Equal split payment template",
+    "caption": "Choose Equal split, a payment count, and days after checkout.",
+    "alt": "Choose Equal split, a payment count, and days after checkout.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+  },
+  "payment-plan-percentages": {
+    "id": "payment-plan-percentages",
+    "key": "payment-plan-percentages",
+    "asset": "assets/refresh/event-management/payment-plan-percentages.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Percentage payment template",
+    "caption": "A 0% / 50% / 50% template saves a card at checkout and collects two future payments.",
+    "alt": "A 0% / 50% / 50% template saves a card at checkout and collects two future payments.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+  },
+  "event-payment-plan": {
+    "id": "event-payment-plan",
+    "key": "event-payment-plan",
+    "asset": "assets/refresh/event-management/event-payment-plan.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Event payment plan assignment",
+    "caption": "Assign a reusable template to selected tickets and set the payment deadline.",
+    "alt": "Assign a reusable template to selected tickets and set the payment deadline.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+  },
+  "installment-pay-full-choice": {
+    "id": "installment-pay-full-choice",
+    "key": "installment-pay-full-choice",
+    "asset": "assets/refresh/event-management/installment-pay-full-choice.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Pay in full option",
+    "caption": "Full payment is selected initially and creates no later obligations.",
+    "alt": "Full payment is selected initially and creates no later obligations.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   }
 }

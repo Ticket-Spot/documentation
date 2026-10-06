@@ -2801,8 +2801,7 @@
         "assets/refresh/event-management/day-ticket-editor-seating.png"
       ],
       "integrated_pages": [
-        "event-management/day-specific-tickets.mdx",
-        "event-management/installment-payments.mdx"
+        "event-management/day-specific-tickets.mdx"
       ],
       "capture_qa": {
         "passed visual review": 15
@@ -3507,15 +3506,11 @@
       "captured_assets": [
         "assets/refresh/event-management/installment-agreement.png",
         "assets/refresh/event-management/installment-deposit-checkout.png",
-        "assets/refresh/event-management/installment-deposit-complete.png",
-        "assets/refresh/event-management/installment-automatic-agreement.png",
-        "assets/refresh/event-management/installment-zero-checkout.png"
+        "assets/refresh/event-management/installment-deposit-complete.png"
       ],
-      "integrated_pages": [
-        "event-management/installment-payments.mdx"
-      ],
+      "integrated_pages": [],
       "capture_qa": {
-        "passed visual review": 5
+        "passed visual review": 3
       },
       "delivered_formats": [
         "PNG"
@@ -3563,7 +3558,6 @@
         "assets/refresh/event-management/installment-new-order-email.png",
         "assets/refresh/event-management/installment-collection-settings.png",
         "assets/refresh/event-management/installment-upgrade-notice.png",
-        "assets/refresh/event-management/installment-checkout-text.png",
         "assets/refresh/event-management/installment-zero-schedule.png",
         "assets/refresh/event-management/installment-attendee-failure-email.png",
         "assets/refresh/event-management/installment-attendee-manual-payment.png",
@@ -3574,7 +3568,7 @@
         "event-management/installment-payments.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 21
+        "passed visual review": 20
       },
       "delivered_formats": [
         "PNG"
@@ -12758,11 +12752,11 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-06T14:40:04.643414+00:00",
+    "updated_at": "2026-10-06T19:58:32.328540+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
     "planned_capture_units": 354,
-    "units_with_any_capture": 303,
-    "checked_screenshots": 592,
+    "units_with_any_capture": 310,
+    "checked_screenshots": 596,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
