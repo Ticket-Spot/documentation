@@ -1,10 +1,10 @@
 ---
 title: "Set up ticket payment plans with Stripe installments"
 sidebarTitle: "Installment payments"
-description: "Offer event ticket payment plans with a deposit and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges."
+description: "Offer event ticket payment plans with a deposit or $0 at checkout and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges."
 ---
 
-Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. Installment plans with manual collection require **Business or higher**, a connected Stripe account, and Stripe card checkout. **Business Plus and Platform** also include automatic collection and configurable retry days.
+Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. The first amount can also be **$0**: the attendee saves a Stripe card and accepts the schedule before any later payments are collected. Installment plans with manual collection require **Business or higher**, a connected Stripe account, and Stripe card checkout. **Business Plus and Platform** also include automatic collection and configurable retry days.
 
 ## Create a payment schedule
 
@@ -16,9 +16,13 @@ Open [payment settings](/account/get-paid) and connect the account that will col
 Edit the event, open **Tickets**, and edit a fixed-price paid ticket. Turn on **Enable Installment Payments**. Group, free, pay-what-you-want, and bulk-discount tickets cannot use this schedule.
 </Step>
 <Step title="Enter the payments">
-Add up to four payments. For each, enter the amount, **Due After (days)**, and an optional description. The first payment is due at checkout: its day offset is zero. Later offsets are measured from purchase, not from the event date. The amounts must add up to the ticket price.
+Add up to four payments. For each, enter the amount, **Due After (days)**, and an optional description. The first payment is due at checkout: its day offset is zero and its amount may be \$0. Negative amounts are not allowed. Later offsets are measured from purchase, not from the event date. The amounts must add up to the ticket price.
 
-For a \$300 ticket, an example is \$100 at checkout, \$100 after 30 days, and \$100 after 60 days. Check that these dates fit your event and admission policy.
+For a \$300 ticket, an example is \$100 at checkout, \$100 after 30 days, and \$100 after 60 days. You can also set a \$100 ticket to \$0 at checkout, \$50 after 1 day, and \$50 after 2 days. Check that these dates fit your event and admission policy.
+
+<Frame caption="$0 at checkout is allowed on a paid ticket. Later payments cover the full ticket price; remove buttons are aligned with their fields.">
+  <img src="../assets/refresh/event-management/installment-zero-schedule.png" alt="Payment schedule with zero at checkout and centered remove buttons circled beside two later fifty-dollar payments" />
+</Frame>
 </Step>
 <Step title="Save and check checkout">
 Save the ticket and event. Preview the public checkout, select the ticket, and verify the deposit and future schedule. The attendee must accept the payment agreement. Check your [installment email templates](/branding-and-design/attendee-communication-design) before taking bookings.
@@ -27,10 +31,14 @@ Save the ticket and event. Preview the public checkout, select the ticket, and v
 
 ## Choose manual or automatic collection
 
-Open **Payment Settings → Installment collection**. On Business, later payments use **Manual collection**. On Business Plus or Platform, **Automatic collection** is the default for new bookings; you can choose manual collection instead. Select **Save collection settings**.
+Open **Payment Settings → Installments**. The **Payment** tab contains your provider connection and payment methods; the **Installments** tab contains collection and retry settings. On Business, later payments use **Manual collection**. On Business Plus or Platform, **Automatic collection** is the default for new bookings; you can choose manual collection instead. Select **Save collection settings**. On a plan without automatic collection, its dropdown option shows an upgrade icon. Selecting it displays the branded upgrade notice and disables Save. Choose manual collection to save without upgrading.
 
-<Frame caption="Payment Settings: choose automatic collection and optional retries after 3 and 7 days on Business Plus or Platform.">
+<Frame caption="Payment Settings → Installments: choose automatic collection and optional retries after 3 and 7 days on Business Plus or Platform.">
   <img src="../assets/refresh/event-management/installment-collection-settings.png" alt="Payment Settings with automatic collection and the two retry-day controls circled" />
+</Frame>
+
+<Frame caption="On Business, selecting automatic collection shows the upgrade notice and disables Save. Manual collection remains available.">
+  <img src="../assets/refresh/event-management/installment-upgrade-notice.png" alt="Installments tab with the Business Plus upgrade notice and disabled Save button circled" />
 </Frame>
 
 Automatic collection checks due payments every ten minutes and charges the saved Stripe card on or after the accepted due date. **Charge Now** remains available as a manual override. Choose the due days on each ticket—for example, 14 and 30 days after purchase. The ten-minute check interval is fixed.
@@ -49,6 +57,12 @@ For [date-specific tickets](/event-management/day-specific-tickets), the custom 
 
 The attendee reviews the total price, deposit due today, future amounts and due dates, then accepts the agreement to save their card and collect later installments under the displayed manual or automatic policy. When automatic retries are enabled, the agreement also shows their days and maximum number. They pay the deposit using Stripe card checkout. The order confirmation can show that tickets are pending while a balance remains.
 
+If the complete checkout total is \$0, Stripe saves the card without taking a payment. The booking remains pending with the full future balance outstanding; tickets are released only after the balance is paid and any admission approval is complete. Booking fees, tax or other items can still make the amount due today positive. Always review **Due Today**.
+
+<Frame caption="A $100 schedule with $0 due today and two later $50 payments. The attendee must still accept the saved-card agreement.">
+  <img src="../assets/refresh/event-management/installment-zero-checkout.png" alt="Zero checkout payment notice circled above two later $50 installments and the required saved-card authorization" />
+</Frame>
+
 <Note>The following screenshots show a Stripe test event with a \$30 ticket paid in three \$10 installments. The names and booking details are synthetic.</Note>
 
 <Frame caption="1. Review the three-payment schedule and accept the saved-card agreement before paying the deposit.">
@@ -61,6 +75,16 @@ The attendee reviews the total price, deposit due today, future amounts and due 
 
 <Frame caption="3. Order complete confirms the deposit checkout. Tickets are still pending in this example because later installments remain unpaid.">
   <img src="../assets/refresh/event-management/installment-deposit-complete.png" alt="Completed deposit checkout showing the order confirmation and pending tickets" />
+</Frame>
+
+## Customize and translate checkout text
+
+Open **Design → Text → Checkout → Payment information → Installment Payment Text**. Edit the zero checkout notice, future payment details, manual and automatic collection notices, retry messages, and saved-card authorization there. The settings use the attendee checkout language when automatic event translation is enabled. Custom merchant wording is preserved.
+
+Keep variables such as `{amount}`, `{days}`, `{number}`, `{label}` and `{count}` in the applicable fields. They are filled from the accepted schedule. The required authorization checkbox remains visible even when optional review text is hidden.
+
+<Frame caption="Design → Text: configure the zero checkout notice and translated future payment details, including their schedule variables.">
+  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Installment checkout text settings with the zero checkout notice and future payment variables circled" />
 </Frame>
 
 ## Track payment progress
@@ -151,7 +175,19 @@ An attendee who opens the same link after the installment is paid sees **This in
 
 In **Settings → Attendee Communication → Pending Installment**, configure the messages for the first payment and later installments. The initial receipt confirms the deposit. Later automatic payments use **Subsequent Installment**; an organizer's manual charge uses **Host Charge Installment**. These receipts do not issue admission tickets while a balance remains.
 
-If a charge fails or the bank requires authentication, the attendee receives an attention email with a private link to update their card or authenticate the payment. Automatic collection pauses for that payment. Share recovery links only with the attendee they belong to.
+Every initial or later installment receipt includes **Manage tickets**, and a failed charge sends a **Payment needs attention** email with the same button. The private link signs the attendee in and opens that order in their dashboard. Under **Payments**, they can update the saved card or complete the failed payment manually, including any bank authentication. Automatic collection pauses for that payment. Share these private links only with their attendee.
+
+<Frame caption="A failed automatic charge sends Payment needs attention. Manage tickets opens the attendee's order and its payment options.">
+  <img src="../assets/refresh/event-management/installment-attendee-failure-email.png" alt="Failed installment email with its Manage tickets button circled" />
+</Frame>
+
+<Frame caption="The order shows the unpaid installment, remaining balance and button to pay it manually in the embedded checkout.">
+  <img src="../assets/refresh/event-management/installment-attendee-manual-payment.png" alt="Attendee order payment section showing one of three steps complete and the Pay installment two of three button circled" />
+</Frame>
+
+<Frame caption="After a successful payment, the receipt also includes Manage tickets. Admission tickets remain pending while a balance is due.">
+  <img src="../assets/refresh/event-management/installment-attendee-receipt-email.png" alt="Installment receipt with the Manage tickets button circled" />
+</Frame>
 
 When the whole order is fully paid and eligible for admission, the attendee receives the existing **New Order** ticket confirmation email, using its configured content and branding, with the usual ticket PDF/QR and receipt. A separate installment completion template is not required. Approval and other admission holds still apply.
 
@@ -160,6 +196,8 @@ When the whole order is fully paid and eligible for admission, the attendee rece
 </Frame>
 
 After the payments in a collection period finish, the organizer receives one **Installment Summary** for that event and currency. It reports payments collected, the amount collected, fully paid plans, failed payments, and known attendee email errors. These notifications use the same recipients and preferences as **New Registration**. A failed payment is not included in collected funds.
+
+Summaries are sent by the **next ten-minute scheduler run** after every payment in that collection period has finished and its attendee email has been delivered. For example, payments collected after 10:00 and completed by 10:05 are summarized at the 10:10 run. Processing payments or pending attendee emails defer the summary; unresolved work older than one hour is reported for review.
 
 The summary shows successful charges and their total, failed payments, fully paid plans, and the number and value of installments still unpaid across bookings in that collection period. **Open attendee dashboard** links directly to the event and site. Retry results appear in their own collection period. A previously reported failure is not counted as another collected payment when a retry succeeds.
 

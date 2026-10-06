@@ -17344,26 +17344,266 @@
     "pages": [
       "event-management/installment-payments.mdx"
     ],
-    "title": "Configure installment collection",
-    "caption": "Payment Settings: automatic collection and retry days 3 and 7 on Business Plus or Platform.",
-    "alt": "Automatic installment collection and retry-day settings circled",
-    "source": "Real dashboard component browser capture, synthetic site; 2026-10-05",
-    "capturedAt": "2026-10-06T06:57:03.230021+00:00",
-    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "title": "Configure automatic collection and retry days",
+    "caption": "Payment Settings \u2192 Installments: automatic collection with retries after 3 and 7 days.",
+    "alt": "Configure automatic collection and retry days with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:09:04.353646+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
     "callouts": [
-      "Automatic collection method",
-      "First retry day",
-      "Second retry day"
+      "Configure automatic collection and retry days"
     ],
     "clip": {
       "x": 0,
       "y": 0,
-      "width": 1000,
-      "height": 1100
+      "width": 700,
+      "height": 929
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_note": "Real browser pixels with #9c26dc unfilled 4px circles; synthetic identities. Stripe sandbox and local message transport only.",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "7bdef4ed02698125402ebd5b609412ee4d123db5c08386241bdb8e2348ed43fb",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-upgrade-notice": {
+    "id": "installment-manage",
+    "key": "installment-upgrade-notice",
+    "asset": "assets/refresh/event-management/installment-upgrade-notice.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Automatic collection upgrade notice",
+    "caption": "On Business, selecting automatic collection shows the branded upgrade notice and disables Save.",
+    "alt": "Automatic collection upgrade notice with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:09:04.353646+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
+    "callouts": [
+      "Automatic collection upgrade notice"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 673
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "1d839e1c4b8c93da5b1dcac93f5b78381ce03ce0efdc9fcef09932afabeba589",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-zero-checkout": {
+    "id": "installment-buyer-summary",
+    "key": "installment-zero-checkout",
+    "asset": "assets/refresh/event-management/installment-zero-checkout.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Zero checkout installment agreement",
+    "caption": "No charge today: save a Stripe card and accept two later $50 payments for a $100 ticket.",
+    "alt": "Zero checkout installment agreement with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:25:20.300786+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
+    "callouts": [
+      "No charge today"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 984,
+      "height": 594
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "7eff69cbc3210101d4bb55b2cf48c12cb89d30d5e2138fe37345f2f82b58d97d",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-checkout-text": {
+    "id": "installment-manage",
+    "key": "installment-checkout-text",
+    "asset": "assets/refresh/event-management/installment-checkout-text.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Customize translated installment review text",
+    "caption": "Design \u2192 Text \u2192 Checkout \u2192 Payment information: zero checkout notice and future payment variables.",
+    "alt": "Customize translated installment review text with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:09:04.353646+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
+    "callouts": [
+      "Customize translated installment review text"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 850,
+      "height": 850
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "35f2555432fffe380f1023cb9df183dde035dd5a0cfed30684108a3131a2e615",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "payment-settings-tabs": {
+    "id": "payment-connections",
+    "key": "payment-settings-tabs",
+    "asset": "assets/refresh/account/payment-settings-tabs.png",
+    "pages": [
+      "account/get-paid.mdx"
+    ],
+    "title": "Payment Settings tabs",
+    "caption": "Payment providers and installment collection settings have separate tabs.",
+    "alt": "Payment Settings tabs with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:09:04.353646+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
+    "callouts": [
+      "Payment Settings tabs"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 990
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "4bd6d43b73e799c2b553e2b84409dfc92247d3d7085f22fedef5458e650ebfd9",
+    "integrated_pages": [
+      "account/get-paid.mdx"
+    ]
+  },
+  "installment-zero-schedule": {
+    "id": "installment-manage",
+    "key": "installment-zero-schedule",
+    "asset": "assets/refresh/event-management/installment-zero-schedule.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Zero checkout payment schedule",
+    "caption": "Payment schedule: $0 at checkout and two later $50 payments. Remove buttons align with the payment fields.",
+    "alt": "Zero checkout installment agreement with purple circle annotations",
+    "source": "Actual widget or dashboard component in Chromium; isolated QA data and synthetic plan/provider fixtures; 2026-10-06",
+    "capturedAt": "2026-10-06T14:25:20.302046+00:00",
+    "route": "checkout review, Payment Settings tabs, or Design \u2192 Text \u2192 Checkout \u2192 Payment information",
+    "callouts": [
+      "Remove payment 2",
+      "Remove final payment"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 850,
+      "height": 685
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "418e9d6b481f241e6d28796b6c48907a677e3f2418423830785f825926eea77a",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-attendee-failure-email": {
+    "id": "installment-manage",
+    "key": "installment-attendee-failure-email",
+    "asset": "assets/refresh/event-management/installment-attendee-failure-email.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Failed charge email with Manage tickets",
+    "caption": "Failed charge email with Manage tickets",
+    "alt": "Zero checkout installment agreement with purple circle annotations",
+    "source": "Actual notification worker email and attendee dashboard in Chromium, using a fresh Stripe sandbox checkout booking and local email sink; 2026-10-06",
+    "capturedAt": "2026-10-06T14:32:49.560172+00:00",
+    "route": "Attendee payment failure email \u2192 Manage tickets \u2192 order Payments",
+    "callouts": [
+      "Manage tickets"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 759
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "6927c93a647e420a30ee205825c3076e653e038bd0b0138596f3d83a2991df32",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-attendee-manual-payment": {
+    "id": "installment-manage",
+    "key": "installment-attendee-manual-payment",
+    "asset": "assets/refresh/event-management/installment-attendee-manual-payment.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Pay the failed installment in the attendee dashboard",
+    "caption": "Pay the failed installment in the attendee dashboard",
+    "alt": "Zero checkout installment agreement with purple circle annotations",
+    "source": "Actual notification worker email and attendee dashboard in Chromium, using a fresh Stripe sandbox checkout booking and local email sink; 2026-10-06",
+    "capturedAt": "2026-10-06T14:32:49.561096+00:00",
+    "route": "Attendee payment failure email \u2192 Manage tickets \u2192 order Payments",
+    "callouts": [
+      "Pay installment 2 of 3"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 456,
+      "height": 486
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "1c26caebf7cc0b4b6f346ac4545c9bdb4cee024a8fd5c216bfe2895086592061",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ]
+  },
+  "installment-attendee-receipt-email": {
+    "id": "installment-manage",
+    "key": "installment-attendee-receipt-email",
+    "asset": "assets/refresh/event-management/installment-attendee-receipt-email.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Successful installment receipt with Manage tickets",
+    "caption": "A successful $50 payment leaves one payment outstanding. Manage tickets opens the same order.",
+    "alt": "Zero checkout installment agreement with purple circle annotations",
+    "source": "Actual notification worker email and attendee dashboard in Chromium, using a fresh Stripe sandbox checkout booking and local email sink; 2026-10-06",
+    "capturedAt": "2026-10-06T14:40:04.062879+00:00",
+    "route": "Installment receipt \u2192 Manage tickets \u2192 order Payments",
+    "callouts": [
+      "Manage tickets"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 735
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Reviewed actual browser pixels, readable copy, no browser chrome or private user data. #9c26dc unfilled 4px circles. Stripe financial evidence is recorded separately; provider and plan settings captures use synthetic response fixtures.",
+    "sha256": "110ca166c331cf8f27f49255ce40543b5328759ec8ed54c6a81270e0007a8be0",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
     ]
