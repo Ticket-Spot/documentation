@@ -34,6 +34,14 @@ Use Ticket Spot's **Event Capacity** for a shared attendee limit, alongside indi
 
 Shopify tracks stock per variant; setting both variants to 30 does not create a combined limit of 30. Use the Ticket Selector booking flow and keep the event and linked product synchronized. See [shared inventory across ticket variants](./shopify-ticket-selector#shared-inventory-across-ticket-variants).
 
+## Can I sell event add-ons with my Shopify tickets?
+
+Yes. Create a **separate event** for each extra and enable **Event Details → Privacy → Hide Event from Event Listing**. **Publish every add-on to Shopify**: the hide flag makes its Shopify product **Unlisted**, while the published ticket variants remain available for checkout. Leaving the add-on as a draft is not enough.
+
+Attach these events under the main event's **Event Add-ons** and use **Ticket Selector** on the main product. Customers choose their main ticket first, then add-ons. An add-on can have one date or several; it uses its **first ticket**, with its own price, per-order limits, and available capacity. For multiple dates, attach the parent event so customers can choose their date.
+
+Follow [Shopify event add-on setup](./shopify-event-add-ons) for the complete steps and screenshots.
+
 ## Can I use a waitlist for event tickets on Shopify?
 
 Yes. Use the **Ticket Selector** app block on the Shopify product's assigned template for Ticket Spot waitlist signup and invitation-based purchases. The normal Shopify variant picker does not display the Ticket Spot waitlist form or handle that invitation flow.

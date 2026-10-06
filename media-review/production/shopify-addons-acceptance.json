@@ -1,0 +1,199 @@
+{
+  "review_date": "2026-10-05",
+  "guide": "plugins/shopify-event-add-ons.mdx",
+  "scope": "Shopify add-ons: hidden/published events, first ticket, single/multiple dates, quantities, capacity and checkout.",
+  "demo": {
+    "main": "Autumn Festival — Add-on Demo",
+    "single_date_addon": "Festival Lunch Add-on",
+    "multi_date_addon": "Festival Pottery Workshop Add-on",
+    "dates": [
+      "2026-11-14",
+      "2026-11-15"
+    ]
+  },
+  "source_rule_checks": [
+    {
+      "name": "first ticket and event capacity determine the quantity bound",
+      "result": "pass"
+    },
+    {
+      "name": "selected occurrence remaining capacity caps its quantity",
+      "result": "pass"
+    },
+    {
+      "name": "sold-out occurrence has zero remaining quantity",
+      "result": "pass"
+    },
+    {
+      "name": "ticket inventory caps a larger event",
+      "result": "pass"
+    },
+    {
+      "name": "per-order limit caps a larger stock",
+      "result": "pass"
+    },
+    {
+      "name": "optional minimum permits no extras",
+      "result": "pass"
+    },
+    {
+      "name": "required minimum blocks no extras",
+      "result": "pass"
+    },
+    {
+      "name": "maximum counts selections, not quantity",
+      "result": "pass"
+    },
+    {
+      "name": "overlapping add-ons are rejected with time conflicts off",
+      "result": "pass"
+    },
+    {
+      "name": "time-conflict option permits overlap",
+      "result": "pass"
+    },
+    {
+      "name": "server rejects quantities above the ticket maximum",
+      "result": "pass"
+    },
+    {
+      "name": "server prices the selected quantity",
+      "result": "pass"
+    }
+  ],
+  "live_checks": [
+    {
+      "check": "Publish all add-ons with privacy hide flag enabled",
+      "result": "passed",
+      "evidence": "Both linked Shopify products returned UNLISTED; main product returned ACTIVE."
+    },
+    {
+      "check": "Lunch quantity limit",
+      "result": "passed",
+      "evidence": "Increase disabled at two, matching first ticket Max Per Order."
+    },
+    {
+      "check": "Workshop available capacity",
+      "result": "passed",
+      "evidence": "Before the purchase, increase disabled at three despite ticket Max Per Order four."
+    },
+    {
+      "check": "Select multiple dates",
+      "result": "passed",
+      "evidence": "Selected both November 14 and November 15 along with lunch."
+    },
+    {
+      "check": "Shopify checkout lines",
+      "result": "passed",
+      "evidence": "One admission $35, two lunches $30, one workshop place on each date $20 + $20: total $105."
+    },
+    {
+      "check": "Shopify test payment",
+      "result": "passed",
+      "evidence": "User-authorized Bogus Gateway card 1; Shopify showed confirmed order. No real charge."
+    },
+    {
+      "check": "Shopify inventory after purchase",
+      "result": "passed",
+      "evidence": "Admission 30→29; lunch 6→4; each workshop date 3→2."
+    },
+    {
+      "check": "Ticket Spot attendee creation",
+      "result": "passed after user-applied local webhook configuration change",
+      "evidence": "Both retries returned HTTP 200. Ticket Spot returned one admission, two lunches and one registration for each workshop date, all attending and linked to the same order/cart. No duplicate attendees were present."
+    },
+    {
+      "check": "Published Shopify product template",
+      "result": "passed",
+      "evidence": "Assigned the existing ticket-spot template and enabled the selector on the main Demo product. Its hosted Ticket Spot iframe advanced from admission to the lunch and two-date workshop selection."
+    }
+  ],
+  "visual_checks": [
+    {
+      "width": 1440,
+      "title": "Sell event add-ons with Shopify tickets - Ticket Spot",
+      "overflow": false,
+      "images": [
+        {
+          "alt": "Add-on Event Details with Hide Event from Event Listing enabled and capacity set to six",
+          "loaded": true
+        },
+        {
+          "alt": "Add-on ticket capacity six, minimum one and maximum two tickets per order",
+          "loaded": true
+        },
+        {
+          "alt": "Specific Dates setup for a workshop add-on with two dates and three places on each date",
+          "loaded": true
+        },
+        {
+          "alt": "Enabled add-on configuration with optional selections, a maximum of three, and two attached events",
+          "loaded": true
+        },
+        {
+          "alt": "Ticket Selector add-on step with a lunch extra and workshop date choices",
+          "loaded": true
+        },
+        {
+          "alt": "Selected lunch add-on with quantity two and the increase control disabled",
+          "loaded": true
+        },
+        {
+          "alt": "Shopify order summary showing the main admission, two lunches and one workshop place on each of two dates",
+          "loaded": true
+        }
+      ],
+      "links": 23
+    },
+    {
+      "width": 390,
+      "title": "Sell event add-ons with Shopify tickets - Ticket Spot",
+      "overflow": false,
+      "images": [
+        {
+          "alt": "Add-on Event Details with Hide Event from Event Listing enabled and capacity set to six",
+          "loaded": true
+        },
+        {
+          "alt": "Add-on ticket capacity six, minimum one and maximum two tickets per order",
+          "loaded": true
+        },
+        {
+          "alt": "Specific Dates setup for a workshop add-on with two dates and three places on each date",
+          "loaded": true
+        },
+        {
+          "alt": "Enabled add-on configuration with optional selections, a maximum of three, and two attached events",
+          "loaded": true
+        },
+        {
+          "alt": "Ticket Selector add-on step with a lunch extra and workshop date choices",
+          "loaded": true
+        },
+        {
+          "alt": "Selected lunch add-on with quantity two and the increase control disabled",
+          "loaded": true
+        },
+        {
+          "alt": "Shopify order summary showing the main admission, two lunches and one workshop place on each of two dates",
+          "loaded": true
+        }
+      ],
+      "links": 23
+    }
+  ],
+  "cleanup": "No application source changes or response fixtures added. Dedicated Demo events and test order retained for review. Annotation overlays removed after captures.",
+  "limitations": [
+    "A live sold-out purchase was not attempted; sold-out bounds, minimum/maximum selections, and conflicts were checked against current application validation helpers.",
+    "The initial webhook signature check returned HTTP 401. The user disabled that check locally; Shopify retries then succeeded. This run verifies order processing after that change, not webhook signature authentication."
+  ],
+  "documentation_validation": {
+    "mdx_pages": 142,
+    "navigation_entries": 142,
+    "local_references": 1644,
+    "source_widget_controls": 503,
+    "source_plan_features": 111,
+    "mdx_compile": "passed",
+    "navigation_and_local_links": "passed"
+  }
+}

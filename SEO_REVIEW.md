@@ -83,3 +83,9 @@ Fresh US Ahrefs Keywords Explorer evidence is saved in [the Shopify keyword snap
 Keep the existing selector and connection URLs and established section anchors, including the pay-what-you-want section linked from What's New. Add the FAQ to navigation and link to it from both Shopify guides. Use exact UI labels in steps and descriptive image alt text; do not repeat keywords in every caption or add duplicate FAQ structured data.
 
 The waitlist follow-up uses fresh Ahrefs US results: `shopify waitlist` has 150 US/global monthly searches (KD 0); `shopify waitlist app` has 50 US / 60 global. The FAQ now answers whether Shopify event tickets support waitlists and when they start, with links to the threshold screenshots and Ticket Selector setup. Keep the explanation specific to event tickets rather than general merchandise back-in-stock alerts. The metrics are saved in the same Shopify keyword snapshot.
+
+## October 5 Shopify event add-ons follow-up
+
+Fresh US Ahrefs evidence is saved in [the add-ons keyword snapshot](seo/ahrefs-shopify-addons-2026-10-05.json). `shopify event tickets` returned 50 US / 70 global monthly searches (KD 11); `shopify event registration` returned 50 / 70 (KD 4). `shopify ticketing` returned 10 / 50 with no KD. `event add ons` returned 0 / 10, and `shopify event add ons` returned no row, so its volume is unknown.
+
+The [Shopify event add-ons guide](plugins/shopify-event-add-ons.mdx) owns the specific setup task: separate hidden events, publishing as Unlisted products, the first ticket, dates, quantities, capacity, and checkout. Its title and description use “Shopify event tickets” naturally without duplicating the connection guide's broad installation intent. The Shopify FAQ and Ticket Selector guide link to this procedure. Low or missing search volume does not remove the need to explain this workflow; unrelated merchandise upsell terms are not targets.

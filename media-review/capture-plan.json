@@ -1,15 +1,15 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 347,
-    "annotated_screenshots": 297,
+    "capture_units": 354,
+    "annotated_screenshots": 304,
     "zoom_gifs": 50,
     "static_gif_posters": 51,
-    "pages_covered": 141,
+    "pages_covered": 142,
     "newly_illustrated_pages": 54,
-    "priority_0": 163,
+    "priority_0": 170,
     "priority_1": 184,
-    "demo_browser_units": 273
+    "demo_browser_units": 280
   },
   "samples": [
     {
@@ -12464,6 +12464,261 @@
         "PNG"
       ],
       "readiness": "Captured in the user-authorized regular Chrome session for Ticket Spot Demo."
+    },
+    {
+      "id": "shopify-addon-hidden-event",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Hide the separate add-on event",
+      "callouts": [
+        "Hide Event from Event Listing",
+        "Event Capacity"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-hidden-event.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-hidden-event.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-ticket-capacity",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Set the first ticket price and quantity limits",
+      "callouts": [
+        "Ticket Capacity",
+        "Min Per Order",
+        "Max Per Order"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-ticket-capacity.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-ticket-capacity.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-dates",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Offer an add-on on multiple dates",
+      "callouts": [
+        "Specific Dates",
+        "date rows"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-dates.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-dates.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-configuration",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Attach hidden events to the main event",
+      "callouts": [
+        "Enable Add-ons",
+        "Minimum Required",
+        "Configured Add-ons"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-configuration.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-configuration.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-selection",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Choose add-ons after main tickets",
+      "callouts": [
+        "single-date selection",
+        "workshop dates"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-selection.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-selection.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-quantity-limit",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Review add-on quantity and availability",
+      "callouts": [
+        "quantity controls",
+        "available capacity"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-quantity-limit.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-quantity-limit.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "shopify-addon-checkout",
+      "pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "area": "plugins",
+      "format": "Annotated screenshot",
+      "title": "Verify the main ticket and add-ons at Shopify checkout",
+      "callouts": [
+        "workshop dates",
+        "lunch quantity",
+        "main ticket"
+      ],
+      "access": "Demo browser",
+      "fixture": "Dedicated Autumn Festival add-on demo events",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/plugins/shopify-addon-checkout.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Readable purple circles; never fabricate a successful purchase.",
+      "readiness": "Ticket Spot Demo authenticated.",
+      "captured_assets": [
+        "assets/refresh/plugins/shopify-addon-checkout.png"
+      ],
+      "integrated_pages": [
+        "plugins/shopify-event-add-ons.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     }
   ],
   "page_decisions": {
@@ -12494,16 +12749,16 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-04T21:53:13.406032+00:00",
+    "updated_at": "2026-10-06T04:24:23.072467+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-    "planned_capture_units": 347,
-    "units_with_any_capture": 296,
-    "checked_screenshots": 576,
+    "planned_capture_units": 354,
+    "units_with_any_capture": 303,
+    "checked_screenshots": 583,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 103,
+    "guides_with_current_media": 104,
     "external_capture_units_deferred": 66,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },
