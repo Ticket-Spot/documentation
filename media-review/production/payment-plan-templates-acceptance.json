@@ -5,7 +5,7 @@
     "dashboard": "Actual application UI on localhost:8080",
     "widget": "Actual application UI on localhost:8091",
     "api": "Actual local API on localhost:54739",
-    "site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
+    "site": "Payment QA \u2014 Stripe Sandbox (payment-actions-e2e)",
     "event": "Payment Plan Templates QA",
     "namespace": "codex-payments-20261003",
     "stripe": "Test mode",
@@ -347,16 +347,16 @@
       "headings": [
         "Documentation Index",
         "On this page",
-        "​Create a reusable payment plan",
-        "​Let buyers choose how to pay",
-        "​Customize and translate checkout text",
-        "​Track payment progress",
-        "​Collect a due installment manually",
-        "​Attendee card updates and early payment",
-        "​Help an attendee complete payment",
-        "​Payment emails",
-        "​Changes, refunds, and admission",
-        "​Related guides"
+        "\u200bCreate a reusable payment plan",
+        "\u200bLet buyers choose how to pay",
+        "\u200bCustomize and translate checkout text",
+        "\u200bTrack payment progress",
+        "\u200bCollect a due installment manually",
+        "\u200bAttendee card updates and early payment",
+        "\u200bHelp an attendee complete payment",
+        "\u200bPayment emails",
+        "\u200bChanges, refunds, and admission",
+        "\u200bRelated guides"
       ]
     },
     {
@@ -464,16 +464,16 @@
       "headings": [
         "Documentation Index",
         "On this page",
-        "​Create a reusable payment plan",
-        "​Let buyers choose how to pay",
-        "​Customize and translate checkout text",
-        "​Track payment progress",
-        "​Collect a due installment manually",
-        "​Attendee card updates and early payment",
-        "​Help an attendee complete payment",
-        "​Payment emails",
-        "​Changes, refunds, and admission",
-        "​Related guides"
+        "\u200bCreate a reusable payment plan",
+        "\u200bLet buyers choose how to pay",
+        "\u200bCustomize and translate checkout text",
+        "\u200bTrack payment progress",
+        "\u200bCollect a due installment manually",
+        "\u200bAttendee card updates and early payment",
+        "\u200bHelp an attendee complete payment",
+        "\u200bPayment emails",
+        "\u200bChanges, refunds, and admission",
+        "\u200bRelated guides"
       ]
     }
   ],
@@ -554,5 +554,163 @@
         "placement_visually_reviewed": true
       }
     ]
+  },
+  "template_dialog_followup": {
+    "date": "2026-10-06T20:52:54.702841+00:00",
+    "scope": "PrimeReact Dialog footer, branded buttons, Lucide pencil editing and shared template success toasts",
+    "browser": {
+      "pencil": {
+        "label": "Edit installment plan QA three equal payments",
+        "hasPencil": true,
+        "visibleText": ""
+      },
+      "invalidDisabled": true,
+      "desktop": {
+        "width": 1440,
+        "height": 700,
+        "footer": {
+          "top": 603,
+          "bottom": 665,
+          "left": 395,
+          "right": 1045
+        },
+        "footerVisible": true,
+        "actionsInFooter": 2,
+        "actionsInBody": 0,
+        "contentScrolls": true,
+        "footerStayed": true
+      },
+      "mobile": {
+        "width": 390,
+        "height": 700,
+        "footer": {
+          "top": 603,
+          "bottom": 665,
+          "left": 9.75,
+          "right": 380.25
+        },
+        "footerVisible": true,
+        "actionsInFooter": 2,
+        "actionsInBody": 0,
+        "contentScrolls": true,
+        "footerStayed": true
+      },
+      "create": {
+        "status": 200,
+        "id": "8791f496-175f-459b-89ed-3a2d57e3b4cd",
+        "toast": [
+          "Success!\nInstallment plan created."
+        ]
+      },
+      "edit": {
+        "status": 200,
+        "toast": [
+          "Success!\nInstallment plan updated."
+        ]
+      },
+      "persistedAfterReload": true
+    },
+    "branded_footer": {
+      "layouts": [
+        {
+          "width": 1440,
+          "footerVisible": true,
+          "contentScrolls": true,
+          "buttonBackground": "rgb(155, 38, 219)",
+          "brandColor": "#9b26db",
+          "matchesBrand": true
+        },
+        {
+          "width": 390,
+          "footerVisible": true,
+          "contentScrolls": true,
+          "buttonBackground": "rgb(155, 38, 219)",
+          "brandColor": "#9b26db",
+          "matchesBrand": true
+        }
+      ],
+      "saveStatus": 200,
+      "toast": [
+        "Success!\nInstallment plan updated."
+      ]
+    },
+    "captures": [
+      "assets/refresh/event-management/payment-plan-equal.png",
+      "assets/refresh/event-management/payment-plan-percentages.png"
+    ],
+    "visual_review": "Both refreshed template editor images reviewed; footer actions and circle annotations visible."
+  },
+  "organizer_ux_followup": {
+    "date": "2026-10-06T21:01:02.003027+00:00",
+    "scope": "Installment terminology, simpler template list, approximate equal shares, event eligibility, off-state explanation and exact availability cutoff",
+    "browser": {
+      "initial": {
+        "enabled": true,
+        "cutoff": "2027-03-10T18:00:00.000Z",
+        "cutoffText": "10 Mar 2027, 10:00 AM PST",
+        "hasOffNotice": false,
+        "hasOldAppliesTo": false,
+        "summary": "Payment plan\n\nLet customers split eligible ticket purchases into multiple payments. Manage installment plans\n\nAllow installment payments\nCustomers can still choose to pay in full.\nInstallment plan\nQA three equal payments\nQA three equal payments\n3 equal payments\n\nFirst payment at checkout, then after 30, 60 days.\n\nEligible tickets\nSelected tickets\nSelected tickets\nEligible ticket types\nStandard Admission\n\nFree, donation, pay-later, group, member-priced and bulk-discount tickets aren't eligible for installments.\n\nFinal payment deadline\nday before the event\n\nThe full schedule must finish at least 1 day before the event.\n\nInstallments available until\n\n10 Mar 2027, 10:00 AM PST\n\nBased on the 3-payment schedule and 1-day final payment deadline. After the cutoff, customers can still pay in full.\n\nSave event payment plan"
+      },
+      "off": {
+        "enabled": false,
+        "hasOffNotice": true,
+        "hasOldAppliesTo": false,
+        "summary": "Payment plan\n\nLet customers split eligible ticket purchases into multiple payments. Manage installment plans\n\nAllow installment payments\nCustomers pay in full.\nInstallment payments are off\n\nEnable installment payments to let customers split eligible purchases.\n\nSave event payment plan"
+      },
+      "four": {
+        "enabled": true,
+        "cutoff": "2027-02-05T18:00:00.000Z",
+        "cutoffText": "5 Feb 2027, 10:00 AM PST",
+        "hasOffNotice": false,
+        "hasOldAppliesTo": false,
+        "summary": "Payment plan\n\nLet customers split eligible ticket purchases into multiple payments. Manage installment plans\n\nAllow installment payments\nCustomers can still choose to pay in full.\nInstallment plan\nUX review QA updated\nUX review QA updated\n4 equal payments\n\nFirst payment at checkout, then after 30, 60, 90 days.\n\nEligible tickets\nSelected tickets\nSelected tickets\nEligible ticket types\nStandard Admission\n\nFree, donation, pay-later, group, member-priced and bulk-discount tickets aren't eligible for installments.\n\nFinal payment deadline\ndays before the event\n\nThe full schedule must finish at least 4 days before the event.\n\nInstallments available until\n\n5 Feb 2027, 10:00 AM PST\n\nBased on the 4-payment schedule and 4-day final payment deadline. After the cutoff, customers can still pay in full.\n\nSave event payment plan"
+      },
+      "zero": {
+        "enabled": true,
+        "cutoff": "2027-02-09T18:00:00.000Z",
+        "cutoffText": "9 Feb 2027, 10:00 AM PST",
+        "hasOffNotice": false,
+        "hasOldAppliesTo": false,
+        "summary": "Payment plan\n\nLet customers split eligible ticket purchases into multiple payments. Manage installment plans\n\nAllow installment payments\nCustomers can still choose to pay in full.\nInstallment plan\nUX review QA updated\nUX review QA updated\n4 equal payments\n\nFirst payment at checkout, then after 30, 60, 90 days.\n\nEligible tickets\nSelected tickets\nSelected tickets\nEligible ticket types\nStandard Admission\n\nFree, donation, pay-later, group, member-priced and bulk-discount tickets aren't eligible for installments.\n\nFinal payment deadline\ndays before the event\n\nThe full schedule must finish before the event starts.\n\nInstallments available before\n\n9 Feb 2027, 10:00 AM PST\n\nBased on the 4-payment schedule and 0-day final payment deadline. After the cutoff, customers can still pay in full.\n\nSave event payment plan"
+      },
+      "restored": {
+        "enabled": true,
+        "cutoff": "2027-03-10T18:00:00.000Z",
+        "cutoffText": "10 Mar 2027, 10:00 AM PST",
+        "hasOffNotice": false,
+        "hasOldAppliesTo": false,
+        "summary": "Payment plan\n\nLet customers split eligible ticket purchases into multiple payments. Manage installment plans\n\nAllow installment payments\nCustomers can still choose to pay in full.\nInstallment plan\nQA three equal payments\nQA three equal payments\n3 equal payments\n\nFirst payment at checkout, then after 30, 60 days.\n\nEligible tickets\nSelected tickets\nSelected tickets\nEligible ticket types\nStandard Admission\n\nFree, donation, pay-later, group, member-priced and bulk-discount tickets aren't eligible for installments.\n\nFinal payment deadline\nday before the event\n\nThe full schedule must finish at least 1 day before the event.\n\nInstallments available until\n\n10 Mar 2027, 10:00 AM PST\n\nBased on the 3-payment schedule and 1-day final payment deadline. After the cutoff, customers can still pay in full.\n\nSave event payment plan"
+      },
+      "inclusive": {
+        "at": true,
+        "after": false
+      },
+      "exclusive": {
+        "before": true,
+        "at": false
+      },
+      "savedStatus": 200,
+      "toast": [
+        "Success!\nPayment plan saved."
+      ],
+      "elapsedDayTimezoneCheck": "10 Mar 2027, 10:00 AM PST"
+    },
+    "visual_review": "All three updated organizer screenshots reviewed; approved circle annotations, footer actions and cutoff visible.",
+    "documentation_render": {
+      "desktop": {
+        "width": 1440,
+        "images_loaded": 24,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      },
+      "mobile": {
+        "width": 390,
+        "images_loaded": 24,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      }
+    },
+    "typecheck": "Repository-wide dashboard typecheck has existing failures (including Wix/React type incompatibility). No errors for new event-date props or PaymentPlansPage; scoped formatting and browser checks passed. Invalid MultiSelect ariaLabel prop corrected."
   }
 }

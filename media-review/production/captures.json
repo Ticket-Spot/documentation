@@ -17576,7 +17576,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "payment-plan-percentages": {
     "id": "payment-plan-percentages",
@@ -17594,7 +17594,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "event-payment-plan": {
     "id": "event-payment-plan",
@@ -17607,12 +17607,12 @@
       "event-management/installment-payments.mdx"
     ],
     "title": "Event payment plan assignment",
-    "caption": "Turn on Offer installments, assign a reusable template to selected tickets and set the payment deadline.",
-    "alt": "Event payment plan with the Offer installments toggle and template selector circled, selected tickets and payment deadline.",
+    "caption": "Allow installments, choose eligible tickets and the final payment deadline, and review the calculated availability cutoff.",
+    "alt": "Event installment assignment with the toggle and availability cutoff circled.",
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed after toggle/toast follow-up and visually reviewed; approved #9c26dc unfilled 4px circles. Toggle on/off and saved assignment persistence verified against the actual API. No credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "installment-pay-full-choice": {
     "id": "installment-pay-full-choice",
