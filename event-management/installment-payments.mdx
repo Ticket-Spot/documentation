@@ -1,90 +1,75 @@
 ---
 title: "Set up ticket payment plans with Stripe installments"
 sidebarTitle: "Installment payments"
-description: "Offer event ticket payment plans with a deposit or $0 at checkout and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges."
+description: "Create reusable equal-split or percentage event payment plans with Stripe. Offer full payment or installments, configure automatic payments, track paid installments, and resolve failed charges."
 ---
 
 Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. The first amount can also be **$0**: the attendee saves a Stripe card and accepts the schedule before any later payments are collected. Installment plans with manual collection require **Business or higher**, a connected Stripe account, and Stripe card checkout. **Business Plus and Platform** also include automatic collection and configurable retry days.
 
-## Create a payment schedule
+## Create a reusable payment plan
 
 <Steps>
 <Step title="Connect Stripe">
-Open [payment settings](/account/get-paid) and connect the account that will collect ticket payments. Use the Ticket Spot Stripe checkout for installment tickets.
+Open [payment settings](/account/get-paid) and connect Stripe. Manual installments require Business or higher. Automatic collection and configurable retries require Business Plus or Platform.
 </Step>
-<Step title="Enable installments on a paid ticket">
-Edit the event, open **Tickets**, and edit a fixed-price paid ticket. Turn on **Enable Installment Payments**. Group, free, pay-what-you-want, and bulk-discount tickets cannot use this schedule.
-</Step>
-<Step title="Enter the payments">
-Add up to four payments. For each, enter the amount, **Due After (days)**, and an optional description. The first payment is due at checkout: its day offset is zero and its amount may be \$0. Negative amounts are not allowed. Later offsets are measured from purchase, not from the event date. The amounts must add up to the ticket price.
+<Step title="Create a template">
+Open **Payment Plans → Create payment plan**. Name the template, choose **Equal split** or **Percentages**, then choose two to four payments. The first is at checkout; later payments use increasing days after checkout, such as 30 and 60 days.
 
-For a \$300 ticket, an example is \$100 at checkout, \$100 after 30 days, and \$100 after 60 days. You can also set a \$100 ticket to \$0 at checkout, \$50 after 1 day, and \$50 after 2 days. Check that these dates fit your event and admission policy.
+<Frame caption="Equal split uses a payment count and increasing days after checkout. The final payment absorbs any rounding difference.">
+  <img src="../assets/refresh/event-management/payment-plan-equal.png" alt="Equal split payment template with the split selector circled" />
+</Frame>
 
-<Frame caption="$0 at checkout is allowed on a paid ticket. Later payments cover the full ticket price; remove buttons are aligned with their fields.">
-  <img src="../assets/refresh/event-management/installment-zero-schedule.png" alt="Payment schedule with zero at checkout and centered remove buttons circled beside two later fifty-dollar payments" />
+Percentages must total 100%. Use **0% / 50% / 50%** to save a card at checkout without collecting a deposit. Booking fees or other tickets can still make today's total positive. Equal splits preserve the exact total, with any rounding difference in the final payment.
+
+<Frame caption="A reusable percentage template with 0% at checkout and two later 50% payments. Days are measured from purchase.">
+  <img src="../assets/refresh/event-management/payment-plan-percentages.png" alt="Payment plan template editor with the zero-percent checkout payment circled" />
 </Frame>
 </Step>
-<Step title="Save and check checkout">
-Save the ticket and event. Preview the public checkout, select the ticket, and verify the deposit and future schedule. The attendee must accept the payment agreement. Check your [installment email templates](/branding-and-design/attendee-communication-design) before taking bookings.
+<Step title="Assign the plan to an event">
+Edit the event and open **Payment Plan**. Turn **Offer installments** on, select a template, then apply it to **All supported paid tickets** or **Selected tickets**. Tickets you exclude are paid in full at checkout.
+
+Set **Finish payments before the event**. The default is one day before the event. Every scheduled payment must fit before this deadline and strictly before the event starts. If a late buyer cannot complete the schedule in time, checkout offers full payment. Automatic retries and manual collections also stop at the accepted event start.
+
+<Frame caption="Assign a template, choose eligible ticket types and set the payment deadline in the event's Payment Plan step.">
+  <img src="../assets/refresh/event-management/event-payment-plan.png" alt="Event payment plan assignment with the template selector circled, selected tickets and the deadline below" />
+</Frame>
+
+Click **Save event payment plan**. Existing bookings keep their accepted amounts, dates and collection policy when you edit a template or change the event assignment.
 </Step>
 </Steps>
 
-## Choose manual or automatic collection
+Free, group, donation, pay-later, member-priced and bulk-discount ticket types use full payment. A date in an event series inherits its ticket source's payment plan unless you save an override for that date. An event with an unknown date cannot offer a new template plan.
 
-Open **Payment Settings → Installments**. The **Payment** tab contains your provider connection and payment methods; the **Installments** tab contains collection and retry settings. On Business, later payments use **Manual collection**. On Business Plus or Platform, **Automatic collection** is the default for new bookings; you can choose manual collection instead. Select **Save collection settings**. On a plan without automatic collection, its dropdown option shows an upgrade icon. Selecting it displays the branded upgrade notice and disables Save. Choose manual collection to save without upgrading.
+<Note>Existing ticket-level installment schedules remain supported for compatibility. They appear under legacy controls when editing a ticket that already has installments. New plans belong in Payment Plans and the event's Payment Plan step.</Note>
 
-<Frame caption="Payment Settings → Installments: choose automatic collection and optional retries after 3 and 7 days on Business Plus or Platform.">
-  <img src="../assets/refresh/event-management/installment-collection-settings.png" alt="Payment Settings with automatic collection and the two retry-day controls circled" />
+## Let buyers choose how to pay
+
+At checkout, **Pay in full** is selected initially. The buyer can instead choose **Pay in installments** when the selected tickets are eligible and the schedule fits before the event. One event can include eligible and excluded ticket types: excluded types are paid in full today. Multi-event carts currently use full payment; a buyer can book an eligible event separately to use installments.
+
+<Frame caption="Pay in full collects the entire price once and creates no later payment obligations.">
+  <img src="../assets/refresh/event-management/installment-pay-full-choice.png" alt="Checkout with Pay in Full selected and the payment options circled" />
 </Frame>
 
-<Frame caption="On Business, selecting automatic collection shows the upgrade notice and disables Save. Manual collection remains available.">
-  <img src="../assets/refresh/event-management/installment-upgrade-notice.png" alt="Installments tab with the Business Plus upgrade notice and disabled Save button circled" />
+Selecting installments refreshes the amount due today. The compact review lists future amounts and dates, total price and remaining balance. The attendee must accept the saved-card agreement before payment. Additional collection and retry details are available under **Payment plan details**.
+
+<Frame caption="A $320 ticket split into $106.66 today, $106.66 after 30 days and $106.68 after 60 days. Rounding preserves the $320 total.">
+  <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Compact installment checkout with the saved-card authorization circled" />
 </Frame>
 
-Automatic collection checks due payments every ten minutes and charges the saved Stripe card on or after the accepted due date. **Charge Now** remains available as a manual override. Choose the due days on each ticket—for example, 14 and 30 days after purchase. The ten-minute check interval is fixed.
+For a \$0 checkout amount, Stripe saves the card without taking a payment. The booking remains pending until its balance is paid and any admission approval is complete. Discounts are applied before splitting the ticket price; booking fees are due at checkout, and future amounts include their allocated ticket tax.
 
-Optional retry settings allow **No automatic retries**, **One retry**, or **Two retries**. Set increasing whole days between 1 and 30, measured from the first failed attempt; for example, days 3 and 7. Retries apply only to temporary processing errors. Authentication requests, expired cards, insufficient funds and other card declines pause for attendee attention. Each retry uses the same installment amount and payment record.
-
-<Note>Settings apply to new bookings. Existing bookings keep the collection mode, due dates, amounts and retry policy accepted at checkout. Switching plans or editing these settings does not create a new authorization for existing attendees.</Note>
-
-For [date-specific tickets](/event-management/day-specific-tickets), the custom date ticket's **Advanced** controls apply to that date's own tickets. Use **Save changes** in the date drawer to save edits.
-
-<Frame caption="Custom date ticket → Advanced. Save changes in the date drawer after editing that date's tickets.">
-  <img src="../assets/refresh/event-management/day-ticket-editor-advanced.png" alt="Advanced controls in the custom date ticket editor" />
-</Frame>
-
-## What the attendee sees at checkout
-
-The attendee reviews the total price, deposit due today, future amounts and due dates, then accepts the agreement to save their card and collect later installments under the displayed manual or automatic policy. When automatic retries are enabled, the agreement also shows their days and maximum number. They pay the deposit using Stripe card checkout. The order confirmation can show that tickets are pending while a balance remains.
-
-If the complete checkout total is \$0, Stripe saves the card without taking a payment. The booking remains pending with the full future balance outstanding; tickets are released only after the balance is paid and any admission approval is complete. Booking fees, tax or other items can still make the amount due today positive. Always review **Due Today**.
-
-<Frame caption="A $100 schedule with $0 due today and two later $50 payments. The attendee must still accept the saved-card agreement.">
-  <img src="../assets/refresh/event-management/installment-zero-checkout.png" alt="Zero checkout payment notice circled above two later $50 installments and the required saved-card authorization" />
-</Frame>
-
-<Note>The following screenshots show a Stripe test event with a \$30 ticket paid in three \$10 installments. The names and booking details are synthetic.</Note>
-
-<Frame caption="1. Review the three-payment schedule and accept the saved-card agreement before paying the deposit.">
-  <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Checkout payment schedule with the saved-card authorization checkbox circled" />
-</Frame>
-
-<Frame caption="2. Due Today is $10 in this example. The remaining $20 is listed in the payment schedule.">
-  <img src="../assets/refresh/event-management/installment-deposit-checkout.png" alt="Stripe card checkout with the $10 deposit due today circled" />
-</Frame>
-
-<Frame caption="3. Order complete confirms the deposit checkout. Tickets are still pending in this example because later installments remain unpaid.">
-  <img src="../assets/refresh/event-management/installment-deposit-complete.png" alt="Completed deposit checkout showing the order confirmation and pending tickets" />
+<Frame caption="A zero-deposit plan saves the attendee's Stripe card today, with two later $160 payments for this $320 test ticket.">
+  <img src="../assets/refresh/event-management/installment-zero-checkout.png" alt="Zero-deposit checkout with no payment due today and the required saved-card agreement circled" />
 </Frame>
 
 ## Customize and translate checkout text
 
-Open **Design → Text → Checkout → Payment information → Installment Payment Text**. Edit the zero checkout notice, future payment details, manual and automatic collection notices, retry messages, and saved-card authorization there. The settings use the attendee checkout language when automatic event translation is enabled. Custom merchant wording is preserved.
+Open **Design → Widget → Text → Checkout → Payment information → Installment Payment Text**. Edit the payment-choice labels, remaining-balance label, scheduled-payment text, zero-checkout notice and compact collection agreement. The settings use the attendee's checkout language when automatic event translation is enabled. Custom organizer wording is preserved.
 
-Keep variables such as `{amount}`, `{days}`, `{number}`, `{label}` and `{count}` in the applicable fields. They are filled from the accepted schedule. The required authorization checkbox remains visible even when optional review text is hidden.
+Keep variables such as `{amount}`, `{date}`, `{days}` and `{count}` in the applicable fields. They are filled from the accepted schedule. The required authorization checkbox remains visible even when optional review text is hidden.
 
-<Frame caption="Design → Text: configure the zero checkout notice and translated future payment details, including their schedule variables.">
-  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Installment checkout text settings with the zero checkout notice and future payment variables circled" />
+<Frame caption="Design → Widget → Text controls payment-choice labels and schedule variables.">
+  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Checkout text settings with the one-time payment label circled" style={{ width: "100%", maxWidth: "420px", height: "auto" }} />
 </Frame>
 
 ## Track payment progress
