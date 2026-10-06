@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-06T06:59:26.743892+00:00",
+  "updated_at": "2026-10-06T14:40:04.643414+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
   "planned_capture_units": 354,
   "units_with_any_capture": 303,
-  "checked_screenshots": 584,
+  "checked_screenshots": 592,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
@@ -51,7 +51,8 @@
     {
       "path": "account/get-paid.mdx",
       "current_assets": [
-        "assets/refresh/account/payment-connections.png"
+        "assets/refresh/account/payment-connections.png",
+        "assets/refresh/account/payment-settings-tabs.png"
       ],
       "capture_ids": [
         "payment-connections"
@@ -1163,8 +1164,12 @@
       "current_assets": [
         "assets/refresh/event-management/day-ticket-editor-advanced.png",
         "assets/refresh/event-management/installment-all-paid.png",
+        "assets/refresh/event-management/installment-attendee-failure-email.png",
+        "assets/refresh/event-management/installment-attendee-manual-payment.png",
+        "assets/refresh/event-management/installment-attendee-receipt-email.png",
         "assets/refresh/event-management/installment-automatic-agreement.png",
         "assets/refresh/event-management/installment-automatic-paid-two.png",
+        "assets/refresh/event-management/installment-checkout-text.png",
         "assets/refresh/event-management/installment-collection-settings.png",
         "assets/refresh/event-management/installment-confirm-charge.png",
         "assets/refresh/event-management/installment-deposit-checkout.png",
@@ -1179,7 +1184,10 @@
         "assets/refresh/event-management/installment-recovery-consent.png",
         "assets/refresh/event-management/installment-replacement-card.png",
         "assets/refresh/event-management/installment-saved-card-declined.png",
-        "assets/refresh/event-management/installment-second-paid.png"
+        "assets/refresh/event-management/installment-second-paid.png",
+        "assets/refresh/event-management/installment-upgrade-notice.png",
+        "assets/refresh/event-management/installment-zero-checkout.png",
+        "assets/refresh/event-management/installment-zero-schedule.png"
       ],
       "capture_ids": [
         "installment-buyer-summary",

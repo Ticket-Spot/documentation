@@ -3508,13 +3508,14 @@
         "assets/refresh/event-management/installment-agreement.png",
         "assets/refresh/event-management/installment-deposit-checkout.png",
         "assets/refresh/event-management/installment-deposit-complete.png",
-        "assets/refresh/event-management/installment-automatic-agreement.png"
+        "assets/refresh/event-management/installment-automatic-agreement.png",
+        "assets/refresh/event-management/installment-zero-checkout.png"
       ],
       "integrated_pages": [
         "event-management/installment-payments.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 4
+        "passed visual review": 5
       },
       "delivered_formats": [
         "PNG"
@@ -3560,14 +3561,20 @@
         "assets/refresh/event-management/installment-fully-paid-progress.png",
         "assets/refresh/event-management/installment-organizer-summary.png",
         "assets/refresh/event-management/installment-new-order-email.png",
-        "assets/refresh/event-management/installment-collection-settings.png"
+        "assets/refresh/event-management/installment-collection-settings.png",
+        "assets/refresh/event-management/installment-upgrade-notice.png",
+        "assets/refresh/event-management/installment-checkout-text.png",
+        "assets/refresh/event-management/installment-zero-schedule.png",
+        "assets/refresh/event-management/installment-attendee-failure-email.png",
+        "assets/refresh/event-management/installment-attendee-manual-payment.png",
+        "assets/refresh/event-management/installment-attendee-receipt-email.png"
       ],
       "integrated_pages": [
         "attendee-management/managing-orders.mdx",
         "event-management/installment-payments.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 15
+        "passed visual review": 21
       },
       "delivered_formats": [
         "PNG"
@@ -6143,14 +6150,15 @@
       "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
       "readiness": "Authenticated Ticket Spot Demo capture available.",
       "captured_assets": [
-        "assets/refresh/account/payment-connections.png"
+        "assets/refresh/account/payment-connections.png",
+        "assets/refresh/account/payment-settings-tabs.png"
       ],
       "integrated_pages": [
         "account/get-paid.mdx",
         "event-management/ticket-setup.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 1
+        "passed visual review": 2
       },
       "delivered_formats": [
         "PNG"
@@ -12750,11 +12758,11 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-06T06:59:26.743892+00:00",
+    "updated_at": "2026-10-06T14:40:04.643414+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
     "planned_capture_units": 354,
     "units_with_any_capture": 303,
-    "checked_screenshots": 584,
+    "checked_screenshots": 592,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
