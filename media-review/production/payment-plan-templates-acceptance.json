@@ -931,5 +931,143 @@
       "translation_enabled": false,
       "button_text": "Pay {amount} today"
     }
+  },
+  "setup_ux_refinement": {
+    "date": "2026-10-06",
+    "scope": "Setup copy, exact share display, inline date validation, event usage counts, centered edit action and ticket eligibility explanations",
+    "server_tests": {
+      "passed": 96,
+      "failed": 0,
+      "suite": "routes/api/installments/*.test.js"
+    },
+    "browser": {
+      "list": {
+        "header": [
+          "Name",
+          "Schedule",
+          "Used by",
+          "Actions"
+        ],
+        "row": "QA three equal payments\t3 equal payments \u00b7 Checkout, +30, +60 days\t1 event\t",
+        "pencilOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "copy": true
+      },
+      "usageWarning": true,
+      "exactShares": true,
+      "checks": [
+        {
+          "value": "60",
+          "error": "Must be after Payment 2.",
+          "saveDisabled": true,
+          "invalidInputs": 1
+        },
+        {
+          "value": "0",
+          "error": "Enter a whole number from 1 to 3650.",
+          "saveDisabled": true,
+          "invalidInputs": 1
+        },
+        {
+          "value": "-1",
+          "error": "Enter a whole number from 1 to 3650.",
+          "saveDisabled": true,
+          "invalidInputs": 1
+        },
+        {
+          "value": "3651",
+          "error": "Enter a whole number from 1 to 3650.",
+          "saveDisabled": true,
+          "invalidInputs": 2
+        },
+        {
+          "value": "60",
+          "error": "Must be after Payment 2.",
+          "saveDisabled": true,
+          "invalidInputs": 1
+        }
+      ],
+      "invalidWrites": 0,
+      "duplicateRejected": true,
+      "validCorrection": true,
+      "createStatus": 200,
+      "persisted": "Setup refinement QA\t3 equal payments \u00b7 Checkout, +14, +28 days\t0 events\t",
+      "templateId": "c78bf769-7fa7-4a5b-b1e0-a30285e5316c"
+    },
+    "captures_and_eligibility": {
+      "footerLayouts": [
+        {
+          "width": 1440,
+          "footerVisible": true,
+          "overflow": false,
+          "disabled": true
+        },
+        {
+          "width": 390,
+          "footerVisible": true,
+          "overflow": false,
+          "disabled": true
+        }
+      ],
+      "options": [
+        {
+          "text": "Standard Admission",
+          "disabled": false
+        },
+        {
+          "text": "Extra Admission",
+          "disabled": false
+        },
+        {
+          "text": "Free Admission \u2014 Free ticket",
+          "disabled": true
+        }
+      ],
+      "freeOptions": [
+        {
+          "text": "Standard \u2014 Free ticket",
+          "disabled": true
+        }
+      ],
+      "freeMobileOverflow": false,
+      "assignmentUnchanged": true,
+      "captures": [
+        "payment-plan-list.png",
+        "template-equal.png",
+        "template-percentages.png",
+        "payment-plan-date-validation.png",
+        "payment-plan-ticket-eligibility.png",
+        "event-payment-plan.png"
+      ]
+    },
+    "empty_picker_diagnostic": "Reported event contains one free Standard ticket priced at zero. Excluded tickets now remain visible with a reason. No user ticket prices or assignments changed. Free-only reproduction uses an isolated synthetic event.",
+    "circle": "Unfilled #9c26dc 4px, drawn over actual browser captures",
+    "visual_review": "All six refreshed/new screenshots inspected; modal crops keep text readable.",
+    "documentation_validation": {
+      "mdx_files_compiled": 142,
+      "navigation_pages_checked": 142,
+      "local_links_and_media_checked": 1656,
+      "browser_render": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "loaded_images": 27,
+          "overflow": false
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "loaded_images": 27,
+          "overflow": false
+        }
+      ]
+    },
+    "dashboard_validation": {
+      "format": "Passed for all four changed dashboard files",
+      "browser_compilation": "Passed",
+      "repository_typecheck": "Blocked by existing repository TypeScript errors. The only diagnostic in the changed payment plan files is the pre-existing Loader JSX type incompatibility in EventPaymentPlan.tsx."
+    }
   }
 }

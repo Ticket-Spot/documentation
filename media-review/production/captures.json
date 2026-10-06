@@ -17571,12 +17571,12 @@
       "event-management/installment-payments.mdx"
     ],
     "title": "Equal split payment template",
-    "caption": "Choose Equal split, a payment count, and days after checkout.",
-    "alt": "Choose Equal split, a payment count, and days after checkout.",
+    "caption": "Split equally shows percentage shares with a rounding note, live event usage and numbered payments.",
+    "alt": "Equal installment plan editor with its split selector circled, usage notice and final rounding share.",
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "payment-plan-percentages": {
     "id": "payment-plan-percentages",
@@ -17594,7 +17594,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "event-payment-plan": {
     "id": "event-payment-plan",
@@ -17612,7 +17612,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after organizer UX feedback: installment terminology, approximate equal shares, PrimeReact Dialog footer, Lucide pencil edit actions, and event availability cutoff. Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   },
   "installment-pay-full-choice": {
     "id": "installment-pay-full-choice",
@@ -17631,5 +17631,59 @@
     "format": "PNG",
     "qa": "passed visual review",
     "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
+  },
+  "payment-plan-list": {
+    "id": "payment-plan-list",
+    "key": "payment-plan-list",
+    "asset": "assets/refresh/event-management/payment-plan-list.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Reusable installment plans",
+    "caption": "Plans show Name, Schedule, Used by and centered pencil edit actions.",
+    "alt": "Plans show Name, Schedule, Used by and centered pencil edit actions.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+  },
+  "payment-plan-date-validation": {
+    "id": "payment-plan-date-validation",
+    "key": "payment-plan-date-validation",
+    "asset": "assets/refresh/event-management/payment-plan-date-validation.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Installment date validation",
+    "caption": "A later payment must be after the preceding payment; the inline error disables Save.",
+    "alt": "A later payment must be after the preceding payment; the inline error disables Save.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+  },
+  "payment-plan-ticket-eligibility": {
+    "id": "payment-plan-ticket-eligibility",
+    "key": "payment-plan-ticket-eligibility",
+    "asset": "assets/refresh/event-management/payment-plan-ticket-eligibility.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Installment ticket eligibility",
+    "caption": "Eligible paid tickets are selectable; free tickets appear disabled with an exclusion reason.",
+    "alt": "Eligible paid tickets are selectable; free tickets appear disabled with an exclusion reason.",
+    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
   }
 }
