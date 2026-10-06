@@ -4,7 +4,7 @@ sidebarTitle: "Installment payments"
 description: "Offer event ticket payment plans with a deposit and Stripe installments. Configure automatic payments, track paid installments, and resolve failed charges."
 ---
 
-Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. They require **Business or higher**, a connected Stripe account, and Stripe card checkout.
+Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. Installment plans with manual collection require **Business or higher**, a connected Stripe account, and Stripe card checkout. **Business Plus and Platform** also include automatic collection and configurable retry days.
 
 ## Create a payment schedule
 
@@ -25,7 +25,19 @@ Save the ticket and event. Preview the public checkout, select the ticket, and v
 </Step>
 </Steps>
 
-<Note>New bookings authorize automatic saved-card collection on or after the accepted due dates. Collection runs every ten minutes. **Charge Now** remains available for a due payment. Older bookings that accepted a manual collection agreement remain manual.</Note>
+## Choose manual or automatic collection
+
+Open **Payment Settings → Installment collection**. On Business, later payments use **Manual collection**. On Business Plus or Platform, **Automatic collection** is the default for new bookings; you can choose manual collection instead. Select **Save collection settings**.
+
+<Frame caption="Payment Settings: choose automatic collection and optional retries after 3 and 7 days on Business Plus or Platform.">
+  <img src="../assets/refresh/event-management/installment-collection-settings.png" alt="Payment Settings with automatic collection and the two retry-day controls circled" />
+</Frame>
+
+Automatic collection checks due payments every ten minutes and charges the saved Stripe card on or after the accepted due date. **Charge Now** remains available as a manual override. Choose the due days on each ticket—for example, 14 and 30 days after purchase. The ten-minute check interval is fixed.
+
+Optional retry settings allow **No automatic retries**, **One retry**, or **Two retries**. Set increasing whole days between 1 and 30, measured from the first failed attempt; for example, days 3 and 7. Retries apply only to temporary processing errors. Authentication requests, expired cards, insufficient funds and other card declines pause for attendee attention. Each retry uses the same installment amount and payment record.
+
+<Note>Settings apply to new bookings. Existing bookings keep the collection mode, due dates, amounts and retry policy accepted at checkout. Switching plans or editing these settings does not create a new authorization for existing attendees.</Note>
 
 For [date-specific tickets](/event-management/day-specific-tickets), the custom date ticket's **Advanced** controls apply to that date's own tickets. Use **Save changes** in the date drawer to save edits.
 
@@ -35,7 +47,7 @@ For [date-specific tickets](/event-management/day-specific-tickets), the custom 
 
 ## What the attendee sees at checkout
 
-The attendee reviews the total price, deposit due today, future amounts and due dates, then accepts the agreement to save their card and automatically collect later installments on or after those dates. They pay the deposit using Stripe card checkout. The order confirmation can show that tickets are pending while a balance remains.
+The attendee reviews the total price, deposit due today, future amounts and due dates, then accepts the agreement to save their card and collect later installments under the displayed manual or automatic policy. When automatic retries are enabled, the agreement also shows their days and maximum number. They pay the deposit using Stripe card checkout. The order confirmation can show that tickets are pending while a balance remains.
 
 <Note>The following screenshots show a Stripe test event with a \$30 ticket paid in three \$10 installments. The names and booking details are synthetic.</Note>
 
@@ -149,8 +161,10 @@ When the whole order is fully paid and eligible for admission, the attendee rece
 
 After the payments in a collection period finish, the organizer receives one **Installment Summary** for that event and currency. It reports payments collected, the amount collected, fully paid plans, failed payments, and known attendee email errors. These notifications use the same recipients and preferences as **New Registration**. A failed payment is not included in collected funds.
 
-<Frame caption="The organizer summary identifies a declined payment and reports $0 collected for that failed attempt.">
-  <img src="../assets/refresh/event-management/installment-organizer-summary.png" alt="Installment Summary email showing one payment needing attention and zero funds collected" />
+The summary shows successful charges and their total, failed payments, fully paid plans, and the number and value of installments still unpaid across bookings in that collection period. **Open attendee dashboard** links directly to the event and site. Retry results appear in their own collection period. A previously reported failure is not counted as another collected payment when a retry succeeds.
+
+<Frame caption="The organizer summary shows one $10 charge collected, one declined payment, and two installments still unpaid.">
+  <img src="../assets/refresh/event-management/installment-organizer-summary.png" alt="Installment Summary email showing successful and failed charges, two unpaid installments, and the attendee dashboard link" />
 </Frame>
 
 ## Changes, refunds, and admission

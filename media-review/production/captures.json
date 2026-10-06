@@ -29,8 +29,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Brand logo and shared colors",
-    "caption": "Design → Brand contains the logo upload, shared brand colors, and a live preview.",
-    "alt": "Design → Brand contains the logo upload, shared brand colors, and a live preview.",
+    "caption": "Design \u2192 Brand contains the logo upload, shared brand colors, and a live preview.",
+    "alt": "Design \u2192 Brand contains the logo upload, shared brand colors, and a live preview.",
     "source": "Approved fresh first-page capture; shared without regenerating",
     "format": "PNG",
     "qa": "approved first-page capture",
@@ -97,8 +97,8 @@
       "site-settings/mobile-check-in.mdx"
     ],
     "title": "Site-level check-in controls",
-    "caption": "Settings → Mobile Check-in controls whether a scan checks in an entire order or one attendee.",
-    "alt": "Settings → Mobile Check-in controls whether a scan checks in an entire order or one attendee.",
+    "caption": "Settings \u2192 Mobile Check-in controls whether a scan checks in an entire order or one attendee.",
+    "alt": "Settings \u2192 Mobile Check-in controls whether a scan checks in an entire order or one attendee.",
     "source": "Approved fresh first-page capture; shared without regenerating",
     "format": "PNG",
     "qa": "approved first-page capture",
@@ -145,8 +145,8 @@
       "attendee-management/viewing-attendee-details.mdx"
     ],
     "title": "Attendee list and filters",
-    "caption": "Open an event’s attendee dashboard to search, filter, add, or export attendees. Identity is concealed in this example.",
-    "alt": "Open an event’s attendee dashboard to search, filter, add, or export attendees. Identity is concealed in this example.",
+    "caption": "Open an event\u2019s attendee dashboard to search, filter, add, or export attendees. Identity is concealed in this example.",
+    "alt": "Open an event\u2019s attendee dashboard to search, filter, add, or export attendees. Identity is concealed in this example.",
     "source": "Approved fresh first-page capture; shared without regenerating",
     "format": "PNG",
     "qa": "approved first-page capture",
@@ -162,8 +162,8 @@
       "branding-and-design/quick-settings.mdx"
     ],
     "title": "Quick Settings panel with numbered circles",
-    "caption": "Design → Widget starts with Quick Settings beside the live event preview.",
-    "alt": "Design → Widget starts with Quick Settings beside the live event preview.",
+    "caption": "Design \u2192 Widget starts with Quick Settings beside the live event preview.",
+    "alt": "Design \u2192 Widget starts with Quick Settings beside the live event preview.",
     "source": "Approved fresh first-page capture; shared without regenerating",
     "format": "PNG",
     "qa": "approved first-page capture",
@@ -182,14 +182,14 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Ticket Spot branding visibility",
-    "caption": "Design → Brand includes Remove Ticket Spot Branding and shortcuts to custom domains and email sender identity.",
-    "alt": "Design → Brand includes Remove Ticket Spot Branding and shortcuts to custom domains and email sender identity.",
+    "caption": "Design \u2192 Brand includes Remove Ticket Spot Branding and shortcuts to custom domains and email sender identity.",
+    "alt": "Design \u2192 Brand includes Remove Ticket Spot Branding and shortcuts to custom domains and email sender identity.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:03:38.075Z",
     "route": "#/events/design/brand",
     "callouts": [
       "Remove Ticket Spot Branding",
-      "Set up email sender →"
+      "Set up email sender \u2192"
     ],
     "clip": {
       "x": 314,
@@ -213,8 +213,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Site header image and text",
-    "caption": "Design → Site lets you upload a 4:1 header image and set the headline and subtitle.",
-    "alt": "Design → Site lets you upload a 4:1 header image and set the headline and subtitle.",
+    "caption": "Design \u2192 Site lets you upload a 4:1 header image and set the headline and subtitle.",
+    "alt": "Design \u2192 Site lets you upload a 4:1 header image and set the headline and subtitle.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:21:09.371Z",
     "route": "#/events/design/site",
@@ -277,8 +277,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Event-page wording, dates and colors",
-    "caption": "Design → Event Page controls the ticket-button labels and whether ticket selection opens automatically.",
-    "alt": "Design → Event Page controls the ticket-button labels and whether ticket selection opens automatically.",
+    "caption": "Design \u2192 Event Page controls the ticket-button labels and whether ticket selection opens automatically.",
+    "alt": "Design \u2192 Event Page controls the ticket-button labels and whether ticket selection opens automatically.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:21:32.415Z",
     "route": "#/events/design/event",
@@ -341,8 +341,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Attendee ticket-page visibility settings",
-    "caption": "Design → Attendee Ticket Page configures attendee edits and the sections shown on the ticket page. Use the separate sample preview to inspect the result.",
-    "alt": "Design → Attendee Ticket Page configures attendee edits and the sections shown on the ticket page. Use the separate sample preview to inspect the result.",
+    "caption": "Design \u2192 Attendee Ticket Page configures attendee edits and the sections shown on the ticket page. Use the separate sample preview to inspect the result.",
+    "alt": "Design \u2192 Attendee Ticket Page configures attendee edits and the sections shown on the ticket page. Use the separate sample preview to inspect the result.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:15.803Z",
     "route": "#/events/design/attendee-ticket-page",
@@ -373,8 +373,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Basic PDF ticket design",
-    "caption": "Ticket PDF → Basic visibility settings include attendee name, QR code, and site logo. Review the ticket labels and colors below.",
-    "alt": "Ticket PDF → Basic visibility settings include attendee name, QR code, and site logo. Review the ticket labels and colors below.",
+    "caption": "Ticket PDF \u2192 Basic visibility settings include attendee name, QR code, and site logo. Review the ticket labels and colors below.",
+    "alt": "Ticket PDF \u2192 Basic visibility settings include attendee name, QR code, and site logo. Review the ticket labels and colors below.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:03:40.679Z",
     "route": "#/events/design/ticket",
@@ -440,8 +440,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Receipt labels and appearance",
-    "caption": "In Design → Tickets & Passes, choose Ticket Receipt PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
-    "alt": "In Design → Tickets & Passes, choose Ticket Receipt PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "caption": "In Design \u2192 Tickets & Passes, choose Ticket Receipt PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "alt": "In Design \u2192 Tickets & Passes, choose Ticket Receipt PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:22:52.590Z",
     "route": "#/events/design/ticket",
@@ -473,8 +473,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Membership PDF and download buttons",
-    "caption": "In Design → Tickets & Passes, choose Membership PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
-    "alt": "In Design → Tickets & Passes, choose Membership PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "caption": "In Design \u2192 Tickets & Passes, choose Membership PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "alt": "In Design \u2192 Tickets & Passes, choose Membership PDF to configure its labels, visibility, and appearance. This is the current configuration panel.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:22:54.173Z",
     "route": "#/events/design/ticket",
@@ -506,8 +506,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Apple Pass appearance",
-    "caption": "In Design → Tickets & Passes, choose Apple Pass to configure its labels, visibility, and appearance. This is the current configuration panel.",
-    "alt": "In Design → Tickets & Passes, choose Apple Pass to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "caption": "In Design \u2192 Tickets & Passes, choose Apple Pass to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "alt": "In Design \u2192 Tickets & Passes, choose Apple Pass to configure its labels, visibility, and appearance. This is the current configuration panel.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:22:55.680Z",
     "route": "#/events/design/ticket",
@@ -538,8 +538,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Star ticket settings and preview",
-    "caption": "In Design → Tickets & Passes, choose Star MC Print3 to configure its labels, visibility, and appearance. This is the current configuration panel.",
-    "alt": "In Design → Tickets & Passes, choose Star MC Print3 to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "caption": "In Design \u2192 Tickets & Passes, choose Star MC Print3 to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "alt": "In Design \u2192 Tickets & Passes, choose Star MC Print3 to configure its labels, visibility, and appearance. This is the current configuration panel.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:22:57.186Z",
     "route": "#/events/design/ticket",
@@ -570,8 +570,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Boca ticket settings and preview",
-    "caption": "In Design → Tickets & Passes, choose Boca Printer to configure its labels, visibility, and appearance. This is the current configuration panel.",
-    "alt": "In Design → Tickets & Passes, choose Boca Printer to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "caption": "In Design \u2192 Tickets & Passes, choose Boca Printer to configure its labels, visibility, and appearance. This is the current configuration panel.",
+    "alt": "In Design \u2192 Tickets & Passes, choose Boca Printer to configure its labels, visibility, and appearance. This is the current configuration panel.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:22:58.724Z",
     "route": "#/events/design/ticket",
@@ -634,8 +634,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Confirmation and receipt email design",
-    "caption": "Choose Ticket Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Ticket Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Ticket Confirmation in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Ticket Confirmation in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:40.273Z",
     "route": "#/events/design/communication/confirmation",
@@ -666,8 +666,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Reminder and post-event design",
-    "caption": "Choose Event Reminder in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Event Reminder in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Event Reminder in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Event Reminder in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:41.796Z",
     "route": "#/events/design/communication/reminder",
@@ -698,8 +698,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Announcement and non-attending templates",
-    "caption": "Choose Announcement in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Announcement in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Announcement in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Announcement in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:43.255Z",
     "route": "#/events/design/communication/announcement",
@@ -730,8 +730,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Pending, approved and declined templates",
-    "caption": "Choose Pending Approval in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Pending Approval in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Pending Approval in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Pending Approval in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:44.694Z",
     "route": "#/events/design/communication/pending-approval",
@@ -762,8 +762,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Pending installment and confirmation design",
-    "caption": "Select Pending Installment in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Pending Installment in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Pending Installment in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Pending Installment in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:19.747Z",
     "route": "#/events/design/communication/pending-installment",
@@ -793,8 +793,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Waitlist confirmation and release design",
-    "caption": "Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Waitlist Ticket Released in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Waitlist Ticket Released in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:47.613Z",
     "route": "#/events/design/communication/waitlist-ticket-released",
@@ -825,8 +825,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Checkout complete and pending-order design",
-    "caption": "Choose Checkout Complete in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Checkout Complete in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Checkout Complete in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Checkout Complete in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:49.128Z",
     "route": "#/events/design/communication/checkout-complete",
@@ -857,8 +857,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Shopify Thank You design",
-    "caption": "Choose Shopify Thank You Page in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Shopify Thank You Page in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Shopify Thank You Page in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Shopify Thank You Page in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:50.547Z",
     "route": "#/events/design/communication/shopify-thankyou",
@@ -888,8 +888,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Square POS confirmation design",
-    "caption": "Choose Square POS Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Square POS Confirmation in Design → Attendee Communication to customize this template’s wording and display settings.",
+    "caption": "Choose Square POS Confirmation in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Square POS Confirmation in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:23:51.981Z",
     "route": "#/events/design/communication/square-pos",
@@ -920,8 +920,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Kiosk idle, success, warning and error design",
-    "caption": "Select Self Check-In Kiosk in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Self Check-In Kiosk in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Self Check-In Kiosk in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Self Check-In Kiosk in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:21.744Z",
     "route": "#/events/design/communication/kiosk",
@@ -971,8 +971,8 @@
       "branding-and-design/widget-customization-overview.mdx"
     ],
     "title": "Design surfaces and widget entry",
-    "caption": "Open Design → Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search & filters, Checkout, and Text.",
-    "alt": "Open Design → Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search & filters, Checkout, and Text.",
+    "caption": "Open Design \u2192 Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search & filters, Checkout, and Text.",
+    "alt": "Open Design \u2192 Widget, then All Settings to browse Design, Display, Layout, Event Filters, Visitor search & filters, Checkout, and Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:40:03.370Z",
     "route": "#/events/design/widget",
@@ -1004,8 +1004,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Event details",
-    "caption": "All Settings → Display — Event details. The circles identify Show event title and Show event status.",
-    "alt": "All Settings → Display — Event details. The circles identify Show event title and Show event status.",
+    "caption": "All Settings \u2192 Display \u2014 Event details. The circles identify Show event title and Show event status.",
+    "alt": "All Settings \u2192 Display \u2014 Event details. The circles identify Show event title and Show event status.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:17.102Z",
     "route": "#/events/design/widget",
@@ -1037,8 +1037,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Event details",
-    "caption": "All Settings → Display — Event details. Continued controls. The circles identify Keep events visible until they end and Show venue name.",
-    "alt": "All Settings → Display — Event details. Continued controls. The circles identify Keep events visible until they end and Show venue name.",
+    "caption": "All Settings \u2192 Display \u2014 Event details. Continued controls. The circles identify Keep events visible until they end and Show venue name.",
+    "alt": "All Settings \u2192 Display \u2014 Event details. Continued controls. The circles identify Keep events visible until they end and Show venue name.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:18.207Z",
     "route": "#/events/design/widget",
@@ -1069,8 +1069,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Event details",
-    "caption": "All Settings → Display — Event details. Continued controls. The circles identify Show full address and Show 'online event' label.",
-    "alt": "All Settings → Display — Event details. Continued controls. The circles identify Show full address and Show 'online event' label.",
+    "caption": "All Settings \u2192 Display \u2014 Event details. Continued controls. The circles identify Show full address and Show 'online event' label.",
+    "alt": "All Settings \u2192 Display \u2014 Event details. Continued controls. The circles identify Show full address and Show 'online event' label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:19.297Z",
     "route": "#/events/design/widget",
@@ -1101,8 +1101,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Date & time",
-    "caption": "All Settings → Display — Date & time. The circles identify Show start date and Show end date.",
-    "alt": "All Settings → Display — Date & time. The circles identify Show start date and Show end date.",
+    "caption": "All Settings \u2192 Display \u2014 Date & time. The circles identify Show start date and Show end date.",
+    "alt": "All Settings \u2192 Display \u2014 Date & time. The circles identify Show start date and Show end date.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:20.624Z",
     "route": "#/events/design/widget",
@@ -1134,8 +1134,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Date & time",
-    "caption": "All Settings → Display — Date & time. Continued controls. The circles identify Date format and Show start time.",
-    "alt": "All Settings → Display — Date & time. Continued controls. The circles identify Date format and Show start time.",
+    "caption": "All Settings \u2192 Display \u2014 Date & time. Continued controls. The circles identify Date format and Show start time.",
+    "alt": "All Settings \u2192 Display \u2014 Date & time. Continued controls. The circles identify Date format and Show start time.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:21.696Z",
     "route": "#/events/design/widget",
@@ -1166,8 +1166,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Images",
-    "caption": "All Settings → Display — Images. The circles identify Show event image and Image size.",
-    "alt": "All Settings → Display — Images. The circles identify Show event image and Image size.",
+    "caption": "All Settings \u2192 Display \u2014 Images. The circles identify Show event image and Image size.",
+    "alt": "All Settings \u2192 Display \u2014 Images. The circles identify Show event image and Image size.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:22.986Z",
     "route": "#/events/design/widget",
@@ -1198,8 +1198,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Header & actions",
-    "caption": "All Settings → Display — Header & actions. The circles identify Show widget header and Show attend button.",
-    "alt": "All Settings → Display — Header & actions. The circles identify Show widget header and Show attend button.",
+    "caption": "All Settings \u2192 Display \u2014 Header & actions. The circles identify Show widget header and Show attend button.",
+    "alt": "All Settings \u2192 Display \u2014 Header & actions. The circles identify Show widget header and Show attend button.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:24.363Z",
     "route": "#/events/design/widget",
@@ -1230,8 +1230,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Event description",
-    "caption": "All Settings → Display — Event description. The circles identify Display Full Description and Show summary.",
-    "alt": "All Settings → Display — Event description. The circles identify Display Full Description and Show summary.",
+    "caption": "All Settings \u2192 Display \u2014 Event description. The circles identify Display Full Description and Show summary.",
+    "alt": "All Settings \u2192 Display \u2014 Event description. The circles identify Display Full Description and Show summary.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:25.673Z",
     "route": "#/events/design/widget",
@@ -1262,8 +1262,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Event count & pagination",
-    "caption": "All Settings → Display — Event count & pagination. The circles identify Show all available events and Maximum events to display.",
-    "alt": "All Settings → Display — Event count & pagination. The circles identify Show all available events and Maximum events to display.",
+    "caption": "All Settings \u2192 Display \u2014 Event count & pagination. The circles identify Show all available events and Maximum events to display.",
+    "alt": "All Settings \u2192 Display \u2014 Event count & pagination. The circles identify Show all available events and Maximum events to display.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:26.997Z",
     "route": "#/events/design/widget",
@@ -1294,8 +1294,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Recurring events",
-    "caption": "All Settings → Display — Recurring events. The circles identify Show every occurrence of a recurring event and Enable Date Grouping.",
-    "alt": "All Settings → Display — Recurring events. The circles identify Show every occurrence of a recurring event and Enable Date Grouping.",
+    "caption": "All Settings \u2192 Display \u2014 Recurring events. The circles identify Show every occurrence of a recurring event and Enable Date Grouping.",
+    "alt": "All Settings \u2192 Display \u2014 Recurring events. The circles identify Show every occurrence of a recurring event and Enable Date Grouping.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:28.308Z",
     "route": "#/events/design/widget",
@@ -1326,8 +1326,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Hosts & attendees",
-    "caption": "All Settings → Display — Hosts & attendees. The circles identify Show Hosted By Section and Hide Hosts Avatar.",
-    "alt": "All Settings → Display — Hosts & attendees. The circles identify Show Hosted By Section and Hide Hosts Avatar.",
+    "caption": "All Settings \u2192 Display \u2014 Hosts & attendees. The circles identify Show Hosted By Section and Hide Hosts Avatar.",
+    "alt": "All Settings \u2192 Display \u2014 Hosts & attendees. The circles identify Show Hosted By Section and Hide Hosts Avatar.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:29.588Z",
     "route": "#/events/design/widget",
@@ -1358,8 +1358,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Visitor engagement",
-    "caption": "All Settings → Display — Visitor engagement. The circles identify Embed Third-Party Checkout and Display 'Add to Calendar'.",
-    "alt": "All Settings → Display — Visitor engagement. The circles identify Embed Third-Party Checkout and Display 'Add to Calendar'.",
+    "caption": "All Settings \u2192 Display \u2014 Visitor engagement. The circles identify Embed Third-Party Checkout and Display 'Add to Calendar'.",
+    "alt": "All Settings \u2192 Display \u2014 Visitor engagement. The circles identify Embed Third-Party Checkout and Display 'Add to Calendar'.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:30.879Z",
     "route": "#/events/design/widget",
@@ -1390,8 +1390,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Submit event request",
-    "caption": "All Settings → Display — Submit event request. The circles identify Show Submit Event Button and Submit Event Label.",
-    "alt": "All Settings → Display — Submit event request. The circles identify Show Submit Event Button and Submit Event Label.",
+    "caption": "All Settings \u2192 Display \u2014 Submit event request. The circles identify Show Submit Event Button and Submit Event Label.",
+    "alt": "All Settings \u2192 Display \u2014 Submit event request. The circles identify Show Submit Event Button and Submit Event Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:32.163Z",
     "route": "#/events/design/widget",
@@ -1422,8 +1422,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Workshops & add-ons",
-    "caption": "All Settings → Display — Workshops & add-ons. The circles identify Show Add-on Selection Subtitle and Show Maximum Reached Message.",
-    "alt": "All Settings → Display — Workshops & add-ons. The circles identify Show Add-on Selection Subtitle and Show Maximum Reached Message.",
+    "caption": "All Settings \u2192 Display \u2014 Workshops & add-ons. The circles identify Show Add-on Selection Subtitle and Show Maximum Reached Message.",
+    "alt": "All Settings \u2192 Display \u2014 Workshops & add-ons. The circles identify Show Add-on Selection Subtitle and Show Maximum Reached Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:33.435Z",
     "route": "#/events/design/widget",
@@ -1454,8 +1454,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Memberships",
-    "caption": "All Settings → Display — Memberships. The circles identify Show Membership Selection Subtitle and Show Membership Image.",
-    "alt": "All Settings → Display — Memberships. The circles identify Show Membership Selection Subtitle and Show Membership Image.",
+    "caption": "All Settings \u2192 Display \u2014 Memberships. The circles identify Show Membership Selection Subtitle and Show Membership Image.",
+    "alt": "All Settings \u2192 Display \u2014 Memberships. The circles identify Show Membership Selection Subtitle and Show Membership Image.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:34.750Z",
     "route": "#/events/design/widget",
@@ -1486,8 +1486,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Checkout & payment",
-    "caption": "All Settings → Display — Checkout & payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times.",
-    "alt": "All Settings → Display — Checkout & payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times.",
+    "caption": "All Settings \u2192 Display \u2014 Checkout & payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times.",
+    "alt": "All Settings \u2192 Display \u2014 Checkout & payment. The circles identify Choose tickets before choosing a date and Show tickets on the same step as dates and times.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:36.049Z",
     "route": "#/events/design/widget",
@@ -1519,8 +1519,8 @@
       "branding-and-design/widget-display-reference.mdx"
     ],
     "title": "Display: Checkout & payment",
-    "caption": "All Settings → Display — Checkout & payment. Continued controls. The circles identify Show payment count and Show installment descriptions.",
-    "alt": "All Settings → Display — Checkout & payment. Continued controls. The circles identify Show payment count and Show installment descriptions.",
+    "caption": "All Settings \u2192 Display \u2014 Checkout & payment. Continued controls. The circles identify Show payment count and Show installment descriptions.",
+    "alt": "All Settings \u2192 Display \u2014 Checkout & payment. Continued controls. The circles identify Show payment count and Show installment descriptions.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:41:37.072Z",
     "route": "#/events/design/widget",
@@ -1550,8 +1550,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Shopify product page",
-    "caption": "All Settings → Text — Shopify product page. The circles identify Ticket Variant Label and Date Variant Label.",
-    "alt": "All Settings → Text — Shopify product page. The circles identify Ticket Variant Label and Date Variant Label.",
+    "caption": "All Settings \u2192 Text \u2014 Shopify product page. The circles identify Ticket Variant Label and Date Variant Label.",
+    "alt": "All Settings \u2192 Text \u2014 Shopify product page. The circles identify Ticket Variant Label and Date Variant Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:09.107Z",
     "route": "#/events/design/widget",
@@ -1581,8 +1581,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Widget",
-    "caption": "All Settings → Text — Widget. The circles identify Main Header and No Events Message.",
-    "alt": "All Settings → Text — Widget. The circles identify Main Header and No Events Message.",
+    "caption": "All Settings \u2192 Text \u2014 Widget. The circles identify Main Header and No Events Message.",
+    "alt": "All Settings \u2192 Text \u2014 Widget. The circles identify Main Header and No Events Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:10.414Z",
     "route": "#/events/design/widget",
@@ -1612,8 +1612,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Event details",
-    "caption": "All Settings → Text — Event details. The circles identify Automatic translation and Automatic search filter translation.",
-    "alt": "All Settings → Text — Event details. The circles identify Automatic translation and Automatic search filter translation.",
+    "caption": "All Settings \u2192 Text \u2014 Event details. The circles identify Automatic translation and Automatic search filter translation.",
+    "alt": "All Settings \u2192 Text \u2014 Event details. The circles identify Automatic translation and Automatic search filter translation.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:11.783Z",
     "route": "#/events/design/widget",
@@ -1644,8 +1644,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Event details",
-    "caption": "All Settings → Text — Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text.",
-    "alt": "All Settings → Text — Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text.",
+    "caption": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text.",
+    "alt": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Attend button text and Select Dates Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:12.911Z",
     "route": "#/events/design/widget",
@@ -1675,8 +1675,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Event details",
-    "caption": "All Settings → Text — Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text.",
-    "alt": "All Settings → Text — Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text.",
+    "caption": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text.",
+    "alt": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify On Sale Text and Not on Sale Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:14.029Z",
     "route": "#/events/design/widget",
@@ -1706,8 +1706,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Event details",
-    "caption": "All Settings → Text — Event details. Continued controls. The circles identify Sold Out Text and Canceled Text.",
-    "alt": "All Settings → Text — Event details. Continued controls. The circles identify Sold Out Text and Canceled Text.",
+    "caption": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Sold Out Text and Canceled Text.",
+    "alt": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Sold Out Text and Canceled Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:15.137Z",
     "route": "#/events/design/widget",
@@ -1737,8 +1737,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Event details",
-    "caption": "All Settings → Text — Event details. Continued controls. The circles identify Canceled Text and Show Details Text.",
-    "alt": "All Settings → Text — Event details. Continued controls. The circles identify Canceled Text and Show Details Text.",
+    "caption": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Canceled Text and Show Details Text.",
+    "alt": "All Settings \u2192 Text \u2014 Event details. Continued controls. The circles identify Canceled Text and Show Details Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:16.239Z",
     "route": "#/events/design/widget",
@@ -1768,8 +1768,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Search filters",
-    "caption": "All Settings → Text — Search filters. The circles identify Search Placeholder and Language Filter Placeholder.",
-    "alt": "All Settings → Text — Search filters. The circles identify Search Placeholder and Language Filter Placeholder.",
+    "caption": "All Settings \u2192 Text \u2014 Search filters. The circles identify Search Placeholder and Language Filter Placeholder.",
+    "alt": "All Settings \u2192 Text \u2014 Search filters. The circles identify Search Placeholder and Language Filter Placeholder.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:17.589Z",
     "route": "#/events/design/widget",
@@ -1799,8 +1799,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Search filters",
-    "caption": "All Settings → Text — Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder.",
-    "alt": "All Settings → Text — Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder.",
+    "caption": "All Settings \u2192 Text \u2014 Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder.",
+    "alt": "All Settings \u2192 Text \u2014 Search filters. Continued controls. The circles identify Venue Filter Placeholder and City Filter Placeholder.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:18.654Z",
     "route": "#/events/design/widget",
@@ -1830,8 +1830,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Fast checkout",
-    "caption": "All Settings → Text — Checkout: Fast checkout. The circles identify Session logout text and Welcome text.",
-    "alt": "All Settings → Text — Checkout: Fast checkout. The circles identify Session logout text and Welcome text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Fast checkout. The circles identify Session logout text and Welcome text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Fast checkout. The circles identify Session logout text and Welcome text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:19.953Z",
     "route": "#/events/design/widget",
@@ -1861,8 +1861,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Fast checkout",
-    "caption": "All Settings → Text — Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text.",
-    "alt": "All Settings → Text — Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Fast checkout. Continued controls. The circles identify Card selection text and Email verification text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:20.962Z",
     "route": "#/events/design/widget",
@@ -1892,8 +1892,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: General",
-    "caption": "All Settings → Text — Checkout: General. The circles identify Form Pre Text and Continue Button Text.",
-    "alt": "All Settings → Text — Checkout: General. The circles identify Form Pre Text and Continue Button Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: General. The circles identify Form Pre Text and Continue Button Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: General. The circles identify Form Pre Text and Continue Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:22.280Z",
     "route": "#/events/design/widget",
@@ -1923,8 +1923,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: General",
-    "caption": "All Settings → Text — Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text.",
-    "alt": "All Settings → Text — Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: General. Continued controls. The circles identify Next Button Text and Back Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:23.499Z",
     "route": "#/events/design/widget",
@@ -1954,8 +1954,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: General",
-    "caption": "All Settings → Text — Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text.",
-    "alt": "All Settings → Text — Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: General. Continued controls. The circles identify Back Button Text and Multi Session Header Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:24.613Z",
     "route": "#/events/design/widget",
@@ -1985,8 +1985,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Date & time selection",
-    "caption": "All Settings → Text — Checkout: Date & time selection. The circles identify Availability Text and Unavailable Text.",
-    "alt": "All Settings → Text — Checkout: Date & time selection. The circles identify Availability Text and Unavailable Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Date & time selection. The circles identify Availability Text and Unavailable Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Date & time selection. The circles identify Availability Text and Unavailable Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:25.938Z",
     "route": "#/events/design/widget",
@@ -2016,8 +2016,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Date & time selection",
-    "caption": "All Settings → Text — Checkout: Date & time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label.",
-    "alt": "All Settings → Text — Checkout: Date & time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Date & time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Date & time selection. Continued controls. The circles identify Morning Time Slot Label and Afternoon Time Slot Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:26.989Z",
     "route": "#/events/design/widget",
@@ -2047,8 +2047,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. The circles identify Added to Cart! and Back to Events.",
-    "alt": "All Settings → Cart — Checkout: Cart. The circles identify Added to Cart! and Back to Events.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. The circles identify Added to Cart! and Back to Events.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. The circles identify Added to Cart! and Back to Events.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:02.336Z",
     "route": "#/events/design/widget",
@@ -2077,8 +2077,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Go to Payment and Continue.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:03.750Z",
     "route": "#/events/design/widget",
@@ -2107,8 +2107,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Continue to Payment and Total.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:04.932Z",
     "route": "#/events/design/widget",
@@ -2137,8 +2137,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Back to cart and Required ticket hint.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:06.165Z",
     "route": "#/events/design/widget",
@@ -2167,8 +2167,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Required ticket instruction (multiple) and Existing selection requirement warning.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:07.409Z",
     "route": "#/events/design/widget",
@@ -2197,8 +2197,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Required ticket highlight badge and Add ticket accessibility label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:08.571Z",
     "route": "#/events/design/widget",
@@ -2227,8 +2227,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Attendee information",
-    "caption": "All Settings → Text — Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label.",
-    "alt": "All Settings → Text — Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Attendee information. The circles identify Attendee First Name Label and Attendee Last Name Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:36.117Z",
     "route": "#/events/design/widget",
@@ -2259,8 +2259,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Attendee information",
-    "caption": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label.",
-    "alt": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Email Label and Confirm Email Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:37.211Z",
     "route": "#/events/design/widget",
@@ -2290,8 +2290,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Attendee information",
-    "caption": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading.",
-    "alt": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Label and Attendee Details Heading.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:38.327Z",
     "route": "#/events/design/widget",
@@ -2321,8 +2321,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Attendee information",
-    "caption": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning.",
-    "alt": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Add Attendee Details Prompt and Attendee Needs Details Warning.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:39.456Z",
     "route": "#/events/design/widget",
@@ -2352,8 +2352,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Attendee information",
-    "caption": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text.",
-    "alt": "All Settings → Text — Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Attendee information. Continued controls. The circles identify Attendee Edit Link Text and Next Attendee Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:40.582Z",
     "route": "#/events/design/widget",
@@ -2383,8 +2383,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Add-ons",
-    "caption": "All Settings → Text — Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format.",
-    "alt": "All Settings → Text — Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Add-ons. The circles identify Add-ons Header Text and Required Add-ons Subtitle Format.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:41.969Z",
     "route": "#/events/design/widget",
@@ -2414,8 +2414,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Add-ons",
-    "caption": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format.",
-    "alt": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Optional Add-ons Subtitle Format and Maximum Reached Message Format.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:43.063Z",
     "route": "#/events/design/widget",
@@ -2445,8 +2445,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Add-ons",
-    "caption": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message.",
-    "alt": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Add-on Availability and Minimum Add-ons Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:44.140Z",
     "route": "#/events/design/widget",
@@ -2476,8 +2476,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Add-ons",
-    "caption": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label.",
-    "alt": "All Settings → Text — Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Add-ons. Continued controls. The circles identify Overlapping Add-on Message and Add-on Quantity Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:45.197Z",
     "route": "#/events/design/widget",
@@ -2507,8 +2507,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. The circles identify Member Prompt and Verification Instructions.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. The circles identify Member Prompt and Verification Instructions.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. The circles identify Member Prompt and Verification Instructions.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. The circles identify Member Prompt and Verification Instructions.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:12.462Z",
     "route": "#/events/design/widget",
@@ -2537,8 +2537,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Member Number Label and Member Number Placeholder.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:13.718Z",
     "route": "#/events/design/widget",
@@ -2567,8 +2567,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Verified Member Number and Change Membership Button.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:15.010Z",
     "route": "#/events/design/widget",
@@ -2597,8 +2597,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Eligible Ticket Label and Verification Required Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:16.261Z",
     "route": "#/events/design/widget",
@@ -2627,8 +2627,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Standard Price Message and Standard Price After Benefit Used.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:17.537Z",
     "route": "#/events/design/widget",
@@ -2657,8 +2657,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Verification Failed Message and No Eligible Tickets Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:18.771Z",
     "route": "#/events/design/widget",
@@ -2687,8 +2687,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Seating",
-    "caption": "All Settings → Text — Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message.",
-    "alt": "All Settings → Text — Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Seating. The circles identify Seating Unavailable Heading and Seating Unavailable Message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:54.315Z",
     "route": "#/events/design/widget",
@@ -2718,8 +2718,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Section labels",
-    "caption": "All Settings → Text — Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label.",
-    "alt": "All Settings → Text — Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Section labels. The circles identify Tickets Section Label and Add-ons Section Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:55.648Z",
     "route": "#/events/design/widget",
@@ -2749,8 +2749,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Section labels",
-    "caption": "All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label.",
-    "alt": "All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Section labels. Continued controls. The circles identify Memberships Section Label and Date/Time Section Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:56.705Z",
     "route": "#/events/design/widget",
@@ -2780,8 +2780,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Section labels",
-    "caption": "All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label.",
-    "alt": "All Settings → Text — Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Section labels. Continued controls. The circles identify Times Section Label and Dates Section Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:57.778Z",
     "route": "#/events/design/widget",
@@ -2811,8 +2811,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Payment information",
-    "caption": "All Settings → Text — Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text.",
-    "alt": "All Settings → Text — Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Payment information. The circles identify Card Number Text and Card Expiry Date Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:42:59.132Z",
     "route": "#/events/design/widget",
@@ -2842,8 +2842,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Payment information",
-    "caption": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title.",
-    "alt": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Card Security Code Text and Payment Plan Title.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:43:00.239Z",
     "route": "#/events/design/widget",
@@ -2873,8 +2873,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Payment information",
-    "caption": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label.",
-    "alt": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Payment Count Text and Due Today Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:43:01.346Z",
     "route": "#/events/design/widget",
@@ -2904,8 +2904,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Payment information",
-    "caption": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label.",
-    "alt": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Additional Consent Message and Pay in Full Label.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:43:02.447Z",
     "route": "#/events/design/widget",
@@ -2935,8 +2935,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Payment information",
-    "caption": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description.",
-    "alt": "All Settings → Text — Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Payment information. Continued controls. The circles identify Pay in Full Description and Installment Description.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:43:03.564Z",
     "route": "#/events/design/widget",
@@ -2966,8 +2966,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Promotional messages",
-    "caption": "All Settings → Text — Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder.",
-    "alt": "All Settings → Text — Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder.",
+    "caption": "All Settings \u2192 Text \u2014 Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder.",
+    "alt": "All Settings \u2192 Text \u2014 Checkout: Promotional messages. The circles identify Promo Code Label and Promo Code Placeholder.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:43:04.906Z",
     "route": "#/events/design/widget",
@@ -2998,8 +2998,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Attendee details and email confirmation",
-    "caption": "All Settings → Attendee information — Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email.",
-    "alt": "All Settings → Attendee information — Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email.",
+    "caption": "All Settings \u2192 Attendee information \u2014 Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email.",
+    "alt": "All Settings \u2192 Attendee information \u2014 Attendee details and email confirmation. The circles identify Collect attendee details for each ticket and Ask buyers to re-enter their email.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:45:22.769Z",
     "route": "#/events/design/widget",
@@ -3031,8 +3031,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Promo and access-code fields",
-    "caption": "All Settings → Promo & access codes — Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically.",
-    "alt": "All Settings → Promo & access codes — Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically.",
+    "caption": "All Settings \u2192 Promo & access codes \u2014 Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically.",
+    "alt": "All Settings \u2192 Promo & access codes \u2014 Promo and access-code fields. The circles identify Show promo code field and Open the promo code field automatically.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:45:24.063Z",
     "route": "#/events/design/widget",
@@ -3064,8 +3064,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Checkout dates, availability and price summary",
-    "caption": "All Settings → Cart & pricing — Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary.",
-    "alt": "All Settings → Cart & pricing — Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary.",
+    "caption": "All Settings \u2192 Cart & pricing \u2014 Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary.",
+    "alt": "All Settings \u2192 Cart & pricing \u2014 Checkout dates, availability and price summary. The circles identify Show how many tickets are left and Hide the cart summary.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:45:25.378Z",
     "route": "#/events/design/widget",
@@ -3097,8 +3097,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Checkout dates, availability and price summary",
-    "caption": "All Settings → Date & time — Checkout dates, availability and price summary. The circles identify Date Display and Time Display.",
-    "alt": "All Settings → Date & time — Checkout dates, availability and price summary. The circles identify Date Display and Time Display.",
+    "caption": "All Settings \u2192 Date & time \u2014 Checkout dates, availability and price summary. The circles identify Date Display and Time Display.",
+    "alt": "All Settings \u2192 Date & time \u2014 Checkout dates, availability and price summary. The circles identify Date Display and Time Display.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:45:26.715Z",
     "route": "#/events/design/widget",
@@ -3129,8 +3129,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Checkout dates, availability and price summary",
-    "caption": "All Settings → Date & time — Checkout dates, availability and price summary. Continued controls. The circles identify Show Start Date and Show Start Time.",
-    "alt": "All Settings → Date & time — Checkout dates, availability and price summary. Continued controls. The circles identify Show Start Date and Show Start Time.",
+    "caption": "All Settings \u2192 Date & time \u2014 Checkout dates, availability and price summary. Continued controls. The circles identify Show Start Date and Show Start Time.",
+    "alt": "All Settings \u2192 Date & time \u2014 Checkout dates, availability and price summary. Continued controls. The circles identify Show Start Date and Show Start Time.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:45:27.769Z",
     "route": "#/events/design/widget",
@@ -3162,8 +3162,8 @@
       "branding-and-design/quick-settings.mdx"
     ],
     "title": "Automatic widget translation in Quick Settings",
-    "caption": "In Design → Widget → Quick Settings, Automatic translation enables supported translated labels in the widget and checkout.",
-    "alt": "In Design → Widget → Quick Settings, Automatic translation enables supported translated labels in the widget and checkout.",
+    "caption": "In Design \u2192 Widget \u2192 Quick Settings, Automatic translation enables supported translated labels in the widget and checkout.",
+    "alt": "In Design \u2192 Widget \u2192 Quick Settings, Automatic translation enables supported translated labels in the widget and checkout.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:46:23.474Z",
     "route": "#/events/design/widget",
@@ -3194,8 +3194,8 @@
       "branding-and-design/quick-settings.mdx"
     ],
     "title": "Preview the widget in another language",
-    "caption": "Preview Language is set to Spanish. The supplied heading, date wording, and Buy Tickets button are translated; the event’s authored title and description remain unchanged.",
-    "alt": "Preview Language is set to Spanish. The supplied heading, date wording, and Buy Tickets button are translated; the event’s authored title and description remain unchanged.",
+    "caption": "Preview Language is set to Spanish. The supplied heading, date wording, and Buy Tickets button are translated; the event\u2019s authored title and description remain unchanged.",
+    "alt": "Preview Language is set to Spanish. The supplied heading, date wording, and Buy Tickets button are translated; the event\u2019s authored title and description remain unchanged.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:47:17.818Z",
     "route": "#/events/design/widget",
@@ -3307,7 +3307,7 @@
     "route": "#/events/design/communication/confirmation",
     "callouts": [
       "Gestionar tickets",
-      "Su pedido está confirmado"
+      "Su pedido est\u00e1 confirmado"
     ],
     "clip": {
       "x": 835,
@@ -3334,8 +3334,8 @@
       "getting-started/language-and-locale-faq.mdx"
     ],
     "title": "Edit a second language",
-    "caption": "Choose Editing language to review that language’s supplied labels and saved overrides. Layout and delivery settings stay shared.",
-    "alt": "Choose Editing language to review that language’s supplied labels and saved overrides. Layout and delivery settings stay shared.",
+    "caption": "Choose Editing language to review that language\u2019s supplied labels and saved overrides. Layout and delivery settings stay shared.",
+    "alt": "Choose Editing language to review that language\u2019s supplied labels and saved overrides. Layout and delivery settings stay shared.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T21:56:00.115Z",
     "route": "#/events/design/communication/confirmation",
@@ -3432,8 +3432,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Communication categories and template selection",
-    "caption": "Select Post Event in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Post Event in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Post Event in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Post Event in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:24.329Z",
     "route": "#/events/design/communication/post",
@@ -3463,8 +3463,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Pending, approved and declined templates",
-    "caption": "Select Approval Declined in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Approval Declined in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Approval Declined in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Approval Declined in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:26.914Z",
     "route": "#/events/design/communication/approval-declined",
@@ -3494,8 +3494,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Pending, approved and declined templates",
-    "caption": "Select Approval Confirmed in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Approval Confirmed in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Approval Confirmed in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Approval Confirmed in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:29.506Z",
     "route": "#/events/design/communication/approval-confirmed",
@@ -3525,8 +3525,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Waitlist confirmation and release design",
-    "caption": "Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Waitlist Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Waitlist Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:32.084Z",
     "route": "#/events/design/communication/waitlist-confirmed",
@@ -3557,8 +3557,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Communication categories and template selection",
-    "caption": "Select Not Attending in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Not Attending in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Not Attending in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Not Attending in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:34.663Z",
     "route": "#/events/design/communication/not-attending",
@@ -3588,8 +3588,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Checkout complete and pending-order design",
-    "caption": "Select Pending Approval Order in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Pending Approval Order in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Pending Approval Order in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Pending Approval Order in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:37.250Z",
     "route": "#/events/design/communication/pending-approval-order",
@@ -3619,8 +3619,8 @@
       "branding-and-design/design-options-reference.mdx"
     ],
     "title": "Pending installment and confirmation design",
-    "caption": "Select Installment Order Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Installment Order Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
+    "caption": "Select Installment Order Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Installment Order Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:04:39.857Z",
     "route": "#/events/design/communication/installment-order",
@@ -3649,8 +3649,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Change component styling and inspect preview",
-    "caption": "All Settings → Background & colors — Change component styling and inspect preview. The circles identify Background and Event Listings.",
-    "alt": "All Settings → Background & colors — Change component styling and inspect preview. The circles identify Background and Event Listings.",
+    "caption": "All Settings \u2192 Background & colors \u2014 Change component styling and inspect preview. The circles identify Background and Event Listings.",
+    "alt": "All Settings \u2192 Background & colors \u2014 Change component styling and inspect preview. The circles identify Background and Event Listings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:15.789Z",
     "route": "#/events/design/widget",
@@ -3679,8 +3679,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Buttons and add-to-calendar styling",
-    "caption": "All Settings → Buttons — Buttons and add-to-calendar styling. The circles identify Text on hover and Background / Border.",
-    "alt": "All Settings → Buttons — Buttons and add-to-calendar styling. The circles identify Text on hover and Background / Border.",
+    "caption": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. The circles identify Text on hover and Background / Border.",
+    "alt": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. The circles identify Text on hover and Background / Border.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:20.223Z",
     "route": "#/events/design/widget",
@@ -3709,8 +3709,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Buttons and add-to-calendar styling",
-    "caption": "All Settings → Buttons — Buttons and add-to-calendar styling. Continued controls. The circles identify Background / Border and Background on hover.",
-    "alt": "All Settings → Buttons — Buttons and add-to-calendar styling. Continued controls. The circles identify Background / Border and Background on hover.",
+    "caption": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. Continued controls. The circles identify Background / Border and Background on hover.",
+    "alt": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. Continued controls. The circles identify Background / Border and Background on hover.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:21.324Z",
     "route": "#/events/design/widget",
@@ -3739,8 +3739,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Buttons and add-to-calendar styling",
-    "caption": "All Settings → Buttons — Buttons and add-to-calendar styling. Continued controls. The circles identify Load more text on hover and Load more background.",
-    "alt": "All Settings → Buttons — Buttons and add-to-calendar styling. Continued controls. The circles identify Load more text on hover and Load more background.",
+    "caption": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. Continued controls. The circles identify Load more text on hover and Load more background.",
+    "alt": "All Settings \u2192 Buttons \u2014 Buttons and add-to-calendar styling. Continued controls. The circles identify Load more text on hover and Load more background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:22.373Z",
     "route": "#/events/design/widget",
@@ -3769,8 +3769,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Buttons and add-to-calendar styling",
-    "caption": "All Settings → Add to calendar button — Buttons and add-to-calendar styling. The circles identify Background.",
-    "alt": "All Settings → Add to calendar button — Buttons and add-to-calendar styling. The circles identify Background.",
+    "caption": "All Settings \u2192 Add to calendar button \u2014 Buttons and add-to-calendar styling. The circles identify Background.",
+    "alt": "All Settings \u2192 Add to calendar button \u2014 Buttons and add-to-calendar styling. The circles identify Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:24.123Z",
     "route": "#/events/design/widget",
@@ -3798,8 +3798,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Calendar — Calendar and multi-day styling. The circles identify Event.",
-    "alt": "All Settings → Calendar — Calendar and multi-day styling. The circles identify Event.",
+    "caption": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. The circles identify Event.",
+    "alt": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. The circles identify Event.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:25.897Z",
     "route": "#/events/design/widget",
@@ -3827,8 +3827,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Navigation Foreground Color and Navigation Background Color.",
-    "alt": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Navigation Foreground Color and Navigation Background Color.",
+    "caption": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Navigation Foreground Color and Navigation Background Color.",
+    "alt": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Navigation Foreground Color and Navigation Background Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:26.973Z",
     "route": "#/events/design/widget",
@@ -3857,8 +3857,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Selection Color and Today's Date Background Color.",
-    "alt": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Selection Color and Today's Date Background Color.",
+    "caption": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Selection Color and Today's Date Background Color.",
+    "alt": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Selection Color and Today's Date Background Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:28.039Z",
     "route": "#/events/design/widget",
@@ -3887,8 +3887,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Selected Date Background Color and Selected Date Text Color.",
-    "alt": "All Settings → Calendar — Calendar and multi-day styling. Continued controls. The circles identify Selected Date Background Color and Selected Date Text Color.",
+    "caption": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Selected Date Background Color and Selected Date Text Color.",
+    "alt": "All Settings \u2192 Calendar \u2014 Calendar and multi-day styling. Continued controls. The circles identify Selected Date Background Color and Selected Date Text Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:29.107Z",
     "route": "#/events/design/widget",
@@ -3917,8 +3917,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Multi-day selection — Calendar and multi-day styling. The circles identify Date Picker Calendar Icon and Date Picker Border Color.",
-    "alt": "All Settings → Multi-day selection — Calendar and multi-day styling. The circles identify Date Picker Calendar Icon and Date Picker Border Color.",
+    "caption": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. The circles identify Date Picker Calendar Icon and Date Picker Border Color.",
+    "alt": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. The circles identify Date Picker Calendar Icon and Date Picker Border Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:30.914Z",
     "route": "#/events/design/widget",
@@ -3947,8 +3947,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Multi-day selection — Calendar and multi-day styling. Continued controls. The circles identify Date Picker Header Background Color and Date Picker Selected Date Highlight Color.",
-    "alt": "All Settings → Multi-day selection — Calendar and multi-day styling. Continued controls. The circles identify Date Picker Header Background Color and Date Picker Selected Date Highlight Color.",
+    "caption": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. Continued controls. The circles identify Date Picker Header Background Color and Date Picker Selected Date Highlight Color.",
+    "alt": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. Continued controls. The circles identify Date Picker Header Background Color and Date Picker Selected Date Highlight Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:31.970Z",
     "route": "#/events/design/widget",
@@ -3977,8 +3977,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Calendar and multi-day styling",
-    "caption": "All Settings → Multi-day selection — Calendar and multi-day styling. Continued controls. The circles identify Date Picker Selected Date Highlight Color and Date Picker Selected Date Color.",
-    "alt": "All Settings → Multi-day selection — Calendar and multi-day styling. Continued controls. The circles identify Date Picker Selected Date Highlight Color and Date Picker Selected Date Color.",
+    "caption": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. Continued controls. The circles identify Date Picker Selected Date Highlight Color and Date Picker Selected Date Color.",
+    "alt": "All Settings \u2192 Multi-day selection \u2014 Calendar and multi-day styling. Continued controls. The circles identify Date Picker Selected Date Highlight Color and Date Picker Selected Date Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:33.008Z",
     "route": "#/events/design/widget",
@@ -4007,8 +4007,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Visitor filter styling",
-    "caption": "All Settings → Visitor search & filters — Visitor filter styling. The circles identify Filter background.",
-    "alt": "All Settings → Visitor search & filters — Visitor filter styling. The circles identify Filter background.",
+    "caption": "All Settings \u2192 Visitor search & filters \u2014 Visitor filter styling. The circles identify Filter background.",
+    "alt": "All Settings \u2192 Visitor search & filters \u2014 Visitor filter styling. The circles identify Filter background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:37.430Z",
     "route": "#/events/design/widget",
@@ -4036,8 +4036,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Visitor filter styling",
-    "caption": "All Settings → Visitor search & filters — Visitor filter styling. Continued controls. The circles identify Filter background and Search/Filter button background.",
-    "alt": "All Settings → Visitor search & filters — Visitor filter styling. Continued controls. The circles identify Filter background and Search/Filter button background.",
+    "caption": "All Settings \u2192 Visitor search & filters \u2014 Visitor filter styling. Continued controls. The circles identify Filter background and Search/Filter button background.",
+    "alt": "All Settings \u2192 Visitor search & filters \u2014 Visitor filter styling. Continued controls. The circles identify Filter background and Search/Filter button background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:38.448Z",
     "route": "#/events/design/widget",
@@ -4066,8 +4066,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Workshop and add-on styling",
-    "caption": "All Settings → Workshops & add-ons — Workshop and add-on styling. The circles identify Addon Card Price and Time Slot Selected Background.",
-    "alt": "All Settings → Workshops & add-ons — Workshop and add-on styling. The circles identify Addon Card Price and Time Slot Selected Background.",
+    "caption": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. The circles identify Addon Card Price and Time Slot Selected Background.",
+    "alt": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. The circles identify Addon Card Price and Time Slot Selected Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:40.222Z",
     "route": "#/events/design/widget",
@@ -4096,8 +4096,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Workshop and add-on styling",
-    "caption": "All Settings → Workshops & add-ons — Workshop and add-on styling. Continued controls. The circles identify Time Slot Selected Border and Time Slot Selected Hover Background.",
-    "alt": "All Settings → Workshops & add-ons — Workshop and add-on styling. Continued controls. The circles identify Time Slot Selected Border and Time Slot Selected Hover Background.",
+    "caption": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. Continued controls. The circles identify Time Slot Selected Border and Time Slot Selected Hover Background.",
+    "alt": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. Continued controls. The circles identify Time Slot Selected Border and Time Slot Selected Hover Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:41.256Z",
     "route": "#/events/design/widget",
@@ -4126,8 +4126,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Workshop and add-on styling",
-    "caption": "All Settings → Workshops & add-ons — Workshop and add-on styling. Continued controls. The circles identify Workshop Select Button Border and Workshop Select Button Text.",
-    "alt": "All Settings → Workshops & add-ons — Workshop and add-on styling. Continued controls. The circles identify Workshop Select Button Border and Workshop Select Button Text.",
+    "caption": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. Continued controls. The circles identify Workshop Select Button Border and Workshop Select Button Text.",
+    "alt": "All Settings \u2192 Workshops & add-ons \u2014 Workshop and add-on styling. Continued controls. The circles identify Workshop Select Button Border and Workshop Select Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:42.284Z",
     "route": "#/events/design/widget",
@@ -4156,8 +4156,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Membership card styling",
-    "caption": "All Settings → Memberships — Membership card styling. The circles identify Membership Price Color and Featured Badge Background.",
-    "alt": "All Settings → Memberships — Membership card styling. The circles identify Membership Price Color and Featured Badge Background.",
+    "caption": "All Settings \u2192 Memberships \u2014 Membership card styling. The circles identify Membership Price Color and Featured Badge Background.",
+    "alt": "All Settings \u2192 Memberships \u2014 Membership card styling. The circles identify Membership Price Color and Featured Badge Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:44.105Z",
     "route": "#/events/design/widget",
@@ -4186,8 +4186,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Membership card styling",
-    "caption": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Featured Badge Text and Benefit Checkmark Background.",
-    "alt": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Featured Badge Text and Benefit Checkmark Background.",
+    "caption": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Featured Badge Text and Benefit Checkmark Background.",
+    "alt": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Featured Badge Text and Benefit Checkmark Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:45.191Z",
     "route": "#/events/design/widget",
@@ -4216,8 +4216,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Membership card styling",
-    "caption": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Add Button Text and Add Button Hover Background.",
-    "alt": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Add Button Text and Add Button Hover Background.",
+    "caption": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Add Button Text and Add Button Hover Background.",
+    "alt": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Add Button Text and Add Button Hover Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:46.256Z",
     "route": "#/events/design/widget",
@@ -4246,8 +4246,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Membership card styling",
-    "caption": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Added Badge Border and Added Badge Text.",
-    "alt": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Added Badge Border and Added Badge Text.",
+    "caption": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Added Badge Border and Added Badge Text.",
+    "alt": "All Settings \u2192 Memberships \u2014 Membership card styling. Continued controls. The circles identify Added Badge Border and Added Badge Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:47.306Z",
     "route": "#/events/design/widget",
@@ -4276,8 +4276,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Payment-plan component styling",
-    "caption": "All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color.",
-    "alt": "All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color.",
+    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. The circles identify Background Color and Border Color.",
+    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. The circles identify Background Color and Border Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:49.084Z",
     "route": "#/events/design/widget",
@@ -4306,8 +4306,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Payment-plan component styling",
-    "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
-    "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
+    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
+    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:50.206Z",
     "route": "#/events/design/widget",
@@ -4336,8 +4336,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Payment-plan component styling",
-    "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
-    "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
+    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
+    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:51.257Z",
     "route": "#/events/design/widget",
@@ -4366,8 +4366,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Payment-plan component styling",
-    "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
-    "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
+    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
+    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:05:52.316Z",
     "route": "#/events/design/widget",
@@ -4397,8 +4397,8 @@
       "branding-and-design/widget-checkout-reference.mdx"
     ],
     "title": "Checkout dates, availability and price summary",
-    "caption": "All Settings → Checkout → Multi-event cart enables one cart across events and time slots for this site.",
-    "alt": "All Settings → Checkout → Multi-event cart enables one cart across events and time slots for this site.",
+    "caption": "All Settings \u2192 Checkout \u2192 Multi-event cart enables one cart across events and time slots for this site.",
+    "alt": "All Settings \u2192 Checkout \u2192 Multi-event cart enables one cart across events and time slots for this site.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:06:36.713Z",
     "route": "#/events/design/widget",
@@ -4427,8 +4427,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Desktop typography — Desktop and mobile typography controls. The circles identify Theme and Main Header.",
-    "alt": "All Settings → Desktop typography — Desktop and mobile typography controls. The circles identify Theme and Main Header.",
+    "caption": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. The circles identify Theme and Main Header.",
+    "alt": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. The circles identify Theme and Main Header.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:07:56.183Z",
     "route": "#/events/design/widget",
@@ -4457,8 +4457,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Desktop typography — Desktop and mobile typography controls. Continued controls. The circles identify Event Details Link.",
-    "alt": "All Settings → Desktop typography — Desktop and mobile typography controls. Continued controls. The circles identify Event Details Link.",
+    "caption": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Event Details Link.",
+    "alt": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Event Details Link.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:07:57.291Z",
     "route": "#/events/design/widget",
@@ -4486,8 +4486,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Desktop typography — Desktop and mobile typography controls. Continued controls. The circles identify On Sale Event Status and Postponed Event Status.",
-    "alt": "All Settings → Desktop typography — Desktop and mobile typography controls. Continued controls. The circles identify On Sale Event Status and Postponed Event Status.",
+    "caption": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify On Sale Event Status and Postponed Event Status.",
+    "alt": "All Settings \u2192 Desktop typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify On Sale Event Status and Postponed Event Status.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:07:58.415Z",
     "route": "#/events/design/widget",
@@ -4516,8 +4516,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Mobile typography — Desktop and mobile typography controls. The circles identify Theme and Main Header.",
-    "alt": "All Settings → Mobile typography — Desktop and mobile typography controls. The circles identify Theme and Main Header.",
+    "caption": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. The circles identify Theme and Main Header.",
+    "alt": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. The circles identify Theme and Main Header.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:00.300Z",
     "route": "#/events/design/widget",
@@ -4546,8 +4546,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Mobile typography — Desktop and mobile typography controls. Continued controls. The circles identify Event Details and Dates.",
-    "alt": "All Settings → Mobile typography — Desktop and mobile typography controls. Continued controls. The circles identify Event Details and Dates.",
+    "caption": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Event Details and Dates.",
+    "alt": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Event Details and Dates.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:01.398Z",
     "route": "#/events/design/widget",
@@ -4576,8 +4576,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Desktop and mobile typography controls",
-    "caption": "All Settings → Mobile typography — Desktop and mobile typography controls. Continued controls. The circles identify Venue and On Sale Event Status.",
-    "alt": "All Settings → Mobile typography — Desktop and mobile typography controls. Continued controls. The circles identify Venue and On Sale Event Status.",
+    "caption": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Venue and On Sale Event Status.",
+    "alt": "All Settings \u2192 Mobile typography \u2014 Desktop and mobile typography controls. Continued controls. The circles identify Venue and On Sale Event Status.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:02.507Z",
     "route": "#/events/design/widget",
@@ -4606,8 +4606,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. The circles identify Theme and Checkout Section Title.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. The circles identify Theme and Checkout Section Title.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. The circles identify Theme and Checkout Section Title.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. The circles identify Theme and Checkout Section Title.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:04.611Z",
     "route": "#/events/design/widget",
@@ -4636,8 +4636,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Quantity Selector and Ticket Background.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Quantity Selector and Ticket Background.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Quantity Selector and Ticket Background.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Quantity Selector and Ticket Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:05.760Z",
     "route": "#/events/design/widget",
@@ -4666,8 +4666,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Cart Item Background Color and Cart Item Text Color.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Cart Item Background Color and Cart Item Text Color.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Cart Item Background Color and Cart Item Text Color.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Cart Item Background Color and Cart Item Text Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:06.926Z",
     "route": "#/events/design/widget",
@@ -4696,8 +4696,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Checkout Border Color and Checkout Form Dropdown Color.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Checkout Border Color and Checkout Form Dropdown Color.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Checkout Border Color and Checkout Form Dropdown Color.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Checkout Border Color and Checkout Form Dropdown Color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:08.121Z",
     "route": "#/events/design/widget",
@@ -4726,8 +4726,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Checkout Next Button Background and Checkout Back Button Background.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Checkout Next Button Background and Checkout Back Button Background.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Checkout Next Button Background and Checkout Back Button Background.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Checkout Next Button Background and Checkout Back Button Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:09.290Z",
     "route": "#/events/design/widget",
@@ -4756,8 +4756,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Promo Code Button Background.",
-    "alt": "All Settings → Checkout — Checkout and attendee form styling. Continued controls. The circles identify Promo Code Button Background.",
+    "caption": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Promo Code Button Background.",
+    "alt": "All Settings \u2192 Checkout \u2014 Checkout and attendee form styling. Continued controls. The circles identify Promo Code Button Background.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:10.416Z",
     "route": "#/events/design/widget",
@@ -4785,8 +4785,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Attendee details — Checkout and attendee form styling. The circles identify Theme and Pre-form text.",
-    "alt": "All Settings → Attendee details — Checkout and attendee form styling. The circles identify Theme and Pre-form text.",
+    "caption": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. The circles identify Theme and Pre-form text.",
+    "alt": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. The circles identify Theme and Pre-form text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:12.216Z",
     "route": "#/events/design/widget",
@@ -4815,8 +4815,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Attendee details — Checkout and attendee form styling. Continued controls. The circles identify Form border color and Background color.",
-    "alt": "All Settings → Attendee details — Checkout and attendee form styling. Continued controls. The circles identify Form border color and Background color.",
+    "caption": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. Continued controls. The circles identify Form border color and Background color.",
+    "alt": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. Continued controls. The circles identify Form border color and Background color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:13.274Z",
     "route": "#/events/design/widget",
@@ -4845,8 +4845,8 @@
       "branding-and-design/widget-design-reference.mdx"
     ],
     "title": "Checkout and attendee form styling",
-    "caption": "All Settings → Attendee details — Checkout and attendee form styling. Continued controls. The circles identify Background color and Dropdown text color.",
-    "alt": "All Settings → Attendee details — Checkout and attendee form styling. Continued controls. The circles identify Background color and Dropdown text color.",
+    "caption": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. Continued controls. The circles identify Background color and Dropdown text color.",
+    "alt": "All Settings \u2192 Attendee details \u2014 Checkout and attendee form styling. Continued controls. The circles identify Background color and Dropdown text color.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:08:14.316Z",
     "route": "#/events/design/widget",
@@ -4875,8 +4875,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Sales Tax Label and Ticket Summary Heading.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:09.741Z",
     "route": "#/events/design/widget",
@@ -4905,8 +4905,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Cart",
-    "caption": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text.",
-    "alt": "All Settings → Cart — Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text.",
+    "caption": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text.",
+    "alt": "All Settings \u2192 Cart \u2014 Checkout: Cart. Continued controls. The circles identify Order Error Retry Button and RSVP/Checkout Button Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:10.944Z",
     "route": "#/events/design/widget",
@@ -4935,8 +4935,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Membership Duration and Event Visits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:20.036Z",
     "route": "#/events/design/widget",
@@ -4965,8 +4965,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Memberships Subtitle Text and Free Membership Price Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:21.500Z",
     "route": "#/events/design/widget",
@@ -4995,8 +4995,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What's Included Header.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What's Included Header.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What's Included Header.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Unlimited Visits Text and What's Included Header.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:22.778Z",
     "route": "#/events/design/widget",
@@ -5025,8 +5025,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify Benefit Checkmark and Unlimited Visits Icon.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:24.038Z",
     "route": "#/events/design/widget",
@@ -5055,8 +5055,8 @@
       "branding-and-design/widget-text-reference.mdx"
     ],
     "title": "Text: Checkout: Memberships",
-    "caption": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text.",
-    "alt": "All Settings → Memberships — Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text.",
+    "caption": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text.",
+    "alt": "All Settings \u2192 Memberships \u2014 Checkout: Memberships. Continued controls. The circles identify One Month Text and Three Months Text.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:09:25.277Z",
     "route": "#/events/design/widget",
@@ -5119,8 +5119,8 @@
       "event-management/eventdetails.mdx"
     ],
     "title": "Event type and registration setup",
-    "caption": "Event Details → Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events.",
-    "alt": "Event Details → Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events.",
+    "caption": "Event Details \u2192 Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events.",
+    "alt": "Event Details \u2192 Event Setup offers tickets, RSVP/simple registration, an external URL, and display-only events.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:11:16.686Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/details",
@@ -5149,8 +5149,8 @@
       "event-management/eventdetails.mdx"
     ],
     "title": "Private event and access code",
-    "caption": "Event Details → Privacy separates hiding the event from listings and requiring an access code.",
-    "alt": "Event Details → Privacy separates hiding the event from listings and requiring an access code.",
+    "caption": "Event Details \u2192 Privacy separates hiding the event from listings and requiring an access code.",
+    "alt": "Event Details \u2192 Privacy separates hiding the event from listings and requiring an access code.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:11:17.685Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/details",
@@ -5299,8 +5299,8 @@
       "event-management/eventdetails.mdx"
     ],
     "title": "Title, images, description and video",
-    "caption": "Event Details → Promotional Video accepts a supported video URL.",
-    "alt": "Event Details → Promotional Video accepts a supported video URL.",
+    "caption": "Event Details \u2192 Promotional Video accepts a supported video URL.",
+    "alt": "Event Details \u2192 Promotional Video accepts a supported video URL.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:11:22.677Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/details",
@@ -5360,8 +5360,8 @@
       "event-management/timed-entry-and-passes.mdx"
     ],
     "title": "One-time date and time",
-    "caption": "Dates & Times → One-Time Event provides start/end dates and times and an All Day Event option.",
-    "alt": "Dates & Times → One-Time Event provides start/end dates and times and an All Day Event option.",
+    "caption": "Dates & Times \u2192 One-Time Event provides start/end dates and times and an All Day Event option.",
+    "alt": "Dates & Times \u2192 One-Time Event provides start/end dates and times and an All Day Event option.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:11:55.306Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/dates",
@@ -5484,8 +5484,8 @@
       "event-management/timed-entry-and-passes.mdx"
     ],
     "title": "Add specific dates",
-    "caption": "Manage dates & times → Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them.",
-    "alt": "Manage dates & times → Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them.",
+    "caption": "Manage dates & times \u2192 Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them.",
+    "alt": "Manage dates & times \u2192 Add dates lets you select individual dates or a range and add one or more time ranges. This example selects two dates without saving them.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:17:32.793Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/dates",
@@ -5515,8 +5515,8 @@
       "event-management/timed-entry-and-passes.mdx"
     ],
     "title": "Configure time slots",
-    "caption": "Time-Based → Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation.",
-    "alt": "Time-Based → Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation.",
+    "caption": "Time-Based \u2192 Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation.",
+    "alt": "Time-Based \u2192 Add Times opens manual day entry and multiple available time slots. Create saves this schedule; this is the setup form before creation.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:18:44.370Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/dates",
@@ -5700,8 +5700,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Ticket name, status, description and images",
-    "caption": "Create Ticket → Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket.",
-    "alt": "Create Ticket → Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket.",
+    "caption": "Create Ticket \u2192 Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket.",
+    "alt": "Create Ticket \u2192 Details contains the ticket name, status, description, and images. This example is an unsaved demo ticket.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:20:40.554Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/tickets",
@@ -6316,8 +6316,8 @@
       "event-management/email-communication.mdx"
     ],
     "title": "Reminder timing and content",
-    "caption": "Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder’s switch to enable or disable it.",
-    "alt": "Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder’s switch to enable or disable it.",
+    "caption": "Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder\u2019s switch to enable or disable it.",
+    "alt": "Expand a reminder with its plus button to edit Time Before Event, the subject, and the message. Use each reminder\u2019s switch to enable or disable it.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T22:41:12.754Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/communication",
@@ -6885,8 +6885,8 @@
       "memberships/assign-to-events.mdx"
     ],
     "title": "Assign membership from an event",
-    "caption": "Membership check-in settings sets the event defaults for direct admission. Reservations follow the ticket’s check-in rules.",
-    "alt": "Membership check-in settings sets the event defaults for direct admission. Reservations follow the ticket’s check-in rules.",
+    "caption": "Membership check-in settings sets the event defaults for direct admission. Reservations follow the ticket\u2019s check-in rules.",
+    "alt": "Membership check-in settings sets the event defaults for direct admission. Reservations follow the ticket\u2019s check-in rules.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T23:07:53.427Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/memberships",
@@ -7157,13 +7157,13 @@
       "event-management/email-communication.mdx"
     ],
     "title": "Event confirmation message setup",
-    "caption": "Send Test opens a separate form for your test recipient’s email and name. This example is filled without sending a message.",
-    "alt": "Send Test opens a separate form for your test recipient’s email and name. This example is filled without sending a message.",
+    "caption": "Send Test opens a separate form for your test recipient\u2019s email and name. This example is filled without sending a message.",
+    "alt": "Send Test opens a separate form for your test recipient\u2019s email and name. This example is filled without sending a message.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T23:16:27.887Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/communication",
     "callouts": [
-      "Send Test Email • Ticket Confirmation",
+      "Send Test Email \u2022 Ticket Confirmation",
       "Send Test"
     ],
     "clip": {
@@ -7187,8 +7187,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Create and publish a chart",
-    "caption": "Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart’s actions menu → Edit.",
-    "alt": "Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart’s actions menu → Edit.",
+    "caption": "Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart\u2019s actions menu \u2192 Edit.",
+    "alt": "Choose Blank or a venue template, then select Create Map. If the designer does not open automatically, use the new chart\u2019s actions menu \u2192 Edit.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T23:18:17.023Z",
     "route": "#/events/seating-charts",
@@ -7306,8 +7306,8 @@
       "seating-charts/advanced-layouts.mdx"
     ],
     "title": "Floors, sections and zones",
-    "caption": "Floor settings gives each level a clear name and abbreviation. Multiple floors add navigation controls to the buyer’s seating map.",
-    "alt": "Floor settings gives each level a clear name and abbreviation. Multiple floors add navigation controls to the buyer’s seating map.",
+    "caption": "Floor settings gives each level a clear name and abbreviation. Multiple floors add navigation controls to the buyer\u2019s seating map.",
+    "alt": "Floor settings gives each level a clear name and abbreviation. Multiple floors add navigation controls to the buyer\u2019s seating map.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T23:33:56.860Z",
     "route": "#/events/seating-charts",
@@ -7372,7 +7372,7 @@
     "route": "#/events/seating-charts",
     "callouts": [
       "Demo Theater",
-      "🟢 Published"
+      "\ud83d\udfe2 Published"
     ],
     "clip": {
       "x": 338,
@@ -7425,8 +7425,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Multiple ticket prices for a seat category",
-    "caption": "In each ticket’s Seat Categories tab, select every category that ticket can book. Multiple ticket types can share one category; prices are set in Pricing & Access.",
-    "alt": "In each ticket’s Seat Categories tab, select every category that ticket can book. Multiple ticket types can share one category; prices are set in Pricing & Access.",
+    "caption": "In each ticket\u2019s Seat Categories tab, select every category that ticket can book. Multiple ticket types can share one category; prices are set in Pricing & Access.",
+    "alt": "In each ticket\u2019s Seat Categories tab, select every category that ticket can book. Multiple ticket types can share one category; prices are set in Pricing & Access.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-01T23:38:26.948Z",
     "route": "#/events/manage/dab89133-576a-4e33-91f3-5914d12b1f72/tickets",
@@ -7549,7 +7549,7 @@
     "capturedAt": "2026-10-02T00:39:22.624Z",
     "route": "#/events/manage/dab89133-576a-4e33-91f3-5914d12b1f72/tickets",
     "callouts": [
-      "I’ve reviewed the seats and credit usage. I understand that bookings made after this preview won’t be copied automatically.",
+      "I\u2019ve reviewed the seats and credit usage. I understand that bookings made after this preview won\u2019t be copied automatically.",
       "Book mapped seats"
     ],
     "clip": {
@@ -8306,8 +8306,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Shopify customer-tag discount mapping",
-    "caption": "Open a saved promo’s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag.",
-    "alt": "Open a saved promo’s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag.",
+    "caption": "Open a saved promo\u2019s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag.",
+    "alt": "Open a saved promo\u2019s Shopify Tags tab. Enter an exact customer tag, including capitalization, and Add Tag to map that customer group to the promo. This example has not added the tag.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:04:24.108Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/tickets",
@@ -8364,8 +8364,8 @@
       "event-management/tags-and-custom-fields.mdx"
     ],
     "title": "Add and remove event tags",
-    "caption": "Add a tag by typing its name and choosing Add tag or pressing Enter. Remove a tag with its × control, then save the event.",
-    "alt": "Add a tag by typing its name and choosing Add tag or pressing Enter. Remove a tag with its × control, then save the event.",
+    "caption": "Add a tag by typing its name and choosing Add tag or pressing Enter. Remove a tag with its \u00d7 control, then save the event.",
+    "alt": "Add a tag by typing its name and choosing Add tag or pressing Enter. Remove a tag with its \u00d7 control, then save the event.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:20:50.643Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/tags",
@@ -8451,8 +8451,8 @@
       "event-management/tracking-links.mdx"
     ],
     "title": "Create a tracking link",
-    "caption": "Give the campaign a name, select a destination, and create its tracking link. Use Event Page URL fills the event’s own page automatically.",
-    "alt": "Give the campaign a name, select a destination, and create its tracking link. Use Event Page URL fills the event’s own page automatically.",
+    "caption": "Give the campaign a name, select a destination, and create its tracking link. Use Event Page URL fills the event\u2019s own page automatically.",
+    "alt": "Give the campaign a name, select a destination, and create its tracking link. Use Event Page URL fills the event\u2019s own page automatically.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:11:42.345Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/tracking",
@@ -8508,8 +8508,8 @@
       "event-management/hosts.mdx"
     ],
     "title": "Host list and invitation form",
-    "caption": "Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.",
-    "alt": "Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.",
+    "caption": "Choose a site team member or enter a name and email, then select this event\u2019s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.",
+    "alt": "Choose a site team member or enter a name and email, then select this event\u2019s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:12:38.448Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/hosts",
@@ -8566,8 +8566,8 @@
       "event-management/display-settings.mdx"
     ],
     "title": "Event-specific button and host overrides",
-    "caption": "Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings.",
-    "alt": "Event Button Text overrides this event’s widget button. Leave it blank to inherit the widget’s shared text settings.",
+    "caption": "Event Button Text overrides this event\u2019s widget button. Leave it blank to inherit the widget\u2019s shared text settings.",
+    "alt": "Event Button Text overrides this event\u2019s widget button. Leave it blank to inherit the widget\u2019s shared text settings.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:17:21.091Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/display",
@@ -8625,8 +8625,8 @@
       "event-management/display-settings.mdx"
     ],
     "title": "Event-specific button and host overrides",
-    "caption": "Host Information supplies this event’s Meet the Host content. Enable that section in the shared event-page design, then save the event.",
-    "alt": "Host Information supplies this event’s Meet the Host content. Enable that section in the shared event-page design, then save the event.",
+    "caption": "Host Information supplies this event\u2019s Meet the Host content. Enable that section in the shared event-page design, then save the event.",
+    "alt": "Host Information supplies this event\u2019s Meet the Host content. Enable that section in the shared event-page design, then save the event.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:21:48.234Z",
     "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/display",
@@ -8653,8 +8653,8 @@
       "branding-and-design/quick-settings.mdx"
     ],
     "title": "Quick Settings content and checkout cards",
-    "caption": "Quick Settings groups common layout, checkout, language, event-count, date, and button controls. Use each card’s link to open its full settings section.",
-    "alt": "Quick Settings groups common layout, checkout, language, event-count, date, and button controls. Use each card’s link to open its full settings section.",
+    "caption": "Quick Settings groups common layout, checkout, language, event-count, date, and button controls. Use each card\u2019s link to open its full settings section.",
+    "alt": "Quick Settings groups common layout, checkout, language, event-count, date, and button controls. Use each card\u2019s link to open its full settings section.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:41:07.343Z",
     "route": "#/events/design/widget",
@@ -8717,7 +8717,7 @@
     "capturedAt": "2026-10-02T00:42:39.693Z",
     "route": "#/events/design/widget",
     "callouts": [
-      "Display › Date & time"
+      "Display \u203a Date & time"
     ],
     "clip": {
       "x": 314,
@@ -8799,7 +8799,7 @@
     "title": "Find and change a setting through search",
     "caption": "Search for a setting, check its category, then open the result to jump to that control. Back to results returns to the same search; searching does not change a setting.",
     "alt": "Search for a setting, check its category, then open the result to jump to that control. Back to results returns to the same search; searching does not change a setting.",
-    "source": "Ticket Spot Demo live widget editor; real search navigation with 1.2× focus zoom; settings unchanged",
+    "source": "Ticket Spot Demo live widget editor; real search navigation with 1.2\u00d7 focus zoom; settings unchanged",
     "capturedAt": "2026-10-02T00:42:43.299Z",
     "route": "#/events/design/widget",
     "callouts": [
@@ -8829,8 +8829,8 @@
       "branding-and-design/widget-layout-reference.mdx"
     ],
     "title": "Choose a desktop layout and see the result",
-    "caption": "More desktop layouts include map, calendar, monthly, and checkout views. Calendar, Calendar View, and Date & time’s Full Calendar are distinct choices.",
-    "alt": "More desktop layouts include map, calendar, monthly, and checkout views. Calendar, Calendar View, and Date & time’s Full Calendar are distinct choices.",
+    "caption": "More desktop layouts include map, calendar, monthly, and checkout views. Calendar, Calendar View, and Date & time\u2019s Full Calendar are distinct choices.",
+    "alt": "More desktop layouts include map, calendar, monthly, and checkout views. Calendar, Calendar View, and Date & time\u2019s Full Calendar are distinct choices.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:45:22.942Z",
     "route": "#/events/design/widget",
@@ -9127,8 +9127,8 @@
       "branding-and-design/widget-visitor-filters-reference.mdx"
     ],
     "title": "Visitor search and filter controls",
-    "caption": "Location and language filters use the event’s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design.",
-    "alt": "Location and language filters use the event’s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design.",
+    "caption": "Location and language filters use the event\u2019s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design.",
+    "alt": "Location and language filters use the event\u2019s venue/city/region/country and language data. Their labels and styling are configured separately under Text and Design.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:47:25.253Z",
     "route": "#/events/design/widget",
@@ -9303,8 +9303,8 @@
       "plugins/connect-lovable.mdx"
     ],
     "title": "Get the Lovable prompt/integration instructions",
-    "caption": "Open Installation → Lovable and copy the complete AI Prompt. It contains both the loader script and the selected widget ID.",
-    "alt": "Open Installation → Lovable and copy the complete AI Prompt. It contains both the loader script and the selected widget ID.",
+    "caption": "Open Installation \u2192 Lovable and copy the complete AI Prompt. It contains both the loader script and the selected widget ID.",
+    "alt": "Open Installation \u2192 Lovable and copy the complete AI Prompt. It contains both the loader script and the selected widget ID.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:57:41.570Z",
     "route": "#/events/design/widget",
@@ -9421,8 +9421,8 @@
       "account/account-settings.mdx"
     ],
     "title": "Profile and account controls",
-    "caption": "Account → Account Setting opens Profile. Update your first and last name, bio, social links, website, and profile picture, then select Save Changes. Personal values are concealed.",
-    "alt": "Account → Account Setting opens Profile. Update your first and last name, bio, social links, website, and profile picture, then select Save Changes. Personal values are concealed.",
+    "caption": "Account \u2192 Account Setting opens Profile. Update your first and last name, bio, social links, website, and profile picture, then select Save Changes. Personal values are concealed.",
+    "alt": "Account \u2192 Account Setting opens Profile. Update your first and last name, bio, social links, website, and profile picture, then select Save Changes. Personal values are concealed.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T00:59:17.876Z",
     "route": "#/events/design/widget",
@@ -9536,8 +9536,8 @@
       "api-reference/introduction.mdx"
     ],
     "title": "API key controls with value concealed",
-    "caption": "Account → Developers → Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example.",
-    "alt": "Account → Developers → Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example.",
+    "caption": "Account \u2192 Developers \u2192 Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example.",
+    "alt": "Account \u2192 Developers \u2192 Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:01:20.394Z",
     "route": "#/events/design/widget",
@@ -9715,8 +9715,8 @@
       "account/feature-reference.mdx"
     ],
     "title": "Ticket and seating pack options",
-    "caption": "Each SMS segment costs one credit per recipient. Longer text and emojis can increase the credit cost; check the composer’s estimate before sending.",
-    "alt": "Each SMS segment costs one credit per recipient. Longer text and emojis can increase the credit cost; check the composer’s estimate before sending.",
+    "caption": "Each SMS segment costs one credit per recipient. Longer text and emojis can increase the credit cost; check the composer\u2019s estimate before sending.",
+    "alt": "Each SMS segment costs one credit per recipient. Longer text and emojis can increase the credit cost; check the composer\u2019s estimate before sending.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:05:08.333Z",
     "route": "#/events/billing",
@@ -9803,8 +9803,8 @@
       "site-settings/add-and-switch-sites.mdx"
     ],
     "title": "General site settings",
-    "caption": "Settings → General contains the site name, site URL, and Host Information shown in the event page’s Meet the Host section. Save applies site-form edits.",
-    "alt": "Settings → General contains the site name, site URL, and Host Information shown in the event page’s Meet the Host section. Save applies site-form edits.",
+    "caption": "Settings \u2192 General contains the site name, site URL, and Host Information shown in the event page\u2019s Meet the Host section. Save applies site-form edits.",
+    "alt": "Settings \u2192 General contains the site name, site URL, and Host Information shown in the event page\u2019s Meet the Host section. Save applies site-form edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:07:15.190Z",
     "route": "#/events/settings",
@@ -10073,8 +10073,8 @@
       "branding-and-design/white-label-setup.mdx"
     ],
     "title": "Analytics and tracking IDs",
-    "caption": "Settings → Analytics stores Google Analytics, Meta Pixel, and TikTok Pixel IDs for site tracking. These are separate from the main Analytics reporting tab.",
-    "alt": "Settings → Analytics stores Google Analytics, Meta Pixel, and TikTok Pixel IDs for site tracking. These are separate from the main Analytics reporting tab.",
+    "caption": "Settings \u2192 Analytics stores Google Analytics, Meta Pixel, and TikTok Pixel IDs for site tracking. These are separate from the main Analytics reporting tab.",
+    "alt": "Settings \u2192 Analytics stores Google Analytics, Meta Pixel, and TikTok Pixel IDs for site tracking. These are separate from the main Analytics reporting tab.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:08:26.185Z",
     "route": "#/events/settings",
@@ -10399,8 +10399,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Switch a date from event tickets to custom tickets",
-    "caption": "Use custom tickets reveals Copy the event’s tickets and Start empty. Choosing one changes this date’s ticket source immediately.",
-    "alt": "Use custom tickets reveals Copy the event’s tickets and Start empty. Choosing one changes this date’s ticket source immediately.",
+    "caption": "Use custom tickets reveals Copy the event\u2019s tickets and Start empty. Choosing one changes this date\u2019s ticket source immediately.",
+    "alt": "Use custom tickets reveals Copy the event\u2019s tickets and Start empty. Choosing one changes this date\u2019s ticket source immediately.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:52:29.030Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10521,8 +10521,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Ticket and price. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Ticket and price. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Ticket and price. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Ticket and price. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:14.014Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10550,8 +10550,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → How many. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → How many. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 How many. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 How many. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:15.503Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10579,8 +10579,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → When it sells. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → When it sells. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 When it sells. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 When it sells. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:17.001Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10606,8 +10606,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Custom-day fee controls",
-    "caption": "Custom date ticket → Fees and tax. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Fees and tax. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Fees and tax. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Fees and tax. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:18.467Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10633,8 +10633,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Access & pricing. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Access & pricing. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Access & pricing. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Access & pricing. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:19.946Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10662,8 +10662,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Check-in. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Check-in. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Check-in. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Check-in. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:21.437Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10689,8 +10689,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Group ticket. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Group ticket. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Group ticket. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Group ticket. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:22.926Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10716,8 +10716,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Autopilot. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Autopilot. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Autopilot. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Autopilot. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:24.403Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -10743,8 +10743,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom date ticket → Advanced. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
-    "alt": "Custom date ticket → Advanced. These controls apply to this date’s own tickets; use Save changes in the date drawer to save edits.",
+    "caption": "Custom date ticket \u2192 Advanced. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
+    "alt": "Custom date ticket \u2192 Advanced. These controls apply to this date\u2019s own tickets; use Save changes in the date drawer to save edits.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T01:46:25.877Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -11652,8 +11652,8 @@
       "attendee-management/adding-attendees-manually.mdx"
     ],
     "title": "Add a demo attendee manually",
-    "caption": "Expand Additional Questions and complete the event’s required registration questions before adding an attendee.",
-    "alt": "Expand Additional Questions and complete the event’s required registration questions before adding an attendee.",
+    "caption": "Expand Additional Questions and complete the event\u2019s required registration questions before adding an attendee.",
+    "alt": "Expand Additional Questions and complete the event\u2019s required registration questions before adding an attendee.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T02:08:28.325Z",
     "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
@@ -11711,8 +11711,8 @@
       "attendee-management/export-attendees-and-check-in-data.mdx"
     ],
     "title": "Check-in data export",
-    "caption": "Export Check-in Activity downloads the open event’s recorded check-ins; attendee filters and selected rows do not change its scope.",
-    "alt": "Export Check-in Activity downloads the open event’s recorded check-ins; attendee filters and selected rows do not change its scope.",
+    "caption": "Export Check-in Activity downloads the open event\u2019s recorded check-ins; attendee filters and selected rows do not change its scope.",
+    "alt": "Export Check-in Activity downloads the open event\u2019s recorded check-ins; attendee filters and selected rows do not change its scope.",
     "source": "Shared current live Export menu capture; CSV download verified with HTTP 200",
     "capturedAt": "2026-10-02T02:01:11.207Z",
     "route": "#/events/manage/f698eb85-450d-4747-9b42-e1b7bf27d77d/attendees",
@@ -11888,8 +11888,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Assign seats to an existing order",
-    "caption": "The order picker compares the Demo order’s two tickets with the selected seats before assignment.",
-    "alt": "The order picker compares the Demo order’s two tickets with the selected seats before assignment.",
+    "caption": "The order picker compares the Demo order\u2019s two tickets with the selected seats before assignment.",
+    "alt": "The order picker compares the Demo order\u2019s two tickets with the selected seats before assignment.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T02:20:24.474Z",
     "route": "#/events/manage/dab89133-576a-4e33-91f3-5914d12b1f72/attendees",
@@ -12040,8 +12040,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Review displacement and remaining attendees",
-    "caption": "Unbook Seat asks for confirmation before releasing this attendee’s seat. This example is canceled.",
-    "alt": "Unbook Seat asks for confirmation before releasing this attendee’s seat. This example is canceled.",
+    "caption": "Unbook Seat asks for confirmation before releasing this attendee\u2019s seat. This example is canceled.",
+    "alt": "Unbook Seat asks for confirmation before releasing this attendee\u2019s seat. This example is canceled.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T02:26:35.707Z",
     "route": "#/events/manage/dab89133-576a-4e33-91f3-5914d12b1f72/attendees",
@@ -12160,8 +12160,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Parent versus custom date chart",
-    "caption": "The occurrence’s Tickets step identifies Uses event seating. It inherits the series chart while maintaining availability for this date.",
-    "alt": "The occurrence’s Tickets step identifies Uses event seating. It inherits the series chart while maintaining availability for this date.",
+    "caption": "The occurrence\u2019s Tickets step identifies Uses event seating. It inherits the series chart while maintaining availability for this date.",
+    "alt": "The occurrence\u2019s Tickets step identifies Uses event seating. It inherits the series chart while maintaining availability for this date.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T02:57:51.381Z",
     "route": "#/events/manage/30016bc5-3b79-48b4-8aff-1f56f429be9c/tickets",
@@ -12220,8 +12220,8 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Every custom-date ticket editor section",
-    "caption": "Custom-date tickets use categories from the chart assigned to this occurrence. This date uses the event’s Demo Theater chart; the unsaved category selection applies only to this date’s custom ticket.",
-    "alt": "Custom-date tickets use categories from the chart assigned to this occurrence. This date uses the event’s Demo Theater chart; the unsaved category selection applies only to this date’s custom ticket.",
+    "caption": "Custom-date tickets use categories from the chart assigned to this occurrence. This date uses the event\u2019s Demo Theater chart; the unsaved category selection applies only to this date\u2019s custom ticket.",
+    "alt": "Custom-date tickets use categories from the chart assigned to this occurrence. This date uses the event\u2019s Demo Theater chart; the unsaved category selection applies only to this date\u2019s custom ticket.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T02:54:59.267Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36/dates",
@@ -12378,7 +12378,7 @@
     "route": "",
     "callouts": [
       "Your ticket cart",
-      "2 × Standard",
+      "2 \u00d7 Standard",
       "Total"
     ],
     "clip": {
@@ -12440,7 +12440,7 @@
     "callouts": [
       "Ticket summary",
       "Patio de butacas-1-19",
-      "Continue to Details →"
+      "Continue to Details \u2192"
     ],
     "clip": {
       "x": 25,
@@ -12554,7 +12554,7 @@
     "capturedAt": "2026-10-02T03:27:52.272Z",
     "route": "",
     "callouts": [
-      "Seat Patio de butacas-1-19 · Standard",
+      "Seat Patio de butacas-1-19 \u00b7 Standard",
       "Child"
     ],
     "clip": {
@@ -12578,8 +12578,8 @@
       "seating-charts/seat-selection.mdx"
     ],
     "title": "Multiple ticket prices for a seat category",
-    "caption": "Selecting Child changes this seat’s ticket to $10. The seat category remains Standard; the selected ticket determines the price.",
-    "alt": "Selecting Child changes this seat’s ticket to $10. The seat category remains Standard; the selected ticket determines the price.",
+    "caption": "Selecting Child changes this seat\u2019s ticket to $10. The seat category remains Standard; the selected ticket determines the price.",
+    "alt": "Selecting Child changes this seat\u2019s ticket to $10. The seat category remains Standard; the selected ticket determines the price.",
     "source": "Ticket Spot Demo live draft series checkout; real ticket/category settings; no purchase",
     "capturedAt": "2026-10-02T03:28:30.991Z",
     "route": "",
@@ -12637,8 +12637,8 @@
       "seating-charts/advanced-layouts.mdx"
     ],
     "title": "Whole tables, booths and bookable units",
-    "caption": "Table labeling gives the table a unique label. Under Miscellaneous → Type, Book by table makes the whole table one bookable object; Book by seat sells individual chairs. This existing Demo table is already Book by table.",
-    "alt": "Table labeling gives the table a unique label. Under Miscellaneous → Type, Book by table makes the whole table one bookable object; Book by seat sells individual chairs. This existing Demo table is already Book by table.",
+    "caption": "Table labeling gives the table a unique label. Under Miscellaneous \u2192 Type, Book by table makes the whole table one bookable object; Book by seat sells individual chairs. This existing Demo table is already Book by table.",
+    "alt": "Table labeling gives the table a unique label. Under Miscellaneous \u2192 Type, Book by table makes the whole table one bookable object; Book by seat sells individual chairs. This existing Demo table is already Book by table.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T03:34:24.370Z",
     "route": "#/events/seating-charts",
@@ -12666,8 +12666,8 @@
       "event-management/manage-events.mdx"
     ],
     "title": "Event actions and draft/live status",
-    "caption": "The event card’s More actions menu opens tickets, attendee exports, the event page, attendee dashboard, duplication, sharing, messaging, and Analytics. Available actions depend on the event and account.",
-    "alt": "The event card’s More actions menu opens tickets, attendee exports, the event page, attendee dashboard, duplication, sharing, messaging, and Analytics. Available actions depend on the event and account.",
+    "caption": "The event card\u2019s More actions menu opens tickets, attendee exports, the event page, attendee dashboard, duplication, sharing, messaging, and Analytics. Available actions depend on the event and account.",
+    "alt": "The event card\u2019s More actions menu opens tickets, attendee exports, the event page, attendee dashboard, duplication, sharing, messaging, and Analytics. Available actions depend on the event and account.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T03:40:11.736Z",
     "route": "#/events/",
@@ -12755,8 +12755,8 @@
       "event-management/manage-events.mdx"
     ],
     "title": "Event actions and draft/live status",
-    "caption": "Duplicate lets you choose Tickets, Communication, Hosts, Promo codes, and—when assigned—Seating chart. Event properties are always included.",
-    "alt": "Duplicate lets you choose Tickets, Communication, Hosts, Promo codes, and—when assigned—Seating chart. Event properties are always included.",
+    "caption": "Duplicate lets you choose Tickets, Communication, Hosts, Promo codes, and\u2014when assigned\u2014Seating chart. Event properties are always included.",
+    "alt": "Duplicate lets you choose Tickets, Communication, Hosts, Promo codes, and\u2014when assigned\u2014Seating chart. Event properties are always included.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T03:43:03.589Z",
     "route": "#/events/",
@@ -12792,8 +12792,8 @@
     "route": "#/onboarding",
     "callouts": [
       "What are you hosting?",
-      "Browse more templates →",
-      "Start from scratch →"
+      "Browse more templates \u2192",
+      "Start from scratch \u2192"
     ],
     "clip": {
       "x": 540,
@@ -12816,8 +12816,8 @@
       "event-management/manage-events.mdx"
     ],
     "title": "Publish and locate sharing controls",
-    "caption": "Save preserves the event’s current status. Use the separate platform publish action when you intend to sync the event to Shopify or Square.",
-    "alt": "Save preserves the event’s current status. Use the separate platform publish action when you intend to sync the event to Shopify or Square.",
+    "caption": "Save preserves the event\u2019s current status. Use the separate platform publish action when you intend to sync the event to Shopify or Square.",
+    "alt": "Save preserves the event\u2019s current status. Use the separate platform publish action when you intend to sync the event to Shopify or Square.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T03:48:29.668Z",
     "route": "#/events/manage/999d50b5-ec68-43f3-8a97-6e4547745c36",
@@ -13401,9 +13401,9 @@
       "event-management/waitlist.mdx"
     ],
     "title": "Waitlist confirmation and release design",
-    "caption": "Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
-    "alt": "Select Waitlist Confirmation in Design → Attendee Communication to configure this template’s wording and display options.",
-    "source": "Shared current Demo capture of Design → Attendee Communication; no duplicate image generated",
+    "caption": "Select Waitlist Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "alt": "Select Waitlist Confirmation in Design \u2192 Attendee Communication to configure this template\u2019s wording and display options.",
+    "source": "Shared current Demo capture of Design \u2192 Attendee Communication; no duplicate image generated",
     "capturedAt": "2026-10-01T22:04:32.084Z",
     "route": "#/events/design/communication/waitlist-confirmed",
     "callouts": [
@@ -13432,9 +13432,9 @@
       "event-management/waitlist.mdx"
     ],
     "title": "Waitlist confirmation and release design",
-    "caption": "Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "alt": "Choose Waitlist Ticket Released in Design → Attendee Communication to customize this template’s wording and display settings.",
-    "source": "Shared current Demo capture of Design → Attendee Communication; no duplicate image generated",
+    "caption": "Choose Waitlist Ticket Released in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "alt": "Choose Waitlist Ticket Released in Design \u2192 Attendee Communication to customize this template\u2019s wording and display settings.",
+    "source": "Shared current Demo capture of Design \u2192 Attendee Communication; no duplicate image generated",
     "capturedAt": "2026-10-01T21:23:47.613Z",
     "route": "#/events/design/communication/waitlist-ticket-released",
     "callouts": [
@@ -13655,7 +13655,7 @@
     "capturedAt": "2026-10-02T04:42:38.651Z",
     "route": "#/events/design/ticket",
     "callouts": [
-      "Standard Badge •",
+      "Standard Badge \u2022",
       "Clear Canvas"
     ],
     "clip": {
@@ -13712,7 +13712,7 @@
     ],
     "title": "Generated sample ticket PDF",
     "caption": "Actual A4 ticket PDF from a synthetic Demo order, showing the attendee, assigned seat, and admission QR code.",
-    "alt": "Downloaded A4 ticket for Taylor Demo with the Standard ticket and seat Patio de butacas–1–19",
+    "alt": "Downloaded A4 ticket for Taylor Demo with the Standard ticket and seat Patio de butacas\u20131\u201319",
     "source": "Actual Ticket Spot Demo PDF endpoint, HTTP 200; first of two A4 pages rendered with Poppler",
     "capturedAt": "2026-10-02T04:46:16.002973+00:00",
     "format": "PNG",
@@ -14470,8 +14470,8 @@
       "integrations/zapier.mdx"
     ],
     "title": "API key creation and copy controls",
-    "caption": "Open Integrations → Zapier → Show API Key to set up the Ticket Spot connection.",
-    "alt": "Open Integrations → Zapier → Show API Key to set up the Ticket Spot connection.",
+    "caption": "Open Integrations \u2192 Zapier \u2192 Show API Key to set up the Ticket Spot connection.",
+    "alt": "Open Integrations \u2192 Zapier \u2192 Show API Key to set up the Ticket Spot connection.",
     "source": "Ticket Spot Demo live dashboard",
     "capturedAt": "2026-10-02T05:05:31.900Z",
     "route": "#/events/integrations",
@@ -14618,7 +14618,7 @@
     "capturedAt": "2026-10-02T05:34:39.945Z",
     "route": "#/events/analytics",
     "callouts": [
-      "Peak arrival: 6:00 PM – 7:00 PM",
+      "Peak arrival: 6:00 PM \u2013 7:00 PM",
       "Conversion Rate"
     ],
     "clip": {
@@ -14727,14 +14727,14 @@
       "analytics/sales-analytics.mdx"
     ],
     "title": "Sales order table",
-    "caption": "Illustrative analytics data. Compare ticket-type sales, then use View Orders to open the event’s Attendees page.",
-    "alt": "Illustrative analytics data. Compare ticket-type sales, then use View Orders to open the event’s Attendees page.",
+    "caption": "Illustrative analytics data. Compare ticket-type sales, then use View Orders to open the event\u2019s Attendees page.",
+    "alt": "Illustrative analytics data. Compare ticket-type sales, then use View Orders to open the event\u2019s Attendees page.",
     "source": "Live Ticket Spot Analytics UI with user-authorized illustrative GET response fixtures; removed after capture",
     "capturedAt": "2026-10-02T05:35:26.179Z",
     "route": "#/events/analytics",
     "callouts": [
       "Sales by Ticket Type",
-      "View Orders →"
+      "View Orders \u2192"
     ],
     "clip": {
       "x": 100,
@@ -14871,8 +14871,8 @@
       "analytics/check-in-analytics.mdx"
     ],
     "title": "Attendance detail and repeat-scan reporting",
-    "caption": "Illustrative analytics data. Open an attendee’s repeat-scan count to inspect all recorded scan times.",
-    "alt": "Illustrative analytics data. Open an attendee’s repeat-scan count to inspect all recorded scan times.",
+    "caption": "Illustrative analytics data. Open an attendee\u2019s repeat-scan count to inspect all recorded scan times.",
+    "alt": "Illustrative analytics data. Open an attendee\u2019s repeat-scan count to inspect all recorded scan times.",
     "source": "Live Ticket Spot Analytics UI with user-authorized illustrative GET response fixtures; removed after capture",
     "capturedAt": "2026-10-02T05:37:42.245Z",
     "route": "#/events/analytics",
@@ -16667,21 +16667,22 @@
     "title": "Automatic saved-card agreement",
     "caption": "Automatic saved-card agreement",
     "alt": "Saved-card authorization checkbox circled",
-    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
-    "capturedAt": "2026-10-03",
+    "source": "Actual widget browser checkout; installments-v3 accepted automatic mode and retry days 3 and 7; 2026-10-05",
+    "capturedAt": "2026-10-06T06:57:03.230021+00:00",
     "route": "checkout/recovery, attendee dashboard or native rendered email",
     "callouts": [
-      "Saved-card authorization checkbox circled"
+      "Optional retry policy",
+      "Saved-card collection consent"
     ],
     "clip": {
       "x": 0,
-      "y": 0,
+      "y": 124,
       "width": 1440,
-      "height": 1000
+      "height": 514
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "qa_note": "Real browser pixels with #9c26dc unfilled 4px circles; synthetic identities. Stripe sandbox and local message transport only.",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
     ]
@@ -16781,23 +16782,25 @@
       "event-management/installment-payments.mdx"
     ],
     "title": "Organizer collection period summary",
-    "caption": "Organizer collection period summary",
-    "alt": "Installment Summary identifies a failed payment and $0 collected",
-    "source": "Actual local application and email renderer, real Stripe sandbox payments, isolated Datastore namespace and synthetic test identities. Email delivery uses a local Postmark transport sink.",
-    "capturedAt": "2026-10-03",
+    "caption": "Period summary: successful and failed charges, remaining installments and the attendee dashboard link.",
+    "alt": "Organizer email shows successful and failed charges, two remaining installments and a link to the attendee dashboard",
+    "source": "Rendered real notification template using persisted Stripe sandbox outcomes; 2026-10-05",
+    "capturedAt": "2026-10-06T06:57:03.230021+00:00",
     "route": "checkout/recovery, attendee dashboard or native rendered email",
     "callouts": [
-      "Installment Summary identifies a failed payment and $0 collected"
+      "Successful charges and collected amount",
+      "Unpaid installments and remaining balance",
+      "Open attendee dashboard"
     ],
     "clip": {
       "x": 0,
       "y": 0,
-      "width": 1440,
+      "width": 900,
       "height": 1000
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_note": "Original browser pixels with approved #9c26dc unfilled 4 CSS pixel circles, application viewport only. Card number 4242 is a Stripe test card. Financial rollup workers were not executed; payment progress/balances and Stripe records were verified.",
+    "qa_note": "Real browser pixels with #9c26dc unfilled 4px circles; synthetic identities. Stripe sandbox and local message transport only.",
     "integrated_pages": [
       "event-management/installment-payments.mdx"
     ]
@@ -17332,6 +17335,37 @@
     "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
     "integrated_pages": [
       "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "installment-collection-settings": {
+    "id": "installment-manage",
+    "key": "installment-collection-settings",
+    "asset": "assets/refresh/event-management/installment-collection-settings.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Configure installment collection",
+    "caption": "Payment Settings: automatic collection and retry days 3 and 7 on Business Plus or Platform.",
+    "alt": "Automatic installment collection and retry-day settings circled",
+    "source": "Real dashboard component browser capture, synthetic site; 2026-10-05",
+    "capturedAt": "2026-10-06T06:57:03.230021+00:00",
+    "route": "checkout/recovery, attendee dashboard or native rendered email",
+    "callouts": [
+      "Automatic collection method",
+      "First retry day",
+      "Second retry day"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1000,
+      "height": 1100
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_note": "Real browser pixels with #9c26dc unfilled 4px circles; synthetic identities. Stripe sandbox and local message transport only.",
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
     ]
   }
 }
