@@ -16667,7 +16667,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
   },
   "installment-automatic-paid-two": {
     "id": "installment-manage",
@@ -17391,7 +17391,7 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
   },
   "installment-checkout-text": {
     "id": "installment-checkout-text",
@@ -17404,12 +17404,12 @@
       "event-management/installment-payments.mdx"
     ],
     "title": "Payment choice text settings",
-    "caption": "Edit payment-choice labels and preserve schedule variables in Design \u2192 Widget \u2192 Text.",
-    "alt": "Edit payment-choice labels and preserve schedule variables in Design \u2192 Widget \u2192 Text.",
+    "caption": "Customize the installment checkout button and zero-deposit button in Design Text.",
+    "alt": "Design Text settings with the installment payment button and amount variable circled.",
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
   },
   "payment-settings-tabs": {
     "id": "payment-connections",
@@ -17630,6 +17630,6 @@
     "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Visually reviewed; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
   }
 }

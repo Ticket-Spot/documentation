@@ -48,7 +48,7 @@ Free, group, donation, pay-later, member-priced and bulk-discount ticket types u
 
 ## Let buyers choose how to pay
 
-At checkout, **Pay in full** is selected initially. The buyer can instead choose **Pay in installments** when the selected tickets are eligible and the schedule fits before the event. One event can include eligible and excluded ticket types: excluded types are paid in full today. Multi-event carts currently use full payment; a buyer can book an eligible event separately to use installments.
+At checkout, **Pay in full** is selected initially. The buyer can instead choose **Pay in 3 installments** (or the configured payment count) when the selected tickets are eligible and the schedule fits before the event. One event can include eligible and excluded ticket types: excluded types are paid in full today. Multi-event carts currently use full payment; a buyer can book an eligible event separately to use installments.
 
 <Frame caption="Pay in full collects the entire price once and creates no later payment obligations.">
   <img src="../assets/refresh/event-management/installment-pay-full-choice.png" alt="Checkout with Pay in Full selected and the payment options circled" />
@@ -56,11 +56,15 @@ At checkout, **Pay in full** is selected initially. The buyer can instead choose
 
 Selecting installments refreshes the amount due today. The compact review lists future amounts and dates, total price and remaining balance. The attendee must accept the saved-card agreement before payment. Additional collection and retry details are available under **Payment plan details**.
 
-<Frame caption="A $320 ticket split into $106.66 today, $106.66 after 30 days and $106.68 after 60 days. Rounding preserves the $320 total.">
+The installment option separates **today’s amount** from the **purchase total**. The schedule shows today and each future date with its exact amount. Ticket names and quantities identify the purchase; the order summary lists what the buyer is buying. Additional balance and policy details are collapsed under **Payment plan details**.
+
+The buyer must accept the separate saved-card authorization before proceeding. Automatic retry timing appears below the checkbox when retries are enabled. The payment button confirms today’s charge, such as **Pay $106.66 today**.
+
+<Frame caption="A $320 ticket split into $106.66 today, $106.66 on November 5 and $106.68 on December 5. The button names today’s charge, and rounding preserves the $320 total.">
   <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Compact installment checkout with the saved-card authorization circled" />
 </Frame>
 
-For a \$0 checkout amount, Stripe saves the card without taking a payment. The booking remains pending until its balance is paid and any admission approval is complete. Discounts are applied before splitting the ticket price; booking fees are due at checkout, and future amounts include their allocated ticket tax.
+For a \$0 checkout amount, the button reads **Save card and confirm booking**. Stripe saves the card without taking a payment. The booking remains pending until its balance is paid and any admission approval is complete. Discounts are applied before splitting the ticket price; booking fees are due at checkout, and future amounts include their allocated ticket tax.
 
 <Frame caption="A zero-deposit plan saves the attendee's Stripe card today, with two later $160 payments for this $320 test ticket.">
   <img src="../assets/refresh/event-management/installment-zero-checkout.png" alt="Zero-deposit checkout with no payment due today and the required saved-card agreement circled" />
@@ -68,12 +72,12 @@ For a \$0 checkout amount, Stripe saves the card without taking a payment. The b
 
 ## Customize and translate checkout text
 
-Open **Design → Widget → Text → Checkout → Payment information → Installment Payment Text**. Edit the payment-choice labels, remaining-balance label, scheduled-payment text, zero-checkout notice and compact collection agreement. The settings use the attendee's checkout language when automatic event translation is enabled. Custom organizer wording is preserved.
+Open **Design → Widget → Text → Checkout → Payment information → Installment Payment Text**. Edit the counted installment option, today and total amount text, authorization heading and agreement, scheduled-payment text, retry copy and payment buttons. Remaining-balance and zero-checkout messages are also editable. The settings use the attendee's checkout language when automatic event translation is enabled. Custom organizer wording is preserved.
 
 Keep variables such as `{amount}`, `{date}`, `{days}` and `{count}` in the applicable fields. They are filled from the accepted schedule. The required authorization checkbox remains visible even when optional review text is hidden.
 
-<Frame caption="Design → Widget → Text controls payment-choice labels and schedule variables.">
-  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Checkout text settings with the one-time payment label circled" style={{ width: "100%", maxWidth: "420px", height: "auto" }} />
+<Frame caption="Design → Widget → Text controls the installment payment button and zero-deposit button. Keep the amount variable in the paid button.">
+  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Checkout text settings with the installment payment button and amount variable circled" style={{ width: "100%", maxWidth: "420px", height: "auto" }} />
 </Frame>
 
 ## Track payment progress

@@ -712,5 +712,224 @@
       }
     },
     "typecheck": "Repository-wide dashboard typecheck has existing failures (including Wix/React type incompatibility). No errors for new event-date props or PaymentPlansPage; scoped formatting and browser checks passed. Invalid MultiSelect ariaLabel prop corrected."
+  },
+  "checkout_ux_refinement": {
+    "date": "2026-10-06",
+    "widget_tests": {
+      "suites": 8,
+      "tests": 46,
+      "passed": true
+    },
+    "translations": {
+      "keys": 15,
+      "locales": 18,
+      "icu_and_placeholder_values": 270,
+      "passed": true
+    },
+    "browser": {
+      "full": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total",
+        "rows": [],
+        "consent": null,
+        "button": [
+          {
+            "text": "Checkout",
+            "disabled": false
+          }
+        ],
+        "overflow": false
+      },
+      "installments": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "rows": [
+          "Today \u2014 $106.66",
+          "Nov 5, 2026 \u2014 $106.66",
+          "Dec 5, 2026 \u2014 $106.68"
+        ],
+        "consent": {
+          "checked": false,
+          "disabled": false
+        },
+        "button": [
+          {
+            "text": "Pay $106.66 today",
+            "disabled": true
+          }
+        ],
+        "overflow": false
+      },
+      "desktop": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "rows": [
+          "Today \u2014 $106.66",
+          "Nov 5, 2026 \u2014 $106.66",
+          "Dec 5, 2026 \u2014 $106.68"
+        ],
+        "consent": {
+          "checked": false,
+          "disabled": false
+        },
+        "button": [
+          {
+            "text": "Pay $106.66 today",
+            "disabled": true
+          }
+        ],
+        "overflow": false
+      },
+      "mobile": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "rows": [
+          "Today \u2014 $106.66",
+          "Nov 5, 2026 \u2014 $106.66",
+          "Dec 5, 2026 \u2014 $106.68"
+        ],
+        "consent": {
+          "checked": false,
+          "disabled": false
+        },
+        "button": [
+          {
+            "text": "Pay $106.66 today",
+            "disabled": true
+          }
+        ],
+        "overflow": false
+      },
+      "switchedFull": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total",
+        "rows": [],
+        "consent": null,
+        "button": [
+          {
+            "text": "Checkout",
+            "disabled": false
+          }
+        ],
+        "overflow": false
+      },
+      "switchedBack": {
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "rows": [
+          "Today \u2014 $106.66",
+          "Nov 5, 2026 \u2014 $106.66",
+          "Dec 5, 2026 \u2014 $106.68"
+        ],
+        "consent": {
+          "checked": false,
+          "disabled": false
+        },
+        "button": [
+          {
+            "text": "Pay $106.66 today",
+            "disabled": true
+          }
+        ],
+        "overflow": false
+      }
+    },
+    "stripe": {
+      "declineShown": true,
+      "threeDSChallengeCompleted": true,
+      "paid": 106.66,
+      "remaining": 213.34,
+      "ledgerEntries": 1,
+      "duplicateWebhookStatuses": [
+        200,
+        200
+      ]
+    },
+    "zero_deposit": {
+      "name": "compact-zero",
+      "cartId": "375d2860-6e68-4a13-9251-d68701482c7a",
+      "attendeeId": "a2fae0aa-6817-4008-89a6-a512fbb1e87e",
+      "paid": 0,
+      "installments": true,
+      "remaining": 320,
+      "schedule": [
+        {
+          "amount": 0,
+          "days": 0,
+          "status": "paid"
+        },
+        {
+          "amount": 160,
+          "days": 30,
+          "status": "pending"
+        },
+        {
+          "amount": 160,
+          "days": 60,
+          "status": "pending"
+        }
+      ],
+      "status": "pending",
+      "ledgerEntries": 0,
+      "duplicateWebhookStatuses": [
+        200,
+        200
+      ],
+      "attendees": [
+        {
+          "id": "a2fae0aa-6817-4008-89a6-a512fbb1e87e",
+          "hasInstallments": true,
+          "remaining": 320,
+          "status": "pending"
+        }
+      ]
+    },
+    "spanish_automatic": {
+      "review": "Opci\u00f3n de pago\nPagar todo\nPago \u00fanico\n320,00\u00a0US$ hoy\nPagar en 3 cuotas\n0,00\u00a0US$ hoy + 2 pagos futuros\n320,00\u00a0US$ en total\nTu calendario de pagos\n\nStandard Admission \u00d7 1\n\nHoy \u2014 0,00\u00a0US$\n5 nov 2026 \u2014 160,00\u00a0US$\n5 dic 2026 \u2014 160,00\u00a0US$\n\nHoy no se realizar\u00e1 ning\u00fan cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuaci\u00f3n.\n\nAutorizaci\u00f3n de pagos autom\u00e1ticos\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar autom\u00e1ticamente los pagos restantes en las fechas indicadas arriba o despu\u00e9s.\n\nLos fallos temporales de pago pueden reintentarse despu\u00e9s de 3 y 7 d\u00edas.\n\nTus entradas se confirmar\u00e1n cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobaci\u00f3n necesaria.\n\nDetalles del plan de pago",
+      "button": "Guardar tarjeta y confirmar reserva",
+      "overflow": false
+    },
+    "spanish_manual": {
+      "review": "Opci\u00f3n de pago\nPagar todo\nPago \u00fanico\n320,00\u00a0US$ hoy\nPagar en 3 cuotas\n0,00\u00a0US$ hoy + 2 pagos futuros\n320,00\u00a0US$ en total\nTu calendario de pagos\n\nStandard Admission \u00d7 1\n\nHoy \u2014 0,00\u00a0US$\n5 nov 2026 \u2014 160,00\u00a0US$\n5 dic 2026 \u2014 160,00\u00a0US$\n\nHoy no se realizar\u00e1 ning\u00fan cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuaci\u00f3n.\n\nAutorizaci\u00f3n de pago\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar los pagos restantes en las fechas indicadas arriba o despu\u00e9s.\n\nTus entradas se confirmar\u00e1n cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobaci\u00f3n necesaria.\n\nDetalles del plan de pago",
+      "button": "Guardar tarjeta y confirmar reserva"
+    },
+    "design_text_save": {
+      "status": 200,
+      "path": "/api/v1/config",
+      "value": "Confirm {amount} today",
+      "original": "Pay {amount} today"
+    },
+    "design_text_render": {
+      "button": "Confirm $106.66 today",
+      "placeholderFilled": true
+    },
+    "confirmation_testing": "Order confirmation was loaded through the isolated API for own QA records; default hosted confirmation URL initially pointed at the regular namespace, so browser routing was corrected. No product confirmation code change was needed.",
+    "screenshots_refreshed": [
+      "installment-pay-full-choice",
+      "installment-automatic-agreement",
+      "installment-zero-checkout",
+      "installment-checkout-text"
+    ],
+    "visual_review": "All four browser captures reviewed; unfilled #9c26dc 4px circles; synthetic test data only.",
+    "documentation_render": [
+      {
+        "viewport": "desktop",
+        "width": 1440,
+        "images_loaded": 24,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      },
+      {
+        "viewport": "mobile",
+        "width": 390,
+        "images_loaded": 24,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      }
+    ],
+    "qa_configuration_restored": {
+      "collection_mode": "automatic",
+      "retry_days": [
+        3,
+        7
+      ],
+      "template": "QA three equal payments",
+      "translation_enabled": false,
+      "button_text": "Pay {amount} today"
+    }
   }
 }
