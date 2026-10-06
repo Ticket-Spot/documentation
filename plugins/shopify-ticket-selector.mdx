@@ -15,6 +15,7 @@ There are two parts to setup: **add the Ticket Selector app block to a Shopify p
 | **Reserved seating** | A seating chart where customers choose available seats and the applicable ticket price. Required for Ticket Spot seat selection on Shopify. |
 | **Dates and time slots** | A booking flow for recurring events, classes, tours, and timed entry, including a calendar layout. |
 | **Capacity across ticket types** | Ticket Spot checks the event or selected occurrence's shared attendee limit alongside individual ticket availability. |
+| **Event add-ons** | Offer separately published, hidden events after the main ticket selection, including date choices and each add-on’s ticket capacity. |
 | **Waitlists** | Waitlist signup when tickets or public capacity run out, plus invitation-based access for eligible guests. Required for Ticket Spot waitlist use on a Shopify product page. |
 | **Access codes** | Entry of event or hidden-ticket access codes before selecting eligible tickets. |
 | **Tracking links** | Ticket Spot campaign information follows the customer into the selector from the generated Shopify product link. |
@@ -150,6 +151,12 @@ Shopify tracks inventory for individual variants. Ticket Spot also provides a sh
 For example, a workshop can offer **Adult** and **Child** tickets while allowing only **30 attendees in total**. Configure that shared capacity in Ticket Spot and use the Ticket Selector for the booking flow. Giving each Shopify variant stock of 30 does not, by itself, create one shared limit of 30.
 
 Keep ticket quantities and event/date capacities consistent, publish updates, and test a mixed-ticket selection near the limit. Review **Out of sync** warnings before selling. Do not assume a third-party buy button, POS flow, or direct Shopify variant link runs the Ticket Spot selector's booking checks.
+
+### Event add-ons on Shopify
+
+Create a separate event for each extra, enable **Event Details → Hide Event from Event Listing**, and **publish every add-on to Shopify**. The hide flag makes the linked product **Unlisted**. Attach these events under the main event’s **Event Add-ons**. Customers select main tickets first, then extras and any dates or times. Each add-on uses its first ticket and keeps its own quantity and capacity settings.
+
+Follow [Shopify event add-on setup](./shopify-event-add-ons) for screenshots, publishing steps, and a checkout checklist.
 
 ### Waitlists on Shopify
 

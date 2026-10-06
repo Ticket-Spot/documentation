@@ -243,6 +243,7 @@
             "pages": [
               "plugins/connect-shopify",
               "plugins/shopify-ticket-selector",
+              "plugins/shopify-event-add-ons",
               "plugins/shopify-ticketing-faq",
               "plugins/connect-wix",
               "plugins/connect-lovable",

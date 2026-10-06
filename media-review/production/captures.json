@@ -17125,5 +17125,213 @@
     "integrated_pages": [
       "attendee-portal/manage-payments.mdx"
     ]
+  },
+  "shopify-addon-hidden-event": {
+    "id": "shopify-addon-hidden-event",
+    "key": "shopify-addon-hidden-event",
+    "asset": "assets/refresh/plugins/shopify-addon-hidden-event.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Hide the separate add-on event",
+    "caption": "Hide the separate add-on event and set its own attendee capacity.",
+    "alt": "Hide Event from Event Listing enabled on the lunch add-on, with event capacity six.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-06T04:16:06.320Z",
+    "route": "#/events/manage/7c77de52-5bdc-448a-aa4a-acef59ade31c",
+    "callouts": [
+      "Hide Event from Event Listing ",
+      "Maximum attendees"
+    ],
+    "clip": {
+      "x": 145,
+      "y": 260,
+      "width": 465,
+      "height": 410
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-configuration": {
+    "id": "shopify-addon-configuration",
+    "key": "shopify-addon-configuration",
+    "asset": "assets/refresh/plugins/shopify-addon-configuration.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Attach hidden events to the main event",
+    "caption": "Enable optional add-ons and attach the separate lunch and workshop events.",
+    "alt": "Add-ons enabled, minimum zero, maximum three, time conflicts off, and two attached add-on events.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-06T04:22:29.728Z",
+    "route": "#/events/manage/c84dd80d-047f-4846-9a53-51157137eb54/addons",
+    "callouts": [
+      "Enable Add-ons",
+      "Add Event Add-on"
+    ],
+    "clip": {
+      "x": 145,
+      "y": 310,
+      "width": 1120,
+      "height": 527
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-ticket-capacity": {
+    "id": "shopify-addon-ticket-capacity",
+    "key": "shopify-addon-ticket-capacity",
+    "asset": "assets/refresh/plugins/shopify-addon-ticket-capacity.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Set the first ticket price and quantity limits",
+    "caption": "Set ticket inventory and the quantity allowed per order.",
+    "alt": "Lunch ticket inventory six, one capacity place per ticket, minimum one and maximum two tickets per order.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-06T04:22:11.231Z",
+    "route": "#/events/manage/7c77de52-5bdc-448a-aa4a-acef59ade31c/tickets",
+    "callouts": [
+      "Ticket Capacity",
+      "Max Per Order"
+    ],
+    "clip": {
+      "x": 630.3984375,
+      "y": 534.5,
+      "width": 348.3984375,
+      "height": 423.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-dates": {
+    "id": "shopify-addon-dates",
+    "key": "shopify-addon-dates",
+    "asset": "assets/refresh/plugins/shopify-addon-dates.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Offer an add-on on multiple dates",
+    "caption": "Offer two workshop dates, each with three places. One place on each date is booked in this example.",
+    "alt": "Specific Dates setup with November 14 and 15 workshop sessions; each shows one of three places booked.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-06T04:22:20.060Z",
+    "route": "#/events/manage/096809a8-7f18-4ae7-822c-6cf36d278387/dates",
+    "callouts": [
+      "Specific Dates",
+      "Manage dates & times"
+    ],
+    "clip": {
+      "x": 140,
+      "y": 413,
+      "width": 1120,
+      "height": 705.5
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-selection": {
+    "id": "shopify-addon-selection",
+    "key": "shopify-addon-selection",
+    "asset": "assets/refresh/plugins/shopify-addon-selection.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Choose add-ons after main tickets",
+    "caption": "After main ticket selection, customers can add lunch and choose workshop dates.",
+    "alt": "Live Shopify Ticket Selector with a fifteen-dollar lunch add-on and twenty-dollar workshop date choices.",
+    "source": "Ticket Spot Demo live dashboard",
+    "capturedAt": "2026-10-06T03:55:35.186Z",
+    "route": "",
+    "callouts": [
+      "Select",
+      "Sat, Nov 14, 10:00 AM"
+    ],
+    "clip": {
+      "x": 10,
+      "y": 10,
+      "width": 1030,
+      "height": 800
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-quantity-limit": {
+    "id": "shopify-addon-quantity-limit",
+    "key": "shopify-addon-quantity-limit",
+    "asset": "assets/refresh/plugins/shopify-addon-quantity-limit.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Review add-on quantity and availability",
+    "caption": "The lunch add-on stops at its maximum of two tickets per order.",
+    "alt": "Selected lunch add-on with quantity two and disabled increase control, alongside the selected workshop date.",
+    "source": "Live Shopify-mode Ticket Selector with dedicated Demo events.",
+    "capturedAt": "2026-10-06T04:23:31.079Z",
+    "route": "",
+    "callouts": [
+      "+"
+    ],
+    "clip": {
+      "x": 10,
+      "y": 10,
+      "width": 1030,
+      "height": 701.4140625
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
+  },
+  "shopify-addon-checkout": {
+    "id": "shopify-addon-checkout",
+    "key": "shopify-addon-checkout",
+    "asset": "assets/refresh/plugins/shopify-addon-checkout.png",
+    "pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ],
+    "title": "Verify the main ticket and add-ons at Shopify checkout",
+    "caption": "Shopify order summary: the main ticket, two lunches, and two workshop dates.",
+    "alt": "Shopify order summary with one admission, two lunches, one workshop on each of two dates, and total 105 US dollars.",
+    "source": "Live Shopify Demo test-order summary; test gateway purchase, not a real charge.",
+    "capturedAt": "2026-10-06T04:12:55.703Z",
+    "route": "",
+    "callouts": [
+      "Total"
+    ],
+    "clip": {
+      "x": 785,
+      "y": 80,
+      "width": 460,
+      "height": 430
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "review_note": "Reviewed readable controls and purple circles; no browser chrome or URL. Live Demo data; no fabricated checkout result.",
+    "integrated_pages": [
+      "plugins/shopify-event-add-ons.mdx"
+    ]
   }
 }

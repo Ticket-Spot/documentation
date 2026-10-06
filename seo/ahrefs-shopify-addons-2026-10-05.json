@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-05",
+  "country": "us",
+  "requested_keywords": [
+    "shopify event add ons",
+    "shopify event tickets",
+    "shopify ticketing",
+    "shopify event registration",
+    "event add ons"
+  ],
+  "source": "Ahrefs Keywords Explorer overview",
+  "keywords": [
+    {
+      "keyword": "shopify ticketing",
+      "volume": 10,
+      "global_volume": 50,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "shopify event registration",
+      "volume": 50,
+      "global_volume": 70,
+      "difficulty": 4,
+      "parent_topic": "shopify event registration",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    },
+    {
+      "keyword": "event add ons",
+      "volume": 0,
+      "global_volume": 10,
+      "difficulty": null,
+      "parent_topic": null,
+      "intents": {}
+    },
+    {
+      "keyword": "shopify event tickets",
+      "volume": 50,
+      "global_volume": 70,
+      "difficulty": 11,
+      "parent_topic": "shopify ticket system",
+      "intents": {
+        "informational": true,
+        "navigational": false,
+        "commercial": true,
+        "transactional": false,
+        "branded": true,
+        "local": false
+      }
+    }
+  ],
+  "unavailable_keywords": [
+    "shopify event add ons"
+  ],
+  "note": "US and global monthly volume estimates. Missing rows and null difficulty are unavailable, not zero."
+}

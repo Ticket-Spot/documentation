@@ -7,7 +7,7 @@ Use Event Add-ons to offer workshops, breakout sessions, or extra experiences al
 
 ## Before you start
 
-Create and save the main event and the events you want to offer as add-ons. Configure tickets on each add-on event first. The add-on dialog uses the selected event's **first ticket price** as its add-on price.
+Create and save the main event and the events you want to offer as add-ons. Configure tickets on each add-on event first. The selector uses the selected event's **first ticket** and its price. Set that ticket's inventory and per-order limits, and check the event/date capacity. For Shopify, follow the [Shopify event add-on guide](../plugins/shopify-event-add-ons): every add-on must be published, with **Hide Event from Event Listing** enabled to make its Shopify product **Unlisted**.
 
 ## Configure add-ons
 
@@ -16,8 +16,8 @@ Create and save the main event and the events you want to offer as add-ons. Conf
   <img src="../assets/refresh/event-management/addon-rules.png" alt="Enable Add-ons, choose the minimum and maximum selections, and decide whether overlapping time slots are allowed. A minimum of 0 makes add-ons optional." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
 </Frame>
 
-<Frame caption="Select the saved add-on event and review the note: its first ticket supplies the price, and adding it hides it from public listings. Verify its tickets before adding.">
-  <img src="../assets/refresh/event-management/addon-selection.png" alt="Select the saved add-on event and review the note: its first ticket supplies the price, and adding it hides it from public listings. Verify its tickets before adding." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+<Frame caption="Select the saved add-on event. Its first ticket supplies the price; configure the event’s privacy setting separately before publishing.">
+  <img src="../assets/refresh/event-management/addon-selection.png" alt="Select the saved add-on event. Its first ticket supplies the price; configure the event’s privacy setting separately before publishing." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
 </Frame>
 
 1. Edit the saved main event and select **Event Add-ons**.
@@ -28,7 +28,9 @@ Create and save the main event and the events you want to offer as add-ons. Conf
 6. Review **Addon Price** and the first ticket’s name when shown. If the dialog only shows the event name and pricing note, open the add-on event’s Tickets step to verify the first ticket’s price before confirming **Add**.
 7. Check **Configured Add-ons** and save/update the main event to persist its configuration.
 
-The selected event is hidden from public listings and offered as an add-on. Do not attach an event you intend to keep as an independently listed event without reviewing that effect.
+On each separate add-on, enable **Event Details → Privacy → Hide Event from Event Listing** and save/publish it. Attaching an event does not automatically set this flag, despite the note in the current dialog. On Shopify, publish every add-on: this flag makes its linked product **Unlisted** while keeping it purchasable through the main event. A draft is not a substitute for a published, hidden add-on.
+
+Add-ons can have one date or several. Attach the parent event for a series so customers can choose a date/time. The minimum and maximum above count selections, while each selected add-on has its own ticket quantity. Choosing two different dates counts as two selections.
 
 For a recurring series, configure add-ons on the parent event. The step is hidden for new unsaved events, individual child events, and no-ticket/external-link setups.
 
@@ -36,6 +38,6 @@ For a recurring series, configure add-ons on the parent event. The step is hidde
 
 Open the main event's checkout. Check that the correct add-ons and prices appear. Test below the minimum, at the allowed maximum, and with overlapping sessions. Also test an add-on at capacity using its ticket settings.
 
-Drag rows to set their display order. Use the row’s delete control and confirm removal to detach an add-on. This removes the relationship; do not describe it as deleting the underlying event or refunding a purchase.
+Drag rows to set their display order. Use the row’s delete control and confirm removal to detach an add-on. This removes the relationship; it does not delete the underlying event, refund a purchase, or change its privacy flag. If you want to list that event independently later, change its privacy setting and publish the update.
 
 See [ticket setup](./ticket-setup) and [event dates and times](./datetime).
