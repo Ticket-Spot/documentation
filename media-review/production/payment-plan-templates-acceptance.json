@@ -493,5 +493,66 @@
     "Production installment scheduler remains paused; no deployment or activation.",
     "Multi-event carts use full payment. Installments require Stripe saved cards; PayPal, Square and device wallets were not tested in this pass.",
     "Whole-dashboard typecheck and whole-client translation checks have pre-existing failures; scoped new files and translations passed."
-  ]
+  ],
+  "visual_followup": {
+    "date": "2026-10-06T20:41:31.558397+00:00",
+    "scope": "Standard Offer installments toggle and shared success toast",
+    "browser": {
+      "before": {
+        "enabled": true,
+        "dropdowns": [
+          "QA three equal payments\nQA three equal payments",
+          "Selected tickets\nSelected tickets"
+        ],
+        "selectedTickets": "Standard Admission",
+        "deadline": "1 days",
+        "hasInlineSuccess": false
+      },
+      "off": {
+        "enabled": false,
+        "dropdowns": [],
+        "hasInlineSuccess": false
+      },
+      "restored": {
+        "enabled": true,
+        "dropdowns": [
+          "QA three equal payments\nQA three equal payments",
+          "Selected tickets\nSelected tickets"
+        ],
+        "selectedTickets": "Standard Admission",
+        "deadline": "1 days",
+        "hasInlineSuccess": false
+      },
+      "savedStatus": 200,
+      "toast": [
+        "Success!\nPayment plan saved."
+      ],
+      "inlineSuccessRemoved": true,
+      "persisted": {
+        "enabled": true,
+        "dropdowns": [
+          "QA three equal payments\nQA three equal payments",
+          "Selected tickets\nSelected tickets"
+        ],
+        "selectedTickets": "Standard Admission",
+        "deadline": "1 days",
+        "hasInlineSuccess": false
+      }
+    },
+    "capture": "assets/refresh/event-management/event-payment-plan.png",
+    "documentation_render": [
+      {
+        "width": 1440,
+        "loaded": true,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      },
+      {
+        "width": 390,
+        "loaded": true,
+        "horizontal_overflow": false,
+        "placement_visually_reviewed": true
+      }
+    ]
+  }
 }
