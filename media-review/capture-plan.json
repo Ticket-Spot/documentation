@@ -1,15 +1,15 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 354,
-    "annotated_screenshots": 304,
+    "capture_units": 355,
+    "annotated_screenshots": 305,
     "zoom_gifs": 50,
     "static_gif_posters": 51,
-    "pages_covered": 142,
+    "pages_covered": 143,
     "newly_illustrated_pages": 54,
-    "priority_0": 170,
+    "priority_0": 171,
     "priority_1": 184,
-    "demo_browser_units": 280
+    "demo_browser_units": 281
   },
   "samples": [
     {
@@ -12722,6 +12722,60 @@
       "delivered_formats": [
         "PNG"
       ]
+    },
+    {
+      "id": "standalone-membership-sales",
+      "pages": [
+        "memberships/sell-without-tickets.mdx"
+      ],
+      "area": "memberships",
+      "format": "Annotated screenshot",
+      "title": "Sell memberships without tickets",
+      "callouts": [
+        "Memberships onboarding",
+        "Sell memberships",
+        "Memberships step",
+        "Holder details",
+        "Membership confirmation",
+        "Membership Order Confirmation design",
+        "Member management",
+        "Buy Membership Button Text",
+        "Membership page without event dates or venue"
+      ],
+      "access": "Demo browser",
+      "fixture": "Own isolated stored QA membership sales event; Stripe sandbox; local transport sinks",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/memberships/standalone-event-setup.png",
+      "poster": null,
+      "capture_rule": "Actual application UI with synthetic data; no browser chrome; unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Twelve readable captures, including Memberships onboarding, custom public purchase-button settings, the public membership page, confirmation design controls and the signed-in buyer portal",
+      "readiness": "Local implementation and real stored test purchases reviewed",
+      "captured_assets": [
+        "assets/refresh/memberships/standalone-event-setup.png",
+        "assets/refresh/memberships/standalone-membership-assignment.png",
+        "assets/refresh/memberships/standalone-checkout-selection.png",
+        "assets/refresh/memberships/standalone-holder-details.png",
+        "assets/refresh/memberships/standalone-order-confirmation.png",
+        "assets/refresh/memberships/standalone-confirmation-design.png",
+        "assets/refresh/memberships/standalone-confirmation-controls.png",
+        "assets/refresh/memberships/standalone-manage-members.png",
+        "assets/refresh/memberships/standalone-member-portal.png",
+        "assets/refresh/memberships/standalone-onboarding.png",
+        "assets/refresh/memberships/standalone-event-page-settings.png",
+        "assets/refresh/memberships/standalone-event-page.png"
+      ],
+      "integrated_pages": [
+        "memberships/sell-without-tickets.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 12
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     }
   ],
   "page_decisions": {
@@ -12752,16 +12806,16 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-06T19:58:32.328540+00:00",
+    "updated_at": "2026-10-07T17:59:44.452800+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-    "planned_capture_units": 354,
-    "units_with_any_capture": 310,
-    "checked_screenshots": 596,
+    "planned_capture_units": 355,
+    "units_with_any_capture": 316,
+    "checked_screenshots": 613,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 104,
+    "guides_with_current_media": 105,
     "external_capture_units_deferred": 66,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },

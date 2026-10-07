@@ -105,6 +105,7 @@
             "pages": [
               "memberships/overview",
               "memberships/create-membership",
+              "memberships/sell-without-tickets",
               "memberships/assign-to-events",
               "memberships/ticket-access-and-pricing",
               "memberships/manage-members"

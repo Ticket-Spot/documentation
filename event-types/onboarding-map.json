@@ -1,6 +1,6 @@
 {
   "source": "eventviewer-dashboard/src/redesign/features/Onboarding/templates.ts",
-  "reviewed_date": "2026-10-01",
+  "reviewed_date": "2026-10-07",
   "templates": [
     {
       "id": "wine-tour",
@@ -319,6 +319,18 @@
         "ticketPrice": 25
       },
       "guide": "event-types/assigned-seating"
+    },
+    {
+      "id": "memberships",
+      "label": "Memberships",
+      "group": "advanced",
+      "opens_editor_directly": true,
+      "defaults": {
+        "eventSetup": "memberships",
+        "dateTBD": true,
+        "unlimitedCapacity": true
+      },
+      "guide": "memberships/sell-without-tickets"
     }
   ],
   "additional_routes": [

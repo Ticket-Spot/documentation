@@ -17733,5 +17733,356 @@
     "qa": "passed visual review",
     "capturedAt": "2026-10-07T00:35:36.065833Z",
     "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data."
+  },
+  "standalone-event-setup": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-event-setup",
+    "asset": "assets/refresh/memberships/standalone-event-setup.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership event setup with Sell memberships selected and the reduced editor tabs.",
+    "caption": "Sell memberships creates an evergreen checkout. Its event editor keeps Memberships and purchaser questions, while hiding ticket, date, reminder, and SMS setup.",
+    "alt": "Membership event setup with Sell memberships selected and the reduced editor tabs.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T17:58:18.776Z",
+    "route": "http://localhost:8080/#/events/manage/membership-sales-20261006/details",
+    "callouts": [
+      "Sell memberships",
+      "Memberships"
+    ],
+    "clip": {
+      "x": 80,
+      "y": 175,
+      "width": 1280,
+      "height": 805
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-membership-assignment": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-membership-assignment",
+    "asset": "assets/refresh/memberships/standalone-membership-assignment.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership sales event with annual and visit-pass plans available during checkout.",
+    "caption": "The Memberships tab lists the plans offered at checkout. Admission controls are hidden because this event is a sales page.",
+    "alt": "Membership sales event with annual and visit-pass plans available during checkout.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:42:55.184Z",
+    "route": "http://localhost:8080/#/events/manage/membership-sales-20261006/memberships",
+    "callouts": [
+      "Memberships",
+      "Add Membership",
+      "Available during checkout"
+    ],
+    "clip": {
+      "x": 80,
+      "y": 175,
+      "width": 1280,
+      "height": 805
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-checkout-selection": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-checkout-selection",
+    "asset": "assets/refresh/memberships/standalone-checkout-selection.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership-only checkout showing selected annual membership and ten-visit pass without a Tickets step.",
+    "caption": "Buyers can choose one or several membership plans. Each card shows its price, validity period, and visit allowance.",
+    "alt": "Membership-only checkout showing selected annual membership and ten-visit pass without a Tickets step.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:36:48.039Z",
+    "route": "http://localhost:8091/widget",
+    "callouts": [
+      "Memberships",
+      "Added to order",
+      "Continue to Your details \u2192"
+    ],
+    "clip": {
+      "x": 100,
+      "y": 30,
+      "width": 1240,
+      "height": 1320
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-holder-details": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-holder-details",
+    "asset": "assets/refresh/memberships/standalone-holder-details.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership holder details form with first name, last name, and email.",
+    "caption": "Your details collects the membership holder's name and email once for the order.",
+    "alt": "Membership holder details form with first name, last name, and email.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:45:24.253Z",
+    "route": "http://localhost:8091/widget",
+    "callouts": [
+      "Your details",
+      "Membership holder details"
+    ],
+    "clip": {
+      "x": 0,
+      "y": 30,
+      "width": 1440,
+      "height": 560
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-order-confirmation": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-order-confirmation",
+    "asset": "assets/refresh/memberships/standalone-order-confirmation.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Completed membership order with two member references, validity dates, and membership action buttons.",
+    "caption": "The confirmation identifies each membership and offers Download membership, Apple Wallet passes, and Manage memberships.",
+    "alt": "Completed membership order with two member references, validity dates, and membership action buttons.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:48:58.469Z",
+    "route": "http://localhost:54821/api/v1/dashboard/attendee-portal/order-confirmation/52305677-444b-434d-8ea6-dc30a0e01255",
+    "callouts": [
+      "Download membership",
+      "Manage memberships",
+      "MEM-001000"
+    ],
+    "clip": {
+      "x": 414,
+      "y": 10,
+      "width": 612,
+      "height": 1050
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-confirmation-design": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-confirmation-design",
+    "asset": "assets/refresh/memberships/standalone-confirmation-design.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership Order Confirmation settings beside the live membership email preview.",
+    "caption": "Membership Order Confirmation has its own subject, heading, message, detail toggles, PDF attachment, and action buttons.",
+    "alt": "Membership Order Confirmation settings beside the live membership email preview.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:50:54.656Z",
+    "route": "http://localhost:8080/#/events/design/communication/membership-order",
+    "callouts": [
+      "Membership Order Confirmation",
+      "Email Subject",
+      "Confirmation Heading"
+    ],
+    "clip": {
+      "x": 292,
+      "y": 175,
+      "width": 1120,
+      "height": 805
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-confirmation-controls": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-confirmation-controls",
+    "asset": "assets/refresh/memberships/standalone-confirmation-controls.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Membership confirmation toggles for the PDF attachment, download button, Apple Wallet, and Manage memberships.",
+    "caption": "Use the attachment and action switches to choose how members receive and manage their passes.",
+    "alt": "Membership confirmation toggles for the PDF attachment, download button, Apple Wallet, and Manage memberships.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:47:44.234Z",
+    "route": "http://localhost:8080/#/events/design/communication/membership-order",
+    "callouts": [
+      "Attach Membership PDF",
+      "Show Download Membership Button",
+      "Show Manage Memberships Button"
+    ],
+    "clip": {
+      "x": 315,
+      "y": 130,
+      "width": 1060,
+      "height": 800
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-manage-members": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-manage-members",
+    "asset": "assets/refresh/memberships/standalone-manage-members.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Issued membership listed in member management after a standalone purchase.",
+    "caption": "View Members lists issued memberships with their member number, holder, status, validity, and visit usage.",
+    "alt": "Issued membership listed in member management after a standalone purchase.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:41:59.969Z",
+    "route": "http://localhost:8080/#/events/memberships/760000710061/members",
+    "callouts": [
+      "Members (1)",
+      "MEM-001000"
+    ],
+    "clip": {
+      "x": 80,
+      "y": 175,
+      "width": 1330,
+      "height": 615
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-member-portal": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-member-portal",
+    "asset": "assets/refresh/memberships/standalone-member-portal.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Signed-in buyer portal with two purchased memberships and the Memberships tab selected.",
+    "caption": "Manage memberships opens the buyer's Memberships tab. View Membership shows the individual pass, status, expiry, and remaining access.",
+    "alt": "Signed-in buyer portal with two purchased memberships and the Memberships tab selected.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T06:56:40.275Z",
+    "route": "http://localhost:8080/#/attendee-dashboard",
+    "callouts": [
+      "Memberships",
+      "View Membership"
+    ],
+    "clip": {
+      "x": 80,
+      "y": 205,
+      "width": 1280,
+      "height": 755
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-onboarding": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-onboarding",
+    "asset": "assets/refresh/memberships/standalone-onboarding.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Memberships in the onboarding template picker.",
+    "caption": "Choose Memberships under Advanced to open an evergreen sales editor without date or ticket questions.",
+    "alt": "Memberships in the Advanced section of the onboarding picker.",
+    "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
+    "capturedAt": "2026-10-07T14:51:12.894Z",
+    "route": "http://localhost:8080/#/onboarding",
+    "callouts": [
+      "Memberships"
+    ],
+    "clip": {
+      "x": 380,
+      "y": 20,
+      "width": 680,
+      "height": 970
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-event-page-settings": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-event-page-settings",
+    "asset": "assets/refresh/memberships/standalone-event-page-settings.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Customize the membership purchase button in Design Event Page.",
+    "caption": "Buy Membership Button Text sets the purchase button for membership sales pages; it saves independently of Buy Tickets Button Text.",
+    "alt": "Customize the membership purchase button in Design Event Page.",
+    "source": "Actual local Ticket Spot dashboard and public website; own synthetic stored QA records in isolated Datastore namespace; setting saved through the real dashboard API",
+    "capturedAt": "2026-10-07T17:57:23.681Z",
+    "route": "http://localhost:8080/#/events/design/event",
+    "callouts": [
+      "Buy Membership Button Text",
+      "Join our club"
+    ],
+    "clip": {
+      "x": 315,
+      "y": 225,
+      "width": 650,
+      "height": 560
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-event-page": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-event-page",
+    "asset": "assets/refresh/memberships/standalone-event-page.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Public membership page with a custom purchase button and no event schedule or venue.",
+    "caption": "The membership page uses the saved purchase text and hides date, time, venue and ticket-price details.",
+    "alt": "Public membership page with a custom purchase button and no event schedule or venue.",
+    "source": "Actual local Ticket Spot dashboard and public website; own synthetic stored QA records in isolated Datastore namespace; setting saved through the real dashboard API",
+    "capturedAt": "2026-10-07T17:59:05.931Z",
+    "route": "http://localhost:3340/e/membership-page-qa-20261007",
+    "callouts": [
+      "Join our club"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 100,
+      "width": 355,
+      "height": 215
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
   }
 }
