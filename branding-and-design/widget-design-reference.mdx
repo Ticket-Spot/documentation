@@ -1,6 +1,6 @@
 ---
 title: "Widget colors and fonts reference"
-description: "Find every widget color and font control, including checkout, memberships, payment plans, and mobile styles."
+description: "Find every widget color and font control, including checkout, memberships, installment plans, and mobile styles."
 ---
 
 Open **Design → Widget**, select your widget, then **All Settings → Design → Customize components**. Search for a setting name to go directly to its section. These controls style this widget; edit shared identity in [Brand](./brand-design).
@@ -9,7 +9,9 @@ Choose **Your Brand** for a live connection to the site's colors and font. Local
 
 For colors, open the swatch, choose or enter a hex color, and confirm with the check button; cancel discards the draft. For fonts, open the font picker, choose the family and size, and set bold, italic, or underline. **Apply** saves the draft; **Cancel** leaves the saved font unchanged. **Use default font and style**, followed by Apply, restores the default. A selected brand font follows the site's uploaded font. Mobile typography is separate from desktop typography.
 
-The same element can have both a color row and a font row. Payment plan colors apply separately to Payment Plan Container, Due Today Section, Future Payments, and Timeline. Change one at a time and inspect the preview. Colors and fonts are managed in the **Wix Editor → app Settings → Design** for Wix sites; this dashboard category is hidden there.
+The same element can have both a color row and a font row. Installment plan colors apply separately to Installment Plan Container, Due Today Section, Future Payments, and Timeline. Change one at a time and inspect the preview. Colors and fonts are managed in the **Wix Editor → app Settings → Design** for Wix sites; this dashboard category is hidden there.
+
+Checkout installment choices and authorization use the **Checkout** design colors: the next-button background supplies the accent, with card background, border, and ticket text colors inherited from checkout. These follow your brand defaults and any widget overrides. The separate **Installment plan** controls style the legacy installment summary.
 
 {/* BEGIN WIDGET OPTIONS */}
 
@@ -363,6 +365,56 @@ The same element can have both a color row and a font row. Payment plan colors a
 | **Zoom Event Text** | Color | Set the color of this element; review contrast in the preview. |
 | **Zoom Event Text** | Font and style | Set the font family, size, bold, italic, and underline styling for this text. |
 
+## Installment plan
+
+<Accordion title="View current controls">
+
+<Frame caption="All Settings → Installment plan — Installment Plan Container. The circles identify Background Color and Border Color.">
+  <img src="/assets/refresh/branding-and-design/widget-style-installments.png" alt="All Settings → Installment plan — Installment Plan Container. The circles identify Background Color and Border Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Installment plan — Due Today Section. The circles identify Background Color and Border Color.">
+  <img src="/assets/refresh/branding-and-design/widget-style-installments-2.png" alt="All Settings → Installment plan — Due Today Section. The circles identify Background Color and Border Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Installment plan — Future Payments. The circles identify Background Color and Border Color.">
+  <img src="/assets/refresh/branding-and-design/widget-style-installments-3.png" alt="All Settings → Installment plan — Future Payments. The circles identify Background Color and Border Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+<Frame caption="All Settings → Installment plan — Timeline. The circles identify Timeline Line Color and Timeline Dot Color.">
+  <img src="/assets/refresh/branding-and-design/widget-style-installments-4.png" alt="All Settings → Installment plan — Timeline. The circles identify Timeline Line Color and Timeline Dot Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
+</Frame>
+
+</Accordion>
+
+{/* widget-option: _installmentWidget_futureAmountColor */}
+{/* widget-option: _installmentWidget_futureBackgroundColor */}
+{/* widget-option: _installmentWidget_futureBorderColor */}
+{/* widget-option: _installmentWidget_planBackgroundColor */}
+{/* widget-option: _installmentWidget_planBorderColor */}
+{/* widget-option: _installmentWidget_planTextColor */}
+{/* widget-option: _installmentWidget_planTitleColor */}
+{/* widget-option: _installmentWidget_timelineColor */}
+{/* widget-option: _installmentWidget_timelineDotColor */}
+{/* widget-option: _installmentWidget_todayAmountColor */}
+{/* widget-option: _installmentWidget_todayBackgroundColor */}
+{/* widget-option: _installmentWidget_todayBorderColor */}
+
+| Option | Control | What it changes |
+|---|---|---|
+| **Amount Text Color** | Color | Future Payments: set the amount text color and check contrast. |
+| **Amount Text Color** | Color | Due Today Section: set the amount text color and check contrast. |
+| **Background Color** | Color | Future Payments: set the background color and check contrast. |
+| **Background Color** | Color | Installment Plan Container: set the background color and check contrast. |
+| **Background Color** | Color | Due Today Section: set the background color and check contrast. |
+| **Border Color** | Color | Future Payments: set the border color and check contrast. |
+| **Border Color** | Color | Installment Plan Container: set the border color and check contrast. |
+| **Border Color** | Color | Due Today Section: set the border color and check contrast. |
+| **Secondary Text Color** | Color | Installment Plan Container: set the secondary text color and check contrast. |
+| **Timeline Dot Color** | Color | Timeline: set the timeline dot color and check contrast. |
+| **Timeline Line Color** | Color | Timeline: set the timeline line color and check contrast. |
+| **Title Text Color** | Color | Installment Plan Container: set the title text color and check contrast. |
+
 ## Memberships
 
 <Accordion title="View current controls">
@@ -514,56 +566,6 @@ The same element can have both a color row and a font row. Payment plan colors a
 | **Date Picker Header Background Color** | Color | Set the color of this element; review contrast in the preview. |
 | **Date Picker Selected Date Color** | Color | Set the color of this element; review contrast in the preview. |
 | **Date Picker Selected Date Highlight Color** | Color | Set the color of this element; review contrast in the preview. |
-
-## Payment plan
-
-<Accordion title="View current controls">
-
-<Frame caption="All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color.">
-  <img src="/assets/refresh/branding-and-design/widget-style-installments.png" alt="All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
-</Frame>
-
-<Frame caption="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.">
-  <img src="/assets/refresh/branding-and-design/widget-style-installments-2.png" alt="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
-</Frame>
-
-<Frame caption="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.">
-  <img src="/assets/refresh/branding-and-design/widget-style-installments-3.png" alt="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
-</Frame>
-
-<Frame caption="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.">
-  <img src="/assets/refresh/branding-and-design/widget-style-installments-4.png" alt="All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color." style={{ width: "100%", maxWidth: "515px", height: "auto" }} />
-</Frame>
-
-</Accordion>
-
-{/* widget-option: _installmentWidget_futureAmountColor */}
-{/* widget-option: _installmentWidget_futureBackgroundColor */}
-{/* widget-option: _installmentWidget_futureBorderColor */}
-{/* widget-option: _installmentWidget_planBackgroundColor */}
-{/* widget-option: _installmentWidget_planBorderColor */}
-{/* widget-option: _installmentWidget_planTextColor */}
-{/* widget-option: _installmentWidget_planTitleColor */}
-{/* widget-option: _installmentWidget_timelineColor */}
-{/* widget-option: _installmentWidget_timelineDotColor */}
-{/* widget-option: _installmentWidget_todayAmountColor */}
-{/* widget-option: _installmentWidget_todayBackgroundColor */}
-{/* widget-option: _installmentWidget_todayBorderColor */}
-
-| Option | Control | What it changes |
-|---|---|---|
-| **Amount Text Color** | Color | Future Payments: set the amount text color and check contrast. |
-| **Amount Text Color** | Color | Due Today Section: set the amount text color and check contrast. |
-| **Background Color** | Color | Future Payments: set the background color and check contrast. |
-| **Background Color** | Color | Payment Plan Container: set the background color and check contrast. |
-| **Background Color** | Color | Due Today Section: set the background color and check contrast. |
-| **Border Color** | Color | Future Payments: set the border color and check contrast. |
-| **Border Color** | Color | Payment Plan Container: set the border color and check contrast. |
-| **Border Color** | Color | Due Today Section: set the border color and check contrast. |
-| **Secondary Text Color** | Color | Payment Plan Container: set the secondary text color and check contrast. |
-| **Timeline Dot Color** | Color | Timeline: set the timeline dot color and check contrast. |
-| **Timeline Line Color** | Color | Timeline: set the timeline line color and check contrast. |
-| **Title Text Color** | Color | Payment Plan Container: set the title text color and check contrast. |
 
 ## Visitor search &amp; filters
 

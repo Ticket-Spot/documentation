@@ -82,9 +82,9 @@ for category, slug in categories.items():
                 "font": "Set the font family, size, bold, italic, and underline styling for this text.",
                 "setting": ("Set the attendee-facing wording for this item." if category == "text" else "Adjust this option in the named section and check the preview."),
             }[setting["kind"]]
-            if setting["subsectionLabel"] == "Payment plan":
+            if setting["subsectionLabel"] == "Installment plan":
                 part = setting["key"].split("_installmentWidget_")[-1]
-                area = next((name for prefix, name in [("plan", "Payment Plan Container"), ("today", "Due Today Section"), ("future", "Future Payments"), ("timeline", "Timeline")] if part.startswith(prefix)), "Payment plan")
+                area = next((name for prefix, name in [("plan", "Installment Plan Container"), ("today", "Due Today Section"), ("future", "Future Payments"), ("timeline", "Timeline")] if part.startswith(prefix)), "Installment plan")
                 description = f"{area}: set the {setting['label'].lower()} and check contrast."
             description = descriptions.get(setting["key"], description)
             lines += [f"| **{cell(setting['label'])}** | {kind} | {cell(description)} |"]

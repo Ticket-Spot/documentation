@@ -1,12 +1,12 @@
 ---
-title: "Set up ticket payment plans with Stripe installments"
+title: "Set up installment plans with Stripe"
 sidebarTitle: "Installment payments"
-description: "Create reusable equal-split or percentage event payment plans with Stripe. Offer full payment or installments, configure automatic payments, track paid installments, and resolve failed charges."
+description: "Create reusable equal-split or percentage event installment plans with Stripe. Offer full payment or installments, configure automatic payments, track paid installments, and resolve failed charges."
 ---
 
 Installments let an attendee pay a deposit at checkout and the remaining balance in later payments. The first amount can also be **$0**: the attendee saves a Stripe card and accepts the schedule before any later payments are collected. Installment plans with manual collection require **Business or higher**, a connected Stripe account, and Stripe card checkout. **Business Plus and Platform** also include automatic collection and configurable retry days.
 
-## Create a reusable payment plan
+## Create a reusable installment plan
 
 <Steps>
 <Step title="Connect Stripe">
@@ -22,7 +22,7 @@ Open **Installment Plans → Create installment plan**. Name the plan, choose **
 Percentages must total 100%. Use **0% / 50% / 50%** to save a card at checkout without collecting a deposit. Booking fees or other tickets can still make today's total positive. Equal splits preserve the exact total, with any rounding difference in the final payment.
 
 <Frame caption="A reusable percentage template with 0% at checkout and two later 50% payments. Days are measured from purchase.">
-  <img src="../assets/refresh/event-management/payment-plan-percentages.png" alt="Payment plan template editor with the zero-percent checkout payment circled" />
+  <img src="../assets/refresh/event-management/payment-plan-percentages.png" alt="Installment plan template editor with the zero-percent checkout payment circled" />
 </Frame>
 
 Click **Save installment plan** in the dialog footer. A success toast confirms creation or edits. The **Name** column contains your chosen label. **Used by** shows how many events currently have that plan enabled, including dates that inherit a series plan. To edit a template, select its centered pencil icon.
@@ -38,17 +38,17 @@ When editing a plan used by events, a notice explains that changes apply to **fu
 </Frame>
 </Step>
 <Step title="Assign the plan to an event">
-Edit the event and open **Payment Plan**. Turn **Allow installment payments** on, select an **Installment plan**, then set **Eligible tickets** to **All eligible paid tickets** or **Selected tickets**. Tickets you exclude are paid in full at checkout. Customers can always choose full payment.
+Edit the event and open **Installment Plan**. Turn **Allow installment payments** on, select an **Installment plan**, then set **Eligible tickets** to **All eligible paid tickets** or **Selected tickets**. Tickets you exclude are paid in full at checkout. Customers can always choose full payment.
 
 Set the **Final payment deadline** in days before the event. The default is one day. **Installments available until** shows the last checkout date and time in the event's timezone when the whole schedule fits. A schedule ending 90 days after checkout with a four-day deadline stops being offered 94 days before the event. With a zero-day deadline, the last payment must still be strictly before the event starts, so the cutoff says **before**.
 
 After this cutoff, customers can still pay in full. Dates in a recurring series calculate their own cutoff. Automatic retries and manual collections also stop at the accepted event start.
 
 <Frame caption="Allow installment payments, choose eligible tickets and a final payment deadline, and review the calculated availability cutoff.">
-  <img src="../assets/refresh/event-management/event-payment-plan.png" alt="Event payment plan with Allow installment payments and the calculated availability cutoff circled" />
+  <img src="../assets/refresh/event-management/event-payment-plan.png" alt="Event installment plan with Allow installment payments and the calculated availability cutoff circled" />
 </Frame>
 
-Click **Save event payment plan**. A success toast confirms the save. Existing bookings keep their accepted amounts, dates and collection policy when you edit a template or change the event assignment.
+Click **Save installment plan**. A success toast confirms the save. Existing bookings keep their accepted amounts, dates and collection policy when you edit a template or change the event assignment.
 </Step>
 </Steps>
 
@@ -58,26 +58,36 @@ The ticket picker shows excluded types as disabled options with a reason, such a
   <img src="../assets/refresh/event-management/payment-plan-ticket-eligibility.png" alt="Event installment ticket picker with eligible admissions and a disabled free admission option" />
 </Frame>
 
-Free, group, donation, pay-later, member-priced and bulk-discount ticket types use full payment. A date in an event series inherits its ticket source's payment plan unless you save an override for that date. An event with an unknown date cannot offer a new template plan.
+Free, group, donation, pay-later, member-priced and bulk-discount ticket types use full payment. A date in an event series inherits its ticket source's installment plan unless you save an override for that date. An event with an unknown date cannot offer a new template plan.
 
-<Note>Existing ticket-level installment schedules remain supported for compatibility. They appear under legacy controls when editing a ticket that already has installments. New plans belong in Installment Plans and the event's Payment Plan step.</Note>
+<Note>Existing ticket-level installment schedules remain supported for compatibility. They appear under legacy controls when editing a ticket that already has installments. New plans belong in Installment Plans and the event's Installment Plan step.</Note>
 
 ## Let buyers choose how to pay
 
 At checkout, **Pay in full** is selected initially. The buyer can instead choose **Pay in 3 installments** (or the configured payment count) when the selected tickets are eligible and the schedule fits before the event. One event can include eligible and excluded ticket types: excluded types are paid in full today. Multi-event carts currently use full payment; a buyer can book an eligible event separately to use installments.
 
+If installments are unavailable, checkout shows the normal full-payment form without an installment notice. If a buyer chooses installments and the offer becomes unavailable, checkout explains the change and asks them to choose **Pay in full** before continuing.
+
+<Frame caption="When the schedule cannot finish before the event, buyers see normal full-payment checkout without an unavailable installment option.">
+  <img src="../assets/refresh/event-management/installment-full-only-checkout.png" alt="Normal card checkout with the full $320 total circled and no installment notice" />
+</Frame>
+
 <Frame caption="Pay in full collects the entire price once and creates no later payment obligations.">
   <img src="../assets/refresh/event-management/installment-pay-full-choice.png" alt="Checkout with Pay in Full selected and the payment options circled" />
 </Frame>
 
-Selecting installments refreshes the amount due today. The compact review lists future amounts and dates, total price and remaining balance. The attendee must accept the saved-card agreement before payment. Additional collection and retry details are available under **Payment plan details**.
+Selecting installments refreshes **Due today** while the order summary keeps the full **Order total**. The schedule lists each future date and exact amount, with ticket names and quantities identifying the purchase. Additional balance and policy details are collapsed under **Installment plan details**.
 
-The installment option separates **today’s amount** from the **purchase total**. The schedule shows today and each future date with its exact amount. Ticket names and quantities identify the purchase; the order summary lists what the buyer is buying. Additional balance and policy details are collapsed under **Payment plan details**.
+The buyer authorizes the organizer to charge their card for the remaining payments on the dates shown. The payment processor securely stores the payment method; this explanation and collection terms stay inside the collapsed **Installment plan details**. Scheduled payments are charged on the dates shown. Organizers may manually collect a scheduled payment once it is due. Automatic retry timing appears below the checkbox when retries are enabled. Tickets remain pending until all installments are paid and any required approval is complete. The payment button confirms today’s charge, such as **Pay $106.66 today**.
 
-The buyer must accept the separate saved-card authorization before proceeding. Automatic retry timing appears below the checkbox when retries are enabled. The payment button confirms today’s charge, such as **Pay $106.66 today**.
+Installment choices and the authorization box follow the widget’s checkout colors, including your brand accent and any checkout design overrides. The details row opens across its full width and the widget adjusts its height when the section opens or closes.
+
+<Frame caption="Installment plan details keep purchase totals, fees, secure processor storage and scheduled collection terms together.">
+  <img src="../assets/refresh/event-management/installment-plan-details.png" alt="Expanded installment plan details using the burgundy brand accent, with full purchase value, remaining balance and concise collection terms" />
+</Frame>
 
 <Frame caption="A $320 ticket split into $106.66 today, $106.66 on November 5 and $106.68 on December 5. The button names today’s charge, and rounding preserves the $320 total.">
-  <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Compact installment checkout with the saved-card authorization circled" />
+  <img src="../assets/refresh/event-management/installment-automatic-agreement.png" alt="Compact installment checkout with the automatic-charge authorization circled" />
 </Frame>
 
 For a \$0 checkout amount, the button reads **Save card and confirm booking**. Stripe saves the card without taking a payment. The booking remains pending until its balance is paid and any admission approval is complete. Discounts are applied before splitting the ticket price; booking fees are due at checkout, and future amounts include their allocated ticket tax.
@@ -88,12 +98,12 @@ For a \$0 checkout amount, the button reads **Save card and confirm booking**. S
 
 ## Customize and translate checkout text
 
-Open **Design → Widget → Text → Checkout → Payment information → Installment Payment Text**. Edit the counted installment option, today and total amount text, authorization heading and agreement, scheduled-payment text, retry copy and payment buttons. Remaining-balance and zero-checkout messages are also editable. The settings use the attendee's checkout language when automatic event translation is enabled. Custom organizer wording is preserved.
+Open **Design → Widget → Text → Checkout → Payment information → Installment Payment Text**. Edit the counted installment option, today and total amount text, authorization heading and agreement, scheduled-payment text, retry copy and payment buttons. The order-total label, payment-processor storage notice, remaining-balance and zero-checkout messages are also editable. The settings use the attendee's checkout language when automatic event translation is enabled. Custom organizer wording is preserved.
 
 Keep variables such as `{amount}`, `{date}`, `{days}` and `{count}` in the applicable fields. They are filled from the accepted schedule. The required authorization checkbox remains visible even when optional review text is hidden.
 
-<Frame caption="Design → Widget → Text controls the installment payment button and zero-deposit button. Keep the amount variable in the paid button.">
-  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Checkout text settings with the installment payment button and amount variable circled" style={{ width: "100%", maxWidth: "420px", height: "auto" }} />
+<Frame caption="Design → Widget → Text controls the order total and processor-storage explanation. Authorization and payment-button text are editable in the same section.">
+  <img src="../assets/refresh/event-management/installment-checkout-text.png" alt="Checkout text settings with the payment processor storage explanation and order total label" style={{ width: "100%", maxWidth: "420px", height: "auto" }} />
 </Frame>
 
 ## Track payment progress

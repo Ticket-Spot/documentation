@@ -537,9 +537,12 @@ New checkout wording includes per-attendee progress, copy-from-purchaser and sav
 
 </Accordion>
 
+{/* widget-option: _installmentWidget_amountTodayText */}
 {/* widget-option: _installmentWidget_autoChargeNotice */}
 {/* widget-option: _installmentWidget_automaticAuthorization */}
+{/* widget-option: _installmentWidget_automaticAuthorizationTitle */}
 {/* widget-option: _installmentWidget_automaticCollectionNotice */}
+{/* widget-option: _installmentWidget_cardStorageNotice */}
 {/* widget-option: _installmentWidget_compactAutomaticAuthorization */}
 {/* widget-option: _installmentWidget_compactManualAuthorization */}
 {/* widget-option: _installmentWidget_compactRetryAuthorization */}
@@ -548,9 +551,14 @@ New checkout wording includes per-attendee progress, copy-from-purchaser and sav
 {/* widget-option: _installmentWidget_feeNotice */}
 {/* widget-option: _installmentWidget_futurePaymentDetails */}
 {/* widget-option: _installmentWidget_futurePaymentLabel */}
+{/* widget-option: _installmentWidget_futurePaymentsText */}
 {/* widget-option: _installmentWidget_manualAuthorization */}
+{/* widget-option: _installmentWidget_manualAuthorizationTitle */}
 {/* widget-option: _installmentWidget_manualCollectionNotice */}
+{/* widget-option: _installmentWidget_oneFuturePaymentText */}
 {/* widget-option: _installmentWidget_oneTimePaymentLabel */}
+{/* widget-option: _installmentWidget_orderTotalLabel */}
+{/* widget-option: _installmentWidget_payInCountLabel */}
 {/* widget-option: _installmentWidget_payInFullDescription */}
 {/* widget-option: _installmentWidget_payInFullLabel */}
 {/* widget-option: _installmentWidget_payInInstallmentsDescription */}
@@ -559,12 +567,15 @@ New checkout wording includes per-attendee progress, copy-from-purchaser and sav
 {/* widget-option: _installmentWidget_paymentDetailsLabel */}
 {/* widget-option: _installmentWidget_paymentOptionLabel */}
 {/* widget-option: _installmentWidget_paymentPlanTitle */}
+{/* widget-option: _installmentWidget_payTodayButtonText */}
 {/* widget-option: _installmentWidget_remainingBalanceLabel */}
 {/* widget-option: _installmentWidget_retryAuthorization */}
 {/* widget-option: _installmentWidget_retryNotice */}
+{/* widget-option: _installmentWidget_saveCardButtonText */}
 {/* widget-option: _installmentWidget_scheduledPayment */}
 {/* widget-option: _installmentWidget_ticketReleaseNotice */}
 {/* widget-option: _installmentWidget_todayLabel */}
+{/* widget-option: _installmentWidget_totalAmountText */}
 {/* widget-option: _installmentWidget_totalPurchaseLabel */}
 {/* widget-option: _installmentWidget_unavailableCartNotice */}
 {/* widget-option: _installmentWidget_unavailableDeadlineNotice */}
@@ -578,41 +589,52 @@ New checkout wording includes per-attendee progress, copy-from-purchaser and sav
 | Option | Control | What it changes |
 |---|---|---|
 | **Additional Consent Message** | Setting | Set the attendee-facing wording for this item. |
+| **Amount due today text** | Setting | Keep these variables: &#123;amount&#125; |
 | **Automatic authorization** | Setting | Required saved-card authorization for automatic collection |
+| **Automatic authorization heading** | Setting | Set the attendee-facing wording for this item. |
 | **Automatic collection agreement** | Setting | Set the attendee-facing wording for this item. |
 | **Automatic collection notice** | Setting | Notice for an installment agreement with automatic collection |
-| **Automatic retry agreement** | Setting | Set the attendee-facing wording for this item. |
+| **Automatic retry agreement** | Setting | Keep these variables: &#123;days&#125; |
 | **Card Expiry Date Text** | Setting | Set the attendee-facing wording for this item. |
 | **Card Number Text** | Setting | Set the attendee-facing wording for this item. |
 | **Card Payment Button Text** | Setting | Set the attendee-facing wording for this item. |
 | **Card Security Code Text** | Setting | Set the attendee-facing wording for this item. |
 | **Cash Payment Button Text** | Setting | Set the attendee-facing wording for this item. |
 | **Collection Notice** | Setting | Optional collection notice. The manual or automatic notice below is used when this is left at its default. Avoid promising collection at a specific time. |
-| **Due Today Label** | Setting | Set the attendee-facing wording for this item. |
+| **Counted installment option** | Setting | Keep these variables: &#123;count&#125; |
+| **Due today Label** | Setting | Set the attendee-facing wording for this item. |
 | **Fee notice** | Setting | How fees and tax are distributed in an installment schedule |
 | **Future payment details** | Setting | A future installment; label, number, amount and days are supplied by the server &#123;label&#125; &#123;number&#125; &#123;amount&#125; &#123;days&#125; |
 | **Future Payment Label** | Setting | Set the attendee-facing wording for this item. |
+| **Future payments text** | Setting | Keep these variables: &#123;amount&#125;, &#123;count&#125; |
 | **Installment Description** | Setting | Use &#123;&#123;count&#125;&#125; for the payment count and &#123;&#123;amount&#125;&#125; for each payment. |
+| **Installment payment button** | Setting | Keep these variables: &#123;amount&#125; |
+| **Installment plan details label** | Setting | Set the attendee-facing wording for this item. |
 | **Manual authorization** | Setting | Required saved-card authorization for manual collection |
+| **Manual authorization heading** | Setting | Set the attendee-facing wording for this item. |
 | **Manual collection agreement** | Setting | Set the attendee-facing wording for this item. |
 | **Manual collection notice** | Setting | Notice for an installment agreement with manual organizer collection |
 | **Multiple-event cart notice** | Setting | Set the attendee-facing wording for this item. |
+| **One future payment text** | Setting | Keep these variables: &#123;amount&#125; |
 | **One-time payment label** | Setting | Set the attendee-facing wording for this item. |
-| **Pay in Full Description** | Setting | Use &#123;&#123;amount&#125;&#125; for the amount due today. |
+| **Order total label** | Setting | Set the attendee-facing wording for this item. |
+| **Pay in full Description** | Setting | Use &#123;&#123;amount&#125;&#125; for the amount due today. |
 | **Pay in full label** | Setting | Set the attendee-facing wording for this item. |
-| **Pay in Installments Label** | Setting | Set the attendee-facing wording for this item. |
+| **Pay in installments Label** | Setting | Set the attendee-facing wording for this item. |
 | **Payment Count Text** | Setting | Use &#123;count&#125; for the number of payments. Amounts can differ between installments. |
 | **Payment deadline notice** | Setting | Set the attendee-facing wording for this item. |
-| **Payment Option Label** | Setting | Set the attendee-facing wording for this item. |
-| **Payment plan details label** | Setting | Set the attendee-facing wording for this item. |
-| **Payment Plan Title** | Setting | Set the attendee-facing wording for this item. |
+| **Payment option Label** | Setting | Set the attendee-facing wording for this item. |
+| **Payment processor storage notice** | Setting | Set the attendee-facing wording for this item. |
+| **Payment Schedule Title** | Setting | Set the attendee-facing wording for this item. |
 | **Remaining balance label** | Setting | Set the attendee-facing wording for this item. |
 | **Retry authorization** | Setting | Additional saved-card authorization when automatic retries are enabled &#123;count&#125; |
 | **Retry notice** | Setting | Accepted retry days; days is a comma-separated list supplied by the server &#123;days&#125; |
-| **Scheduled payment text** | Setting | Set the attendee-facing wording for this item. |
+| **Scheduled payment text** | Setting | Keep these variables: &#123;date&#125;, &#123;amount&#125; |
 | **Ticket release notice** | Setting | Admission tickets are withheld while the installment balance or approval is outstanding |
 | **Today Label** | Setting | Set the attendee-facing wording for this item. |
+| **Total amount text** | Setting | Keep these variables: &#123;amount&#125; |
 | **Total Purchase Label** | Setting | Set the attendee-facing wording for this item. |
+| **Zero checkout button** | Setting | Set the attendee-facing wording for this item. |
 | **Zero checkout notice** | Setting | Notice for a zero initial installment; no charge is made at checkout |
 
 ## Checkout › Promotional messages

@@ -4275,25 +4275,25 @@
     "pages": [
       "branding-and-design/widget-design-reference.mdx"
     ],
-    "title": "Payment-plan component styling",
-    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. The circles identify Background Color and Border Color.",
-    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. The circles identify Background Color and Border Color.",
-    "source": "Ticket Spot Demo live dashboard",
-    "capturedAt": "2026-10-01T22:05:49.084Z",
-    "route": "#/events/design/widget",
+    "title": "Installment plan styling: Installment Plan Container",
+    "caption": "All Settings \u2192 Installment plan \u2014 Installment Plan Container. The circles identify Background Color and Border Color.",
+    "alt": "All Settings \u2192 Installment plan \u2014 Installment Plan Container. The circles identify Background Color and Border Color.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "capturedAt": "2026-10-07T00:33:43.106558Z",
+    "route": "#/events/design/widget?sv=category&sc=design&ss=design_payment_plan",
     "callouts": [
       "Background Color",
       "Border Color"
     ],
     "clip": {
-      "x": 314,
-      "y": 165,
-      "width": 513,
-      "height": 885
+      "x": 152.90625,
+      "y": 473.90625,
+      "width": 374.8125,
+      "height": 617
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Reviewed at full capture scale and in contact sheets; readable styling controls and complete brand callouts.",
+    "qa_notes": "Refreshed after Installment Plan terminology update. Actual settings pane with two unfilled purple callout circles; readable controls, no attendee data or credentials.",
     "integrated_pages": [
       "branding-and-design/widget-design-reference.mdx"
     ]
@@ -4305,25 +4305,25 @@
     "pages": [
       "branding-and-design/widget-design-reference.mdx"
     ],
-    "title": "Payment-plan component styling",
-    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
-    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
-    "source": "Ticket Spot Demo live dashboard",
-    "capturedAt": "2026-10-01T22:05:50.206Z",
-    "route": "#/events/design/widget",
+    "title": "Installment plan styling: Due Today Section",
+    "caption": "All Settings \u2192 Installment plan \u2014 Due Today Section. The circles identify Background Color and Border Color.",
+    "alt": "All Settings \u2192 Installment plan \u2014 Due Today Section. The circles identify Background Color and Border Color.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "capturedAt": "2026-10-07T00:33:43.435367Z",
+    "route": "#/events/design/widget?sv=category&sc=design&ss=design_payment_plan",
     "callouts": [
-      "Title Text Color",
-      "Secondary Text Color"
+      "Background Color",
+      "Border Color"
     ],
     "clip": {
-      "x": 314,
-      "y": 165,
-      "width": 513,
-      "height": 885
+      "x": 152.90625,
+      "y": 473.90625,
+      "width": 374.8125,
+      "height": 478
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Reviewed at full capture scale and in contact sheets; readable styling controls and complete brand callouts.",
+    "qa_notes": "Refreshed after Installment Plan terminology update. Actual settings pane with two unfilled purple callout circles; readable controls, no attendee data or credentials.",
     "integrated_pages": [
       "branding-and-design/widget-design-reference.mdx"
     ]
@@ -4335,25 +4335,25 @@
     "pages": [
       "branding-and-design/widget-design-reference.mdx"
     ],
-    "title": "Payment-plan component styling",
-    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
-    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
-    "source": "Ticket Spot Demo live dashboard",
-    "capturedAt": "2026-10-01T22:05:51.257Z",
-    "route": "#/events/design/widget",
+    "title": "Installment plan styling: Future Payments",
+    "caption": "All Settings \u2192 Installment plan \u2014 Future Payments. The circles identify Background Color and Border Color.",
+    "alt": "All Settings \u2192 Installment plan \u2014 Future Payments. The circles identify Background Color and Border Color.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "capturedAt": "2026-10-07T00:33:43.772326Z",
+    "route": "#/events/design/widget?sv=category&sc=design&ss=design_payment_plan",
     "callouts": [
       "Background Color",
       "Border Color"
     ],
     "clip": {
-      "x": 314,
-      "y": 165,
-      "width": 513,
-      "height": 885
+      "x": 152.90625,
+      "y": 523.90625,
+      "width": 374.8125,
+      "height": 478
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Reviewed at full capture scale and in contact sheets; readable styling controls and complete brand callouts.",
+    "qa_notes": "Refreshed after Installment Plan terminology update. Actual settings pane with two unfilled purple callout circles; readable controls, no attendee data or credentials.",
     "integrated_pages": [
       "branding-and-design/widget-design-reference.mdx"
     ]
@@ -4365,25 +4365,25 @@
     "pages": [
       "branding-and-design/widget-design-reference.mdx"
     ],
-    "title": "Payment-plan component styling",
-    "caption": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
-    "alt": "All Settings \u2192 Payment plan \u2014 Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
-    "source": "Ticket Spot Demo live dashboard",
-    "capturedAt": "2026-10-01T22:05:52.316Z",
-    "route": "#/events/design/widget",
+    "title": "Installment plan styling: Timeline",
+    "caption": "All Settings \u2192 Installment plan \u2014 Timeline. The circles identify Timeline Line Color and Timeline Dot Color.",
+    "alt": "All Settings \u2192 Installment plan \u2014 Timeline. The circles identify Timeline Line Color and Timeline Dot Color.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "capturedAt": "2026-10-07T00:33:44.108140Z",
+    "route": "#/events/design/widget?sv=category&sc=design&ss=design_payment_plan",
     "callouts": [
-      "Border Color",
-      "Amount Text Color"
+      "Timeline Line Color",
+      "Timeline Dot Color"
     ],
     "clip": {
-      "x": 314,
-      "y": 165,
-      "width": 513,
-      "height": 885
+      "x": 152.90625,
+      "y": 993.90625,
+      "width": 374.8125,
+      "height": 339
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Reviewed at full capture scale and in contact sheets; readable styling controls and complete brand callouts.",
+    "qa_notes": "Refreshed after Installment Plan terminology update. Actual settings pane with two unfilled purple callout circles; readable controls, no attendee data or credentials.",
     "integrated_pages": [
       "branding-and-design/widget-design-reference.mdx"
     ]
@@ -16664,10 +16664,11 @@
     "title": "Compact equal split checkout",
     "caption": "The saved-card agreement, exact future payments and total are shown before checkout.",
     "alt": "The saved-card agreement, exact future payments and total are shown before checkout.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-07T00:35:33.851646Z"
   },
   "installment-automatic-paid-two": {
     "id": "installment-manage",
@@ -17388,10 +17389,11 @@
     "title": "Zero deposit installment checkout",
     "caption": "Saving a card with no payment today leaves two future $160 payments.",
     "alt": "Saving a card with no payment today leaves two future $160 payments.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-07T00:30:28.039940Z"
   },
   "installment-checkout-text": {
     "id": "installment-checkout-text",
@@ -17404,12 +17406,13 @@
       "event-management/installment-payments.mdx"
     ],
     "title": "Payment choice text settings",
-    "caption": "Customize the installment checkout button and zero-deposit button in Design Text.",
-    "alt": "Design Text settings with the installment payment button and amount variable circled.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "caption": "Customize the order-total label and secure processor-storage notice in Design Text.",
+    "alt": "Design Text controls for the order-total label and secure processor-storage notice.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-07T00:22:49.622708Z"
   },
   "payment-settings-tabs": {
     "id": "payment-connections",
@@ -17573,10 +17576,11 @@
     "title": "Equal split payment template",
     "caption": "Split equally shows percentage shares with a rounding note, live event usage and numbered payments.",
     "alt": "Equal installment plan editor with its split selector circled, usage notice and final rounding share.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:35:54.816626Z"
   },
   "payment-plan-percentages": {
     "id": "payment-plan-percentages",
@@ -17591,10 +17595,11 @@
     "title": "Percentage payment template",
     "caption": "A 0% / 50% / 50% template saves a card at checkout and collects two future payments.",
     "alt": "A 0% / 50% / 50% template saves a card at checkout and collects two future payments.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:35:55.595743Z"
   },
   "event-payment-plan": {
     "id": "event-payment-plan",
@@ -17609,10 +17614,11 @@
     "title": "Event payment plan assignment",
     "caption": "Allow installments, choose eligible tickets and the final payment deadline, and review the calculated availability cutoff.",
     "alt": "Event installment assignment with the toggle and availability cutoff circled.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:36:24.638104Z"
   },
   "installment-pay-full-choice": {
     "id": "installment-pay-full-choice",
@@ -17627,10 +17633,11 @@
     "title": "Pay in full option",
     "caption": "Full payment is selected initially and creates no later obligations.",
     "alt": "Full payment is selected initially and creates no later obligations.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after checkout feedback: counted installments, today versus total amounts, dated schedule, separate saved-card authorization and retry copy, amount-specific button, and Design Text overrides. Actual browser capture on dedicated Stripe test site; unfilled #9c26dc 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-07T00:20:23.922296Z"
   },
   "payment-plan-list": {
     "id": "payment-plan-list",
@@ -17645,10 +17652,11 @@
     "title": "Reusable installment plans",
     "caption": "Plans show Name, Schedule, Used by and centered pencil edit actions.",
     "alt": "Plans show Name, Schedule, Used by and centered pencil edit actions.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:35:54.160511Z"
   },
   "payment-plan-date-validation": {
     "id": "payment-plan-date-validation",
@@ -17663,10 +17671,11 @@
     "title": "Installment date validation",
     "caption": "A later payment must be after the preceding payment; the inline error disables Save.",
     "alt": "A later payment must be after the preceding payment; the inline error disables Save.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:35:56.492727Z"
   },
   "payment-plan-ticket-eligibility": {
     "id": "payment-plan-ticket-eligibility",
@@ -17681,9 +17690,48 @@
     "title": "Installment ticket eligibility",
     "caption": "Eligible paid tickets are selectable; free tickets appear disabled with an exclusion reason.",
     "alt": "Eligible paid tickets are selectable; free tickets appear disabled with an exclusion reason.",
-    "source": "Actual localhost dashboard/widget and server on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. Browser capture 2026-10-06. No response fixtures.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
     "format": "PNG",
     "qa": "passed visual review",
-    "qa_notes": "Refreshed 2026-10-06 after setup feedback: exact displayed shares with rounding note, numbered payments, visual date ordering errors, live event usage, centered Lucide pencil and excluded ticket reasons. Browser verified on desktop/mobile; approved #9c26dc unfilled 4px circle; no credentials or real attendee data."
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data.",
+    "capturedAt": "2026-10-06T23:36:06.655408Z"
+  },
+  "installment-full-only-checkout": {
+    "id": "installment-full-only-checkout",
+    "key": "installment-full-only-checkout",
+    "asset": "assets/refresh/event-management/installment-full-only-checkout.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Normal full-payment checkout",
+    "caption": "When installments are unavailable, buyers see normal checkout without an unavailable-plan warning.",
+    "alt": "When installments are unavailable, buyers see normal checkout without an unavailable-plan warning.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "capturedAt": "2026-10-07T00:20:04.133440Z",
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data."
+  },
+  "installment-plan-details": {
+    "id": "installment-plan-details",
+    "key": "installment-plan-details",
+    "asset": "assets/refresh/event-management/installment-plan-details.png",
+    "pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "integrated_pages": [
+      "event-management/installment-payments.mdx"
+    ],
+    "title": "Concise installment plan details",
+    "caption": "Expanded details show full purchase value, remaining balance, processor storage and scheduled collection terms.",
+    "alt": "Expanded details show full purchase value, remaining balance, processor storage and scheduled collection terms.",
+    "source": "Actual localhost dashboard/widget on dedicated Payment QA \u2014 Stripe Sandbox site; codex-payments-20261003 test namespace. No response fixtures.",
+    "format": "PNG",
+    "qa": "passed visual review",
+    "capturedAt": "2026-10-07T00:35:36.065833Z",
+    "qa_notes": "Refreshed 2026-10-06 after final checkout feedback: Installment Plan terminology; full order value and Due today; exact organizer charge authorization; concise processor-storage and scheduled-payment terms; entire details row opens/closes with iframe resize; branded selection/radio/checkbox/tints through both HTML style templates. Actual desktop/mobile browser checks on dedicated stored QA data; standard unfilled purple annotation; no credentials or real attendee data."
   }
 }

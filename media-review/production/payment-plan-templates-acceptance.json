@@ -5,7 +5,7 @@
     "dashboard": "Actual application UI on localhost:8080",
     "widget": "Actual application UI on localhost:8091",
     "api": "Actual local API on localhost:54739",
-    "site": "Payment QA \u2014 Stripe Sandbox (payment-actions-e2e)",
+    "site": "Payment QA — Stripe Sandbox (payment-actions-e2e)",
     "event": "Payment Plan Templates QA",
     "namespace": "codex-payments-20261003",
     "stripe": "Test mode",
@@ -347,16 +347,16 @@
       "headings": [
         "Documentation Index",
         "On this page",
-        "\u200bCreate a reusable payment plan",
-        "\u200bLet buyers choose how to pay",
-        "\u200bCustomize and translate checkout text",
-        "\u200bTrack payment progress",
-        "\u200bCollect a due installment manually",
-        "\u200bAttendee card updates and early payment",
-        "\u200bHelp an attendee complete payment",
-        "\u200bPayment emails",
-        "\u200bChanges, refunds, and admission",
-        "\u200bRelated guides"
+        "​Create a reusable payment plan",
+        "​Let buyers choose how to pay",
+        "​Customize and translate checkout text",
+        "​Track payment progress",
+        "​Collect a due installment manually",
+        "​Attendee card updates and early payment",
+        "​Help an attendee complete payment",
+        "​Payment emails",
+        "​Changes, refunds, and admission",
+        "​Related guides"
       ]
     },
     {
@@ -464,16 +464,16 @@
       "headings": [
         "Documentation Index",
         "On this page",
-        "\u200bCreate a reusable payment plan",
-        "\u200bLet buyers choose how to pay",
-        "\u200bCustomize and translate checkout text",
-        "\u200bTrack payment progress",
-        "\u200bCollect a due installment manually",
-        "\u200bAttendee card updates and early payment",
-        "\u200bHelp an attendee complete payment",
-        "\u200bPayment emails",
-        "\u200bChanges, refunds, and admission",
-        "\u200bRelated guides"
+        "​Create a reusable payment plan",
+        "​Let buyers choose how to pay",
+        "​Customize and translate checkout text",
+        "​Track payment progress",
+        "​Collect a due installment manually",
+        "​Attendee card updates and early payment",
+        "​Help an attendee complete payment",
+        "​Payment emails",
+        "​Changes, refunds, and admission",
+        "​Related guides"
       ]
     }
   ],
@@ -740,11 +740,11 @@
         "overflow": false
       },
       "installments": {
-        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission × 1\n\nToday — $106.66\nNov 5, 2026 — $106.66\nDec 5, 2026 — $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
         "rows": [
-          "Today \u2014 $106.66",
-          "Nov 5, 2026 \u2014 $106.66",
-          "Dec 5, 2026 \u2014 $106.68"
+          "Today — $106.66",
+          "Nov 5, 2026 — $106.66",
+          "Dec 5, 2026 — $106.68"
         ],
         "consent": {
           "checked": false,
@@ -759,11 +759,11 @@
         "overflow": false
       },
       "desktop": {
-        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission × 1\n\nToday — $106.66\nNov 5, 2026 — $106.66\nDec 5, 2026 — $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
         "rows": [
-          "Today \u2014 $106.66",
-          "Nov 5, 2026 \u2014 $106.66",
-          "Dec 5, 2026 \u2014 $106.68"
+          "Today — $106.66",
+          "Nov 5, 2026 — $106.66",
+          "Dec 5, 2026 — $106.68"
         ],
         "consent": {
           "checked": false,
@@ -778,11 +778,11 @@
         "overflow": false
       },
       "mobile": {
-        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission × 1\n\nToday — $106.66\nNov 5, 2026 — $106.66\nDec 5, 2026 — $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
         "rows": [
-          "Today \u2014 $106.66",
-          "Nov 5, 2026 \u2014 $106.66",
-          "Dec 5, 2026 \u2014 $106.68"
+          "Today — $106.66",
+          "Nov 5, 2026 — $106.66",
+          "Dec 5, 2026 — $106.68"
         ],
         "consent": {
           "checked": false,
@@ -809,11 +809,11 @@
         "overflow": false
       },
       "switchedBack": {
-        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission \u00d7 1\n\nToday \u2014 $106.66\nNov 5, 2026 \u2014 $106.66\nDec 5, 2026 \u2014 $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
+        "review": "Payment Option\nPay in Full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission × 1\n\nToday — $106.66\nNov 5, 2026 — $106.66\nDec 5, 2026 — $106.68\nAutomatic payments authorization\nI authorize the organizer to securely save my card and automatically charge the remaining payments on or after the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will be confirmed once all installments are paid and any required approval is received.\n\nPayment plan details",
         "rows": [
-          "Today \u2014 $106.66",
-          "Nov 5, 2026 \u2014 $106.66",
-          "Dec 5, 2026 \u2014 $106.68"
+          "Today — $106.66",
+          "Nov 5, 2026 — $106.66",
+          "Dec 5, 2026 — $106.68"
         ],
         "consent": {
           "checked": false,
@@ -879,12 +879,12 @@
       ]
     },
     "spanish_automatic": {
-      "review": "Opci\u00f3n de pago\nPagar todo\nPago \u00fanico\n320,00\u00a0US$ hoy\nPagar en 3 cuotas\n0,00\u00a0US$ hoy + 2 pagos futuros\n320,00\u00a0US$ en total\nTu calendario de pagos\n\nStandard Admission \u00d7 1\n\nHoy \u2014 0,00\u00a0US$\n5 nov 2026 \u2014 160,00\u00a0US$\n5 dic 2026 \u2014 160,00\u00a0US$\n\nHoy no se realizar\u00e1 ning\u00fan cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuaci\u00f3n.\n\nAutorizaci\u00f3n de pagos autom\u00e1ticos\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar autom\u00e1ticamente los pagos restantes en las fechas indicadas arriba o despu\u00e9s.\n\nLos fallos temporales de pago pueden reintentarse despu\u00e9s de 3 y 7 d\u00edas.\n\nTus entradas se confirmar\u00e1n cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobaci\u00f3n necesaria.\n\nDetalles del plan de pago",
+      "review": "Opción de pago\nPagar todo\nPago único\n320,00 US$ hoy\nPagar en 3 cuotas\n0,00 US$ hoy + 2 pagos futuros\n320,00 US$ en total\nTu calendario de pagos\n\nStandard Admission × 1\n\nHoy — 0,00 US$\n5 nov 2026 — 160,00 US$\n5 dic 2026 — 160,00 US$\n\nHoy no se realizará ningún cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuación.\n\nAutorización de pagos automáticos\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar automáticamente los pagos restantes en las fechas indicadas arriba o después.\n\nLos fallos temporales de pago pueden reintentarse después de 3 y 7 días.\n\nTus entradas se confirmarán cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobación necesaria.\n\nDetalles del plan de pago",
       "button": "Guardar tarjeta y confirmar reserva",
       "overflow": false
     },
     "spanish_manual": {
-      "review": "Opci\u00f3n de pago\nPagar todo\nPago \u00fanico\n320,00\u00a0US$ hoy\nPagar en 3 cuotas\n0,00\u00a0US$ hoy + 2 pagos futuros\n320,00\u00a0US$ en total\nTu calendario de pagos\n\nStandard Admission \u00d7 1\n\nHoy \u2014 0,00\u00a0US$\n5 nov 2026 \u2014 160,00\u00a0US$\n5 dic 2026 \u2014 160,00\u00a0US$\n\nHoy no se realizar\u00e1 ning\u00fan cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuaci\u00f3n.\n\nAutorizaci\u00f3n de pago\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar los pagos restantes en las fechas indicadas arriba o despu\u00e9s.\n\nTus entradas se confirmar\u00e1n cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobaci\u00f3n necesaria.\n\nDetalles del plan de pago",
+      "review": "Opción de pago\nPagar todo\nPago único\n320,00 US$ hoy\nPagar en 3 cuotas\n0,00 US$ hoy + 2 pagos futuros\n320,00 US$ en total\nTu calendario de pagos\n\nStandard Admission × 1\n\nHoy — 0,00 US$\n5 nov 2026 — 160,00 US$\n5 dic 2026 — 160,00 US$\n\nHoy no se realizará ningún cargo. Guarde su tarjeta para los pagos a plazos que se muestran a continuación.\n\nAutorización de pago\nAutorizo al organizador a guardar mi tarjeta de forma segura y cobrar los pagos restantes en las fechas indicadas arriba o después.\n\nTus entradas se confirmarán cuando se hayan pagado todas las cuotas y se haya recibido cualquier aprobación necesaria.\n\nDetalles del plan de pago",
       "button": "Guardar tarjeta y confirmar reserva"
     },
     "design_text_save": {
@@ -948,7 +948,7 @@
           "Used by",
           "Actions"
         ],
-        "row": "QA three equal payments\t3 equal payments \u00b7 Checkout, +30, +60 days\t1 event\t",
+        "row": "QA three equal payments\t3 equal payments · Checkout, +30, +60 days\t1 event\t",
         "pencilOffset": {
           "x": 0,
           "y": 0
@@ -993,7 +993,7 @@
       "duplicateRejected": true,
       "validCorrection": true,
       "createStatus": 200,
-      "persisted": "Setup refinement QA\t3 equal payments \u00b7 Checkout, +14, +28 days\t0 events\t",
+      "persisted": "Setup refinement QA\t3 equal payments · Checkout, +14, +28 days\t0 events\t",
       "templateId": "c78bf769-7fa7-4a5b-b1e0-a30285e5316c"
     },
     "captures_and_eligibility": {
@@ -1021,13 +1021,13 @@
           "disabled": false
         },
         {
-          "text": "Free Admission \u2014 Free ticket",
+          "text": "Free Admission — Free ticket",
           "disabled": true
         }
       ],
       "freeOptions": [
         {
-          "text": "Standard \u2014 Free ticket",
+          "text": "Standard — Free ticket",
           "disabled": true
         }
       ],
@@ -1068,6 +1068,491 @@
       "format": "Passed for all four changed dashboard files",
       "browser_compilation": "Passed",
       "repository_typecheck": "Blocked by existing repository TypeScript errors. The only diagnostic in the changed payment plan files is the pre-existing Loader JSX type incompatibility in EventPaymentPlan.tsx."
+    }
+  },
+  "final_checkout_followup": {
+    "date": "2026-10-06",
+    "copy_and_amounts": {
+      "unavailable": [
+        {
+          "width": 1000,
+          "review": false,
+          "notice": false,
+          "overflow": false,
+          "total": "Total\n$320.00"
+        },
+        {
+          "width": 390,
+          "review": false,
+          "notice": false,
+          "overflow": false,
+          "total": "Total\n$320.00"
+        }
+      ],
+      "resize": {
+        "openedHeight": 1890,
+        "closedHeight": 1716,
+        "fullRowClick": true
+      },
+      "brand": {
+        "accent": "rgb(129, 36, 73)",
+        "border": "rgb(129, 36, 73)",
+        "background": "color(srgb 0.980235 0.965647 0.971451)",
+        "paymentButton": "rgb(158, 158, 158)"
+      },
+      "ticketLine": "1 × Standard Admission\n$320.00\nDelete ticket",
+      "summary": {
+        "text": "Payment Plan Templates QA\n$320.00\nOrder total\n$320.00\nDue today\n$106.66",
+        "total": "Order total\n$320.00",
+        "due": "Due today\n$106.66"
+      },
+      "copy": {
+        "authorization": "I authorize the organizer to automatically charge this card for the remaining payments on the dates shown above.",
+        "details": "Installment plan details\n\nTotal purchase: $320.00\n\nRemaining balance: $213.34\n\nDiscounts and taxes are included in the amounts shown. Booking fees are charged today.\n\nYour payment method will be securely stored by the payment processor for future installments.\n\nScheduled payments are charged automatically on the dates shown above. If a payment fails, it may be retried. The organizer may also manually collect a scheduled payment once it is due.",
+        "pendingStatus": true,
+        "detailsInitiallyCollapsed": true
+      },
+      "available": {
+        "options": 2,
+        "dueToday": 106.66,
+        "detailsLabel": "Installment plan details",
+        "schedule": [
+          "Due today — $106.66",
+          "Nov 5, 2026 — $106.66",
+          "Dec 5, 2026 — $106.68"
+        ]
+      },
+      "recovery": {
+        "explicitFullChoice": true,
+        "total": 320,
+        "consent": false,
+        "sessionRequests": 0
+      },
+      "mixed": {
+        "total": "Order total\n$340.00",
+        "due": "Due today\n$126.66"
+      },
+      "zero": {
+        "total": "Order total\n$320.00",
+        "due": "Due today\n$0.00",
+        "schedule": [
+          "Due today — $0.00",
+          "Nov 5, 2026 — $160.00",
+          "Dec 5, 2026 — $160.00"
+        ]
+      },
+      "assignmentRestored": true
+    },
+    "brand_design_updates": {
+      "results": [
+        {
+          "color": "#137B63",
+          "override": null,
+          "radio": "rgb(19, 123, 99)",
+          "checkbox": "rgb(19, 123, 99)",
+          "border": "rgb(19, 123, 99)",
+          "tint": "color(srgb 0.96298 0.979294 0.975529)",
+          "button": "rgb(19, 123, 99)"
+        },
+        {
+          "color": "#137B63",
+          "override": "#264EA5",
+          "radio": "rgb(38, 78, 165)",
+          "checkbox": "rgb(38, 78, 165)",
+          "border": "rgb(38, 78, 165)",
+          "tint": "color(srgb 0.965961 0.972235 0.985882)",
+          "button": "rgb(38, 78, 165)"
+        }
+      ],
+      "templateVariables": {
+        "widget.html": {
+          "accent": "{{style._checkoutNextButtonBackgroundColor color-6}}",
+          "background": "{{style._checkoutCardBackgroundColor color-1}}",
+          "border": "{{style._checkoutBorderColor color-5}}"
+        },
+        "event-widget.html": {
+          "accent": "{{style._checkoutNextButtonBackgroundColor color-6}}",
+          "background": "{{style._checkoutCardBackgroundColor color-1}}",
+          "border": "{{style._checkoutBorderColor color-5}}"
+        }
+      }
+    },
+    "single_event_without_cart": {
+      "cartEnabled": false,
+      "order": "Order total\n$320.00",
+      "due": "$106.66",
+      "schedule": [
+        "Due today — $106.66",
+        "Nov 5, 2026 — $106.66",
+        "Dec 5, 2026 — $106.68"
+      ],
+      "review": "Payment option\nPay in full\nOne-time payment\n$320.00 today\nPay in 3 installments\n$106.66 today + 2 future payments\n$320.00 total\nYour payment schedule\n\nStandard Admission × 1\n\nDue today — $106.66\nNov 5, 2026 — $106.66\nDec 5, 2026 — $106.68\nAuthorize automatic payments\nI authorize the organizer to automatically charge this card for the remaining payments on the dates shown above.\n\nTemporary payment failures may be retried after 3 and 7 days.\n\nYour tickets will remain pending until all installments are paid and any required approval is complete.\n\nInstallment plan details",
+      "overflow": false
+    },
+    "automated_checks": {
+      "widget_tests": 48,
+      "server_tests": 19,
+      "translation_keys": 15,
+      "locale_values": 270,
+      "locales": 18
+    },
+    "documentation_render": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "overflow": false,
+        "images": [
+          {
+            "file": "payment-plan-equal.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-percentages.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-list.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-date-validation.png",
+            "loaded": true
+          },
+          {
+            "file": "event-payment-plan.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-ticket-eligibility.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-full-only-checkout.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-pay-full-choice.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-plan-details.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-automatic-agreement.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-zero-checkout.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-checkout-text.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-automatic-paid-two.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-payment-filters.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-fully-paid-progress.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-next-due.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-confirm-charge.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-second-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-saved-card-declined.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-consent.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-replacement-card.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-complete.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-all-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-already-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-failure-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-manual-payment.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-receipt-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-new-order-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-organizer-summary.png",
+            "loaded": true
+          }
+        ],
+        "headings": [
+          "Documentation Index",
+          "On this page",
+          "​Create a reusable installment plan",
+          "​Let buyers choose how to pay",
+          "​Customize and translate checkout text",
+          "​Track payment progress",
+          "​Collect a due installment manually",
+          "​Attendee card updates and early payment",
+          "​Help an attendee complete payment",
+          "​Payment emails",
+          "​Changes, refunds, and admission",
+          "​Related guides"
+        ]
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "overflow": false,
+        "images": [
+          {
+            "file": "payment-plan-equal.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-percentages.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-list.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-date-validation.png",
+            "loaded": true
+          },
+          {
+            "file": "event-payment-plan.png",
+            "loaded": true
+          },
+          {
+            "file": "payment-plan-ticket-eligibility.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-full-only-checkout.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-pay-full-choice.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-plan-details.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-automatic-agreement.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-zero-checkout.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-checkout-text.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-automatic-paid-two.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-payment-filters.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-fully-paid-progress.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-next-due.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-confirm-charge.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-second-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-saved-card-declined.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-consent.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-replacement-card.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-complete.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-all-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-recovery-already-paid.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-failure-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-manual-payment.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-attendee-receipt-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-new-order-email.png",
+            "loaded": true
+          },
+          {
+            "file": "installment-organizer-summary.png",
+            "loaded": true
+          }
+        ],
+        "headings": [
+          "Documentation Index",
+          "On this page",
+          "​Create a reusable installment plan",
+          "​Let buyers choose how to pay",
+          "​Customize and translate checkout text",
+          "​Track payment progress",
+          "​Collect a due installment manually",
+          "​Attendee card updates and early payment",
+          "​Help an attendee complete payment",
+          "​Payment emails",
+          "​Changes, refunds, and admission",
+          "​Related guides"
+        ]
+      }
+    ],
+    "refreshed_captures": [
+      "payment-plan-list",
+      "payment-plan-equal",
+      "payment-plan-percentages",
+      "payment-plan-date-validation",
+      "payment-plan-ticket-eligibility",
+      "event-payment-plan",
+      "installment-pay-full-choice",
+      "installment-automatic-agreement",
+      "installment-zero-checkout",
+      "installment-checkout-text",
+      "installment-full-only-checkout",
+      "installment-plan-details",
+      "widget-style-installments",
+      "widget-style-installments-2",
+      "widget-style-installments-3",
+      "widget-style-installments-4"
+    ],
+    "styling_reference_captures": [
+      {
+        "file": "widget-style-installments.png",
+        "title": "Installment Plan Container",
+        "keys": [
+          "planBackgroundColor",
+          "planBorderColor"
+        ],
+        "clip": {
+          "x": 152.90625,
+          "y": 473.90625,
+          "width": 374.8125,
+          "height": 617
+        }
+      },
+      {
+        "file": "widget-style-installments-2.png",
+        "title": "Due Today Section",
+        "keys": [
+          "todayBackgroundColor",
+          "todayBorderColor"
+        ],
+        "clip": {
+          "x": 152.90625,
+          "y": 473.90625,
+          "width": 374.8125,
+          "height": 478
+        }
+      },
+      {
+        "file": "widget-style-installments-3.png",
+        "title": "Future Payments",
+        "keys": [
+          "futureBackgroundColor",
+          "futureBorderColor"
+        ],
+        "clip": {
+          "x": 152.90625,
+          "y": 523.90625,
+          "width": 374.8125,
+          "height": 478
+        }
+      },
+      {
+        "file": "widget-style-installments-4.png",
+        "title": "Timeline",
+        "keys": [
+          "timelineColor",
+          "timelineDotColor"
+        ],
+        "clip": {
+          "x": 152.90625,
+          "y": 993.90625,
+          "width": 374.8125,
+          "height": 339
+        }
+      }
+    ],
+    "checkout_payment_scope": "This follow-up verified quotes, presentation, style updates and iframe resizing. Stripe success, decline, authentication, zero-deposit and replay payment evidence is retained in the original browser_cases.",
+    "attendee_details_resize": {
+      "openedHeight": 1293,
+      "closedHeight": 1263,
+      "requestsResize": true
     }
   }
 }
