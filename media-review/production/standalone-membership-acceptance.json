@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-07T15:00:32.418396+00:00",
-  "scope": "Standalone evergreen membership sales across widget, server, dashboard and public documentation",
+  "checked_at": "2026-10-07T18:01:25.349959+00:00",
+  "scope": "Standalone evergreen membership sales across widget, server, dashboard, hosted event pages and public documentation",
   "environment": {
     "namespace": "codex-payments-20261003",
     "site": "membership-only-qa-20261006",
@@ -182,7 +182,8 @@
           "4Tags & Custom Fields",
           "5Display Settings",
           "6Tracking Links"
-        ]
+        ],
+        "extraMembershipLabelAfterSelection": false
       },
       "tickets": {
         "membershipTabVisible": true,
@@ -205,13 +206,38 @@
           "16Tracking Links"
         ]
       }
+    },
+    "public_membership_page": {
+      "publicHandle": "membership-page-qa-20261007",
+      "settingKey": "_eventpage_buyMembershipText",
+      "default": "BUY MEMBERSHIP",
+      "customSavedValue": "Join our club",
+      "dashboardReloadPreservedValue": true,
+      "publicPageUsesSavedValue": true,
+      "browserTitle": "Memberships | Ticket Spot",
+      "eventTimeMetadataCount": 0,
+      "eventStructuredDataCount": 0,
+      "eventDateTimeHidden": true,
+      "venueRowHidden": true,
+      "ticketPriceHidden": true,
+      "mobile": {
+        "body": "Presented by\nMembership Club\nMemberships\nShare to:\nJoin our club\nDescription\nDescription\nJoin our club and enjoy member benefits all year.\nContact the Host\nReady to host your event? Discover how with Ticket Spot.\nLaunch Your Event\nEmpowering event success with\nTicket Spot.\nPRIVACY POLICY\nTERMS OF SERVICE",
+        "overflow": false,
+        "purchaseButtons": 1,
+        "timeMetadata": 0
+      }
     }
   },
   "tests": {
     "server": {
       "passed": 114,
       "scope": "Membership sales, existing admission/benefits/delivery, shared fulfillment, free Square guards, multilingual communications and all 18 membership confirmation locales",
-      "focused_new_module_lint": "passed with existing client Babel parser provided through NODE_PATH"
+      "focused_new_module_lint": "passed with existing client Babel parser provided through NODE_PATH",
+      "after_main_update": {
+        "passed": 51,
+        "failed": 0,
+        "scope": "Standalone checkout, order confirmation, membership fulfillment and delivery, holder authorization and shared checkout finalization"
+      }
     },
     "client": {
       "passed": 52,
@@ -220,30 +246,50 @@
     "documentation": {
       "pages_compiled": 143,
       "navigation_and_local_links": "passed including source inventory",
-      "screenshots_reviewed": 10,
+      "screenshots_reviewed": 12,
       "render": {
         "desktop": {
           "width": 1440,
-          "imagesLoaded": 10,
-          "totalImages": 10,
+          "imagesLoaded": 12,
+          "totalImages": 12,
           "overflow": false,
           "hasOnboarding": true,
-          "hasLanguage": true
+          "hasLanguage": true,
+          "hasMembershipButtonSettings": true
         },
         "mobile": {
           "width": 390,
-          "imagesLoaded": 10,
-          "totalImages": 10,
+          "imagesLoaded": 12,
+          "totalImages": 12,
           "overflow": false,
           "hasOnboarding": true,
-          "hasLanguage": true
+          "hasLanguage": true,
+          "hasMembershipButtonSettings": true
         }
       },
-      "mintlify_broken_links": "Existing internal Markdown references to JSON acceptance records are flagged; all public MDX navigation and local links/media pass."
+      "mintlify_broken_links": "Existing internal Markdown references to JSON acceptance records are flagged; all public MDX navigation and local links/media pass.",
+      "navigation_local_links_count": 1685
+    },
+    "website": {
+      "passed": 49,
+      "failed": 0,
+      "typecheck": "passed for full website",
+      "scope": "17 new desktop/mobile membership and ticket regression cases, regional dates and Event schema tests"
+    },
+    "main_master_update": {
+      "tool": "GitButler but pull",
+      "conflicts": 0,
+      "repositories": [
+        "server: origin/master",
+        "dashboard: origin/main",
+        "client: origin/master",
+        "website: origin/master",
+        "documentation: origin/master"
+      ]
     }
   },
   "limits": [
-    "Changes remain local; production services and documentation have not been deployed.",
+    "Implementation is published in review PRs; production services and documentation have not been deployed.",
     "Apple pass signing cannot complete locally: the existing encrypted private key requires its configured certificate passphrase. Numeric holder lookup and purchaser/cart authorization are covered by regression tests; physical Apple device installation remains unverified.",
     "Live PayPal, Square and Shopify membership payment/delivery have not been exercised end to end. Shopify standalone sales require provisioned membership variant mappings; automatic Shopify product provisioning is not part of this change.",
     "Dashboard-wide typecheck and unrelated translation inventory checks retain existing baseline issues; the edited screens compile in the running webpack app."

@@ -17745,7 +17745,7 @@
     "caption": "Sell memberships creates an evergreen checkout. Its event editor keeps Memberships and purchaser questions, while hiding ticket, date, reminder, and SMS setup.",
     "alt": "Membership event setup with Sell memberships selected and the reduced editor tabs.",
     "source": "Actual local Ticket Spot dashboard/widget/confirmation; own synthetic stored QA records in isolated Datastore namespace; real Stripe sandbox payment and free checkout; delivery transport captured locally",
-    "capturedAt": "2026-10-07T14:55:24.597Z",
+    "capturedAt": "2026-10-07T17:58:18.776Z",
     "route": "http://localhost:8080/#/events/manage/membership-sales-20261006/details",
     "callouts": [
       "Sell memberships",
@@ -18021,6 +18021,63 @@
       "y": 20,
       "width": 680,
       "height": 970
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-event-page-settings": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-event-page-settings",
+    "asset": "assets/refresh/memberships/standalone-event-page-settings.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Customize the membership purchase button in Design Event Page.",
+    "caption": "Buy Membership Button Text sets the purchase button for membership sales pages; it saves independently of Buy Tickets Button Text.",
+    "alt": "Customize the membership purchase button in Design Event Page.",
+    "source": "Actual local Ticket Spot dashboard and public website; own synthetic stored QA records in isolated Datastore namespace; setting saved through the real dashboard API",
+    "capturedAt": "2026-10-07T17:57:23.681Z",
+    "route": "http://localhost:8080/#/events/design/event",
+    "callouts": [
+      "Buy Membership Button Text",
+      "Join our club"
+    ],
+    "clip": {
+      "x": 315,
+      "y": 225,
+      "width": 650,
+      "height": 560
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "memberships/sell-without-tickets.mdx"
+    ]
+  },
+  "standalone-event-page": {
+    "id": "standalone-membership-sales",
+    "key": "standalone-event-page",
+    "asset": "assets/refresh/memberships/standalone-event-page.png",
+    "pages": [
+      "memberships/sell-without-tickets.mdx"
+    ],
+    "title": "Public membership page with a custom purchase button and no event schedule or venue.",
+    "caption": "The membership page uses the saved purchase text and hides date, time, venue and ticket-price details.",
+    "alt": "Public membership page with a custom purchase button and no event schedule or venue.",
+    "source": "Actual local Ticket Spot dashboard and public website; own synthetic stored QA records in isolated Datastore namespace; setting saved through the real dashboard API",
+    "capturedAt": "2026-10-07T17:59:05.931Z",
+    "route": "http://localhost:3340/e/membership-page-qa-20261007",
+    "callouts": [
+      "Join our club"
+    ],
+    "clip": {
+      "x": 970,
+      "y": 100,
+      "width": 355,
+      "height": 215
     },
     "format": "PNG",
     "qa": "passed visual review",

@@ -4,7 +4,7 @@ The purple-circle style and first-page assets are approved. The available Demo d
 
 ## Current state
 
-- 611 reviewed screenshots and 3 reviewed GIFs across 105 guides; 3 companion posters.
+- 613 reviewed screenshots and 3 reviewed GIFs across 105 guides; 3 companion posters.
 - All 143 public guides compile and pass navigation/local-link checks. The original 112-guide media pass, 24-page onboarding follow-up, and six-guide attendee follow-up have desktop/mobile render checks without broken images or horizontal overflow in their respective acceptance records.
 - `captures.json` records provenance, captions, visual review, and actual placements. Run `python3 scripts/update-media-progress.py` from the repository root after capture integration.
 - [progress.json](../progress.json) contains current counts; [capture-plan.json](../capture-plan.json) tracks 355 planned briefs. A captured image does not establish complete acceptance of every dependent state.
@@ -44,4 +44,4 @@ Run `node scripts/check-mdx.mjs` and `python3 scripts/check-documentation.py --d
 
 - [shopify-addons-acceptance.json](shopify-addons-acceptance.json) records the hidden-and-published Shopify add-on setup, first-ticket and capacity rules, single/multiple dates, seven screenshots, Ahrefs evidence, and desktop/mobile checks. A user-authorized Shopify test payment included admission, two lunches and two workshop dates. After a user-applied local webhook verification change, the retry created all five registrations under one order; the signature check itself is not validated by this run.
 
-- [standalone-membership-acceptance.json](standalone-membership-acceptance.json) records evergreen membership-only checkout, the real $175 Stripe sandbox payment and free order, zero admission records, repeated webhooks and receipt delivery, combined membership PDFs, the onboarding and save-to-memberships flow, all 18 confirmation languages, ten reviewed screenshots, and desktop/mobile guide rendering. Apple signing needs the existing certificate passphrase; live provider/device checks and production deployment remain separate.
+- [standalone-membership-acceptance.json](standalone-membership-acceptance.json) records evergreen membership-only checkout, the real $175 Stripe sandbox payment and free order, zero admission records, repeated webhooks and receipt delivery, combined membership PDFs, the onboarding and save-to-memberships flow, all 18 confirmation languages, twelve reviewed screenshots, custom membership purchase text, the date-free public membership page, and desktop/mobile guide rendering. Apple signing needs the existing certificate passphrase; live provider/device checks and production deployment remain separate.
