@@ -1,0 +1,49 @@
+---
+title: "Developer API quickstart"
+description: "Verify your API key, create a draft event, and retrieve its details from a server-side integration."
+---
+
+Use a paid Business, Business+, or Platform site and a key with `events:read` and `events:create`. Create it under **Account → Developers** as described in [authentication](/api-reference/introduction).
+
+## Verify your connection
+
+Set `TICKETSPOT_API_BASE` to the production URL displayed in the endpoint playground and store your secret in `TICKETSPOT_API_KEY`.
+
+```bash
+curl "$TICKETSPOT_API_BASE/events?limit=10" \
+  --header "Authorization: Bearer $TICKETSPOT_API_KEY"
+```
+
+A successful response includes `success`, `events` and `pagination`. Pass `pagination.next_cursor` as `cursor` to fetch the next page. A `null` cursor means the list is complete.
+
+## Create a draft event
+
+```bash
+curl --request POST "$TICKETSPOT_API_BASE/events" \
+  --header "Authorization: Bearer $TICKETSPOT_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "title": "API workshop",
+    "status": "draft",
+    "start_date": "2027-06-15",
+    "start_time": "10:00",
+    "end_date": "2027-06-15",
+    "end_time": "12:00",
+    "timezone": "America/Los_Angeles",
+    "tickets": [{"name": "Admission", "price": 0, "quantity": 20}]
+  }'
+```
+
+A `201` response includes the event ID and created ticket IDs. Inspect `warnings`: an event can be created successfully while a downstream ticket operation fails. Add the missing ticket in the dashboard instead of retrying event creation. Events default to `live` when `status` is omitted.
+
+Retrieve the saved event using `GET /events/{id}` and confirm its schedule, venue and status in the dashboard before publishing it.
+
+## Find and scan an attendee
+
+Search with `GET /attendees/search?q=ann`, optionally adding `event_id` to narrow the results. The search matches a case-insensitive prefix of a first name, last name, full name or email address and requires at least two characters.
+
+Send the chosen attendee ID and expected event ID to `POST /scan`. A `202` response means the check-in was accepted for processing. Ordinary ticket scans update through the existing task queue; query the attendee again shortly afterward to see the saved check-in status.
+
+A `409` means the scan was rejected. Read `ticket_validity` when present. The scanner enforces admission eligibility, required check-in answers, ticket validity and scan limits. Ordinary scans have a shared five-second duplicate guard. The optional `idempotency_key` applies to membership admission; it does not make ordinary ticket scans permanently idempotent.
+
+See [Scan an attendee](/api-reference/endpoint/scan-attendee) for the interactive request and [rate limits and errors](/api-reference/rate-limits) for retry behavior.

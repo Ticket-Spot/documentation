@@ -1,36 +1,45 @@
 ---
 title: "Ticket Spot API authentication and access"
-description: "Create an API key and use the supported event-creation API from a server-side integration."
+description: "Create a scoped API key on a paid Business plan and connect your events and attendee workflows."
 ---
 
-The Ticket Spot API lets an authorized integration create events and basic ticket types for its site. API access is included in **Platform**. The public endpoint documented here is [Create an event](/api-reference/endpoint/create).
+The TicketSpot developer API lets you list, retrieve, create and update events, find attendees, and scan tickets for the site associated with your API key. API access requires a paid **Business**, **Business+**, or **Platform** plan. Free plans, trials and ticket packs do not grant developer API access.
 
 ## Create an API key
 
-
-<Frame caption="Account → Developers → Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example.">
-  <img src="../assets/refresh/api-reference/api-key-settings.png" alt="Account → Developers → Create API Key asks for a descriptive name. This is the form before creation; no key is generated or exposed in this example." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+<Frame caption="Account → Developers → Create API Key asks for a descriptive name. No credential is shown in this example.">
+  <img src="../assets/refresh/api-reference/api-key-settings.png" alt="The Developers API key creation form with a descriptive name field." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
 </Frame>
 
-1. Select the intended site in the dashboard.
-2. Open your account menu and choose **Developers**.
-3. Click **Create API Key**, enter a descriptive name, and click **Create**.
-4. Copy the key and store it securely before closing the dialog. The full key is only shown at creation.
-5. Send it from your server in the authorization header:
+1. Select your intended site in the dashboard.
+2. Open the account menu and choose **Developers**.
+3. Select **Create API Key**, enter a descriptive name, and create the key.
+4. Copy the secret before closing the dialog. It is shown once.
+5. Send the key in the `Authorization` header from your integration:
 
 ```http
-Authorization: Bearer ts-YOUR_API_KEY
+Authorization: Bearer ts-YOUR_KEY_ID-YOUR_SECRET
 Content-Type: application/json
 ```
 
-The key is associated with its site. Keep it out of browser code, public repositories, and shared screenshots. Use **Revoke** in Developers when an integration should lose access. If Developers is not available for your account, contact your Platform account manager for API provisioning.
+The key is limited to its site and granted permissions. Every key uses an independent secret; the server stores its hash. Keep the secret in your server environment and use **Revoke** when access should end.
 
-## Supported scope
+## Permissions
 
-Use the event-creation endpoint for title, description, schedule, venue, image, organizer display name, and basic tickets. Configure advanced ticket rules, memberships, seating, communications, and event publication settings in the dashboard unless your integration has a separately agreed API contract.
+| Permission | Operations |
+| --- | --- |
+| `events:read` | Get events and get one event |
+| `events:create` | Create an event and optional basic tickets |
+| `events:update` | Update an event |
+| `attendees:read` | Get and search attendees |
+| `attendees:scan` | Scan an attendee |
 
-The reference does not define public event-list, delete, or webhook endpoints. [Zapier](/integrations/zapier) and individual integrations have their own connection workflows.
+Keys receive these permissions by default. Keys can be issued with fewer permissions through key management. A missing permission returns `403`.
 
-## Handle errors
+API eligibility is checked for every request using the current billing plan resolver. Downgrading below Business removes API access, subject to billing cache invalidation. You can still revoke existing keys.
 
-A `400` response indicates invalid event input; inspect the message and correct it before retrying. A `401` indicates missing, invalid, revoked, or expired credentials. A `500` indicates a server-side failure. For an uncertain create result, inspect Events before retrying so you do not create a duplicate.
+## Try an operation
+
+Open an endpoint page, enter your key in its authorization field, and use the interactive playground. Requests run against the API server shown in the playground and apply normal plan checks, permissions and [rate limits](/api-reference/rate-limits). Creating an event or scanning an attendee changes records on the site tied to the key.
+
+Start with [Get events](/api-reference/endpoint/list-events) to confirm your connection. Follow the [quickstart](/api-reference/quickstart) for a draft-event example. Use the dashboard for advanced ticket rules, memberships, seating and communication settings.

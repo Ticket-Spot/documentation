@@ -39,6 +39,18 @@ The same source check compares the onboarding template IDs with `event-types/onb
 
 See [the October 2026 review](./DOCUMENTATION_REVIEW.md) for coverage, source evidence, product-label mismatches, and the remaining browser verification checklist.
 
+## Developer API reference
+
+The endpoint pages under `api-reference/endpoint` use Mintlify's OpenAPI playground. Refresh their contract from the server whenever v2 routes change, then validate the reference:
+
+```sh
+node scripts/sync-developer-api.cjs --server /path/to/wix-eventviewer-server
+node scripts/sync-developer-api.cjs --server /path/to/wix-eventviewer-server --check
+npx mintlify openapi-check api-reference/openapi.json
+```
+
+The server keeps a relative Swagger server URL for local use; the copied Mintlify contract uses the provisioned production base URL. Publish the server routes and new Datastore indexes before releasing the documentation. API usage appears in PostHog as `developer_api_request`; the server repository includes `posthog-developer-api-queries.sql` for usage and error insights.
+
 ## Product update documentation
 
 Every What's New entry in the server repository's `content/product-updates` must link to the guide that explains its feature and include a relevant screenshot or GIF used in that guide. Update the instructions and media together, preserve existing guide URLs, and verify the published section and asset before releasing the server entry. Keep device/account-dependent captures explicitly pending rather than presenting unrelated or outdated images as current. The server's `docs/product-updates.md` describes the authoring and cross-repository validation workflow.
