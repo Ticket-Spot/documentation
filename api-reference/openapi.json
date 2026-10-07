@@ -1,0 +1,1311 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "TicketSpot Developer API",
+    "version": "2.1.0",
+    "description": "Manage events and attendees for the site associated with your API key. Developer API access requires a paid Business, Business+ or Platform plan. Free plans, trials and ticket packs do not grant API access. Eligibility is checked on every request using the billing plan resolver and its existing cache invalidation.\n\nCreate a key in the dashboard under Settings > API Keys. Send Authorization: Bearer <api_key>. Keys use ts-{uuid}-{secret}; the secret is shown once and stored as a hash. Available scopes: events:read, events:create, events:update, attendees:read, attendees:scan.\n\nRate limits are shared across application instances: 120 requests/minute per key, 600 requests/minute per site, and 300 requests/minute per IP before authentication. Responses include RateLimit-Limit, RateLimit-Remaining and RateLimit-Reset (seconds until reset). Exceeding a limit returns 429 with Retry-After. Redis outages return 503. Maximum API body size is 8 MiB.\n\nEvent and attendee lists use cursor pagination: limit defaults to 25 (maximum 100), and pagination.next_cursor is null at the end. Attendee search matches case-insensitive prefixes of names and email addresses. Scanning ordinary tickets queues the existing check-in task; a 202 means accepted for processing, and the attendee record may update shortly afterward. Invalid or duplicate scans return 409."
+  },
+  "servers": [
+    {
+      "url": "https://ticketspotapp.com/api/api/v2",
+      "description": "Production API"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/events": {
+      "get": {
+        "summary": "Get events",
+        "operationId": "getEvents",
+        "x-required-permission": "events:read",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/Cursor"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Events ordered by creation time, newest first.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "events": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Event"
+                      }
+                    },
+                    "pagination": {
+                      "$ref": "#/components/schemas/Pagination"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create an event",
+        "operationId": "createEvent",
+        "x-required-permission": "events:create",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEvent"
+              }
+            }
+          }
+        },
+        "description": "Creates a native TicketSpot event. Without tickets, creates a Standard free ticket. All ticket input is validated before creation.",
+        "responses": {
+          "201": {
+            "description": "Event created. Inspect warnings if a ticket could not be created; do not retry event creation.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "event": {
+                      "$ref": "#/components/schemas/Event"
+                    },
+                    "tickets": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/CreatedTicket"
+                      }
+                    },
+                    "warnings": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string"
+                          },
+                          "ticket_name": {
+                            "type": "string"
+                          },
+                          "message": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    },
+    "/events/{id}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/Id"
+        }
+      ],
+      "get": {
+        "summary": "Get an event",
+        "operationId": "getEvent",
+        "x-required-permission": "events:read",
+        "responses": {
+          "200": {
+            "description": "Event details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "event": {
+                      "$ref": "#/components/schemas/Event"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Update an event",
+        "operationId": "updateEvent",
+        "x-required-permission": "events:update",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEvent"
+              }
+            }
+          }
+        },
+        "description": "Partial update of a native TicketSpot event. Ownership and internal fields are read-only. Date edits are interpreted in the event timezone; a timezone change preserves its previous local clock times. Existing occurrence synchronization and approval rules apply.",
+        "responses": {
+          "200": {
+            "description": "Updated event.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "event": {
+                      "$ref": "#/components/schemas/Event"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update an event (PUT alias)",
+        "operationId": "putEvent",
+        "x-required-permission": "events:update",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEvent"
+              }
+            }
+          }
+        },
+        "description": "Same partial-update behavior as PATCH. Omitted properties are preserved.",
+        "responses": {
+          "200": {
+            "description": "Updated event.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "event": {
+                      "$ref": "#/components/schemas/Event"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    },
+    "/attendees/search": {
+      "get": {
+        "summary": "Search attendees",
+        "operationId": "searchAttendees",
+        "x-required-permission": "attendees:read",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Limit"
+          },
+          {
+            "$ref": "#/components/parameters/Cursor"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 200
+            },
+            "description": "Case-insensitive name or email prefix."
+          },
+          {
+            "name": "event_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Optional event filter, restricted to this key's site."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Matching attendees.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "attendees": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Attendee"
+                      }
+                    },
+                    "pagination": {
+                      "$ref": "#/components/schemas/Pagination"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    },
+    "/attendees/{id}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/Id"
+        }
+      ],
+      "get": {
+        "summary": "Get an attendee",
+        "operationId": "getAttendee",
+        "x-required-permission": "attendees:read",
+        "responses": {
+          "200": {
+            "description": "Attendee details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "attendee": {
+                      "$ref": "#/components/schemas/Attendee"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error409"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    },
+    "/scan": {
+      "post": {
+        "summary": "Scan an attendee",
+        "operationId": "scanAttendee",
+        "x-required-permission": "attendees:scan",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScanRequest"
+              }
+            }
+          }
+        },
+        "description": "Accepts an attendee ID. Requires an attending or checkedIn attendee at this key's site. Existing ticket validity, required check-in answers, scan limits and membership admission rules are applied. Kiosk print tokens and private order details are not returned.",
+        "responses": {
+          "202": {
+            "description": "Scan accepted.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "accepted": {
+                      "type": "boolean"
+                    },
+                    "attendee": {
+                      "$ref": "#/components/schemas/Attendee"
+                    },
+                    "ticket_validity": {
+                      "$ref": "#/components/schemas/TicketValidity"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "description": "Scan rejected or conflicts with attendee state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Error"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "success": {
+                          "type": "boolean"
+                        },
+                        "accepted": {
+                          "type": "boolean"
+                        },
+                        "attendee": {
+                          "$ref": "#/components/schemas/Attendee"
+                        },
+                        "ticket_validity": {
+                          "$ref": "#/components/schemas/TicketValidity"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    },
+    "/attendees/{id}/scan": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/Id"
+        }
+      ],
+      "post": {
+        "summary": "Scan an attendee by path ID",
+        "operationId": "scanAttendeeById",
+        "x-required-permission": "attendees:scan",
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScanOptions"
+              }
+            }
+          }
+        },
+        "description": "Alias for POST /scan with the attendee ID in the path.",
+        "responses": {
+          "202": {
+            "description": "Scan accepted.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "accepted": {
+                      "type": "boolean"
+                    },
+                    "attendee": {
+                      "$ref": "#/components/schemas/Attendee"
+                    },
+                    "ticket_validity": {
+                      "$ref": "#/components/schemas/TicketValidity"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error400"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error401"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error403"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error404"
+          },
+          "409": {
+            "description": "Scan rejected or conflicts with attendee state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Error"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "success": {
+                          "type": "boolean"
+                        },
+                        "accepted": {
+                          "type": "boolean"
+                        },
+                        "attendee": {
+                          "$ref": "#/components/schemas/Attendee"
+                        },
+                        "ticket_validity": {
+                          "$ref": "#/components/schemas/TicketValidity"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "413": {
+            "$ref": "#/components/responses/Error413"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error429"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error500"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error503"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "TicketSpot API key",
+        "description": "ts-{uuid}-{secret}. Every key requires its independent secret."
+      }
+    },
+    "parameters": {
+      "Id": {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Resource ID on the authenticated site."
+      },
+      "Limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer",
+          "default": 25,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "Cursor": {
+        "name": "cursor",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "description": "Opaque next_cursor from a previous response."
+      }
+    },
+    "schemas": {
+      "CreateEvent": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "example": "Developer Conference"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 50000,
+            "description": "Sanitized HTML event description."
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2026-11-15"
+          },
+          "start_time": {
+            "type": "string",
+            "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "example": "09:00"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2026-11-15"
+          },
+          "end_time": {
+            "type": "string",
+            "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "example": "17:00"
+          },
+          "timezone": {
+            "type": "string",
+            "example": "America/Los_Angeles",
+            "description": "Valid IANA timezone. Nonexistent local times are rejected."
+          },
+          "venue": {
+            "$ref": "#/components/schemas/VenueInput"
+          },
+          "hostName": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "image": {
+            "type": "string",
+            "description": "Direct public HTTPS URL (no redirects, private addresses, credentials or custom ports), or base64 data URL for JPEG, PNG, WebP or GIF. Maximum decoded size 5 MiB; images are validated and converted to JPEG."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "live"
+            ],
+            "default": "live"
+          },
+          "tickets": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {
+              "$ref": "#/components/schemas/TicketInput"
+            }
+          }
+        },
+        "required": [
+          "title",
+          "start_date",
+          "end_date",
+          "timezone"
+        ],
+        "additionalProperties": false
+      },
+      "UpdateEvent": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "example": "Developer Conference"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 50000,
+            "description": "Sanitized HTML event description."
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2026-11-15"
+          },
+          "start_time": {
+            "type": "string",
+            "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "example": "09:00"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "example": "2026-11-15"
+          },
+          "end_time": {
+            "type": "string",
+            "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$",
+            "example": "17:00"
+          },
+          "timezone": {
+            "type": "string",
+            "example": "America/Los_Angeles",
+            "description": "Valid IANA timezone. Nonexistent local times are rejected."
+          },
+          "venue": {
+            "$ref": "#/components/schemas/VenueInput"
+          },
+          "hostName": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "image": {
+            "type": "string",
+            "description": "Direct public HTTPS URL (no redirects, private addresses, credentials or custom ports), or base64 data URL for JPEG, PNG, WebP or GIF. Maximum decoded size 5 MiB; images are validated and converted to JPEG."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "live"
+            ],
+            "default": "live"
+          }
+        },
+        "minProperties": 1,
+        "additionalProperties": false
+      },
+      "VenueInput": {
+        "type": "object",
+        "properties": {
+          "venue_name": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "multi_line_address_display": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "address_1": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "address_2": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "city": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "region": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "postal_code": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "country": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "country_code": {
+                "type": "string",
+                "maxLength": 500
+              },
+              "latitude": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "longitude": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "TicketInput": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 5000
+          },
+          "price": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000000,
+            "default": 0
+          },
+          "quantity": {
+            "type": "integer",
+            "nullable": true,
+            "minimum": 1,
+            "maximum": 1000000,
+            "description": "Omit or use null for unlimited inventory."
+          },
+          "currency": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$",
+            "default": "USD"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "CreatedTicket": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "quantity": {
+            "type": "integer",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string"
+          }
+        }
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "venue": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "venue_name": {
+            "type": "string"
+          },
+          "latitude": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "nullable": true
+          },
+          "longitude": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "nullable": true
+          },
+          "image_url": {
+            "type": "string",
+            "nullable": true
+          },
+          "hostName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subdomain": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string"
+          },
+          "is_demo": {
+            "type": "boolean"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Attendee": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "ticket_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkin_scan_count": {
+            "type": "integer"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Pagination": {
+        "type": "object",
+        "properties": {
+          "limit": {
+            "type": "integer"
+          },
+          "next_cursor": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "TicketValidity": {
+        "type": "object",
+        "properties": {
+          "isValid": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "reason_description": {
+            "type": "string"
+          }
+        }
+      },
+      "ScanRequest": {
+        "type": "object",
+        "properties": {
+          "attendee_id": {
+            "type": "string",
+            "example": "attendee-uuid"
+          },
+          "event_id": {
+            "type": "string",
+            "description": "Optional expected event ID. The attendee must belong to this event."
+          },
+          "idempotency_key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{16,128}$",
+            "description": "Stable request ID for membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
+          }
+        },
+        "required": [
+          "attendee_id"
+        ],
+        "additionalProperties": false
+      },
+      "ScanOptions": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "description": "Optional expected event ID. The attendee must belong to this event."
+          },
+          "idempotency_key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{16,128}$",
+            "description": "Stable request ID for membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
+          }
+        },
+        "additionalProperties": false
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "responses": {
+      "Error400": {
+        "description": "Invalid request.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error401": {
+        "description": "Missing, invalid, expired or revoked API key.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error403": {
+        "description": "Paid Business plan required, or API key is missing the operation scope.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error404": {
+        "description": "Resource not found on this site.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error409": {
+        "description": "Operation conflicts with the resource state.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error413": {
+        "description": "Request body exceeds 8 MiB.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error429": {
+        "description": "Shared API rate limit exceeded.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        },
+        "headers": {
+          "Retry-After": {
+            "description": "Seconds to wait before retrying.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "Error500": {
+        "description": "Request could not be completed.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "Error503": {
+        "description": "Rate limiting or scan protection temporarily unavailable.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        },
+        "headers": {
+          "Retry-After": {
+            "description": "Seconds to wait before retrying.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

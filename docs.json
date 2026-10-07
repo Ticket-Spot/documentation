@@ -272,7 +272,15 @@
             "group": "API Reference",
             "pages": [
               "api-reference/introduction",
-              "api-reference/endpoint/create"
+              "api-reference/quickstart",
+              "api-reference/rate-limits",
+              "api-reference/endpoint/list-events",
+              "api-reference/endpoint/get-event",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/update-event",
+              "api-reference/endpoint/get-attendee",
+              "api-reference/endpoint/search-attendees",
+              "api-reference/endpoint/scan-attendee"
             ]
           }
         ]
@@ -317,5 +325,20 @@
       "cursor",
       "vscode"
     ]
+  },
+  "api": {
+    "playground": {
+      "display": "interactive",
+      "proxy": true
+    },
+    "examples": {
+      "languages": [
+        "curl",
+        "javascript",
+        "python"
+      ],
+      "defaults": "required",
+      "prefill": true
+    }
   }
 }

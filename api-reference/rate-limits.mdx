@@ -1,0 +1,47 @@
+---
+title: "API rate limits and errors"
+description: "Handle shared API quotas, cursor pagination, validation errors, and asynchronous attendee scans."
+---
+
+Developer API quotas apply across all server instances. Create keys and make requests from a paid Business, Business+, or Platform site.
+
+## Request limits
+
+| Limit | Allowance |
+| --- | --- |
+| Per API key | 120 requests per minute |
+| Across all keys for one site | 600 requests per minute |
+| Per source IP, before authentication | 300 requests per minute |
+| JSON request body | 8 MiB |
+| Event image | 5 MiB decoded; JPEG, PNG, WebP or GIF |
+| Ticket types per event creation | 50 |
+| List page size | 25 by default; maximum 100 |
+
+Responses include `RateLimit-Limit`, `RateLimit-Remaining` and `RateLimit-Reset`. Reset is the number of seconds until the current counter expires. A `429` also includes `Retry-After`; wait that many seconds before retrying. Redis outages return `503` rather than allowing unmetered requests.
+
+## Response codes
+
+| Code | Meaning and next step |
+| --- | --- |
+| `200` | Read or update completed. |
+| `201` | Event created. Save its ID and inspect any ticket warnings. |
+| `202` | Scan accepted. Ordinary check-ins are saved asynchronously. |
+| `400` | Invalid JSON, dates, timezone, search input or writable fields. Correct the request. |
+| `401` | Missing, invalid, expired or revoked key. Replace or rotate the credential. |
+| `403` | Paid Business access is required, or the key lacks the operation permission. |
+| `404` | Endpoint or resource was not found on the key’s site. |
+| `409` | Resource state prevents the operation, or a scan is invalid or duplicated. |
+| `413` | Request exceeds the 8 MiB body limit. |
+| `415` | Request body is not JSON. Send `Content-Type: application/json`. |
+| `429` | Request quota exceeded. Respect `Retry-After`. |
+| `500` / `503` | Service could not complete the request. Retry reads with backoff. |
+
+Do not blindly retry event creation after a timeout or uncertain failure: check Events first to avoid duplicates. For ordinary ticket scans, a second request within five seconds is rejected, and accepted scans may take a short time to appear in attendee details.
+
+## Pagination and images
+
+Lists return `pagination.next_cursor`. Use that value unchanged in the next request with the same filters. A page may contain fewer results when deleted or inaccessible events are excluded; continue while a next cursor is present.
+
+Event image URLs must be direct public HTTPS URLs without redirects, credentials or custom ports. Private network and metadata addresses are rejected. Uploaded raster images are validated and converted to JPEG. Base64 image data URLs are also supported.
+
+See [authentication](/api-reference/introduction) for plan and permission requirements and the [quickstart](/api-reference/quickstart) for example requests.
