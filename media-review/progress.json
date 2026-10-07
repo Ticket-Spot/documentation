@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-06T19:58:32.328540+00:00",
+  "updated_at": "2026-10-07T14:55:57.427704+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-  "planned_capture_units": 354,
-  "units_with_any_capture": 310,
-  "checked_screenshots": 596,
+  "planned_capture_units": 355,
+  "units_with_any_capture": 316,
+  "checked_screenshots": 611,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
   "needs_recapture": 0,
-  "guides_with_current_media": 104,
+  "guides_with_current_media": 105,
   "external_capture_units_deferred": 66,
   "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.",
   "pages": [
@@ -1171,12 +1171,14 @@
         "assets/refresh/event-management/installment-automatic-paid-two.png",
         "assets/refresh/event-management/installment-checkout-text.png",
         "assets/refresh/event-management/installment-confirm-charge.png",
+        "assets/refresh/event-management/installment-full-only-checkout.png",
         "assets/refresh/event-management/installment-fully-paid-progress.png",
         "assets/refresh/event-management/installment-new-order-email.png",
         "assets/refresh/event-management/installment-next-due.png",
         "assets/refresh/event-management/installment-organizer-summary.png",
         "assets/refresh/event-management/installment-pay-full-choice.png",
         "assets/refresh/event-management/installment-payment-filters.png",
+        "assets/refresh/event-management/installment-plan-details.png",
         "assets/refresh/event-management/installment-recovery-already-paid.png",
         "assets/refresh/event-management/installment-recovery-complete.png",
         "assets/refresh/event-management/installment-recovery-consent.png",
@@ -1184,8 +1186,11 @@
         "assets/refresh/event-management/installment-saved-card-declined.png",
         "assets/refresh/event-management/installment-second-paid.png",
         "assets/refresh/event-management/installment-zero-checkout.png",
+        "assets/refresh/event-management/payment-plan-date-validation.png",
         "assets/refresh/event-management/payment-plan-equal.png",
-        "assets/refresh/event-management/payment-plan-percentages.png"
+        "assets/refresh/event-management/payment-plan-list.png",
+        "assets/refresh/event-management/payment-plan-percentages.png",
+        "assets/refresh/event-management/payment-plan-ticket-eligibility.png"
       ],
       "capture_ids": [
         "installment-buyer-summary",
@@ -1755,6 +1760,24 @@
         "membership-list",
         "membership-numbering",
         "membership-pricing"
+      ]
+    },
+    {
+      "path": "memberships/sell-without-tickets.mdx",
+      "current_assets": [
+        "assets/refresh/memberships/standalone-checkout-selection.png",
+        "assets/refresh/memberships/standalone-confirmation-controls.png",
+        "assets/refresh/memberships/standalone-confirmation-design.png",
+        "assets/refresh/memberships/standalone-event-setup.png",
+        "assets/refresh/memberships/standalone-holder-details.png",
+        "assets/refresh/memberships/standalone-manage-members.png",
+        "assets/refresh/memberships/standalone-member-portal.png",
+        "assets/refresh/memberships/standalone-membership-assignment.png",
+        "assets/refresh/memberships/standalone-onboarding.png",
+        "assets/refresh/memberships/standalone-order-confirmation.png"
+      ],
+      "capture_ids": [
+        "standalone-membership-sales"
       ]
     },
     {

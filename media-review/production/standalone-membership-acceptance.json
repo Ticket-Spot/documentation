@@ -1,0 +1,251 @@
+{
+  "checked_at": "2026-10-07T15:00:32.418396+00:00",
+  "scope": "Standalone evergreen membership sales across widget, server, dashboard and public documentation",
+  "environment": {
+    "namespace": "codex-payments-20261003",
+    "site": "membership-only-qa-20261006",
+    "event": "membership-sales-20261006",
+    "identities": "Synthetic example.invalid recipients",
+    "provider": "Real Stripe sandbox card payment",
+    "transport": "Actual task payloads and rendered emails/PDFs captured locally; no production attendee messages sent",
+    "screenshots": "Actual app UI; SVG callouts only; no mocked checkout or dashboard API responses"
+  },
+  "cases": {
+    "paid_checkout": {
+      "cartId": "52305677-444b-434d-8ea6-dc30a0e01255",
+      "paid": 175,
+      "receivedCents": 17500,
+      "admissions": 0,
+      "holders": [
+        {
+          "id": "5185278106140672",
+          "reference": "MEM-001000",
+          "status": "active"
+        },
+        {
+          "id": "6198077867425792",
+          "reference": "MEM-001000",
+          "status": "active"
+        }
+      ],
+      "ledgerEntries": 1,
+      "duplicateWebhookStatuses": [
+        200,
+        200
+      ],
+      "outboxCreated": true,
+      "attendeeQuantity": 0
+    },
+    "free_checkout": {
+      "cartId": "2b69e6c3-7196-41b9-ad54-c14f7d5390e4",
+      "total": 0,
+      "holders": 1,
+      "admissions": 0,
+      "ledgerEntries": 0,
+      "outboxCreated": true
+    },
+    "paid_receipt": {
+      "cartId": "52305677-444b-434d-8ea6-dc30a0e01255",
+      "statuses": [
+        {
+          "status": 200,
+          "result": "Membership confirmation sent"
+        },
+        {
+          "status": 200,
+          "result": "Already handled"
+        }
+      ],
+      "deliveryAttempts": 1,
+      "receipt": {
+        "type": "NEW_MEMBERSHIP_PURCHASE",
+        "attachments": [
+          {
+            "name": "memberships.pdf",
+            "type": "application/pdf",
+            "bytes": 145018
+          }
+        ]
+      },
+      "downloadStatus": 200,
+      "invalidTokenStatus": 302,
+      "walletStatus": 500,
+      "walletBytes": 32,
+      "wallet_note": "Retested after numeric holder key fix; signer reaches certificate passphrase requirement"
+    },
+    "free_receipt": {
+      "cartId": "2b69e6c3-7196-41b9-ad54-c14f7d5390e4",
+      "statuses": [
+        {
+          "status": 200,
+          "result": "Membership confirmation sent"
+        },
+        {
+          "status": 200,
+          "result": "Already handled"
+        }
+      ],
+      "deliveryAttempts": 1,
+      "receipt": {
+        "type": "NEW_MEMBERSHIP_PURCHASE",
+        "attachments": [
+          {
+            "name": "memberships.pdf",
+            "type": "application/pdf",
+            "bytes": 130101
+          }
+        ]
+      },
+      "downloadStatus": 200,
+      "invalidTokenStatus": 302,
+      "walletStatus": 500,
+      "walletBytes": 52
+    },
+    "pdf_content": [
+      {
+        "file": "download-52305677-444b-434d-8ea6-dc30a0e01255.pdf",
+        "pages": 2,
+        "containsHolder": true,
+        "containsReference": true,
+        "memberships": [
+          "Annual Membership",
+          "Ten Visit Pass"
+        ]
+      },
+      {
+        "file": "download-2b69e6c3-7196-41b9-ad54-c14f7d5390e4.pdf",
+        "pages": 1,
+        "containsHolder": true,
+        "containsReference": true,
+        "memberships": [
+          "Community Membership"
+        ]
+      }
+    ],
+    "empty_catalogue": {
+      "text": "Memberships\nYour details\nReview\n\nNo memberships are currently available. Please contact the organizer.\n\nContinue to Your details \u2192",
+      "buttons": [
+        {
+          "text": "Continue to Your details \u2192",
+          "disabled": true
+        }
+      ]
+    },
+    "wallet": {
+      "status": 500,
+      "bytes": 52,
+      "contentType": "application/json; charset=utf-8",
+      "zipHeader": "{\""
+    },
+    "buyer_portal": {
+      "listStatus": 200,
+      "count": 2,
+      "selectedTab": "Memberships",
+      "detailsStatus": 200,
+      "holderId": "5185278106140672",
+      "membershipName": "Annual Membership"
+    },
+    "shopify_mapping_guard": "Own isolated membership lookup returns no mapping without an import error; checkout rejects unprovisioned variants with its existing 409 guard.",
+    "onboarding": {
+      "template": "Memberships",
+      "group": "Advanced",
+      "initialSetup": "memberships",
+      "questionsSkipped": [
+        "dates",
+        "tickets"
+      ],
+      "firstSaveOpens": "Memberships",
+      "savedEvent": "13a201d3-1d85-43c9-b473-08c76072e0da",
+      "membershipSelectionReady": true
+    },
+    "multilingual_confirmation": {
+      "supportedLocales": 18,
+      "emailAndCheckoutTemplates": "passed in all locales",
+      "regionalFallback": "fr-CA uses fr",
+      "customText": "preserved with validated per-locale overrides",
+      "disabled": "default copy without deleting saved translations"
+    },
+    "editor_tabs": {
+      "membership": {
+        "radioLabels": [
+          "tickets",
+          "memberships",
+          "rsvp",
+          "url",
+          "nothing"
+        ],
+        "hintVisible": false,
+        "tabs": [
+          "1Event Details",
+          "2Memberships",
+          "3Additional Info",
+          "4Tags & Custom Fields",
+          "5Display Settings",
+          "6Tracking Links"
+        ]
+      },
+      "tickets": {
+        "membershipTabVisible": true,
+        "tabs": [
+          "1Event Details",
+          "2Dates & Times",
+          "3Venue & Location",
+          "4Tickets",
+          "5Installment Plan",
+          "6Event Add-ons",
+          "7Memberships",
+          "8Email Communication",
+          "9SMS Communication",
+          "10Waitlist",
+          "11Additional Info",
+          "12Checkout Complete",
+          "13Tags & Custom Fields",
+          "14Hosts",
+          "15Display Settings",
+          "16Tracking Links"
+        ]
+      }
+    }
+  },
+  "tests": {
+    "server": {
+      "passed": 114,
+      "scope": "Membership sales, existing admission/benefits/delivery, shared fulfillment, free Square guards, multilingual communications and all 18 membership confirmation locales",
+      "focused_new_module_lint": "passed with existing client Babel parser provided through NODE_PATH"
+    },
+    "client": {
+      "passed": 52,
+      "scope": "Step navigation, loading readiness and membership cart count"
+    },
+    "documentation": {
+      "pages_compiled": 143,
+      "navigation_and_local_links": "passed including source inventory",
+      "screenshots_reviewed": 10,
+      "render": {
+        "desktop": {
+          "width": 1440,
+          "imagesLoaded": 10,
+          "totalImages": 10,
+          "overflow": false,
+          "hasOnboarding": true,
+          "hasLanguage": true
+        },
+        "mobile": {
+          "width": 390,
+          "imagesLoaded": 10,
+          "totalImages": 10,
+          "overflow": false,
+          "hasOnboarding": true,
+          "hasLanguage": true
+        }
+      },
+      "mintlify_broken_links": "Existing internal Markdown references to JSON acceptance records are flagged; all public MDX navigation and local links/media pass."
+    }
+  },
+  "limits": [
+    "Changes remain local; production services and documentation have not been deployed.",
+    "Apple pass signing cannot complete locally: the existing encrypted private key requires its configured certificate passphrase. Numeric holder lookup and purchaser/cart authorization are covered by regression tests; physical Apple device installation remains unverified.",
+    "Live PayPal, Square and Shopify membership payment/delivery have not been exercised end to end. Shopify standalone sales require provisioned membership variant mappings; automatic Shopify product provisioning is not part of this change.",
+    "Dashboard-wide typecheck and unrelated translation inventory checks retain existing baseline issues; the edited screens compile in the running webpack app."
+  ]
+}
