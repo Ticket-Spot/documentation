@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-06T14:09:04.353646+00:00",
+  "scope": "Zero initial installment, translated review settings, and Payment Settings tabs",
+  "environment": "Stripe sandbox, codex-payments-20261003 Datastore namespace, local task and email sinks",
+  "checkout": {
+    "setupSucceeded": true,
+    "usage": "off_session",
+    "collected": 0,
+    "ledgerEntries": 0,
+    "remaining": 100,
+    "status": "pending",
+    "paid": 1,
+    "webhookStatuses": [
+      200,
+      200
+    ]
+  },
+  "collection": {
+    "browserDepositCents": 0,
+    "mode": "automatic",
+    "retryDays": [
+      3,
+      7
+    ],
+    "duplicateWorkers": [
+      {
+        "number": 2,
+        "receivedCents": 5000,
+        "redeliveries": 2,
+        "onePersistedIntent": true
+      },
+      {
+        "number": 3,
+        "receivedCents": 5000,
+        "redeliveries": 2,
+        "onePersistedIntent": true
+      }
+    ],
+    "attendeeEmail2": 204,
+    "attendeeEmail3": 204,
+    "final": {
+      "paid": 3,
+      "remaining": 0,
+      "status": "attending",
+      "cartCollected": 100,
+      "ledgerEntries": 2
+    }
+  },
+  "dashboard": {
+    "Business": {
+      "locked": {
+        "label": "Automatic collectionAutomatic collection",
+        "notice": "Business Plus PlanUpgrade to AccessUpgrade to Business Plus to collect installments automatically and configure retry days. Manual collection remains available on Business.",
+        "saveDisabled": true,
+        "icons": 1,
+        "writes": 0
+      },
+      "preserved": true,
+      "manual": {
+        "writes": [
+          {
+            "collection_mode": "manual",
+            "retry_days": []
+          }
+        ],
+        "noticeHidden": true
+      }
+    },
+    "BusinessPlus": {
+      "defaults": {
+        "mode": "Automatic collectionAutomatic collection",
+        "days": [
+          "3",
+          "7"
+        ],
+        "locked": false,
+        "saveDisabled": false
+      },
+      "invalid": {
+        "alert": "Retry days must increase and be between 1 and 30.",
+        "disabled": true,
+        "writes": 0
+      },
+      "saved": [
+        {
+          "collection_mode": "automatic",
+          "retry_days": [
+            3,
+            7
+          ]
+        }
+      ]
+    },
+    "editor": {
+      "zero": {},
+      "negative": {
+        "installment_plan": "Installment 1 cannot be negative."
+      }
+    },
+    "text_fields_present": true,
+    "remove_buttons": [
+      {
+        "label": "Remove payment 2",
+        "offset": 1
+      },
+      {
+        "label": "Remove final payment",
+        "offset": 1
+      }
+    ]
+  },
+  "api_curl_replay": {
+    "status": 200,
+    "collection_mode": "automatic",
+    "retry_days": [],
+    "automatic_available": true
+  },
+  "automated_checks": {
+    "server": 216,
+    "widget": 30,
+    "translated_strings_with_preserved_placeholders": 198
+  },
+  "final_email": {
+    "template": "NEW_ORDER",
+    "tickets_pdf": true,
+    "receipt_pdf": true,
+    "external_send": false
+  },
+  "captures": [
+    "assets/refresh/event-management/installment-collection-settings.png",
+    "assets/refresh/event-management/installment-upgrade-notice.png",
+    "assets/refresh/event-management/installment-zero-checkout.png",
+    "assets/refresh/event-management/installment-checkout-text.png",
+    "assets/refresh/account/payment-settings-tabs.png",
+    "assets/refresh/event-management/installment-zero-schedule.png",
+    "assets/refresh/event-management/installment-attendee-failure-email.png",
+    "assets/refresh/event-management/installment-attendee-manual-payment.png",
+    "assets/refresh/event-management/installment-attendee-receipt-email.png"
+  ],
+  "scheduler": {
+    "production_job": "installment-scheduler",
+    "schedule": "*/10 * * * *",
+    "state": "PAUSED",
+    "summary_delivery": "Next scheduler run after period payments and attendee communications finish; unresolved work reported after one hour"
+  },
+  "limitations": [
+    "Provider and plan settings screenshots exercise actual components with synthetic response fixtures.",
+    "Stripe test mode was used for financial checks; attendee emails were rendered through the local email sink.",
+    "No deployment or production scheduler activation."
+  ],
+  "attendee_recovery": {
+    "cartId": "be95888a-4a9b-406e-9c72-79500d98e17d",
+    "attendeeId": "507b2ed9-7b54-4120-9af6-c63dbf444120",
+    "checkout": {
+      "setupSucceeded": true,
+      "usage": "off_session",
+      "collected": 0,
+      "ledgerEntries": 0,
+      "remaining": 100,
+      "status": "pending",
+      "paid": 1,
+      "webhookStatuses": [
+        200,
+        200
+      ]
+    },
+    "automatic": {
+      "status": "failed",
+      "balance": 100,
+      "collected": 0,
+      "emailStatus": 204,
+      "delivered": true
+    },
+    "manual": {
+      "amountReceived": 50,
+      "cartCollected": 50,
+      "remaining": 50,
+      "paid": 2,
+      "ledgerEntries": 1,
+      "replacementCardSaved": true,
+      "automaticDuplicateSkipped": true,
+      "receiptStatuses": [
+        204,
+        204
+      ],
+      "receiptDeliveries": 1,
+      "receiptDuplicateSends": 0,
+      "receiptTrigger": "SUBSEQUENT_INSTALLMENT",
+      "replacementCardLast4": "4242",
+      "chargedCardLast4": "4242"
+    }
+  },
+  "attendee_email_links": {
+    "failureLinkOpenedCorrectOrder": true,
+    "manualCheckoutOpenedInIframe": true,
+    "successLinkOpenedCorrectOrder": true,
+    "paidFraction": "2/3",
+    "remaining": 50
+  },
+  "task_isolation": {
+    "main_scenarios": "Local task/email sinks and Stripe test mode",
+    "shared_queue_replay_probe": "One QA notification task was accidentally enqueued on the shared queue; a delete request found it no longer present. Subsequent replay checks used the local sink."
+  }
+}

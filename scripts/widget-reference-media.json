@@ -661,26 +661,26 @@
         "alt": "All Settings → Memberships — Membership card styling. Continued controls. The circles identify Added Badge Border and Added Badge Text."
       }
     ],
-    "Payment plan": [
+    "Installment plan": [
       {
         "asset": "assets/refresh/branding-and-design/widget-style-installments.png",
-        "caption": "All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color.",
-        "alt": "All Settings → Payment plan — Payment-plan component styling. The circles identify Background Color and Border Color."
+        "caption": "All Settings → Installment plan — Installment Plan Container. The circles identify Background Color and Border Color.",
+        "alt": "All Settings → Installment plan — Installment Plan Container. The circles identify Background Color and Border Color."
       },
       {
         "asset": "assets/refresh/branding-and-design/widget-style-installments-2.png",
-        "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color.",
-        "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Title Text Color and Secondary Text Color."
+        "caption": "All Settings → Installment plan — Due Today Section. The circles identify Background Color and Border Color.",
+        "alt": "All Settings → Installment plan — Due Today Section. The circles identify Background Color and Border Color."
       },
       {
         "asset": "assets/refresh/branding-and-design/widget-style-installments-3.png",
-        "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color.",
-        "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Background Color and Border Color."
+        "caption": "All Settings → Installment plan — Future Payments. The circles identify Background Color and Border Color.",
+        "alt": "All Settings → Installment plan — Future Payments. The circles identify Background Color and Border Color."
       },
       {
         "asset": "assets/refresh/branding-and-design/widget-style-installments-4.png",
-        "caption": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color.",
-        "alt": "All Settings → Payment plan — Payment-plan component styling. Continued controls. The circles identify Border Color and Amount Text Color."
+        "caption": "All Settings → Installment plan — Timeline. The circles identify Timeline Line Color and Timeline Dot Color.",
+        "alt": "All Settings → Installment plan — Timeline. The circles identify Timeline Line Color and Timeline Dot Color."
       }
     ]
   }

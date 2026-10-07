@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-06",
+  "scope": "Attendee portal manual next-installment payment using the accepted saved Stripe card, with optional replacement-card reuse",
+  "environment": {
+    "widget": "Actual widget checkout on localhost:8091",
+    "api": "Actual local API on localhost:54739",
+    "namespace": "codex-payments-20261003",
+    "stripe": "Test mode with synthetic bookings and Stripe test cards",
+    "response_fixtures": false,
+    "browser_task_and_email_transport": "Local transport sinks",
+    "verification_transport_note": "An initial direct replay verification used the configured test task queue for three synthetic replay tasks. They were absent when checked for cleanup. Final verification used a local task sink."
+  },
+  "browser_cases": [
+    {
+      "name": "saved-card success",
+      "charged_only_after_pay": true,
+      "reopen_already_paid": true
+    },
+    {
+      "name": "saved-card decline and one-off replacement",
+      "optional_checkbox": false,
+      "saved_card_preserved": true,
+      "viewport": 390,
+      "no_overflow": true
+    },
+    {
+      "name": "saved-card decline and future-use replacement",
+      "optional_checkbox": true,
+      "saved_card_updated_after_success": true,
+      "viewport": 1000,
+      "no_overflow": true
+    },
+    {
+      "name": "saved-card bank authentication",
+      "actual_stripe_challenge": true,
+      "succeeded": true
+    },
+    {
+      "name": "later installment after one-off replacement",
+      "original_saved_card_attempted": true,
+      "replacement_fields_loaded": true,
+      "cancelled_without_successful_charge": true
+    }
+  ],
+  "financial_verification": [
+    {
+      "name": "saved",
+      "paid": true,
+      "receivedCents": 10666,
+      "installmentsPaid": 2,
+      "remaining": 106.68,
+      "oneLedgerEntry": true,
+      "futureCardChanged": false,
+      "duplicateFinishNoCharge": true,
+      "nextDueDateUnchanged": "2026-12-05T21:16:44.766Z"
+    },
+    {
+      "name": "replace-once",
+      "paid": true,
+      "receivedCents": 10666,
+      "installmentsPaid": 2,
+      "remaining": 106.68,
+      "oneLedgerEntry": true,
+      "futureCardChanged": false,
+      "duplicateFinishNoCharge": true,
+      "nextDueDateUnchanged": "2026-12-05T21:16:44.766Z"
+    },
+    {
+      "name": "replace-future",
+      "paid": true,
+      "receivedCents": 10666,
+      "installmentsPaid": 2,
+      "remaining": 106.68,
+      "oneLedgerEntry": true,
+      "futureCardChanged": true,
+      "duplicateFinishNoCharge": true,
+      "nextDueDateUnchanged": "2026-12-05T21:16:44.766Z"
+    },
+    {
+      "name": "authenticate",
+      "paid": true,
+      "receivedCents": 10666,
+      "installmentsPaid": 2,
+      "remaining": 106.68,
+      "oneLedgerEntry": true,
+      "futureCardChanged": false,
+      "duplicateFinishNoCharge": true,
+      "nextDueDateUnchanged": "2026-12-05T21:16:44.766Z"
+    }
+  ],
+  "automated_checks": {
+    "server_tests_passed": 33,
+    "widget_tests_passed": 14,
+    "new_translation_keys": 10,
+    "validated_locale_values": 180,
+    "icu_and_placeholders": "passed",
+    "both_server_settings_schemas": "registered",
+    "design_text_controls_and_search_index": "registered",
+    "targeted_widget_and_dashboard_lint": "passed; existing widget nested-ternary rule excluded",
+    "targeted_prettier": "passed",
+    "full_dashboard_typecheck": "Existing unrelated project errors remain; no changed payment-text errors"
+  },
+  "screenshots": [
+    "assets/refresh/attendee-portal/payment-installment-review.png",
+    "assets/refresh/attendee-portal/payment-installment-replacement.png"
+  ]
+}

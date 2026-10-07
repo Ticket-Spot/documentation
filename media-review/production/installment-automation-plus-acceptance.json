@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-10-06T06:56:44.586Z",
+  "collection": {
+    "browserDepositCents": 1000,
+    "mode": "automatic",
+    "retryDays": [
+      3,
+      7
+    ],
+    "duplicateWorkers": [
+      {
+        "number": 2,
+        "receivedCents": 1000,
+        "redeliveries": 2,
+        "onePersistedIntent": true
+      },
+      {
+        "number": 3,
+        "receivedCents": 1000,
+        "redeliveries": 2,
+        "onePersistedIntent": true
+      }
+    ],
+    "attendeeEmail2": 204,
+    "attendeeEmail3": 204,
+    "final": {
+      "paid": 3,
+      "remaining": 0,
+      "status": "attending",
+      "cartCollected": 30,
+      "ledgerEntries": 3
+    }
+  },
+  "summary": {
+    "failedPayment": {
+      "receivedCents": 0,
+      "status": "requires_payment_method",
+      "attempts": 1,
+      "duplicateStopped": true,
+      "decline": "generic_decline"
+    },
+    "attendeeNotice": 204,
+    "summaries": {
+      "delivered": 5,
+      "waiting": 0,
+      "errors": 0
+    },
+    "repeatSummary": {
+      "delivered": 0,
+      "waiting": 0,
+      "errors": 0
+    },
+    "organizerSends": 5,
+    "periods": 2
+  },
+  "scope": "Real Stripe sandbox, isolated Datastore namespace codex-payments-20261003; checkout through actual browser, saved-card automatic workers and notification workers. Due dates and report readiness advanced only on synthetic fixtures. Cloud Tasks/Postmark transport captured locally.",
+  "boundaries": [
+    "Business entitlement tested through an isolated site-specific provider override; Business Plus uses synthetic site allowance.",
+    "Temporary-error retry timing, advice stops and delayed webhook integrity are automated tests; real Stripe sandbox card tests cover successful charges and hard decline.",
+    "No production scheduler activation or deployment."
+  ],
+  "screenshots": [
+    "collection-settings.png",
+    "collection-settings-mobile.png",
+    "automatic-consent.png",
+    "business-manual-consent.png",
+    "deposit-paid.png",
+    "organizer-summary.png",
+    "new-order-email.png",
+    "website-pricing.png"
+  ],
+  "guides": [
+    "event-management/installment-payments.mdx",
+    "account/get-paid.mdx",
+    "account/feature-reference.mdx",
+    "attendee-portal/manage-payments.mdx"
+  ],
+  "new_annotated_screenshots": [
+    "installment-organizer-summary",
+    "installment-automatic-agreement",
+    "installment-collection-settings"
+  ],
+  "settings_api": {
+    "loginStatus": 200,
+    "plus": {
+      "status": 200,
+      "data": {
+        "collection_mode": "automatic",
+        "retry_days": [
+          3,
+          7
+        ],
+        "installments_available": true,
+        "automatic_available": true
+      }
+    },
+    "business": {
+      "status": 200,
+      "data": {
+        "collection_mode": "manual",
+        "retry_days": [],
+        "installments_available": true,
+        "automatic_available": false
+      }
+    },
+    "forgedBusiness": {
+      "status": 403,
+      "data": {
+        "error": "Automatic installment collection requires Business Plus or Platform."
+      }
+    },
+    "invalid": {
+      "status": 400,
+      "data": {
+        "error": "Choose up to two increasing retry days between 1 and 30 days after the first failed attempt."
+      }
+    },
+    "saved": {
+      "status": 200,
+      "data": {
+        "collection_mode": "automatic",
+        "retry_days": [
+          3,
+          7
+        ],
+        "installments_available": true,
+        "automatic_available": true
+      }
+    }
+  },
+  "automated_checks": {
+    "server": 195,
+    "widget": 23,
+    "website_pricing": 32,
+    "middleware": 39,
+    "mdx_pages": 142,
+    "local_docs_links_and_media": 1647
+  }
+}
