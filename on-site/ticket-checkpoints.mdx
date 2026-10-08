@@ -24,7 +24,7 @@ Enable checkpoints when a ticket includes several activities, attractions or exp
 
 1. Open the **Checkpoints** tab in the event editor, next to the other event setup steps.
 2. Check **Enable ticket checkpoints**.
-3. Under **Checkpoints**, select **Add checkpoint** and name each place where guests scan, or use the small **Load example** action to start with Entrance, Activity 1, Activity 2 and Lunch. New checkpoints receive names such as **Checkpoint 1** until renamed. Names must be nonempty and unique.
+3. Under **Checkpoints**, select **Add checkpoint** and name each place where guests scan, or use the small **Load example** action to start with Entrance, Activity 1, Activity 2 and Lunch. New checkpoints receive names such as **Checkpoint 1**, selected automatically so you can type the name immediately. Names must be nonempty and unique.
 4. Under **Ticket Access**, tick the checkpoints included with each ticket type. Each row controls that ticket type independently.
 5. Choose **Save checkpoints**, directly below Ticket Access. Save becomes available after settings change. Enabling requires at least one active checkpoint and one inclusion on a current ticket type. Wait for the spinner to finish and the success toast before issuing tickets.
 
@@ -45,14 +45,18 @@ Ticket types without selected checkpoints cannot be scanned at checkpoints. Leav
 </Frame>
 
 <Accordion title="Optional checkpoint settings">
-  Select **View settings** beside a checkpoint to open its settings modal. Turn on **Marks arrival** if that scan should update attendance. Only one checkpoint can mark arrival. Applying a different checkpoint clears the previous choice and shows a short confirmation. Clear it to leave arrival tracking off. Tickets keep the arrival setting captured when they were issued.
+  Select the **settings icon** beside a checkpoint to open its modal, titled with the current checkpoint name, including unsaved edits. Hover or focus the icon for the **Checkpoint settings** tooltip. Turn on **Marks arrival** if that scan should update attendance. Only one checkpoint can mark arrival. Applying a different checkpoint clears the previous choice and shows a short confirmation. Clear it to leave arrival tracking off. Tickets keep the arrival setting captured when they were issued.
 
-  Use **Archive** to stop scans at that location, including for existing tickets. **Restore** keeps its original identity and redemption history. Archived checkpoints are hidden from the Ticket Access matrix until restored.
+  Use **Archive** and confirm **Archive checkpoint** to stop scans at that location, including for existing tickets. The confirmation highlights existing access when tickets have already been issued. Choose **Keep checkpoint** to cancel. **Restore** keeps its original identity and redemption history. Archived checkpoints are hidden from the Ticket Access matrix until restored.
 
   Choose **Apply settings** to update the form, or **Cancel** to discard the modal's edits. Choose **Save checkpoints** to publish the changes.
 
   <Frame caption="Local demo: checkpoint settings open in a modal with arrival and archive controls. Cancel discards modal edits; Apply settings adds them to the form.">
-    <img src="/assets/on-site/ticket-checkpoints/10-checkpoint-settings.png" alt="Checkpoint settings modal for Entrance with Marks arrival, Archive, Cancel and Apply settings controls." />
+    <img src="/assets/on-site/ticket-checkpoints/10-checkpoint-settings.png" alt="Entrance settings modal with Marks arrival, Archive, Cancel and Apply settings controls and a reminder that Save checkpoints saves the changes." />
+  </Frame>
+
+  <Frame caption="Local demo: archiving asks for confirmation and explains the effect on existing ticket access. Redemption history is preserved.">
+    <img src="/assets/on-site/ticket-checkpoints/12-archive-confirmation.png" alt="Archive Entrance confirmation with an existing-ticket warning, Keep checkpoint and Archive checkpoint buttons." />
   </Frame>
 </Accordion>
 
