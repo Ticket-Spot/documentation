@@ -1,7 +1,7 @@
 {
   "feature": "Ticket checkpoints for regular tickets and experience packages",
   "status": "local implementation preview; not a deployed customer account",
-  "captured_at_utc": "2026-10-08T14:31:14.516233+00:00",
+  "captured_at_utc": "2026-10-08T21:11:03.087324+00:00",
   "data": "Synthetic Coastal discovery tour, Demo Guest, example.test staff accounts and a synthetic attendee UUID",
   "components": [
     "CreateEventPage URL mapping",
@@ -11,10 +11,12 @@
     "ScannerCheckpoint",
     "ScanModeModal",
     "CheckpointProgress",
-    "CheckpointRedemptions"
+    "CheckpointRedemptions",
+    "CheckpointSettingsDialog",
+    "ToastNotifications"
   ],
-  "capture": "Playwright Chromium at 1440x1040; real dashboard components mounted in a local demo wrapper with fixture APIs. Button fixture uses production Button styles. Customer QR card is an illustration, not a production ticket template.",
-  "server": "Real createRedemptionService with an in-memory transaction fixture; no live tenant or Datastore writes",
+  "capture": "Playwright Chromium at 1440x1040; real dashboard components in a local demo wrapper with fixture APIs. Button fixture uses production Button styles. Latest setup, modal, toast and report captures are refreshed; scanning and invitation captures are retained from the earlier verified demo run. Customer QR card is an illustration.",
+  "server": "Earlier scanning captures use real createRedemptionService with in-memory transactions. New setup/modal/toast/report captures use synthetic fixture APIs. No live tenant or Datastore writes.",
   "verified": [
     "Checkpoint tab click and deep-link reload",
     "Loading failure and retry",
@@ -38,7 +40,12 @@
     "Neutral helper for ticket types without checkpoint access",
     "Compact settings and arrival reassignment confirmation",
     "Frozen ticket-type column across 15 ticket types and 10 checkpoints",
-    "Redemption count cards above the audit table"
+    "Redemption count cards above the audit table",
+    "Settings modal with Cancel, close button and Escape discarding draft edits",
+    "Apply settings updates the form without prematurely persisting",
+    "Dialog focus returns to its trigger and remains trapped when open",
+    "Shared dashboard success toast only after a successful save; failed save retains edits for retry",
+    "Responsive settings modal at 390px"
   ],
   "limits": [
     "Account/event assignment rather than independent per-device settings",
@@ -49,48 +56,69 @@
   "screenshots": [
     {
       "file": "assets/on-site/ticket-checkpoints/01-checkpoint-setup.png",
-      "sha256": "9c33bfc9b791f809e604724a422568e91eb4da834cc406702473ba4f73444012",
-      "illustration": false
+      "sha256": "fa7b32793d52f8670c57386d4ee7a2001caafee1e33eb11ea86dcc13b9a2a1cf",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:11:03.087324+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/02-staff-assignment.png",
       "sha256": "d56f80280a68fdc07a9d223349f78031759145e382c19b7a70005679e52eb842",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/03-customer-qr.png",
       "sha256": "7e9766d12ea63878cb741f9ede78c5d6075765e6efa62b36cd39740dc1383f3a",
-      "illustration": true
+      "illustration": true,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/04-entrance-success.png",
       "sha256": "a79019b196dacbb82966b724a0bb131c5bec687ecede05e293499cb31a7fbd6d",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/05-activity1-success.png",
       "sha256": "b0249b34c1324bf1bb2611a45a288546ba327350217419f284ce47ea2fce45bb",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/06-activity2-success.png",
       "sha256": "4d7c583ce102a3b3685863dc6612d79a53ff7120249ed03e04bad2c86351ec49",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/07-lunch-success.png",
       "sha256": "4f2005c6f54b05b6347c809afbd12fae86403338a1e2edb6191c68e959f3023e",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png",
       "sha256": "35f85cbfa6c16a428bf0573b965d12f4dc590f88217b25367830a27d7fce54b5",
-      "illustration": false
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
     },
     {
       "file": "assets/on-site/ticket-checkpoints/09-redemption-report.png",
-      "sha256": "d017f348c02c23a385a2c722769e1f7dddbd068de718914af2c0e05be06e145e",
-      "illustration": false
+      "sha256": "3f8e87d5c8ea4291b74de5292944d7c2703000e8e298bd60c7bd828c45fabb20",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:11:03.087324+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/10-checkpoint-settings.png",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:11:03.087324+00:00",
+      "sha256": "a0b4b2d92a6c42f7236f5416ec7dffab82c494a7ad73e44e471c7ae3071b230a"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/11-checkpoint-success-toast.png",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:11:03.087324+00:00",
+      "sha256": "114699ac22dc1909d626daacb3e0c59c02fb2ea722e84674d8268c79cb1257e4"
     }
   ],
   "activity_history": "Successful checkpoint redemption persists one named attendee Activity row in the same production Datastore transaction. Verified with actual Gstore models, retry/repeat checks, the attendee Activity formatter, and rollback on activity failure. The demo screenshot fixture does not persist or display Activity history."
