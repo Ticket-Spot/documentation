@@ -24,9 +24,9 @@ Enable checkpoints when a ticket includes several activities, attractions or exp
 
 1. Open the **Checkpoints** tab in the event editor, next to the other event setup steps.
 2. Check **Enable ticket checkpoints**.
-3. Under **Checkpoints**, select **Add checkpoint** and name each place where guests scan, or use the small **Load example** action to start with Entrance, Activity 1, Activity 2 and Lunch.
+3. Under **Checkpoints**, select **Add checkpoint** and name each place where guests scan, or use the small **Load example** action to start with Entrance, Activity 1, Activity 2 and Lunch. New checkpoints receive names such as **Checkpoint 1** until renamed. Names must be nonempty and unique.
 4. Under **Ticket Access**, tick the checkpoints included with each ticket type. Each row controls that ticket type independently.
-5. Choose **Save checkpoints**, directly below Ticket Access. Wait for the spinner to finish and the saved confirmation before issuing tickets.
+5. Choose **Save checkpoints**, directly below Ticket Access. Save becomes available after settings change. Enabling requires at least one active checkpoint and one inclusion on a current ticket type. Wait for the spinner to finish and the saved confirmation before issuing tickets.
 
 For example, the same tourism event can sell these packages:
 
@@ -38,14 +38,16 @@ For example, the same tourism event can sell these packages:
 
 The event owns the checkpoint definitions. Each ticket type has its own inclusion checkboxes, and each issued guest ticket gets its own once-only entitlements. Guests who need different packages should buy different ticket types.
 
+Ticket types without selected checkpoints cannot be scanned at checkpoints. Leave access empty when a ticket type should not include any checkpoint; new ticket types never receive access automatically. In a large matrix, the ticket-name column stays visible while you scroll across checkpoints.
+
 <Frame caption="Local demo: enable the feature, add Checkpoints, choose Ticket Access, and save. Full-day tour, Sightseeing and Entrance only each include different checkpoints.">
   <img src="/assets/on-site/ticket-checkpoints/01-checkpoint-setup.png" alt="Checkpoints tab in the event editor with a per-ticket-type checkbox matrix for three tourism packages." />
 </Frame>
 
 <Accordion title="Optional checkpoint settings">
-  Open **Settings** beside an individual checkpoint to turn on **Marks arrival** if that scan should update attendance. Only one checkpoint can mark arrival. Clear it to leave arrival tracking off. Tickets keep the arrival setting captured when they were issued.
+  Open **Settings** beside an individual checkpoint to turn on **Marks arrival** if that scan should update attendance. Only one checkpoint can mark arrival. Selecting a different checkpoint clears the previous choice and shows a short confirmation. Clear it to leave arrival tracking off. Tickets keep the arrival setting captured when they were issued.
 
-  Use **Archive checkpoint** to stop scans at that location, including for existing tickets. **Restore checkpoint** keeps its original identity and redemption history. Archived checkpoints are hidden from the Ticket Access matrix until restored.
+  Use **Archive** to stop scans at that location, including for existing tickets. **Restore** keeps its original identity and redemption history. Archived checkpoints are hidden from the Ticket Access matrix until restored.
 </Accordion>
 
 <Note>
@@ -117,6 +119,8 @@ Present the **same QR** at the next checkpoints. The staff account at each check
 ## 5. Reject repeats and unavailable entitlements
 
 A new scan at an already used checkpoint shows **already redeemed** and the original timestamp. Other unused checkpoints remain available.
+
+Successful checkpoint redemptions also appear in the attendee's **Activity** history as **Checkpoint Redeemed**, with the checkpoint name, staff member and time. The audit record stores the checkpoint ID and optional device ID. The Activity page also shows these as checkpoint use, separately from ordinary check-in. Repeats and request retries do not add another successful-redemption entry.
 
 <Frame caption="Local demo: rescanning at Entrance is rejected, while the activities and lunch can still be redeemed.">
   <img src="/assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png" alt="Entrance repeat scan rejected with its original redemption timestamp." />

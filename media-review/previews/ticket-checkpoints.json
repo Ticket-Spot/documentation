@@ -1,7 +1,7 @@
 {
   "feature": "Ticket checkpoints for regular tickets and experience packages",
   "status": "local implementation preview; not a deployed customer account",
-  "captured_at_utc": "2026-10-08T14:03:08.437845+00:00",
+  "captured_at_utc": "2026-10-08T14:31:14.516233+00:00",
   "data": "Synthetic Coastal discovery tour, Demo Guest, example.test staff accounts and a synthetic attendee UUID",
   "components": [
     "CreateEventPage URL mapping",
@@ -9,7 +9,9 @@
     "EventCheckpoints",
     "StaffCheckpointAssignments",
     "ScannerCheckpoint",
-    "ScanModeModal"
+    "ScanModeModal",
+    "CheckpointProgress",
+    "CheckpointRedemptions"
   ],
   "capture": "Playwright Chromium at 1440x1040; real dashboard components mounted in a local demo wrapper with fixture APIs. Button fixture uses production Button styles. Customer QR card is an illustration, not a production ticket template.",
   "server": "Real createRedemptionService with an in-memory transaction fixture; no live tenant or Datastore writes",
@@ -29,7 +31,14 @@
     "Arrival tracking and archive/restore inside individual checkpoint settings",
     "Redemptions collapsed by default and fetched only on opening",
     "Issued-ticket warning shown only for access edits after issuance",
-    "Manage staff link opens Hosts"
+    "Manage staff link opens Hosts",
+    "Spinner-only loading with screen-reader labels",
+    "Default checkpoint names and unique-name validation",
+    "Enablement requires current ticket access; no-change save is disabled",
+    "Neutral helper for ticket types without checkpoint access",
+    "Compact settings and arrival reassignment confirmation",
+    "Frozen ticket-type column across 15 ticket types and 10 checkpoints",
+    "Redemption count cards above the audit table"
   ],
   "limits": [
     "Account/event assignment rather than independent per-device settings",
@@ -40,7 +49,7 @@
   "screenshots": [
     {
       "file": "assets/on-site/ticket-checkpoints/01-checkpoint-setup.png",
-      "sha256": "10c5cde44f5b9d16705d5bab1890986589bbec3ef231b38627bbf849de17d4dc",
+      "sha256": "9c33bfc9b791f809e604724a422568e91eb4da834cc406702473ba4f73444012",
       "illustration": false
     },
     {
@@ -55,33 +64,34 @@
     },
     {
       "file": "assets/on-site/ticket-checkpoints/04-entrance-success.png",
-      "sha256": "fc870938e2d14d7c0806c35f890e18f958ecccbc6b2ac949e6a85dc12b62b728",
+      "sha256": "a79019b196dacbb82966b724a0bb131c5bec687ecede05e293499cb31a7fbd6d",
       "illustration": false
     },
     {
       "file": "assets/on-site/ticket-checkpoints/05-activity1-success.png",
-      "sha256": "e0eccb1b59ad54d1c99cbac2bfff0015af8fd94758f89134ef21f3bc1823d33f",
+      "sha256": "b0249b34c1324bf1bb2611a45a288546ba327350217419f284ce47ea2fce45bb",
       "illustration": false
     },
     {
       "file": "assets/on-site/ticket-checkpoints/06-activity2-success.png",
-      "sha256": "2a59531842d1e7b4972939e60587d27bdade7a72629a46ff4ad357b7ddd0ba1b",
+      "sha256": "4d7c583ce102a3b3685863dc6612d79a53ff7120249ed03e04bad2c86351ec49",
       "illustration": false
     },
     {
       "file": "assets/on-site/ticket-checkpoints/07-lunch-success.png",
-      "sha256": "98dd236e13da6332a6dfd62447e4698811dc53b8ff217b8b6031eb61caba472a",
+      "sha256": "4f2005c6f54b05b6347c809afbd12fae86403338a1e2edb6191c68e959f3023e",
       "illustration": false
     },
     {
       "file": "assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png",
-      "sha256": "37fa4c8ab2a371e536c7f7802ffda093f2af4b731e17936fd4f2b137eb08e3e5",
+      "sha256": "35f85cbfa6c16a428bf0573b965d12f4dc590f88217b25367830a27d7fce54b5",
       "illustration": false
     },
     {
       "file": "assets/on-site/ticket-checkpoints/09-redemption-report.png",
-      "sha256": "d58ba13c70a360e7057ca856066275e4ca85a061bbf9a9725e33478e9f1d122f",
+      "sha256": "d017f348c02c23a385a2c722769e1f7dddbd068de718914af2c0e05be06e145e",
       "illustration": false
     }
-  ]
+  ],
+  "activity_history": "Successful checkpoint redemption persists one named attendee Activity row in the same production Datastore transaction. Verified with actual Gstore models, retry/repeat checks, the attendee Activity formatter, and rollback on activity failure. The demo screenshot fixture does not persist or display Activity history."
 }
