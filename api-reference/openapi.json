@@ -519,6 +519,27 @@
         },
         "description": "Accepts an attendee ID. Requires an attending or checkedIn attendee at this key's site. Existing ticket validity, required check-in answers, scan limits and membership admission rules are applied. Kiosk print tokens and private order details are not returned.",
         "responses": {
+          "200": {
+            "description": "Checkpoint redemption durably committed or the same request replayed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "accepted": {
+                      "type": "boolean"
+                    },
+                    "checkpoint_result": {
+                      "$ref": "#/components/schemas/CheckpointResult"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "202": {
             "description": "Scan accepted.",
             "content": {
@@ -623,6 +644,27 @@
         },
         "description": "Alias for POST /scan with the attendee ID in the path.",
         "responses": {
+          "200": {
+            "description": "Checkpoint redemption durably committed or the same request replayed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "accepted": {
+                      "type": "boolean"
+                    },
+                    "checkpoint_result": {
+                      "$ref": "#/components/schemas/CheckpointResult"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "202": {
             "description": "Scan accepted.",
             "content": {
@@ -1147,6 +1189,33 @@
           }
         }
       },
+      "CheckpointResult": {
+        "type": "object",
+        "properties": {
+          "isValid": {
+            "type": "boolean"
+          },
+          "code": {
+            "type": "string"
+          },
+          "checkpoint_id": {
+            "type": "string"
+          },
+          "checkpoint_name": {
+            "type": "string"
+          },
+          "redeemed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "message": {
+            "type": "string"
+          },
+          "replayed": {
+            "type": "boolean"
+          }
+        }
+      },
       "ScanRequest": {
         "type": "object",
         "properties": {
@@ -1158,10 +1227,19 @@
             "type": "string",
             "description": "Optional expected event ID. The attendee must belong to this event."
           },
+          "checkpoint_id": {
+            "type": "string",
+            "description": "Owner/admin selection. Assigned staff cannot override their checkpoint."
+          },
+          "device_id": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Optional scanner identifier for the redemption audit."
+          },
           "idempotency_key": {
             "type": "string",
             "pattern": "^[A-Za-z0-9_-]{16,128}$",
-            "description": "Stable request ID for membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
+            "description": "Required stable request ID for checkpoint and membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
           }
         },
         "required": [
@@ -1176,10 +1254,19 @@
             "type": "string",
             "description": "Optional expected event ID. The attendee must belong to this event."
           },
+          "checkpoint_id": {
+            "type": "string",
+            "description": "Owner/admin selection. Assigned staff cannot override their checkpoint."
+          },
+          "device_id": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Optional scanner identifier for the redemption audit."
+          },
           "idempotency_key": {
             "type": "string",
             "pattern": "^[A-Za-z0-9_-]{16,128}$",
-            "description": "Stable request ID for membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
+            "description": "Required stable request ID for checkpoint and membership admissions. Ordinary ticket scans use a shared five-second duplicate guard and do not provide long-term idempotency."
           }
         },
         "additionalProperties": false

@@ -1,0 +1,82 @@
+{
+  "feature": "Independent regular-ticket checkpoints for tourism events",
+  "status": "local implementation preview; not a deployed customer account",
+  "captured_at_utc": "2026-10-08T06:55:16.144395+00:00",
+  "data": "Synthetic Coastal discovery tour, Demo Guest, example.test staff accounts and a synthetic attendee UUID",
+  "components": [
+    "CreateEventPage URL mapping",
+    "Stepper",
+    "EventCheckpoints",
+    "StaffCheckpointAssignments",
+    "ScannerCheckpoint",
+    "ScanModeModal"
+  ],
+  "capture": "Playwright Chromium at 1440x1040; real dashboard components mounted in a local demo wrapper with fixture APIs. Button fixture uses production Button styles. Customer QR card is an illustration, not a production ticket template.",
+  "server": "Real createRedemptionService with an in-memory transaction fixture; no live tenant or Datastore writes",
+  "verified": [
+    "Checkpoint tab click and deep-link reload",
+    "Loading failure and retry",
+    "Independent ticket-type inclusion payloads",
+    "Saving spinner and disabled controls",
+    "Tourism starter and stable IDs",
+    "Optional arrival tracking",
+    "Report spinner, recovery and cursor pagination",
+    "Same QR succeeds once at each of four checkpoints",
+    "Repeat Entrance scan rejected",
+    "Four distinct report records",
+    "Responsive setup and rendered guide have no page overflow"
+  ],
+  "limits": [
+    "Account/event assignment rather than independent per-device settings",
+    "Online redemption only",
+    "No production throughput measurement; staging load testing required",
+    "No production invitation delivery exercised"
+  ],
+  "screenshots": [
+    {
+      "file": "assets/on-site/ticket-checkpoints/01-checkpoint-setup.png",
+      "sha256": "11e0d2bac5b435fc6fe4f3e5ca3b4334bc986f0dff00aa0b7d8c9ddfa4295b51",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/02-staff-assignment.png",
+      "sha256": "d56f80280a68fdc07a9d223349f78031759145e382c19b7a70005679e52eb842",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/03-customer-qr.png",
+      "sha256": "7e9766d12ea63878cb741f9ede78c5d6075765e6efa62b36cd39740dc1383f3a",
+      "illustration": true
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/04-entrance-success.png",
+      "sha256": "adb2bc4dac21c46dcbe00462c8f818bb5e054e52aeec71c31c18adf451122d71",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/05-activity1-success.png",
+      "sha256": "64cb124210f237627b215e60fb5057e52bf0089938f512f26ef6bed31c4c4f58",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/06-activity2-success.png",
+      "sha256": "7b906cd067fad4197a534ec23e4bd2a6f055f0d162157d72bbfa0e2c859daacc",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/07-lunch-success.png",
+      "sha256": "670df5f36fb0815ee612b1a326cdd26b04e251a02dd8535df9f688e7b53df150",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png",
+      "sha256": "b39c8bbf7d11f59851f4978deded8105299f72c190027b306b086c62696f1578",
+      "illustration": false
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/09-redemption-report.png",
+      "sha256": "4569a67bb98c6f0094d40065ca9c136b92f20a818abe4fb91822e9bba5faa2c2",
+      "illustration": false
+    }
+  ]
+}
