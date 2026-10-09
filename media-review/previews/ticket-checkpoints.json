@@ -1,0 +1,158 @@
+{
+  "feature": "Ticket checkpoints for regular tickets and experience packages",
+  "status": "local implementation preview; not a deployed customer account",
+  "captured_at_utc": "2026-10-09T03:47:24.592356+00:00",
+  "data": "Synthetic Coastal Discovery Tour, Summer Festival, Museum Experience, Demo Guest, example.test staff accounts and a synthetic attendee UUID",
+  "components": [
+    "CreateEventPage URL mapping",
+    "Stepper",
+    "EventCheckpoints",
+    "StaffCheckpointAssignments",
+    "ScannerCheckpoint",
+    "ScanModeModal",
+    "CheckpointProgress",
+    "CheckpointRedemptions",
+    "CheckpointSettingsDialog",
+    "ToastNotifications",
+    "ConfirmDialog",
+    "TeamInviteModal"
+  ],
+  "capture": "Playwright Chromium; real dashboard components in a local demo wrapper with fixture APIs. Team invitation captures use the real TeamInviteModal at 1440x1100, with a compact panel capture for multiple events. Button fixture uses production Button styles. Setup, modal, toast and report captures were refreshed earlier; scanning captures are retained from the earlier verified demo run. Customer QR card is an illustration.",
+  "server": "Earlier scanning captures use real createRedemptionService with in-memory transactions. Setup/modal/toast/report and refreshed invitation captures use synthetic fixture APIs. No live tenant, invitation delivery or Datastore writes.",
+  "verified": [
+    "Checkpoint tab click and deep-link reload",
+    "Loading failure and retry",
+    "Independent ticket-type inclusion payloads",
+    "Saving spinner and disabled controls",
+    "Tourism starter and stable IDs",
+    "Optional arrival tracking",
+    "Report spinner, recovery and cursor pagination",
+    "Same QR succeeds once at each of four checkpoints",
+    "Repeat Entrance scan rejected",
+    "Four distinct report records",
+    "Responsive setup and rendered guide have no page overflow",
+    "Two-section setup with concise enablement and Ticket Access",
+    "Arrival tracking and archive/restore inside individual checkpoint settings",
+    "Redemptions collapsed by default and fetched only on opening",
+    "Issued-ticket warning shown only for access edits after issuance",
+    "Manage staff link opens Hosts",
+    "Spinner-only loading with screen-reader labels",
+    "Default checkpoint names and unique-name validation",
+    "Enablement requires current ticket access; no-change save is disabled",
+    "Neutral helper for ticket types without checkpoint access",
+    "Compact settings and arrival reassignment confirmation",
+    "Frozen ticket-type column across 15 ticket types and 10 checkpoints",
+    "Redemption count cards above the audit table",
+    "Settings modal with Cancel, close button and Escape discarding draft edits",
+    "Apply settings updates the form without prematurely persisting",
+    "Dialog focus returns to its trigger and remains trapped when open",
+    "Shared dashboard success toast only after a successful save; failed save retains edits for retry",
+    "Responsive settings modal at 390px",
+    "18px Settings2 icon in a 40px gray button; purple hover, no border, aligned with the input and tooltip",
+    "Settings title uses the current checkpoint name, including unsaved edits",
+    "Explicit Apply versus Save reminder in the settings modal",
+    "New checkpoint name receives focus with the default name selected",
+    "Ticket Access checkboxes centered beneath their checkpoint headings",
+    "Archive confirmation defaults to Keep checkpoint; rejection and Escape preserve draft access",
+    "Issued-ticket warning in archive confirmation and retained redemption history",
+    "Responsive summary grid wraps 20 checkpoints with at least 160px cards",
+    "Assigned dashboard scanner shows Scanning: Entrance without a checkpoint selector",
+    "Actual team invitation orders Email, Role and Ticket Checker-only checkpoint assignment",
+    "Compact Add event and trash controls preserve separate assignments across three events and exclude duplicate events",
+    "Archived checkpoints cannot be selected for a new assignment",
+    "Three independent event assignments are submitted; non-checker roles submit an empty assignment list",
+    "Team save spinner disables invitation fields and assignment controls while submitting",
+    "Invitation event-loading failure recovers through Try again",
+    "Dropdown overlays remain inside the invitation dialog with keyboard filter focus",
+    "Invitation and assignment panel fit a 390px viewport without horizontal overflow",
+    "Admin scanner can select any active checkpoint even with a legacy assignment",
+    "Backend regression confirms active accepted Admin access and Ticket Checker assignment restrictions"
+  ],
+  "limits": [
+    "Account/event assignment rather than independent per-device settings",
+    "Online redemption only",
+    "No production throughput measurement; staging load testing required",
+    "No production invitation delivery exercised"
+  ],
+  "screenshots": [
+    {
+      "file": "assets/on-site/ticket-checkpoints/01-checkpoint-setup.png",
+      "sha256": "783fe26433c647a2eddc183c5a78caf66cca03a105e8ddf16bcd9c44058ac124",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:30:53.481543+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/02-staff-assignment.png",
+      "sha256": "07493193e4619fa45a79613d785736db8b502f563558873f144488cf140baa2a",
+      "illustration": false,
+      "captured_at_utc": "2026-10-09T03:47:24.592356+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/03-customer-qr.png",
+      "sha256": "7e9766d12ea63878cb741f9ede78c5d6075765e6efa62b36cd39740dc1383f3a",
+      "illustration": true,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/04-entrance-success.png",
+      "sha256": "a79019b196dacbb82966b724a0bb131c5bec687ecede05e293499cb31a7fbd6d",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/05-activity1-success.png",
+      "sha256": "b0249b34c1324bf1bb2611a45a288546ba327350217419f284ce47ea2fce45bb",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/06-activity2-success.png",
+      "sha256": "4d7c583ce102a3b3685863dc6612d79a53ff7120249ed03e04bad2c86351ec49",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/07-lunch-success.png",
+      "sha256": "4f2005c6f54b05b6347c809afbd12fae86403338a1e2edb6191c68e959f3023e",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png",
+      "sha256": "35f85cbfa6c16a428bf0573b965d12f4dc590f88217b25367830a27d7fce54b5",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T14:31:14.516233+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/09-redemption-report.png",
+      "sha256": "78c211670d770d2a4dd240406ad67de7768eb578a4826f2bf1563bcb205c945e",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:30:53.481543+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/10-checkpoint-settings.png",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:30:53.481543+00:00",
+      "sha256": "0c15f10f94fe7a9a2e0f0ac8f78a08d27802992857d2749333617b2006588ff8"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/11-checkpoint-success-toast.png",
+      "illustration": false,
+      "captured_at_utc": "2026-10-08T21:30:53.481543+00:00",
+      "sha256": "77907b0bc2d96ec9160db4a4ad7264adefda66eddea2f6c3b185c2fbd82d4d33"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/12-archive-confirmation.png",
+      "illustration": false,
+      "sha256": "f96a2b0a6d306ae6d86f199ee564e5d37a1d22c19a20cf7a0d0c431fdd970c95",
+      "captured_at_utc": "2026-10-08T21:30:53.481543+00:00"
+    },
+    {
+      "file": "assets/on-site/ticket-checkpoints/13-multiple-event-assignments.png",
+      "illustration": false,
+      "sha256": "28b90d3df2356686c1e4b6f32a04baaf1ad62d16564f1a8d6ebf7e813d10e443",
+      "captured_at_utc": "2026-10-09T03:47:24.592356+00:00"
+    }
+  ],
+  "activity_history": "Successful checkpoint redemption persists one named attendee Activity row in the same production Datastore transaction. Verified with actual Gstore models, retry/repeat checks, the attendee Activity formatter, and rollback on activity failure. The demo screenshot fixture does not persist or display Activity history."
+}

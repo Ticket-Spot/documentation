@@ -1,0 +1,179 @@
+---
+title: "Ticket Checkpoints"
+sidebarTitle: "Ticket Checkpoints"
+description: "One ticket. One QR code. Multiple experiences. Each included checkpoint can be used once."
+---
+
+<Warning>
+  This guide previews the checkpoint release. Enable live ticket sales only after the server, dashboard and scanner updates have been deployed. The screenshots use the implemented dashboard components with synthetic local demo data; they do not show a deployed customer account.
+</Warning>
+
+**One ticket. One QR code. Multiple experiences.** Each included checkpoint can be used once.
+
+Enable checkpoints when a ticket includes several activities, attractions or experiences. For example, a guest can use the same QR at **Entrance**, **Activity 1**, **Activity 2** and **Lunch**. Using Entrance leaves the other included checkpoints available. This works with regular tickets for tours, museums, theme parks, festivals and VIP packages.
+
+## Before you start
+
+- Create an event and its ticket types, then open **Events → Edit event → Checkpoints** as the site owner or an administrator.
+- For recurring events, configure checkpoints on the parent that supplies the ticket types. Guests must still book a particular occurrence.
+- Configure and enable checkpoints **before issuing the tickets**. Tickets issued before enablement keep their existing check-in behavior.
+- Use a subscription that includes [team invitations](/team/invite-team-roles) to assign site staff, or invite [event-specific hosts](/event-management/hosts).
+- Update the scanner and provide an internet connection at every checkpoint.
+
+## 1. Set up Ticket Checkpoints
+
+1. Open the **Checkpoints** tab in the event editor, next to the other event setup steps.
+2. Check **Enable ticket checkpoints**.
+3. Under **Checkpoints**, select **Add checkpoint** and name each place where guests scan, or use the small **Load example** action to start with Entrance, Activity 1, Activity 2 and Lunch. New checkpoints receive names such as **Checkpoint 1**, selected automatically so you can type the name immediately. Names must be nonempty and unique.
+4. Under **Ticket Access**, tick the checkpoints included with each ticket type. Each row controls that ticket type independently.
+5. Choose **Save checkpoints**, directly below Ticket Access. Save becomes available after settings change. Enabling requires at least one active checkpoint and one inclusion on a current ticket type. Wait for the spinner to finish and the success toast before issuing tickets.
+
+For example, the same tourism event can sell these packages:
+
+| Ticket type | Included checkpoints |
+| --- | --- |
+| Full-day tour | Entrance, Activity 1, Activity 2 and Lunch |
+| Sightseeing | Entrance and Activity 1 |
+| Entrance only | Entrance |
+
+The event owns the checkpoint definitions. Each ticket type has its own inclusion checkboxes, and each issued guest ticket gets its own once-only entitlements. Guests who need different packages should buy different ticket types.
+
+Ticket types without selected checkpoints cannot be scanned at checkpoints. Leave access empty when a ticket type should not include any checkpoint; new ticket types never receive access automatically. In a large matrix, the ticket-name column stays visible while you scroll across checkpoints.
+
+<Frame caption="Local demo: enable the feature, add Checkpoints, choose Ticket Access, and save. Full-day tour, Sightseeing and Entrance only each include different checkpoints.">
+  <img src="/assets/on-site/ticket-checkpoints/01-checkpoint-setup.png" alt="Checkpoints tab in the event editor with a per-ticket-type checkbox matrix for three tourism packages." />
+</Frame>
+
+<Accordion title="Optional checkpoint settings">
+  Select the **settings icon** beside a checkpoint to open its modal, titled with the current checkpoint name, including unsaved edits. Hover or focus the icon for the **Checkpoint settings** tooltip. Turn on **Marks arrival** if that scan should update attendance. Only one checkpoint can mark arrival. Applying a different checkpoint clears the previous choice and shows a short confirmation. Clear it to leave arrival tracking off. Tickets keep the arrival setting captured when they were issued.
+
+  Use **Archive** and confirm **Archive checkpoint** to stop scans at that location, including for existing tickets. The confirmation highlights existing access when tickets have already been issued. Choose **Keep checkpoint** to cancel. **Restore** keeps its original identity and redemption history. Archived checkpoints are hidden from the Ticket Access matrix until restored.
+
+  Choose **Apply settings** to update the form, or **Cancel** to discard the modal's edits. Choose **Save checkpoints** to publish the changes.
+
+  <Frame caption="Local demo: checkpoint settings open in a modal with arrival and archive controls. Cancel discards modal edits; Apply settings adds them to the form.">
+    <img src="/assets/on-site/ticket-checkpoints/10-checkpoint-settings.png" alt="Entrance settings modal with Marks arrival, Archive, Cancel and Apply settings controls and a reminder that Save checkpoints saves the changes." />
+  </Frame>
+
+  <Frame caption="Local demo: archiving asks for confirmation and explains the effect on existing ticket access. Redemption history is preserved.">
+    <img src="/assets/on-site/ticket-checkpoints/12-archive-confirmation.png" alt="Archive Entrance confirmation with an existing-ticket warning, Keep checkpoint and Archive checkpoint buttons." />
+  </Frame>
+</Accordion>
+
+<Accordion title="Save confirmation">
+  A successful save shows the standard dashboard **Success!** toast with **Checkpoint settings saved.** A failed save keeps your edits available for retry and does not show a success toast.
+
+  <Frame caption="Local demo: the standard success toast confirms checkpoint settings were saved.">
+    <img src="/assets/on-site/ticket-checkpoints/11-checkpoint-success-toast.png" alt="Dashboard success toast confirming Checkpoint settings saved beside the disabled Save checkpoints button." />
+  </Frame>
+</Accordion>
+
+<Note>
+  Changes to Ticket Access affect new tickets. Previously issued tickets keep their access. The setup page shows a short warning when access is changed after tickets have been issued. A ticket with no included checkpoints cannot use ordinary check-in to bypass checkpoint access.
+</Note>
+
+## 2. Assign staff to a checkpoint
+
+1. Open **Invite Team**, select **Invite Team Member**, enter the email address, and choose **Ticket Checker**.
+2. **Checkpoint assignment** appears below Role when **Ticket Checker** is selected. Choose the event and its **Checkpoint**. Use **+ Add event** for another event, or the trash icon to remove a row. Save the invitation.
+3. Ask the staff member to accept the invitation and sign in to the scanner with that account.
+4. Check the assignment shown in **Active Members** or **Pending Invitations**. Edit an active member to change their assignment.
+
+For staff who only need one event, use **Events → Edit event → Hosts → Add Host**, choose **Ticket Checker**, and select a checkpoint below Role. Assignment changes require the site owner or an administrator. Admins do not need assignments: they can select any active checkpoint in the dashboard scanner. Ticket Checkers scan only their assigned checkpoint for each event.
+
+<Frame caption="Local demo: one Ticket Checker has a different checkpoint at each of three events. Compact rows use Add event and a trash icon.">
+  <img src="/assets/on-site/ticket-checkpoints/13-multiple-event-assignments.png" alt="Checkpoint assignments for Coastal Discovery Tour at Entrance, Summer Festival at VIP Entrance and Museum Experience at Guided Tour." />
+</Frame>
+
+The setup page includes a **Manage staff** link to Hosts. Assignments are managed in Hosts or Team; staff scanners automatically redeem the assigned checkpoint.
+
+<Frame caption="Local demo: the real Team invitation dialog shows Email, Role and checkpoint assignment for a Ticket Checker at the tour's Entrance checkpoint. Fixture APIs are used; no invitation is sent.">
+  <img src="/assets/on-site/ticket-checkpoints/02-staff-assignment.png" alt="Staff assignment selector showing Coastal discovery tour and Entrance." />
+</Frame>
+
+Several staff members can share the same checkpoint. One staff account can have an assignment for each event. Use separate signed-in staff accounts when devices need different checkpoints at the same event; this release assigns the account rather than independently configuring each device.
+
+## 3. Give the guest their usual ticket QR
+
+Send or show the guest their regular [ticket QR](/attendee-portal/qr-code-digital-wallets). The QR identifies the same ticket at every checkpoint. Staff look up the entitlements attached to that ticket; guests do not need a separate QR for each activity.
+
+<Frame caption="Illustration using a synthetic ticket QR. This example card explains the single-QR workflow; it is not a new production ticket template or a redeemable live ticket.">
+  <img src="/assets/on-site/ticket-checkpoints/03-customer-qr.png" alt="Illustrative regular ticket card with one QR and four included checkpoints." />
+</Frame>
+
+## 4. Scan at each checkpoint
+
+In the dashboard, open the event's attendee list and launch **Scan Mode**. Connect a USB or Bluetooth scanner in keyboard mode. In the updated mobile app, open [Check-In](/mobile-app/mobile-check-in) and use the camera or external scanner.
+
+Assigned staff see **Scanning: Entrance** or their assigned checkpoint. Scanning redeems that entitlement automatically, without asking them to choose it for each guest. Owners and administrators can select any active checkpoint before scanning in the dashboard.
+
+<Frame caption="Local demo: Entrance succeeds once for the ticket. If Entrance was set to mark arrival on that issued ticket, it also updates attendance.">
+  <img src="/assets/on-site/ticket-checkpoints/04-entrance-success.png" alt="Scanner displaying Scanning Entrance and Entrance redeemed successfully for Demo G." />
+</Frame>
+
+Present the **same QR** at the next checkpoints. The staff account at each checkpoint receives its own result:
+
+| Assigned checkpoint | First eligible scan | Repeat scan |
+| --- | --- | --- |
+| Entrance | Entrance redeemed successfully | Entrance already redeemed, with the original time |
+| Activity 1 | Activity 1 redeemed successfully | Activity 1 already redeemed |
+| Activity 2 | Activity 2 redeemed successfully | Activity 2 already redeemed |
+| Lunch | Lunch redeemed successfully | Lunch already redeemed |
+
+<AccordionGroup>
+  <Accordion title="Activity 1: the same QR remains valid">
+    <Frame caption="Local demo: after Entrance was used, the same ticket succeeds at Activity 1.">
+      <img src="/assets/on-site/ticket-checkpoints/05-activity1-success.png" alt="The same ticket successfully redeemed at Activity 1 after Entrance." />
+    </Frame>
+  </Accordion>
+  <Accordion title="Activity 2: a separate entitlement">
+    <Frame caption="Local demo: Activity 2 has its own once-only redemption.">
+      <img src="/assets/on-site/ticket-checkpoints/06-activity2-success.png" alt="The same ticket successfully redeemed at Activity 2." />
+    </Frame>
+  </Accordion>
+  <Accordion title="Lunch: the remaining meal entitlement">
+    <Frame caption="Local demo: Lunch still succeeds after Entrance and both activities were redeemed.">
+      <img src="/assets/on-site/ticket-checkpoints/07-lunch-success.png" alt="The same ticket successfully redeemed at Lunch after the other three checkpoints." />
+    </Frame>
+  </Accordion>
+</AccordionGroup>
+
+## 5. Reject repeats and unavailable entitlements
+
+A new scan at an already used checkpoint shows **already redeemed** and the original timestamp. Other unused checkpoints remain available.
+
+Successful checkpoint redemptions also appear in the attendee's **Activity** history as **Checkpoint Redeemed**, with the checkpoint name, staff member and time. The audit record stores the checkpoint ID and optional device ID. The Activity page also shows these as checkpoint use, separately from ordinary check-in. Repeats and request retries do not add another successful-redemption entry.
+
+<Frame caption="Local demo: rescanning at Entrance is rejected, while the activities and lunch can still be redeemed.">
+  <img src="/assets/on-site/ticket-checkpoints/08-entrance-repeat-rejected.png" alt="Entrance repeat scan rejected with its original redemption timestamp." />
+</Frame>
+
+A scan is also rejected if the checkpoint is excluded from the ticket, the staff assignment is unavailable, the checkpoint is archived, the ticket is cancelled or deleted, or the booked occurrence is outside its allowed window. Required check-in answers and the ticket's check-in restrictions still apply. Resolve the displayed reason with an authorized organizer before admitting the guest.
+
+A network timeout is not a successful redemption. Keep the scanner online and retry the interrupted attempt; retries preserve the scan request ID so an already saved redemption is not consumed again. Cancelled tickets and expired journeys are checked again on retries.
+
+<Warning>
+  Checkpoint redemption requires an internet connection. Downloading attendees for [offline check-in](/mobile-app/offline-check-in) does not enable offline checkpoint redemption. Two disconnected devices cannot safely coordinate once-only entitlement use.
+</Warning>
+
+## 6. Review the redemption report
+
+As an owner or administrator, return to **Checkpoints** and expand **Redemptions** below the setup. The report loads when opened. Use **Refresh report** to update it, and review each checkpoint's count and the ticket, time and staff account in the table. Use **Load more redemptions** when there are additional records.
+
+<Frame caption="Local demo: one ticket has four independent redemptions. Each checkpoint's count is one, with its own staff account and time.">
+  <img src="/assets/on-site/ticket-checkpoints/09-redemption-report.png" alt="Report showing one redemption each for Entrance, Activity 1, Activity 2 and Lunch and four audit records." />
+</Frame>
+
+The checkpoint report counts entitlement use. [Check-in analytics](/analytics/check-in-analytics) tracks attendance; redeeming activities or lunch does not create another arrival.
+
+## Maintain the configuration
+
+- **Rename** a checkpoint to change its label while preserving its permanent identity and redemption history.
+- **Archive** it to stop redemption there. Restoring it does not reset used entitlements.
+- **Change ticket inclusions** for future ticket sales. Existing tickets retain their issued entitlements and arrival designation.
+- **Disable checkpoints** to stop redemption on checkpoint tickets. Disabling does not convert those tickets to ordinary check-in.
+- **Remove an assignment or revoke staff access** to stop that account from redeeming checkpoints.
+
+A Membership QR cannot create an unbooked admission into a checkpoint-enabled event. Membership holders should use the QR for their booked ticket, with the entitlements included in that ticket type.
+
+For an integration, see [Scan an attendee](/api-reference/endpoint/scan-attendee). Test the full workflow with current scanner clients and representative peak traffic before running a high-volume event.

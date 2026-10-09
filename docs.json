@@ -265,6 +265,7 @@
             "pages": [
               "on-site/box-office-pos",
               "on-site/ticket-printing",
+              "on-site/ticket-checkpoints",
               "on-site/self-check-in-kiosk"
             ]
           },

@@ -3,3 +3,25 @@ title: "Scan an attendee"
 description: "Validate an attendee’s admission and submit a check-in through the developer API."
 openapi: "/api-reference/openapi.json POST /scan"
 ---
+
+<Warning>
+  Checkpoint fields describe the upcoming checkpoint release. Deploy the matching server and updated scanners before using them on live tickets.
+</Warning>
+
+## Redeem a checkpoint
+
+For a regular ticket issued with checkpoint entitlements, provide a stable `idempotency_key` and the intended `checkpoint_id`. API keys act for their site owner; the owner/admin checkpoint selection does not let assigned staff override their account's checkpoint. An optional `event_id` verifies the booked event, and `device_id` labels the audit record.
+
+```json
+{
+  "attendee_id": "YOUR_BOOKED_TICKET_ID",
+  "event_id": "YOUR_BOOKED_EVENT_ID",
+  "checkpoint_id": "YOUR_CHECKPOINT_ID",
+  "idempotency_key": "YOUR_UNIQUE_SCAN_REQUEST_ID",
+  "device_id": "entrance-scanner-01"
+}
+```
+
+Keep the same request ID when retrying an interrupted attempt; generate a new one for a new scan or checkpoint. A committed checkpoint success returns `200` with `checkpoint_result`. Repeats and invalid admission return `409`. A successful retry replays the original result only while the ticket and booked journey remain eligible. Ordinary ticket scans retain their `202` response.
+
+Each included checkpoint is redeemed once per ticket and booked occurrence. Scanning Entrance does not consume Activity 1, Activity 2 or Lunch. Checkpoint redemption requires internet access. Configure the entitlements and staff assignments using the illustrated [Ticket checkpoints guide](/on-site/ticket-checkpoints).
