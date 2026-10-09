@@ -75,15 +75,19 @@ Ticket types without selected checkpoints cannot be scanned at checkpoints. Leav
 ## 2. Assign staff to a checkpoint
 
 1. Open **Invite Team**, select **Invite Team Member**, enter the email address, and choose **Ticket Checker**.
-2. Under **Assigned checkpoints**, choose the event and its **Checkpoint**. Save the invitation.
+2. **Checkpoint assignment** appears below Role when **Ticket Checker** is selected. Choose the event and its **Checkpoint**. Use **+ Add event** for another event, or the trash icon to remove a row. Save the invitation.
 3. Ask the staff member to accept the invitation and sign in to the scanner with that account.
 4. Check the assignment shown in **Active Members** or **Pending Invitations**. Edit an active member to change their assignment.
 
-For staff who only need one event, use **Events → Edit event → Hosts → Add Host** and select a checkpoint in the invitation. Assignment changes require the site owner or an administrator.
+For staff who only need one event, use **Events → Edit event → Hosts → Add Host**, choose **Ticket Checker**, and select a checkpoint below Role. Assignment changes require the site owner or an administrator. Admins do not need assignments: they can select any active checkpoint in the dashboard scanner. Ticket Checkers scan only their assigned checkpoint for each event.
+
+<Frame caption="Local demo: one Ticket Checker has a different checkpoint at each of three events. Compact rows use Add event and a trash icon.">
+  <img src="/assets/on-site/ticket-checkpoints/13-multiple-event-assignments.png" alt="Checkpoint assignments for Coastal Discovery Tour at Entrance, Summer Festival at VIP Entrance and Museum Experience at Guided Tour." />
+</Frame>
 
 The setup page includes a **Manage staff** link to Hosts. Assignments are managed in Hosts or Team; staff scanners automatically redeem the assigned checkpoint.
 
-<Frame caption="Local demo: the assignment selector binds one staff account to the tour's Entrance checkpoint. The surrounding invitation card is a demo wrapper, not the full Team invitation dialog.">
+<Frame caption="Local demo: the real Team invitation dialog shows Email, Role and checkpoint assignment for a Ticket Checker at the tour's Entrance checkpoint. Fixture APIs are used; no invitation is sent.">
   <img src="/assets/on-site/ticket-checkpoints/02-staff-assignment.png" alt="Staff assignment selector showing Coastal discovery tour and Entrance." />
 </Frame>
 
@@ -101,7 +105,7 @@ Send or show the guest their regular [ticket QR](/attendee-portal/qr-code-digita
 
 In the dashboard, open the event's attendee list and launch **Scan Mode**. Connect a USB or Bluetooth scanner in keyboard mode. In the updated mobile app, open [Check-In](/mobile-app/mobile-check-in) and use the camera or external scanner.
 
-Assigned staff see **Scanning: Entrance** or their assigned checkpoint. Scanning redeems that entitlement automatically, without asking them to choose it for each guest. Owners and administrators without an assignment can select a checkpoint before scanning in the dashboard.
+Assigned staff see **Scanning: Entrance** or their assigned checkpoint. Scanning redeems that entitlement automatically, without asking them to choose it for each guest. Owners and administrators can select any active checkpoint before scanning in the dashboard.
 
 <Frame caption="Local demo: Entrance succeeds once for the ticket. If Entrance was set to mark arrival on that issued ticket, it also updates attendance.">
   <img src="/assets/on-site/ticket-checkpoints/04-entrance-success.png" alt="Scanner displaying Scanning Entrance and Entrance redeemed successfully for Demo G." />
