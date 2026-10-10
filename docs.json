@@ -84,6 +84,7 @@
               "event-management/venuelocation",
               "event-management/ticket-setup",
               "event-management/ticket-options-reference",
+              "event-management/ticket-capacity",
               "event-management/event-add-ons",
               "event-management/email-communication",
               "event-management/sms-communication",
