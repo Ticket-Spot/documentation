@@ -66,7 +66,39 @@ The email keeps Ticket Spot's purple and white branding. It opens with yesterday
 - **Event breakdown** separates yesterday’s new orders, attendees, and collected payments from current **Event totals**. Yesterday’s purchases show ticket and group quantities, add-ons with selected time slots, and memberships. Group quantities count purchases; attendee counts include every member. Membership-only orders appear under their checkout event. Free registrations show new and total attendees without payment rows.
 - **Needs your attention** shows current pending approvals. Quiet current/upcoming events needing approval action can appear alongside events with new orders; quiet events needing no action are hidden. **Payments** expands only when new orders have installment balances. Recent registrations link to the corresponding orders.
 
-The account-wide headlines cover yesterday in UTC. **Event totals** show currently approved and checked-in attendees and **Total sales** before discounts, taxes, and fees. Pending approvals are separate. Quiet paid events needing approval action can include known total sales even without yesterday’s payments. Cumulative figures describe the event now, so they can include activity after the summary day; unavailable totals are omitted.
+The account-wide headlines cover yesterday in UTC. **Event totals** show currently approved and checked-in attendees and **Total sales** before discounts, taxes, and fees. Pending approvals are separate. Quiet paid events needing approval action can include known total sales even without yesterday’s payments. Cumulative figures describe the event now, so they can include activity after the summary day; unavailable totals are omitted. Capacity and remaining places stay in the dashboard.
+
+#### Festivals and time slots
+
+A festival, recurring event, or timed-entry attraction appears as **one event card**, even with hundreds of dates or time slots. Ticket types stay together under **Yesterday’s purchases**.
+
+- **Whole-event passes** count once. A three-day pass is one sold pass; it is not repeated under each festival day.
+- **Day tickets** show their purchased quantities and visit dates. Festival totals distinguish **Tickets sold to date** from **Attendee registrations**, which can include someone returning on several dates.
+- **Group passes** show the number of groups purchased and the people covered, separately.
+- **Memberships and add-ons** retain their names and purchase quantities.
+
+Visit dates describe **when the new registrations will attend**, not when the sale happened. For example, tickets bought yesterday for October 25 count in yesterday’s activity and appear under the October 25 visit date. Whole-event passes are excluded from these date-specific rows.
+
+| Event schedule | What the email shows |
+|---|---|
+| Single-day event | Ticket types |
+| Festival/day tickets or recurring event with up to five dates | Individual purchased visit dates |
+| Timed entry with up to five slots | Individual purchased dates and times, with timezone |
+| More than five dates or slots | **Most popular visit dates**: the top three dates, plus **Other dates** when needed |
+
+The format adjusts automatically to the event's configured schedule. Visit dates use the event's timezone; sales still cover yesterday in UTC. Detailed admissions by festival day and full time-slot reporting remain in the dashboard.
+
+<Accordion title="Festival summary example">
+  <Frame caption="Illustrative festival purchases: 20 whole-event passes and 65 day tickets share one card. Only the day registrations appear under visit dates.">
+    <img src="../assets/refresh/account/account-digest-festival.png" alt="Festival digest with whole-event passes counted once, date-specific registrations, and cumulative ticket and attendee totals." style={{ width: "100%", maxWidth: "390px", height: "auto" }} />
+  </Frame>
+</Accordion>
+
+<Accordion title="Timed-entry summary example">
+  <Frame caption="Illustrative purchases across a 301-slot schedule, grouped into the top three visit dates and Other dates.">
+    <img src="../assets/refresh/account/account-digest-timed-entry.png" alt="Timed-entry digest with one event card, three popular visit dates, Other dates, and current event totals." style={{ width: "100%", maxWidth: "390px", height: "auto" }} />
+  </Frame>
+</Accordion>
 
 Collected payments and installment balances describe the **new orders in this summary**. They exclude later payments on older orders and are not your total outstanding installment balance. Currencies stay separate. Shared-cart payments count once; an event's collected amount appears only when its orders belong entirely to that event.
 
@@ -80,7 +112,7 @@ Collected payments and installment balances describe the **new orders in this su
   </Frame>
 </Accordion>
 
-The email shows at most **eight event cards**, prioritizing approval action and then new order volume, with **View all events** for the rest. Additional purchases link to the dashboard; the headline metrics still include all accessible orders. Each eligible organizer receives a digest for events they can access. Payments and memberships from shared orders containing inaccessible events are omitted from that organizer's totals. Event-scoped managers receive cumulative attendee counts, while cumulative sales are omitted to protect historical shared-order details. Turning notifications off or losing access prevents pending digest delivery.
+The email shows at most **eight event cards** after grouping their dates and slots, prioritizing approval action and then new order volume, with **View all events** for the rest. Additional purchases link to the dashboard; the headline metrics still include all accessible orders. Each eligible organizer receives a digest for events they can access. Payments and memberships from shared orders containing inaccessible events are omitted from that organizer's totals. Event-scoped managers receive cumulative attendee counts only when the full event scope is accessible; cumulative sales are omitted to protect historical shared-order details. Turning notifications off or losing access prevents pending digest delivery.
 
 These settings control **organizer alerts**. They do not delay attendee confirmation emails or change your [attendee email campaigns](/event-management/email-communication).
 
