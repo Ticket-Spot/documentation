@@ -102,6 +102,16 @@
             ]
           },
           {
+            "group": "Bookings",
+            "pages": [
+              "bookings/exclusive-time-slots",
+              {
+                "group": "Examples",
+                "pages": ["bookings/santas-grotto"]
+              }
+            ]
+          },
+          {
             "group": "Memberships",
             "pages": [
               "memberships/overview",
