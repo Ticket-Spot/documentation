@@ -1,0 +1,45 @@
+{
+  "status": "Complete: Demo screenshots captured, visually reviewed, and integrated",
+  "date": "2026-10-12",
+  "sourceEvidence": [
+    "wix-eventviewer-server/routes/api/tasks/transaction-calculation.controller.js: current calendar month record and subscription-first pack deduction",
+    "wix-eventviewer-server/routes/utils/plan-utils.js: getMonthlyTicketPurchases sums the selected site and current MM/YYYY",
+    "wix-eventviewer-server/routes/api/dashboard/attendees/controller.js: manually issued attendees enqueue usage count",
+    "eventviewer-dashboard/src/redesign/pages/EventsPage/components/UsageSummary/index.tsx: card opens Usage & Add-Ons; Manage plan routes to Billing",
+    "eventviewer-dashboard/src/redesign/features/PlanInformation/components/UsageCreditsDialog.tsx: visible balance labels",
+    "eventviewer-dashboard/src/redesign/features/PlanInformation/utils/usageCalculations.ts: remaining allowance and available-now calculations"
+  ],
+  "captureCommand": "NODE_PATH=<Playwright module directory> node media-review/monthly-usage/capture.cjs",
+  "validation": {
+    "mdx": "153 pages compile",
+    "website": "TypeScript and targeted ESLint pass; 87 schema tests pass; desktop and 390px FAQ expansion, guide links, schema presence and no overflow checked.",
+    "docs": "Both guides render HTTP 200 at 1440px and 390px. Every new image decodes successfully; no page errors or horizontal overflow. Screenshots and article placements visually reviewed.",
+    "localReferences": "153 MDX pages, 153 navigation entries, and 1738 local links/media pass the repository checker.",
+    "mintlifyBrokenLinks": "16 existing JSON-file references in media-review/EXTERNAL_TODO.md and media-review/production/README.md are reported by Mintlify; no changed customer guide is flagged.",
+    "capture": "Real Ticket Spot Demo at localhost:8080; no fixtures or account changes. Browser viewport and closed-dialog state restored."
+  },
+  "figures": [
+    {
+      "asset": "assets/refresh/account/monthly-usage-entry.png",
+      "pages": [
+        "account/billing-and-plans",
+        "getting-started/platform-overview"
+      ],
+      "caption": "The Current plan usage message opens Usage & Add-Ons; Manage plan opens Billing."
+    },
+    {
+      "asset": "assets/refresh/account/monthly-usage-attendees.png",
+      "pages": [
+        "account/billing-and-plans"
+      ],
+      "caption": "Demo Business+ example: 33 used and 2,467 remaining out of 2,500 included attendees."
+    },
+    {
+      "asset": "assets/refresh/account/monthly-usage-details.png",
+      "pages": [
+        "account/billing-and-plans"
+      ],
+      "caption": "Full Usage & Add-Ons dialog, available in an expandable section."
+    }
+  ]
+}
