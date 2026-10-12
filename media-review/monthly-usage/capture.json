@@ -1,0 +1,14 @@
+{
+  "capturedOn": "2026-10-12",
+  "source": "Authenticated Ticket Spot Demo dashboard",
+  "route": "http://localhost:8080/#/events",
+  "assets": [
+    "assets/refresh/account/monthly-usage-entry.png",
+    "assets/refresh/account/monthly-usage-details.png",
+    "assets/refresh/account/monthly-usage-attendees.png"
+  ],
+  "usageText": "Usage & Add-Ons\n\nMonthly allowances renew monthly. Ticket Packs add attendee capacity and announcement emails. Reserved Seating Packs add reserved seats independently. SMS Packs add SMS credits. Each reserved-seat ticket uses both attendee and reserved-seat allowances. Always included: Ticket confirmations, receipts, refunds, reminders, and waitlist notifications.\n\nCURRENT PLAN\n\ud83d\udfe2 ACTIVE\nBusiness+\n2,500 attendees/month \u2022 2,000 SMS/month \u2022 12,500 emails/month\n\ud83d\udc65 ATTENDEES\nREMAINING\n2,467\n\u2248 99% of monthly allowance\nUsed this cycle\n33\nAVAILABLE NOW\n2,467\nNeed more?\nAdd Ticket Pack\n\ud83d\udcac SMS CREDITS\nREMAINING\n2,000\n\u2248 100% of monthly allowance\nUsed this cycle\n0\nAVAILABLE NOW\n2,000\nNeed more?\nAdd SMS Pack\n\u2709\ufe0f ANNOUNCEMENT EMAILS\nREMAINING\n12,500\n\u2248 100% of monthly allowance\nUsed this cycle\n0\nAVAILABLE NOW\n12,500\nIncluded with Ticket Packs\nView Ticket Packs\nRESERVED SEATS\nREMAINING\n498\n\u2248 100% of monthly allowance\nUsed this cycle\n2\nAVAILABLE NOW\n498\nAdd to any Ticket Pack\nView Ticket Packs\nPURCHASE ADD-ONS\nTicket Packs\nSMS Packs\nReserved Seating\n\nAdditional attendee capacity and announcement emails.\n\nView Ticket Packs Packs\nManage Subscription",
+  "browserErrors": [],
+  "qa": "Passed visual review: all three screenshots show the authenticated Demo site and legible highlighted controls.",
+  "accountChanges": "None; opened the Events usage card only."
+}

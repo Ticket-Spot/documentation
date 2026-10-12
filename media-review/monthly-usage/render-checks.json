@@ -1,0 +1,78 @@
+[
+  {
+    "route": "account/billing-and-plans",
+    "width": 1440,
+    "status": 200,
+    "images": [
+      {
+        "name": "monthly-usage-entry",
+        "width": 5360,
+        "height": 2836
+      },
+      {
+        "name": "monthly-usage-attendees",
+        "width": 1068,
+        "height": 1512
+      },
+      {
+        "name": "monthly-usage-details",
+        "width": 4464,
+        "height": 4024
+      }
+    ],
+    "overflow": false,
+    "browserErrors": []
+  },
+  {
+    "route": "account/billing-and-plans",
+    "width": 390,
+    "status": 200,
+    "images": [
+      {
+        "name": "monthly-usage-entry",
+        "width": 5360,
+        "height": 2836
+      },
+      {
+        "name": "monthly-usage-attendees",
+        "width": 1068,
+        "height": 1512
+      },
+      {
+        "name": "monthly-usage-details",
+        "width": 4464,
+        "height": 4024
+      }
+    ],
+    "overflow": false,
+    "browserErrors": []
+  },
+  {
+    "route": "getting-started/platform-overview",
+    "width": 1440,
+    "status": 200,
+    "images": [
+      {
+        "name": "monthly-usage-entry",
+        "width": 5360,
+        "height": 2836
+      }
+    ],
+    "overflow": false,
+    "browserErrors": []
+  },
+  {
+    "route": "getting-started/platform-overview",
+    "width": 390,
+    "status": 200,
+    "images": [
+      {
+        "name": "monthly-usage-entry",
+        "width": 5360,
+        "height": 2836
+      }
+    ],
+    "overflow": false,
+    "browserErrors": []
+  }
+]
