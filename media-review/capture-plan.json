@@ -1,15 +1,15 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 355,
-    "annotated_screenshots": 305,
+    "capture_units": 360,
+    "annotated_screenshots": 310,
     "zoom_gifs": 50,
     "static_gif_posters": 51,
-    "pages_covered": 143,
+    "pages_covered": 155,
     "newly_illustrated_pages": 54,
     "priority_0": 171,
-    "priority_1": 184,
-    "demo_browser_units": 281
+    "priority_1": 189,
+    "demo_browser_units": 286
   },
   "samples": [
     {
@@ -12776,6 +12776,185 @@
       "delivered_formats": [
         "PNG"
       ]
+    },
+    {
+      "id": "santa-ten-minute-setup",
+      "pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "area": "bookings",
+      "format": "Annotated screenshot",
+      "title": "Add six ten-minute Santa visits",
+      "callouts": [
+        "Day 1"
+      ],
+      "access": "Demo browser",
+      "fixture": "Saved Santa grotto draft in Ticket Spot Demo; December 19, 2026, six 10-minute slots",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/bookings/santa-ten-minute-setup.png",
+      "poster": null,
+      "capture_rule": "Actual Demo dashboard, application-only crop, unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Setup and saved values visually reviewed; no purchase or attendee notification sent",
+      "readiness": "Saved Demo setup reviewed",
+      "captured_assets": [
+        "assets/refresh/bookings/santa-ten-minute-setup.png"
+      ],
+      "integrated_pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "santa-saved-slots",
+      "pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "area": "bookings",
+      "format": "Annotated screenshot",
+      "title": "Review the saved Santa visit schedule",
+      "callouts": [
+        "10:00 AM - 10:10 AM",
+        "10:50 AM - 11:00 AM"
+      ],
+      "access": "Demo browser",
+      "fixture": "Saved Santa grotto draft in Ticket Spot Demo; December 19, 2026, six 10-minute slots",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/bookings/santa-saved-slots.png",
+      "poster": null,
+      "capture_rule": "Actual Demo dashboard, application-only crop, unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Setup and saved values visually reviewed; no purchase or attendee notification sent",
+      "readiness": "Saved Demo setup reviewed",
+      "captured_assets": [
+        "assets/refresh/bookings/santa-saved-slots.png"
+      ],
+      "integrated_pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "santa-exclusive-booking",
+      "pages": [
+        "bookings/exclusive-time-slots.mdx",
+        "bookings/santas-grotto.mdx"
+      ],
+      "area": "bookings",
+      "format": "Annotated screenshot",
+      "title": "Enable one family booking per time slot",
+      "callouts": [
+        "Exclusive booking per time slot"
+      ],
+      "access": "Demo browser",
+      "fixture": "Saved Santa grotto draft in Ticket Spot Demo; December 19, 2026, six 10-minute slots",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/bookings/santa-exclusive-booking.png",
+      "poster": null,
+      "capture_rule": "Actual Demo dashboard, application-only crop, unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "Setup and saved values visually reviewed; no purchase or attendee notification sent",
+      "readiness": "Saved Demo setup reviewed",
+      "captured_assets": [
+        "assets/refresh/bookings/santa-exclusive-booking.png"
+      ],
+      "integrated_pages": [
+        "bookings/exclusive-time-slots.mdx",
+        "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "santa-booking-confirmed",
+      "pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "area": "bookings",
+      "format": "Annotated screenshot",
+      "title": "Confirmed child and adult Santa booking",
+      "callouts": [
+        "10:00 AM - 10:10 AM"
+      ],
+      "access": "Demo browser",
+      "fixture": "Real confirmed Demo order 4KHAUYRU; one child and one adult, 100% child discount, $0 total",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/bookings/santa-booking-confirmed.png",
+      "poster": null,
+      "capture_rule": "Actual checkout, application-only crop, unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "User explicitly requested publishing and a test booking. API availability and fresh-session click behavior verified.",
+      "readiness": "Confirmed booking and blocked slot reviewed",
+      "captured_assets": [
+        "assets/refresh/bookings/santa-booking-confirmed.png"
+      ],
+      "integrated_pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "santa-slot-blocked",
+      "pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "area": "bookings",
+      "format": "Annotated screenshot",
+      "title": "Booked Santa visit is sold out",
+      "callouts": [
+        "10:00 AM",
+        "Sold Out"
+      ],
+      "access": "Demo browser",
+      "fixture": "Real confirmed Demo order 4KHAUYRU; one child and one adult, 100% child discount, $0 total",
+      "priority": "P1",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/bookings/santa-slot-blocked.png",
+      "poster": null,
+      "capture_rule": "Actual checkout, application-only crop, unfilled purple circles",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "User explicitly requested publishing and a test booking. API availability and fresh-session click behavior verified.",
+      "readiness": "Confirmed booking and blocked slot reviewed",
+      "captured_assets": [
+        "assets/refresh/bookings/santa-slot-blocked.png"
+      ],
+      "integrated_pages": [
+        "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
     }
   ],
   "page_decisions": {
@@ -12806,16 +12985,16 @@
   ],
   "external_access_decision": "User: Those aren’t available; mark as TODO and circle back.",
   "production": {
-    "updated_at": "2026-10-07T17:59:44.452800+00:00",
+    "updated_at": "2026-10-12T18:32:00.387983+00:00",
     "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-    "planned_capture_units": 355,
-    "units_with_any_capture": 316,
-    "checked_screenshots": 613,
+    "planned_capture_units": 360,
+    "units_with_any_capture": 321,
+    "checked_screenshots": 618,
     "checked_gifs": 3,
     "companion_posters": 3,
     "pending_review": 0,
     "needs_recapture": 0,
-    "guides_with_current_media": 105,
+    "guides_with_current_media": 107,
     "external_capture_units_deferred": 66,
     "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide."
   },

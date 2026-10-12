@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-07T17:59:44.452800+00:00",
+  "updated_at": "2026-10-12T18:32:00.387983+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-  "planned_capture_units": 355,
-  "units_with_any_capture": 316,
-  "checked_screenshots": 613,
+  "planned_capture_units": 360,
+  "units_with_any_capture": 321,
+  "checked_screenshots": 618,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
   "needs_recapture": 0,
-  "guides_with_current_media": 105,
+  "guides_with_current_media": 107,
   "external_capture_units_deferred": 66,
   "coverage_note": "An asset count is not a completion percentage. A brief may require several controls, states, or an animation; current and legacy media can coexist in one guide.",
   "pages": [
@@ -376,6 +376,32 @@
         "portal-home",
         "portal-ticket",
         "portal-wallet-buttons"
+      ]
+    },
+    {
+      "path": "bookings/exclusive-time-slots.mdx",
+      "current_assets": [
+        "assets/refresh/bookings/santa-exclusive-booking.png"
+      ],
+      "capture_ids": [
+        "santa-exclusive-booking"
+      ]
+    },
+    {
+      "path": "bookings/santas-grotto.mdx",
+      "current_assets": [
+        "assets/refresh/bookings/santa-booking-confirmed.png",
+        "assets/refresh/bookings/santa-exclusive-booking.png",
+        "assets/refresh/bookings/santa-saved-slots.png",
+        "assets/refresh/bookings/santa-slot-blocked.png",
+        "assets/refresh/bookings/santa-ten-minute-setup.png"
+      ],
+      "capture_ids": [
+        "santa-ten-minute-setup",
+        "santa-saved-slots",
+        "santa-exclusive-booking",
+        "santa-booking-confirmed",
+        "santa-slot-blocked"
       ]
     },
     {

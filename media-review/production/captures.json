@@ -18084,5 +18084,119 @@
     "integrated_pages": [
       "memberships/sell-without-tickets.mdx"
     ]
+  },
+  "santa-ten-minute-setup": {
+    "id": "santa-ten-minute-setup",
+    "key": "santa-ten-minute-setup",
+    "asset": "assets/refresh/bookings/santa-ten-minute-setup.png",
+    "pages": [
+      "bookings/santas-grotto.mdx"
+    ],
+    "title": "Add six ten-minute Santa visits",
+    "caption": "Add six ten-minute Santa visits",
+    "alt": "Add six ten-minute Santa visits",
+    "source": "Actual local dashboard using the authenticated Ticket Spot Demo account. Saved draft event; no UI fixtures or completed payment claims.",
+    "capturedAt": "2026-10-12T18:16:23.467870+00:00",
+    "route": "#/events/manage/ea9dc697-89df-42b0-bc63-67b6e49eac6f/dates",
+    "callouts": [
+      "Day 1"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "bookings/santas-grotto.mdx"
+    ]
+  },
+  "santa-saved-slots": {
+    "id": "santa-saved-slots",
+    "key": "santa-saved-slots",
+    "asset": "assets/refresh/bookings/santa-saved-slots.png",
+    "pages": [
+      "bookings/santas-grotto.mdx"
+    ],
+    "title": "Review the saved Santa visit schedule",
+    "caption": "Review the saved Santa visit schedule",
+    "alt": "Review the saved Santa visit schedule",
+    "source": "Actual local dashboard using the authenticated Ticket Spot Demo account. Saved draft event; no UI fixtures or completed payment claims.",
+    "capturedAt": "2026-10-12T18:16:23.468115+00:00",
+    "route": "#/events/manage/ea9dc697-89df-42b0-bc63-67b6e49eac6f/dates",
+    "callouts": [
+      "10:00 AM - 10:10 AM",
+      "10:50 AM - 11:00 AM"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "bookings/santas-grotto.mdx"
+    ]
+  },
+  "santa-exclusive-booking": {
+    "id": "santa-exclusive-booking",
+    "key": "santa-exclusive-booking",
+    "asset": "assets/refresh/bookings/santa-exclusive-booking.png",
+    "pages": [
+      "bookings/exclusive-time-slots.mdx",
+      "bookings/santas-grotto.mdx"
+    ],
+    "title": "Enable one family booking per time slot",
+    "caption": "Enable one family booking per time slot",
+    "alt": "Enable one family booking per time slot",
+    "source": "Actual local dashboard using the authenticated Ticket Spot Demo account. Saved draft event; no UI fixtures or completed payment claims.",
+    "capturedAt": "2026-10-12T18:16:23.468122+00:00",
+    "route": "#/events/manage/ea9dc697-89df-42b0-bc63-67b6e49eac6f/details",
+    "callouts": [
+      "Exclusive booking per time slot"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "bookings/santas-grotto.mdx",
+      "bookings/exclusive-time-slots.mdx"
+    ]
+  },
+  "santa-booking-confirmed": {
+    "id": "santa-booking-confirmed",
+    "key": "santa-booking-confirmed",
+    "asset": "assets/refresh/bookings/santa-booking-confirmed.png",
+    "pages": [
+      "bookings/santas-grotto.mdx"
+    ],
+    "title": "Confirmed child and adult Santa booking",
+    "caption": "Confirmed child and adult Santa booking",
+    "alt": "Confirmed child and adult Santa booking",
+    "source": "Actual local Ticket Spot checkout with the saved live Demo event. User-authorized $0 test order 4KHAUYRU: one child and one adult. A fresh browser session verified 10:00 blocked and all five later times available. No UI fixtures.",
+    "capturedAt": "2026-10-12T18:31:57.616600+00:00",
+    "route": "/widget?event_id=ea9dc697-89df-42b0-bc63-67b6e49eac6f",
+    "callouts": [
+      "10:00 AM - 10:10 AM"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "bookings/santas-grotto.mdx"
+    ]
+  },
+  "santa-slot-blocked": {
+    "id": "santa-slot-blocked",
+    "key": "santa-slot-blocked",
+    "asset": "assets/refresh/bookings/santa-slot-blocked.png",
+    "pages": [
+      "bookings/santas-grotto.mdx"
+    ],
+    "title": "Booked Santa visit is sold out",
+    "caption": "Booked Santa visit is sold out",
+    "alt": "Booked Santa visit is sold out",
+    "source": "Actual local Ticket Spot checkout with the saved live Demo event. User-authorized $0 test order 4KHAUYRU: one child and one adult. A fresh browser session verified 10:00 blocked and all five later times available. No UI fixtures.",
+    "capturedAt": "2026-10-12T18:31:57.616600+00:00",
+    "route": "/widget?event_id=ea9dc697-89df-42b0-bc63-67b6e49eac6f",
+    "callouts": [
+      "10:00 AM",
+      "Sold Out"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "bookings/santas-grotto.mdx"
+    ]
   }
 }

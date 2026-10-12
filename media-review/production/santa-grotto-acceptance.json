@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-12",
+  "site": "Ticket Spot Demo",
+  "event_id": "ea9dc697-89df-42b0-bc63-67b6e49eac6f",
+  "event_url": "https://ticketspotapp.com/e/santa-s-grotto-10-minute-family-visits-vqv97b00vk2sf0im",
+  "status": "live",
+  "exclusive_booking": true,
+  "privacy_hide_event": false,
+  "discovery_excluded": false,
+  "timezone": "America/Los_Angeles",
+  "date_of_visits": "2026-12-19",
+  "slots": [
+    "10:00–10:10",
+    "10:10–10:20",
+    "10:20–10:30",
+    "10:30–10:40",
+    "10:40–10:50",
+    "10:50–11:00"
+  ],
+  "order": {
+    "id": "4KHAUYRU",
+    "cart_id": "1e565d1b-5b2e-489a-b229-5c3443786435",
+    "items": {
+      "Child visit": 1,
+      "Accompanying adult": 1
+    },
+    "total": 0,
+    "currency": "USD",
+    "discount": "100% child ticket test discount",
+    "card_charged": false,
+    "slot": "10:00–10:10",
+    "result": "Order complete; POST carts/order 200"
+  },
+  "verified": {
+    "api_10_00_unavailable": true,
+    "api_other_five_available": true,
+    "blockedSlotCannotContinue": true,
+    "nextSlotCanContinue": true
+  },
+  "environment": "Local dashboard, widget and backend using saved Demo account records; actual confirmation iframe. This is not a deployment verification.",
+  "limits": [
+    "Did not test cancellation/reopening in this run; retained the booking for the sold-out demo.",
+    "Confirmation UI displayed its standard sent message; actual email delivery to the reserved example.com address was not verified."
+  ],
+  "render_checks": [
+    {
+      "slug": "exclusive-time-slots",
+      "width": 1440,
+      "status": 200,
+      "title": "Take one booking per time slot",
+      "overflow": false,
+      "brokenImages": [],
+      "bookingsNavigation": true
+    },
+    {
+      "slug": "exclusive-time-slots",
+      "width": 390,
+      "status": 200,
+      "title": "Take one booking per time slot",
+      "overflow": false,
+      "brokenImages": [],
+      "bookingsNavigation": true
+    },
+    {
+      "slug": "santas-grotto",
+      "width": 1440,
+      "status": 200,
+      "title": "Set up Santa's grotto in 10-minute slots",
+      "overflow": false,
+      "brokenImages": [],
+      "bookingsNavigation": true
+    },
+    {
+      "slug": "santas-grotto",
+      "width": 390,
+      "status": 200,
+      "title": "Set up Santa's grotto in 10-minute slots",
+      "overflow": false,
+      "brokenImages": [],
+      "bookingsNavigation": true
+    }
+  ]
+}
