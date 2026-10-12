@@ -1,6 +1,6 @@
 ---
 title: "Event Details"
-description: "Set an event title, category, registration type, capacity, images, video, public link, and kiosk access."
+description: "Set event categories, search discoverability, registration type, capacity, images, video, public link, and kiosk access."
 ---
 
 Open an event and choose **Event Details** to configure its category, registration method, privacy, capacity, timezone, title, and media. Save the event after making changes.
@@ -8,6 +8,29 @@ Open an event and choose **Event Details** to configure its category, registrati
 ## Category
 
 Choose **Category** first, then choose its **Subcategory**. The current editor derives the event type from the selected category; there is no separate Type dropdown.
+
+### Additional categories
+
+Use **Additional categories (optional)** to choose up to **3 additional categories**, on top of the primary category. These help your event appear in relevant [Ticket Spot Event Discovery](https://ticketspotapp.com/discover) category searches. They do not change the primary category or its subcategory.
+
+The backend saves up to three distinct additional categories. It removes duplicates and the primary category from the additional list. If you change the primary category to one already selected as an additional category, the editor removes that duplicate. Save the event to apply your choices.
+
+### Search discoverability
+
+Turn on **Not discoverable via search engines and Ticket Spot Event Discovery** in the Category section, then save the event to exclude it from discovery.
+
+<Frame caption="Example: one primary category and three additional categories. The discoverability exclusion toggle is off; turn it on to exclude the event from discovery and search-engine indexing.">
+  <img src="../assets/refresh/event-management/event-details-discoverability.png" alt="Category settings showing Family & Education as the primary category, Music, Food & Drink, and Sports & Fitness as additional categories, and the Not discoverable toggle switched off" style={{ width: "100%", maxWidth: "560px", height: "auto" }} />
+</Frame>
+
+| Setting | What happens after saving |
+| --- | --- |
+| **On** | The event is excluded from Ticket Spot Event Discovery and event sitemaps. Its hosted event page asks search engines not to index it. |
+| **Off** | The event can be discovered if it meets the organizer and event eligibility requirements. This does not guarantee a search-engine listing. |
+
+Discovery is enabled by default for organizers, but an organizer can opt out in the site's General settings. Promotion requires an eligible paid plan and a public, live event; private, hidden, and access-code events remain excluded even when this toggle is off.
+
+This setting does not make the event private: people with its direct link can still open it, subject to its existing access settings. Use [Privacy](#privacy) if you need to restrict access. Search engines may take time to recrawl the page and remove an existing result; copies on other websites are outside this setting's control.
 
 ## Subcategory
 
