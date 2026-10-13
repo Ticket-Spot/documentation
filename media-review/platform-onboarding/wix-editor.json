@@ -1,0 +1,40 @@
+{
+  "capturedAt": "2026-10-13",
+  "environment": "Authenticated Wix Editor; real Wix Demo workspace",
+  "eventId": "814dcbe4-f282-46b4-9cf0-a0020bd3f4bb",
+  "eventTitle": "Focus & Flow Workshop",
+  "eventDate": "2026-11-14T10:00:00-08:00",
+  "sources": [
+    {
+      "file": "assets/refresh/plugins/wix-event-management.png",
+      "source": "wix-settings-event-management.png",
+      "crop": [
+        1215,
+        308,
+        445,
+        615
+      ]
+    },
+    {
+      "file": "assets/refresh/plugins/wix-event-in-editor.png",
+      "source": "wix-editor-event.png",
+      "crop": [
+        382,
+        257,
+        998,
+        584
+      ]
+    }
+  ],
+  "verified": [
+    "Right-click widget \u2192 Settings \u2192 Main \u2192 Event Management opens Ticket Spot",
+    "New event is Live and appears in Wix Editor",
+    "Three old demo events cleared as authorized",
+    "Duplicate empty widget removed",
+    "Wix confirms site published"
+  ],
+  "limitations": [
+    "App was already installed; no new Wix installation demonstrated",
+    "Registration and delivered ticket email not yet verified"
+  ]
+}
