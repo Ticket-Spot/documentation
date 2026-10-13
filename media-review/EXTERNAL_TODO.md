@@ -68,12 +68,27 @@ Native apps, wallets, physical printing, and device workflows also require the l
 | Publish a demo event to the linked product (`shopify-publish`) | Shopify demo store + Demo browser | [connect-shopify](../plugins/connect-shopify.mdx) | TODO — this purchase, installation, or result flow was not captured in the Ticket Selector setup pass |
 | Choose widget installation options (`widget-embed-options`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — current Ticket Spot controls captured; external authorization/result or device still TODO |
 | Embedded widget on a demo website (`widget-embedded-result`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | TODO — external session or device unavailable; user requested deferral |
-| Wix app installation and connection (`wix-connect`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
+| Wix app installation and connection (`wix-connect`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | Partial — current public App Market listing and Add to Site captured October 12; authenticated installation and connected result still need a demo site |
 | Open Ticket Spot settings in Wix (`wix-editor-settings`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
 | Wix event widget and completed demo ticket (`wix-event-checkout`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
-| Install widget in a WordPress page (`wordpress-embed`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | TODO — external session or device unavailable; user requested deferral |
+| Install widget in a WordPress page (`wordpress-embed`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — released plugin activation captured and shortcode parser verified in local WordPress October 12; editor block and published widget still need capture |
 
 ## Additional dependency found during live capture
+
+The October 12 platform-onboarding follow-up refreshed Wix, Ecwid, and WordPress instructions against their integration source. The [Wix listing capture](platform-onboarding/wix-app-market-install.json) records the public install entry point. Current shared Ticket Spot screenshots replace the Wix guide's obsolete GIFs. The [WordPress evidence](platform-onboarding/wordpress-setup.json) records real plugin activation and shortcode parsing in WordPress Playground. Its editor did not complete a reliable Shortcode-block capture within the bounded attempt. Wix editor settings and a completed registration, plus Ecwid authorization, product variations, checkout, and the resulting attendees, still require authenticated demo sites. Instructions and regression checks do not establish that those external purchase flows have been completed.
+
+Capture these states when the platform demo accounts are available:
+
+| Platform | Needed screenshot | What the capture must establish |
+|---|---|---|
+| Wix | Selected widget and **Settings → Main → Event Management** | Show enough editor context to identify the selected Ticket Spot element and where its settings open. |
+| Wix | **Filters**, **Display**, and **Layout** controls | Use focused captures for Enable Filters/AND–OR, live-event/count controls, and separate desktop/mobile layouts. |
+| Wix | Published widget and registration result | Show the actual published page, then confirm the same test registration in Ticket Spot. |
+| Ecwid | Connected workspace and **Publish to Ecwid Store** | Show the intended store, category choices, and the resulting linked product. |
+| Ecwid | Product ticket/date variations and storefront | Show the same options, prices, and stock in the product editor and customer-facing page. |
+| Ecwid | Quantity-two checkout and attendee result | Confirm two tickets produce two attendees with the expected date and buyer/question details; conceal personal data. |
+| Ecwid | Payment and cancellation handling | Record real demo order states in both systems. Do not imply that an Attending status proves payment or that cancellation automatically updates attendance. |
+| WordPress | Shortcode block and published event widget | Capture the actual generated shortcode in the editor, then the matching widget on the published page. Activation and shortcode parsing alone do not verify rendering or checkout. |
 
 The October 3 isolated Stripe sandbox pass completed the buyer summary and order-management examples (`installment-buyer-summary`, `installment-manage`), including deposit checkout, later collection, declined-card recovery, and the paid result. Twelve screenshots and the payment integrity checks are recorded in [installment acceptance evidence](production/installment-acceptance.json). The configured ticket-editor schedule (`installment-schedule`) still needs an enabled editor capture; its existing prerequisite image does not show a configured schedule. Hosted webhook transport, email/background workers, and browser 3DS remain outside this verification.
 

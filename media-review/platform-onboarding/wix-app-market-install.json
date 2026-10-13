@@ -1,0 +1,19 @@
+{
+  "asset": "assets/refresh/plugins/wix-app-market-install.png",
+  "guide": "plugins/connect-wix.mdx",
+  "source": "https://www.wix.com/app-market/event-viewer",
+  "capturedAt": "2026-10-13T01:39:54.314Z",
+  "environment": "Public Wix App Market listing in Chrome",
+  "viewport": { "width": 1440, "height": 1000 },
+  "crop": { "x": 274, "y": 120, "width": 560, "height": 310 },
+  "annotation": "Purple ellipse around the rendered Add to Site button",
+  "verified": [
+    "Ticket Spot name and publisher are visible",
+    "Add to Site is visible and the annotation does not obscure the label",
+    "Image reviewed at native dimensions"
+  ],
+  "limitations": [
+    "Capture ends at the public listing; installation was not submitted",
+    "Wix editor controls, connected-site state, and a completed purchase still require an authenticated demo site"
+  ]
+}
