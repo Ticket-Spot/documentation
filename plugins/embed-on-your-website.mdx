@@ -4,7 +4,15 @@ sidebarTitle: "Embed on your website"
 description: "Add an event calendar or ticket widget to your website using Ticket Spot's embed code. Choose a layout and verify ticket selection and checkout."
 ---
 
-Use the widget installation code generated for your Ticket Spot site to add an event calendar or ticket listing to your website. Visitors can browse events and continue to the ticket selection and checkout supported by your integration.
+Use the widget installation code generated for your Ticket Spot site to add an event calendar or ticket listing to your website. This route works with website builders that allow custom JavaScript and HTML, including Squarespace, and with a website you manage yourself. Visitors can browse events and continue to the ticket selection and checkout supported by your integration.
+
+## Before you start
+
+- You need access to the website's custom head code and page HTML. Check that your website plan permits custom scripts, not only an iframe or a link embed.
+- Create an event with tickets and publish it in Ticket Spot. Follow [Create your first event](/getting-started/first-event) if needed.
+- For Ticket Spot checkout, [connect a payment provider](/account/get-paid) before selling paid tickets. Free registration does not require a payment connection.
+
+For a builder-specific route, use [Squarespace](/plugins/connect-squarespace). Native setup guides are available for [Shopify](/plugins/connect-shopify), [Wix](/plugins/connect-wix), [Ecwid](/plugins/connect-ecwid), and [WordPress](/plugins/connect-wordpress). Compare these options in [Website setup](/plugins/website-setup).
 
 ## Install the widget
 
@@ -19,7 +27,7 @@ Use the widget installation code generated for your Ticket Spot site to add an e
   <img src="../assets/refresh/plugins/widget-embed-options.png" alt="Any Website supplies two pieces: the script for the page head, then the widget container where the event list should appear." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
 </Frame>
 
-Use the platform-specific instructions for [Shopify](/plugins/connect-shopify), [Wix](/plugins/connect-wix), [WordPress](/plugins/connect-wordpress), or [Lovable](/plugins/connect-lovable).
+Building with Lovable? Use the [generated installation prompt](/plugins/connect-lovable).
 
 ## Choose an event calendar layout
 
@@ -27,7 +35,15 @@ To display an event calendar, open **Design → Widget → All Settings → Layo
 
 ## Choose the checkout route
 
-The widget is the event-selection surface. The payment route depends on your integration and selected payment provider. Shopify product purchases use the Shopify integration; a hosted Ticket Spot event page is a separate shareable destination. A custom domain controls the supported hosted pages and does not change which payment provider processes the order.
+The widget is the event-selection surface. A standalone Ticket Spot widget uses your connected Ticket Spot payment provider. Shopify and Ecwid product purchases use their respective store checkouts; follow that platform's guide when publishing products. A hosted Ticket Spot event page is a separate shareable destination. A custom domain controls the supported hosted pages and does not change which payment provider processes the order.
+
+## Test the published page
+
+Open the page in a private browser window and complete a registration using the ticket type and checkout you will offer visitors. Confirm the date, price, required questions, confirmation, and ticket link. Find the resulting attendee and order in Ticket Spot; for paid tickets, check the payment provider as well. Repeat the browsing and ticket-selection check on mobile.
+
+Use the [launch checklist](/getting-started/launch-checklist) before you promote the event.
+
+## Troubleshooting
 
 If the widget is blank, confirm the complete script is allowed, the correct widget was selected, and its filters include a visible event. Compare with the event's public page to separate a listing filter problem from an event configuration problem.
 
@@ -36,3 +52,4 @@ If the widget is blank, confirm the complete script is allowed, the correct widg
 - [Hosted domains and analytics](/site-settings/domain-and-analytics)
 - [Connect payment providers](/account/get-paid)
 - [Tracking links](/event-management/tracking-links)
+- [Explore features for your event](/guides/overview)
