@@ -1,0 +1,88 @@
+{
+  "capturedAt": "2026-10-13",
+  "storeId": 144038516,
+  "eventIds": {
+    "oneTime": "2c01c2b7-8005-4987-ae5b-43647e3e18ef",
+    "timed": "25caa07c-b21d-4ee7-8ba8-78043c122223",
+    "previousTimed": "f2a38b4e-8841-4c13-90fd-22bb580f57e3",
+    "selectedSession": "81dc3ec5-dd62-48b5-9ab5-ebf5f7e44a9d"
+  },
+  "assets": [
+    {
+      "file": "assets/refresh/plugins/ecwid-publish-event.png",
+      "source": "ecwid-publish-ready.png",
+      "crop": [
+        586,
+        253,
+        557,
+        493
+      ],
+      "environment": "Local Ticket Spot dashboard with actual connected Ecwid store; category response is real, not a mocked screenshot"
+    },
+    {
+      "file": "assets/refresh/plugins/ecwid-time-slot-product.png",
+      "source": "ecwid-v2-time-slot-product.png",
+      "crop": [
+        302,
+        218,
+        1125,
+        558
+      ],
+      "resizeWidth": 1000,
+      "environment": "Published Ecwid storefront"
+    },
+    {
+      "file": "assets/refresh/plugins/ecwid-time-slot-setup.png",
+      "source": "ecwid-v2-slots-saved.png",
+      "crop": [
+        322,
+        286,
+        1084,
+        654
+      ],
+      "environment": "Local Ticket Spot dashboard connected to authorized Ecwid demo store; actual saved event"
+    }
+  ],
+  "verified": [
+    "Ticket Spot installed in authorized demo Ecwid store",
+    "One-time and time-slot products published through Ticket Spot",
+    "Creative Studio Sessions created with three 20-minute sessions on November 21, 2026, each with four places",
+    "Production PR269 attendee-save fix served traffic before test orders",
+    "BQ2AL: two Workshop Pass tickets, exactly two persisted attendees and order-line quantity 2",
+    "HA647: one Session Pass for November 21, 10:30\u201310:50 AM Pacific, saved against the concrete session event",
+    "Ticket Spot confirmation workflow completed once per order; delivery timestamps present for all three attendees",
+    "Local fixed publisher repaired existing Ecwid variation mappings without replacing their IDs"
+  ],
+  "limitations": [
+    "Both new orders used manual payment; no charge was collected",
+    "Timed demo was published through the locally fixed publisher; server PR271 must deploy for this mapping behavior in the production publisher",
+    "Ecwid imports did not queue attendance/capacity rollups; PR271 adds the missing refresh. Live remaining-capacity verification is outstanding",
+    "Ecwid native organizer email delivery is not verified. Connected Gmail is not the configured store notification mailbox",
+    "Historical failed order 7C1LG was not replayed or recovered",
+    "Ticket Spot delivery timestamps confirm provider delivery; opening the delivered ticket/QR remains unverified",
+    "Dedicated capture browser became unresponsive after checkout; resulting Ticket Spot records were verified with scoped read-only Datastore queries, not a final attendee-list screenshot"
+  ],
+  "testOrders": [
+    {
+      "ecwidOrder": "BQ2AL",
+      "cart": "9ad3ed68-4b14-45ad-b837-60232f7f963c",
+      "quantity": 2,
+      "attendees": 2,
+      "payment": "AWAITING_PAYMENT",
+      "total": 50,
+      "ticketEmailDeliveredAt": "2026-10-13T14:57:06.350Z"
+    },
+    {
+      "ecwidOrder": "HA647",
+      "cart": "68602073-27f5-413f-ad54-8ae3a32045f6",
+      "quantity": 1,
+      "attendees": 1,
+      "payment": "AWAITING_PAYMENT",
+      "total": 15,
+      "session": "2026-11-21 10:30\u201310:50 America/Los_Angeles",
+      "ticketEmailDeliveredAt": "2026-10-13T14:57:50.343Z"
+    }
+  ],
+  "fixPR": "https://github.com/chrismccaw/wix-eventviewer-server/pull/271",
+  "productionVersion": "20261013t144753"
+}

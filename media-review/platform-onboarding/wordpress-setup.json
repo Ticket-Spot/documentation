@@ -1,0 +1,56 @@
+{
+  "guide": "plugins/connect-wordpress.mdx",
+  "environment": "Official WordPress Playground CLI 3.1.58 local demo; no external WordPress site was changed",
+  "runtime": {
+    "wordpress": "7.1.3",
+    "php": "8.5.10",
+    "plugin": "Ticket Spot 1.0.4",
+    "pluginSource": "https://downloads.wordpress.org/plugin/ticket-spot.1.0.4.zip"
+  },
+  "captures": [
+    {
+      "asset": "assets/refresh/plugins/wordpress-plugin-active.png",
+      "source": "http://127.0.0.1:9417/wp-admin/plugins.php",
+      "capturedAt": "2026-10-13T01:42:42.389731+00:00",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "annotation": "None; native browser screenshot",
+      "verified": [
+        "Released plugin installed and activated in an actual WordPress runtime",
+        "Ticket Spot version 1.0.4 and Settings/Deactivate links are visible",
+        "Image inspected at native dimensions"
+      ]
+    }
+  ],
+  "shortcodeVerification": {
+    "method": "WordPress do_shortcode called in a Playground runPHP blueprint after plugin activation",
+    "correctedShortcode": "[ticket_spot widget_id=\"widget-f27863\"]",
+    "correctedOutput": "<ticket-spot id='widget-f27863' />",
+    "legacyShortcode": "[ticket_spot='widget-f27863']",
+    "legacyOutput": "<ticket-spot id='' />",
+    "assertionsPassed": true
+  },
+  "reusedDashboardCaptures": [
+    "assets/refresh/branding-and-design/widget-create-open.png",
+    "assets/refresh/plugins/widget-embed-options-wordpress.png"
+  ],
+  "limitations": [
+    "The local demo verifies plugin activation and shortcode parsing; it does not establish that a published event list or checkout loaded.",
+    "WordPress editor capture was attempted with one and six workers; admin editor navigation did not reliably complete within the capture budget.",
+    "No event, order, payment, or attendee was created in Ticket Spot."
+  ],
+  "pluginSourceFix": {
+    "repository": "Ticket-Spot/wordpress-app",
+    "pullRequest": "https://github.com/Ticket-Spot/wordpress-app/pull/1",
+    "checkoutVersion": "1.0.0",
+    "publishedVersion": "1.0.4",
+    "validation": [
+      "Production webpack build passed using the frozen Yarn lockfile",
+      "Built admin screen rendered in Chrome without runtime errors",
+      "Corrected shortcode field is enabled and read-only; dashboard and documentation links match their destinations"
+    ],
+    "releasePublished": false
+  }
+}

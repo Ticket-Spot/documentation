@@ -68,12 +68,27 @@ Native apps, wallets, physical printing, and device workflows also require the l
 | Publish a demo event to the linked product (`shopify-publish`) | Shopify demo store + Demo browser | [connect-shopify](../plugins/connect-shopify.mdx) | TODO — this purchase, installation, or result flow was not captured in the Ticket Selector setup pass |
 | Choose widget installation options (`widget-embed-options`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — current Ticket Spot controls captured; external authorization/result or device still TODO |
 | Embedded widget on a demo website (`widget-embedded-result`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | TODO — external session or device unavailable; user requested deferral |
-| Wix app installation and connection (`wix-connect`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
-| Open Ticket Spot settings in Wix (`wix-editor-settings`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
+| Wix app installation and connection (`wix-connect`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | Partial — current public App Market listing and Add to Site captured October 12; authenticated installation and connected result still need a demo site |
+| Open Ticket Spot settings in Wix (`wix-editor-settings`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | Complete — authenticated Settings → Main → Event Management and new workshop in Wix Editor captured October 13; see [evidence](platform-onboarding/wix-editor.json) |
 | Wix event widget and completed demo ticket (`wix-event-checkout`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
-| Install widget in a WordPress page (`wordpress-embed`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | TODO — external session or device unavailable; user requested deferral |
+| Install widget in a WordPress page (`wordpress-embed`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — released plugin activation captured and shortcode parser verified in local WordPress October 12; editor block and published widget still need capture |
 
 ## Additional dependency found during live capture
+
+The October 12 platform-onboarding follow-up refreshed Wix, Ecwid, and WordPress instructions against their integration source. The [Wix listing capture](platform-onboarding/wix-app-market-install.json) records the public install entry point. Current shared Ticket Spot screenshots replace the Wix guide's obsolete GIFs. The [WordPress evidence](platform-onboarding/wordpress-setup.json) records real plugin activation and shortcode parsing in WordPress Playground. Its editor did not complete a reliable Shortcode-block capture within the bounded attempt. This was the initial capture gap. The October 13 authenticated demos below now cover Wix editor setup and Ecwid authorization, product variations, checkout, persisted attendees, and Ticket Spot email delivery. Wix registration/email verification remains outstanding.
+
+Capture these states when the platform demo accounts are available:
+
+| Platform | Needed screenshot | What the capture must establish |
+|---|---|---|
+| Wix | Selected widget and **Settings → Main → Event Management** | Show enough editor context to identify the selected Ticket Spot element and where its settings open. |
+| Wix | **Filters**, **Display**, and **Layout** controls | Use focused captures for Enable Filters/AND–OR, live-event/count controls, and separate desktop/mobile layouts. |
+| Wix | Published widget and registration result | Show the actual published page, then confirm the same test registration in Ticket Spot. |
+| Ecwid | Connected workspace and **Publish to Ecwid Store** | Show the intended store, category choices, and the resulting linked product. |
+| Ecwid | Product ticket/date variations and storefront | Show the same options, prices, and stock in the product editor and customer-facing page. |
+| Ecwid | Quantity-two checkout and attendee result | Confirm two tickets produce two attendees with the expected date and buyer/question details; conceal personal data. |
+| Ecwid | Payment and cancellation handling | Record real demo order states in both systems. Do not imply that an Attending status proves payment or that cancellation automatically updates attendance. |
+| WordPress | Shortcode block and published event widget | Capture the actual generated shortcode in the editor, then the matching widget on the published page. Activation and shortcode parsing alone do not verify rendering or checkout. |
 
 The October 3 isolated Stripe sandbox pass completed the buyer summary and order-management examples (`installment-buyer-summary`, `installment-manage`), including deposit checkout, later collection, declined-card recovery, and the paid result. Twelve screenshots and the payment integrity checks are recorded in [installment acceptance evidence](production/installment-acceptance.json). The configured ticket-editor schedule (`installment-schedule`) still needs an enabled editor capture; its existing prerequisite image does not show a configured schedule. Hosted webhook transport, email/background workers, and browser 3DS remain outside this verification.
 
@@ -83,7 +98,7 @@ The October 3 isolated Stripe sandbox pass completed the buyer summary and order
 
 ## Additional integration follow-up
 
-Current Ticket Spot setup cards and the RegFox key form are refreshed in the integration directory. OmniSend, RegFox, Ecwid, and Lightspeed R-Series authorization, installation, connected results, and end-to-end verification remain deferred with the unavailable external demo accounts. No credential or connection was created for these captures.
+Current Ticket Spot setup cards and the RegFox key form are refreshed in the integration directory. OmniSend, RegFox, and Lightspeed R-Series authorization, installation, connected results, and end-to-end verification remain deferred with the unavailable external demo accounts. Ecwid was subsequently verified with the authorized demo store; see the October 13 record below. No credential or connection was created for these captures.
 
 ## Remaining Demo account states
 
@@ -111,3 +126,21 @@ The October 2 attendee follow-up adds 17 reviewed screenshots of the available m
 Shopify setup screenshots and the seating preview are recorded in [Shopify acceptance evidence](production/shopify-selector-acceptance.json). The existing draft theme was inspected without saving or publishing changes.
 
 The complete retained-media and five-video review list is in [remaining-coverage.json](remaining-coverage.json). Older media remains only in external-integration, mobile/device, and attendee-portal guides. Alternative current close-ups are retained in the gallery without adding redundant article images.
+
+## October 13 authenticated platform demos
+
+Wix Settings → Main → Event Management and a newly created one-time workshop are now captured in [Wix Editor evidence](platform-onboarding/wix-editor.json). The demo website was published with one event widget. Wix registration/email proof remains outstanding.
+
+Ecwid demo store 144038516 is connected and the one-time event was published. Manual-payment order 7C1LG completed as Awaiting Payment, without a charge. Its production webhook saved a cart but no attendee because attendee persistence was not awaited; the confirmation job found zero recipients. [Server PR269](https://github.com/chrismccaw/wix-eventviewer-server/pull/269) fixes this along with quantity counting. PR269 is now deployed. This historical order was not recovered and remains unsuitable as successful import or email evidence.
+
+### Ecwid rerun after PR269 deployment
+
+Created **Creative Studio Sessions** for November 21, with 10:00, 10:30, and 11:00 AM Pacific sessions, four places each. Added actual setup and storefront screenshots to the Ecwid guide, plus separate one-time/time-based steps and email troubleshooting.
+
+- **BQ2AL:** two Workshop Pass tickets → exactly two attendees and order-line quantity two. Ticket Spot confirmation delivery recorded at 14:57:06 UTC.
+- **HA647:** one 10:30–10:50 AM Session Pass → one attendee linked to that concrete session. Ticket Spot confirmation delivery recorded at 14:57:50 UTC.
+- Both were manual-payment orders, Awaiting Payment, without a charge.
+
+The rerun exposed two additional defects fixed in [server PR271](https://github.com/chrismccaw/wix-eventviewer-server/pull/271): time-slot variations pointed at the whole day, and imports did not queue attendance/capacity refreshes. The timed demo was republished through the locally fixed publisher before purchasing; its mappings were checked directly. Deploy PR271, then verify remaining capacity and capture the final attendee UI before releasing the revised time-slot demo video. The dedicated capture browser became unresponsive after checkout; attendee and delivery evidence came from scoped, read-only Datastore checks.
+
+Ecwid's native organizer notification remains unverified; it is independent of Ticket Spot's delivered confirmation. The connected Gmail account differs from the configured Ecwid recipient. See [the full evidence record](platform-onboarding/ecwid-demo.json).
