@@ -15,141 +15,243 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Start here",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get started",
             "pages": [
-              "getting-started/platform-overview",
-              "branding-and-design/design-overview",
-              "getting-started/language-and-locale-faq"
+              "getting-started/start-here",
+              "getting-started/first-event",
+              "getting-started/launch-checklist"
             ]
           },
           {
-            "group": "Set up your event type",
+            "group": "Explore the dashboard",
             "pages": [
-              "event-types/overview",
-              {
-                "group": "Tours and activities",
-                "pages": [
-                  "event-types/wine-tour",
-                  "event-types/bus-tour",
-                  "event-types/class",
-                  "event-types/workshop",
-                  "event-types/retreat",
-                  "event-types/sports-event"
-                ]
-              },
-              {
-                "group": "Shows and multi-day events",
-                "pages": [
-                  "event-types/concert",
-                  "event-types/theatre",
-                  "event-types/comedy-show",
-                  "event-types/festival",
-                  "event-types/conference",
-                  "event-types/seminar"
-                ]
-              },
-              {
-                "group": "Community and social events",
-                "pages": [
-                  "event-types/meetup",
-                  "event-types/party",
-                  "event-types/dinner",
-                  "event-types/market"
-                ]
-              },
-              {
-                "group": "Other formats",
-                "pages": [
-                  "event-types/single-event",
-                  "event-types/repeating-event",
-                  "event-types/multi-day-event",
-                  "event-types/free-rsvp",
-                  "event-types/assigned-seating",
-                  "event-types/start-from-scratch"
-                ]
-              }
+              "getting-started/platform-overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Website setup",
+        "groups": [
+          {
+            "group": "Choose your website",
+            "pages": [
+              "plugins/website-setup"
             ]
           },
           {
-            "group": "Event Management",
+            "group": "Shopify",
+            "pages": [
+              "plugins/shopify-overview",
+              "plugins/connect-shopify",
+              "plugins/shopify-ticket-selector",
+              "plugins/shopify-event-add-ons",
+              "plugins/shopify-ticketing-faq"
+            ]
+          },
+          {
+            "group": "Wix, Ecwid, and WordPress",
+            "pages": [
+              "plugins/connect-wix",
+              "plugins/connect-ecwid",
+              "plugins/connect-wordpress"
+            ]
+          },
+          {
+            "group": "Squarespace and other websites",
+            "pages": [
+              "plugins/connect-squarespace",
+              "plugins/embed-on-your-website",
+              "plugins/connect-lovable"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Feature guides",
+        "groups": [
+          {
+            "group": "Explore features",
+            "pages": [
+              "guides/overview"
+            ]
+          },
+          {
+            "group": "Events and tickets",
             "pages": [
               "event-management/create-event-overview",
-              "event-management/event-options-reference",
-              "event-management/eventdetails",
-              "event-management/datetime",
-              "event-management/day-specific-tickets",
-              "event-management/venuelocation",
-              "event-management/ticket-setup",
-              "event-management/ticket-options-reference",
-              "event-management/ticket-capacity",
-              "event-management/event-add-ons",
-              "event-management/email-communication",
-              "event-management/sms-communication",
-              "event-management/waitlist",
-              "event-management/additional-information",
-              "event-management/checkout-complete-message",
-              "event-management/tags-and-custom-fields",
-              "event-management/hosts",
-              "event-management/display-settings",
               "event-management/manage-events",
-              "event-management/tracking-links",
-              "event-management/installment-payments",
-              "event-management/waivers",
-              "event-management/timed-entry-and-passes"
-            ]
-          },
-          {
-            "group": "Bookings",
-            "pages": [
-              "bookings/exclusive-time-slots",
               {
-                "group": "Examples",
-                "pages": ["bookings/santas-grotto"]
-              }
+                "group": "Guides by event type",
+                "pages": [
+                  "event-types/overview",
+                  {
+                    "group": "Tours and activities",
+                    "pages": [
+                      "event-types/wine-tour",
+                      "event-types/bus-tour",
+                      "event-types/class",
+                      "event-types/workshop",
+                      "event-types/retreat",
+                      "event-types/sports-event"
+                    ]
+                  },
+                  {
+                    "group": "Shows and multi-day events",
+                    "pages": [
+                      "event-types/concert",
+                      "event-types/theatre",
+                      "event-types/comedy-show",
+                      "event-types/festival",
+                      "event-types/conference",
+                      "event-types/seminar"
+                    ]
+                  },
+                  {
+                    "group": "Community and social events",
+                    "pages": [
+                      "event-types/meetup",
+                      "event-types/party",
+                      "event-types/dinner",
+                      "event-types/market"
+                    ]
+                  },
+                  {
+                    "group": "Other formats",
+                    "pages": [
+                      "event-types/single-event",
+                      "event-types/repeating-event",
+                      "event-types/multi-day-event",
+                      "event-types/free-rsvp",
+                      "event-types/assigned-seating",
+                      "event-types/start-from-scratch"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Details and visibility",
+                "pages": [
+                  "event-management/eventdetails",
+                  "event-management/venuelocation",
+                  "event-management/hosts",
+                  "event-management/tags-and-custom-fields",
+                  "event-management/display-settings"
+                ]
+              },
+              {
+                "group": "Dates and bookings",
+                "pages": [
+                  "event-management/datetime",
+                  "event-management/day-specific-tickets",
+                  "event-management/timed-entry-and-passes",
+                  "bookings/exclusive-time-slots",
+                  "bookings/santas-grotto"
+                ]
+              },
+              {
+                "group": "Tickets and pricing",
+                "pages": [
+                  "event-management/ticket-setup",
+                  "event-management/ticket-capacity",
+                  "event-management/event-add-ons",
+                  "event-management/waitlist",
+                  "event-management/installment-payments",
+                  "event-management/ticket-options-reference"
+                ]
+              },
+              {
+                "group": "Seating Charts",
+                "pages": [
+                  "seating-charts/create-and-assign",
+                  "seating-charts/advanced-layouts",
+                  "seating-charts/seat-selection"
+                ]
+              },
+              {
+                "group": "Memberships",
+                "pages": [
+                  "memberships/overview",
+                  "memberships/create-membership",
+                  "memberships/sell-without-tickets",
+                  "memberships/assign-to-events",
+                  "memberships/ticket-access-and-pricing",
+                  "memberships/manage-members"
+                ]
+              },
+              "event-management/event-options-reference"
             ]
           },
           {
-            "group": "Memberships",
+            "group": "Booking experience",
             "pages": [
-              "memberships/overview",
-              "memberships/create-membership",
-              "memberships/sell-without-tickets",
-              "memberships/assign-to-events",
-              "memberships/ticket-access-and-pricing",
-              "memberships/manage-members"
+              "branding-and-design/design-overview",
+              "branding-and-design/brand-design",
+              {
+                "group": "Website and widget design",
+                "pages": [
+                  "branding-and-design/site-design",
+                  "branding-and-design/event-page-design",
+                  {
+                    "group": "Widget setup and options",
+                    "pages": [
+                      "branding-and-design/widget-customization-overview",
+                      "branding-and-design/quick-settings",
+                      "branding-and-design/display-settings",
+                      "branding-and-design/checkout-settings",
+                      "branding-and-design/text-settings",
+                      "branding-and-design/layout",
+                      "branding-and-design/filters",
+                      "branding-and-design/user-search-filter",
+                      {
+                        "group": "All Widget Options",
+                        "pages": [
+                          "branding-and-design/widget-design-reference",
+                          "branding-and-design/widget-display-reference",
+                          "branding-and-design/widget-layout-reference",
+                          "branding-and-design/widget-event-filters-reference",
+                          "branding-and-design/widget-visitor-filters-reference",
+                          "branding-and-design/widget-checkout-reference",
+                          "branding-and-design/widget-text-reference"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Registration forms",
+                "pages": [
+                  "event-management/additional-information",
+                  "event-management/waivers",
+                  "event-management/checkout-complete-message"
+                ]
+              },
+              {
+                "group": "Tickets and attendee pages",
+                "pages": [
+                  "branding-and-design/tickets-and-passes",
+                  "branding-and-design/ticket-and-receipt-attachment-design",
+                  "branding-and-design/attendee-ticket-page"
+                ]
+              },
+              {
+                "group": "Languages and translation",
+                "pages": [
+                  "getting-started/language-and-locale-faq",
+                  "branding-and-design/language-and-locale",
+                  "branding-and-design/multilingual-communications"
+                ]
+              },
+              "branding-and-design/white-label-setup",
+              "branding-and-design/design-options-reference"
             ]
           },
           {
-            "group": "Integrations",
-            "pages": [
-              "integrations/integrations-overview",
-              "integrations/eventbrite",
-              "integrations/tickettailor",
-              "integrations/ticketspice",
-              "integrations/google",
-              "integrations/zoom",
-              "integrations/twitch",
-              "integrations/zapier",
-              "integrations/mailchimp",
-              "integrations/klaviyo"
-            ]
-          },
-          {
-            "group": "Attendee Portal",
-            "pages": [
-              "attendee-portal/viewing-your-tickets",
-              "attendee-portal/qr-code-digital-wallets",
-              "attendee-portal/view-download-receipt",
-              "attendee-portal/manage-payments",
-              "attendee-portal/cancel-transfer-event",
-              "attendee-portal/contact-host"
-            ]
-          },
-          {
-            "group": "Attendee Dashboard",
+            "group": "Orders and attendees",
             "pages": [
               "attendee-management/managing-attendees",
               "attendee-management/viewing-attendee-details",
@@ -162,124 +264,149 @@
             ]
           },
           {
-            "group": "Branding and Design",
+            "group": "Run your event",
             "pages": [
-              "branding-and-design/brand-design",
-              "branding-and-design/site-design",
-              "branding-and-design/event-page-design",
+              "guides/run-your-event",
               {
-                "group": "Widget Customization",
+                "group": "Mobile and offline check-in",
                 "pages": [
-                  "branding-and-design/widget-customization-overview",
-                  "branding-and-design/quick-settings",
-                  "branding-and-design/display-settings",
-                  "branding-and-design/checkout-settings",
-                  "branding-and-design/text-settings",
-                  "branding-and-design/layout",
-                  "branding-and-design/filters",
-                  "branding-and-design/user-search-filter",
-                  {
-                    "group": "All Widget Options",
-                    "pages": [
-                      "branding-and-design/widget-design-reference",
-                      "branding-and-design/widget-display-reference",
-                      "branding-and-design/widget-layout-reference",
-                      "branding-and-design/widget-event-filters-reference",
-                      "branding-and-design/widget-visitor-filters-reference",
-                      "branding-and-design/widget-checkout-reference",
-                      "branding-and-design/widget-text-reference"
-                    ]
-                  }
+                  "mobile-app/mobile-app-overview",
+                  "mobile-app/mobile-check-in",
+                  "mobile-app/attendee-details",
+                  "mobile-app/offline-check-in",
+                  "site-settings/mobile-check-in"
                 ]
               },
-              "branding-and-design/tickets-and-passes",
-              "branding-and-design/ticket-and-receipt-attachment-design",
-              "branding-and-design/attendee-communication-design",
-              "branding-and-design/language-and-locale",
-              "branding-and-design/multilingual-communications",
-              "branding-and-design/attendee-ticket-page",
-              "branding-and-design/design-options-reference",
-              "branding-and-design/white-label-setup"
+              {
+                "group": "On-site sales and admission",
+                "pages": [
+                  "on-site/box-office-pos",
+                  "on-site/ticket-printing",
+                  "on-site/ticket-checkpoints",
+                  "on-site/self-check-in-kiosk"
+                ]
+              }
             ]
           },
           {
-            "group": "Analytics",
+            "group": "Marketing and reports",
             "pages": [
-              "analytics/analytics-overview",
-              "analytics/sales-analytics",
-              "analytics/check-in-analytics",
-              "analytics/event-view-analytics",
-              "analytics/abandoned-cart-analytics",
-              "analytics/email-analytics"
+              "event-management/tracking-links",
+              {
+                "group": "Email and SMS",
+                "pages": [
+                  "event-management/email-communication",
+                  "event-management/sms-communication",
+                  "branding-and-design/attendee-communication-design"
+                ]
+              },
+              {
+                "group": "Analytics and reports",
+                "pages": [
+                  "analytics/analytics-overview",
+                  "analytics/sales-analytics",
+                  "analytics/check-in-analytics",
+                  "analytics/event-view-analytics",
+                  "analytics/abandoned-cart-analytics",
+                  "analytics/email-analytics"
+                ]
+              }
             ]
           },
           {
-            "group": "Mobile App",
+            "group": "Connected apps",
             "pages": [
-              "mobile-app/mobile-app-overview",
-              "mobile-app/mobile-check-in",
-              "mobile-app/attendee-details",
-              "mobile-app/offline-check-in"
+              "integrations/integrations-overview",
+              {
+                "group": "Import events",
+                "pages": [
+                  "integrations/eventbrite",
+                  "integrations/tickettailor",
+                  "integrations/ticketspice"
+                ]
+              },
+              {
+                "group": "Calendars and online events",
+                "pages": [
+                  "integrations/google",
+                  "integrations/zoom",
+                  "integrations/twitch"
+                ]
+              },
+              {
+                "group": "Marketing tools",
+                "pages": [
+                  "integrations/zapier",
+                  "integrations/mailchimp",
+                  "integrations/klaviyo"
+                ]
+              }
             ]
           },
           {
-            "group": "Account",
+            "group": "Account and team",
             "pages": [
-              "account/account-settings",
               "account/get-paid",
-              "account/notifications",
               "account/billing-and-plans",
-              "account/feature-reference"
+              "account/feature-reference",
+              {
+                "group": "Account preferences",
+                "pages": [
+                  "account/account-settings",
+                  "account/notifications"
+                ]
+              },
+              {
+                "group": "Staff and permissions",
+                "pages": [
+                  "team/invite-team-roles",
+                  "team/manage-invitations"
+                ]
+              },
+              {
+                "group": "Workspaces and site settings",
+                "pages": [
+                  "site-settings/add-and-switch-sites",
+                  "site-settings/site-settings",
+                  "site-settings/domain-and-analytics"
+                ]
+              },
+              {
+                "group": "Event submissions and marketplaces",
+                "pages": [
+                  "site-settings/event-submissions",
+                  "site-settings/marketplace-and-organizations"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Troubleshooting",
+        "groups": [
+          {
+            "group": "Organizer help",
+            "pages": [
+              "troubleshooting/overview"
             ]
           },
           {
-            "group": "Team",
+            "group": "Help for ticket holders",
             "pages": [
-              "team/invite-team-roles",
-              "team/manage-invitations"
+              "attendee-portal/viewing-your-tickets",
+              "attendee-portal/qr-code-digital-wallets",
+              "attendee-portal/view-download-receipt",
+              "attendee-portal/manage-payments",
+              "attendee-portal/cancel-transfer-event",
+              "attendee-portal/contact-host"
             ]
-          },
-          {
-            "group": "Site Settings",
-            "pages": [
-              "site-settings/site-settings",
-              "site-settings/domain-and-analytics",
-              "site-settings/event-submissions",
-              "site-settings/mobile-check-in",
-              "site-settings/add-and-switch-sites",
-              "site-settings/marketplace-and-organizations"
-            ]
-          },
-          {
-            "group": "Plugins",
-            "pages": [
-              "plugins/connect-shopify",
-              "plugins/shopify-ticket-selector",
-              "plugins/shopify-event-add-ons",
-              "plugins/shopify-ticketing-faq",
-              "plugins/connect-wix",
-              "plugins/connect-lovable",
-              "plugins/connect-wordpress",
-              "plugins/embed-on-your-website"
-            ]
-          },
-          {
-            "group": "Seating Charts",
-            "pages": [
-              "seating-charts/create-and-assign",
-              "seating-charts/advanced-layouts",
-              "seating-charts/seat-selection"
-            ]
-          },
-          {
-            "group": "On-Site Sales and Check-In",
-            "pages": [
-              "on-site/box-office-pos",
-              "on-site/ticket-printing",
-              "on-site/ticket-checkpoints",
-              "on-site/self-check-in-kiosk"
-            ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Developers",
+        "groups": [
           {
             "group": "API Reference",
             "pages": [
