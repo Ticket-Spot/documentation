@@ -34,7 +34,34 @@ The remaining steps cover Ecwid product sales.
 
 ## Create your first event
 
-In the connected workspace, create the event and add its dates, venue, ticket types, prices, and quantities. Follow [Create your first event](/getting-started/first-event), or choose an [event-type guide](/event-types/overview) for a class, tour, show, or other format.
+Start in the workspace connected to your Ecwid store. Choose **Create Event**, pick a template, and enter your event name.
+
+### One-time event
+
+1. Choose **One day** and set the start and end date and time.
+2. Choose paid tickets or free RSVP. Add the ticket name, price, and available quantity, then choose **Create my event**.
+3. Open the event to finish its description, image, venue, and timezone. Check the date under **Dates & Times** and ticket details under **Tickets**.
+4. Save your changes, then [publish the event to Ecwid](#publish-to-your-ecwid-store).
+
+### Time-based event
+
+Use this format when guests choose a session, such as a 20-minute studio visit.
+
+1. Create the event and its ticket first. Before taking bookings, open **Dates & Times → Time-Based**.
+2. Choose **Add Times**. Enter the event day and each session's start and end time, then choose **Create**. You can add several days with the same sessions.
+3. Check the saved list: each session should have the correct time, **Live** status, and capacity. Check the event's timezone in **Event Details**.
+4. [Publish to Ecwid](#publish-to-your-ecwid-store), then open the storefront. The customer should be able to choose **Ticket**, **Date**, and **Time Slot**.
+5. Test a later slot as well as the first one. Confirm the attendee is assigned to the chosen session and that only that session's available capacity decreases.
+
+<Note>
+Choose the date format before accepting bookings. Once an event has attendees, you cannot switch its date format.
+</Note>
+
+<Frame caption="One day with three sessions, each with four available places.">
+  <img src="../assets/refresh/plugins/ecwid-time-slot-setup.png" alt="Ticket Spot Time-Based event with three live 20-minute sessions on November 21, 2026, and zero of four tickets booked for each session." />
+</Frame>
+
+For other formats, see the [event-type guides](/event-types/overview).
 
 ### Ticket and date choices
 
@@ -47,7 +74,7 @@ Your ticket types and dates become product options and variations in Ecwid. For 
 | A timed event with ticket types | **Ticket**, **Date**, and **Time Slot** |
 
 <Frame caption="A timed event offers Ticket, Date, and Time Slot choices in the Ecwid storefront.">
-  <img src="../assets/refresh/plugins/ecwid-time-slot-product.png" alt="Studio Sessions product in Ecwid with Session Pass, November 15, 2026, and the 10:30–10:50 AM time slot selected." />
+  <img src="../assets/refresh/plugins/ecwid-time-slot-product.png" alt="Creative Studio Sessions product in Ecwid with Session Pass, November 21, 2026, and the 10:30–10:50 AM time slot selected." />
 </Frame>
 
 Check every date and time you intend to sell in the storefront, confirm they match your event's timezone, and verify the available quantity for each combination. A Ticket Spot event setting does not necessarily have an equivalent in Ecwid checkout; test the product route before relying on a feature for your event.
@@ -98,7 +125,7 @@ Verify the result in both places:
 - **Ticket Spot:** open the event's attendee dashboard and find the order and attendees. Check the attendee count, buyer details, answers, date, and ticket type against the purchase.
 - **Ticket delivery:** check the buyer's inbox and the attendee's [email delivery history](/attendee-management/email-and-sms-delivery). Open the delivered ticket and confirm its event details and QR code.
 
-Include a purchase with quantity two, and a later occurrence if you sell a recurring event. Check what happens when a ticket sells out and after you edit and republish the event. Complete the [launch checklist](/getting-started/launch-checklist) before promoting it.
+Include a purchase with **quantity two**: the order should create exactly two attendees. For a recurring or timed event, also purchase a later date or time slot and check the selected occurrence, ticket details, and remaining capacity. Check what happens when a ticket sells out and after you edit and republish the event. Complete the [launch checklist](/getting-started/launch-checklist) before promoting it.
 
 ## Payments, refunds, and order changes
 
@@ -126,7 +153,8 @@ After a cancellation or refund, review both the store's available stock and the 
 | Event changes are missing in the store | Use **Publish to Ecwid** after editing; **Save** alone does not publish the product update. |
 | The product is hard to find | Check its visibility and category placement in Ecwid, then visit the published storefront. |
 | An Ecwid order has no Ticket Spot attendee | Confirm the purchase used the product linked from the Ticket Spot event and the intended ticket option. Keep the Ecwid order number and event details when contacting support. |
-| A ticket email is missing | Check [email and SMS delivery](/attendee-management/email-and-sms-delivery) for the attendee. |
+| The organizer's Ecwid order email is missing | In Ecwid, check **Settings → Notifications**, the new-order notification, and its recipient address. This is separate from Ticket Spot ticket delivery. |
+| The buyer's Ticket Spot ticket email is missing | First confirm the attendee exists. Then check **Email Communication → Ticket Confirmation** and the attendee's [email delivery history](/attendee-management/email-and-sms-delivery). Check the buyer address and spam folder. |
 | Several attendees have the buyer's details | Ecwid supplies buyer details and product-line answers. See [Registration questions and buyer details](#registration-questions-and-buyer-details). |
 | A refunded or cancelled order still shows Attending | Review the Ecwid payment/order state and Ticket Spot attendance separately; see [Payments, refunds, and order changes](#payments-refunds-and-order-changes). |
 
