@@ -69,7 +69,7 @@ Native apps, wallets, physical printing, and device workflows also require the l
 | Choose widget installation options (`widget-embed-options`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — current Ticket Spot controls captured; external authorization/result or device still TODO |
 | Embedded widget on a demo website (`widget-embedded-result`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | TODO — external session or device unavailable; user requested deferral |
 | Wix app installation and connection (`wix-connect`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | Partial — current public App Market listing and Add to Site captured October 12; authenticated installation and connected result still need a demo site |
-| Open Ticket Spot settings in Wix (`wix-editor-settings`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
+| Open Ticket Spot settings in Wix (`wix-editor-settings`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | Complete — authenticated Settings → Main → Event Management and new workshop in Wix Editor captured October 13; see [evidence](platform-onboarding/wix-editor.json) |
 | Wix event widget and completed demo ticket (`wix-event-checkout`) | Wix demo site | [connect-wix](../plugins/connect-wix.mdx) | TODO — external session or device unavailable; user requested deferral |
 | Install widget in a WordPress page (`wordpress-embed`) | Demo browser + demo website/WordPress | [embed-on-your-website](../plugins/embed-on-your-website.mdx), [connect-wordpress](../plugins/connect-wordpress.mdx) | Partial — released plugin activation captured and shortcode parser verified in local WordPress October 12; editor block and published widget still need capture |
 
@@ -126,3 +126,9 @@ The October 2 attendee follow-up adds 17 reviewed screenshots of the available m
 Shopify setup screenshots and the seating preview are recorded in [Shopify acceptance evidence](production/shopify-selector-acceptance.json). The existing draft theme was inspected without saving or publishing changes.
 
 The complete retained-media and five-video review list is in [remaining-coverage.json](remaining-coverage.json). Older media remains only in external-integration, mobile/device, and attendee-portal guides. Alternative current close-ups are retained in the gallery without adding redundant article images.
+
+## October 13 authenticated platform demos
+
+Wix Settings → Main → Event Management and a newly created one-time workshop are now captured in [Wix Editor evidence](platform-onboarding/wix-editor.json). The demo website was published with one event widget. Wix registration/email proof remains outstanding.
+
+Ecwid demo store 144038516 is connected and the one-time event was published. Manual-payment order 7C1LG completed as Awaiting Payment, without a charge. Its production webhook saved a cart but no attendee because attendee persistence was not awaited; the confirmation job found zero recipients. [Server PR269](https://github.com/chrismccaw/wix-eventviewer-server/pull/269) fixes this along with quantity counting. Do not use this order as proof of successful Ticket Spot import or delivered email until the fix is deployed and the order is recovered.
