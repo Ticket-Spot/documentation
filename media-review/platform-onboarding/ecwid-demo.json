@@ -1,0 +1,44 @@
+{
+  "capturedAt": "2026-10-13",
+  "storeId": 144038516,
+  "eventIds": {
+    "oneTime": "2c01c2b7-8005-4987-ae5b-43647e3e18ef",
+    "timed": "f2a38b4e-8841-4c13-90fd-22bb580f57e3"
+  },
+  "assets": [
+    {
+      "file": "assets/refresh/plugins/ecwid-publish-event.png",
+      "source": "ecwid-publish-ready.png",
+      "crop": [
+        586,
+        253,
+        557,
+        493
+      ],
+      "environment": "Local Ticket Spot dashboard with actual connected Ecwid store; category response is real, not a mocked screenshot"
+    },
+    {
+      "file": "assets/refresh/plugins/ecwid-time-slot-product.png",
+      "source": "ecwid-time-slot-product.png",
+      "crop": [
+        302,
+        218,
+        1125,
+        558
+      ],
+      "resizeWidth": 1000,
+      "environment": "Published Ecwid storefront"
+    }
+  ],
+  "verified": [
+    "Ticket Spot installed in authorized demo Ecwid store",
+    "One-time and time-slot products published through Ticket Spot",
+    "Studio Sessions has three 20-minute sessions on November 15, 2026, each with four tickets",
+    "Selected 10:30\u201310:50 AM variation reaches Ecwid cart"
+  ],
+  "limitations": [
+    "Time-slot order not placed while attendee persistence fix awaits deployment",
+    "One-time test order 7C1LG is awaiting payment and has no saved attendee; see PR269",
+    "Screenshots do not prove delivery of confirmation email"
+  ]
+}

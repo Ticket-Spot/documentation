@@ -6,13 +6,21 @@ description: "Connect your Ecwid store, create an event, publish it as an Ecwid 
 
 Create your event and tickets in Ticket Spot, then publish the event as a product in your Ecwid store. Customers order through Ecwid checkout, and Ticket Spot creates the linked attendee records.
 
+## Choose your checkout
+
+- **Sell event products through Ecwid checkout.** Publish events in your Ecwid catalog so customers use your store's payment methods. Follow the product setup below.
+- **Sell through a Ticket Spot widget.** Add the widget to an Ecwid page or another website so customers use Ticket Spot checkout and your connected payment provider. Start with [Embed on your website](/plugins/embed-on-your-website) and [Get Paid](/account/get-paid).
+
+The [Ecwid App Market listing](https://www.ecwid.com/apps/featured/ticket-spot) describes both routes. Choose the route before configuring payments; publishing an Ecwid product does not configure a Ticket Spot widget checkout.
+
 ## Before you start
 
 - Sign in to the Ecwid store where you want to install Ticket Spot, with permission to install apps and manage products.
 - Have an event name, date, location, ticket prices, and capacity ready. Check [Ticket Spot plan requirements](/account/billing-and-plans) for the features you need.
+- Confirm that product variations are available for your Ecwid store. Ticket Spot uses them for ticket and date choices; Ecwid's [variation guide](https://support.ecwid.com/hc/en-us/articles/207100299-Product-variations) lists Business and Unlimited availability. Check your store's entitlement before changing plans.
 - Set up the payment methods for your store in Ecwid before testing paid ticket purchases. Ecwid processes product orders through its store checkout.
 
-This guide covers Ecwid product sales. If you are adding a standalone Ticket Spot widget to a different website, follow [Embed on your website](/plugins/embed-on-your-website), including its payment setup.
+The remaining steps cover Ecwid product sales.
 
 ## Install and connect
 
@@ -21,18 +29,38 @@ This guide covers Ecwid product sales. If you are adding a standalone Ticket Spo
 3. In Ticket Spot, use the site selector to confirm you are working in the workspace for that Ecwid store.
 
 <Frame caption="Use the Ecwid installation card to connect the store where you will sell tickets.">
-  <img src="../assets/refresh/integrations/integrations-directory-ecwid.png" alt="Ecwid integration card with Install App highlighted." style={{ maxWidth: "440px" }} />
+  <img src="../assets/refresh/integrations/integrations-directory-ecwid.png" alt="Ecwid integration card with Install App highlighted." style={{ width: "100%", maxWidth: "440px", height: "auto" }} />
 </Frame>
 
 ## Create your first event
 
 In the connected workspace, create the event and add its dates, venue, ticket types, prices, and quantities. Follow [Create your first event](/getting-started/first-event), or choose an [event-type guide](/event-types/overview) for a class, tour, show, or other format.
 
-Start with the event and ticket choices you intend to offer. Review any registration questions and confirm how they appear on the Ecwid product during your test purchase.
+### Ticket and date choices
+
+Your ticket types and dates become product options and variations in Ecwid. For example, a workshop with **Adult** and **Child** tickets on two dates has four ticket/date combinations. Each combination has its own price and available quantity.
+
+| Event setup | Ecwid product choices |
+| --- | --- |
+| A single event with ticket types | **Ticket** |
+| A recurring event with ticket types | **Ticket** and **Date** |
+| A timed event with ticket types | **Ticket**, **Date**, and **Time Slot** |
+
+<Frame caption="A timed event offers Ticket, Date, and Time Slot choices in the Ecwid storefront.">
+  <img src="../assets/refresh/plugins/ecwid-time-slot-product.png" alt="Studio Sessions product in Ecwid with Session Pass, November 15, 2026, and the 10:30–10:50 AM time slot selected." />
+</Frame>
+
+Check every date and time you intend to sell in the storefront, confirm they match your event's timezone, and verify the available quantity for each combination. A Ticket Spot event setting does not necessarily have an equivalent in Ecwid checkout; test the product route before relying on a feature for your event.
 
 <Note>
 Exclusive time slots use Ticket Spot checkout and cannot be published to an external store catalog. Use the [exclusive booking guide](/bookings/exclusive-time-slots) for that workflow.
 </Note>
+
+### Registration questions and buyer details
+
+The Ecwid product publisher maps text input, radio buttons, dropdowns, checkboxes, and date-picker questions to Ecwid product fields. Check required fields and answer choices on the published product. Other question types and advanced question rules are not covered by this mapping; verify a suitable checkout route before using them.
+
+An Ecwid order supplies the buyer's name and email to Ticket Spot. Product answers apply to the order line: if someone buys two of the same ticket in one line, both attendee records receive that buyer's details and those answers. This does not collect a separate name or questionnaire for each guest. Plan how you will collect individual guest information if your event needs it.
 
 ## Publish to your Ecwid store
 
@@ -42,7 +70,23 @@ Exclusive time slots use Ticket Spot checkout and cannot be published to an exte
 4. Open **Ecwid · Product linked**, then choose **Open in Ecwid** to inspect the linked product.
 5. Check its store visibility, category placement, dates, ticket options, prices, and available quantities. Open the public storefront to confirm a visitor can find it.
 
+<Frame caption="Review the categories, then publish the event to Ecwid.">
+  <img src="../assets/refresh/plugins/ecwid-publish-event.png" alt="Publish to Ecwid Store dialog showing the Front Page category and Publish to Ecwid button." style={{ width: "100%", maxWidth: "500px", height: "auto" }} />
+</Frame>
+
 Make later event and ticket changes in Ticket Spot and publish to Ecwid again when you want to update the linked product.
+
+### Where to edit a published product
+
+Keep event titles, descriptions, images, questions, dates, ticket prices, and capacity in Ticket Spot. Republishing updates the linked product and its variations, and can replace direct Ecwid edits to those fields. Variations that no longer belong to the event can be removed during an update.
+
+Use Ecwid for store checkout, payment methods, and storefront settings. Preserve the linked product and its ticket variations: a manually duplicated product or recreated variation does not automatically acquire its connection to Ticket Spot. After republishing, check category placement, ticket choices, prices, and quantities again.
+
+## Set up ticket delivery
+
+In the event's **Email Communication**, open **Ticket Confirmation → Manage**, review **Enabled**, and configure the message and ticket actions. See [confirmation email setup](/event-management/email-communication#ticket-confirmation) for the controls and [Attendee Communication design](/branding-and-design/attendee-communication-design) for shared styling.
+
+An Ecwid order receipt and a Ticket Spot ticket confirmation are separate messages. During your purchase test, check the Ticket Spot email, its ticket links or PDF, and the event/date printed on the ticket. A design preview or sample email alone does not verify delivery for an Ecwid purchase.
 
 ## Test the purchase and attendee record
 
@@ -50,10 +94,29 @@ Open the published product as a visitor and check both desktop and mobile. Selec
 
 Verify the result in both places:
 
-- **Ecwid:** confirm the product, selected options, quantity, order total, and payment status.
-- **Ticket Spot:** open the event's attendee dashboard and find the order and attendees. Check that the date and ticket type match the purchase and review ticket communication.
+- **Ecwid:** confirm the product, selected options, quantity, order total, and payment status. Check that a ticket-only purchase does not unexpectedly request shipping.
+- **Ticket Spot:** open the event's attendee dashboard and find the order and attendees. Check the attendee count, buyer details, answers, date, and ticket type against the purchase.
+- **Ticket delivery:** check the buyer's inbox and the attendee's [email delivery history](/attendee-management/email-and-sms-delivery). Open the delivered ticket and confirm its event details and QR code.
 
-An attendee record is not a substitute for checking the order's payment status in Ecwid. Complete the [launch checklist](/getting-started/launch-checklist) before promoting your event.
+Include a purchase with quantity two, and a later occurrence if you sell a recurring event. Check what happens when a ticket sells out and after you edit and republish the event. Complete the [launch checklist](/getting-started/launch-checklist) before promoting it.
+
+## Payments, refunds, and order changes
+
+<Warning>
+Ticket Spot creates attendees when an Ecwid order is placed, including when payment is still pending. An **Attending** record is not proof of payment. Check the payment status in Ecwid before treating a paid booking as settled.
+</Warning>
+
+Later Ecwid payment, fulfillment, refund, cancellation, or order-deletion changes do not automatically update those Ticket Spot attendee records. Ecwid fulfillment status also does not indicate whether a guest has checked in at your event.
+
+| Change you need to make | What to do |
+| --- | --- |
+| Verify or collect payment | Review the order in Ecwid and the payment provider used for that order. |
+| Return money | Follow [Ecwid's refund instructions](https://support.ecwid.com/hc/en-us/articles/115005863005-Marking-orders-as-refunded) for your provider. Marking an order refunded is not always the action that returns the funds. |
+| Cancel an Ecwid order | Follow [Ecwid's cancellation instructions](https://support.ecwid.com/hc/en-us/articles/115005862165-Canceling-orders), then review the linked attendees in Ticket Spot separately. |
+| Remove a guest from the attending list | Review the attendee in Ticket Spot and use [Change Status](/attendee-management/managing-attendees#change-an-attendees-status) as appropriate. Changing attendance does not issue an Ecwid refund. |
+| Change tickets, dates, or quantities after purchase | Review both systems and contact support if you need help keeping the records aligned. Editing one record does not automatically update the other. |
+
+After a cancellation or refund, review both the store's available stock and the event's attendee list before selling the released places again. Keep the Ecwid order number with your booking notes so your team can reconcile changes.
 
 ## Troubleshooting
 
@@ -64,6 +127,8 @@ An attendee record is not a substitute for checking the order's payment status i
 | The product is hard to find | Check its visibility and category placement in Ecwid, then visit the published storefront. |
 | An Ecwid order has no Ticket Spot attendee | Confirm the purchase used the product linked from the Ticket Spot event and the intended ticket option. Keep the Ecwid order number and event details when contacting support. |
 | A ticket email is missing | Check [email and SMS delivery](/attendee-management/email-and-sms-delivery) for the attendee. |
+| Several attendees have the buyer's details | Ecwid supplies buyer details and product-line answers. See [Registration questions and buyer details](#registration-questions-and-buyer-details). |
+| A refunded or cancelled order still shows Attending | Review the Ecwid payment/order state and Ticket Spot attendance separately; see [Payments, refunds, and order changes](#payments-refunds-and-order-changes). |
 
 ## Next steps
 
