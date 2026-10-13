@@ -450,7 +450,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://ticketspotapp.com/manage/auth/login"
+      "href": "https://ticketspotapp.com/manage"
     }
   },
   "contextual": {
