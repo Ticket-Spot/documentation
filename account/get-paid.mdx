@@ -1,10 +1,23 @@
 ---
 title: "Get Paid"
-description: "Connect Stripe, Square, or PayPal and verify the payment and payout workflow for your event tickets."
+sidebarTitle: "Payments and payouts"
+description: "Choose the payment setup for Shopify, Ecwid, Wix, or embedded ticket checkout, then verify ticket payments and payouts."
 ---
 
-The **Get Paid** feature helps you connect a payment provider to start accepting payments for your events. Complete provider onboarding before selling paid tickets. The connected provider processes payments and controls payout eligibility and timing.
+Start with the platform that processes your customer's purchase. Complete its payment setup before selling paid tickets, then check a completed test booking in Ticket Spot and that platform or provider.
 
+## Choose the correct payment workflow
+
+| Where the customer pays | Where to set up payments |
+| --- | --- |
+| **Shopify checkout** for a linked event product | Configure payments in **Shopify**. Follow the [Shopify quickstart](/plugins/connect-shopify); connecting a provider in Ticket Spot does not replace Shopify's payment setup. |
+| **Ecwid checkout** for a published event product | Configure payment methods in **Ecwid**. Follow the [Ecwid quickstart](/plugins/connect-ecwid) and verify the resulting Ticket Spot booking. |
+| **Ticket Spot checkout** on Wix, WordPress, Squarespace, an embedded widget, or a hosted event page | Use **Account → Get Paid** in Ticket Spot to connect an available provider as described below. Follow the [website installation guide](/plugins/website-setup) too. |
+| **Walk-up sales** | Use the separate [Ticket Spot POS and Square handoff](/on-site/box-office-pos), or its cash workflow. |
+
+Free RSVP does not charge a payment method. For paid checkout, availability depends on the selected provider, account, platform, and plan. The processor controls payment eligibility and payout timing.
+
+If you are unsure which route you installed, open your actual public page and follow the [launch checklist](/getting-started/launch-checklist).
 
 ## Connect a Payment Provider
 
@@ -37,11 +50,8 @@ The controls shown after connection depend on the provider and its account statu
 
 **Disconnect** removes the selected provider connection. Marketplace sites offer Stripe onboarding. A payment-method switch does not guarantee that method is available to every buyer; the provider also determines eligibility.
 
-## Choose the correct payment workflow
+## Installment payments
 
-- Website ticket checkout uses the provider configured for that integration. Available methods depend on the provider and account.
-- Shopify product purchases use the [Shopify integration](/plugins/connect-shopify); configure Shopify payments in Shopify.
-- Walk-up sales use the separate [Ticket Spot POS and Square handoff](/on-site/box-office-pos), or its cash workflow.
 - Reusable plans are configured in **Installment Plans** and assigned in **Event → Installment Plan**. Templates support equal splits or percentages, with a deadline before the event and a calculated date when installments stop being offered.
 - [Installment tickets](/event-management/installment-payments) require Stripe card checkout. Business includes manual collection; Business Plus and Platform add automatic collection and optional retry days in **Payment Settings → Installments**.
 
