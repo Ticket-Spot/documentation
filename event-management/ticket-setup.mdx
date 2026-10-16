@@ -136,7 +136,13 @@ For Shopify, follow the [pay-what-you-want checkout instructions](/plugins/shopi
 
 ### Enable Service Fee  
 
-Toggle this option ON to apply a custom booking fee to each ticket. When enabled, the **Custom Service Fee** field becomes active, allowing you to enter a fixed amount. The specified fee will then be added to the ticket price.
+Toggle this option ON to add a booking fee to each ticket. Choose **Fee type → Fixed amount** to enter a fee in the event currency, or **Percentage** to enter a rate between 0% and 100%. Existing tickets continue to use their fixed fee unless you change the fee type.
+
+Percentage fees use the full selling price before membership or promo discounts, excluding tax and processing fees. Volume pricing uses the applicable unit price; pay-what-you-want uses the buyer's chosen amount. The fee is rounded per purchased ticket in the event currency and then multiplied by quantity. For example, a $50 ticket with a 5% fee adds $2.50. A $10 promo discount leaves $42.50 before tax.
+
+The full booking fee is due at checkout, including installment and pay-later purchases. A group ticket attracts one fee per purchased bundle, allocated across its attendee records. Booking fees retain the same tax treatment as fixed fees.
+
+The **Update Service Fees** action can apply a fixed amount or percentage to all tickets in an event and its occurrences. Existing completed orders keep their saved fee amounts. After changing fees on a connected store, save/update the event to refresh its linked product and verify a test checkout.
 
 ## Bulk Ticket Discounts (Volume Discount Pricing)
 
