@@ -70,7 +70,7 @@ Open **Events → Edit event → Tickets**, then create or edit a ticket. The ma
 | **Free** | Registration without a ticket price. |
 | **Paid / Price** | Fixed ticket price in the event currency. |
 | **Pay What You Want / Minimum Price** | Let buyers choose their payment subject to a minimum. The day editor also exposes **Suggested price**. |
-| **Service fee / Custom Service Fee** | Add a fixed organizer-set fee per ticket. Older screens call it a booking fee. |
+| **Service fee / Custom Service Fee** | Choose a fixed amount or percentage per purchased ticket. Percentage uses the selling price before discounts and tax; the full fee is due at checkout. Older screens call it a booking fee. |
 | **Installment payments** | New schedules use reusable **Installment Plans** templates assigned in **Event → Installment Plan**, with all or selected paid tickets eligible. Existing ticket schedules remain under legacy controls. Requires Business and Stripe; automatic collection requires Business Plus. Cannot be combined with bulk/volume pricing. See [installment setup](./installment-payments). |
 | **Bulk ticket discounts** | Add quantity/price rules for volume purchases. This is separate from promo-code minimum quantities. |
 | **Group ticket / Group Ticket Composition** | Add quantities of saved component tickets. Buyers receive the component tickets. Check their inventory and attendee counts. |
@@ -159,7 +159,7 @@ In **Seat Categories**, select every category this ticket can book. Multiple tic
 | Control | Meaning |
 |---|---|
 | **Attendee pays the service fee** | Choose whether the attendee bears the applicable service fee. Separate from adding your own booking fee. |
-| **Add a booking fee / Booking fee** | Add a fixed fee for the custom ticket. |
+| **Add a booking fee / Booking fee** | Choose Fixed amount or Percentage for the custom ticket. Existing tickets default to Fixed amount. Percentage is calculated before discounts and tax and is due in full at checkout. |
 | **Attendees can opt out of the booking fee** | Allow buyers to remove that optional fee where supported. |
 | **Exempt from tax** | Exclude the custom ticket from the event's tax calculation where supported. Verify the checkout/platform result. |
 | **How many are available / Fewest per order / Most per order** | The day editor's inventory and order-limit labels. |
