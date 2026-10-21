@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-21T02:51:29.272720+00:00",
+  "updated_at": "2026-10-21T06:30:44.126456+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
   "planned_capture_units": 361,
   "units_with_any_capture": 322,
-  "checked_screenshots": 621,
+  "checked_screenshots": 624,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
@@ -650,6 +650,7 @@
         "assets/refresh/branding-and-design/quick-settings-save.png",
         "assets/refresh/branding-and-design/quick-settings-search-results.png",
         "assets/refresh/branding-and-design/quick-settings-search.gif",
+        "assets/refresh/branding-and-design/seat-hold-countdown-quick-settings.png",
         "assets/refresh/getting-started/platform-design.png"
       ],
       "capture_ids": [
@@ -2054,6 +2055,8 @@
     {
       "path": "seating-charts/seat-selection.mdx",
       "current_assets": [
+        "assets/refresh/seating-charts/seat-hold-countdown-desktop.png",
+        "assets/refresh/seating-charts/seat-hold-countdown-mobile.png",
         "assets/refresh/seating-charts/seating-assign-order-assigned.png",
         "assets/refresh/seating-charts/seating-assign-order-individual.png",
         "assets/refresh/seating-charts/seating-assign-order-multiple.png",

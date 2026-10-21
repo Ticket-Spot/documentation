@@ -1,0 +1,114 @@
+{
+  "review_date": "2026-10-20",
+  "timezone": "America/Los_Angeles",
+  "scope": "Opt-in countdown documentation and screenshots; no payments or seat bookings performed",
+  "capture_method": "Authenticated local Ticket Spot dashboard and real Seats.io widget; unfilled purple circles highlight existing UI; no response fixtures or redrawn UI",
+  "workspace": {
+    "site_id": "efcc11a5-dfbb-4ade-abef-f0dbf609f472",
+    "demo": true,
+    "event_id": "66a9fe50-fbfb-48ef-8b04-962996550107",
+    "event_title": "Seated Pottery Masterclass",
+    "widget_id": "widget-f27863"
+  },
+  "captures": [
+    "seat-hold-countdown-quick-settings",
+    "seat-hold-countdown-desktop",
+    "seat-hold-countdown-mobile"
+  ],
+  "cleanup": {
+    "countdown_restored_to": false,
+    "seat_hold_minutes_before": 15,
+    "seat_hold_minutes_after": 15,
+    "duration_mutation_submitted": false,
+    "seat_selection_submitted": false,
+    "payment_or_message_sent": false
+  },
+  "verification": {
+    "widget_tests": 45,
+    "server_hold_tests": 3,
+    "dashboard_settings_save_tests": 3,
+    "desktop_and_mobile_screenshots": "passed visual review",
+    "documentation_rendering": [
+      {
+        "route": "branding-and-design/quick-settings",
+        "viewport": "desktop",
+        "status": 200,
+        "title": "Quick Settings and settings search - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "seating-charts/seat-selection",
+        "viewport": "desktop",
+        "status": 200,
+        "title": "Seat selection and attendee assignment - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "branding-and-design/checkout-settings",
+        "viewport": "desktop",
+        "status": 200,
+        "title": "Widget checkout settings - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "site-settings/site-settings",
+        "viewport": "desktop",
+        "status": 200,
+        "title": "General site settings - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "branding-and-design/widget-display-reference",
+        "viewport": "desktop",
+        "status": 200,
+        "title": "Widget display options reference - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "branding-and-design/quick-settings",
+        "viewport": "mobile",
+        "status": 200,
+        "title": "Quick Settings and settings search - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "seating-charts/seat-selection",
+        "viewport": "mobile",
+        "status": 200,
+        "title": "Seat selection and attendee assignment - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "branding-and-design/checkout-settings",
+        "viewport": "mobile",
+        "status": 200,
+        "title": "Widget checkout settings - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "site-settings/site-settings",
+        "viewport": "mobile",
+        "status": 200,
+        "title": "General site settings - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      },
+      {
+        "route": "branding-and-design/widget-display-reference",
+        "viewport": "mobile",
+        "status": 200,
+        "title": "Widget display options reference - Ticket Spot",
+        "overflow": false,
+        "brokenImages": []
+      }
+    ]
+  }
+}
