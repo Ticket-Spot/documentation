@@ -13,7 +13,7 @@ Open **Design → Widget → All Settings → Text**, then select the relevant s
 | **Shopify product page** | Ticket, date, and timeslot variant labels. |
 | **Checkout → General / Section labels** | Step names, continue/back buttons, and session choices. |
 | **Checkout → Attendee information** | Names/email fields, per-attendee progress, next/save actions, copying details, and waitlist heading. |
-| **Checkout → Cart** | Order/ticket summaries, quantities, fees, free-order button, errors, multi-event cart, and required-ticket guidance. |
+| **Checkout → Cart** | Order/ticket summaries, quantities, fees, Shopify checkout and free-order buttons, errors, multi-event cart, and required-ticket guidance. |
 | **Checkout → Date & time selection** | Availability, sold out, waitlist, and morning/afternoon/evening/night labels. |
 | **Checkout → Payment information / Promotional messages** | Payment and installment wording, promo codes, and access codes. |
 | **Checkout → Add-ons / Memberships / Seating** | Selection constraints, membership verification/pricing, and seat-limit or unavailable-map messages. |
@@ -34,6 +34,16 @@ Open **Design → Widget → All Settings → Text**, then select the relevant s
 <Frame caption="The buyer sees Next: Products: the {step} placeholder is replaced with the next available step.">
   <img src="../assets/refresh/branding-and-design/widget-text-edit-result.png" alt="The buyer sees Next: Products: the {step} placeholder is replaced with the next available step." style={{ maxWidth: "100%" }} />
 </Frame>
+
+## Change the Shopify checkout button
+
+1. Open **Design → Widget → All Settings → Text → Checkout → Cart**, or search for **Shopify Checkout Button Text**.
+2. Enter your wording, such as **Continuar**, in **Shopify Checkout Button Text**.
+3. Wait for saving, publish the widget changes, then reload your Shopify storefront and check the order-summary button.
+
+This setting changes both the button that continues to Shopify checkout and the fallback checkout link shown when the Shopify checkout is ready. The button's design, validation, and checkout destination stay the same. The selector's launch-button wording is configured separately in the event's [Shopify product settings](/plugins/shopify-ticket-selector#product-settings-and-attendee-details).
+
+The default is **Continue to Shopify checkout**. With **Automatic translation** enabled under **Text → Event details**, the unchanged default follows the visitor's supported widget language; in Spanish it reads **Continuar al pago de Shopify**. Custom wording such as **Continuar** is used exactly as entered in every language, even while automatic translation is enabled. Restore **Continue to Shopify checkout** to use the translated default again. With automatic translation off, the default stays in English.
 
 The [complete text reference](./widget-text-reference) lists every field. Preserve its placeholders and use the preview to check long labels. Button labels can have length limits.
 
