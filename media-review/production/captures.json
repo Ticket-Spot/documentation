@@ -5827,27 +5827,28 @@
       "event-management/ticket-options-reference.mdx"
     ],
     "title": "Service fee setup",
-    "caption": "Service fee reveals a Custom Service Fee for this ticket. Review how the resulting total appears at checkout.",
-    "alt": "Service fee reveals a Custom Service Fee for this ticket. Review how the resulting total appears at checkout.",
-    "source": "Ticket Spot Demo live dashboard",
-    "capturedAt": "2026-10-01T22:22:55.478Z",
-    "route": "#/events/manage/ede4ddb7-4502-48cf-88ec-8aeddf083e4b/tickets",
+    "caption": "Choose Fixed amount to add the same booking fee to each purchased ticket. This unsaved example adds $2.50 to a $50 ticket.",
+    "alt": "Ticket editor with a $50 paid ticket, Service fee enabled, Fee type set to Fixed amount, and Custom Service Fee set to $2.50.",
+    "source": "Ticket Spot Demo authenticated Shopify development-store dashboard; demo:true; unsaved fee edits",
+    "capturedAt": "2026-10-21T02:43:22.524Z",
+    "route": "#/events/manage/66a9fe50-fbfb-48ef-8b04-962996550107/tickets",
     "callouts": [
       "Service fee",
+      "Fee type",
       "Custom Service Fee"
     ],
     "clip": {
-      "x": 595,
+      "x": 450,
       "y": 48,
-      "width": 730,
-      "height": 984
+      "width": 540,
+      "height": 535
     },
     "format": "PNG",
     "qa": "passed visual review",
+    "qa_notes": "Actual authenticated demo workspace UI. Application-only crop; current controls and entered values are readable; approved purple callouts. Fee edits were not saved or submitted.",
     "integrated_pages": [
       "event-management/ticket-setup.mdx"
-    ],
-    "qa_notes": "Reviewed real unsaved ticket editor; full modal crop with correct labels and purple callouts."
+    ]
   },
   "ticket-volume-pricing": {
     "id": "ticket-volume-pricing",
@@ -10786,10 +10787,7 @@
     },
     "format": "PNG",
     "qa": "passed visual review",
-    "integrated_pages": [
-      "event-management/ticket-options-reference.mdx",
-      "event-management/day-specific-tickets.mdx"
-    ]
+    "integrated_pages": []
   },
   "day-ticket-editor-scheduled": {
     "id": "day-ticket-editor",
@@ -18197,6 +18195,99 @@
     "qa": "passed visual review",
     "integrated_pages": [
       "bookings/santas-grotto.mdx"
+    ]
+  },
+  "day-ticket-fees-percentage": {
+    "id": "day-ticket-fees",
+    "key": "day-ticket-fees-percentage",
+    "asset": "assets/refresh/event-management/day-ticket-fees-percentage.png",
+    "pages": [
+      "event-management/day-specific-tickets.mdx",
+      "event-management/ticket-options-reference.mdx"
+    ],
+    "title": "Custom-day fee controls",
+    "caption": "Custom-day Fees and tax supports Percentage booking fees. This unsaved 5% example is calculated before discounts and tax and is due in full at checkout.",
+    "alt": "Custom-day Fees and tax section with Add a booking fee enabled, Fee type Percentage, and Booking fee percentage 5%.",
+    "source": "Ticket Spot Demo authenticated Shopify development-store dashboard; demo:true; unsaved fee edits",
+    "capturedAt": "2026-10-21T02:47:25.501Z",
+    "route": "#/events/manage/66a9fe50-fbfb-48ef-8b04-962996550107/dates",
+    "callouts": [
+      "Fee type",
+      "Booking fee percentage"
+    ],
+    "clip": {
+      "x": 930,
+      "y": 190,
+      "width": 495,
+      "height": 460
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Actual authenticated demo workspace UI. Application-only crop; current controls and entered values are readable; approved purple callouts. Fee edits were not saved or submitted.",
+    "integrated_pages": [
+      "event-management/ticket-options-reference.mdx",
+      "event-management/day-specific-tickets.mdx"
+    ]
+  },
+  "ticket-service-fee-percentage": {
+    "id": "ticket-service-fee",
+    "key": "ticket-service-fee-percentage",
+    "asset": "assets/refresh/event-management/ticket-service-fee-percentage.png",
+    "pages": [
+      "event-management/ticket-setup.mdx",
+      "event-management/ticket-options-reference.mdx"
+    ],
+    "title": "Service fee setup",
+    "caption": "Choose Percentage and enter the rate. This unsaved example uses 5%, which adds $2.50 to a $50 ticket before discounts and tax.",
+    "alt": "Ticket editor with a $50 paid ticket, Fee type set to Percentage, and Service Fee Percentage set to 5.",
+    "source": "Ticket Spot Demo authenticated Shopify development-store dashboard; demo:true; unsaved fee edits",
+    "capturedAt": "2026-10-21T02:43:23.296Z",
+    "route": "#/events/manage/66a9fe50-fbfb-48ef-8b04-962996550107/tickets",
+    "callouts": [
+      "Fee type",
+      "Service Fee Percentage"
+    ],
+    "clip": {
+      "x": 450,
+      "y": 48,
+      "width": 540,
+      "height": 535
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Actual authenticated demo workspace UI. Application-only crop; current controls and entered values are readable; approved purple callouts. Fee edits were not saved or submitted.",
+    "integrated_pages": [
+      "event-management/ticket-setup.mdx"
+    ]
+  },
+  "ticket-booking-fees-bulk": {
+    "id": "ticket-booking-fees-bulk",
+    "key": "ticket-booking-fees-bulk",
+    "asset": "assets/refresh/event-management/ticket-booking-fees-bulk.png",
+    "pages": [
+      "event-management/ticket-setup.mdx"
+    ],
+    "title": "Update service fees across an event",
+    "caption": "Marketplace owners and administrators can choose Percentage in Update Service Fees. Update Fees applies it to all tickets in the event and its occurrences; this example is unsaved.",
+    "alt": "Update Service Fees dialog with Fee type Percentage and Service Fee Percentage 5%, before applying the bulk update.",
+    "source": "Chris Event Marketplace authenticated dashboard; demo:true, sandbox_stripe:true; unsaved bulk dialog",
+    "capturedAt": "2026-10-21T02:50:28.131Z",
+    "route": "#/events/manage/e03656ef-8e5a-457b-a83f-d8acefbfdcc9",
+    "callouts": [
+      "Fee type",
+      "Service Fee Percentage"
+    ],
+    "clip": {
+      "x": 470,
+      "y": 213,
+      "width": 500,
+      "height": 574
+    },
+    "format": "PNG",
+    "qa": "passed visual review",
+    "qa_notes": "Actual authenticated demo workspace UI. Application-only crop; current controls and entered values are readable; approved purple callouts. Fee edits were not saved or submitted.",
+    "integrated_pages": [
+      "event-management/ticket-setup.mdx"
     ]
   }
 }

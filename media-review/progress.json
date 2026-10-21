@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-12T18:32:00.387983+00:00",
+  "updated_at": "2026-10-21T02:51:29.272720+00:00",
   "status": "Available Demo documentation and media pass reviewed; external, device, and conditional account states remain TODO",
-  "planned_capture_units": 360,
-  "units_with_any_capture": 321,
-  "checked_screenshots": 618,
+  "planned_capture_units": 361,
+  "units_with_any_capture": 322,
+  "checked_screenshots": 621,
   "checked_gifs": 3,
   "companion_posters": 3,
   "pending_review": 0,
@@ -1073,7 +1073,7 @@
         "assets/refresh/event-management/day-ticket-editor-scheduled.png",
         "assets/refresh/event-management/day-ticket-editor-seating.png",
         "assets/refresh/event-management/day-ticket-editor-volume.png",
-        "assets/refresh/event-management/day-ticket-fees-optional.png",
+        "assets/refresh/event-management/day-ticket-fees-percentage.png",
         "assets/refresh/event-management/day-ticket-overrides-title-label.png",
         "assets/refresh/event-management/day-ticket-overrides.png",
         "assets/refresh/event-management/day-ticket-revert-restored.png",
@@ -1276,7 +1276,7 @@
     {
       "path": "event-management/ticket-options-reference.mdx",
       "current_assets": [
-        "assets/refresh/event-management/day-ticket-fees-optional.png",
+        "assets/refresh/event-management/day-ticket-fees-percentage.png",
         "assets/refresh/event-management/ticket-advance-purchase.png",
         "assets/refresh/event-management/ticket-approval.png",
         "assets/refresh/event-management/ticket-autopilot-actions.png",
@@ -1335,6 +1335,7 @@
         "assets/refresh/event-management/ticket-approval.png",
         "assets/refresh/event-management/ticket-autopilot-actions.png",
         "assets/refresh/event-management/ticket-autopilot.png",
+        "assets/refresh/event-management/ticket-booking-fees-bulk.png",
         "assets/refresh/event-management/ticket-capacity-order-limits.png",
         "assets/refresh/event-management/ticket-checkin-rules-delayed.png",
         "assets/refresh/event-management/ticket-checkin-rules-window.png",
@@ -1350,6 +1351,7 @@
         "assets/refresh/event-management/ticket-pricing-modes.png",
         "assets/refresh/event-management/ticket-required-ticket.png",
         "assets/refresh/event-management/ticket-sales-window.png",
+        "assets/refresh/event-management/ticket-service-fee-percentage.png",
         "assets/refresh/event-management/ticket-service-fee.png",
         "assets/refresh/event-management/ticket-volume-pricing.png",
         "assets/refresh/memberships/membership-ticket-access.png",
@@ -1373,7 +1375,8 @@
         "ticket-required-ticket",
         "ticket-sales-window",
         "ticket-service-fee",
-        "ticket-volume-pricing"
+        "ticket-volume-pricing",
+        "ticket-booking-fees-bulk"
       ]
     },
     {
