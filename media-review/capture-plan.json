@@ -1,15 +1,15 @@
 {
   "stage": "Available Ticket Spot Demo documentation/media pass reviewed. External accounts, devices, and conditional demo states remain TODO.",
   "summary": {
-    "capture_units": 360,
-    "annotated_screenshots": 310,
+    "capture_units": 361,
+    "annotated_screenshots": 311,
     "zoom_gifs": 50,
     "static_gif_posters": 51,
     "pages_covered": 155,
     "newly_illustrated_pages": 54,
-    "priority_0": 171,
+    "priority_0": 172,
     "priority_1": 189,
-    "demo_browser_units": 286
+    "demo_browser_units": 287
   },
   "samples": [
     {
@@ -2837,14 +2837,15 @@
       "readiness": "Authenticated Ticket Spot Demo capture available.",
       "captured_assets": [
         "assets/refresh/event-management/day-ticket-fees-fees.png",
-        "assets/refresh/event-management/day-ticket-fees-optional.png"
+        "assets/refresh/event-management/day-ticket-fees-optional.png",
+        "assets/refresh/event-management/day-ticket-fees-percentage.png"
       ],
       "integrated_pages": [
         "event-management/day-specific-tickets.mdx",
         "event-management/ticket-options-reference.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 2
+        "passed visual review": 3
       },
       "delivered_formats": [
         "PNG"
@@ -4503,11 +4504,12 @@
       "format": "Annotated screenshot",
       "title": "Service fee setup",
       "callouts": [
-        "Fee switch",
-        "amount"
+        "Service fee",
+        "Fee type",
+        "Fixed amount or percentage value"
       ],
       "access": "Demo browser",
-      "fixture": "Demo showcase event",
+      "fixture": "Ticket Spot Demo; unsaved $50 ticket with $2.50 fixed or 5% booking fee",
       "priority": "P0",
       "status": "Current assets reviewed",
       "output": "assets/refresh/event-management/ticket-service-fee.png",
@@ -4515,16 +4517,17 @@
       "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
       "sample": null,
       "duration_seconds": null,
-      "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
+      "review_note": "Fixed and percentage modes captured from the authenticated demo workspace on 2026-10-20; existing ticket fees were not saved or changed.",
       "readiness": "Authenticated Ticket Spot Demo capture available.",
       "captured_assets": [
-        "assets/refresh/event-management/ticket-service-fee.png"
+        "assets/refresh/event-management/ticket-service-fee.png",
+        "assets/refresh/event-management/ticket-service-fee-percentage.png"
       ],
       "integrated_pages": [
         "event-management/ticket-setup.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 1
+        "passed visual review": 2
       },
       "delivered_formats": [
         "PNG"
@@ -12948,6 +12951,42 @@
       ],
       "integrated_pages": [
         "bookings/santas-grotto.mdx"
+      ],
+      "capture_qa": {
+        "passed visual review": 1
+      },
+      "delivered_formats": [
+        "PNG"
+      ]
+    },
+    {
+      "id": "ticket-booking-fees-bulk",
+      "pages": [
+        "event-management/ticket-setup.mdx"
+      ],
+      "area": "event-management",
+      "format": "Annotated screenshot",
+      "title": "Update service fees across an event",
+      "callouts": [
+        "Fee type",
+        "Service Fee Percentage"
+      ],
+      "access": "Demo browser",
+      "fixture": "Marketplace demo event; unsaved bulk fee dialog",
+      "priority": "P0",
+      "status": "Current assets reviewed",
+      "output": "assets/refresh/event-management/ticket-booking-fees-bulk.png",
+      "poster": null,
+      "capture_rule": "Capture application content only; exclude browser chrome/address bar. Use actual UI and demo data.",
+      "sample": null,
+      "duration_seconds": null,
+      "review_note": "If the listed controls do not fit at readable size, split this capture unit into numbered crops; do not shrink a full-page screenshot.",
+      "readiness": "Authenticated Ticket Spot Demo capture available.",
+      "captured_assets": [
+        "assets/refresh/event-management/ticket-booking-fees-bulk.png"
+      ],
+      "integrated_pages": [
+        "event-management/ticket-setup.mdx"
       ],
       "capture_qa": {
         "passed visual review": 1
