@@ -216,13 +216,14 @@
       "readiness": "Authenticated Ticket Spot Demo capture available.",
       "captured_assets": [
         "assets/refresh/branding-and-design/quick-settings-cards.png",
-        "assets/refresh/branding-and-design/quick-settings-cards-lower.png"
+        "assets/refresh/branding-and-design/quick-settings-cards-lower.png",
+        "assets/refresh/branding-and-design/seat-hold-countdown-quick-settings.png"
       ],
       "integrated_pages": [
         "branding-and-design/quick-settings.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 2
+        "passed visual review": 3
       },
       "delivered_formats": [
         "PNG"
@@ -5576,13 +5577,15 @@
       "captured_assets": [
         "assets/refresh/seating-charts/seating-buyer-selection-overview.png",
         "assets/refresh/seating-charts/seating-buyer-selection-summary.png",
-        "assets/refresh/seating-charts/seating-buyer-selection-selected.png"
+        "assets/refresh/seating-charts/seating-buyer-selection-selected.png",
+        "assets/refresh/seating-charts/seat-hold-countdown-desktop.png",
+        "assets/refresh/seating-charts/seat-hold-countdown-mobile.png"
       ],
       "integrated_pages": [
         "seating-charts/seat-selection.mdx"
       ],
       "capture_qa": {
-        "passed visual review": 3
+        "passed visual review": 5
       },
       "delivered_formats": [
         "PNG"

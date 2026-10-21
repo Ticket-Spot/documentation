@@ -22,12 +22,27 @@ Open **Design → Widget**, then choose the widget in **Editing Widget**. **Quic
 | **Layout — Desktop / Mobile** | Inspect the current layout and select the row or **View all layouts** to change it. Date/time layouts are in the full Layout area. |
 | **Collect attendee details for each ticket** | Ask each guest for details. Turn off to collect the buyer's details only. **Attendee information** opens the related checkout settings. |
 | **Show tickets on the same step as dates and times** | Display the tickets below the chosen date/time. Applies to events with date/time selection and is unavailable while ticket-first selection is on. |
+| **Show seat hold countdown** | Display the remaining hold time above the seating chart. Off by default; changing this display does not change the reservation duration. |
 | **Automatic translation** | Show supported event text in the visitor's language. Open **Event details** for the search-filter translation option. |
 | **Events shown** | Review the plan limit, **Show all available events**, **Maximum events to display**, and **Keep events visible until they end**. Show all overrides the maximum field, but not the plan limit or filters. |
 | **Date & time** | Change **Date format** and **Show start time**. Open **Date & time** for time format, timezone, and end-date/time controls. |
 | **Buy / attend button** | Show or hide the attend button and edit its text. **Button styling** opens the design controls on supported sites. An event-specific button override can replace this text. |
 | **Show promo code field** | Let buyers enter a discount code. **Promo & access codes** includes placement, auto-open, and the separate hidden-ticket access code field. |
 | **Show event search** | Add keyword search above the listing. **View all visitor filters** opens location, date, category, and language filters. |
+
+## Show the seat hold countdown
+
+1. Open **Design → Widget** and select the widget in **Editing Widget**.
+2. In **Quick Settings**, turn on **Show seat hold countdown** and wait for saving to finish.
+3. Open an event with assigned seating in that widget. The remaining minutes and seconds appear above the map once its hold session starts.
+
+The same switch is under **All Settings → Display → Checkout & payment**. Turn it off in either location to hide the countdown. Both locations change the same setting for the selected widget.
+
+<Frame caption="Show seat hold countdown is off by default in Quick Settings. The Checkout & payment link opens the same control in All Settings.">
+  <img src="/assets/refresh/branding-and-design/seat-hold-countdown-quick-settings.png" alt="Quick Settings with the Show seat hold countdown switch highlighted" style={{ width: "100%", maxWidth: "560px", height: "auto" }} />
+</Frame>
+
+The countdown displays the active hold's expiry. Opening or hiding the countdown does not restart or extend the hold. The reservation duration remains the separate [Seat Hold Time in Minutes](/site-settings/site-settings) setting, which defaults to 15 minutes. See [seat selection](/seating-charts/seat-selection#show-the-remaining-seat-hold-time) for the buyer view and expiry behavior.
 
 ## Find any setting
 

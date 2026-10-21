@@ -18289,5 +18289,71 @@
     "integrated_pages": [
       "event-management/ticket-setup.mdx"
     ]
+  },
+  "seat-hold-countdown-quick-settings": {
+    "id": "quick-settings-cards",
+    "key": "seat-hold-countdown-quick-settings",
+    "asset": "assets/refresh/branding-and-design/seat-hold-countdown-quick-settings.png",
+    "pages": [
+      "branding-and-design/quick-settings.mdx"
+    ],
+    "title": "Optional seat hold countdown",
+    "caption": "Quick Settings displays the optional Show seat hold countdown switch, off by default.",
+    "alt": "Quick Settings displays the optional Show seat hold countdown switch, off by default.",
+    "source": "Authenticated Ticket Spot Demo; actual local dashboard and widget with real Seats.io chart; no response fixtures or redrawn controls",
+    "capturedAt": "2026-10-21T06:25:58.854Z",
+    "route": "#/events/design/widget",
+    "callouts": [
+      "Show seat hold countdown"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "branding-and-design/quick-settings.mdx"
+    ]
+  },
+  "seat-hold-countdown-desktop": {
+    "id": "seating-buyer-selection",
+    "key": "seat-hold-countdown-desktop",
+    "asset": "assets/refresh/seating-charts/seat-hold-countdown-desktop.png",
+    "pages": [
+      "seating-charts/seat-selection.mdx"
+    ],
+    "title": "Optional seat hold countdown",
+    "caption": "The buyer sees the active session countdown above the real seating chart on desktop.",
+    "alt": "The buyer sees the active session countdown above the real seating chart on desktop.",
+    "source": "Authenticated Ticket Spot Demo; actual local dashboard and widget with real Seats.io chart; no response fixtures or redrawn controls",
+    "capturedAt": "2026-10-21T06:25:58.854Z",
+    "route": "/widget?event_id=66a9fe50-fbfb-48ef-8b04-962996550107",
+    "callouts": [
+      "Seat hold expires in"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "seating-charts/seat-selection.mdx"
+    ]
+  },
+  "seat-hold-countdown-mobile": {
+    "id": "seating-buyer-selection",
+    "key": "seat-hold-countdown-mobile",
+    "asset": "assets/refresh/seating-charts/seat-hold-countdown-mobile.png",
+    "pages": [
+      "seating-charts/seat-selection.mdx"
+    ],
+    "title": "Optional seat hold countdown",
+    "caption": "The same session countdown remains above the embedded map on mobile.",
+    "alt": "The same session countdown remains above the embedded map on mobile.",
+    "source": "Authenticated Ticket Spot Demo; actual local dashboard and widget with real Seats.io chart; no response fixtures or redrawn controls",
+    "capturedAt": "2026-10-21T06:25:58.854Z",
+    "route": "/widget?event_id=66a9fe50-fbfb-48ef-8b04-962996550107",
+    "callouts": [
+      "Seat hold expires in"
+    ],
+    "format": "PNG",
+    "qa": "passed visual review",
+    "integrated_pages": [
+      "seating-charts/seat-selection.mdx"
+    ]
   }
 }

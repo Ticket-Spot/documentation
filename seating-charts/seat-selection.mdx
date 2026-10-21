@@ -52,6 +52,24 @@ Selected seats are held temporarily during checkout. A completed purchase is req
 
 Check the summary before payment: occurrence, section/row/seat labels, category, ticket type, quantity, and price. On Shopify, use the [Ticket Selector](/plugins/shopify-ticket-selector) and confirm that the seat assignment survives the Shopify checkout handoff.
 
+### Show the remaining seat hold time
+
+Open **Design → Widget**, select the widget, then enable **Show seat hold countdown** in **Quick Settings**. The same switch is under **All Settings → Display → Checkout & payment**. It is off by default. See the [Quick Settings steps](/branding-and-design/quick-settings#show-the-seat-hold-countdown).
+
+When enabled, **Seat hold expires in** and the remaining minutes and seconds appear above the seating map once a hold session starts. The time follows that session's actual expiry, including time spent choosing seats. Adding a seat or hiding and showing the countdown does not restart the timer. Returning from a background tab updates the remaining time.
+
+<Frame caption="The countdown appears above the seating chart while the buyer chooses seats. The displayed time belongs to the current hold session.">
+  <img src="/assets/refresh/seating-charts/seat-hold-countdown-desktop.png" alt="Buyer seating chart with the remaining seat hold time displayed above the map" />
+</Frame>
+
+<Accordion title="See the countdown on mobile">
+<Frame caption="The remaining time stays above the embedded map on a narrow screen.">
+  <img src="/assets/refresh/seating-charts/seat-hold-countdown-mobile.png" alt="Mobile seating selection with the seat hold countdown above the map" style={{ maxWidth: "390px" }} />
+</Frame>
+</Accordion>
+
+Turning this display on or off does not change **Seat Hold Time in Minutes** under **Settings → General**. Its default remains 15 minutes. When the hold expires, the existing reservation-expired message asks the buyer to refresh and choose seats again. The countdown is shown on the seating selection screen; it does not add a separate timer to later payment screens. A read-only map or a session without expiry information does not show a countdown.
+
 ### Expand the map on mobile
 
 Use the expand control in the map's top-left corner. Choose a floor, then pan and zoom to individual seats. The top-left close control returns to checkout; check the summary and Continue button after returning.
