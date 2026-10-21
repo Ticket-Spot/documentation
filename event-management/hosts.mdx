@@ -3,7 +3,7 @@ title: "Event Hosts"
 description: "Invite event hosts, assign event-level roles, and manage active hosts and pending invitations."
 ---
 
-Open **Events → Edit event → Hosts**. Event hosts can help manage this event, check tickets, or appear publicly when host display is enabled. Event roles are separate from site-wide team access.
+Open **Events → Edit event → Hosts**. Event hosts can help manage this event, support attendees, check tickets, or appear publicly when host display is enabled. Event roles are separate from site-wide team access.
 
 ## Event hosts
 
@@ -17,15 +17,30 @@ Event invitations apply to this event. A site-level team role is separate: someo
 4. Select the appropriate **Role**.
 5. Click **Add Host** to send the event invitation. It appears under **Pending Invitations** until accepted; it does not immediately become an active host.
 
-<Frame caption="Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access.">
-  <img src="../assets/refresh/event-management/event-hosts.png" alt="Choose a site team member or enter a name and email, then select this event’s role. Manager, Ticket Checker, and Non Manager provide different levels of event access." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+<Frame caption="Choose a site team member or enter a name and email, then select this event’s role. Manager, Support, Ticket Checker, and Non Manager provide different levels of event access.">
+  <img src="../assets/refresh/event-management/event-host-support-invite.png" alt="Choose a site team member or enter a name and email, then select this event’s role. Manager, Support, Ticket Checker, and Non Manager provide different levels of event access." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
 </Frame>
 
 | Role | Event access |
 |---|---|
 | **Manager** | Can manage the event and its settings. |
+| **Support** | View and manage attendees, see full attendee contact information, answers and notes, resend confirmations, scan tickets, and view attendee, checked-in and waitlist counts for this event. Revenue, ticket prices, order totals, financial exports, billing, and event settings are hidden. |
 | **Ticket Checker** | Can scan tickets for this event. No revenue, sales reports, orders, attendee dashboard, full attendee list, exports, or event settings. Scan results show the first name and last initial, ticket type, and check-in result. |
 | **Non Manager** | Has no dashboard or scanning access from this invitation. Can appear as a public host when host display is enabled. |
+
+## Support attendees without revenue access
+
+Choose **Support** when inviting a host, or edit an active host and change their role to **Support**. The invitation must be accepted before access is granted.
+
+Support staff sign in, select the site's workspace, and open **Attendee dashboard** on their assigned event. They can search the attendee list, open attendee details, update contact information, review answers and notes, resend ticket confirmations, and check guests in. Attendance counts remain visible; money values and financial actions are hidden. Attendee and check-in exports contain operational information without ticket prices or totals.
+
+<Frame caption="Support sees attendee contact details and attendance counts, with no price column or revenue statistics.">
+  <img src="../assets/refresh/event-management/event-host-support-attendees.png" alt="Support attendee dashboard showing attendees, checked-in and waitlist counts and an attendee list without prices or revenue." style={{ width: "100%", maxWidth: "100%", height: "auto" }} />
+</Frame>
+
+This role applies only to assigned events and their recurring dates. Opening another event or attendee directly does not grant access. Removing the host or changing their role updates their access. Someone with separate site-wide Admin or Manager permissions keeps that broader access; choose an account without those roles when revenue must be hidden.
+
+For access across the whole site, use [Support Manager in Invite Team](../team/invite-team-roles#available-roles).
 
 ## Check in as a Ticket Checker
 
